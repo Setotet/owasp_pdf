@@ -28,7 +28,15 @@
         "and OWASP does not recommend or endorse the contents of the third-party sites.",
         "",
         "This project is licensed under the terms of the Creative Commons Attribution-ShareAlike 4.0",
-        "International License.  ( https://creativecommons.org/licenses/by-sa/4.0/ )"
+        "International License.  ( https://creativecommons.org/licenses/by-sa/4.0/ )",
+        "",
+        "Revision History",
+        "  2023-11-01 en-US 0.1 initial draft",
+        "  2023-12-06 en-US 0.5 public draft",
+        "  2024-02-15 en-US 0.9 pre-release draft",
+        "  2024-02-19 en-US 1.0 public release v 1.0",
+        "  2024-04-10 en-US 1.1 public release v 1.1",
+        "  2024-04-xx es-ES 1.1 public release v 1.1"
     ],
     "doc_toc": true,
     "doc_authors_toc": false,
