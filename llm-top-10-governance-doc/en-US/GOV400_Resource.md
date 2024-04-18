@@ -5,7 +5,7 @@
 ![OWASP Top10 for LLM](images/GOV1_Fig_4_1.jpg)
 ##### Figure 4.1  OWASP Top 10 for Large Language Model Applications
 
-![OWASP Top10 for LLM Visual](images/GOV1_Fig_4_2_en-ZZ.png)
+![OWASP Top10 for LLM Visual](images/GOV1_Fig_4_2_en-US.png)
 ##### Figure 4.2  OWASP Top 10 for Large Language Model Applications Visualized
 
 

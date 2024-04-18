@@ -19,27 +19,7 @@ As challenges and benefits of Artificial Intelligence emerge – and regulations
 
 [The OWASP AI Exchange Working Group](https://owasp-ai-exchange.web.app/) is monitoring these changes and addressing the broader and more challenging considerations for all aspects of artificial intelligence.
 
->||center|16|16 Trustworthy Artificial Intelligence
-
->indianred|white|left|14|18 RELIABLE
-    >indianred|white|left|12|16 Robust
-    >indianred|white|left|12|16 Accountable
-    >indianred|white|left|12|16 Monitored
-    >indianred|white|left|12|16 Transparent
-    >indianred|white|left|12|16 Explainable
-
->forestgreen|white|left|14|18 RESILIENT
-    >forestgreen|white|left|12|16 Safe
-    >forestgreen|white|left|12|16 Secure
-    >forestgreen|white|left|12|16 Private
-    >forestgreen|white|left|12|16 Effective
-
->dodgerblue|white|left|14|18 RESPONSIBLE
-    >dodgerblue|white|left|12|16 Fair
-    >dodgerblue|white|left|12|16 Ethical
-    >dodgerblue|white|left|12|16 Inclusive
-    >dodgerblue|white|left|12|16 Sustainable
-    >dodgerblue|white|left|12|16 Purposeful
+![Fig_1_1](images/GOV1_Fig_1_1.png)
 
 ##### Figure 1.1  Pillars of Trustworthy Artificial Intelligence
 ##### created from Montreal Ethics Institute Example
@@ -76,13 +56,7 @@ Understanding the different kinds of threats and integrating them with the busin
 
 ### LLM Threat Categories
 
->||center|16|16 AI Threat Map
-
-    >cornflower|white|left|14|18 Threats from NOT Using AI Models
-    >cornflower|white|left|14|18 Threats Using AI Models
-    >dodgerblue|white|left|14|18 Threats to AI Models
-    >fidblue|white|left|14|18 Threats from AI Models
-    >darkblue|white|left|14|18 AI Legal & regulatory Threats
+![Fig_1_2](images/GOV1_Fig_1_2.png)
 
 ##### Figure 1.2  Types of AI Threats
 ##### credit sdunn

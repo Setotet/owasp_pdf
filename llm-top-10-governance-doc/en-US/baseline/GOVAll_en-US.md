@@ -19,27 +19,7 @@ As challenges and benefits of Artificial Intelligence emerge – and regulations
 
 The OWASP AI Exchange Working Group is monitoring these changes and addressing the broader and more challenging considerations for all aspects of artificial intelligence.
 
-Trustworthy Artificial Intelligence
-
-RELIABLE
-Robust
-Accountable
-Monitored
-Transparent
-Explainable
-
-RESILIENT
-Safe
-Secure
-Private
-Effective
-
-RESPONSIBLE
-Fair
-Ethical
-Inclusive
-Sustainable
-Purposeful
+![Fig_1_1](images/GOV1_Fig_1_1.png)
 
 ##### Figure 1.1  Pillars of Trustworthy Artificial Intelligence
 ##### created from Montreal Ethics Institute Example
@@ -76,13 +56,7 @@ Understanding the different kinds of threats and integrating them with the busin
 
 ### LLM Threat Categories
 
-AI Threat Map
-
-Threats from NOT Using AI Models
-Threats Using AI Models
-Threats to AI Models
-Threats from AI Models
-AI Legal & regulatory Threats
+![Fig_1_2](images/GOV1_Fig_1_2.png)
 
 ##### Figure 1.2  Types of AI Threats
 ##### credit sdunn
@@ -124,32 +98,7 @@ Attackers, or adversaries, provide the most immediate and harmful threat to ente
 
 The most pressing non-adversary LLM threat for many organizations stem from "Shadow AI": employees using unapproved online AI tools, unsafe browser plugins, and third-party applications that introduce LLM features via updates or upgrades, circumventing standard software approval processes.
 
-Deployment Steps
-
-Step 1: Resilience First Strategy
-
-▶ Identify immediate threats by Threat Modeling abuse cases
-▶ Review internal or external exploitation cases for threat model scenarios and verify security controls
-▶ Scan and monitor the environment for any instances of rogue applications
-
-Ste 2: Update Existing Policy
-
-▶ Review contracts, NDA, governance, and security to incorporate LLM or GenAI use or threat
-
-Step 3: Training / Education
-
-▶ Update security awareness training, developer, legal, or other training to include LLM or GenAI use or threat
-
-Step 4: Engage with Leaders
-
-▶ Work with executives, business leaders, and other stakeholders to identify an LLM or GenAI solutions strategy
-▶ Implement mitigation / risk strategy
-
-Step 5: Update Third Party Risk Management Program
-
-▶ Third-party and vendor AI solutions will require augmented questionnaires and reviews
-
-Step 6: Choose a Deployment Strategy
+![Fig_2_1](images/GOV1_Fig_2_1.png)
 
 ##### Figure 2.1  Options for Deployment Strategy
 ##### credit sdunn
@@ -159,48 +108,7 @@ Step 6: Choose a Deployment Strategy
 
 The scopes range from leveraging public consumer applications to training proprietary models on private data. Factors like use case sensitivity, capabilities needed, and resources available help determine the right balance of convenience vs. control. However, understanding these five model types provides a framework for evaluating options.
 
-Deployment Types
-
-Type 1: Direct Access
-
-▶ Use large language models from their interface
-▶ Mitigate risk with corporate policy and employee training
-▶ Pros: Flexible and rapid experimentation
-▶ Examples: Perplexity, ChatGPT, big-AGI
-
-Type 2: Access Through Model API
-
-▶ Use large language models directly from vendors through their API
-▶ Mitigate risk with corporate policy and employee training
-▶ Pros: Enables quick experimentation with some central control through the API
-▶ Examples: Claude, ChatGPT, Gemini
-
-Type 3: Licensed Model
-
-▶ Use a licensed large language model in enterprise tenant
-▶ Mitigate risk by managing in own tenant.  Reduce risk with corporate policy and employee training
-▶ Pros: Provides more control and integration with internal tools and workflow
-▶ Examples: Microsoft Enterprise CoPilot, Amazon Codewhisperer, SalesForce Einstein GPT
-
-Type 4: Pre-Trained Model
-
-▶ Use a general foundation model, then customize by fine-tuning with enterprise or custom data
-▶ Mitigate risk with increased visibility, enhance performance, reduce hallucinations.  Reduce risk with corporate policy and employee training
-▶ Pros: enhance performance and reduce hallucinations
-▶ Examples: QwenLM/Qwen 1.5, DBRX, Starling 7B
-
-Type 5: Fine-Tune Proven Model
-
-▶ Use a proen(specialized) models and fine-tune further with proprietary data to adapt them to your enterprise
-▶ Mitigate risk with increased visibility, enhance performance, reduce hallucinations.  Reduce risk with corporate policy and employee training
-▶ Pros: Enables customization beyond pre-trained
-▶ Examples: Google MedPalm, Amazon Bedrock, Llama2, LegalAI
-
-Type 6: Custom Models
-
-▶ Build a tailored AI/ML Model architecture for enterprise specific use case
-▶ Mitigate risk with complete visibility and control.  Reduce risk with corporate policy, developer, and employee training
-▶ Pros: Requires large investment but maximizes customization
+![Fig_2_2](images/GOV1_Fig_2_2.png)
 
 ##### Figure 2.2 Options for Deployment Types
 ##### credit: sdunn
@@ -372,7 +280,7 @@ OWASP Top 10 for Large Language Models
 ![OWASP Top10 for LLM](images/GOV1_Fig_4_1.jpg)
 ##### Figure 4.1  OWASP Top 10 for Large Language Model Applications
 
-![OWASP Top10 for LLM Visual](images/GOV1_Fig_4_2_en-ZZ.png)
+![OWASP Top10 for LLM Visual](images/GOV1_Fig_4_2_en-US.png)
 ##### Figure 4.2  OWASP Top 10 for Large Language Model Applications Visualized
 
 
@@ -598,8 +506,3 @@ Julie Tao
 Cédric Lallier
 Tetsuo Seto
 Ads Dawson
-
-### Localization Contributors
-
-Your Name
-
