@@ -1,4 +1,4 @@
-## OWASP PDF Cookbook (v3.8.0)
+## OWASP PDF Cookbook (v3.9.0)
 
 ### 1. Quick Start on Mac
 
@@ -237,6 +237,32 @@ Colors are used in two places in owasp_pdf system: *link text* and *block6*, lig
   > At a typical body-text point size, color isn’t effective as a form of emphasis. Small letterforms don’t cover much surface area on the page, so colored text isn’t noticed unless it’s loud.
   >
 
+#### 8.12 Color Blockquotes
+
+owasp_pdf has an extension feature called "color blockquotes."  To create a color blockquote, start a line with greater than >.  Color blockquotes are immediately followed by four optional parameters separated by a vertical bar |, then a space character.  Color blockquotes can not be nested, but two space characters can be used to add one level of indentation (see *8.4 First Line Indent*).  For color names, see *12. Color Palette*.
+
+The tag > can be immediately followed by five optional parameters separated by a vertical bar |:
+  1. background color name (string),
+  2. text color name (string),
+  3. text alighment (string: "left", "center", "right", "justified"),
+  4. font size (integer in points), and
+  5. line pitch (integer in points)
+
+Example:
+
+>    >indianred|white|center|30|34 AI Threat Map
+>    >mistyrose|black|left|20|24 Threats from NOT Using AI Models
+>    >mistyrose|black|center|20|24 Threats Using AI Models
+>    >mistyrose|black|right|20|24 Threats to AI Models
+>    >mistyrose|black|justified|20|24 Threats from AI Models and AI Legal & regulatory Threats
+
+
+>indianred|white|center|30|34 AI Threat Map
+>mistyrose|black|left|20|24 Threats from NOT Using AI Models
+>mistyrose|black|center|20|24 Threats Using AI 
+>mistyrose|black|right|20|24 Threats to AI Models
+>mistyrose|black|justified|20|24 Threats from AI Models and AI Legal & regulatory Threats
+
 ### 9. Batch Processing
 
 You can build all registered languages of one project with one command:
@@ -247,9 +273,9 @@ $ ./owasp_pdf -a <proj code>
 
 Suppose you have three projects, LLM, GOV, and OLM.  You can build all the languages of all the projects in three processes with one command line.  macOS Activity Monitor will show three processes of *owasp_pdf*:
 
-````
+```
 $ ./owasp_pdf -a LLM & ./owasp_pdf -a GOV & ./owasp_pdf -a OLM
-````
+```
 
 ### 10. Semantic Versioning
 
@@ -263,7 +289,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 The version number with build id is placed at the lower left corner of every page.
 
 ### 11. Language Codes
-
+```
   ar-SA  :  Arabic
   be-BY  :  Belarusian
   cs-CZ  :  Czech
@@ -299,11 +325,165 @@ The version number with build id is placed at the lower left corner of every pag
   vi-VN  :  Vietnamese
   zh-CN  :  Chinese (Simplified)
   zh-TW  :  Chinese (Traditional)
+```
 
-### 12. Appendices
+### 12. Color Palette
+
+    >aliceblue|black|center|14|16 aliceblue
+    >antiquewhite|black|center|14|16 antiquewhite
+    >aqua|black|center|14|16 aqua
+    >aquamarine|black|center|14|16 aquamarine
+    >azure|black|center|14|16 azure
+    >beige|black|center|14|16 beige
+    >bisque|black|center|14|16 bisque
+    >black|white|center|14|16 black
+    >blanchedalmond|black|center|14|16 blanchedalmond
+    >blue|white|center|14|16 blue
+    >blueviolet|white|center|14|16 blueviolet
+    >brown|white|center|14|16 brown
+    >burlywood|black|center|14|16 burlywood
+    >cadetblue|white|center|14|16 cadetblue
+    >chartreuse|black|center|14|16 chartreuse
+    >chocolate|white|center|14|16 chocolate
+    >coral|white|center|14|16 coral
+    >cornflower|white|center|14|16 cornflower
+    >cornflowerblue|white|center|14|16 cornflowerblue
+    >cornsilk|black|center|14|16 cornsilk
+    >crimson|white|center|14|16 crimson
+    >cyan|black|center|14|16 cyan
+    >darkblue|white|center|14|16 darkblue
+    >darkcyan|white|center|14|16 darkcyan
+    >darkgoldenrod|white|center|14|16 darkgoldenrod
+    >darkgray|black|center|14|16 darkgray
+    >darkgreen|white|center|14|16 darkgreen
+    >darkgrey|black|center|14|16 darkgrey
+    >darkkhaki|black|center|14|16 darkkhaki
+    >darkmagenta|white|center|14|16 darkmagenta
+    >darkolivegreen|white|center|14|16 darkolivegreen
+    >darkorange|white|center|14|16 darkorange
+    >darkorchid|white|center|14|16 darkorchid
+    >darkred|white|center|14|16 darkred
+    >darksalmon|white|center|14|16 darksalmon
+    >darkseagreen|white|center|14|16 darkseagreen
+    >darkslateblue|white|center|14|16 darkslateblue
+    >darkslategray|white|center|14|16 darkslategray
+    >darkslategrey|white|center|14|16 darkslategrey
+    >darkturquoise|white|center|14|16 darkturquoise
+    >darkviolet|white|center|14|16 darkviolet
+    >deeppink|white|center|14|16 deeppink
+    >deepskyblue|white|center|14|16 deepskyblue
+    >dimgray|white|center|14|16 dimgray
+    >dimgrey|white|center|14|16 dimgrey
+    >dodgerblue|white|center|14|16 dodgerblue
+    >fidblue|white|center|14|16 fidblue
+    >fidlightblue|black|center|14|16 fidlightblue
+    >fidred|white|center|14|16 fidred
+    >firebrick|white|center|14|16 firebrick
+    >floralwhite|black|center|14|16 floralwhite
+    >forestgreen|white|center|14|16 forestgreen
+    >fuchsia|white|center|14|16 fuchsia
+    >gainsboro|black|center|14|16 gainsboro
+    >ghostwhite|black|center|14|16 ghostwhite
+    >gold|black|center|14|16 gold
+    >goldenrod|white|center|14|16 goldenrod
+    >gray|white|center|14|16 gray
+    >green|white|center|14|16 green
+    >greenyellow|black|center|14|16 greenyellow
+    >grey|white|center|14|16 grey
+    >honeydew|black|center|14|16 honeydew
+    >hotpink|white|center|14|16 hotpink
+    >indianred|white|center|14|16 indianred
+    >indigo|white|center|14|16 indigo
+    >ivory|black|center|14|16 ivory
+    >khaki|black|center|14|16 khaki
+    >lavender|black|center|14|16 lavender
+    >lavenderblush|black|center|14|16 lavenderblush
+    >lawngreen|white|center|14|16 lawngreen
+    >lemonchiffon|black|center|14|16 lemonchiffon
+    >lightblue|black|center|14|16 lightblue
+    >lightcoral|white|center|14|16 lightcoral
+    >lightcyan|black|center|14|16 lightcyan
+    >lightgoldenrodyellow|black|center|14|16 lightgoldenrodyellow
+    >lightgreen|balck lightgreen
+    >lightgrey|black|center|14|16 lightgrey
+    >lightpink|black|center|14|16 lightpink
+    >lightsalmon|white|center|14|16 lightsalmon
+    >lightseagreen|white|center|14|16 lightseagreen
+    >lightskyblue|black|center|14|16 lightskyblue
+    >lightslategray|white|center|14|16 lightslategray
+    >lightslategrey|white|center|14|16 lightslategrey
+    >lightsteelblue|black|center|14|16 lightsteelblue
+    >lightyellow|black|center|14|16 lightyellow
+    >lime|white|center|14|16 lime
+    >limegreen|white|center|14|16 limegreen
+    >linen|black|center|14|16 linen
+    >magenta|white|center|14|16 magenta
+    >maroon|white|center|14|16 maroon
+    >mediumaquamarine|white|center|14|16 mediumaquamarine
+    >mediumblue|white|center|14|16 mediumblue
+    >mediumorchid|white|center|14|16 mediumorchid
+    >mediumpurple|back mediumpurple
+    >mediumseagreen|white|center|14|16 mediumseagreen
+    >mediumslateblue|white|center|14|16 mediumslateblue
+    >mediumspringgreen|white|center|14|16 mediumspringgreen
+    >mediumturquoise|white|center|14|16 mediumturquoise
+    >mediumvioletred|white|center|14|16 mediumvioletred
+    >midnightblue|white|center|14|16 midnightblue
+    >mintcream|black|center|14|16 mintcream
+    >mistyrose|black|center|14|16 mistyrose
+    >moccasin|black|center|14|16 moccasin
+    >navajowhite|black|center|14|16 navajowhite
+    >navy|white|center|14|16 navy
+    >oldlace|black|center|14|16 oldlace
+    >olive|white|center|14|16 olive
+    >olivedrab|white|center|14|16 olivedrab
+    >orange|white|center|14|16 orange
+    >orangered|white|center|14|16 orangered
+    >orchid|white|center|14|16 orchid
+    >palegoldenrod|black|center|14|16 palegoldenrod
+    >palegreen|black|center|14|16 palegreen
+    >paleturquoise|black|center|14|16 paleturquoise
+    >palevioletred|white|center|14|16 palevioletred
+    >papayawhip|black|center|14|16 papayawhip
+    >peachpuff|black|center|14|16 peachpuff
+    >peru|white|center|14|16 peru
+    >pink|black|center|14|16 pink
+    >plum|black|center|14|16 plum
+    >powderblue|black|center|14|16 powderblue
+    >purple|white|center|14|16 purple
+    >red|white|center|14|16 red
+    >rosybrown|white|center|14|16 rosybrown
+    >royalblue|white|center|14|16 royalblue
+    >saddlebrown|white|center|14|16 saddlebrown
+    >salmon|white|center|14|16 salmon
+    >sandybrown|white|center|14|16 sandybrown
+    >seagreen|white|center|14|16 seagreen
+    >seashell|black|center|14|16 seashell
+    >sienna|white|center|14|16 sienna
+    >silver|black|center|14|16 silver
+    >skyblue|black|center|14|16 skyblue
+    >slateblue|white|center|14|16 slateblue
+    >slategray|white|center|14|16 slategray
+    >slategrey|white|center|14|16 slategrey
+    >snow|black|center|14|16 snow
+    >springgreen|white|center|14|16 springgreen
+    >steelblue|white|center|14|16 steelblue
+    >tan|white|center|14|16 tan
+    >teal|white|center|14|16 teal
+    >thistle|black|center|14|16 thistle
+    >tomato|white|center|14|16 tomato
+    >turquoise|white|center|14|16 turquoise
+    >violet|white|center|14|16 violet
+    >wheat|black|center|14|16 wheat
+    >white|black|center|14|16 white
+    >whitesmoke|black|center|14|16 whitesmoke
+    >yellow|black|center|14|16 yellow
+    >yellowgreen|white|center|14|16 yellowgreen
+
+### 13. Appendices
 
 ```
-APPENDIX   ./owasp_pdf -h  (--help)
+APPENDIX 1.   ./owasp_pdf -h  (--help)
 ================================
 
 usage: owasp_pdf [-h] [-v] [-r] [-s] [-l] [-a]
@@ -321,7 +501,7 @@ optional arguments:
 
 
 ```
-APPENDIX   custom_data_GOV_en-US.json
+APPENDIX 2.   custom_data_GOV_en-US.json
 ================================
 
 {
