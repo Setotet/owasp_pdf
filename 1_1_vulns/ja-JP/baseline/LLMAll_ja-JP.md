@@ -42,7 +42,6 @@ GitHub: @GangGreenTemperTatum
 #### Hiroaki Kuramochi
 #### Koichiro Watanabe
 #### Natsu Ooke
-#### Tetsuo Seto
 
 ## 大規模言語モデル アプリのリスク トップ10 要約
 
