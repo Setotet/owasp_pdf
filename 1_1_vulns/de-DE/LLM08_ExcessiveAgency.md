@@ -17,7 +17,7 @@ Ein auf LLM (Language Model) basierendes System wird oft mit einem gewissen Maß
 5. Übermäßige Berechtigungen: Ein LLM-Plugin, das entwickelt wurde, um Operationen im Namen eines Benutzers durchzuführen, greift auf nachgelagerte Systeme mit einer generischen hochprivilegierten Identität zu. Z.B. verbindet sich ein Plugin, um den aktuellen Dokumentenspeicher eines Benutzers zu lesen, mit dem Dokumentenrepository mit einem privilegierten Konto, das Zugriff auf alle Dateien der Benutzer hat.
 6. Übermäßige Autonomie: Eine LLM-basierte Anwendung oder ein Plugin versäumt es, hochwirksame Aktionen unabhängig zu überprüfen und zu genehmigen. Z.B. führt ein Plugin, das es ermöglicht, Dokumente eines Benutzers zu löschen, Löschungen ohne jegliche Bestätigung vom Benutzer durch.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigierungsstrategien
 
 Die folgenden Aktionen können übermäßige Handlungsfreiheit verhindern:
 

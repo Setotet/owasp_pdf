@@ -2,7 +2,7 @@
 
 ### Beschreibung
 
-LLM-Plugins sind Erweiterungen, die, wenn aktiviert, automatisch vom Modell während der Benutzerinteraktionen aufgerufen werden. Die Modellintegrationsplattform steuert sie, und die Anwendung hat möglicherweise keine Kontrolle über die Ausführung, insbesondere wenn das Modell von einer anderen Partei gehostet wird. Darüber hinaus implementieren Plugins wahrscheinlich Freitexteingaben vom Modell ohne Validierung oder Typüberprüfung, um mit Begrenzungen der Kontextgröße umzugehen. Dies ermöglicht einem potenziellen Angreifer, eine bösartige Anfrage an das Plugin zu konstruieren, die zu einer breiten Palette unerwünschter Verhaltensweisen führen kann, bis hin zur Ausführung von Remote-Code.
+LLM-Plugins sind Erweiterungen, die bei Bedarf automatisch vom Modell während der Benutzerinteraktionen aufgerufen werden. Die Modellintegrationsplattform steuert sie, und die Anwendung hat möglicherweise keine Kontrolle über die Ausführung, insbesondere wenn das Modell von einer anderen Partei gehostet wird. Darüber hinaus implementieren Plugins wahrscheinlich Freitexteingaben vom Modell ohne Validierung oder Typüberprüfung, um mit Begrenzungen der Kontextgröße umzugehen. Dies ermöglicht einem potenziellen Angreifer, eine bösartige Anfrage an das Plugin zu konstruieren, die zu einer breiten Palette unerwünschter Verhaltensweisen führen kann, bis hin zur Ausführung von Remote-Code.
 
 Der Schaden durch bösartige Eingaben hängt oft von unzureichenden Zugriffskontrollen und dem Versäumnis ab, die Autorisierung über Plugins hinweg zu verfolgen. Unzureichende Zugriffskontrolle ermöglicht es einem Plugin, anderen Plugins blind zu vertrauen und anzunehmen, dass die Eingaben vom Endbenutzer bereitgestellt wurden. Solch eine unzureichende Zugriffskontrolle kann ermöglichen, dass bösartige Eingaben schädliche Konsequenzen haben, von der Datenausfiltrierung, Ausführung von Remote-Code und Eskalation von Privilegien.
 
@@ -22,9 +22,9 @@ Dieser Punkt konzentriert sich auf die Erstellung von LLM-Plugins anstatt auf Dr
 2. Plugin-Entwickler sollten OWASPs Empfehlungen im ASVS (Application Security Verification Standard) anwenden, um eine angemessene Eingabevalidierung und -sanitierung zu gewährleisten.
 3. Plugins sollten gründlich inspiziert und getestet werden, um eine angemessene Validierung sicherzustellen. Verwenden Sie Static Application Security Testing (SAST)-Scans und dynamische und interaktive Anwendungstests (DAST, IAST) in Entwicklungs-Pipelines.
 4. Plugins sollten so konzipiert sein, dass sie die Auswirkungen einer Ausnutzung unsicherer Eingabeparameter minimieren, den OWASP ASVS Access Control Guidelines folgend. Dies umfasst Zugriffskontrolle mit minimalen Rechten, indem so wenig Funktionalität wie möglich freigelegt wird, während sie immer noch ihre gewünschte Funktion erfüllt.
-5. Plugins sollten geeignete Authentifizierungsidentitäten, wie OAuth2, verwenden, um eine effektive Autorisierung und Zugriffskontrolle anzuwenden. Zusätzlich sollten API-Schlüssel verwendet werden, um den Kontext für benutzerdefinierte Autorisierungsentscheidungen zu bieten, die den Plugin-Pfad anstelle des standardmäßigen interaktiven Benutzers widerspiegeln.
-6. Manuelle Benutzerautorisierung und Bestätigung von jeder Aktion, die von sensiblen Plugins durchgeführt wird, erfordern.
-7. Plugins sind typischerweise REST-APIs, daher sollten Entwickler die Empfehlungen in OWASP Top 10 API Security Risks – 2023 anwenden, um generische Verwundbarkeiten zu minimieren.
+5. Plugins sollten geeignete eigene Authentifizierungsidentitäten, wie OAuth2, verwenden, um eine effektive Autorisierung und Zugriffskontrolle anzuwenden. Zusätzlich sollten API-Schlüssel verwendet werden, um den Kontext für benutzerdefinierte Autorisierungsentscheidungen zu bieten, die den Plugin-Pfad anstelle des standardmäßigen interaktiven Benutzers widerspiegeln.
+6. Plugins sollen manuelle Benutzerautorisierung und Bestätigung von jeder Aktion, die von sensiblen Plugins durchgeführt wird, erfordern.
+7. Plugins sind oft REST-APIs, daher sollten Entwickler die Empfehlungen in OWASP Top 10 API Security Risks – 2023 anwenden, um generische Verwundbarkeiten zu minimieren.
 
 ### Beispiel-Angriffsszenarien
 

@@ -2,7 +2,7 @@
 
 ### Beschreibung
 
-Übermäßiges Vertrauen kann auftreten, wenn ein LLM fehlerhafte Informationen produziert und diese auf eine autoritäre Weise bereitstellt. Während LLMs kreative und informative Inhalte erzeugen können, können sie auch Inhalte generieren, die faktisch falsch, unangemessen oder unsicher sind. Dies wird als Halluzination oder Konfabulation bezeichnet. Wenn Menschen oder Systeme diesen Informationen ohne Aufsicht oder Bestätigung vertrauen, kann dies zu einem Sicherheitsbruch, Fehlinformationen, Misskommunikation, rechtlichen Problemen und Rufschädigung führen.
+Übermäßiges Vertrauen kann auftreten, wenn ein LLM fehlerhafte Informationen produziert und diese auf als Authorität  bereitstellt. Während LLMs kreative und informative Inhalte erzeugen können, können sie auch Inhalte generieren, die faktisch falsch, unangemessen oder unsicher sind. Dies wird als Halluzination oder Konfabulation bezeichnet. Wenn Menschen oder Systeme diesen Informationen ohne Aufsicht oder Bestätigung vertrauen, kann dies zu einem Sicherheitsbruch, Fehlinformationen, Misskommunikation, rechtlichen Problemen und Rufschädigung führen.
 
 Von LLM generierter Quellcode kann unbemerkte Sicherheitsanfälligkeiten einführen. Dies stellt ein erhebliches Risiko für die betriebliche Sicherheit und Sicherheit von Anwendungen dar. Diese Risiken zeigen die Bedeutung von strengen Überprüfungsprozessen, mit:
 

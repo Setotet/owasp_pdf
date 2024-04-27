@@ -1,6 +1,5 @@
 ## LLM02: Unsichere Ausgabeverarbeitung
 
-
 ### Beschreibung
 
 Unsichere Ausgabeverarbeitung bezieht sich speziell auf unzureichende Validierung, Sanitierung und Handhabung der von großen Sprachmodellen erzeugten Ausgaben, bevor sie an andere Komponenten und Systeme weitergegeben werden. Da der von LLMs (Large Language Models) generierte Inhalt durch Prompteingaben gesteuert werden kann, ähnelt dieses Verhalten dem indirekten Zugriff der Benutzer auf zusätzliche Funktionen.
