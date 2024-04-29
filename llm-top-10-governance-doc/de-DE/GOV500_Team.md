@@ -22,8 +22,3 @@ Julie Tao
 Cédric Lallier
 Tetsuo Seto
 Ads Dawson
-
-### Localization Contributors
-
-Your Name
-

@@ -1,118 +1,118 @@
-## Overview
+## Übersicht
 
-Every internet user and company should prepare for the upcoming wave of powerful generative artificial intelligence (GenAI) applications. GenAI has enormous promise for innovation, efficiency, and commercial success across a variety of industries. Still, like any powerful early stage technology, it brings its own set of obvious and unexpected challenges.
+Jeder Internetnutzer und jedes Unternehmen muss sich auf die kommende Welle leistungsfähiger generativer künstlicher Intelligenz (GenAI) Anwendungen vorbereiten. GenAI verspricht enorme Innovationen, Effizienz und kommerzielle Vorteile in einer Vielzahl von Branchen. Doch wie jede leistungsstarke Technologie in einem frühen Entwicklungsstadium birgt sie ihre eigenen offensichtlichen und unerwarteten Herausforderungen.
 
-Artificial intelligence has advanced greatly over the last 50 years, inconspicuously supporting a variety of corporate processes until ChatGPT's public appearance drove the development and use of Large Language Models (LLMs) among both individuals and enterprises. Initially, these technologies were limited to academic study or the execution of certain, but vital, activities within corporations, visible only to a select few. However, recent advances in data availability, computer power, GenAI capabilities, and the release of tools such as Llama 2, ElevenLabs, and Midjourney have raised AI from a niche to general widespread acceptance. These improvements have not only made GenAI technologies more accessible, but they have also highlighted the critical need for enterprises to develop solid strategies for integrating and exploiting AI in their operations, representing a huge step forward in how we use technology.
+Künstliche Intelligenz hat in den letzten 50 Jahren große Fortschritte gemacht und eine Vielzahl von Unternehmensprozessen unauffällig unterstützt, bis das öffentliche Erscheinen von ChatGPT die Entwicklung und Nutzung von Large Language Models (LLMs) sowohl bei Einzelpersonen als auch bei Unternehmen vorangetrieben hat. Anfangs waren diese Technologien auf akademische Studien oder die Ausführung bestimmter, aber wichtiger Aktivitäten innerhalb von Unternehmen beschränkt und nur für wenige Auserwählte sichtbar. Die jüngsten Fortschritte in der Verfügbarkeit von Daten, Computerleistung, GenAI-Fähigkeiten und die Veröffentlichung von Tools wie Llama 2, ElevenLabs und Midjourney haben AI jedoch von einer Nische zu einer allgemein weitverbreiteten Akzeptanz gebracht. Diese Verbesserungen haben nicht nur die GenAI-Technologien zugänglicher gemacht, sondern auch den kritischen Bedarf für Unternehmen hervorgehoben, solide Strategien für die Integration und Nutzung von AI in ihren Geschäftstätigkeiten zu entwickeln, was einen großen Schritt nach vorn in der Art und Weise darstellt, wie wir Technologie nutzen.
 
-  - Artificial intelligence is a broad term that encompasses all fields of computer science that enable machines to accomplish tasks that would normally require human intelligence. Machine learning and generative AI are two subcategories of AI.
-  - Machine learning is a subset of AI that focuses on creating algorithms that can learn from data. Machine learning algorithms are trained on a set of data, and then they can use that data to make predictions or decisions about new data
-  - Generative AI is a type of machine learning that focuses on creating new data. Often, GenAI relies on the use of large language models to perform the tasks needed to create the new data.
-  - A large language model (LLM) is a type of AI model that processes and generates human-like text. In the context of artificial intelligence a "model" refers to a system that is trained to make predictions based on input data. LLMs are specifically trained on large data sets of natural language and the name large language models.
+  - Künstliche Intelligenz ist ein breiter Begriff, der alle Bereiche der Informatik umfasst, die es Maschinen ermöglichen, Aufgaben auszuführen, die normalerweise menschliche Intelligenz erfordern würden. Maschinelles Lernen und generative AI sind zwei Unterkategorien von KI.
+  - Maschinelles Lernen ist eine Unterkategorie von KI, die sich auf die Erstellung von Algorithmen konzentriert, die aus Daten lernen können. Maschinelle Lernalgorithmen werden mit einem Datensatz trainiert und können dann diese Daten verwenden, um Vorhersagen oder Entscheidungen über neue Daten zu treffen.
+  - Generative AI ist eine Art von maschinellem Lernen, die sich auf die Erstellung neuer Daten konzentriert. Oftmals stützt sich GenAI auf die Verwendung von Large Language Models, um die erforderlichen Aufgaben zur Erstellung der neuen Daten durchzuführen.
+  - Ein Large Language Model (LLM) ist eine Art von KI-Modell, das menschenähnlichen Text verarbeitet und generiert. Im Kontext der künstlichen Intelligenz bezieht sich ein "Modell" auf ein System, das trainiert wurde, um Vorhersagen basierend auf Eingabedaten zu treffen. LLMs werden speziell auf großen Datensätzen natürlicher Sprache trainiert, daher der Name Large Language Models.
 
-Organizations are entering uncharted territory in securing and overseeing GenAI solutions. The rapid advancement of GenAI also opens doors for adversaries to enhance their attack strategies, introducing a dual challenge of defense and threat escalation.
+Organisationen betreten Neuland bei der Sicherung und Überwachung von GenAI-Lösungen. Der schnelle Fortschritt von GenAI eröffnet auch Türen für Gegner, ihre Angriffsstrategien zu verbessern und stellt eine doppelte Herausforderung aus Verteidigung und Bedrohungseskalation dar.
 
-Businesses use artificial intelligence in many areas, including HR for recruiting, email spam screening, SIEM for behavioral analytics, and managed detection and response applications. However, this document's primary focus is on Large Language Model applications and their function in creating generated content.
+Unternehmen verwenden künstliche Intelligenz in vielen Bereichen, einschließlich HR, für  Recruiting, E-Mail-Spam-Filterung, SIEM für Verhaltensanalysen und Managed Detection and Response-Anwendungen. Der Schwerpunkt dieses Dokuments liegt jedoch auf Large Language Model-Anwendungen und ihrer Funktion bei der Erstellung generierter Inhalte.
 
-### Responsible and Trustworthy Artificial Intelligence
+### Verantwortungsvolle und vertrauenswürdige künstliche Intelligenz
 
-As challenges and benefits of Artificial Intelligence emerge – and regulations and laws are passed – the principles and pillars of responsible and trustworthy AI usage are evolving from idealistic objects and concerns to established standards.
+Da Herausforderungen und Vorteile der künstlichen Intelligenz entstehen – und Vorschriften und Gesetze verabschiedet werden – entwickeln sich die Prinzipien und Säulen der verantwortungsvollen und vertrauenswürdigen KI-Nutzung von idealistischen Objekten und Bedenken kommend zu etablierten Standards.
 
-[The OWASP AI Exchange Working Group](https://owasp-ai-exchange.web.app/) is monitoring these changes and addressing the broader and more challenging considerations for all aspects of artificial intelligence.
+[Die OWASP AI Exchange Working Group](https://owasp-ai-exchange.web.app/) verfolgt diese Veränderungen und geht die breiteren und herausfordernderen Überlegungen für alle Aspekte der künstlichen Intelligenz an.
 
->||center|16|16 Trustworthy Artificial Intelligence
+>||center|16|16 Vertrauenswürdige künstliche Intelligenz
 
->indianred|white|left|14|18 RELIABLE
+>indianred|white|left|14|18 ZUVERLÄSSIG
     >indianred|white|left|12|16 Robust
-    >indianred|white|left|12|16 Accountable
-    >indianred|white|left|12|16 Monitored
+    >indianred|white|left|12|16 Verantwortlich
+    >indianred|white|left|12|16 Überwacht
     >indianred|white|left|12|16 Transparent
-    >indianred|white|left|12|16 Explainable
+    >indianred|white|left|12|16 Erklärbar
 
 >forestgreen|white|left|14|18 RESILIENT
-    >forestgreen|white|left|12|16 Safe
-    >forestgreen|white|left|12|16 Secure
-    >forestgreen|white|left|12|16 Private
-    >forestgreen|white|left|12|16 Effective
+    >forestgreen|white|left|12|16 Sicher
+    >forestgreen|white|left|12|16 Geschützt
+    >forestgreen|white|left|12|16 Privat
+    >forestgreen|white|left|12|16 Effektiv
 
->dodgerblue|white|left|14|18 RESPONSIBLE
+>dodgerblue|white|left|14|18 VERANTWORTUNGSVOLL
     >dodgerblue|white|left|12|16 Fair
-    >dodgerblue|white|left|12|16 Ethical
-    >dodgerblue|white|left|12|16 Inclusive
-    >dodgerblue|white|left|12|16 Sustainable
-    >dodgerblue|white|left|12|16 Purposeful
+    >dodgerblue|white|left|12|16 Ethisch
+    >dodgerblue|white|left|12|16 Inklusiv
+    >dodgerblue|white|left|12|16 Nachhaltig
+    >dodgerblue|white|left|12|16 Zweckmäßig
 
-##### Figure 1.1  Pillars of Trustworthy Artificial Intelligence
-##### created from Montreal Ethics Institute Example
+##### Abbildung 1.1 Säulen der vertrauenswürdigen künstlichen Intelligenz
+##### erstellt vom Montreal Ethics Institute Beispiel
 
-### Who is This For?
+### Für wen ist dies?
 
-The OWASP Top 10 for LLM Applications Cybersecurity and Governance Checklist is for leaders across executive, tech, cybersecurity, privacy, compliance, and legal areas, DevSecOps, MLSecOps, and Cybersecurity teams and defenders. It is intended for people who are striving to stay ahead in the fast-moving AI world, aiming not just to leverage AI for corporate success but also to protect against the risks of hasty or insecure AI implementations. These leaders and teams must create tactics to grab opportunities, combat challenges, and mitigate risks.
+Die OWASP Top 10 für LLM-Anwendungen-Cybersecurity-und-Governance-Checkliste ist für Führungskräfte aus der Exekutive, Technik, Cybersicherheit, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Cybersicherheitsteams und Verteidiger gedacht. Sie richtet sich an Personen, die bestrebt sind, in der schnelllebigen KI-Welt einen Schritt voraus zu sein, mit dem Ziel, KI nicht nur für den Unternehmenserfolg zu nutzen, sondern auch gegen die Risiken überstürzter oder unsicherer KI-Implementierungen zu schützen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu ergreifen, Herausforderungen zu bekämpfen und Risiken zu mindern.
 
-This checklist is intended to help these technology and business leaders quickly understand the risks and benefits of using LLM, allowing them to focus on developing a comprehensive list of critical areas and tasks needed to defend and protect the organization as they develop a Large Language Model strategy.
+Diese Checkliste soll diesen Technologie- und Geschäftsführern dabei helfen, schnell die Risiken und Vorteile der Nutzung von LLM zu verstehen und sich auf die Entwicklung einer umfassenden Liste kritischer Bereiche und Aufgaben zu konzentrieren, die benötigt werden, um die Organisation zu verteidigen und zu schützen, während sie eine Large Language Model-Strategie entwickeln.
 
-It is the hope of the OWASP Top 10 for the LLM Applications team that this list will help organizations improve their existing defensive techniques and develop techniques to address the new threats that come from using this exciting technology.
+Es ist die Hoffnung des OWASP Top 10 für das LLM-Anwendungen-Teams, dass diese Liste Organisationen helfen wird, ihre bestehenden Verteidigungstechniken zu verbessern und Techniken zu entwickeln, um die neuen Bedrohungen anzugehen, die aus der Nutzung dieser aufregenden Technologie resultieren.
 
-### Why a Checklist?
+### Warum eine Checkliste?
 
-Checklists used to formulate strategies improve accuracy, define objectives, preserve uniformity, and promote focused deliberate work, reducing oversights and missed details. Following a check list not only increases trust in a safe adoption journey, but also encourages future organizations innovations by providing a simple and effective strategy for continuous improvement.
+Checklisten, die zur Formulierung von Strategien verwendet werden, verbessern die Genauigkeit, definieren Ziele, bewahren die Einheitlichkeit und fördern zielgerichtetes, bedachtes Arbeiten, wodurch das Übersehen und Verpassen von Details reduziert werden. Die Nutzung einer Checkliste erhöht nicht nur das Vertrauen in eine sichere Einführung, sondern fördert auch zukünftige Organisationsinnovationen, indem sie eine einfache und effektive Möglichkeit für kontinuierliche Verbesserungen bietet.
 
-### Not Comprehensive
+### Nicht umfassend
 
-Although this document intends to support organizations in developing an initial LLM strategy in a rapidly changing technical, legal, and regulatory environment, it is not exhaustive and does not cover every use case or obligation. While using this document is Organizations should extend assessments and practices beyond the scope of the provided checklist as required for their use case or jurisdiction.
+Obwohl dieses Dokument Organisationen dabei unterstützen soll, eine anfängliche LLM-Strategie in einer sich schnell ändernden technischen, rechtlichen und regulatorischen Umgebung zu entwickeln, ist es nicht erschöpfend und deckt nicht jeden Anwendungsfall oder jede Verpflichtung ab. Die Nutzung dieses Dokuments soll Organisationen dazu anregen, Bewertungen und Praktiken über den Umfang der bereitgestellten Checkliste hinaus zu erweitern, wie es für ihren Anwendungsfall oder ihre Zuständigkeit erforderlich ist.
 
-### Large Language Model Challenges
+### Die Herausforderungen von Large Language Models
 
-Large Language models face several serious and unique issues. One of the most important is that while working with LLMs, the control and data planes cannot be strictly isolated or separable. Another significant challenge is that LLMs are nondeterministic by design, yielding a different outcome when prompted or requested. LLMs employ semantic search rather than keyword search. The key distinction between the two is that the model's algorithm prioritizes the terms in its response. This is a significant departure from how consumers have previously used technology, and it has an impact on the consistency and reliability of the findings. Hallucinations, emerging from the gaps and training flaws in the data the model is trained on, are the result of this method.
+Large Language Models stehen vor mehreren ernsthaften und einzigartigen Problemen. Eines der wichtigsten ist, dass beim Arbeiten mit LLMs die Steuerungs- und Datenebenen nicht strikt isoliert oder trennbar sind. Eine weitere wichtige Herausforderung ist, dass LLMs von Natur aus nichtdeterministisch sind und bei Aufforderung oder Anfrage ein anderes Ergebnis liefern. LLMs verwenden semantische Suche anstelle von Schlüsselwortsuche. Der Kernunterschied zwischen den beiden ist, dass der Algorithmus des Modells die Begriffe in seiner Antwort priorisiert. Dies ist eine bedeutende Abweichung von der Art und Weise, wie Verbraucher bisher Technologie genutzt haben, und es hat Auswirkungen auf die Konsistenz und Zuverlässigkeit der Ergebnisse. Halluzinationen, die aus den Lücken und Trainingsfehlern in den Daten resultieren, auf denen das Modell trainiert wurde, sind das Ergebnis dieser Methode.
 
-There are methods to improve reliability and reduce the attack surface for jailbreaking, model tricking, and hallucinations, but there is a trade-off between restrictions and utility in both cost and functionality.
+Es gibt Methoden, um die Zuverlässigkeit zu verbessern und die Angriffsfläche für Jailbreaking, Modelltäuschungen und Halluzinationen zu reduzieren, aber es gibt einen Kompromiss zwischen Einschränkungen und Nutzen sowohl in Kosten als auch in Funktionalität.
 
-LLM use and LLM applications increase an organization's attack surface. Some risks associated with LLMs are unique, but many are familiar issues, such as the known software bill of materials (SBoM), supply chain, data loss protection (DLP), and authorized access. There are also increased risks not directly related to GenAI, but GenAI increases the efficiency, capability, and effectiveness of attackers who attack and threaten organizations.
+Die Nutzung und Anwendungen von LLM erhöhen die Angriffsfläche einer Organisation. Einige Risiken der Risiken von LLM-Applikationen sind einzigartig, aber viele sind bekannte Probleme, wie die bekannte Software Bill of Materials (SBoM), die Lieferkette, Data Loss Protection (DLP) und unautorisierter Zugriff. Es gibt auch erhöhte Risiken, die nicht direkt mit GenAI zusammenhängen, bei denen GenAI die Effizienz, Fähigkeit und Wirksamkeit von Angreifern, die Organisationen, Einzelpersonen und Regierungssysteme angreifen und bedrohen erhöht.
 
-Adversaries are increasingly harnessing LLM and Generative AI tools to refine and expedite traditional methods of attacking organizations, individuals, and government systems. LLM facilitates their ability to enhance techniques allowing them to effortlessly craft new malware, potentially embedded with novel zero-day vulnerabilities or designed to evade detection. They can also generate sophisticated, unique, or tailored phishing schemes. The creation of convincing deep fakes, whether video or audio, further promotes their social engineering ploys. Additionally, these tools enable them to execute intrusions and develop innovative hacking capabilities. In the future, more “tailored” and compound use of AI technology by criminal actors will demand specific responses and dedicated solutions for an organization's appropriate defense and resilience capabilities.
+Gegner nutzen zunehmend LLM- und Generative AI-Tools, um traditionelle Methoden des Angriffs auf Organisationen, Einzelpersonen und Regierungssysteme zu verbessern und zu beschleunigen. LLM verbessert ihre Fähigkeit, Techniken zu verbessern, um mühelos neue Malware zu erstellen, die möglicherweise mit neuartigen Zero-Day-Schwachstellen eingebettet ist oder darauf ausgelegt ist, die Erkennung zu umgehen. Sie können auch ausgeklügelte, einzigartige oder maßgeschneiderte Phishing-Schemata generieren. Die Erstellung überzeugender Deepfakes, sei es Video oder Audio, vereinfacht Social-Engineering. Zusätzlich vereinfachen diese Tools Einbrüche und innovative Hacking-Fähigkeiten zu entwickeln. In Zukunft wird der „maßgeschneiderte“ und kombinierte Einsatz von KI-Technologie durch kriminelle Akteure spezifische Antworten und dedizierte Lösungen für die angemessene Verteidigung und Widerstandsfähigkeit der Organisationen erfordern.
 
-Organizations also face the threat of NOT utilizing the capabilities of LLMs such as a competitive disadvantage, market perception by customers and partners of being outdated, inability to scale personalized communications, innovation stagnation, operational inefficiencies, the higher risk of human error in processes, and inefficient allocation of human resources.
+Organisationen gehen auch ein Risiko ein,wenn sie die Fähigkeiten von LLMs NICHT zu nutzen, haben einen Wettbewerbsnachteil. Sie werden auf dem Markt von Kunden und Partnern als veraltet, unfähig zum Skalieren personalisierter Kommunikation wahrgenommen. Ihnen wird Innovationsstagnation, betriebliche Ineffizienz, ein höheres Risiko menschlicher Fehler in Prozessen und ineffiziente Zuweisung von Humanressourcen unterstellt.
 
-Understanding the different kinds of threats and integrating them with the business strategy will help weigh both the pros and cons of using Large Language Models (LLMs) against not using them, making sure they accelerate rather than hinder the business's meeting business objectives.
+Das Verständnis der verschiedenen Arten von Bedrohungen und deren Integration in die Geschäftsstrategie hilft dabei, sowohl die Vor- als auch die Nachteile der Nutzung von Large Language Models (LLMs) gegenüber deren Nichtnutzung abzuwägen und sicherzustellen, dass sie die Geschäftsziele beschleunigen und nicht behindern.
 
-### LLM Threat Categories
+### LLM-Bedrohungskategorien
 
->||center|16|16 AI Threat Map
+>||center|16|16 KI-Bedrohungskarte
 
-    >cornflower|white|left|14|18 Threats from NOT Using AI Models
-    >cornflower|white|left|14|18 Threats Using AI Models
-    >dodgerblue|white|left|14|18 Threats to AI Models
-    >fidblue|white|left|14|18 Threats from AI Models
-    >darkblue|white|left|14|18 AI Legal & regulatory Threats
+    >cornflower|white|left|14|18 Bedrohungen durch NICHT-Nutzung von KI-Modellen
+    >cornflower|white|left|14|18 Bedrohungen durch Nutzung von KI-Modellen
+    >dodgerblue|white|left|14|18 Bedrohungen für KI-Modelle
+    >fidblue|white|left|14|18 Bedrohungen durch KI-Modelle
+    >darkblue|white|left|14|18 KI-rechtliche & regulatorische Bedrohungen
 
-##### Figure 1.2  Types of AI Threats
+##### Abbildung 1.2 Arten von KI-Bedrohungen
 ##### credit sdunn
 
 
 
-### Artificial Intelligence Security and Privacy Training
+### Schulung zu Sicherheit und Datenschutz in der künstlichen Intelligenz
 
-Employees throughout organizations benefit from training to understand artificial intelligence, generative artificial intelligence, and the future potential consequences of building, buying, or utilizing LLMs. Training for permissible use and security awareness should target all employees as well as be more specialized for certain positions such as human resources, legal, developers, data teams, and security teams.
+Mitarbeiter in Organisationen profitieren von Schulungen, um künstliche Intelligenz, generative künstliche Intelligenz und die zukünftigen potenziellen Konsequenzen des Aufbaus, Kaufs oder der Nutzung von LLMs zu verstehen. Schulungen für zulässige Nutzung und Sicherheitsbewusstsein sollten sich sowohl an alle Mitarbeiter richten als auch spezialisierter für bestimmte Positionen wie Personalwesen, Rechtsabteilung, Entwickler, Datenteams und Sicherheitsteams sein.
 
-Fair use policies and healthy interaction are key aspects that, if incorporated from the very start, will be a cornerstone to the success of future AI cybersecurity awareness campaigns. This will necessarily provide user's with knowledge of the basic rules for interaction as well as the ability to separate good behavior from bad or unethical behavior.
+Richtlinien für faire Nutzung und gesunde Interaktion sind Schlüsselaspekte, die, wenn sie von Anfang an integriert werden, ein Eckpfeiler für den Erfolg zukünftiger KI-Cybersicherheitsbewusstseinskampagnen sein werden. Dies wird den Benutzern das Wissen über die grundlegenden Regeln für die Interaktion sowie die Fähigkeit vermitteln, gutes von schlechtem oder unethischem Verhalten zu unterscheiden.
 
-### Incorporate LLM Security and governance with Existing, Established
-### Practices and Controls
+### Integration von LLM-Sicherheit und -Governance mit bestehenden, etablierten
+### Praktiken und Kontrollen
 
-While AI and generated AI add a new dimension to cybersecurity, resilience, privacy, and meeting legal and regulatory requirements, the best practices that have been around for a long time are still the best way to identify issues, find vulnerabilities, fix them, and mitigate potential security issues. 
+Obwohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, Datenschutz und der Erfüllung rechtlicher und regulatorischer Anforderungen hinzufügen, sind die lang existierenden bewährten Praktiken immer noch der beste Weg, um Probleme zu identifizieren, Schwachstellen zu finden, diese zu beheben und potenzielle Sicherheitsprobleme zu reduzieren.
 
-  ● Confirm the management of artificial intelligence systems is integrated with existing organizational practices.
-  ● Confirm AIML systems follow existing privacy, governance, and security practices, with AI specific privacy, governance, and security practices implemented when required.
+  ● Stellen Sie sicher, dass das Management von KI-Systemen mit bestehenden organisatorischen Praktiken integriert ist.
+  ● Stellen Sie sicher, dass KI/ML-Systeme bestehenden Datenschutz-, Governance- und Sicherheitspraktiken folgen und bei Bedarf spezifische KI-Datenschutz-, Governance- und Sicherheitspraktiken implementiert werden.
 
-### Fundamental Security Principles
+### Grundlegende Sicherheitsprinzipien
 
-LLM capabilities introduce a different type of attack and attack surface. LLMs are vulnerable to complex business logic bugs, such as prompt injection, insecure plugin design, and remote code execution. Existing best practices are the best way to solve these issues. An internal product security team that understands secure software review, architecture, data governance, and third-party assessments The cybersecurity team should also check how strong the current controls are to find problems that could be made worse by LLM, such as voice cloning, impersonation, or bypassing captchas.
+LLM-Fähigkeiten führen einen anderen Typ von Angriff und Angriffsfläche ein. LLMs sind anfällig für komplexe Geschäftslogikfehler, wie z. B. Prompt-Injektion, unsicheres Plugin-Design und Remote-Code-Ausführung. Existierende Best Practices sind der beste Weg, um diese Probleme zu lösen. Ein internes Produktsicherheitsteam, das sichere Softwareüberprüfung, Architektur, Data-Governance und Drittanbieterbewertungen versteht, muss überprüfen, wie stark die aktuellen Mechanismen sind, um Probleme zu finden, die durch LLM verschlimmert werden könnten, wie z. B. Stimmklonung, Personifizierung oder das Umgehen von Captchas.
 
-Given recent advancements in machine learning, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning, and more recently, LLMs (Large Language Models) and Generative AI, it is recommended to include professionals proficient in these areas alongside cybersecurity and devops teams. Their expertise will not only aid in adopting these technologies but also in developing innovative analyses and responses to emerging challenges.
+Angesichts der jüngsten Fortschritte im maschinellen Lernen, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning und in jüngerer Zeit LLMs (Large Language Models) und Generative AI wird empfohlen, Fachleute, die in diesen Bereichen versiert sind, bei Cybersicherheits- und Devops-Teams einzubeziehen. Ihre Expertise wird nicht nur bei der Einführung dieser Technologien, sondern auch bei der Entwicklung innovativer Analysen und Antworten auf neu entstehende Herausforderungen helfen.
 
-### Risk
+### Risiko
 
-Reference to risk uses the ISO 31000 definition: Risk = "effect of uncertainty on objectives." LLM risks included in the checklist includes a targeted list of LLM risks that address adversarial, safety, legal, regulatory, reputation, financial, and competitive risks.
+Der Verweis auf Risiko verwendet die Definition as ISO 31000: Risiko = "Effekt der Unsicherheit auf Ziele." Zu den in der Checkliste enthaltenen LLM-Risiken gehört eine gezielte Liste von LLM-Risiken, die gegnerische, sicherheitstechnische, rechtliche, regulatorische, rufschädigende, finanzielle und wettbewerbliche Risiken ansprechen.
 
-### Vulnerability and Mitigation Taxonomy
+### Schwachstellen- und Minderungstaxonomie
 
-Current systems for classifying vulnerabilities and sharing threat information, like OVAL, STIX, CVE, and CWE, are still developing the ability to monitor and alert defenders about vulnerabilities and threats specific to Large Language Models (LLMs) and Predictive Models. It is expected that organizations will lean on these established and recognized standards, such as CVE for vulnerability classification and STIX for the exchange of cyber threat intelligence (CTI), when vulnerabilities or threats to AI/ML systems and their supply chains are identified.
+Aktuelle Systeme zur Klassifizierung von Schwachstellen und zum Austausch von Bedrohungsinformationen, wie etwa OVAL, STIX, CVE und CWE, arbeiten noch an der  Fähigkeit, spezifische Schwachstellen und Bedrohungen in Bezug auf große Sprachmodelle (LLMs) und Prediction-Modelle zu überwachen und die Verteidiger zu alarmieren. Es wird erwartet, dass Organisationen sich auf diese etablierten und anerkannten Standards wie CVE für die Klassifizierung von Schwachstellen und STIX für den Austausch von Informationen über Cyber-Bedrohungen (CTI) stützen werden, wenn Schwachstellen oder Bedrohungen für KI/ML-Systeme und deren Lieferketten identifiziert werden.
