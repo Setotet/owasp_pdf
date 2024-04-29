@@ -1,91 +1,79 @@
-﻿## Introduction
+## Einleitung
 
-### The Genesis of the List
+Das enorme Interesse an Large Language Models (LLMs) nach der Einführung von massenmarktfähigen vortrainierten Chatbots Ende 2022 ist bemerkenswert. Unternehmen, die das Potenzial von LLMs nutzen wollen, integrieren sie rasch in ihre Betriebsabläufe und kundenorientierten Angebote. Doch die rasante Geschwindigkeit, mit der LLMs angenommen werden, hat die Etablierung umfassender Sicherheitsprotokolle überholt, was viele Anwendungen hohen Risiken aussetzt.
 
-The frenzy of interest of Large Language Models (LLMs) following of mass-market pre- trained chatbots in late 2022 has been remarkable. Businesses, eager to harness the potential of LLMs, are rapidly integrating them into their operations and client facing offerings. Yet, the breakneck speed at which LLMs are being adopted has outpaced the establishment of comprehensive security protocols, leaving many applications vulnerable to high-risk issues.
+Das Fehlen einer einheitlichen Ressource, die diese Sicherheitsbedenken bei LLMs anspricht, war offensichtlich. Entwickler, die mit den spezifischen Risiken von LLMs nicht vertraut sind, waren auf verstreute Quellen angewiesen und die Mission von OWASP schien perfekt geeignet, um einen sichereren Einsatz dieser Technologie voranzutreiben.
 
-The absence of a unified resource addressing these security concerns in LLMs was evident. Developers, unfamiliar with the specific risks associated with LLMs, were left scattered resources and OWASP’s mission seemed a perfect fit to help drive safer adoption of this technology.
+### Für wen ist es gedacht?
+Unsere Hauptzielgruppe sind Entwickler, Data Scientists und Sicherheitsexperten, die mit der Gestaltung und Entwicklung von Anwendungen und Plugins beschäftigt sind, die LLM-Technologien nutzen. Wir möchten praktische, umsetzbare und prägnante Sicherheitshinweise bieten, um diesen Fachleuten zu helfen, sich in dem komplexen im Entstehen befindenden Bereich der LLM-Anwendungssicherheit zurechtzufinden.
 
-### Who is it for?
+### Die Erstellung der Liste
+Das Erstellen der OWASP Top 10 für LLM-Anwendungen war ein wichtiges Unterfangen, das auf der kollektiven Expertise eines internationalen Teams von fast 500 Experten mit über 125 aktiven Mitwirkenden basiert. Unsere Mitwirkenden kommen aus unterschiedlichen Bereichen, darunter KI-Unternehmen, Sicherheitsunternehmen, ISVs, Cloud-Hyperscaler, Hardwareanbieter und die akademische Welt.
 
-Our primary audience is developers, data scientists, and security experts tasked with designing and building applications and plug-ins leveraging LLM technologies. We aim to provide practical, actionable, and concise security guidance to help these professionals navigate the complex and evolving terrain of LLM application security.
+Wir haben einen Monat lang gebrainstormt, potenzielle Schwachstellen vorgeschlagen dabei 43 verschiedene Bedrohungen formulierten. Durch mehrere Abstimmungsrunden verfeinerten wir diese Vorschläge zu einer prägnanten Liste der zehn kritischsten Schwachstellen. Spezialisierte Untergruppen prüften jede Schwachstelle und unterzogen sie einer öffentlichen Überprüfung, um die umfassendste und nützlichste endgültige Liste zu gewährleisten.
 
-### The Making of the List
+### Im Verhältnis zu anderen OWASP Top 10 Listen
+Während unsere Liste die DNA mit Schwachstellentypen aus anderen OWASP Top 10-Listen teilt, wiederholen wir diese Schwachstellen nicht einfach. Stattdessen fokussieren wir uns in die einzigartigen Auswirkungen dieser Schwachstellen beim Einsatz von LLMs.
 
-Creating the OWASP Top 10 for LLM Applications list was a significant undertaking, built on the collective expertise of an international team of nearly 500 experts with over 125 active contributors. Our contributors come from diverse backgrounds, including AI companies, security companies, ISVs, cloud hyperscalers, hardware providers, and academia.
+Unser Ziel ist es, die Kluft zwischen allgemeinen Anwendungssicherheitsprinzipien und den spezifischen Herausforderungen, die LLMs darstellen, zu überbrücken. Dies umfasst die Untersuchung, wie herkömmliche Schwachstellen unterschiedliche Risiken darstellen oder auf neue Weise innerhalb von LLMs ausgenutzt werden könnten, sowie wie traditionelle Abwehrmaßnahmen für LLM-basierte Anwendungen angepasst werden müssen.
 
-We brainstormed for a month and proposed potential vulnerabilities, with team members writing up 43 distinct threats. Through multiple rounds of voting, we refined these proposals to a concise list of the ten most critical vulnerabilities. Dedicated sub-teams scrutinized each vulnerability and subjected it to public review, ensuring the most comprehensive and actionable final list.
+### Die Zukunft
+Die Version 1.1 der Liste wird nicht die letzte sein. Wir planen, sie regelmäßig zu aktualisieren, um mit dem Stand der Branche Schritt zu halten. Wir werden mit der breiteren Community kooperieren, um den Stand der Technik voranzutreiben und mehr Bildungsmaterial für eine Vielzahl von Anwendungen zu erstellen. Wir streben auch die Zusammenarbeit mit Normungsorganisationen und Regierungen zu Themen der KI-Sicherheit an. Wir laden Sie ein, unserer Gruppe beizutreten und einen Beitrag zu leisten.
 
-Each of these vulnerabilities, along with examples, prevention tips, attack scenarios, and references, was further scrutinized and refined by dedicated sub-teams and subjected to public review, ensuring the most comprehensive and actionable final list.
-
-### Relating to other OWASP Top 10 Lists
-
-While our list shares DNA with vulnerability types found in other OWASP Top 10 lists, we do not simply reiterate these vulnerabilities. Instead, we delve into the unique implications these vulnerabilities have when encountered in applications utilizing LLMs.
-
-Our goal is to bridge the divide between general application security principles and the specific challenges posed by LLMs. This includes exploring how conventional vulnerabilities may pose different risks or might be exploited in novel ways within LLMs, as well as how traditional remediation strategies need to be adapted for applications utilizing LLMs.
-
-### About Version 1.1
-
-While our list shares DNA with vulnerability types found in other OWASP Top 10 lists, we do not simply reiterate these vulnerabilities. Instead, we delve into these vulnerabilities’ unique implications when encountered in applications utilizing LLMs. Our goal is to bridge the divide between general application security principles and the specific challenges posed by LLMs.
-
-The group’s goals include exploring how conventional vulnerabilities may pose different risks or be exploited in novel ways within LLMs and how developers must adapt traditional remediation strategies for applications utilizing LLMs.
-
-### The Future
-
-The v1.1 of the list will not be our last. We expect to update it on a periodic basis to keep pace with the state of the industry. We will be working with the broader community to push the state of the art, and creating more educational materials for a range of uses. We also seek to collaborate with standards bodies and governments on AI security topics. We welcome you to join our group and contribute.
-
-
-#### Steve Wilson
-Project Lead, OWASP Top 10 for LLM Applications
+### Steve Wilson
+Projektleiter, OWASP Top 10 für LLM-Anwendungen
+https://www.linkedin.com/in/wilsonsd  
 Twitter/X: @virtualsteve
 
-
-#### Ads Dawson
-v1.1 Release Lead & Vulnerability Entries Lead, OWASP Top 10 for LLM Applications
-LinkedIn: /in/adamdawson0
+### Ads Dawson
+v1.1 Release Lead & Vulnerability Entries Lead, OWASP Top 10 für LLM-Anwendungen
+https://www.linkedin.com/in/adamdawson0 
 GitHub: @GangGreenTemperTatum
 
-## OWASP Top 10 for LLM Applications
+## Über diese Übersetzung
 
-### LLM01: Prompt Injection
-Crafty inputs can manipulate a Large Language Model, causing unintended actions. Direct injections overwrite system prompts, while indirect ones manipulate inputs from external sources.
+Übersetzer
 
-### LLM02: Insecure Output Handling
-This vulnerability occurs when an LLM output is accepted without scrutiny, exposing backend systems. Misuse may lead to severe consequences like XSS, CSRF, SSRF, privilege escalation, or remote code execution.
+Johann-Peter Hartmann
+https://www.linkedin.com/in/johann-peter-hartmann-92b70a/  
 
-### LLM03: Training Data Poisoning
-This occurs when LLM training data is tampered, introducing vulnerabilities or biases that compromise security, effectiveness, or ethical behavior. Sources include Common Crawl, WebText, OpenWebText, & books.
+Bei der Erstellung dieser Übersetzung haben wir uns bewusst dafür entschieden, nur menschliche Übersetzer einzusetzen, in Anerkennung der außerordentlich technischen und kritischen Natur der OWASP Top Ten für LLMs. Die oben aufgeführten Übersetzer verfügen nicht nur über ein tiefes Verständnis des Originalinhalts, sondern auch über die sprachliche Kompetenz, um diese Übersetzung sinnvoll zu gestalten.
 
-### LLM04: Model Denial of Service
-Attackers cause resource-heavy operations on Large Language Models leading to service degradation or high costs. The vulnerability is magnified due to the resource-intensive nature of LLMs and unpredictability of user inputs.
+Talesh Seeparsan
+Übersetzungsleiter, OWASP Top 10 für LLM-Anwendungen
+https://www.linkedin.com/in/talesh/  
 
-### LLM05: Supply Chain Vulnerabilities
-LLM application lifecycle can be compromised by vulnerable components or services, leading to security attacks. Using third-party datasets, pre- trained models, and plugins can add vulnerabilities.
+## ﻿OWASP Top 10 für Anwendungen von Large Language Models (LLMs)
 
-### LLM06: Sensitive Information Disclosure
-LLM’s may reveal confidential data in its responses, leading to unauthorized data access, privacy violations, and security breaches. It’s crucial to implement data sanitization and strict user policies to mitigate this.
+### LLM01: Prompt Injection (Prompt-Einschleusung)
+Mit raffinierten Eingabenkann man ein Large Language Model manipulieren und unbeabsichtigte Aktionen verursachen. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
 
-### LLM07: Insecure Plugin Design
-LLM plugins can have insecure inputs and insufficient access control. This lack of application control makes them easier to exploit and can result in consequences like remote code execution.
+### LLM02: Unsichere Ausgabeverarbeitung
+Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ohne Überprüfung akzeptiert wird, und damit Backend-Systeme angreifbar macht. Missbrauch kann zu schwerwiegenden Konsequenzen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegienerweiterung oder Remote-Code-Ausführung führen.
 
-### LLM08: Excessive Agency
-LLM-based systems may undertake actions leading to unintended consequences. The issue arises from excessive functionality, permissions, or autonomy granted to the LLM-based systems.
+### LLM03: Poisoning der Trainingsdaten
+Dies tritt auf, wenn LLM-Trainingsdaten manipuliert werden, wodurch Sicherheitslücken oder Bias entstehen, die die Sicherheit, Wirksamkeit oder ethisches Verhalten beeinträchtigen. Quellen umfassen Common Crawl, WebText, OpenWebText und Bücher.
 
-### LLM09: Overreliance
-Systems or people overly depending on LLMs without oversight may face misinformation, miscommunication, legal issues, and security vulnerabilities due to incorrect or inappropriate content generated by LLMs.
+### LLM04: Denial of Service des Modells
+Angreifer verursachen ressourcenintensive Operationen auf Large Language Models, was zu Servicedegradierung oder hohen Kosten führt. Die Schwachstelle wird durch die ressourcenintensive Natur der LLMs und die Unvorhersehbarkeit der Benutzereingaben vergrößert.
 
-### LLM10: Model Theft
-This involves unauthorized access, copying, or exfiltration of proprietary LLM models. The impact includes economic losses, compromised competitive advantage, and potential access to sensitive information.
+### LLM05: Schwachstellen in der Supply Chain
+Der Lifecycle von LLM-Anwendungen kann durch anfällige Komponenten oder Dienste beeinträchtigt werden, was zu Sicherheitsangriffen führt. Die Verwendung von Drittanbieterdatensätzen, vortrainierten Modellen und Plugins kann Schwachstellen hinzufügen.
 
-## LLM Application Data Flow
+### LLM06: Offenlegung sensibler Informationen
+LLMs können in ihren Antworten vertrauliche Daten preisgeben, was zu unbefugtem Datenzugriff, Datenschutzverletzungen und Sicherheitsbrüchen führt. Es ist entscheidend, Datenbereinigung und strenge Benutzerrichtlinien zu implementieren, um dies zu reduzieren.
 
-The diagram below presents a high level architecture for a hypothetical large language model application. Overlaid in the diagram are highlighted areas of risk illustrating how the OWASP Top 10 for LLM Applications entries intersect with the application flow.
+### LLM07: Unsicheres Plugin-Design
+LLM-Plugins können unsichere Eingaben und unzureichende Zugriffskontrollen haben. Dieser Mangel an Anwendungskontrolle macht sie leichter ausnutzbar und kann zu Konsequenzen wie der Ausführung von Remote-Code führen.
 
-This diagram can be used as a visual guide, assisting in understanding how large language model security risks impact the overall application ecosystem.
+### LLM08: Übermäßige Handlungsfreiheit
+LLM-basierte Systeme können Handlungen durchführen, die zu unbeabsichtigten Konsequenzen führen. Das Problem entsteht durch übermäßige Funktionalität, Berechtigungen oder Autonomie, die den LLM-basierten Systemen gewährt wird.
 
-![Fig_1](images/fig_5_2.png)
+### LLM09: Übermäßige Abhängigkeit
+Systeme oder Personen, die sich übermäßig auf LLMs verlassen, ohne angemessene Kontrolle, können Fehlinformationen, Misskommunikation, rechtliche Probleme und Sicherheitslücken aufgrund von falschen oder unangemessenen von den LLMs generierten Inhalten gegenüberstehen.
 
-##### Figure 1: OWASP Top 10 for Large Language Model Applications Visualized
+### LLM10: Modell-Diebstahl
+Dies umfasst unbefugten Zugriff, Kopieren oder Exfiltration von proprietären LLM-Modellen. Die Auswirkungen umfassen wirtschaftliche Verluste, beeinträchtigte Wettbewerbsvorteile und potenziellen Zugang zu sensiblen Informationen.
 ## LLM01: Prompt Injection
 
 ### Beschreibung

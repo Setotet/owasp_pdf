@@ -1,7 +1,3 @@
-# ﻿OWASP Top 10 für LLM (Large Language Models)
-### Version 1.1
-Veröffentlicht: 16. Oktober 2023
-
 ## Einleitung
 
 Das enorme Interesse an Large Language Models (LLMs) nach der Einführung von massenmarktfähigen vortrainierten Chatbots Ende 2022 ist bemerkenswert. Unternehmen, die das Potenzial von LLMs nutzen wollen, integrieren sie rasch in ihre Betriebsabläufe und kundenorientierten Angebote. Doch die rasante Geschwindigkeit, mit der LLMs angenommen werden, hat die Etablierung umfassender Sicherheitsprotokolle überholt, was viele Anwendungen hohen Risiken aussetzt.
