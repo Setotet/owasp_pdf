@@ -1,8 +1,8 @@
 ## Team
 
-Thank you to the OWASP Top 10 for LLM Applications Cybersecurity and Governance Checklist Contributors.
+Danke an die Mitwirkenden der OWASP Top 10 für LLM-Applications-Cybersecurity-und-Governance Checkliste.
 
-### Checklist Contributors
+### Mitwirkende der Checkliste
 
 Sandy Dunn
 Heather Linn
@@ -22,3 +22,7 @@ Julie Tao
 Cédric Lallier
 Tetsuo Seto
 Ads Dawson
+
+### Übersetzung
+
+Johann-Peter Hartmann

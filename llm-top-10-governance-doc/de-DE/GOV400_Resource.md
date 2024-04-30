@@ -1,6 +1,6 @@
-## Resources
+## Ressourcen
 
-[OWASP Top 10 for Large Language Models](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
+[OWASP Top 10 für Large Language Models](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
 
   >dodgerblue|white|left|12|16 LLM01: Prompt Injection (Prompt-Einschleusung)
   >azure|black|justified|10|12 Mit raffinierten Eingabenkann man ein Large Language Model manipulieren und unbeabsichtigte Aktionen verursachen. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
@@ -34,205 +34,171 @@
 
 ##### Figure 4.1  OWASP Top 10 for Large Language Model Applications
 
-![OWASP Top10 for LLM Visual](images/GOV1_Fig_4_2_en-ZZ.png)
-##### Figure 4.2  OWASP Top 10 for Large Language Model Applications Visualized
+![OWASP Top10 für LLM Visuell](images/GOV1_Fig_4_2_en-ZZ.png)
+##### Abbildung 4.2 OWASP Top 10 für Large-Language-Model-Anwendungen visualisiert
 
 
-### OWASP Resources
+### OWASP-Ressourcen
 
-Using LLM solutions expands an organization's attack surface and presents new challenges, requiring special tactics and defenses. It also poses problems that are similar to known issues, and where there are already established cybersecurity procedures and mitigations. Integrating LLM cybersecurity with an organization's established cybersecurity controls, processes, and procedures allows an organization to reduce its vulnerability to threats.
-How they integrate is available at the [OWASP Integration Standards.](https://owasp.org/www-project-integration-standards/)
+Die Verwendung von LLM-Lösungen erweitert die Angriffsfläche einer Organisation und stellt neue Herausforderungen dar, die spezielle Taktiken und Verteidigungen erfordern. Es enthält auch Probleme, die analog zu bekannten Problemen sind, für die bereits etablierte Cybersecurity-Verfahren und Milderungsmaßnahmen existieren. Die Integration der LLM-Cybersicherheit in die etablierten Cybersicherheitskontrollen, -prozesse und -verfahren einer Organisation ermöglicht es einer Organisation, ihre Anfälligkeit für Bedrohungen zu verringern.
+Wie sie integriert werden, ist verfügbar unter den [OWASP-Integrationsstandards.](https://owasp.org/www-project-integration-standards/)
 
-#### OWASP Resource
+#### OWASP-Ressource
   [OWASP SAMM](https://owasp.org/www-project-samm/)
-#### Description
+#### Beschreibung
   Software Assurance Maturity Model
-#### Why it is Recommended & Where To Use It
-  Provides an effective and measurable way to analyze and improve an organization's secure development lifecycle. SAMM supports the complete software lifecycle. It is iterative and risk-driven, enabling organizations to identify and prioritize gaps in secure software development so resources for improving the process can be dedicated where efforts have the greatest improvement impact.
+#### Warum es empfohlen wird & Wo es verwendet wird
+  Es bietet eine effektive und messbare Möglichkeit, die sichere Entwicklung eines Unternehmens zu analysieren und zu verbessern. SAMM unterstützt den kompletten Software-Lebenszyklus. Es ist iterativ und risikobasiert, ermöglicht Unternehmen, Lücken in der sicheren Softwareentwicklung zu identifizieren und zu priorisieren, damit Ressourcen für die Verbesserung des Prozesses dort eingesetzt werden können, wo die Bemühungen den größten Verbesserungseffekt haben.
 
-#### OWASP Resource
+#### OWASP-Ressource
   [OWASP AI Exchange](https://owasp.org/www-project-ai-security-and-privacy-guide/owaspaiexchange.html)
   [OWASP Machine Learning Security Top 10](https://mltop10.info/)
-#### Description
-  OWASP Project to connect worldwide for an exchange on AI security, fostering standards alignment, and driving collaboration.
-  OWASP AI Exchange is the intake method for the OWASP AI Security and Privacy Guide
-  OWASP Machine Learning Security Top 10 security issues of machine learning systems
-#### Why it is Recommended & Where To Use It
-  This project includes the ML Top 10 and is a live working document that provides clear and actionable insights on designing, creating, testing, and procuring secure and privacy-preserving AI systems. It is the best OWASP resource for AI global regulatory and privacy information.
+#### Beschreibung
+  OWASP-Projekt zum weltweiten Austausch über AI-Sicherheit, Förderung der Standardausrichtung und Antrieb der Zusammenarbeit.
+  OWASP AI Exchange ist die Eingabemethode für den OWASP AI Security and Privacy Guide
+  OWASP Machine Learning Security Top 10 Sicherheitsprobleme von maschinellen Lernsystemen
+#### Warum es empfohlen wird & wo es verwendet wird
+  Dieses Projekt umfasst die ML Top 10 und ist ein lebendiges Arbeitsdokument, das klare und handlungsorientierte Einblicke in das Entwerfen, Erstellen, Testen und Beschaffen von sicheren und datenschutzorientierten AI-Systemen bietet. Es ist die beste OWASP-Ressource für globale regulatorische und Datenschutzinformationen zu KI.
 
-#### OWASP Resource
+#### OWASP-Ressource
    [Open Common Requirement Enumeration : OpenCRE](https://www.opencre.org/)
-#### Description
-  OpenCRE is the interactive content-linking platform for uniting security standards and guidelines into one overview.
-#### Why it is Recommended & Where To Use It
-  Use this site to search for standards. You can search by standard name or by control type.
+#### Beschreibung
+  Die OpenCRE ist die interaktive Content-Linking-Plattform zur Zusammenführung von Sicherheitsstandards und -richtlinien in einer Übersicht.
+#### Warum es empfohlen wird & wo es verwendet wird
+  Nutzen Sie diese Seite, um nach Standards zu suchen. Sie können nach Standardnamen oder nach Kontrolltyp suchen.
 
-#### OWASP Resource
+#### OWASP-Ressource
   [OWASP Threat Modeling](https://owasp.org/www-community/Threat_Modeling)
-#### Description
-  A structured, formal process for threat modeling of an application
-#### Why it is Recommended & Where To Use It
-  Learn everything about Threat Modeling which is a structured representation of all the information that affects the security of an application.
+#### Beschreibung
+  Ein strukturierter, formaler Prozess für die Bedrohungsmodellierung einer Anwendung
+#### Warum es empfohlen wird & wo es verwendet wird
+  Erfahren Sie alles über Bedrohungsmodellierung (Threat Modeling), das eine strukturierte Darstellung aller Informationen ist, die die Sicherheit einer Anwendung beeinflussen.
 
-#### OWASP Resource
+#### OWASP-Ressource
   [OWASP CycloneDX](https://owasp.org/www-project-cyclonedx/)
-#### Description
-  OWASP CycloneDX is a full-stack Bill of Materials (BOM) standard that provides advanced supply chain capabilities for cyber risk reduction.
-#### Why it is Recommended & Where To Use It
-  Modern software is assembled using third-party and open source components. They are glued together in complex and unique ways and integrated with original code to achieve the desired functionality. An SBOM provides an accurate inventory of all components which enables organizations to identify risk, allows for greater transparency, and enables rapid impact analysis.
-  [EO 14028](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1) provided minimum requirements for SBOM for federal systems.
+#### Beschreibung
+  OWASP CycloneDX ist ein vollständiger Bill-of-Materials (BOM) Standard, der erweiterte Lieferkettenfähigkeiten für die Reduzierung von Cyberrisiken bietet.
+#### Warum es empfohlen wird & Wo es verwendet wird
+  Moderne Software wird unter Verwendung von Drittanbieter- und Open-Source-Komponenten zusammengestellt. Sie werden auf komplexe und einzigartige Weise zusammengefügt und mit Originalcode integriert, um die gewünschte Funktionalität zu erreichen. Ein SBOM bietet ein genaues Inventar aller Komponenten, das Organisationen ermöglicht, Risiken zu identifizieren, größere Transparenz zu ermöglichen und schnelle Auswirkungsanalysen durchzuführen.
+  [EO 14028](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1) stellte Mindestanforderungen für SBOM für föderale Systeme bereit.
 
-#### OWASP Resource
+#### OWASP-Ressource
   [OWASP Software Component Verification Standard (SCVS)](https://scvs.owasp.org/)
-#### Description
-  A community-driven effort to establish a framework for identifying activities, controls, and best practices to identify and reduce risk in a software supply chain.
-#### Why it is Recommended & Where To Use It
-  Use SCVS to develop a common set of activities, controls, and best practices that can reduce risk in a software supply chain and identify a baseline and path to mature software supply chain vigilance.
+#### Beschreibung
+  Eine gemeinschaftlich getriebene Anstrengung, um ein Rahmenwerk für die Identifizierung von Aktivitäten, Kontrollen und Best Practices zur Identifizierung und Reduzierung von Risiken in einer Software-Lieferkette zu etablieren.
+#### Warum es empfohlen wird & wo es verwendet wird
+  Nutzen Sie SCVS, um einen gemeinsamen Satz von Aktivitäten, Kontrollen und Best Practices zu entwickeln, die das Risiko in einer Software-Lieferkette reduzieren können und eine Basislinie und einen Weg zur Reife der Wachsamkeit der Software-Lieferkette identifizieren.
 
-#### OWASP Resource
+#### OWASP-Ressource
   [OWASP API Security Project](https://owasp.org/www-project-api-security/)
-#### Description
-  API Security focuses on strategies and solutions to understand and mitigate the unique vulnerabilities and security risks of Application Programming Interfaces (APIs).
-#### Why it is Recommended & Where To Use It
-  APIs are a foundational element of connecting applications and mitigating misconfigurations or vulnerabilities is mandatory to protect users and organizations. Use for security testing and red teaming the build and production environments.
+#### Beschreibung
+  API-Sicherheit konzentriert sich auf Strategien und Lösungen, um die einzigartigen Schwachstellen und Sicherheitsrisiken von Application Programming Interfaces (APIs) zu verstehen und zu mildern.
+#### Warum es empfohlen wird & wo es verwendet wird
+  APIs sind ein grundlegendes Element der Verbindung von Anwendungen, und das Reduzieren von Fehlkonfigurationen oder Schwachstellen ist obligatorisch, um Benutzer und Organisationen zu schützen. Verwenden Sie es für Sicherheitstests und Red Teaming der Build- und Produktionsumgebungen.
 
-#### OWASP Resource
-  [OWASP Top 10 CI/CD Security Risks](https://owasp.org/www-project-top-10-ci-cd-security-risks/)
-#### Description
-  Helps defenders identify focus areas for securing their CI/CD ecosystem.
-#### Why it is Recommended & Where To Use It
-  CI/CD environments, processes, and systems are the ecosystem of modern software organizations. They deliver code from an engineer's workstation to production. They have their unique attack surface and a frequent attack target. Use for security testing and red teaming the build and production environments. 
+#### OWASP-Ressource
+  [OWASP Top 10 CI/CD Sicherheitsrisiken](https://owasp.org/www-project-top-10-ci-cd-security-risks/)
+#### Beschreibung
+  Hilft Verteidigern, Fokusbereiche für die Sicherung ihres CI/CD-Ökosystems zu identifizieren.
+#### Warum es empfohlen wird & wo es verwendet wird
+  CI/CD-Umgebungen, -Prozesse und -Systeme sind das Ökosystem moderner Softwareorganisationen. Sie liefern Code vom Entwicklungsrechner eines Ingenieurs bis zur Produktion. Sie haben ihre eigene einzigartige Angriffsfläche und sind ein häufiges Angriffsziel. Verwenden Sie es für Sicherheitstests und Red Teaming der Build- und Produktionsumgebungen.
 
-#### OWASP Resource
+#### OWASP-Ressource
   [OWASP Application Security Verification Standard ASVS](https://owasp.org/www-project-application-security-verification-standard/)
-#### Description
-  Application Security Verification Standard (ASVS) Project provides a basis for testing web application technical security controls and also provides developers with a list of requirements for secure development.
-#### Why it is Recommended & Where To Use It
-  Cookbook for web application security requirements, security testing, and metrics. Use to establish security user stories and security use case release testing.
+#### Beschreibung
+  Das Application-Security-Verification-Standard(ASVS) Projekt bietet eine Grundlage für das Testen von technischen Sicherheitskontrollen von Webanwendungen und bietet Entwicklern auch eine Liste von Anforderungen für die sichere Entwicklung.
+#### Warum es empfohlen wird & wo es verwendet wird
+  Ein Kochbuch für Webanwendungssicherheitsanforderungen, Sicherheitstests und Metriken. Verwenden Sie es, um Sicherheits-User-Stories und Sicherheits-Use-Case-Release-Tests zu etablieren.
 
-#### OWASP Resource
+#### OWASP-Ressource
   [OWASP Threat and Safeguard Matrix (TaSM)](https://owasp.org/www-project-threat-and-safeguard-matrix/)
-#### Description
-  An action oriented view to safeguard and enable the business
-#### Why it is Recommended & Where To Use It
-  This matrix allows a company to overlay its major threats with the NIST Cyber Security Framework Functions (Identify, Protect, Detect, Respond, & Recover) to build a robust security plan. Use it as a dashboard to track and report on security across the organization.
+#### Beschreibung
+  Eine aktionsorientierte Sichtweise zum Schutz und Ermöglichen der Geschäftsabläufe.
+#### Warum es empfohlen wird & wo es verwendet wird
+  Diese Matrix ermöglicht es einem Unternehmen, seine Hauptbedrohungen mit den NIST Cyber Security Framework-Funktionen (Identifizieren, Schützen, Erkennen, Reagieren & Wiederherstellen) zu überlagern, um einen robusten Sicherheitsplan zu erstellen. Verwenden Sie es als Dashboard, um die Sicherheit im gesamten Unternehmen zu verfolgen und zu berichten.
 
-#### OWASP Resource
+#### OWASP-Ressource
    [Defect Dojo](https://www.defectdojo.com/)
-#### Description
-  An open-source vulnerability management tool that streamlines the testing process by offering templating, report generation, metrics, and baseline self-service tools.
-#### Why it is Recommended & Where To Use It
-  Use Defect Dojo to reduce the time for logging vulnerabilities with templates for vulnerabilities, imports for common vulnerability scanners, report generation, and metrics.
+#### Beschreibung
+  Ein Open-Source-Schwachstellenmanagement-Tool, das den Testprozess durch Vorlagen, Berichtsgenerierung, Metriken und Baseline-Selbstbedienungswerkzeuge vereinfacht.
+#### Warum es empfohlen wird & wo es verwendet wird
+  Verwenden Sie das Defect Dojo, um die Zeit für das Protokollieren von Schwachstellen mit Vorlagen für Schwachstellen, Importen für gängige Schwachstellenscanner, Berichtsgenerierung und Metriken zu reduzieren.
 
 
-### MITRE Resources
+### MITRE-Ressourcen
 
-The increased frequency of LLM threats emphasizes the value of a resilience-first approach to defending an organization's attack surface. Existing TTPS is combined with new attack surfaces and capabilities in LLM Adversary threats and mitigations. MITRE maintains a well-established and widely accepted mechanism for coordinating opponent tactics and procedures based on real-world observations.
+Die zunehmende Häufigkeit von LLM-Bedrohungen zeigt den Wert eines Resilienz-first-Ansatzes zur Verteidigung der Angriffsfläche einer Organisation. Bestehende TTPs werden mit neuen Angriffsflächen und Fähigkeiten in LLM-Gegnerbedrohungen und -milderungen kombiniert. MITRE unterhält einen gut etablierten und weit akzeptierten Mechanismus zur Koordinierung von Gegnertaktiken und -verfahren auf der Grundlage von Beobachtungen aus der realen Welt.
 
-Coordination and mapping of an organization's LLM Security Strategy to MITRE ATT&CK and MITRE ATLAS allows an organization to determine where LLM Security is covered by current processes such as API Security Standards or where security holes exist.
+Die Koordination und Kartierung der LLM-Sicherheitsstrategie einer Organisation auf MITRE ATT&CK und MITRE ATLAS ermöglicht es einer Organisation zu entdecken, wo die LLM-Sicherheit durch aktuelle Prozesse wie API-Sicherheitsstandards abgedeckt ist oder wo Sicherheitslücken bestehen.
 
-MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) is a framework, collection of data matrices, and assessment tool that was made by the MITRE Corporation to help organizations figure out how well their cybersecurity works across their entire digital attack surface and find holes that had not been found before. It is a knowledge repository that is used all over the world. The MITRE ATT&CK matrix contains a collection of strategies used by adversaries to achieve a certain goal. In the ATT&CK Matrix, these objectives are classified as tactics. The objectives are outlined in attack order, beginning with reconnaissance and progressing to the eventual goal of exfiltration or impact.
+MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) ist ein Rahmenwerk, eine Sammlung von Datenmatrizen und ein Bewertungstool, das von der MITRE Corporation entwickelt wurde, um Organisationen zu helfen, herauszufinden, wie gut ihre Cybersicherheit über ihre gesamte digitale Angriffsfläche funktioniert und zuvor nicht entdeckte Lücken zu finden. Es ist ein Wissensrepository, das weltweit verwendet wird. Die MITRE ATT&CK-Matrix enthält eine Sammlung von Strategien, die von Gegnern verwendet werden, um ein bestimmtes Ziel zu erreichen. In der ATT&CK-Matrix werden diese Ziele als Taktiken klassifiziert. Die Ziele sind in Angriffsreihenfolge dargestellt, beginnend mit Aufklärung und fortschreitend bis zum letztendlichen Ziel der Exfiltration oder Wirkung.
 
-MITRE ATLAS, which stands for "Adversarial Threat Landscape for Artificial Intelligence Systems," is a knowledge base that is based on real-life examples of attacks on machine learning (ML) systems by bad actors. ATLAS is based on the MITRE ATT&CK architecture, and its tactics and procedures complement those found in ATT&CK.
+MITRE ATLAS, das für "Adversarial Threat Landscape for Artificial Intelligence Systems" steht, ist eine Wissensbasis, die auf realen Beispielen von Angriffen auf maschinelle Lernsysteme (ML) durch böswillige Akteure basiert. ATLAS basiert auf der MITRE ATT&CK-Architektur, und seine Taktiken und Verfahren ergänzen die in ATT&CK gefundenen.
 
-#### MITRE Resource
+#### MITRE-Ressource
   [MITRE ATT&CK](https://attack.mitre.org/)
-#### Description
-  Knowledge base of adversary tactics and techniques based on real-world observations
-#### Why it is Recommended & Where To Use It
-  The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies. Map existing controls within the organization to adversary tactics and techniques to identify gaps or areas to test.
+#### Beschreibung
+  Wissensbasis zu Gegnertaktiken und -techniken basierend auf Beobachtungen aus der realen Welt
+#### Warum es empfohlen wird & wo es verwendet wird
+  Die ATT&CK-Wissensbasis wird als Grundlage für die Entwicklung spezifischer Bedrohungsmodelle und Methodologien verwendet. Kartieren Sie bestehende Kontrollen innerhalb der Organisation auf Gegnertaktiken und -techniken, um Lücken oder Bereiche zum Testen zu identifizieren.
 
-#### MITRE Resource
-  [MITRE AT&CK Workbench](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/attck-workbench/)
-#### Description
-  Create or extend ATT&CK data in a local knowledge base
-#### Why it is Recommended & Where To Use It
-  Host and manage a customized copy of the ATT&CK knowledge base. This local copy of the ATT&CK knowledge base can be extended with new or updated techniques, tactics, mitigation groups, and software that is specific to your organization.
+#### MITRE-Ressource
+  [MITRE ATT&CK Workbench](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/attck-workbench/)
+#### Beschreibung
+  Erstellen oder erweitern Sie ATT&CK-Daten in einer lokalen Wissensdatenbank
+#### Warum es empfohlen wird & wo es verwendet wird
+  Verwalten und hosten Sie eine angepasste Kopie der ATT&CK-Wissensdatenbank. Diese lokale Kopie der ATT&CK-Wissensbasis kann mit neuen oder aktualisierten Techniken, Taktiken, Milderungsgruppen und Software erweitert werden, die spezifisch für Ihre Organisation sind.
 
-#### MITRE Resource
+#### MITRE-Ressource
    [MITRE ATLAS](https://atlas.mitre.org/)
-#### Description
-  MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems) is a knowledge base of adversary tactics, techniques, and case studies for machine learning (ML) systems based on real-world observations, demonstrations from ML red teams and security groups, and the state of the possible from academic research
-#### Why it is Recommended & Where To Use It
-  Use it to map known ML vulnerabilities and map checks and controls for proposed projects or existing systems.
+#### Beschreibung
+  MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems) ist eine Wissensdatenbank zu Gegnertaktiken, -techniken und Fallstudien für maschinelle Lernsysteme (ML) basierend auf Beobachtungen aus der realen Welt, Demonstrationen von ML-Red-Teams und Sicherheitsgruppen sowie dem Stand des Möglichen aus der akademischen Forschung
+#### Warum es empfohlen wird & wo es verwendet wird
+  Verwenden Sie es, um bekannte ML-Schwachstellen zu kartieren und Checks und Kontrollen auf vorgeschlagene Projekte oder bestehende Systeme abzubilden.
 
-#### MITRE Resource
+#### MITRE-Ressource
   [MITRE ATT&CK Powered Suit](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/attack-powered-suit/)
-#### Description
-  ATT&CK Powered Suit is a browser extension that puts the MITRE ATT&CK knowledge base at your fingertips.
-#### Why it is Recommended & Where To Use It
-  Add to your browser to quickly search for tactics, techniques, and more without disrupting your workflow.
+#### Beschreibung
+  ATT&CK Powered Suit ist eine Browsererweiterung, die die MITRE ATT&CK-Wissensbasis in Reichweite bringt.
+#### Warum es empfohlen wird & Wo es verwendet wird
+  Fügen Sie sie Ihrem Browser hinzu, um schnell nach Taktiken, Techniken und mehr zu suchen, ohne Ihren Workflow zu unterbrechen.
 
-#### MITRE Resource
+#### MITRE-Ressource
   [The Threat Report ATT&CK Mapper (TRAM)](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/threat-report-attck-mapper-tram/)
-#### Description
-  Automates TTP Identification in CTI Reports
-#### Why it is Recommended & Where To Use It
-  Mapping TTPs found in CTI reports to MITRE ATT&CK is difficult, error prone, and time-consuming. TRAM uses LLMs to automate this process for the 50 most common techniques. Supports Juypter notebooks.
+#### Beschreibung
+  Automatisiert die TTP-Identifizierung in CTI-Berichten
+#### Warum es empfohlen wird & Wo es verwendet wird
+  Das Mapping von TTPs, die in CTI-Berichten gefunden wurden, auf MITRE ATT&CK ist schwierig, fehleranfällig und zeitaufwändig. TRAM verwendet LLMs, um diesen Prozess für die 50 häufigsten Techniken zu automatisieren. Unterstützt Juypter-Notebooks.
 
-#### MITRE Resource
+#### MITRE-Ressource
    [Attack Flow v2.1.0](https://center-for-threat-informed-defense.github.io/attack-flow/)
-#### Description
-  Attack Flow is a language for describing how cyber adversaries combine and sequence various offensive techniques to achieve their goals.
-#### Why it is Recommended & Where To Use It
-  Attack Flow helps visualize how an attacker uses a technique, so defenders and leaders understand how adversaries operate and improve their defensive posture.
+#### Beschreibung
+  Attack Flow ist eine Sprache zur Beschreibung, wie Cyber-Gegner verschiedene offensive Techniken kombinieren und sequenzieren, um ihre Ziele zu erreichen.
+#### Warum es empfohlen wird & Wo es verwendet wird
+  Attack Flow hilft zu visualisieren, wie ein Angreifer eine Technik verwendet, damit Verteidiger und Führungskräfte verstehen, wie Gegner operieren, und ihre defensive Position verbessern.
 
-#### MITRE Resource
+#### MITRE-Ressource
   [MITRE Caldera](https://caldera.mitre.org/)
-#### Description
-  A cyber security platform (framework) designed to easily automate adversary emulation, assist manual red teams, and automate incident response.
-#### Why it is Recommended & Where To Use It
-  Plugins are available for Caldera that help to expand the core capabilities of the framework and provide additional functionality, including agents, reporting, collections of TTPs, and others.
-  [Here is the plugin library.](https://caldera.readthedocs.io/en/latest/Plugin-library.html)
+#### Beschreibung
+  Eine Cybersecurity-Plattform (Framework), die entwickelt wurde, um die Emulation von Gegnern leicht zu automatisieren, manuellen Red Teams zu helfen und die Reaktion auf Vorfälle zu automatisieren.
+#### Warum es empfohlen wird & Wo es verwendet wird
+  Für Caldera sind Plugins verfügbar, die die Kernfähigkeiten des Frameworks erweitern und zusätzliche Funktionalitäten bieten, einschließlich Agenten, Berichterstattung, Sammlungen von TTPs und anderen.
+  [Hier ist die Plugin-Bibliothek.](https://caldera.readthedocs.io/en/latest/Plugin-library.html)
 
-#### MITRE Resource
-  [CALDERA plugin: Arsenal](https://www.mitre.org/news-insights/news-release/microsoft-and-mitre-create-tool-help-security-teams-prepare-attacks)
-#### Description
-  A plugin developed for adversary emulation of AI-enabled systems.
-#### Why it is Recommended & Where To Use It
-  This plugin provides TTPs defined in MITRE ATLAS to interface with CALDERA.
+#### MITRE-Ressource
+  [CALDERA-Plugin: Arsenal](https://www.mitre.org/news-insights/news-release/microsoft-and-mitre-create-tool-help-security-teams-prepare-attacks)
+#### Beschreibung
+  Ein Plugin, das für die Gegneremulation von KI-fähigen Systemen entwickelt wurde.
+#### Warum es empfohlen wird & Wo es verwendet wird
+  Dieses Plugin bietet in MITRE ATLAS definierte TTPs, um mit CALDERA zu interagieren.
 
-#### MITRE Resource
+#### MITRE-Ressource
   [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)
-#### Description
-  Library of tests mapped to the MITRE ATT&CK framework.
-#### Why it is Recommended & Where To Use It
-  Use to validate and test controls in an environment. Security teams can use Atomic Red Team to test controls.
-  You can execute atomic tests directly from the command line; no installation is required.
+#### Beschreibung
+  Bibliothek von Tests, die dem MITRE ATT&CK-Framework zugeordnet sind.
+#### Warum es empfohlen wird & Wo es verwendet wird
+  Verwenden Sie es, um Kontrollen in einer Umgebung zu validieren und zu testen. Sicherheitsteams können Atomic Red Team verwenden, um Kontrollen zu testen.
+  Sie können atomare Tests direkt von der Kommandozeile aus ausführen; keine Installation ist erforderlich.
 
-#### MITRE Resource
-  [MITRE CTI Blueprints](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/cti-blueprints/)
-#### Description
-  Automates Cyber Threat Intelligence reporting.
-#### Why it is Recommended & Where To Use It
-  CTI Blueprints helps Cyber Threat Intelligence (CTI) analysts create high-quality, actionable reports more consistently and efficiently
-
-
-
-### AI Vulnerability Repositories
-
-[AI Incident Database](https://incidentdatabase.ai/)
-  A repository of articles about different times AI has failed in real-world applications and is maintained by a college research group and crowds sourced.
-[OECD AI Incidents Monitor (AIM)](https://oecd.ai/en/incidents)
-  Offers an accessible starting point for comprehending the landscape of AI-related challenges.
-
-
-### Leading Companies Tracking AI Model Vulnerabilities
-
-[Huntr Bug Bounty : ProtectAI](https://huntr.com/)
-  Bug bounty platform for AI/ML
-[AI Vulnerability Database (AVID) : Garak](https://avidml.gitbook.io/)
-  Database of model vulnerabilities
-[AI Risk Database: Robust Intelligence](https://airisk.io/)
-  Database of model vulnerabilities
-[LVE Repository](https://lve-project.org/blog/launching-the-lve-project.html)
-  Open LLM Vulnerability and Exposures Repository
-
-
-### AI Procurement Guidance
-
-[World Economic Forum: Adopting AI Responsibly: Guidelines for Procurement of AI Solutions by the Private Sector: Insight Report June 2023](https://www.weforum.org/publications/adopting-ai-responsibly-guidelines-for-procurement-of-ai-solutions-by-the-private-sector/)
-  The standard benchmarks and assessment criteria for procuring Artificial systems are in early development. This procurement guidelines provide organizations with a baseline of considerations for the end-to-end procurement process.
-
-  Use this guidance to augment an organization's existing Third Party Risk Supplier and Vendor procurement process. 
-
+#### MITRE-Ressource
+  [MITRE CTI-Blueprints](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our

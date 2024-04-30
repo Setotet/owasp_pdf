@@ -1,161 +1,161 @@
-## Checklist
+## Checkliste
 
-### Adversarial Risk
+### Risiko durch Gegner
 
-Adversarial Risk includes competitors and attackers.
+Das Risiko durch Gegner enthält sowohl Konkurrenten als auch Angreifer.
 
-- Scrutinize how competitors are investing in artificial intelligence. Although there are risks in AI adoption, there are also business benefits that may impact future market positions.
-- Investigate the impact of current controls, such as password resets, which use voice recognition which may no longer provide the appropriate defensive security from new GenAI enhanced attacks.
-- Update the Incident Response Plan and playbooks for GenAI enhanced attacks and AIML specific incidents. 
+- Untersuchen Sie, wie Konkurrenten in künstliche Intelligenz investieren. Obwohl es Risiken bei der Einführung von KI gibt, gibt es auch geschäftliche Vorteile, die zukünftige Marktpositionen beeinflussen können.
+- Untersuchen Sie die Auswirkungen auf aktueller Kontrollmechanismen, wie etwa Passwortzurücksetzungen über Spracherkennung, die möglicherweise nicht mehr die angemessene Abwehr gegen neue von GenAI verstärkte Angriffe bieten.
+- Aktualisieren Sie den Incident-Response-Plan und die Playbooks für von GenAI verstärkte Angriffe und spezifische Vorfälle in Bezug auf KI/ML.
 
-### Threat Modeling
+### Bedrohungsmodellierung
 
-Threat modeling is highly recommended to identify threats and examine processes and security defenses. Threat modeling is a set of systematic, repeatable processes that enable making reasonable security decisions for applications, software, and systems. Threat modeling for GenAI accelerated attacks and before deploying LLMs is the most cost effective way to Identify and mitigate risks, protect data, protect privacy, and ensure a secure, compliant integration within the business.
+Bedrohungsmodellierung wird dringend empfohlen, um Bedrohungen zu identifizieren, Prozesse und Sicherheitsverteidigungen zu untersuchen. Bedrohungsmodellierung ist eine Reihe systematischer, wiederholbarer Vorgehensweisen, die es ermöglichen, angemessene Sicherheitsentscheidungen für Anwendungen, Software und Systeme zu treffen. Bedrohungsmodellierung für durch GenAI beschleunigte Angriffe vor dem Einsatz von LLMs ist der kosteneffektivste Weg, um Risiken zu identifizieren und zu mindern, Daten und Privatsphäre zu schützen und eine sichere, konforme Integration in die Geschäftsabläufe zu gewährleisten.
 
-- How will attackers accelerate exploit attacks against the organization, employees, executives, or users? Organizations should anticipate "hyper-personalized" attacks at scale using Generative AI. LLM-assisted Spear Phishing attacks are now exponentially more effective, targeted, and weaponized for an attack.
-- How could GenAI be used for attacks on the business's customers or clients through spoofing or GenAI generated content?
-- Can the business detect and neutralize harmful or malicious inputs or queries to LLM solutions? 
-- Can the business safeguard connections with existing systems and databases with secure integrations at all LLM trust boundaries?
-- Does the business have insider threat mitigation to prevent misuse by authorized users?
-- Can the business prevent unauthorized access to proprietary models or data to protect Intellectual Property?
-- Can the business prevent the generation of harmful or inappropriate content with automated content filtering? 
+- Wie werden Gegner Angriffe gegen die Organisation, Mitarbeiter, Führungskräfte oder Nutzer beschleunigen? Organisationen sollten "hyper-personalisierte" Angriffe in großem Maßstab mit generativer KI erwarten. LLM-unterstützte Spear-Phishing-Angriffe sind jetzt exponentiell effektiver, gezielter und besser für einen Angriff ausgerüstet.
+- Wie könnte GenAI für Angriffe auf die Kunden oder Klienten des Geschäfts durch Fälschung oder von GenAI generierte Inhalte verwendet werden?
+- Kann die Organisation schädliche oder bösartige Eingaben oder Anfragen an LLM-Lösungen erkennen und neutralisieren?
+- Kann die Organisation Verbindungen mit bestehenden Systemen und Datenbanken mit sicheren Integrationen an allen Vertrauensgrenzen der LLMs schützen?
+- Verfügt die Organisation über Maßnahmen zur Minderung von Insider-Bedrohungen, um Missbrauch durch autorisierte Benutzer zu verhindern?
+- Kann die Organisation unbefugten Zugriff auf proprietäre Modelle oder Daten verhindern, um geistiges Eigentum zu schützen?
+- Kann die Organisation die Erzeugung von schädlichen oder unangemessenen Inhalten mit automatischer Inhaltsfilterung verhindern?
 
-### AI Asset Inventory
+### KI-Asset-Inventar
 
-An AI asset inventory should apply to both internally developed and external or third-party solutions.
+Ein KI-Asset-Inventar sollte sowohl für intern entwickelte als auch für externe oder Drittanbieterlösungen gelten.
 
-- Catalog existing AI services, tools, and owners. Designate a tag in asset management for specific inventory.
-- Include AI components in the Software Bill of Material (SBOM), a comprehensive list of all the software components, dependencies, and metadata associated with applications.
-- Catalog AI data sources and the sensitivity of the data (protected, confidential, public)
-- Establish if pen testing or red teaming of deployed AI solutions is required to determine the current attack surface risk.
-- Create an AI solution onboarding process.
-- Ensure skilled IT admin staff is available either internally or externally, following SBoM requirements.
+- Katalogisieren Sie bestehende KI-Dienste, Tools und deren Eigentümer. Weisen Sie eine Kennzeichnung im Asset-Management für spezifische Inventare zu.
+- Schließen Sie KI-Komponenten in die Software Bill of Material (SBOM) ein, eine umfassende Liste aller Softwarekomponenten, Abhängigkeiten und Metadaten, die mit Anwendungen verbunden sind.
+- Katalogisieren Sie KI-Datenquellen und die Sensibilität der Daten (geschützt, vertraulich, öffentlich)
+- Stellen Sie fest, ob Pen-Tests oder Red-Teaming für eingesetzten KI-Lösungen erforderlich sind, um das aktuelle Angriffsrisiko zu bestimmen.
+- Erstellen Sie einen Onboarding-Prozess für KI-Lösungen.
+- Stellen Sie sicher, dass qualifiziertes IT-Admin-Personal entweder intern oder extern verfügbar ist, gemäß den Anforderungen aus der SBOM.
 
-### AI Security and Privacy Training
+### KI-Sicherheits- und Datenschutzschulung
 
-- Actively engage with employees to understand and address concerns with planned LLM initiatives.
--  Establish a culture of open, and transparent communication on the organization's use of predictive or generative AI within the organization process, systems, employee management and support, and customer engagements and how its use is governed, managed, and risks addressed. 
-- Train all users on ethics, responsibility, and legal issues such as warranty, license, and copyright.
-- Update security awareness training to include GenAI related threats. Voice cloning and image cloning, as well as in anticipation of increased spear phishing attacks
-- Any adopted GenAI solutions should include training for both DevOps and cybersecurity for the deployment pipeline to ensure AI safety and security assurances.
+- Engagieren Sie sich aktiv mit Mitarbeitern, um Bedenken bezüglich geplanter LLM-Initiativen zu verstehen und anzugehen.
+- Etablieren Sie eine Kultur offener und transparenter Kommunikation über den Einsatz von vorhersagender oder generativer KI innerhalb der Organisationsprozesse, Systeme, Mitarbeitermanagement und -unterstützung sowie Kundenengagements und wie deren Einsatz geregelt, verwaltet und deren Risiken angegangen werden.
+- Schulen Sie alle Benutzer in Ethik, Verantwortung und rechtlichen Fragen wie Garantie, Lizenz und Urheberrecht.
+- Aktualisieren Sie das Security-Awareness-Training, um GenAI-bezogene Bedrohungen wie Stimmklonung und Bildklonung und die Erwartung erhöhter Spear-Phishing-Angriffe einzuschließen.
+- Jede eingeführte GenAI-Lösung sollte Schulungen sowohl für DevOps als auch für Cybersicherheit für die Bereitstellungspipeline umfassen, um KI-Sicherheit und -Sicherheitszusagen zu gewährleisten.
 
-### Establish Business Cases
+### Business-Cases etablieren
 
-Solid business cases are essential to determining the business value of any proposed AI solution, balancing risk and benefits, and evaluating and testing return on investment. There are an enormous number of potential use cases; a few examples are provided.
+Solide Business-Cases sind wesentlich, um den Geschäftswert jeder vorgeschlagenen KI-Lösung zu bestimmen, Risiko und Nutzen abzuwägen sowie die Rendite von Investitionen zu bewerten und zu testen. Es gibt eine enorme Anzahl potenzieller Anwendungsfälle:
 
-- Enhance customer experience
-- Better operational efficiency
-- Better knowledge management
-- Enhanced innovation
-- Market Research and Competitor Analysis
-- Document creation, translation, summarization, and analysis 
+- Verbesserung der Kundenerfahrung
+- Verbesserte betriebliche Effizienz
+- Besseres Wissensmanagement
+- Verbesserte Innovation
+- Marktforschung und Konkurrenzanalyse
+- Dokumentenerstellung, Übersetzung, Zusammenfassung und Analyse
 
 ### Governance
 
-Corporate governance in LLM is needed to provide organizations with transparency and accountability. Identifying AI platform or process owners who are potentially familiar with the technology or the selected use cases for the business is not only advised but also necessary to ensure adequate reaction speed that prevents collateral damages to well established enterprise digital processes.
+Corporate Governance wird bei LLMs notwendig, um Organisationen Transparenz und Rechenschaftsfähigkeit zu bieten. Die Identifizierung von KI-Plattform- oder Prozesseigentümern, die möglicherweise mit der Technologie oder den ausgewählten Anwendungsfällen für das Geschäft vertraut sind, ist nicht nur ratsam, sondern auch notwendig, um eine ausreichende Reaktionsgeschwindigkeit zu gewährleisten, die Kollateralschäden an gut etablierten digitalen Unternehmensprozessen verhindert.
 
-- Establish the organization’s AI RACI chart (who is responsible, who is accountable, who should be consulted, and who should be informed)
-- Document and assign AI risk, risk assessments, and governance responsibility within the organization.
-- Establish data management policies, including technical enforcement, regarding data classification and usage limitations. Models should only leverage data classified for the minimum access level of any user of the system. For example, update the data protection policy to emphasize not to input protected or confidential data into nonbusiness-managed tools.
-- Create an AI Policy supported by established policy (e.g., standard of good conduct, data protection, software use)
-- Publish an acceptable use matrix for various generative AI tools for employees to use.
-- Document the sources and management of any data that the organization uses from the generative LLM models. 
+- Etablieren Sie ein KI-RACI-Diagramm der Organisation (wer ist verantwortlich, wer ist rechenschaftspflichtig, wer sollte konsultiert und wer sollte informiert werden)
+- Dokumentieren und ordnen Sie KI-Risiko, Risikobewertungen und Governance-Verantwortung innerhalb der Organisation zu.
+- Etablieren Sie Datenmanagementrichtlinien bezüglich Datenklassifizierung und Nutzungseinschränkungen, einschließlich ihrer technischer Durchsetzung. Modelle sollten nur Daten nutzen, die für das Mindestzugriffsniveau eines Benutzers des Systems klassifiziert sind. Aktualisieren Sie zum Beispiel die Datenschutzrichtlinie, damit keine geschützten oder vertraulichen Daten in nicht geschäftlich verwaltete Tools eingegeben werden.
+- Erstellen Sie eine KI-Richtlinie, die durch etablierte Richtlinien unterstützt wird (z. B. Standard guter Führung, Datenschutz, Softwarenutzung)
+- Veröffentlichen Sie eine Matrix akzeptierbarer Nutzung für die verschiedenen generativen KI-Tools für Ihre Mitarbeiter.
+- Dokumentieren Sie die Quellen und das Management aller Daten, die die Organisation von generativen LLM-Modellen verwendet.
 
-### Legal
+### Rechtlich
 
-Many of the legal implications of AI are undefined and potentially very costly. An IT, security, and legal partnership is critical to identifying gaps and addressing obscure decisions.
+Viele der rechtlichen Implikationen von KI sind undefiniert und potenziell sehr kostspielig. Eine Partnerschaft von IT-, Sicherheits- und Legal ist entscheidend, um Lücken zu identifizieren und ungeklärte Entscheidungen anzugehen.
 
-- Confirm product warranties are clear in the product development stream to assign who is responsible for product warranties with AI.
-- Review and update existing terms and conditions for any GenAI considerations.
-- Review AI EULA agreements. End-user license agreements for GenAI platforms are very different in how they handle user prompts, output rights and ownership, data privacy, compliance, liability, privacy, and limits on how output can be used.
-- Organizations EULA for customers, Modify end-user agreements to prevent the organization from incurring liabilities related to plagiarism, bias propagation, or intellectual property infringement through AI-generated content.
-- Review existing AI-assisted tools used for code development. A chatbot's ability to write code can threaten a company's ownership rights to its product if a chatbot is used to generate code for the product. For example, it could call into question the status and protection of the generated content and who holds the right to use the generated content.
-- Review any risks to intellectual property. Intellectual property generated by a chatbot could be in jeopardy if improperly obtained data was used during the generative process, which is subject to copyright, trademark, or patent protection. If AI products use infringing material, it creates a risk for the outputs of the AI, which may result in intellectual property infringement.
-- Review any contracts with indemnification provisions. Indemnification clauses try to put the responsibility for an event that leads to liability on the person who was more at fault for it or who had the best chance of stopping it. Establish guardrails to determine whether the provider of the AI or its user caused the event, giving rise to liability.
-- Review liability for potential injury and property damage caused by AI systems.
-- Review insurance coverage. Traditional (D&O) liability and commercial general liability insurance policies are likely insufficient to fully protect AI use.
-- Identify any copyright issues. Human authorship is required for copyright. An organization may also be liable for plagiarism, propagation of bias, or intellectual property infringement if LLM tools are misused.
-- Ensure agreements are in place for contractors and appropriate use of AI for any development or provided services.
-- Restrict or prohibit the use of generative AI tools for employees or contractors where enforceable rights may be an issue or where there are IP infringement concerns.
-- Assess and AI solutions used for employee management or hiring could result in disparate treatment claims or disparate impact claims.
-- Make sure the AI solutions do not collect or share sensitive information without proper consent or authorization.
+- Stellen Sie sicher, dass Produktgarantien im Produktentwicklungsfluß klar zugewiesen sind, um festzulegen, wer für Produktgarantien mit KI verantwortlich ist.
+- Überprüfen und aktualisieren Sie bestehende Geschäftsbedingungen für jegliche GenAI-Überlegungen.
+- Überprüfen Sie KI-Endbenutzer-Lizenzvereinbarungen. Endbenutzer-Lizenzvereinbarungen für GenAI-Plattformen unterscheiden sich sehr darin, wie sie Benutzeraufforderungen, Ausgaberechte und -eigentum, Datenschutz, Compliance, Haftung, Privatsphäre und Einschränkungen bezüglich der Nutzung von Ausgaben handhaben.
+- Passen Sie den Endbenutzer-Lizenzvertrag der Organisation für Kunden an, um zu verhindern, dass die Organisation Haftungen im Zusammenhang mit Plagiaten, Bias-Verbreitung oder Verletzung des geistigen Eigentums durch KI-generierte Inhalte übernimmt.
+- Prüfen Sie bestehende KI-unterstützte Tools, die für die Codeentwicklung verwendet werden. Die Fähigkeit eines Chatbots, Code zu schreiben, kann die Eigentumsrechte eines Unternehmens an seinem Produkt gefährden. Zum Beispiel könnte dies den Status und Schutz des generierten Inhalts und die Rechte, diesen generierten Inhalt zu nutzen, in Frage stellen.
+- Prüfen Sie alle Risiken für das geistige Eigentum. Geistiges Eigentum, das von einem Chatbot generiert wurde, könnte gefährdet sein, wenn während des generativen Prozesses unrechtmäßig erhaltene Daten verwendet wurden, die urheberrechtlich, markenrechtlich oder patentrechtlich geschützt sind. Wenn die KI-Produkte rechtswidriges Material verwenden, entsteht ein Risiko für die Erzeugnisse der KI, was zu einer Verletzung des geistigen Eigentums führen kann.
+- Überprüfen Sie Verträge mit Freistellungsklauseln. Freistellungsklauseln versuchen, die Verantwortung für ein Ereignis, das zu einer Haftung führt, auf die Person zu legen, die dafür am meisten verantwortlich war oder die beste Chance hatte, es zu verhindern. Etablieren Sie Leitplanken, um zu bestimmen, ob der Anbieter der KI oder ihr Benutzer das Ereignis verursacht hat, das zur Haftung führt.
+- Überprüfen Sie die Haftung für mögliche Verletzungen und Sachschäden, die durch KI-Systeme verursacht werden.
+- Überprüfen Sie die Versicherungsdeckung. Traditionelle Haftpflicht- oder gewerbliche allgemeine Haftpflichtversicherungen sind wahrscheinlich unzureichend, um den Einsatz von KI vollständig abzusichern.
+- Identifizieren Sie jegliche Urheberrechtsfragen. Für das Urheberrecht ist menschliche Urheberschaft erforderlich. Eine Organisation kann auch für Plagiate, Bias-Verbreitung oder Verletzung des geistigen Eigentums haftbar gemacht werden, wenn LLM-Tools missbräuchlich verwendet werden.
+- Stellen Sie sicher, dass Vereinbarungen für Auftragnehmer und die angemessene Nutzung von KI für Entwicklungen oder bereitgestellte Dienste vorhanden sind.
+- Beschränken oder verbieten Sie die Nutzung von generativen KI-Tools für Mitarbeiter oder Auftragnehmer, bei denen durchsetzbare Rechte ein Problem sein könnten oder bei denen Bedenken hinsichtlich der Verletzung des geistigen Eigentums bestehen.
+- Prüfen Sie die KI-Lösungen, die für das Mitarbeitermanagement oder die Einstellung verwendet werden. Diese könnten zu Ansprüchen wegen unterschiedlicher Behandlung führen.
+- Stellen Sie sicher, dass die KI-Lösungen keine sensiblen Informationen ohne ordnungsgemäße Zustimmung oder Autorisierung sammeln oder teilen.
 
-### Regulatory
+### Regulierung
 
-The EU AI Act is anticipated to be the first comprehensive AI law but will apply in 2025 at the earliest. The EU's General Data Protection Regulation (GDPR) does not specifically address AI but includes rules for data collection, data security, fairness and transparency, accuracy and reliability, and accountability, which can impact GenAI use. In the United States, AI regulation is included within broader consumer privacy laws. Ten US states have passed laws or have laws that will go into effect by the end of 2023.
+Der KI-Akt der EU wird voraussichtlich das erste umfassende KI-Gesetz sein, wird aber frühestens 2025 gelten. Die Datenschutz-Grundverordnung (DSGVO) der EU adressiert KI nicht spezifisch, beinhaltet jedoch Regeln für die Datenerhebung, Datensicherheit, Fairness und Transparenz, Genauigkeit und Zuverlässigkeit sowie Rechenschaftspflicht, die den Einsatz von GenAI beeinflussen können. In den Vereinigten Staaten ist die KI-Regulierung in breitere Verbraucherdatenschutzgesetze eingebettet. Zehn US-Bundesstaaten haben Gesetze verabschiedet oder haben Gesetze, die bis Ende 2023 in Kraft treten werden.
 
-Canada has so far only published a Voluntary Code of Conduct on the Responsible Development and Management of Advanced Generative AI Systems, however, the Artificial Intelligence and Data Act (AIDA) will have stronger requirements.
+Kanada hat bisher nur einen freiwilligen Verhaltenskodex zur verantwortungsvollen Entwicklung und Verwaltung fortgeschrittener generativer KI-Systeme veröffentlicht, jedoch wird der Artificial Intelligence and Data Act (AIDA) strengere Anforderungen haben.
 
-Federal organizations such as the US Equal Employment Opportunity Commission (EEOC), the Consumer Financial Protection Bureau (CFPB), the Federal Trade Commission (FTC), and the US Department of Justice's Civil Rights Division (DOJ) are closely monitoring hiring fairness.
+Bundesorganisationen wie die US Equal Employment Opportunity Commission (EEOC), das Consumer Financial Protection Bureau (CFPB), die Federal Trade Commission (FTC) und die Civil Rights Division des US-Justizministeriums (DOJ) überwachen die Fairness im Recruiting genau.
 
-- Determine Country, State, or other Government specific AI compliance requirements.
-- Determine compliance requirements for restricting electronic monitoring of employees and employment-related automated decision systems (Vermont, California, Maryland, New York, New Jersey)
-- Determine compliance requirements for consent for facial recognition and the AI video analysis required (Illinois, Maryland, Washington, Vermont)
-- Review any AI tools in use or being considered for employee hiring or management.
-- Confirm the vendor’s compliance with applicable AI laws and best practices.
-- Ask and document any products using AI during the hiring process. Ask how the model was trained, and how it is monitored, and track any corrections made to avoid discrimination and bias.
-- Ask and document what accommodation options are included.
-- Ask and document whether the vendor collects confidential data.
-- Ask how the vendor or tool stores and deletes data and regulates the use of facial recognition and video analysis tools during pre-employment.
-- Review other organization-specific regulatory requirements with AI that may raise compliance issues. The Employee Retirement Income Security Act of 1974, for instance, has fiduciary duty requirements for retirement plans that a chatbot might not be able to meet. 
+- Ermitteln Sie länderspezifische, staatliche oder andere staatliche KI-Compliance-Anforderungen.
+- Ermitteln Sie Compliance-Anforderungen für die Einschränkung der elektronischen Überwachung von Mitarbeitern und beschäftigungsbezogenen automatisierten Entscheidungssystemen (Vermont, Kalifornien, Maryland, New York, New Jersey)
+- Ermitteln Sie Compliance-Anforderungen für die Zustimmung zur Gesichtserkennung und AI-biasierter Videoanalyse.
+- Überprüfen Sie KI-Tools, die für die Einstellung oder Verwaltung von Mitarbeitern verwendet werden oder in Betracht gezogen werden.
+- Bestätigen Sie die Einhaltung der anwendbaren KI-Gesetze und Best Practices durch den Anbieter.
+- Ermitteln und dokumentieren Sie alle Produkte, die KI während des Einstellungsprozesses verwenden. Fragen Sie, wie das Modell trainiert wurde, wie es überwacht wird und verfolgen Sie alle Korrekturen, um Diskriminierung und Bias zu vermeiden.
+- Ermitteln und dokumentieren Sie, welche Unterkunftsoptionen enthalten sind.
+- Ermitteln und dokumentieren Sie, ob der Anbieter vertrauliche Daten sammelt.
+- Ermitteln Sie, wie der Anbieter oder das Tool Daten speichert und löscht und die Nutzung von Gesichtserkennung und Videoanalysetools während der Vorbeschäftigung regelt.
+- Überprüfen Sie andere organisationsspezifische regulatorische Anforderungen mit KI, die Compliance-Probleme aufwerfen könnten. Der Employee Retirement Income Security Act von 1974 hat zum Beispiel treuhänderische Pflichtanforderungen für Rentenpläne, die ein Chatbot möglicherweise nicht erfüllen kann.
 
-### Using or Implementing Large Language Model Solutions
+### Einsatz oder Implementierung von Large Language Model-Lösungen
 
-- Threat Model LLM components and architecture trust boundaries.
-- Data Security, verify how data is classified and protected based on sensitivity, including personal and proprietary business data. (How are user permissions managed, and what safeguards are in place?)
-- Access Control, implement least privilege access controls and implement defense-in-depth measures
-- Training Pipeline Security, require rigorous control around training data governance, pipelines, models, and algorithms.
-- Input and Output Security, evaluate input validation methods, as well as how outputs are filtered, sanitized, and approved.
-- Monitoring and Response, map workflows, monitoring, and responses to understand automation, logging, and auditing. Confirm audit records are secure.
-- Include application testing, source code review, vulnerability assessments, and red teaming in the production release process.
-- Check for existing vulnerabilities in the LLM model or supply chain.
-- Look into the effects of threats and attacks on LLM solutions, such as prompt injection, the release of sensitive information, and process manipulation.
-- Investigate the impact of attacks and threats to LLM models, including model poisoning, improper data handling, supply chain attacks, and model theft.
-- Supply Chain Security, request third-party audits, penetration testing, and code reviews for third-party providers. (both initially and on an ongoing basis)
-- Infrastructure Security, ask how often a vendor performs resilience testing? What are their SLAs in terms of availability, scalability, and performance?
-- Update incident response playbooks and include an LLM incident in tabletop exercises. 
-- Identify or expand metrics to benchmark generative cybersecurity AI against other approaches to measure expected productivity improvements.
+- Erstellen Sie ein Bedrohungsmodell für LLM-Komponenten und Architekturvertrauensgrenzen.
+- Datensicherheit, überprüfen Sie, wie Daten basierend auf Sensibilität klassifiziert und geschützt werden, einschließlich persönlicher und proprietärer Geschäftsdaten. (Wie werden Benutzerberechtigungen verwaltet und welche Schutzmaßnahmen sind vorhanden?)
+- Zugangskontrolle, implementieren Sie Zugangskontrollen mit minimalen Rechten und setzen Sie Verteidigungsmaßnahmen in der Tiefe um.
+- Sicherheit der Trainingspipeline, sichern Sie strenge Kontrolle für Trainingsdaten-Governance, Pipelines, Modelle und Algorithmen.
+- Sicherheit von Eingaben und Ausgaben, prüfen Sie Methoden zur Eingabevalidierung sowie wie Ausgaben gefiltert, bereinigt und genehmigt werden.
+- Monitoring and Response, dokumentieren Sie Workflows, Überwachung und Reaktionen, um Automatisierung, Protokollierung und Auditing nachvollziehen zu können. Stellen Sie sicher, dass Prüfprotokolle gesichert sind.
+- Integrieren Sie Anwendungstests, Quellcodeüberprüfungen, Schwachstellenbewertungen und Red-Teaming in den Produktionsfreigabeprozess.
+- Überprüfen Sie auf bestehende Schwachstellen im LLM-Modell oder in der Lieferkette.
+- Untersuchen Sie die Auswirkungen von Bedrohungen und Angriffen auf LLM-Lösungen, wie Prompt-Injektion, die Freigabe sensibler Informationen oder Prozessmanipulation.
+- Untersuchen Sie die Auswirkungen von Angriffen und Bedrohungen auf LLM-Modelle, einschließlich Model-Poisoning, unsachgemäßem Datenhandling, Angriffen auf die Lieferkette und Modell-Diebstahl.
+- Sicherheit der Lieferkette, fordern Sie Drittprüfungen, Penetrationstests und Codeüberprüfungen für Drittanbieter an. (sowohl initial als auch fortlaufend)
+- Infrastruktursicherheit, fragen Sie, wie oft ein Anbieter Resilienztests durchführt? Was sind die SLAs in Bezug auf Verfügbarkeit, Skalierbarkeit und Performance?
+- Aktualisieren Sie die Einsatzpläne für Incident Response und beziehen Sie Zwischenfälle mit großen Sprachmodellen (LLMs) in Tabletop-Übungen mit ein.
+- Identifizieren Sie oder erweitern Sie Metriken, um generative Cybersicherheits-KI mit anderen Ansätzen zu vergleichen, um die erwarteten Produktivitätssteigerungen zu messen.
 
-### Testing, Evaluation, Verification, and Validation (TEVV)
+### Testen, Evaluieren, Verifizieren und Validieren (TEVV)
 
-NIST AI Framework recommends a continuous TEVV process throughout the AI lifecycle which includes the AI system operators, domain experts, AI designers, users, product developers, evaluators, and auditors. TEVV includes a range of tasks such as system validation, integration, testing, recalibration, and ongoing monitoring for periodic updates to navigate the risks and changes of the AI system.
+Das NIST AI Framework empfiehlt einen kontinuierlichen TEVV-Prozess während des gesamten Lebenszyklus der KI, der die Betreiber der KI-Systeme, Fachexperten, KI-Designer, Benutzer, Produktentwickler, Evaluatoren und Prüfer einschließt. TEVV umfasst eine Reihe von Aufgaben wie Systemvalidierung, Integration, Testen, Neukalibrierung und fortlaufendes Monitoring für periodische Updates, um mit den Risiken und Veränderungen des KI-Systems umzugehen.
 
-- Establish continuous testing, evaluation, verification, and validation throughout the AI model lifecycle.
-- Provide regular executive metrics and updates on AI Model functionality, security, reliability, and robustness.
+- Etablieren Sie kontinuierliches Testen, Evaluieren, Verifizieren und Validieren während des gesamten Lebenszyklus des KI-Modells.
+- Stellen Sie regelmäßig Führungsmetriken und Updates zur Funktionalität, Sicherheit, Zuverlässigkeit und Robustheit des KI-Modells bereit.
 
-### Model Cards and Risk Cards
+### Modellkarten und Risikokarten
 
-Model cards and risk cards are foundational elements for increasing the transparency, accountability, and ethical deployment of Large Language Models (LLMs). Model cards help users understand and trust AI systems by providing standardized documentation on their design, capabilities, and constraints, leading them to make educated and safe applications. Risk cards supplement this by openly addressing potential negative consequences, such as biases, privacy problems, and security vulnerabilities, which encourages a proactive approach to harm prevention. These documents are critical for developers, users, regulators, and ethicists equally since they establish a collaborative atmosphere in which AI's social implications are carefully addressed and handled. These cards, developed and maintained by the organizations that created the models, play an important role in ensuring that AI technologies fulfill ethical standards and legal requirements, allowing for responsible research and deployment in the AI ecosystem.
+Modellkarten und Risikokarten sind grundlegende Elemente, um die Transparenz, Rechenschaftspflicht und ethische Bereitstellung von großen Sprachmodellen (LLMs) zu erhöhen. Modellkarten helfen Benutzern, KI-Systeme zu verstehen und zu vertrauen, indem sie standardisierte Dokumentationen über deren Design, Fähigkeiten und Einschränkungen bereitstellen, was zu fundierten und sicheren Anwendungen führt. Risikokarten ergänzen dies, indem sie offen potenzielle negative Konsequenzen ansprechen, wie Vorurteile, Datenschutzprobleme und Sicherheitsanfälligkeiten, was einen proaktiven Ansatz zur Schadensprävention fördert. Diese Dokumente sind für Entwickler, Benutzer, Regulierungsbehörden und Ethiker gleichermaßen wichtig, da sie eine kooperative Atmosphäre schaffen, in der die sozialen Auswirkungen von KI sorgfältig behandelt und gehandhabt werden. Diese Karten, die von den Organisationen entwickelt und gepflegt werden, die die Modelle erstellt haben, spielen eine wichtige Rolle dabei, sicherzustellen, dass KI-Technologien ethische Standards und gesetzliche Anforderungen erfüllen, was eine verantwortungsbewusste Forschung und Bereitstellung im KI-Ökosystem ermöglicht.
 
-Model cards include key attributes associated with the ML model:
+Modellkarten enthalten wichtige Attribute, die mit dem ML-Modell verbunden sind:
 
-  - Model details: Basic information about the model, i.e., name, version, and type (neural network, decision tree, etc.), and the intended use case.
-  - Model architecture: Includes a description of the structure of the model, such as the number and type of layers, activation functions, and other key architectural choices.
-  - Training data and methodology: Information about the data used to train the model, such as the size of the dataset, the data sources, and any preprocessing or data augmentation techniques used. It also includes details about the training methodology, such as the optimizer used, the loss function, and any hyperparameters that were tuned.
-  - Performance metrics: Information about the model's performance on various metrics, such as accuracy, precision, recall, and F1 score. It may also include information about how the model performs on different subsets of the data.
-  - Potential biases and limitations: Lists potential biases or limitations of the model, such as imbalanced training data, overfitting, or biases in the model's predictions. It may also include information about the model's limitations, such as its ability to generalize to new data or its suitability for certain use cases.
-  - Responsible AI considerations: Any ethical or responsible AI considerations related to the model, such as privacy concerns, fairness, and transparency, or potential societal impacts of the model's use. It may also include recommendations for further testing, validation, or monitoring of the model.
+  - Modellangaben: Grundlegende Informationen über das Modell, z. B. Name, Version und Typ (Neuronales Netzwerk, Entscheidungsbaum usw.) und der vorgesehene Anwendungsfall.
+  - Modellarchitektur: Enthält eine Beschreibung der Struktur des Modells, wie die Anzahl und Art der Schichten, Aktivierungsfunktionen und andere wichtige architektonische Entscheidungen.
+  - Trainingsdaten und Methodik: Informationen über die Daten, die zum Trainieren des Modells verwendet wurden, wie die Größe des Datensatzes, die Datenquellen und etwaige Vorverarbeitungs- oder Datenanreicherungstechniken. Es enthält auch Details zur Trainingsmethodik, wie den verwendeten Optimierer, die Verlustfunktion und etwaige eingestellte Hyperparameter.
+  - Leistungsmetriken: Informationen über die Leistung des Modells anhand verschiedener Metriken, wie Genauigkeit, Präzision, Rückruf und F1-Score. Es kann auch Informationen darüber enthalten, wie das Modell bei verschiedenen Datensubsets abschneidet.
+  - Potenzielle Vorurteile(Bias) und Einschränkungen: Listen potenzieller Vorurteile(Bias) oder Einschränkungen des Modells auf, wie unausgeglichene Trainingsdaten, Überanpassung oder Vorurteile in den Vorhersagen des Modells. Es kann auch Informationen über die Einschränkungen des Modells enthalten, wie seine Fähigkeit, sich auf neue Daten zu generalisieren oder seine Eignung für bestimmte Anwendungsfälle.
+  - Überlegungen zu verantwortungsvoller KI: Alle ethischen oder verantwortungsvollen KI-Überlegungen im Zusammenhang mit dem Modell, wie Datenschutzbedenken, Fairness und Transparenz oder mögliche gesellschaftliche Auswirkungen der Nutzung des Modells. Es kann auch Empfehlungen für weitere Tests, Validierungen oder Überwachungen des Modells enthalten.
 
-The precise features contained in a model card may differ based on the model's context and intended usage, but the purpose is to give openness and accountability in the creation and deployment of machine learning models.
+Die genauen Merkmale, die in einer Modellkarte enthalten sind, können je nach Kontext und beabsichtigter Verwendung des Modells variieren, aber das Ziel ist es, Offenheit und Rechenschaftspflicht in der Entwicklung und Bereitstellung von maschinellen Lernmodellen zu bieten.
 
-- Review a models model card 
-- Review risk card if available
-- Establish a process to track and maintain model cards for any deployed model including models used through a third party.
+- Prüfen Sie eine Modellkarte des Modells
+- Prüfen Sie eine Risikokarte, falls verfügbar
+- Etablieren Sie einen Prozess zur Überwachung und Pflege von Modellkarten für jedes bereitgestellte Modell, einschließlich Modelle, die durch Dritte verwendet werden.
 
-### RAG: Large Language Model Optimization
+### RAG: Optimierung von großen Sprachmodellen
 
-Fine tuning, the traditional method for optimizing a pre-trained model, involved retraining an existing model on new, and domain-specific data, modifying it for performance on a task or application. Fine-tuning is expensive but essential to improve performance. 
+Fine-Tuning, die traditionelle Methode zur Optimierung eines vortrainierten Modells, beinhaltete das erneute Training eines vorhandenen Modells mit neuen, domänenspezifischen Daten, um es für eine Aufgabe oder Anwendung zu modifizieren. Fine-Tuning ist teuer, aber wesentlich zur Leistungsverbesserung.
 
-Retrieval-Augmented Generation (RAG) has evolved as a more effective way of optimizing and augmenting the capabilities of large language models by retrieving pertinent data from up to date available knowledge sources. RAG can be customized for specific domains, optimizing the retrieval of domain-specific information and tailoring the generation process to the nuances of specialized fields. RAG is seen as a more efficient and transparent method for LLM optimization, particularly for problems where labeled data is limited or expensive to collect. One of the primary advantages of RAG is its support for continuous learning since new information can be continually updated at the retrieval stage.
+Retrieval-Augmented Generation (RAG) hat sich als eine effektivere Methode zur Optimierung und Erweiterung der Fähigkeiten von großen Sprachmodellen entwickelt, indem relevante Daten aus aktuellen verfügbaren Wissensquellen abgerufen werden. RAG kann für spezifische Domänen angepasst werden, um die Abfrage domänenspezifischer Informationen zu optimieren und den Generierungsprozess auf die Nuancen spezialisierter Bereiche zuzuschneiden. RAG wird als eine effizientere und transparentere Methode zur Optimierung von LLM angesehen, insbesondere für Probleme, bei denen markierte Daten begrenzt oder teuer zu sammeln sind. Einer der Hauptvorteile von RAG ist die Unterstützung kontinuierlichen Lernens, da neue Informationen kontinuierlich auf der Abrufstufe aktualisiert werden können.
 
-The RAG implementation involves several key steps starting from embedding model deployment, indexing the knowledge library, to retrieving the most relevant documents for query processing. Efficient retrieval of the relevant context is made based on vector databases which are used for storage and querying of document embeddings.
+Die Implementierung von RAG umfasst mehrere wichtige Schritte, beginnend mit dem Einsatz des Einbettungsmodells, dem Indizieren der Wissensbibliothek bis hin zum Abrufen der relevantesten Dokumente für die Verarbeitung von Anfragen. Effizientes Abrufen des relevanten Kontexts wird basierend auf Vektordatenbanken durchgeführt, die zur Speicherung und Abfrage von Dokumenteinbettungen verwendet werden.
 
-#### RAG Reference
+#### RAG-Referenz
 - [Retrieval Augmented Generation (RAG) & LLM: Examples](https://vitalflux.com/retrieval-augmented-generation-rag-llm-examples/)
 - [12 RAG Pain Points and Proposed Solutions](https://towardsdatascience.com/12-rag-pain-points-and-proposed-solutions-43709939a28c)
 
 ### AI Red Teaming
 
-AI Red Teaming is an adversarial attack test simulation of the AI System to validate there aren’t any existing vulnerabilities which can be exploited by an attacker. It is a recommended practice by many regulatory and AI governing bodies including the Biden administration. Red-teaming alone is not a comprehensive solution to validate all real-world harms associated with AI systems and should be included with other forms of testing, evaluation, verification, and validation such as algorithmic impact assessments and external audits.
+AI Red Teaming ist eine simulierte Angriffstestsimulation des KI-Systems, um zu validieren, dass keine vorhandenen Schwachstellen ausgenutzt werden können. Es ist eine von vielen regulatorischen und KI-regulierenden Organisationen empfohlene Praxis, einschließlich der Biden-Administration. Red Teaming allein ist jedoch keine umfassende Lösung zur Validierung aller realen Schäden, die mit KI-Systemen verbunden sind, und sollte mit anderen Formen von Testen, Evaluieren, Verifizieren und Validieren wie algorithmischen Auswirkungsbewertungen und externen Audits kombiniert werden.
 
-- Incorporate Red Team testing as a standard practice for AI Models and applications.
+- Integrieren Sie Red Team-Tests als Standardpraxis für KI-Modelle und Anwendungen.
