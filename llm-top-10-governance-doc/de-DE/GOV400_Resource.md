@@ -2,7 +2,36 @@
 
 [OWASP Top 10 for Large Language Models](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
 
-![OWASP Top10 for LLM](images/GOV1_Fig_4_1.jpg)
+  >dodgerblue|white|left|12|16 LLM01: Prompt Injection (Prompt-Einschleusung)
+  >azure|black|justified|10|12 Mit raffinierten Eingabenkann man ein Large Language Model manipulieren und unbeabsichtigte Aktionen verursachen. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
+
+  >dodgerblue|white|left|12|16 LLM02: Unsichere Ausgabeverarbeitung
+  >azure|black|justified|10|12 Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ohne Überprüfung akzeptiert wird, und damit Backend-Systeme angreifbar macht. Missbrauch kann zu schwerwiegenden Konsequenzen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegienerweiterung oder Remote-Code-Ausführung führen.
+
+  >dodgerblue|white|left|12|16 LLM03: Poisoning der Trainingsdaten
+  >azure|black|justified|10|12 Dies tritt auf, wenn LLM-Trainingsdaten manipuliert werden, wodurch Sicherheitslücken oder Bias entstehen, die die Sicherheit, Wirksamkeit oder ethisches Verhalten beeinträchtigen. Quellen umfassen Common Crawl, WebText, OpenWebText und Bücher.
+
+  >dodgerblue|white|left|12|16 LLM04: Denial of Service des Modells
+  >azure|black|justified|10|12 Angreifer verursachen ressourcenintensive Operationen auf Large Language Models, was zu Servicedegradierung oder hohen Kosten führt. Die Schwachstelle wird durch die ressourcenintensive Natur der LLMs und die Unvorhersehbarkeit der Benutzereingaben vergrößert.
+
+  >dodgerblue|white|left|12|16 LLM05: Schwachstellen in der Supply Chain
+  >azure|black|justified|10|12 Der Lifecycle von LLM-Anwendungen kann durch anfällige Komponenten oder Dienste beeinträchtigt werden, was zu Sicherheitsangriffen führt. Die Verwendung von Drittanbieterdatensätzen, vortrainierten Modellen und Plugins kann Schwachstellen hinzufügen.
+
+  >dodgerblue|white|left|12|16 LLM06: Offenlegung sensibler Informationen
+  >azure|black|justified|10|12 LLMs können in ihren Antworten vertrauliche Daten preisgeben, was zu unbefugtem Datenzugriff, Datenschutzverletzungen und Sicherheitsbrüchen führt. Es ist entscheidend, Datenbereinigung und strenge Benutzerrichtlinien zu implementieren, um dies zu reduzieren.
+
+  >dodgerblue|white|left|12|16 LLM07: Unsicheres Plugin-Design
+  >azure|black|justified|10|12 LLM-Plugins können unsichere Eingaben und unzureichende Zugriffskontrollen haben. Dieser Mangel an Anwendungskontrolle macht sie leichter ausnutzbar und kann zu Konsequenzen wie der Ausführung von Remote-Code führen.
+
+  >dodgerblue|white|left|12|16 LLM08: Übermäßige Handlungsfreiheit
+  >azure|black|justified|10|12 LLM-basierte Systeme können Handlungen durchführen, die zu unbeabsichtigten Konsequenzen führen. Das Problem entsteht durch übermäßige Funktionalität, Berechtigungen oder Autonomie, die den LLM-basierten Systemen gewährt wird.
+
+  >dodgerblue|white|left|12|16 LLM09: Übermäßige Abhängigkeit
+  >azure|black|justified|10|12 Systeme oder Personen, die sich übermäßig auf LLMs verlassen, ohne angemessene Kontrolle, können Fehlinformationen, Misskommunikation, rechtliche Probleme und Sicherheitslücken aufgrund von falschen oder unangemessenen von den LLMs generierten Inhalten gegenüberstehen.
+
+  >dodgerblue|white|left|12|16 LLM10: Modell-Diebstahl
+  >azure|black|justified|10|12 Dies umfasst unbefugten Zugriff, Kopieren oder Exfiltration von proprietären LLM-Modellen. Die Auswirkungen umfassen wirtschaftliche Verluste, beeinträchtigte Wettbewerbsvorteile und potenziellen Zugang zu sensiblen Informationen.
+
 ##### Figure 4.1  OWASP Top 10 for Large Language Model Applications
 
 ![OWASP Top10 for LLM Visual](images/GOV1_Fig_4_2_en-ZZ.png)
