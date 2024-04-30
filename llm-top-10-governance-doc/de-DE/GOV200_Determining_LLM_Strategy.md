@@ -1,88 +1,88 @@
-## Determining LLM Strategy
+## Festlegen der LLM-Strategie
 
-The rapid expansion of Large Language Model (LLM) applications has heightened the attention and examination of all AI/ML systems used in business operations, encompassing both Generative AI and long-established Predictive AI/ML systems. This increased focus exposes potential risks, such as attackers targeting systems that were previously overlooked and governance or legal challenges that may have been disregarded in terms of legal, privacy, liability, or warranty issues. For any organization leveraging AI/ML systems in its operations, it's critical to assess and establish comprehensive policies, governance, security protocols, privacy measures, and accountability standards to ensure these technologies align with business processes securely and ethically.
+Die rasche Expansion von Anwendungen auf Basis großer Sprachmodelle (LLM) hat die Aufmerksamkeit und Untersuchung aller KI/ML-Systeme, die in Geschäftsprozessen verwendet werden, verstärkt. Dies umfasst sowohl Generative KI als auch lang etablierte Vorhersage-KI/ML-Systeme. Diese erhöhte Fokussierung legt potenzielle Risiken offen, wie etwa Angreifer, die Systeme ins Visier nehmen und zuvor übersehen wurden, und Governance- oder rechtliche Herausforderungen, die möglicherweise in Bezug auf rechtliche, Datenschutz-, Haftungs- oder Garantiefragen bislang ignoriert wurden. Für jede Organisation, die KI/ML-Systeme in ihren Abläufen einsetzt, ist es entscheidend, umfassende Richtlinien, Governance, Sicherheitsvorgehen, Datenschutzmaßnahmen und Verantwortungsstandards zu bewerten und zu etablieren, um sicherzustellen, dass diese Technologien bezüglich Sicherheit und Ethik zu den Geschäftsprozessen passen.
 
-Attackers, or adversaries, provide the most immediate and harmful threat to enterprises, people, and government agencies. Their goals, which range from financial gain to espionage, push them to steal critical information, disrupt operations, and damage confidence. Furthermore, their ability to harness new technologies such as AI and machine learning increases the speed and sophistication of attacks, making it difficult for defenses to stay ahead of attacks.
+Angreifer oder Gegner stellen die unmittelbarste und schädlichste Bedrohung für Unternehmen, Personen und Regierungsbehörden dar. Ihre Ziele, die von finanziellem Gewinn bis hin zu Spionage reichen, treiben sie dazu, kritische Informationen zu stehlen, den Betrieb zu stören und das Vertrauen zu schädigen. Dazu erwerben sie durch KI und maschinelles Lernen die Möglichkeit, mit mehr Geschwindigkeit und Raffinesse den Verteidigern voraus zu sein.
 
-The most pressing non-adversary LLM threat for many organizations stem from "Shadow AI": employees using unapproved online AI tools, unsafe browser plugins, and third-party applications that introduce LLM features via updates or upgrades, circumventing standard software approval processes.
+Die dringendste Nicht-Gegner-LLM-Bedrohung für viele Organisationen stammt von "Shadow AI": Mitarbeiter, die nicht genehmigte Online-KI-Tools, unsichere Browser-Plugins und Drittanbieteranwendungen verwenden, die LLM-Funktionen durch Updates oder Upgrades einführen und damit standardisierte Softwaregenehmigungsprozesse umgehen.
 
->||center|16|16 Deployment Steps
+>||center|16|16 Bereitstellung
 
->cornflower|white|left|14|18 Step 1: Resilience First Strategy
+>cornflower|white|left|14|18 Schritt 1: Resilienz-Strategie zuerst
 
-    >fidlightblue|black|justified|12|16 ▶ Identify immediate threats by Threat Modeling abuse cases
-    >fidlightblue|black|justified|12|16 ▶ Review internal or external exploitation cases for threat model scenarios and verify security controls
-    >fidlightblue|black|justified|12|16 ▶ Scan and monitor the environment for any instances of rogue applications
+    >fidlightblue|black|justified|12|16 ▶ Identifikation unmittelbarer Bedrohungen durch Bedrohungsmodellierung von Missbrauchsfällen
+    >fidlightblue|black|justified|12|16 ▶ Überprüfen Sie interne oder externe Ausnutzungsmöglichkeiten in den Bedrohungsmodellszenarien und verifizieren Sie Sicherheitsmaßnahmen
+    >fidlightblue|black|justified|12|16 ▶ Scannen und überwachen Sie Ihr Environment auf Vorkommen von Schadsoftware
 
->dodgerblue|white|left|14|18 Ste 2: Update Existing Policy
+>dodgerblue|white|left|14|18 Schritt 2: Bestehende Richtlinien aktualisieren
 
-    >fidlightblue|black|justified|12|16 ▶ Review contracts, NDA, governance, and security to incorporate LLM or GenAI use or threat
+    >fidlightblue|black|justified|12|16 ▶ Verträge, Geheimhaltungsvereinbarungen, Governance und Sicherheit prüfen, um bei Bedarf Nutzung und Bedrohung durch LLMs oder GenAI zu integrieren
 
->fidblue|white|left|14|18 Step 3: Training / Education
+>fidblue|white|left|14|18 Schritt 3: Schulung / Bildung
 
-    >fidlightblue|black|justified|12|16 ▶ Update security awareness training, developer, legal, or other training to include LLM or GenAI use or threat
+    >fidlightblue|black|justified|12|16 ▶ Aktualisieren Sie das Sicherheitsbewusstseinstraining, Entwickler-, rechtliche oder andere Schulungen, um die Nutzung oder Bedrohung durch LLMs oder GenAI einzubeziehen
 
->darkblue|white|left|14|18 Step 4: Engage with Leaders
+>darkblue|white|left|14|18 Schritt 4: Führungskräfte einbeziehen
 
-    >fidlightblue|black|justified|12|16 ▶ Work with executives, business leaders, and other stakeholders to identify an LLM or GenAI solutions strategy
-    >fidlightblue|black|justified|12|16 ▶ Implement mitigation / risk strategy
+    >fidlightblue|black|justified|12|16 ▶ Arbeiten Sie mit Führungskräften und anderen Stakeholdern zusammen, um LLM- oder GenAI-Lösungsstrategien zu identifizieren
+    >fidlightblue|black|justified|12|16 ▶ Implementieren Sie eine Risikomanagementstrategie
 
->cornflower|white|left|14|18 Step 5: Update Third Party Risk Management Program
+>cornflower|white|left|14|18 Schritt 5: Aktualisieren Sie Ihr Programm zur Risikomanagement bei Drittanbietern
 
-    >fidlightblue|black|justified|12|16 ▶ Third-party and vendor AI solutions will require augmented questionnaires and reviews
+    >fidlightblue|black|justified|12|16 ▶ Lösungen von Drittanbietern und Anbietern für KI benötigen erweiterte Fragebögen und Überprüfungen
 
->dodgerblue|white|left|14|18 Step 6: Choose a Deployment Strategy
+>dodgerblue|white|left|14|18 Schritt 6: Eine Bereitstellungsstrategie wählen
 
-##### Figure 2.1  Options for Deployment Strategy
-##### credit sdunn
+##### Abbildung 2.1 Optionen für Bereitstellungsstrategie
+##### Quelle: sdunn
 
 
-### Deployment Strategy
+### Bereitstellungsstrategie
 
-The scopes range from leveraging public consumer applications to training proprietary models on private data. Factors like use case sensitivity, capabilities needed, and resources available help determine the right balance of convenience vs. control. However, understanding these five model types provides a framework for evaluating options.
+Die Bandbreite reicht von der Nutzung öffentlicher Endverbraucheranwendungen bis hin zum Training proprietärer Modelle auf eigenen Daten. Faktoren wie Sensibilität der Anwendungsfälle, benötigte Fähigkeiten und verfügbare Ressourcen helfen dabei, das passende Gleichgewicht zwischen Komfort und Kontrolle zu bestimmen. Das Verständnis dieser fünf Modelltypen bietet dabei einen Rahmen für die Bewertung der Optionen.
 
->||center|16|16 Deployment Types
+>||center|16|16 Bereitstellungstypen
 
->cornflower|white|left|14|18 Type 1: Direct Access
+>cornflower|white|left|14|18 Typ 1: Direkter Zugriff
 
-    >fidlightblue|black|left|12|16 ▶ Use large language models from their interface
-    >fidlightblue|black|left|12|16 ▶ Mitigate risk with corporate policy and employee training
-    >fidlightblue|black|left|12|16 ▶ Pros: Flexible and rapid experimentation
-    >fidlightblue|black|left|12|16 ▶ Examples: Perplexity, ChatGPT, big-AGI
+    >fidlightblue|black|left|12|16 ▶ Große Sprachmodelle über eine Schnittstelle nutzen
+    >fidlightblue|black|left|12|16 ▶ Risiko durch Unternehmensrichtlinien und Mitarbeitertraining mindern
+    >fidlightblue|black|left|12|16 ▶ Vorteile: Flexibles und schnelles Experimentieren
+    >fidlightblue|black|left|12|16 ▶ Beispiele: Perplexity, ChatGPT, big-AGI
 
->dodgerblue|white|left|14|18 Type 2: Access Through Model API
+>dodgerblue|white|left|14|18 Typ 2: Zugriff über Model API
 
-    >fidlightblue|black|left|12|16 ▶ Use large language models directly from vendors through their API
-    >fidlightblue|black|left|12|16 ▶ Mitigate risk with corporate policy and employee training
-    >fidlightblue|black|left|12|16 ▶ Pros: Enables quick experimentation with some central control through the API
-    >fidlightblue|black|left|12|16 ▶ Examples: Claude, ChatGPT, Gemini
+    >fidlightblue|black|left|12|16 ▶ Große Sprachmodelle direkt von Anbietern über deren API nutzen
+    >fidlightblue|black|left|12|16 ▶ Risiko mit Unternehmensrichtlinien und Mitarbeitertraining mindern
+    >fidlightblue|black|left|12|16 ▶ Vorteile: Schnelles Experimentieren mit etwas zentraler Kontrolle über die API
+    >fidlightblue|black|left|12|16 ▶ Beispiele: Claude, ChatGPT, Gemini
 
->fidblue|white|left|14|18 Type 3: Licensed Model
+>fidblue|white|left|14|18 Typ 3: Lizenzmodell
 
-    >fidlightblue|black|left|12|16 ▶ Use a licensed large language model in enterprise tenant
-    >fidlightblue|black|left|12|16 ▶ Mitigate risk by managing in own tenant.  Reduce risk with corporate policy and employee training
-    >fidlightblue|black|left|12|16 ▶ Pros: Provides more control and integration with internal tools and workflow
-    >fidlightblue|black|left|12|16 ▶ Examples: Microsoft Enterprise CoPilot, Amazon Codewhisperer, SalesForce Einstein GPT
+    >fidlightblue|black|left|12|16 ▶ Ein lizenziertes großes Sprachmodell auf den eigenen Systemen betrieben
+    >fidlightblue|black|left|12|16 ▶ Risiko durch Verwaltung durch Eigenbetrieb mindern. Risiko durch Unternehmensrichtlinien und Mitarbeitertraining reduzieren
+    >fidlightblue|black|left|12|16 ▶ Vorteile: mehr Kontrolle und Integration durch internen Tools und Workflows
+    >fidlightblue|black|left|12|16 ▶ Beispiele: Microsoft Enterprise CoPilot, Amazon Codewhisperer, SalesForce Einstein GPT
 
->darkblue|white|left|14|18 Type 4: Pre-Trained Model
+>darkblue|white|left|14|18 Typ 4: Vortrainiertes Modell
 
-    >fidlightblue|black|left|12|16 ▶ Use a general foundation model, then customize by fine-tuning with enterprise or custom data
-    >fidlightblue|black|left|12|16 ▶ Mitigate risk with increased visibility, enhance performance, reduce hallucinations.  Reduce risk with corporate policy and employee training
-    >fidlightblue|black|left|12|16 ▶ Pros: enhance performance and reduce hallucinations
-    >fidlightblue|black|left|12|16 ▶ Examples: QwenLM/Qwen 1.5, DBRX, Starling 7B
+    >fidlightblue|black|left|12|16 ▶ Ein allgemeines Basismodell nutzen, dann durch Finetuning mit Unternehmens- oder benutzerdefinierten Daten anpassen
+    >fidlightblue|black|left|12|16 ▶ Risiko mit erhöhter Transparenz mindern, Leistung verbessern, Halluzinationen reduzieren. Risiko mit Unternehmensrichtlinien und Mitarbeitertraining reduzieren
+    >fidlightblue|black|left|12|16 ▶ Vorteile: Verbesserte Leistung und reduzierte Halluzinationen
+    >fidlightblue|black|left|12|16 ▶ Beispiele: QwenLM/Qwen 1.5, DBRX, Starling 7B
 
->cornflower|white|left|14|18 Type 5: Fine-Tune Proven Model
+>cornflower|white|left|14|18 Typ 5: Bewährtes Modell finetunen
 
-    >fidlightblue|black|left|12|16 ▶ Use a proen(specialized) models and fine-tune further with proprietary data to adapt them to your enterprise
-    >fidlightblue|black|left|12|16 ▶ Mitigate risk with increased visibility, enhance performance, reduce hallucinations.  Reduce risk with corporate policy and employee training
-    >fidlightblue|black|left|12|16 ▶ Pros: Enables customization beyond pre-trained
-    >fidlightblue|black|left|12|16 ▶ Examples: Google MedPalm, Amazon Bedrock, Llama2, LegalAI
+    >fidlightblue|black|left|12|16 ▶ Bewährte (spezialisierte) Modelle nutzen und weiter mit eigenen Daten feinabstimmen, um sie an Ihr Unternehmen anzupassen
+    >fidlightblue|black|left|12|16 ▶ Risiko mit erhöhter Transparenz mindern, Leistung verbessern, Halluzinationen reduzieren. Risiko mit Unternehmensrichtlinien und Mitarbeitertraining reduzieren
+    >fidlightblue|black|left|12|16 ▶ Vorteile: Ermöglicht Anpassung über vortrainierte Modelle hinaus
+    >fidlightblue|black|left|12|16 ▶ Beispiele: Google MedPalm, Amazon Bedrock, Llama2, LegalAI
 
->dodgerblue|white|left|14|18 Type 6: Custom Models
+>dodgerblue|white|left|14|18 Typ 6: Individuelle Modelle
 
-    >fidlightblue|black|left|12|16 ▶ Build a tailored AI/ML Model architecture for enterprise specific use case
-    >fidlightblue|black|left|12|16 ▶ Mitigate risk with complete visibility and control.  Reduce risk with corporate policy, developer, and employee training
-    >fidlightblue|black|left|12|16 ▶ Pros: Requires large investment but maximizes customization
+    >fidlightblue|black|left|12|16 ▶ Eine maßgeschneiderte KI/ML-Modellarchitektur für spezifische Unternehmensanwendungsfälle bauen
+    >fidlightblue|black|left|12|16 ▶ Risiko mit vollständiger Sichtbarkeit und Kontrolle mindern. Risiko mit Unternehmensrichtlinien, Entwickler- und Mitarbeitertraining reduzieren
+    >fidlightblue|black|left|12|16 ▶ Vorteile: Erfordert große Investitionen, maximiert aber die Anpassbarkeit
 
-##### Figure 2.2 Options for Deployment Types
-##### credit: sdunn
+##### Abbildung 2.2 Optionen für Bereitstellungstypen
+##### Quelle: sdunn
