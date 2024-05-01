@@ -8,6 +8,7 @@
     "doc_subtitles": [
         "",
         "",
+        "",
         "Vom OWASP Top 10",
         "für LLM-Applicationen Team",
         "",
@@ -28,7 +29,15 @@
         "and OWASP does not recommend or endorse the contents of the third-party sites.",
         "",
         "This project is licensed under the terms of the Creative Commons Attribution-ShareAlike 4.0",
-        "International License.  ( https://creativecommons.org/licenses/by-sa/4.0/ )"
+        "International License.  ( https://creativecommons.org/licenses/by-sa/4.0/ )",
+        "",
+        "Revision History",
+        "    2023-11-01  English  0.1  initial draft",
+        "    2023-12-06  English  0.5  public draft",
+        "    2024-02-15  English  0.9  pre-release draft",
+        "    2024-02-19  English  1.0  public release v 1.0",
+        "    2024-04-10  English  1.1  public release v 1.1",
+        "    2024-__-__  _______  1.1"
     ],
     "doc_legal_notice_words": [
         "Die in diesem Dokument bereitgestellten Informationen stellen keine Rechtsberatung dar und sind auch nicht als solche gedacht.",
@@ -38,7 +47,15 @@
         "und OWASP empfiehlt oder befürwortet die Inhalte der Websites Dritter nicht.",
         "",
         "Dieses Projekt ist unter den Bedingungen der Creative Commons Attribution-ShareAlike 4.0",
-        "International Lizenz lizenziert. ( https://creativecommons.org/licenses/by-sa/4.0/ )"
+        "International Lizenz lizenziert. ( https://creativecommons.org/licenses/by-sa/4.0/ )",
+        "",
+        "Revision History",
+        "    2023-11-01  English  0.1  initial draft",
+        "    2023-12-06  English  0.5  public draft",
+        "    2024-02-15  English  0.9  pre-release draft",
+        "    2024-02-19  English  1.0  public release v 1.0",
+        "    2024-04-10  English  1.1  public release v 1.1",
+        "    2024-__-__  _______  1.1"
     ],
     
     "doc_toc": true,
