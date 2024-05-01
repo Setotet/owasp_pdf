@@ -116,258 +116,258 @@ Der Verweis auf Risiko verwendet die Definition as ISO 31000: Risiko = "Effekt d
 ### Schwachstellen- und Minderungstaxonomie
 
 Aktuelle Systeme zur Klassifizierung von Schwachstellen und zum Austausch von Bedrohungsinformationen, wie etwa OVAL, STIX, CVE und CWE, arbeiten noch an der  Fähigkeit, spezifische Schwachstellen und Bedrohungen in Bezug auf große Sprachmodelle (LLMs) und Prediction-Modelle zu überwachen und die Verteidiger zu alarmieren. Es wird erwartet, dass Organisationen sich auf diese etablierten und anerkannten Standards wie CVE für die Klassifizierung von Schwachstellen und STIX für den Austausch von Informationen über Cyber-Bedrohungen (CTI) stützen werden, wenn Schwachstellen oder Bedrohungen für KI/ML-Systeme und deren Lieferketten identifiziert werden.
-## Determining LLM Strategy
+## Festlegen der LLM-Strategie
 
-The rapid expansion of Large Language Model (LLM) applications has heightened the attention and examination of all AI/ML systems used in business operations, encompassing both Generative AI and long-established Predictive AI/ML systems. This increased focus exposes potential risks, such as attackers targeting systems that were previously overlooked and governance or legal challenges that may have been disregarded in terms of legal, privacy, liability, or warranty issues. For any organization leveraging AI/ML systems in its operations, it's critical to assess and establish comprehensive policies, governance, security protocols, privacy measures, and accountability standards to ensure these technologies align with business processes securely and ethically.
+Die rasche Expansion von Anwendungen auf Basis großer Sprachmodelle (LLM) hat die Aufmerksamkeit und Untersuchung aller KI/ML-Systeme, die in Geschäftsprozessen verwendet werden, verstärkt. Dies umfasst sowohl Generative KI als auch lang etablierte Vorhersage-KI/ML-Systeme. Diese erhöhte Fokussierung legt potenzielle Risiken offen, wie etwa Angreifer, die Systeme ins Visier nehmen und zuvor übersehen wurden, und Governance- oder rechtliche Herausforderungen, die möglicherweise in Bezug auf rechtliche, Datenschutz-, Haftungs- oder Garantiefragen bislang ignoriert wurden. Für jede Organisation, die KI/ML-Systeme in ihren Abläufen einsetzt, ist es entscheidend, umfassende Richtlinien, Governance, Sicherheitsvorgehen, Datenschutzmaßnahmen und Verantwortungsstandards zu bewerten und zu etablieren, um sicherzustellen, dass diese Technologien bezüglich Sicherheit und Ethik zu den Geschäftsprozessen passen.
 
-Attackers, or adversaries, provide the most immediate and harmful threat to enterprises, people, and government agencies. Their goals, which range from financial gain to espionage, push them to steal critical information, disrupt operations, and damage confidence. Furthermore, their ability to harness new technologies such as AI and machine learning increases the speed and sophistication of attacks, making it difficult for defenses to stay ahead of attacks.
+Angreifer oder Gegner stellen die unmittelbarste und schädlichste Bedrohung für Unternehmen, Personen und Regierungsbehörden dar. Ihre Ziele, die von finanziellem Gewinn bis hin zu Spionage reichen, treiben sie dazu, kritische Informationen zu stehlen, den Betrieb zu stören und das Vertrauen zu schädigen. Dazu erwerben sie durch KI und maschinelles Lernen die Möglichkeit, mit mehr Geschwindigkeit und Raffinesse den Verteidigern voraus zu sein.
 
-The most pressing non-adversary LLM threat for many organizations stem from "Shadow AI": employees using unapproved online AI tools, unsafe browser plugins, and third-party applications that introduce LLM features via updates or upgrades, circumventing standard software approval processes.
+Die dringendste Nicht-Gegner-LLM-Bedrohung für viele Organisationen stammt von "Shadow AI": Mitarbeiter, die nicht genehmigte Online-KI-Tools, unsichere Browser-Plugins und Drittanbieteranwendungen verwenden, die LLM-Funktionen durch Updates oder Upgrades einführen und damit standardisierte Softwaregenehmigungsprozesse umgehen.
 
-Deployment Steps
+Bereitstellung
 
-Step 1: Resilience First Strategy
+Schritt 1: Resilienz-Strategie zuerst
 
-▶ Identify immediate threats by Threat Modeling abuse cases
-▶ Review internal or external exploitation cases for threat model scenarios and verify security controls
-▶ Scan and monitor the environment for any instances of rogue applications
+▶ Identifikation unmittelbarer Bedrohungen durch Bedrohungsmodellierung von Missbrauchsfällen
+▶ Überprüfen Sie interne oder externe Ausnutzungsmöglichkeiten in den Bedrohungsmodellszenarien und verifizieren Sie Sicherheitsmaßnahmen
+▶ Scannen und überwachen Sie Ihr Environment auf Vorkommen von Schadsoftware
 
-Ste 2: Update Existing Policy
+Schritt 2: Bestehende Richtlinien aktualisieren
 
-▶ Review contracts, NDA, governance, and security to incorporate LLM or GenAI use or threat
+▶ Verträge, Geheimhaltungsvereinbarungen, Governance und Sicherheit prüfen, um bei Bedarf Nutzung und Bedrohung durch LLMs oder GenAI zu integrieren
 
-Step 3: Training / Education
+Schritt 3: Schulung / Bildung
 
-▶ Update security awareness training, developer, legal, or other training to include LLM or GenAI use or threat
+▶ Aktualisieren Sie das Sicherheitsbewusstseinstraining, Entwickler-, rechtliche oder andere Schulungen, um die Nutzung oder Bedrohung durch LLMs oder GenAI einzubeziehen
 
-Step 4: Engage with Leaders
+Schritt 4: Führungskräfte einbeziehen
 
-▶ Work with executives, business leaders, and other stakeholders to identify an LLM or GenAI solutions strategy
-▶ Implement mitigation / risk strategy
+▶ Arbeiten Sie mit Führungskräften und anderen Stakeholdern zusammen, um LLM- oder GenAI-Lösungsstrategien zu identifizieren
+▶ Implementieren Sie eine Risikomanagementstrategie
 
-Step 5: Update Third Party Risk Management Program
+Schritt 5: Aktualisieren Sie Ihr Programm zur Risikomanagement bei Drittanbietern
 
-▶ Third-party and vendor AI solutions will require augmented questionnaires and reviews
+▶ Lösungen von Drittanbietern und Anbietern für KI benötigen erweiterte Fragebögen und Überprüfungen
 
-Step 6: Choose a Deployment Strategy
+Schritt 6: Eine Bereitstellungsstrategie wählen
 
-##### Figure 2.1  Options for Deployment Strategy
-##### credit sdunn
+##### Abbildung 2.1 Optionen für Bereitstellungsstrategie
+##### Quelle: sdunn
 
 
-### Deployment Strategy
+### Bereitstellungsstrategie
 
-The scopes range from leveraging public consumer applications to training proprietary models on private data. Factors like use case sensitivity, capabilities needed, and resources available help determine the right balance of convenience vs. control. However, understanding these five model types provides a framework for evaluating options.
+Die Bandbreite reicht von der Nutzung öffentlicher Endverbraucheranwendungen bis hin zum Training proprietärer Modelle auf eigenen Daten. Faktoren wie Sensibilität der Anwendungsfälle, benötigte Fähigkeiten und verfügbare Ressourcen helfen dabei, das passende Gleichgewicht zwischen Komfort und Kontrolle zu bestimmen. Das Verständnis dieser fünf Modelltypen bietet dabei einen Rahmen für die Bewertung der Optionen.
 
-Deployment Types
+Bereitstellungstypen
 
-Type 1: Direct Access
+Typ 1: Direkter Zugriff
 
-▶ Use large language models from their interface
-▶ Mitigate risk with corporate policy and employee training
-▶ Pros: Flexible and rapid experimentation
-▶ Examples: Perplexity, ChatGPT, big-AGI
+▶ Große Sprachmodelle über eine Schnittstelle nutzen
+▶ Risiko durch Unternehmensrichtlinien und Mitarbeitertraining mindern
+▶ Vorteile: Flexibles und schnelles Experimentieren
+▶ Beispiele: Perplexity, ChatGPT, big-AGI
 
-Type 2: Access Through Model API
+Typ 2: Zugriff über Model API
 
-▶ Use large language models directly from vendors through their API
-▶ Mitigate risk with corporate policy and employee training
-▶ Pros: Enables quick experimentation with some central control through the API
-▶ Examples: Claude, ChatGPT, Gemini
+▶ Große Sprachmodelle direkt von Anbietern über deren API nutzen
+▶ Risiko mit Unternehmensrichtlinien und Mitarbeitertraining mindern
+▶ Vorteile: Schnelles Experimentieren mit etwas zentraler Kontrolle über die API
+▶ Beispiele: Claude, ChatGPT, Gemini
 
-Type 3: Licensed Model
+Typ 3: Lizenzmodell
 
-▶ Use a licensed large language model in enterprise tenant
-▶ Mitigate risk by managing in own tenant.  Reduce risk with corporate policy and employee training
-▶ Pros: Provides more control and integration with internal tools and workflow
-▶ Examples: Microsoft Enterprise CoPilot, Amazon Codewhisperer, SalesForce Einstein GPT
+▶ Ein lizenziertes großes Sprachmodell auf den eigenen Systemen betrieben
+▶ Risiko durch Verwaltung durch Eigenbetrieb mindern. Risiko durch Unternehmensrichtlinien und Mitarbeitertraining reduzieren
+▶ Vorteile: mehr Kontrolle und Integration durch internen Tools und Workflows
+▶ Beispiele: Microsoft Enterprise CoPilot, Amazon Codewhisperer, SalesForce Einstein GPT
 
-Type 4: Pre-Trained Model
+Typ 4: Vortrainiertes Modell
 
-▶ Use a general foundation model, then customize by fine-tuning with enterprise or custom data
-▶ Mitigate risk with increased visibility, enhance performance, reduce hallucinations.  Reduce risk with corporate policy and employee training
-▶ Pros: enhance performance and reduce hallucinations
-▶ Examples: QwenLM/Qwen 1.5, DBRX, Starling 7B
+▶ Ein allgemeines Basismodell nutzen, dann durch Finetuning mit Unternehmens- oder benutzerdefinierten Daten anpassen
+▶ Risiko mit erhöhter Transparenz mindern, Leistung verbessern, Halluzinationen reduzieren. Risiko mit Unternehmensrichtlinien und Mitarbeitertraining reduzieren
+▶ Vorteile: Verbesserte Leistung und reduzierte Halluzinationen
+▶ Beispiele: QwenLM/Qwen 1.5, DBRX, Starling 7B
 
-Type 5: Fine-Tune Proven Model
+Typ 5: Bewährtes Modell finetunen
 
-▶ Use a proen(specialized) models and fine-tune further with proprietary data to adapt them to your enterprise
-▶ Mitigate risk with increased visibility, enhance performance, reduce hallucinations.  Reduce risk with corporate policy and employee training
-▶ Pros: Enables customization beyond pre-trained
-▶ Examples: Google MedPalm, Amazon Bedrock, Llama2, LegalAI
+▶ Bewährte (spezialisierte) Modelle nutzen und weiter mit eigenen Daten feinabstimmen, um sie an Ihr Unternehmen anzupassen
+▶ Risiko mit erhöhter Transparenz mindern, Leistung verbessern, Halluzinationen reduzieren. Risiko mit Unternehmensrichtlinien und Mitarbeitertraining reduzieren
+▶ Vorteile: Ermöglicht Anpassung über vortrainierte Modelle hinaus
+▶ Beispiele: Google MedPalm, Amazon Bedrock, Llama2, LegalAI
 
-Type 6: Custom Models
+Typ 6: Individuelle Modelle
 
-▶ Build a tailored AI/ML Model architecture for enterprise specific use case
-▶ Mitigate risk with complete visibility and control.  Reduce risk with corporate policy, developer, and employee training
-▶ Pros: Requires large investment but maximizes customization
+▶ Eine maßgeschneiderte KI/ML-Modellarchitektur für spezifische Unternehmensanwendungsfälle bauen
+▶ Risiko mit vollständiger Sichtbarkeit und Kontrolle mindern. Risiko mit Unternehmensrichtlinien, Entwickler- und Mitarbeitertraining reduzieren
+▶ Vorteile: Erfordert große Investitionen, maximiert aber die Anpassbarkeit
 
-##### Figure 2.2 Options for Deployment Types
-##### credit: sdunn
-## Checklist
+##### Abbildung 2.2 Optionen für Bereitstellungstypen
+##### Quelle: sdunn
+## Checkliste
 
-### Adversarial Risk
+### Risiko durch Gegner
 
-Adversarial Risk includes competitors and attackers.
+Das Risiko durch Gegner enthält sowohl Konkurrenten als auch Angreifer.
 
-Scrutinize how competitors are investing in artificial intelligence. Although there are risks in AI adoption, there are also business benefits that may impact future market positions.
-Investigate the impact of current controls, such as password resets, which use voice recognition which may no longer provide the appropriate defensive security from new GenAI enhanced attacks.
-Update the Incident Response Plan and playbooks for GenAI enhanced attacks and AIML specific incidents. 
+Untersuchen Sie, wie Konkurrenten in künstliche Intelligenz investieren. Obwohl es Risiken bei der Einführung von KI gibt, gibt es auch geschäftliche Vorteile, die zukünftige Marktpositionen beeinflussen können.
+Untersuchen Sie die Auswirkungen auf aktueller Kontrollmechanismen, wie etwa Passwortzurücksetzungen über Spracherkennung, die möglicherweise nicht mehr die angemessene Abwehr gegen neue von GenAI verstärkte Angriffe bieten.
+Aktualisieren Sie den Incident-Response-Plan und die Playbooks für von GenAI verstärkte Angriffe und spezifische Vorfälle in Bezug auf KI/ML.
 
-### Threat Modeling
+### Bedrohungsmodellierung
 
-Threat modeling is highly recommended to identify threats and examine processes and security defenses. Threat modeling is a set of systematic, repeatable processes that enable making reasonable security decisions for applications, software, and systems. Threat modeling for GenAI accelerated attacks and before deploying LLMs is the most cost effective way to Identify and mitigate risks, protect data, protect privacy, and ensure a secure, compliant integration within the business.
+Bedrohungsmodellierung wird dringend empfohlen, um Bedrohungen zu identifizieren, Prozesse und Sicherheitsverteidigungen zu untersuchen. Bedrohungsmodellierung ist eine Reihe systematischer, wiederholbarer Vorgehensweisen, die es ermöglichen, angemessene Sicherheitsentscheidungen für Anwendungen, Software und Systeme zu treffen. Bedrohungsmodellierung für durch GenAI beschleunigte Angriffe vor dem Einsatz von LLMs ist der kosteneffektivste Weg, um Risiken zu identifizieren und zu mindern, Daten und Privatsphäre zu schützen und eine sichere, konforme Integration in die Geschäftsabläufe zu gewährleisten.
 
-How will attackers accelerate exploit attacks against the organization, employees, executives, or users? Organizations should anticipate "hyper-personalized" attacks at scale using Generative AI. LLM-assisted Spear Phishing attacks are now exponentially more effective, targeted, and weaponized for an attack.
-How could GenAI be used for attacks on the business's customers or clients through spoofing or GenAI generated content?
-Can the business detect and neutralize harmful or malicious inputs or queries to LLM solutions? 
-Can the business safeguard connections with existing systems and databases with secure integrations at all LLM trust boundaries?
-Does the business have insider threat mitigation to prevent misuse by authorized users?
-Can the business prevent unauthorized access to proprietary models or data to protect Intellectual Property?
-Can the business prevent the generation of harmful or inappropriate content with automated content filtering? 
+Wie werden Gegner Angriffe gegen die Organisation, Mitarbeiter, Führungskräfte oder Nutzer beschleunigen? Organisationen sollten "hyper-personalisierte" Angriffe in großem Maßstab mit generativer KI erwarten. LLM-unterstützte Spear-Phishing-Angriffe sind jetzt exponentiell effektiver, gezielter und besser für einen Angriff ausgerüstet.
+Wie könnte GenAI für Angriffe auf die Kunden oder Klienten des Geschäfts durch Fälschung oder von GenAI generierte Inhalte verwendet werden?
+Kann die Organisation schädliche oder bösartige Eingaben oder Anfragen an LLM-Lösungen erkennen und neutralisieren?
+Kann die Organisation Verbindungen mit bestehenden Systemen und Datenbanken mit sicheren Integrationen an allen Vertrauensgrenzen der LLMs schützen?
+Verfügt die Organisation über Maßnahmen zur Minderung von Insider-Bedrohungen, um Missbrauch durch autorisierte Benutzer zu verhindern?
+Kann die Organisation unbefugten Zugriff auf proprietäre Modelle oder Daten verhindern, um geistiges Eigentum zu schützen?
+Kann die Organisation die Erzeugung von schädlichen oder unangemessenen Inhalten mit automatischer Inhaltsfilterung verhindern?
 
-### AI Asset Inventory
+### KI-Asset-Inventar
 
-An AI asset inventory should apply to both internally developed and external or third-party solutions.
+Ein KI-Asset-Inventar sollte sowohl für intern entwickelte als auch für externe oder Drittanbieterlösungen gelten.
 
-Catalog existing AI services, tools, and owners. Designate a tag in asset management for specific inventory.
-Include AI components in the Software Bill of Material (SBOM), a comprehensive list of all the software components, dependencies, and metadata associated with applications.
-Catalog AI data sources and the sensitivity of the data (protected, confidential, public)
-Establish if pen testing or red teaming of deployed AI solutions is required to determine the current attack surface risk.
-Create an AI solution onboarding process.
-Ensure skilled IT admin staff is available either internally or externally, following SBoM requirements.
+Katalogisieren Sie bestehende KI-Dienste, Tools und deren Eigentümer. Weisen Sie eine Kennzeichnung im Asset-Management für spezifische Inventare zu.
+Schließen Sie KI-Komponenten in die Software Bill of Material (SBOM) ein, eine umfassende Liste aller Softwarekomponenten, Abhängigkeiten und Metadaten, die mit Anwendungen verbunden sind.
+Katalogisieren Sie KI-Datenquellen und die Sensibilität der Daten (geschützt, vertraulich, öffentlich)
+Stellen Sie fest, ob Pen-Tests oder Red-Teaming für eingesetzten KI-Lösungen erforderlich sind, um das aktuelle Angriffsrisiko zu bestimmen.
+Erstellen Sie einen Onboarding-Prozess für KI-Lösungen.
+Stellen Sie sicher, dass qualifiziertes IT-Admin-Personal entweder intern oder extern verfügbar ist, gemäß den Anforderungen aus der SBOM.
 
-### AI Security and Privacy Training
+### KI-Sicherheits- und Datenschutzschulung
 
-Actively engage with employees to understand and address concerns with planned LLM initiatives.
- Establish a culture of open, and transparent communication on the organization's use of predictive or generative AI within the organization process, systems, employee management and support, and customer engagements and how its use is governed, managed, and risks addressed. 
-Train all users on ethics, responsibility, and legal issues such as warranty, license, and copyright.
-Update security awareness training to include GenAI related threats. Voice cloning and image cloning, as well as in anticipation of increased spear phishing attacks
-Any adopted GenAI solutions should include training for both DevOps and cybersecurity for the deployment pipeline to ensure AI safety and security assurances.
+Engagieren Sie sich aktiv mit Mitarbeitern, um Bedenken bezüglich geplanter LLM-Initiativen zu verstehen und anzugehen.
+Etablieren Sie eine Kultur offener und transparenter Kommunikation über den Einsatz von vorhersagender oder generativer KI innerhalb der Organisationsprozesse, Systeme, Mitarbeitermanagement und -unterstützung sowie Kundenengagements und wie deren Einsatz geregelt, verwaltet und deren Risiken angegangen werden.
+Schulen Sie alle Benutzer in Ethik, Verantwortung und rechtlichen Fragen wie Garantie, Lizenz und Urheberrecht.
+Aktualisieren Sie das Security-Awareness-Training, um GenAI-bezogene Bedrohungen wie Stimmklonung und Bildklonung und die Erwartung erhöhter Spear-Phishing-Angriffe einzuschließen.
+Jede eingeführte GenAI-Lösung sollte Schulungen sowohl für DevOps als auch für Cybersicherheit für die Bereitstellungspipeline umfassen, um KI-Sicherheit und -Sicherheitszusagen zu gewährleisten.
 
-### Establish Business Cases
+### Business-Cases etablieren
 
-Solid business cases are essential to determining the business value of any proposed AI solution, balancing risk and benefits, and evaluating and testing return on investment. There are an enormous number of potential use cases; a few examples are provided.
+Solide Business-Cases sind wesentlich, um den Geschäftswert jeder vorgeschlagenen KI-Lösung zu bestimmen, Risiko und Nutzen abzuwägen sowie die Rendite von Investitionen zu bewerten und zu testen. Es gibt eine enorme Anzahl potenzieller Anwendungsfälle:
 
-Enhance customer experience
-Better operational efficiency
-Better knowledge management
-Enhanced innovation
-Market Research and Competitor Analysis
-Document creation, translation, summarization, and analysis 
+Verbesserung der Kundenerfahrung
+Verbesserte betriebliche Effizienz
+Besseres Wissensmanagement
+Verbesserte Innovation
+Marktforschung und Konkurrenzanalyse
+Dokumentenerstellung, Übersetzung, Zusammenfassung und Analyse
 
 ### Governance
 
-Corporate governance in LLM is needed to provide organizations with transparency and accountability. Identifying AI platform or process owners who are potentially familiar with the technology or the selected use cases for the business is not only advised but also necessary to ensure adequate reaction speed that prevents collateral damages to well established enterprise digital processes.
+Corporate Governance wird bei LLMs notwendig, um Organisationen Transparenz und Rechenschaftsfähigkeit zu bieten. Die Identifizierung von KI-Plattform- oder Prozesseigentümern, die möglicherweise mit der Technologie oder den ausgewählten Anwendungsfällen für das Geschäft vertraut sind, ist nicht nur ratsam, sondern auch notwendig, um eine ausreichende Reaktionsgeschwindigkeit zu gewährleisten, die Kollateralschäden an gut etablierten digitalen Unternehmensprozessen verhindert.
 
-Establish the organization’s AI RACI chart (who is responsible, who is accountable, who should be consulted, and who should be informed)
-Document and assign AI risk, risk assessments, and governance responsibility within the organization.
-Establish data management policies, including technical enforcement, regarding data classification and usage limitations. Models should only leverage data classified for the minimum access level of any user of the system. For example, update the data protection policy to emphasize not to input protected or confidential data into nonbusiness-managed tools.
-Create an AI Policy supported by established policy (e.g., standard of good conduct, data protection, software use)
-Publish an acceptable use matrix for various generative AI tools for employees to use.
-Document the sources and management of any data that the organization uses from the generative LLM models. 
+Etablieren Sie ein KI-RACI-Diagramm der Organisation (wer ist verantwortlich, wer ist rechenschaftspflichtig, wer sollte konsultiert und wer sollte informiert werden)
+Dokumentieren und ordnen Sie KI-Risiko, Risikobewertungen und Governance-Verantwortung innerhalb der Organisation zu.
+Etablieren Sie Datenmanagementrichtlinien bezüglich Datenklassifizierung und Nutzungseinschränkungen, einschließlich ihrer technischer Durchsetzung. Modelle sollten nur Daten nutzen, die für das Mindestzugriffsniveau eines Benutzers des Systems klassifiziert sind. Aktualisieren Sie zum Beispiel die Datenschutzrichtlinie, damit keine geschützten oder vertraulichen Daten in nicht geschäftlich verwaltete Tools eingegeben werden.
+Erstellen Sie eine KI-Richtlinie, die durch etablierte Richtlinien unterstützt wird (z. B. Standard guter Führung, Datenschutz, Softwarenutzung)
+Veröffentlichen Sie eine Matrix akzeptierbarer Nutzung für die verschiedenen generativen KI-Tools für Ihre Mitarbeiter.
+Dokumentieren Sie die Quellen und das Management aller Daten, die die Organisation von generativen LLM-Modellen verwendet.
 
-### Legal
+### Rechtlich
 
-Many of the legal implications of AI are undefined and potentially very costly. An IT, security, and legal partnership is critical to identifying gaps and addressing obscure decisions.
+Viele der rechtlichen Implikationen von KI sind undefiniert und potenziell sehr kostspielig. Eine Partnerschaft von IT-, Sicherheits- und Legal ist entscheidend, um Lücken zu identifizieren und ungeklärte Entscheidungen anzugehen.
 
-Confirm product warranties are clear in the product development stream to assign who is responsible for product warranties with AI.
-Review and update existing terms and conditions for any GenAI considerations.
-Review AI EULA agreements. End-user license agreements for GenAI platforms are very different in how they handle user prompts, output rights and ownership, data privacy, compliance, liability, privacy, and limits on how output can be used.
-Organizations EULA for customers, Modify end-user agreements to prevent the organization from incurring liabilities related to plagiarism, bias propagation, or intellectual property infringement through AI-generated content.
-Review existing AI-assisted tools used for code development. A chatbot's ability to write code can threaten a company's ownership rights to its product if a chatbot is used to generate code for the product. For example, it could call into question the status and protection of the generated content and who holds the right to use the generated content.
-Review any risks to intellectual property. Intellectual property generated by a chatbot could be in jeopardy if improperly obtained data was used during the generative process, which is subject to copyright, trademark, or patent protection. If AI products use infringing material, it creates a risk for the outputs of the AI, which may result in intellectual property infringement.
-Review any contracts with indemnification provisions. Indemnification clauses try to put the responsibility for an event that leads to liability on the person who was more at fault for it or who had the best chance of stopping it. Establish guardrails to determine whether the provider of the AI or its user caused the event, giving rise to liability.
-Review liability for potential injury and property damage caused by AI systems.
-Review insurance coverage. Traditional (D&O) liability and commercial general liability insurance policies are likely insufficient to fully protect AI use.
-Identify any copyright issues. Human authorship is required for copyright. An organization may also be liable for plagiarism, propagation of bias, or intellectual property infringement if LLM tools are misused.
-Ensure agreements are in place for contractors and appropriate use of AI for any development or provided services.
-Restrict or prohibit the use of generative AI tools for employees or contractors where enforceable rights may be an issue or where there are IP infringement concerns.
-Assess and AI solutions used for employee management or hiring could result in disparate treatment claims or disparate impact claims.
-Make sure the AI solutions do not collect or share sensitive information without proper consent or authorization.
+Stellen Sie sicher, dass Produktgarantien im Produktentwicklungsfluß klar zugewiesen sind, um festzulegen, wer für Produktgarantien mit KI verantwortlich ist.
+Überprüfen und aktualisieren Sie bestehende Geschäftsbedingungen für jegliche GenAI-Überlegungen.
+Überprüfen Sie KI-Endbenutzer-Lizenzvereinbarungen. Endbenutzer-Lizenzvereinbarungen für GenAI-Plattformen unterscheiden sich sehr darin, wie sie Benutzeraufforderungen, Ausgaberechte und -eigentum, Datenschutz, Compliance, Haftung, Privatsphäre und Einschränkungen bezüglich der Nutzung von Ausgaben handhaben.
+Passen Sie den Endbenutzer-Lizenzvertrag der Organisation für Kunden an, um zu verhindern, dass die Organisation Haftungen im Zusammenhang mit Plagiaten, Bias-Verbreitung oder Verletzung des geistigen Eigentums durch KI-generierte Inhalte übernimmt.
+Prüfen Sie bestehende KI-unterstützte Tools, die für die Codeentwicklung verwendet werden. Die Fähigkeit eines Chatbots, Code zu schreiben, kann die Eigentumsrechte eines Unternehmens an seinem Produkt gefährden. Zum Beispiel könnte dies den Status und Schutz des generierten Inhalts und die Rechte, diesen generierten Inhalt zu nutzen, in Frage stellen.
+Prüfen Sie alle Risiken für das geistige Eigentum. Geistiges Eigentum, das von einem Chatbot generiert wurde, könnte gefährdet sein, wenn während des generativen Prozesses unrechtmäßig erhaltene Daten verwendet wurden, die urheberrechtlich, markenrechtlich oder patentrechtlich geschützt sind. Wenn die KI-Produkte rechtswidriges Material verwenden, entsteht ein Risiko für die Erzeugnisse der KI, was zu einer Verletzung des geistigen Eigentums führen kann.
+Überprüfen Sie Verträge mit Freistellungsklauseln. Freistellungsklauseln versuchen, die Verantwortung für ein Ereignis, das zu einer Haftung führt, auf die Person zu legen, die dafür am meisten verantwortlich war oder die beste Chance hatte, es zu verhindern. Etablieren Sie Leitplanken, um zu bestimmen, ob der Anbieter der KI oder ihr Benutzer das Ereignis verursacht hat, das zur Haftung führt.
+Überprüfen Sie die Haftung für mögliche Verletzungen und Sachschäden, die durch KI-Systeme verursacht werden.
+Überprüfen Sie die Versicherungsdeckung. Traditionelle Haftpflicht- oder gewerbliche allgemeine Haftpflichtversicherungen sind wahrscheinlich unzureichend, um den Einsatz von KI vollständig abzusichern.
+Identifizieren Sie jegliche Urheberrechtsfragen. Für das Urheberrecht ist menschliche Urheberschaft erforderlich. Eine Organisation kann auch für Plagiate, Bias-Verbreitung oder Verletzung des geistigen Eigentums haftbar gemacht werden, wenn LLM-Tools missbräuchlich verwendet werden.
+Stellen Sie sicher, dass Vereinbarungen für Auftragnehmer und die angemessene Nutzung von KI für Entwicklungen oder bereitgestellte Dienste vorhanden sind.
+Beschränken oder verbieten Sie die Nutzung von generativen KI-Tools für Mitarbeiter oder Auftragnehmer, bei denen durchsetzbare Rechte ein Problem sein könnten oder bei denen Bedenken hinsichtlich der Verletzung des geistigen Eigentums bestehen.
+Prüfen Sie die KI-Lösungen, die für das Mitarbeitermanagement oder die Einstellung verwendet werden. Diese könnten zu Ansprüchen wegen unterschiedlicher Behandlung führen.
+Stellen Sie sicher, dass die KI-Lösungen keine sensiblen Informationen ohne ordnungsgemäße Zustimmung oder Autorisierung sammeln oder teilen.
 
-### Regulatory
+### Regulierung
 
-The EU AI Act is anticipated to be the first comprehensive AI law but will apply in 2025 at the earliest. The EU's General Data Protection Regulation (GDPR) does not specifically address AI but includes rules for data collection, data security, fairness and transparency, accuracy and reliability, and accountability, which can impact GenAI use. In the United States, AI regulation is included within broader consumer privacy laws. Ten US states have passed laws or have laws that will go into effect by the end of 2023.
+Der KI-Akt der EU wird voraussichtlich das erste umfassende KI-Gesetz sein, wird aber frühestens 2025 gelten. Die Datenschutz-Grundverordnung (DSGVO) der EU adressiert KI nicht spezifisch, beinhaltet jedoch Regeln für die Datenerhebung, Datensicherheit, Fairness und Transparenz, Genauigkeit und Zuverlässigkeit sowie Rechenschaftspflicht, die den Einsatz von GenAI beeinflussen können. In den Vereinigten Staaten ist die KI-Regulierung in breitere Verbraucherdatenschutzgesetze eingebettet. Zehn US-Bundesstaaten haben Gesetze verabschiedet oder haben Gesetze, die bis Ende 2023 in Kraft treten werden.
 
-Canada has so far only published a Voluntary Code of Conduct on the Responsible Development and Management of Advanced Generative AI Systems, however, the Artificial Intelligence and Data Act (AIDA) will have stronger requirements.
+Kanada hat bisher nur einen freiwilligen Verhaltenskodex zur verantwortungsvollen Entwicklung und Verwaltung fortgeschrittener generativer KI-Systeme veröffentlicht, jedoch wird der Artificial Intelligence and Data Act (AIDA) strengere Anforderungen haben.
 
-Federal organizations such as the US Equal Employment Opportunity Commission (EEOC), the Consumer Financial Protection Bureau (CFPB), the Federal Trade Commission (FTC), and the US Department of Justice's Civil Rights Division (DOJ) are closely monitoring hiring fairness.
+Bundesorganisationen wie die US Equal Employment Opportunity Commission (EEOC), das Consumer Financial Protection Bureau (CFPB), die Federal Trade Commission (FTC) und die Civil Rights Division des US-Justizministeriums (DOJ) überwachen die Fairness im Recruiting genau.
 
-Determine Country, State, or other Government specific AI compliance requirements.
-Determine compliance requirements for restricting electronic monitoring of employees and employment-related automated decision systems (Vermont, California, Maryland, New York, New Jersey)
-Determine compliance requirements for consent for facial recognition and the AI video analysis required (Illinois, Maryland, Washington, Vermont)
-Review any AI tools in use or being considered for employee hiring or management.
-Confirm the vendor’s compliance with applicable AI laws and best practices.
-Ask and document any products using AI during the hiring process. Ask how the model was trained, and how it is monitored, and track any corrections made to avoid discrimination and bias.
-Ask and document what accommodation options are included.
-Ask and document whether the vendor collects confidential data.
-Ask how the vendor or tool stores and deletes data and regulates the use of facial recognition and video analysis tools during pre-employment.
-Review other organization-specific regulatory requirements with AI that may raise compliance issues. The Employee Retirement Income Security Act of 1974, for instance, has fiduciary duty requirements for retirement plans that a chatbot might not be able to meet. 
+Ermitteln Sie länderspezifische, staatliche oder andere staatliche KI-Compliance-Anforderungen.
+Ermitteln Sie Compliance-Anforderungen für die Einschränkung der elektronischen Überwachung von Mitarbeitern und beschäftigungsbezogenen automatisierten Entscheidungssystemen (Vermont, Kalifornien, Maryland, New York, New Jersey)
+Ermitteln Sie Compliance-Anforderungen für die Zustimmung zur Gesichtserkennung und AI-biasierter Videoanalyse.
+Überprüfen Sie KI-Tools, die für die Einstellung oder Verwaltung von Mitarbeitern verwendet werden oder in Betracht gezogen werden.
+Bestätigen Sie die Einhaltung der anwendbaren KI-Gesetze und Best Practices durch den Anbieter.
+Ermitteln und dokumentieren Sie alle Produkte, die KI während des Einstellungsprozesses verwenden. Fragen Sie, wie das Modell trainiert wurde, wie es überwacht wird und verfolgen Sie alle Korrekturen, um Diskriminierung und Bias zu vermeiden.
+Ermitteln und dokumentieren Sie, welche Unterkunftsoptionen enthalten sind.
+Ermitteln und dokumentieren Sie, ob der Anbieter vertrauliche Daten sammelt.
+Ermitteln Sie, wie der Anbieter oder das Tool Daten speichert und löscht und die Nutzung von Gesichtserkennung und Videoanalysetools während der Vorbeschäftigung regelt.
+Überprüfen Sie andere organisationsspezifische regulatorische Anforderungen mit KI, die Compliance-Probleme aufwerfen könnten. Der Employee Retirement Income Security Act von 1974 hat zum Beispiel treuhänderische Pflichtanforderungen für Rentenpläne, die ein Chatbot möglicherweise nicht erfüllen kann.
 
-### Using or Implementing Large Language Model Solutions
+### Einsatz oder Implementierung von Large Language Model-Lösungen
 
-Threat Model LLM components and architecture trust boundaries.
-Data Security, verify how data is classified and protected based on sensitivity, including personal and proprietary business data. (How are user permissions managed, and what safeguards are in place?)
-Access Control, implement least privilege access controls and implement defense-in-depth measures
-Training Pipeline Security, require rigorous control around training data governance, pipelines, models, and algorithms.
-Input and Output Security, evaluate input validation methods, as well as how outputs are filtered, sanitized, and approved.
-Monitoring and Response, map workflows, monitoring, and responses to understand automation, logging, and auditing. Confirm audit records are secure.
-Include application testing, source code review, vulnerability assessments, and red teaming in the production release process.
-Check for existing vulnerabilities in the LLM model or supply chain.
-Look into the effects of threats and attacks on LLM solutions, such as prompt injection, the release of sensitive information, and process manipulation.
-Investigate the impact of attacks and threats to LLM models, including model poisoning, improper data handling, supply chain attacks, and model theft.
-Supply Chain Security, request third-party audits, penetration testing, and code reviews for third-party providers. (both initially and on an ongoing basis)
-Infrastructure Security, ask how often a vendor performs resilience testing? What are their SLAs in terms of availability, scalability, and performance?
-Update incident response playbooks and include an LLM incident in tabletop exercises. 
-Identify or expand metrics to benchmark generative cybersecurity AI against other approaches to measure expected productivity improvements.
+Erstellen Sie ein Bedrohungsmodell für LLM-Komponenten und Architekturvertrauensgrenzen.
+Datensicherheit, überprüfen Sie, wie Daten basierend auf Sensibilität klassifiziert und geschützt werden, einschließlich persönlicher und proprietärer Geschäftsdaten. (Wie werden Benutzerberechtigungen verwaltet und welche Schutzmaßnahmen sind vorhanden?)
+Zugangskontrolle, implementieren Sie Zugangskontrollen mit minimalen Rechten und setzen Sie Verteidigungsmaßnahmen in der Tiefe um.
+Sicherheit der Trainingspipeline, sichern Sie strenge Kontrolle für Trainingsdaten-Governance, Pipelines, Modelle und Algorithmen.
+Sicherheit von Eingaben und Ausgaben, prüfen Sie Methoden zur Eingabevalidierung sowie wie Ausgaben gefiltert, bereinigt und genehmigt werden.
+Monitoring and Response, dokumentieren Sie Workflows, Überwachung und Reaktionen, um Automatisierung, Protokollierung und Auditing nachvollziehen zu können. Stellen Sie sicher, dass Prüfprotokolle gesichert sind.
+Integrieren Sie Anwendungstests, Quellcodeüberprüfungen, Schwachstellenbewertungen und Red-Teaming in den Produktionsfreigabeprozess.
+Überprüfen Sie auf bestehende Schwachstellen im LLM-Modell oder in der Lieferkette.
+Untersuchen Sie die Auswirkungen von Bedrohungen und Angriffen auf LLM-Lösungen, wie Prompt-Injektion, die Freigabe sensibler Informationen oder Prozessmanipulation.
+Untersuchen Sie die Auswirkungen von Angriffen und Bedrohungen auf LLM-Modelle, einschließlich Model-Poisoning, unsachgemäßem Datenhandling, Angriffen auf die Lieferkette und Modell-Diebstahl.
+Sicherheit der Lieferkette, fordern Sie Drittprüfungen, Penetrationstests und Codeüberprüfungen für Drittanbieter an. (sowohl initial als auch fortlaufend)
+Infrastruktursicherheit, fragen Sie, wie oft ein Anbieter Resilienztests durchführt? Was sind die SLAs in Bezug auf Verfügbarkeit, Skalierbarkeit und Performance?
+Aktualisieren Sie die Einsatzpläne für Incident Response und beziehen Sie Zwischenfälle mit großen Sprachmodellen (LLMs) in Tabletop-Übungen mit ein.
+Identifizieren Sie oder erweitern Sie Metriken, um generative Cybersicherheits-KI mit anderen Ansätzen zu vergleichen, um die erwarteten Produktivitätssteigerungen zu messen.
 
-### Testing, Evaluation, Verification, and Validation (TEVV)
+### Testen, Evaluieren, Verifizieren und Validieren (TEVV)
 
-NIST AI Framework recommends a continuous TEVV process throughout the AI lifecycle which includes the AI system operators, domain experts, AI designers, users, product developers, evaluators, and auditors. TEVV includes a range of tasks such as system validation, integration, testing, recalibration, and ongoing monitoring for periodic updates to navigate the risks and changes of the AI system.
+Das NIST AI Framework empfiehlt einen kontinuierlichen TEVV-Prozess während des gesamten Lebenszyklus der KI, der die Betreiber der KI-Systeme, Fachexperten, KI-Designer, Benutzer, Produktentwickler, Evaluatoren und Prüfer einschließt. TEVV umfasst eine Reihe von Aufgaben wie Systemvalidierung, Integration, Testen, Neukalibrierung und fortlaufendes Monitoring für periodische Updates, um mit den Risiken und Veränderungen des KI-Systems umzugehen.
 
-Establish continuous testing, evaluation, verification, and validation throughout the AI model lifecycle.
-Provide regular executive metrics and updates on AI Model functionality, security, reliability, and robustness.
+Etablieren Sie kontinuierliches Testen, Evaluieren, Verifizieren und Validieren während des gesamten Lebenszyklus des KI-Modells.
+Stellen Sie regelmäßig Führungsmetriken und Updates zur Funktionalität, Sicherheit, Zuverlässigkeit und Robustheit des KI-Modells bereit.
 
-### Model Cards and Risk Cards
+### Modellkarten und Risikokarten
 
-Model cards and risk cards are foundational elements for increasing the transparency, accountability, and ethical deployment of Large Language Models (LLMs). Model cards help users understand and trust AI systems by providing standardized documentation on their design, capabilities, and constraints, leading them to make educated and safe applications. Risk cards supplement this by openly addressing potential negative consequences, such as biases, privacy problems, and security vulnerabilities, which encourages a proactive approach to harm prevention. These documents are critical for developers, users, regulators, and ethicists equally since they establish a collaborative atmosphere in which AI's social implications are carefully addressed and handled. These cards, developed and maintained by the organizations that created the models, play an important role in ensuring that AI technologies fulfill ethical standards and legal requirements, allowing for responsible research and deployment in the AI ecosystem.
+Modellkarten und Risikokarten sind grundlegende Elemente, um die Transparenz, Rechenschaftspflicht und ethische Bereitstellung von großen Sprachmodellen (LLMs) zu erhöhen. Modellkarten helfen Benutzern, KI-Systeme zu verstehen und zu vertrauen, indem sie standardisierte Dokumentationen über deren Design, Fähigkeiten und Einschränkungen bereitstellen, was zu fundierten und sicheren Anwendungen führt. Risikokarten ergänzen dies, indem sie offen potenzielle negative Konsequenzen ansprechen, wie Vorurteile, Datenschutzprobleme und Sicherheitsanfälligkeiten, was einen proaktiven Ansatz zur Schadensprävention fördert. Diese Dokumente sind für Entwickler, Benutzer, Regulierungsbehörden und Ethiker gleichermaßen wichtig, da sie eine kooperative Atmosphäre schaffen, in der die sozialen Auswirkungen von KI sorgfältig behandelt und gehandhabt werden. Diese Karten, die von den Organisationen entwickelt und gepflegt werden, die die Modelle erstellt haben, spielen eine wichtige Rolle dabei, sicherzustellen, dass KI-Technologien ethische Standards und gesetzliche Anforderungen erfüllen, was eine verantwortungsbewusste Forschung und Bereitstellung im KI-Ökosystem ermöglicht.
 
-Model cards include key attributes associated with the ML model:
+Modellkarten enthalten wichtige Attribute, die mit dem ML-Modell verbunden sind:
 
-Model details: Basic information about the model, i.e., name, version, and type (neural network, decision tree, etc.), and the intended use case.
-Model architecture: Includes a description of the structure of the model, such as the number and type of layers, activation functions, and other key architectural choices.
-Training data and methodology: Information about the data used to train the model, such as the size of the dataset, the data sources, and any preprocessing or data augmentation techniques used. It also includes details about the training methodology, such as the optimizer used, the loss function, and any hyperparameters that were tuned.
-Performance metrics: Information about the model's performance on various metrics, such as accuracy, precision, recall, and F1 score. It may also include information about how the model performs on different subsets of the data.
-Potential biases and limitations: Lists potential biases or limitations of the model, such as imbalanced training data, overfitting, or biases in the model's predictions. It may also include information about the model's limitations, such as its ability to generalize to new data or its suitability for certain use cases.
-Responsible AI considerations: Any ethical or responsible AI considerations related to the model, such as privacy concerns, fairness, and transparency, or potential societal impacts of the model's use. It may also include recommendations for further testing, validation, or monitoring of the model.
+Modellangaben: Grundlegende Informationen über das Modell, z. B. Name, Version und Typ (Neuronales Netzwerk, Entscheidungsbaum usw.) und der vorgesehene Anwendungsfall.
+Modellarchitektur: Enthält eine Beschreibung der Struktur des Modells, wie die Anzahl und Art der Schichten, Aktivierungsfunktionen und andere wichtige architektonische Entscheidungen.
+Trainingsdaten und Methodik: Informationen über die Daten, die zum Trainieren des Modells verwendet wurden, wie die Größe des Datensatzes, die Datenquellen und etwaige Vorverarbeitungs- oder Datenanreicherungstechniken. Es enthält auch Details zur Trainingsmethodik, wie den verwendeten Optimierer, die Verlustfunktion und etwaige eingestellte Hyperparameter.
+Leistungsmetriken: Informationen über die Leistung des Modells anhand verschiedener Metriken, wie Genauigkeit, Präzision, Rückruf und F1-Score. Es kann auch Informationen darüber enthalten, wie das Modell bei verschiedenen Datensubsets abschneidet.
+Potenzielle Vorurteile(Bias) und Einschränkungen: Listen potenzieller Vorurteile(Bias) oder Einschränkungen des Modells auf, wie unausgeglichene Trainingsdaten, Überanpassung oder Vorurteile in den Vorhersagen des Modells. Es kann auch Informationen über die Einschränkungen des Modells enthalten, wie seine Fähigkeit, sich auf neue Daten zu generalisieren oder seine Eignung für bestimmte Anwendungsfälle.
+Überlegungen zu verantwortungsvoller KI: Alle ethischen oder verantwortungsvollen KI-Überlegungen im Zusammenhang mit dem Modell, wie Datenschutzbedenken, Fairness und Transparenz oder mögliche gesellschaftliche Auswirkungen der Nutzung des Modells. Es kann auch Empfehlungen für weitere Tests, Validierungen oder Überwachungen des Modells enthalten.
 
-The precise features contained in a model card may differ based on the model's context and intended usage, but the purpose is to give openness and accountability in the creation and deployment of machine learning models.
+Die genauen Merkmale, die in einer Modellkarte enthalten sind, können je nach Kontext und beabsichtigter Verwendung des Modells variieren, aber das Ziel ist es, Offenheit und Rechenschaftspflicht in der Entwicklung und Bereitstellung von maschinellen Lernmodellen zu bieten.
 
-Review a models model card 
-Review risk card if available
-Establish a process to track and maintain model cards for any deployed model including models used through a third party.
+Prüfen Sie eine Modellkarte des Modells
+Prüfen Sie eine Risikokarte, falls verfügbar
+Etablieren Sie einen Prozess zur Überwachung und Pflege von Modellkarten für jedes bereitgestellte Modell, einschließlich Modelle, die durch Dritte verwendet werden.
 
-### RAG: Large Language Model Optimization
+### RAG: Optimierung von großen Sprachmodellen
 
-Fine tuning, the traditional method for optimizing a pre-trained model, involved retraining an existing model on new, and domain-specific data, modifying it for performance on a task or application. Fine-tuning is expensive but essential to improve performance. 
+Fine-Tuning, die traditionelle Methode zur Optimierung eines vortrainierten Modells, beinhaltete das erneute Training eines vorhandenen Modells mit neuen, domänenspezifischen Daten, um es für eine Aufgabe oder Anwendung zu modifizieren. Fine-Tuning ist teuer, aber wesentlich zur Leistungsverbesserung.
 
-Retrieval-Augmented Generation (RAG) has evolved as a more effective way of optimizing and augmenting the capabilities of large language models by retrieving pertinent data from up to date available knowledge sources. RAG can be customized for specific domains, optimizing the retrieval of domain-specific information and tailoring the generation process to the nuances of specialized fields. RAG is seen as a more efficient and transparent method for LLM optimization, particularly for problems where labeled data is limited or expensive to collect. One of the primary advantages of RAG is its support for continuous learning since new information can be continually updated at the retrieval stage.
+Retrieval-Augmented Generation (RAG) hat sich als eine effektivere Methode zur Optimierung und Erweiterung der Fähigkeiten von großen Sprachmodellen entwickelt, indem relevante Daten aus aktuellen verfügbaren Wissensquellen abgerufen werden. RAG kann für spezifische Domänen angepasst werden, um die Abfrage domänenspezifischer Informationen zu optimieren und den Generierungsprozess auf die Nuancen spezialisierter Bereiche zuzuschneiden. RAG wird als eine effizientere und transparentere Methode zur Optimierung von LLM angesehen, insbesondere für Probleme, bei denen markierte Daten begrenzt oder teuer zu sammeln sind. Einer der Hauptvorteile von RAG ist die Unterstützung kontinuierlichen Lernens, da neue Informationen kontinuierlich auf der Abrufstufe aktualisiert werden können.
 
-The RAG implementation involves several key steps starting from embedding model deployment, indexing the knowledge library, to retrieving the most relevant documents for query processing. Efficient retrieval of the relevant context is made based on vector databases which are used for storage and querying of document embeddings.
+Die Implementierung von RAG umfasst mehrere wichtige Schritte, beginnend mit dem Einsatz des Einbettungsmodells, dem Indizieren der Wissensbibliothek bis hin zum Abrufen der relevantesten Dokumente für die Verarbeitung von Anfragen. Effizientes Abrufen des relevanten Kontexts wird basierend auf Vektordatenbanken durchgeführt, die zur Speicherung und Abfrage von Dokumenteinbettungen verwendet werden.
 
-#### RAG Reference
+#### RAG-Referenz
 Retrieval Augmented Generation (RAG) & LLM: Examples
 12 RAG Pain Points and Proposed Solutions
 
 ### AI Red Teaming
 
-AI Red Teaming is an adversarial attack test simulation of the AI System to validate there aren’t any existing vulnerabilities which can be exploited by an attacker. It is a recommended practice by many regulatory and AI governing bodies including the Biden administration. Red-teaming alone is not a comprehensive solution to validate all real-world harms associated with AI systems and should be included with other forms of testing, evaluation, verification, and validation such as algorithmic impact assessments and external audits.
+AI Red Teaming ist eine simulierte Angriffstestsimulation des KI-Systems, um zu validieren, dass keine vorhandenen Schwachstellen ausgenutzt werden können. Es ist eine von vielen regulatorischen und KI-regulierenden Organisationen empfohlene Praxis, einschließlich der Biden-Administration. Red Teaming allein ist jedoch keine umfassende Lösung zur Validierung aller realen Schäden, die mit KI-Systemen verbunden sind, und sollte mit anderen Formen von Testen, Evaluieren, Verifizieren und Validieren wie algorithmischen Auswirkungsbewertungen und externen Audits kombiniert werden.
 
-Incorporate Red Team testing as a standard practice for AI Models and applications.
-## Resources
+Integrieren Sie Red Team-Tests als Standardpraxis für KI-Modelle und Anwendungen.
+## Ressourcen
 
-OWASP Top 10 for Large Language Models
+OWASP Top 10 für Large Language Models
 
 LLM01: Prompt Injection (Prompt-Einschleusung)
 Mit raffinierten Eingabenkann man ein Large Language Model manipulieren und unbeabsichtigte Aktionen verursachen. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
@@ -401,213 +401,179 @@ Dies umfasst unbefugten Zugriff, Kopieren oder Exfiltration von proprietären LL
 
 ##### Figure 4.1  OWASP Top 10 for Large Language Model Applications
 
-![OWASP Top10 for LLM Visual](images/GOV1_Fig_4_2_en-ZZ.png)
-##### Figure 4.2  OWASP Top 10 for Large Language Model Applications Visualized
+![OWASP Top10 für LLM Visuell](images/GOV1_Fig_4_2_en-ZZ.png)
+##### Abbildung 4.2 OWASP Top 10 für Large-Language-Model-Anwendungen visualisiert
 
 
-### OWASP Resources
+### OWASP-Ressourcen
 
-Using LLM solutions expands an organization's attack surface and presents new challenges, requiring special tactics and defenses. It also poses problems that are similar to known issues, and where there are already established cybersecurity procedures and mitigations. Integrating LLM cybersecurity with an organization's established cybersecurity controls, processes, and procedures allows an organization to reduce its vulnerability to threats.
-How they integrate is available at the OWASP Integration Standards.
+Die Verwendung von LLM-Lösungen erweitert die Angriffsfläche einer Organisation und stellt neue Herausforderungen dar, die spezielle Taktiken und Verteidigungen erfordern. Es enthält auch Probleme, die analog zu bekannten Problemen sind, für die bereits etablierte Cybersecurity-Verfahren und Milderungsmaßnahmen existieren. Die Integration der LLM-Cybersicherheit in die etablierten Cybersicherheitskontrollen, -prozesse und -verfahren einer Organisation ermöglicht es einer Organisation, ihre Anfälligkeit für Bedrohungen zu verringern.
+Wie sie integriert werden, ist verfügbar unter den OWASP-Integrationsstandards.
 
-#### OWASP Resource
+#### OWASP-Ressource
 OWASP SAMM
-#### Description
+#### Beschreibung
 Software Assurance Maturity Model
-#### Why it is Recommended & Where To Use It
-Provides an effective and measurable way to analyze and improve an organization's secure development lifecycle. SAMM supports the complete software lifecycle. It is iterative and risk-driven, enabling organizations to identify and prioritize gaps in secure software development so resources for improving the process can be dedicated where efforts have the greatest improvement impact.
+#### Warum es empfohlen wird & Wo es verwendet wird
+Es bietet eine effektive und messbare Möglichkeit, die sichere Entwicklung eines Unternehmens zu analysieren und zu verbessern. SAMM unterstützt den kompletten Software-Lebenszyklus. Es ist iterativ und risikobasiert, ermöglicht Unternehmen, Lücken in der sicheren Softwareentwicklung zu identifizieren und zu priorisieren, damit Ressourcen für die Verbesserung des Prozesses dort eingesetzt werden können, wo die Bemühungen den größten Verbesserungseffekt haben.
 
-#### OWASP Resource
+#### OWASP-Ressource
 OWASP AI Exchange
 OWASP Machine Learning Security Top 10
-#### Description
-OWASP Project to connect worldwide for an exchange on AI security, fostering standards alignment, and driving collaboration.
-OWASP AI Exchange is the intake method for the OWASP AI Security and Privacy Guide
-OWASP Machine Learning Security Top 10 security issues of machine learning systems
-#### Why it is Recommended & Where To Use It
-This project includes the ML Top 10 and is a live working document that provides clear and actionable insights on designing, creating, testing, and procuring secure and privacy-preserving AI systems. It is the best OWASP resource for AI global regulatory and privacy information.
+#### Beschreibung
+OWASP-Projekt zum weltweiten Austausch über AI-Sicherheit, Förderung der Standardausrichtung und Antrieb der Zusammenarbeit.
+OWASP AI Exchange ist die Eingabemethode für den OWASP AI Security and Privacy Guide
+OWASP Machine Learning Security Top 10 Sicherheitsprobleme von maschinellen Lernsystemen
+#### Warum es empfohlen wird & wo es verwendet wird
+Dieses Projekt umfasst die ML Top 10 und ist ein lebendiges Arbeitsdokument, das klare und handlungsorientierte Einblicke in das Entwerfen, Erstellen, Testen und Beschaffen von sicheren und datenschutzorientierten AI-Systemen bietet. Es ist die beste OWASP-Ressource für globale regulatorische und Datenschutzinformationen zu KI.
 
-#### OWASP Resource
+#### OWASP-Ressource
 Open Common Requirement Enumeration : OpenCRE
-#### Description
-OpenCRE is the interactive content-linking platform for uniting security standards and guidelines into one overview.
-#### Why it is Recommended & Where To Use It
-Use this site to search for standards. You can search by standard name or by control type.
+#### Beschreibung
+Die OpenCRE ist die interaktive Content-Linking-Plattform zur Zusammenführung von Sicherheitsstandards und -richtlinien in einer Übersicht.
+#### Warum es empfohlen wird & wo es verwendet wird
+Nutzen Sie diese Seite, um nach Standards zu suchen. Sie können nach Standardnamen oder nach Kontrolltyp suchen.
 
-#### OWASP Resource
+#### OWASP-Ressource
 OWASP Threat Modeling
-#### Description
-A structured, formal process for threat modeling of an application
-#### Why it is Recommended & Where To Use It
-Learn everything about Threat Modeling which is a structured representation of all the information that affects the security of an application.
+#### Beschreibung
+Ein strukturierter, formaler Prozess für die Bedrohungsmodellierung einer Anwendung
+#### Warum es empfohlen wird & wo es verwendet wird
+Erfahren Sie alles über Bedrohungsmodellierung (Threat Modeling), das eine strukturierte Darstellung aller Informationen ist, die die Sicherheit einer Anwendung beeinflussen.
 
-#### OWASP Resource
+#### OWASP-Ressource
 OWASP CycloneDX
-#### Description
-OWASP CycloneDX is a full-stack Bill of Materials (BOM) standard that provides advanced supply chain capabilities for cyber risk reduction.
-#### Why it is Recommended & Where To Use It
-Modern software is assembled using third-party and open source components. They are glued together in complex and unique ways and integrated with original code to achieve the desired functionality. An SBOM provides an accurate inventory of all components which enables organizations to identify risk, allows for greater transparency, and enables rapid impact analysis.
-EO 14028 provided minimum requirements for SBOM for federal systems.
+#### Beschreibung
+OWASP CycloneDX ist ein vollständiger Bill-of-Materials (BOM) Standard, der erweiterte Lieferkettenfähigkeiten für die Reduzierung von Cyberrisiken bietet.
+#### Warum es empfohlen wird & Wo es verwendet wird
+Moderne Software wird unter Verwendung von Drittanbieter- und Open-Source-Komponenten zusammengestellt. Sie werden auf komplexe und einzigartige Weise zusammengefügt und mit Originalcode integriert, um die gewünschte Funktionalität zu erreichen. Ein SBOM bietet ein genaues Inventar aller Komponenten, das Organisationen ermöglicht, Risiken zu identifizieren, größere Transparenz zu ermöglichen und schnelle Auswirkungsanalysen durchzuführen.
+EO 14028 stellte Mindestanforderungen für SBOM für föderale Systeme bereit.
 
-#### OWASP Resource
+#### OWASP-Ressource
 OWASP Software Component Verification Standard (SCVS)
-#### Description
-A community-driven effort to establish a framework for identifying activities, controls, and best practices to identify and reduce risk in a software supply chain.
-#### Why it is Recommended & Where To Use It
-Use SCVS to develop a common set of activities, controls, and best practices that can reduce risk in a software supply chain and identify a baseline and path to mature software supply chain vigilance.
+#### Beschreibung
+Eine gemeinschaftlich getriebene Anstrengung, um ein Rahmenwerk für die Identifizierung von Aktivitäten, Kontrollen und Best Practices zur Identifizierung und Reduzierung von Risiken in einer Software-Lieferkette zu etablieren.
+#### Warum es empfohlen wird & wo es verwendet wird
+Nutzen Sie SCVS, um einen gemeinsamen Satz von Aktivitäten, Kontrollen und Best Practices zu entwickeln, die das Risiko in einer Software-Lieferkette reduzieren können und eine Basislinie und einen Weg zur Reife der Wachsamkeit der Software-Lieferkette identifizieren.
 
-#### OWASP Resource
+#### OWASP-Ressource
 OWASP API Security Project
-#### Description
-API Security focuses on strategies and solutions to understand and mitigate the unique vulnerabilities and security risks of Application Programming Interfaces (APIs).
-#### Why it is Recommended & Where To Use It
-APIs are a foundational element of connecting applications and mitigating misconfigurations or vulnerabilities is mandatory to protect users and organizations. Use for security testing and red teaming the build and production environments.
+#### Beschreibung
+API-Sicherheit konzentriert sich auf Strategien und Lösungen, um die einzigartigen Schwachstellen und Sicherheitsrisiken von Application Programming Interfaces (APIs) zu verstehen und zu mildern.
+#### Warum es empfohlen wird & wo es verwendet wird
+APIs sind ein grundlegendes Element der Verbindung von Anwendungen, und das Reduzieren von Fehlkonfigurationen oder Schwachstellen ist obligatorisch, um Benutzer und Organisationen zu schützen. Verwenden Sie es für Sicherheitstests und Red Teaming der Build- und Produktionsumgebungen.
 
-#### OWASP Resource
-OWASP Top 10 CI/CD Security Risks
-#### Description
-Helps defenders identify focus areas for securing their CI/CD ecosystem.
-#### Why it is Recommended & Where To Use It
-CI/CD environments, processes, and systems are the ecosystem of modern software organizations. They deliver code from an engineer's workstation to production. They have their unique attack surface and a frequent attack target. Use for security testing and red teaming the build and production environments. 
+#### OWASP-Ressource
+OWASP Top 10 CI/CD Sicherheitsrisiken
+#### Beschreibung
+Hilft Verteidigern, Fokusbereiche für die Sicherung ihres CI/CD-Ökosystems zu identifizieren.
+#### Warum es empfohlen wird & wo es verwendet wird
+CI/CD-Umgebungen, -Prozesse und -Systeme sind das Ökosystem moderner Softwareorganisationen. Sie liefern Code vom Entwicklungsrechner eines Ingenieurs bis zur Produktion. Sie haben ihre eigene einzigartige Angriffsfläche und sind ein häufiges Angriffsziel. Verwenden Sie es für Sicherheitstests und Red Teaming der Build- und Produktionsumgebungen.
 
-#### OWASP Resource
+#### OWASP-Ressource
 OWASP Application Security Verification Standard ASVS
-#### Description
-Application Security Verification Standard (ASVS) Project provides a basis for testing web application technical security controls and also provides developers with a list of requirements for secure development.
-#### Why it is Recommended & Where To Use It
-Cookbook for web application security requirements, security testing, and metrics. Use to establish security user stories and security use case release testing.
+#### Beschreibung
+Das Application-Security-Verification-Standard(ASVS) Projekt bietet eine Grundlage für das Testen von technischen Sicherheitskontrollen von Webanwendungen und bietet Entwicklern auch eine Liste von Anforderungen für die sichere Entwicklung.
+#### Warum es empfohlen wird & wo es verwendet wird
+Ein Kochbuch für Webanwendungssicherheitsanforderungen, Sicherheitstests und Metriken. Verwenden Sie es, um Sicherheits-User-Stories und Sicherheits-Use-Case-Release-Tests zu etablieren.
 
-#### OWASP Resource
+#### OWASP-Ressource
 OWASP Threat and Safeguard Matrix (TaSM)
-#### Description
-An action oriented view to safeguard and enable the business
-#### Why it is Recommended & Where To Use It
-This matrix allows a company to overlay its major threats with the NIST Cyber Security Framework Functions (Identify, Protect, Detect, Respond, & Recover) to build a robust security plan. Use it as a dashboard to track and report on security across the organization.
+#### Beschreibung
+Eine aktionsorientierte Sichtweise zum Schutz und Ermöglichen der Geschäftsabläufe.
+#### Warum es empfohlen wird & wo es verwendet wird
+Diese Matrix ermöglicht es einem Unternehmen, seine Hauptbedrohungen mit den NIST Cyber Security Framework-Funktionen (Identifizieren, Schützen, Erkennen, Reagieren & Wiederherstellen) zu überlagern, um einen robusten Sicherheitsplan zu erstellen. Verwenden Sie es als Dashboard, um die Sicherheit im gesamten Unternehmen zu verfolgen und zu berichten.
 
-#### OWASP Resource
+#### OWASP-Ressource
 Defect Dojo
-#### Description
-An open-source vulnerability management tool that streamlines the testing process by offering templating, report generation, metrics, and baseline self-service tools.
-#### Why it is Recommended & Where To Use It
-Use Defect Dojo to reduce the time for logging vulnerabilities with templates for vulnerabilities, imports for common vulnerability scanners, report generation, and metrics.
+#### Beschreibung
+Ein Open-Source-Schwachstellenmanagement-Tool, das den Testprozess durch Vorlagen, Berichtsgenerierung, Metriken und Baseline-Selbstbedienungswerkzeuge vereinfacht.
+#### Warum es empfohlen wird & wo es verwendet wird
+Verwenden Sie das Defect Dojo, um die Zeit für das Protokollieren von Schwachstellen mit Vorlagen für Schwachstellen, Importen für gängige Schwachstellenscanner, Berichtsgenerierung und Metriken zu reduzieren.
 
 
-### MITRE Resources
+### MITRE-Ressourcen
 
-The increased frequency of LLM threats emphasizes the value of a resilience-first approach to defending an organization's attack surface. Existing TTPS is combined with new attack surfaces and capabilities in LLM Adversary threats and mitigations. MITRE maintains a well-established and widely accepted mechanism for coordinating opponent tactics and procedures based on real-world observations.
+Die zunehmende Häufigkeit von LLM-Bedrohungen zeigt den Wert eines Resilienz-first-Ansatzes zur Verteidigung der Angriffsfläche einer Organisation. Bestehende TTPs werden mit neuen Angriffsflächen und Fähigkeiten in LLM-Gegnerbedrohungen und -milderungen kombiniert. MITRE unterhält einen gut etablierten und weit akzeptierten Mechanismus zur Koordinierung von Gegnertaktiken und -verfahren auf der Grundlage von Beobachtungen aus der realen Welt.
 
-Coordination and mapping of an organization's LLM Security Strategy to MITRE ATT&CK and MITRE ATLAS allows an organization to determine where LLM Security is covered by current processes such as API Security Standards or where security holes exist.
+Die Koordination und Kartierung der LLM-Sicherheitsstrategie einer Organisation auf MITRE ATT&CK und MITRE ATLAS ermöglicht es einer Organisation zu entdecken, wo die LLM-Sicherheit durch aktuelle Prozesse wie API-Sicherheitsstandards abgedeckt ist oder wo Sicherheitslücken bestehen.
 
-MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) is a framework, collection of data matrices, and assessment tool that was made by the MITRE Corporation to help organizations figure out how well their cybersecurity works across their entire digital attack surface and find holes that had not been found before. It is a knowledge repository that is used all over the world. The MITRE ATT&CK matrix contains a collection of strategies used by adversaries to achieve a certain goal. In the ATT&CK Matrix, these objectives are classified as tactics. The objectives are outlined in attack order, beginning with reconnaissance and progressing to the eventual goal of exfiltration or impact.
+MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) ist ein Rahmenwerk, eine Sammlung von Datenmatrizen und ein Bewertungstool, das von der MITRE Corporation entwickelt wurde, um Organisationen zu helfen, herauszufinden, wie gut ihre Cybersicherheit über ihre gesamte digitale Angriffsfläche funktioniert und zuvor nicht entdeckte Lücken zu finden. Es ist ein Wissensrepository, das weltweit verwendet wird. Die MITRE ATT&CK-Matrix enthält eine Sammlung von Strategien, die von Gegnern verwendet werden, um ein bestimmtes Ziel zu erreichen. In der ATT&CK-Matrix werden diese Ziele als Taktiken klassifiziert. Die Ziele sind in Angriffsreihenfolge dargestellt, beginnend mit Aufklärung und fortschreitend bis zum letztendlichen Ziel der Exfiltration oder Wirkung.
 
-MITRE ATLAS, which stands for "Adversarial Threat Landscape for Artificial Intelligence Systems," is a knowledge base that is based on real-life examples of attacks on machine learning (ML) systems by bad actors. ATLAS is based on the MITRE ATT&CK architecture, and its tactics and procedures complement those found in ATT&CK.
+MITRE ATLAS, das für "Adversarial Threat Landscape for Artificial Intelligence Systems" steht, ist eine Wissensbasis, die auf realen Beispielen von Angriffen auf maschinelle Lernsysteme (ML) durch böswillige Akteure basiert. ATLAS basiert auf der MITRE ATT&CK-Architektur, und seine Taktiken und Verfahren ergänzen die in ATT&CK gefundenen.
 
-#### MITRE Resource
+#### MITRE-Ressource
 MITRE ATT&CK
-#### Description
-Knowledge base of adversary tactics and techniques based on real-world observations
-#### Why it is Recommended & Where To Use It
-The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies. Map existing controls within the organization to adversary tactics and techniques to identify gaps or areas to test.
+#### Beschreibung
+Wissensbasis zu Gegnertaktiken und -techniken basierend auf Beobachtungen aus der realen Welt
+#### Warum es empfohlen wird & wo es verwendet wird
+Die ATT&CK-Wissensbasis wird als Grundlage für die Entwicklung spezifischer Bedrohungsmodelle und Methodologien verwendet. Kartieren Sie bestehende Kontrollen innerhalb der Organisation auf Gegnertaktiken und -techniken, um Lücken oder Bereiche zum Testen zu identifizieren.
 
-#### MITRE Resource
-MITRE AT&CK Workbench
-#### Description
-Create or extend ATT&CK data in a local knowledge base
-#### Why it is Recommended & Where To Use It
-Host and manage a customized copy of the ATT&CK knowledge base. This local copy of the ATT&CK knowledge base can be extended with new or updated techniques, tactics, mitigation groups, and software that is specific to your organization.
+#### MITRE-Ressource
+MITRE ATT&CK Workbench
+#### Beschreibung
+Erstellen oder erweitern Sie ATT&CK-Daten in einer lokalen Wissensdatenbank
+#### Warum es empfohlen wird & wo es verwendet wird
+Verwalten und hosten Sie eine angepasste Kopie der ATT&CK-Wissensdatenbank. Diese lokale Kopie der ATT&CK-Wissensbasis kann mit neuen oder aktualisierten Techniken, Taktiken, Milderungsgruppen und Software erweitert werden, die spezifisch für Ihre Organisation sind.
 
-#### MITRE Resource
+#### MITRE-Ressource
 MITRE ATLAS
-#### Description
-MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems) is a knowledge base of adversary tactics, techniques, and case studies for machine learning (ML) systems based on real-world observations, demonstrations from ML red teams and security groups, and the state of the possible from academic research
-#### Why it is Recommended & Where To Use It
-Use it to map known ML vulnerabilities and map checks and controls for proposed projects or existing systems.
+#### Beschreibung
+MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems) ist eine Wissensdatenbank zu Gegnertaktiken, -techniken und Fallstudien für maschinelle Lernsysteme (ML) basierend auf Beobachtungen aus der realen Welt, Demonstrationen von ML-Red-Teams und Sicherheitsgruppen sowie dem Stand des Möglichen aus der akademischen Forschung
+#### Warum es empfohlen wird & wo es verwendet wird
+Verwenden Sie es, um bekannte ML-Schwachstellen zu kartieren und Checks und Kontrollen auf vorgeschlagene Projekte oder bestehende Systeme abzubilden.
 
-#### MITRE Resource
+#### MITRE-Ressource
 MITRE ATT&CK Powered Suit
-#### Description
-ATT&CK Powered Suit is a browser extension that puts the MITRE ATT&CK knowledge base at your fingertips.
-#### Why it is Recommended & Where To Use It
-Add to your browser to quickly search for tactics, techniques, and more without disrupting your workflow.
+#### Beschreibung
+ATT&CK Powered Suit ist eine Browsererweiterung, die die MITRE ATT&CK-Wissensbasis in Reichweite bringt.
+#### Warum es empfohlen wird & Wo es verwendet wird
+Fügen Sie sie Ihrem Browser hinzu, um schnell nach Taktiken, Techniken und mehr zu suchen, ohne Ihren Workflow zu unterbrechen.
 
-#### MITRE Resource
+#### MITRE-Ressource
 The Threat Report ATT&CK Mapper (TRAM)
-#### Description
-Automates TTP Identification in CTI Reports
-#### Why it is Recommended & Where To Use It
-Mapping TTPs found in CTI reports to MITRE ATT&CK is difficult, error prone, and time-consuming. TRAM uses LLMs to automate this process for the 50 most common techniques. Supports Juypter notebooks.
+#### Beschreibung
+Automatisiert die TTP-Identifizierung in CTI-Berichten
+#### Warum es empfohlen wird & Wo es verwendet wird
+Das Mapping von TTPs, die in CTI-Berichten gefunden wurden, auf MITRE ATT&CK ist schwierig, fehleranfällig und zeitaufwändig. TRAM verwendet LLMs, um diesen Prozess für die 50 häufigsten Techniken zu automatisieren. Unterstützt Juypter-Notebooks.
 
-#### MITRE Resource
+#### MITRE-Ressource
 Attack Flow v2.1.0
-#### Description
-Attack Flow is a language for describing how cyber adversaries combine and sequence various offensive techniques to achieve their goals.
-#### Why it is Recommended & Where To Use It
-Attack Flow helps visualize how an attacker uses a technique, so defenders and leaders understand how adversaries operate and improve their defensive posture.
+#### Beschreibung
+Attack Flow ist eine Sprache zur Beschreibung, wie Cyber-Gegner verschiedene offensive Techniken kombinieren und sequenzieren, um ihre Ziele zu erreichen.
+#### Warum es empfohlen wird & Wo es verwendet wird
+Attack Flow hilft zu visualisieren, wie ein Angreifer eine Technik verwendet, damit Verteidiger und Führungskräfte verstehen, wie Gegner operieren, und ihre defensive Position verbessern.
 
-#### MITRE Resource
+#### MITRE-Ressource
 MITRE Caldera
-#### Description
-A cyber security platform (framework) designed to easily automate adversary emulation, assist manual red teams, and automate incident response.
-#### Why it is Recommended & Where To Use It
-Plugins are available for Caldera that help to expand the core capabilities of the framework and provide additional functionality, including agents, reporting, collections of TTPs, and others.
-Here is the plugin library.
+#### Beschreibung
+Eine Cybersecurity-Plattform (Framework), die entwickelt wurde, um die Emulation von Gegnern leicht zu automatisieren, manuellen Red Teams zu helfen und die Reaktion auf Vorfälle zu automatisieren.
+#### Warum es empfohlen wird & Wo es verwendet wird
+Für Caldera sind Plugins verfügbar, die die Kernfähigkeiten des Frameworks erweitern und zusätzliche Funktionalitäten bieten, einschließlich Agenten, Berichterstattung, Sammlungen von TTPs und anderen.
+Hier ist die Plugin-Bibliothek.
 
-#### MITRE Resource
-CALDERA plugin: Arsenal
-#### Description
-A plugin developed for adversary emulation of AI-enabled systems.
-#### Why it is Recommended & Where To Use It
-This plugin provides TTPs defined in MITRE ATLAS to interface with CALDERA.
+#### MITRE-Ressource
+CALDERA-Plugin: Arsenal
+#### Beschreibung
+Ein Plugin, das für die Gegneremulation von KI-fähigen Systemen entwickelt wurde.
+#### Warum es empfohlen wird & Wo es verwendet wird
+Dieses Plugin bietet in MITRE ATLAS definierte TTPs, um mit CALDERA zu interagieren.
 
-#### MITRE Resource
+#### MITRE-Ressource
 Atomic Red Team
-#### Description
-Library of tests mapped to the MITRE ATT&CK framework.
-#### Why it is Recommended & Where To Use It
-Use to validate and test controls in an environment. Security teams can use Atomic Red Team to test controls.
-You can execute atomic tests directly from the command line; no installation is required.
+#### Beschreibung
+Bibliothek von Tests, die dem MITRE ATT&CK-Framework zugeordnet sind.
+#### Warum es empfohlen wird & Wo es verwendet wird
+Verwenden Sie es, um Kontrollen in einer Umgebung zu validieren und zu testen. Sicherheitsteams können Atomic Red Team verwenden, um Kontrollen zu testen.
+Sie können atomare Tests direkt von der Kommandozeile aus ausführen; keine Installation ist erforderlich.
 
-#### MITRE Resource
-MITRE CTI Blueprints
-#### Description
-Automates Cyber Threat Intelligence reporting.
-#### Why it is Recommended & Where To Use It
-CTI Blueprints helps Cyber Threat Intelligence (CTI) analysts create high-quality, actionable reports more consistently and efficiently
-
-
-
-### AI Vulnerability Repositories
-
-AI Incident Database
-A repository of articles about different times AI has failed in real-world applications and is maintained by a college research group and crowds sourced.
-OECD AI Incidents Monitor (AIM)
-Offers an accessible starting point for comprehending the landscape of AI-related challenges.
-
-
-### Leading Companies Tracking AI Model Vulnerabilities
-
-Huntr Bug Bounty : ProtectAI
-Bug bounty platform for AI/ML
-AI Vulnerability Database (AVID) : Garak
-Database of model vulnerabilities
-AI Risk Database: Robust Intelligence
-Database of model vulnerabilities
-LVE Repository
-Open LLM Vulnerability and Exposures Repository
-
-
-### AI Procurement Guidance
-
-World Economic Forum: Adopting AI Responsibly: Guidelines for Procurement of AI Solutions by the Private Sector: Insight Report June 2023
-The standard benchmarks and assessment criteria for procuring Artificial systems are in early development. This procurement guidelines provide organizations with a baseline of considerations for the end-to-end procurement process.
-
-Use this guidance to augment an organization's existing Third Party Risk Supplier and Vendor procurement process. 
-
+#### MITRE-Ressource
+[MITRE CTI-Blueprints](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our
 ## Team
 
-Thank you to the OWASP Top 10 for LLM Applications Cybersecurity and Governance Checklist Contributors.
+Danke an die Mitwirkenden der OWASP Top 10 für LLM-Applications-Cybersecurity-und-Governance Checkliste.
 
-### Checklist Contributors
+### Mitwirkende der Checkliste
 
 Sandy Dunn
 Heather Linn
@@ -627,3 +593,7 @@ Julie Tao
 Cédric Lallier
 Tetsuo Seto
 Ads Dawson
+
+### Übersetzung
+
+Johann-Peter Hartmann
