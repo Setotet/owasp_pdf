@@ -41,8 +41,8 @@ Inklusiv
 Nachhaltig
 Zweckmäßig
 
-##### Abbildung 1.1 Säulen der vertrauenswürdigen künstlichen Intelligenz
-##### erstellt vom Montreal Ethics Institute Beispiel
+####$ Abbildung 1.1 Säulen der vertrauenswürdigen künstlichen Intelligenz
+#####     erstellt vom Montreal Ethics Institute Beispiel
 
 ### Für wen ist dies?
 
@@ -85,7 +85,7 @@ Bedrohungen durch KI-Modelle
 KI-rechtliche & regulatorische Bedrohungen
 
 ##### Abbildung 1.2 Arten von KI-Bedrohungen
-##### credit sdunn
+Quelle: sdunn
 
 
 
@@ -95,8 +95,8 @@ Mitarbeiter in Organisationen profitieren von Schulungen, um künstliche Intelli
 
 Richtlinien für faire Nutzung und gesunde Interaktion sind Schlüsselaspekte, die, wenn sie von Anfang an integriert werden, ein Eckpfeiler für den Erfolg zukünftiger KI-Cybersicherheitsbewusstseinskampagnen sein werden. Dies wird den Benutzern das Wissen über die grundlegenden Regeln für die Interaktion sowie die Fähigkeit vermitteln, gutes von schlechtem oder unethischem Verhalten zu unterscheiden.
 
-### Integration von LLM-Sicherheit und -Governance mit bestehenden, etablierten
-### Praktiken und Kontrollen
+##$ Integration von LLM-Sicherheit und -Governance mit bestehenden, etablierten
+###     Praktiken und Kontrollen
 
 Obwohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, Datenschutz und der Erfüllung rechtlicher und regulatorischer Anforderungen hinzufügen, sind die lang existierenden bewährten Praktiken immer noch der beste Weg, um Probleme zu identifizieren, Schwachstellen zu finden, diese zu beheben und potenzielle Sicherheitsprobleme zu reduzieren.
 
@@ -152,7 +152,7 @@ Schritt 5: Aktualisieren Sie Ihr Programm zur Risikomanagement bei Drittanbieter
 Schritt 6: Eine Bereitstellungsstrategie wählen
 
 ##### Abbildung 2.1 Optionen für Bereitstellungsstrategie
-##### Quelle: sdunn
+####$ Quelle: sdunn
 
 
 ### Bereitstellungsstrategie
@@ -203,7 +203,7 @@ Typ 6: Individuelle Modelle
 ▶ Vorteile: Erfordert große Investitionen, maximiert aber die Anpassbarkeit
 
 ##### Abbildung 2.2 Optionen für Bereitstellungstypen
-##### Quelle: sdunn
+####$ Quelle: sdunn
 ## Checkliste
 
 ### Risiko durch Gegner
@@ -402,7 +402,8 @@ Dies umfasst unbefugten Zugriff, Kopieren oder Exfiltration von proprietären LL
 ##### Figure 4.1  OWASP Top 10 for Large Language Model Applications
 
 ![OWASP Top10 für LLM Visuell](images/GOV1_Fig_4_2_de-DE.png)
-##### Abbildung 4.2 OWASP Top 10 für Large-Language-Model-Anwendungen visualisiert
+####$ Abbildung 4.2 OWASP Top 10 für Large-Language-Model-
+#####     Anwendungen visualisiert
 
 
 ### OWASP-Ressourcen

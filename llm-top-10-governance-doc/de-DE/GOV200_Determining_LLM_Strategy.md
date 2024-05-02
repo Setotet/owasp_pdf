@@ -34,7 +34,7 @@ Die dringendste Nicht-Gegner-LLM-Bedrohung für viele Organisationen stammt von 
 >dodgerblue|white|left|14|18 Schritt 6: Eine Bereitstellungsstrategie wählen
 
 ##### Abbildung 2.1 Optionen für Bereitstellungsstrategie
-##### Quelle: sdunn
+####$ Quelle: sdunn
 
 
 ### Bereitstellungsstrategie
@@ -85,4 +85,4 @@ Die Bandbreite reicht von der Nutzung öffentlicher Endverbraucheranwendungen bi
     >fidlightblue|black|left|12|16 ▶ Vorteile: Erfordert große Investitionen, maximiert aber die Anpassbarkeit
 
 ##### Abbildung 2.2 Optionen für Bereitstellungstypen
-##### Quelle: sdunn
+####$ Quelle: sdunn

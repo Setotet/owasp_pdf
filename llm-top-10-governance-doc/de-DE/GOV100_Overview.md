@@ -41,8 +41,8 @@ Da Herausforderungen und Vorteile der künstlichen Intelligenz entstehen – und
     >dodgerblue|white|left|12|16 Nachhaltig
     >dodgerblue|white|left|12|16 Zweckmäßig
 
-##### Abbildung 1.1 Säulen der vertrauenswürdigen künstlichen Intelligenz
-##### erstellt vom Montreal Ethics Institute Beispiel
+####$ Abbildung 1.1 Säulen der vertrauenswürdigen künstlichen Intelligenz
+#####     erstellt vom Montreal Ethics Institute Beispiel
 
 ### Für wen ist dies?
 
@@ -85,7 +85,7 @@ Das Verständnis der verschiedenen Arten von Bedrohungen und deren Integration i
     >darkblue|white|left|14|18 KI-rechtliche & regulatorische Bedrohungen
 
 ##### Abbildung 1.2 Arten von KI-Bedrohungen
-##### credit sdunn
+>white|black|center Quelle: sdunn
 
 
 
@@ -95,8 +95,8 @@ Mitarbeiter in Organisationen profitieren von Schulungen, um künstliche Intelli
 
 Richtlinien für faire Nutzung und gesunde Interaktion sind Schlüsselaspekte, die, wenn sie von Anfang an integriert werden, ein Eckpfeiler für den Erfolg zukünftiger KI-Cybersicherheitsbewusstseinskampagnen sein werden. Dies wird den Benutzern das Wissen über die grundlegenden Regeln für die Interaktion sowie die Fähigkeit vermitteln, gutes von schlechtem oder unethischem Verhalten zu unterscheiden.
 
-### Integration von LLM-Sicherheit und -Governance mit bestehenden, etablierten
-### Praktiken und Kontrollen
+##$ Integration von LLM-Sicherheit und -Governance mit bestehenden, etablierten
+###     Praktiken und Kontrollen
 
 Obwohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, Datenschutz und der Erfüllung rechtlicher und regulatorischer Anforderungen hinzufügen, sind die lang existierenden bewährten Praktiken immer noch der beste Weg, um Probleme zu identifizieren, Schwachstellen zu finden, diese zu beheben und potenzielle Sicherheitsprobleme zu reduzieren.
 
