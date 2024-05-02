@@ -95,8 +95,8 @@ Mitarbeiter in Organisationen profitieren von Schulungen, um künstliche Intelli
 
 Richtlinien für faire Nutzung und gesunde Interaktion sind Schlüsselaspekte, die, wenn sie von Anfang an integriert werden, ein Eckpfeiler für den Erfolg zukünftiger KI-Cybersicherheitsbewusstseinskampagnen sein werden. Dies wird den Benutzern das Wissen über die grundlegenden Regeln für die Interaktion sowie die Fähigkeit vermitteln, gutes von schlechtem oder unethischem Verhalten zu unterscheiden.
 
-##$ Integration von LLM-Sicherheit und -Governance mit bestehenden, etablierten
-###     Praktiken und Kontrollen
+##$ Integration von LLM-Sicherheit und -Governance mit bestehenden,
+###     etablierten Praktiken und Kontrollen
 
 Obwohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, Datenschutz und der Erfüllung rechtlicher und regulatorischer Anforderungen hinzufügen, sind die lang existierenden bewährten Praktiken immer noch der beste Weg, um Probleme zu identifizieren, Schwachstellen zu finden, diese zu beheben und potenzielle Sicherheitsprobleme zu reduzieren.
 
