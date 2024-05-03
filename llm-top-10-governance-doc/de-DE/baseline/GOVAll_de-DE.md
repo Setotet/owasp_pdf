@@ -367,7 +367,7 @@ AI Red Teaming ist eine simulierte Angriffstestsimulation des KI-Systems, um zu 
 Integrieren Sie Red Team-Tests als Standardpraxis für KI-Modelle und Anwendungen.
 ## Ressourcen
 
-OWASP Top 10 für Large Language Models
+OWASP Top 10 für Large-Language-Model-Anwendungen
 
 LLM01: Prompt Injection (Prompt-Einschleusung)
 Mit raffinierten Eingabenkann man ein Large Language Model manipulieren und unbeabsichtigte Aktionen verursachen. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
@@ -399,11 +399,11 @@ Systeme oder Personen, die sich übermäßig auf LLMs verlassen, ohne angemessen
 LLM10: Modell-Diebstahl
 Dies umfasst unbefugten Zugriff, Kopieren oder Exfiltration von proprietären LLM-Modellen. Die Auswirkungen umfassen wirtschaftliche Verluste, beeinträchtigte Wettbewerbsvorteile und potenziellen Zugang zu sensiblen Informationen.
 
-##### Figure 4.1  OWASP Top 10 for Large Language Model Applications
+##### Abbildung 4.1 OWASP Top 10 für Large-Language-Model-Anwendungen
 
 ![OWASP Top10 für LLM Visuell](images/GOV1_Fig_4_2_de-DE.png)
-####$ Abbildung 4.2 OWASP Top 10 für Large-Language-Model-
-#####     Anwendungen visualisiert
+####$ Abbildung 4.2 OWASP Top 10 für Large-Language-Model-Anwendungen
+#####     visualisiert
 
 
 ### OWASP-Ressourcen
