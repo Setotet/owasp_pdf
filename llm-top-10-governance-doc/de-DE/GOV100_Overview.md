@@ -1,23 +1,23 @@
 ## Übersicht
 
-Jeder Internetnutzer und jedes Unternehmen muss sich auf die kommende Welle leistungsfähiger Anwendungen generativer künstlicher Intelligenz (GenAI) vorbereiten. GenAI verspricht enorme Innovationen, Effizienz und kommerzielle Vorteile in einer Vielzahl von Branchen. Doch wie jede leistungsstarke Technologie in einem frühen Entwicklungsstadium birgt sie ihre eigenen offensichtlichen und unerwarteten Herausforderungen.
+Jeder Internetnutzende und jedes Unternehmen muss sich auf die kommende Welle leistungsfähiger Anwendungen generativer künstlicher Intelligenz (GenAI) vorbereiten. GenAI verspricht enorme Innovationen, Effizienz und kommerzielle Vorteile in einer Vielzahl von Branchen. Doch wie jede leistungsstarke Technologie in einem frühen Entwicklungsstadium birgt sie ihre eigenen offensichtlichen und unerwarteten Herausforderungen.
 
 Künstliche Intelligenz hat in den letzten 50 Jahren große Fortschritte gemacht und eine Vielzahl von Unternehmensprozessen unauffällig unterstützt, bis das öffentliche Erscheinen von ChatGPT die Entwicklung und Nutzung von Large Language Models (LLMs) sowohl bei Einzelpersonen als auch bei Unternehmen vorangetrieben hat. Anfangs waren diese Technologien auf akademische Studien oder die Ausführung bestimmter, aber wichtiger Aktivitäten innerhalb von Unternehmen beschränkt und nur für wenige Auserwählte sichtbar. Die jüngsten Fortschritte in der Verfügbarkeit von Daten, Computerleistung, GenAI-Fähigkeiten und die Veröffentlichung von Tools wie Llama 2, ElevenLabs und Midjourney haben AI jedoch von einer Nische zu einer allgemein weitverbreiteten Akzeptanz gebracht. Diese Verbesserungen haben nicht nur die GenAI-Technologien zugänglicher gemacht, sondern auch den kritischen Bedarf für Unternehmen erzeugt, solide Strategien für die Integration und Nutzung von AI in ihren Geschäftstätigkeiten zu entwickeln, was einen großen Schritt nach vorn in der Art und Weise darstellt, wie wir Technologie nutzen.
 
-  - Künstliche Intelligenz ist ein breiter Begriff, der alle Bereiche der Informatik umfasst, die es Maschinen ermöglichen, Aufgaben auszuführen, die normalerweise menschliche Intelligenz erfordern würden. Maschinelles Lernen und generative AI sind zwei Unterkategorien von KI.
-  - Maschinelles Lernen ist eine Unterkategorie von KI, die sich auf die Erstellung von Algorithmen konzentriert, die aus Daten lernen können. Maschinelle Lernalgorithmen werden mit einem Datensatz trainiert und können dann diese Daten verwenden, um Vorhersagen oder Entscheidungen über neue Daten zu treffen.
-  - Generative AI ist eine Art von maschinellem Lernen, die sich auf die Erstellung neuer Daten konzentriert. Oftmals stützt sich GenAI auf die Verwendung von Large Language Models, um die erforderlichen Aufgaben zur Erstellung der neuen Daten durchzuführen.
-  - Ein Large Language Model (LLM) ist eine Art von KI-Modell, das menschenähnlichen Text verarbeitet und generiert. Im Kontext der künstlichen Intelligenz bezieht sich ein "Modell" auf ein System, das trainiert wurde, um Vorhersagen basierend auf Eingabedaten zu treffen. LLMs werden speziell auf großen Datensätzen natürlicher Sprache trainiert, daher der Name Large Language Models.
+  - Künstliche Intelligenz ist ein breiter Begriff, der alle Bereiche der Informatik umfasst, in denen Maschinen Aufgaben auszuführen, die normalerweise menschliche Intelligenz erfordern würden. Maschinelles Lernen und generative AI sind zwei Unterkategorien von KI.
+  - Maschinelles Lernen ist eine Unterkategorie von KI, die sich auf das Erstellen von Algorithmen konzentriert, die aus Daten lernen. Maschinelle Lernalgorithmen werden mit Datensätzen trainiert und können dann diese Daten verwenden, um Vorhersagen oder Entscheidungen für neue Daten zu treffen.
+  - Generative AI ist eine Art von maschinellem Lernen, die sich auf das Generieren neuer Daten konzentriert. Oftmals stützt sich GenAI auf die Verwendung von Large Language Models, um die erforderlichen Aufgaben zur Erstellung der neuen Daten durchzuführen.
+  - Ein Large Language Model (LLM) ist eine Art von KI-Modell, das menschenähnlich Text verarbeitet und generiert. Im Kontext der künstlichen Intelligenz bezieht sich ein "Modell" auf ein System, das trainiert wurde, um Vorhersagen basierend auf Eingabedaten zu treffen. LLMs werden speziell auf großen Datensätzen natürlicher Sprache trainiert, daher der Name Large Language Models.
 
-Organisationen betreten Neuland bei der Sicherung und Überwachung von GenAI-Lösungen. Der schnelle Fortschritt von GenAI eröffnet auch Türen für Gegner, ihre Angriffsstrategien zu verbessern und stellt eine doppelte Herausforderung aus Verteidigung und Bedrohungseskalation dar.
+Organisationen betreten bei der Sicherung und Überwachung von GenAI-Lösungen Neuland. Der schnelle Fortschritt von GenAI eröffnet auch Türen für Gegner, ihre Angriffsstrategien zu verbessern und stellt damit eine doppelte Herausforderung aus Verteidigung und Bedrohungseskalation dar.
 
-Unternehmen verwenden künstliche Intelligenz in vielen Bereichen, einschließlich HR, Recruiting, E-Mail-Spam-Filterung, SIEM für Verhaltensanalysen und Managed Detection and Response-Anwendungen. Der Schwerpunkt dieses Dokuments liegt jedoch auf Large Language Model-Anwendungen und ihrer Funktion bei der Erstellung generierter Inhalte.
+Unternehmen verwenden künstliche Intelligenz in vielen Bereichen, einschließlich HR, Recruiting, E-Mail-Spam-Filterung, bei SIEM für Verhaltensanalysen und in Managed Detection and Response-Anwendungen. Der Schwerpunkt dieses Dokuments liegt jedoch auf Large Language Model-Anwendungen und ihrer Funktion bei der Erstellung generierter Inhalte.
 
 ### Verantwortungsvolle und vertrauenswürdige künstliche Intelligenz
 
 Da Herausforderungen und Vorteile der künstlichen Intelligenz entstehen – und Vorschriften und Gesetze verabschiedet werden – entwickeln sich die Prinzipien und Säulen der verantwortungsvollen und vertrauenswürdigen KI-Nutzung von idealistischen Zielen und Bedenken kommend zu etablierten Standards.
 
-[Die OWASP AI Exchange Working Group](https://owasp-ai-exchange.web.app/) verfolgt diese Veränderungen und geht die breitgefächerten und herausfordernderen Überlegungen für alle Aspekte der künstlichen Intelligenz an.
+[Die OWASP AI Exchange Working Group](https://owasp-ai-exchange.web.app/) verfolgt diese Veränderungen und geht die breitgefächerten und herausfordernden Überlegungen für alle Aspekte der künstlichen Intelligenz an.
 
 >||center|16|16 Vertrauenswürdige künstliche Intelligenz
 
@@ -44,12 +44,12 @@ Da Herausforderungen und Vorteile der künstlichen Intelligenz entstehen – und
 ####$ Abbildung 1.1 Säulen der vertrauenswürdigen künstlichen Intelligenz
 #####     erstellt vom Montreal Ethics Institute Beispiel
 
-### An wen richtet sich dieses Dokument?
+### Zielgruppe
 Die OWASP Top 10 LLM AI Security & Governance Checkliste ist für Führungskräfte aus Exekutive, Technik, Cybersicherheit, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Cybersicherheitsteams und Verteidiger gedacht. Sie richtet sich an Personen, die bestrebt sind, in der schnelllebigen KI-Welt einen Schritt voraus zu sein, mit dem Ziel, KI nicht nur für den Unternehmenserfolg zu nutzen, sondern auch gegen die Risiken überstürzter oder unsicherer KI-Implementierungen zu schützen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu ergreifen, Herausforderungen zu bekämpfen und Risiken zu mindern.
 
 Diese Checkliste soll diesen Führungskräften aus Technologie und Business dabei helfen, schnell die Risiken und Vorteile der Nutzung von LLM zu verstehen und sich auf die Entwicklung einer umfassenden Liste kritischer Bereiche und Aufgaben zu konzentrieren, die benötigt werden, um die Organisation zu verteidigen und zu schützen, während sie eine Large Language Model-Strategie entwickeln.
 
-Es ist die Hoffnung des OWASP Top 10 für das LLM-Anwendungs-Teams, dass diese Liste Organisationen helfen wird, ihre bestehenden Verteidigungstechniken zu verbessern und Techniken zu entwickeln, um die neuen Bedrohungen anzugehen, die aus der Nutzung dieser aufregenden Technologie resultieren.
+Es ist die Hoffnung des OWASP Top 10 für das LLM-Applikationen-Teams, dass diese Liste Organisationen hilft, ihre bestehenden Verteidigungstechniken zu verbessern und Techniken zu entwickeln, um die neuen Bedrohungen anzugehen, die aus der Nutzung dieser aufregenden Technologie resultieren.
 
 ### Warum eine Checkliste?
 
@@ -61,9 +61,9 @@ Obwohl dieses Dokument Organisationen dabei unterstützen soll, eine anfänglich
 
 ### Die Herausforderungen von Large Language Models
 
-Large Language Models stehen vor mehreren ernsthaften und einzigartigen Problemen. Eines der wichtigsten ist, dass beim Arbeiten mit LLMs die Steuerungs- und Datenebenen nicht strikt isoliert oder trennbar sind. Dazu kommt, dass LLMs von Natur aus nichtdeterministisch sind und bei Aufforderung oder Anfrage ein anderes Ergebnis liefern. LLMs verwenden semantische Suche anstelle einer Schlüsselwortsuche. Der Kernunterschied zwischen den beiden ist, dass der Algorithmus des Modells die Begriffe in seiner Antwort priorisiert. Dies ist eine bedeutende Abweichung von der Art und Weise, wie Verbraucher bisher Technologie genutzt haben, und es hat Auswirkungen auf die Konsistenz und Zuverlässigkeit der Ergebnisse. Halluzinationen, die aus den Lücken und Trainingsfehlern in den Daten resultieren, auf denen das Modell trainiert wurde, sind das Ergebnis dieser Methode.
+Large Language Models stehen vor mehreren ernsthaften und einzigartigen Problemen. Eines der wichtigsten ist, dass  die Steuerungs- und Datenebenen beim Arbeiten mit LLMs nicht strikt isoliert oder trennbar sind. Zusätzlich sind LLMs von Natur aus nicht deterministisch und liefern beim gleichen Prompt unterschedliche Ergebnisse. LLMs verwenden semantische Suche anstelle einer Schlüsselwortsuche. Der Kernunterschied ist dabei, dass der Algorithmus des Modells die Begriffe in der Antwort priorisiert. Das ist eine deutliche Abweichung von der gewohnten Art und Weise, wie Verbraucher bisher Technologie genutzt haben, und es wirkt sich auf die Konsistenz und Zuverlässigkeit der Ergebnisse aus. Halluzinationen, die aus den Lücken und Fehlern der Trainingsdaten resultieren sind das Ergebnis dieser Methode.
 
-Es gibt Methoden, um die Zuverlässigkeit zu verbessern und die Angriffsfläche für Jailbreaking, Modelltäuschungen und Halluzinationen zu reduzieren, aber im Ergebnis geht es um einen Kompromiss zwischen Einschränkungen und Nutzen bezüglich Kosten und Funktionalität.
+Es gibt Strategien, um die Zuverlässigkeit zu verbessern und die Angriffsfläche für Jailbreaking, Modelltäuschungen und Halluzinationen zu reduzieren, aber im Ergebnis geht es um einen Kompromiss zwischen Einschränkungen und Nutzen bezüglich Kosten und Funktionalität.
 
 Die Nutzung und Anwendung von LLMs erhöht die Angriffsfläche einer Organisation. Einige Risiken der Risiken von LLM-Applikationen sind einzigartig, aber viele von ihnen sind bekannte Problemfelder, wie die Software Bill of Materials (SBoM), die Lieferkette, Data Loss Protection (DLP) und unautorisierter Zugriff. Dazu kommen verstärkte Risiken, die nicht direkt mit GenAI zusammenhängen, bei denen GenAI aber die Effizienz, Fähigkeit und Wirksamkeit von Angreifern, die Organisationen, Einzelpersonen und Regierungssysteme angreifen und bedrohen erhöht.
 
@@ -106,12 +106,12 @@ Obw ohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, 
 
 LLM-Fähigkeiten führen neue Varianten von Angriffen und Angriffsflächen ein. LLMs sind anfällig für komplexe Geschäftslogikfehler, wie z. B. Prompt-Injektion, unsicheres Plugin-Design und Remote-Code-Ausführung. Existierende Best Practices sind der beste Weg, um diese Probleme zu lösen. Ein internes Produktsicherheitsteam, das sichere Softwareüberprüfung, Architektur, Data-Governance und Drittanbieterbewertungen versteht, muss überprüfen, wie geeignet die existierenden Mechanismen sind, um Probleme zu finden, die durch LLM verschärf werden könnten, wie z. B. Stimmklonung, Personifizierung oder das Umgehen von Captchas.
 
-Angesichts der jüngsten Fortschritte im maschinellen Lernen, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning und in jüngerer Zeit LLMs (Large Language Models) und Generative AI wird empfohlen, Fachleute aus in diesen Bereichen bei Cybersicherheits- und Devops-Teams einzubeziehen. Ihre Expertise wird nicht nur bei der Einführung dieser Technologien, sondern auch bei der Entwicklung innovativer Analysen und Antworten auf neu entstehende Herausforderungen helfen.
+Angesichts der aktuellen Fortschritte im maschinellen Lernen, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning und in jüngster Zeit LLMs (Large Language Models) und Generative AI wird empfohlen, Fachleute aus in diesen Bereichen in Cybersicherheits- und Devops-Teams einzubeziehen. Ihre Expertise wird nicht nur bei der Einführung dieser Technologien, sondern auch bei der Entwicklung innovativer Analysen und Antworten auf neu entstehende Herausforderungen helfen.
 
 ### Risiko
 
-Der Verweis auf Risiko verwendet die Definition as ISO 31000: Risiko = "Effekt der Unsicherheit auf Ziele." Zu den in der Checkliste enthaltenen LLM-Risiken gehört eine Liste von LLM-Risiken, die gegnerische, sicherheitstechnische, rechtliche, regulatorische, rufschädigende, finanzielle und wettbewerbliche Risiken thematisiert.
+Der Verweis auf Risiko verwendet die Definition as ISO 31000: Risiko = "Effekt der Unsicherheit auf Ziele." Zu den in der Checkliste enthaltenen LLM-Risiken gehören gegnerische, sicherheitstechnische, rechtliche, regulatorische, rufschädigende, finanzielle und wettbewerbliche Risiken.
 
-### Schwachstellen- und Minderungstaxonomie
+### Schwachstellen- und Mitigationstaxonomie
 
 Aktuelle Systeme zur Klassifizierung von Schwachstellen und zum Austausch von Bedrohungsinformationen, wie etwa OVAL, STIX, CVE und CWE, arbeiten noch an der  Fähigkeit, spezifische Schwachstellen und Bedrohungen in Bezug auf große Sprachmodelle (LLMs) und Prediction-Modelle zu überwachen und die Verteidiger zu alarmieren. Es wird erwartet, dass Organisationen sich auf diese etablierten und anerkannten Standards wie CVE für die Klassifizierung von Schwachstellen und STIX für den Austausch von Informationen über Cyber-Bedrohungen (CTI) stützen werden, wenn Schwachstellen oder Bedrohungen für KI/ML-Systeme und deren Lieferketten identifiziert werden.

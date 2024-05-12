@@ -26,7 +26,7 @@ Dieser Abschnitt konzentriert sich auf die Erstellung von LLM-Plugins und nicht 
 6. Manuelle Benutzerautorisierung und Bestätigung für alle Aktionen, die von sensiblen Plugins durchgeführt werden, erforderlich machen.
 7. Plugins sind in der Regel REST APIs. Daher sollten Entwickler die Empfehlungen in OWASP Top 10 API Security Risks - 2023 befolgen, um allgemeine Schwachstellen zu minimieren.
 
-## Beispiele für Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Ein Plugin akzeptiert eine Basis-URL und weist das LLM an, die URL mit einer Anfrage zu kombinieren, um Wettervorhersagen zu erhalten, die in die Bearbeitung der Benutzeranfrage einfließen. Böswillige Personen können eine Anfrage so gestalten, dass die URL auf eine von ihm kontrollierte Domäne verweist, wodurch sie ihre eigenen Inhalte über diese in das LLM-System einspeisen können.
 2. Ein Plugin akzeptiert eine freie Eingabe in ein einzelnes Feld, die nicht validiert wird. Angreifende liefern sorgfältig gestaltete Payloads, um Fehlermeldungen auszuspähen. Anschließend nutzen sie bekannte Sicherheitslücken von Drittanbietern aus, um Code auszuführen, Daten zu exfiltrieren oder Rechte zu erweitern.

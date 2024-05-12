@@ -10,26 +10,26 @@ Die dringendste LLM-Bedrohung jenseits von Angreifern ist "Shadow AI": Mitarbeit
 
 >cornflower|white|left|14|18 Schritt 1: Resilienz-Strategie zuerst
 
-    >fidlightblue|black|justified|12|16 ▶ Identifikation unmittelbarer Bedrohungen durch Bedrohungsmodellierung von Missbrauchsfällen
-    >fidlightblue|black|justified|12|16 ▶ Überprüfen Sie interne oder externe Ausnutzungsmöglichkeiten in den Bedrohungsmodellszenarien und verifizieren Sie Ihre Sicherheitsmaßnahmen
-    >fidlightblue|black|justified|12|16 ▶ Scannen und überwachen Sie Ihr Environment auf Vorkommen von Schadsoftware
+    >fidlightblue|black|left|12|16 ▶ Identifikation unmittelbarer Bedrohungen durch Bedrohungsmodellierung von Missbrauchsfällen
+    >fidlightblue|black|left|12|16 ▶ Überprüfen Sie interne oder externe Ausnutzungsmöglichkeiten in den Bedrohungsmodellszenarien und verifizieren Sie Sicherheitsmaßnahmen
+    >fidlightblue|black|left|12|16 ▶ Scannen und überwachen Sie Ihr Environment auf Vorkommen von Schadsoftware
 
 >dodgerblue|white|left|14|18 Schritt 2: Bestehende Richtlinien aktualisieren
 
-    >fidlightblue|black|justified|12|16 ▶ Verträge, Geheimhaltungsvereinbarungen, Governance und Sicherheit prüfen, um bei Bedarf Nutzung und Bedrohung durch LLMs oder GenAI zu integrieren
+    >fidlightblue|black|left|12|16 ▶ Verträge, Geheimhaltungsvereinbarungen, Governance und Sicherheit prüfen, um bei Bedarf Nutzung und Bedrohung durch LLMs oder GenAI zu integrieren
 
 >fidblue|white|left|14|18 Schritt 3: Schulung / Bildung
 
-    >fidlightblue|black|justified|12|16 ▶ Aktualisieren Sie das Security-Awareness-Training, Ihre Entwickler-, rechtliche oder andere Schulungen, um die Nutzung oder Bedrohung durch LLMs oder GenAI einzubeziehen
+    >fidlightblue|black|left|12|16 ▶ Aktualisieren Sie das Security-Awareness-Training, Ihre Entwickler-, rechtliche oder andere Schulungen, um die Nutzung oder Bedrohung durch LLMs oder GenAI einzubeziehen
 
 >darkblue|white|left|14|18 Schritt 4: Führungskräfte einbeziehen
 
-    >fidlightblue|black|justified|12|16 ▶ Arbeiten Sie mit Führungskräften und anderen Stakeholdern zusammen, um LLM- oder GenAI-Lösungsstrategien zu identifizieren
-    >fidlightblue|black|justified|12|16 ▶ Implementieren Sie eine Risikomanagementstrategie
+    >fidlightblue|black|left|12|16 ▶ Arbeiten Sie mit Führungskräften und anderen Stakeholdern zusammen, um LLM- oder GenAI-Lösungsstrategien zu identifizieren
+    >fidlightblue|black|left|12|16 ▶ Implementieren Sie eine Risikomanagementstrategie
 
 >cornflower|white|left|14|18 Schritt 5: Aktualisieren Sie Ihr Programm zur Risikomanagement bei Drittanbietern
 
-    >fidlightblue|black|justified|12|16 ▶ Lösungen von Drittanbietern und Anbietern für KI benötigen erweiterte Fragebögen und Überprüfungen
+    >fidlightblue|black|left|12|16 ▶ Lösungen von Drittanbietern und Anbietern für KI benötigen erweiterte Fragebögen und Überprüfungen
 
 >dodgerblue|white|left|14|18 Schritt 6: Eine Bereitstellungsstrategie wählen
 

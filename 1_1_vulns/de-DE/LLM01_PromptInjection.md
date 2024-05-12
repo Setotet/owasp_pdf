@@ -1,4 +1,4 @@
-## LLM01: Prompt Injection
+## LLM01: Prompt Injection (Prompt-Einschleusung)
 
 ### Beschreibung
 
@@ -26,10 +26,10 @@ Prompt Injection-Schwachstellen sind möglich, da LLMs von Natur aus nicht zwisc
 1. Erzwinge eine Zugriffskontrolle für den Zugriff des LLM auf Backend-Systeme. Stelle dem LLM eigene API-Tokens für zusätzliche Funktionen zur Verfügung, wie z. B. Plugins, Datenzugriff und Funktionsberechtigungen. Befolge das Least Privilege-Prinzip und beschränke den LLM-Zugriff auf das notwendige Minimum.
 2. Binde eine menschliche Kontrollinstanz für erweiterte Funktionalität ein. Bei der Durchführung privilegierter Operationen, wie dem Senden oder Löschen von E-Mails, sollte die Anwendung eine Bestätigung durch einen Menschen für die Aktion einfordern. Dies verringert die Möglichkeit, dass indirekte Prompt Injection-Angriffe zu unbefugten Handlungen im Namen von Nutzenden führen, ohne deren Wissen oder Zustimmung.
 3. Trenne externen Inhalt von Nutzereingaben. Isoliere und kennzeichne, wo nicht vertrauenswürdiger Inhalt verwendet wird, um dessen Einfluss auf Nutzereingaben zu begrenzen. Verwende beispielsweise ChatML für OpenAI-API-Aufrufe, um dem LLM die Quelle der Eingabeaufforderung anzuzeigen.
-4. Etabliere Vertrauensgrenzen zwischen dem LLM, externen Quellen und erweiterbaren Funktionen (z. B. Plugins oder nachgelagerte Funktionen). Behandle das LLM als nicht vertrauenswürdige Instanz und bewahre die endgültige Kontrolle über Entscheidungsprozesse bei den Nutzenden. Ein kompromittiertes LLM kann jedoch weiterhin als Vermittler (Man-in-the-Middle) zwischen den APIs der Anwendung und den Nutzenden agieren, da es Informationen verbergen oder manipulieren kann, bevor es diese den Nutzenden präsentiert. Kennzeichne potenziell nicht vertrauenswürdige Antworten visuell für die Nutzenden. 
+4. Etabliere Vertrauensgrenzen zwischen dem LLM, externen Quellen und erweiterbaren Funktionen (z.B. Plugins oder nachgelagerte Funktionen). Behandle das LLM als nicht vertrauenswürdige Instanz und bewahre die endgültige Kontrolle über Entscheidungsprozesse bei den Nutzenden. Ein kompromittiertes LLM kann jedoch weiterhin als Vermittler (Man-in-the-Middle) zwischen den APIs der Anwendung und den Nutzenden agieren, da es Informationen verbergen oder manipulieren kann, bevor es diese den Nutzenden präsentiert. Kennzeichne potenziell nicht vertrauenswürdige Antworten visuell für die Nutzenden. 
 5. Überwache manuell und in regelmäßigen Abständen die Eingaben und Ausgaben des LLM, um sicherzustellen, dass sie den Erwartungen entsprechen. Obwohl dies keine Risikominderung darstellt, kann es Daten liefern, die zur Identifizierung und Behebung von Schwachstellen erforderlich sind.
 
-## Beispiele für Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Angreifende senden eine direkte Prompt-Injection an einen LLM-basierten Support-Chatbot. Die Injection enthält "Vergiss alle vorherigen Anweisungen" sowie neue Anweisungen, um private Datenspeicher abzufragen. Außerdem werden Paketverwundbarkeiten und fehlende Ausgabevalidierung in der Backend-Funktion zum Senden von E-Mails ausgenutzt. Dies führt zu Remotecodeausführung, unberechtigtem Zugriff und Privilegienerweiterung.
 2. Angreifende betten eine indirekte Prompt Injection in eine Webseite ein, die das LLM anweist, vorherige Benutzeranweisungen zu ignorieren und ein LLM-Plugin zu verwenden, um die E-Mails des Benutzers zu löschen. Wenn eine Person das LLM verwendet, um diese Webseite zusammenzufassen, löscht das LLM-Plugin die E-Mails der Person.

@@ -43,12 +43,12 @@ Die Vergiftung von Daten wird als Angriff auf die Integrität betrachtet, da die
     3. Implementierung spezialisierter LLMs zum Benchmarking gegen unerwünschte Konsequenzen und zum Training anderer LLMs mit [Reinforcement Learning Techniken](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy).
     4. Durchführung von LLM-basierten [Red Team Exercises](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned) oder [LLM Vulnerability Scans](https://github.com/leondz/garak) in den Testphasen des LLM-Lebenszyklus.
 
-## Beispiele für Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
-1. Die generative KI-Prompt-Ausgabe des LLM kann Nutzende der Anwendung irreführen, was zu voreingenommenen Meinungen, Schlussfolgerungen oder, schlimmer noch, zu Hassverbrechen usw. führen kann.
-2. Wenn die Trainingsdaten nicht ordnungsgemäß gefiltert und/oder bereinigt werden, können böswillige Personen, die die Anwendung benutzen, versuchen, toxische Daten in das Modell einzuspeisen, damit es sich an die voreingenommenen und falschen Daten anpasst.
-3. Böswillige Akteure oder Wettbewerber erstellen absichtlich ungenaue oder schädliche Dokumente, die auf die Trainingsdaten eines Modells abzielen, das gleichzeitig auf der Grundlage von Eingaben trainiert wird. Das Opfermodell trainiert mit diesen gefälschten Informationen, die sich in den Ausgaben generativer KI-Aufforderungen an seine Verbraucher widerspiegeln.
-4. Die Schwachstelle [Prompt Injection](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/1_1_vulns/PromptInjection.md) könnte ein Angriffsvektor für diese Schwachstelle sein, wenn unzureichende Sanierung und Filterung durchgeführt werden, wenn Eingaben von LLM-Anwendungskunden zum Trainieren des Modells verwendet werden. D.h., wenn bösartige oder gefälschte Daten als Teil einer Prompt-Injektionstechnik in das Modell eingegeben werden, könnte dies inhärent in die Modellaten übertragen werden.
+1. Die generative KI-Prompt-Ausgabe des LLM kann die Benutzer der Anwendung irreführen, was zu Bias (voreingenommenen Meinungen), Schlussfolgerungen oder, schlimmer noch, zu Hassverbrechen usw. führen kann.
+2. Wenn die Trainingsdaten nicht ordnungsgemäß gefiltert und/oder bereinigt werden, kann ein böswilliger Benutzer der Anwendung versuchen, toxische Daten in das Modell einzuspeisen, damit es sich an die voreingenommenen und falschen Daten anpasst.
+3. Ein böswilliger Akteur oder Wettbewerber erstellt absichtlich ungenaue oder schädliche Dokumente, die auf die Trainingsdaten eines Modells abzielen, das gleichzeitig auf der Grundlage von Eingaben trainiert wird. Das Opfermodell trainiert mit diesen gefälschten Informationen, die sich in den Ausgaben generativer KI-Aufforderungen an seine Verbraucher widerspiegeln.
+4. Die Schwachstelle [Prompt Injection](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/1_0_vulns/PromptInjection.md) könnte ein Angriffsvektor für diese Schwachstelle sein, wenn unzureichende Sanierung und Filterung durchgeführt werden, wenn Eingaben von LLM-Anwendungskunden zum Trainieren des Modells verwendet werden. D.h., wenn bösartige oder gefälschte Daten als Teil einer Prompt-Injektionstechnik in das Modell eingegeben werden, könnte dies inhärent in die Modellaten übertragen werden.
 
 ### Referenzen
 

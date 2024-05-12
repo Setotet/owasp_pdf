@@ -34,7 +34,7 @@ Die folgenden Optionen verhindern zwar keine übermäßige Handlungsfreiheit, k�
 1. Protokollieren und Überwachen der Aktivitäten von LLM-Plugins/Tools und nachgelagerten Systemen, um zu erkennen, wo unerwünschte Aktionen stattfinden und entsprechend zu reagieren.
 2. Implementieren Sie Rate-Limiting, um die Anzahl unerwünschter Aktionen, die in einem bestimmten Zeitraum stattfinden können, zu reduzieren und die Möglichkeit zu erhöhen, unerwünschte Aktionen durch Überwachung zu entdecken, bevor erheblicher Schaden entsteht. entstehen kann.
 
-## Beispiele für Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 Eine LLM-basierte Personal Assistant App greift über ein Plugin auf das Postfach einer Person zu, um den Inhalt eingehender E-Mails zusammenzufassen. Um diese Funktionalität zu erreichen, muss das E-Mail-Plugin in der Lage sein, Nachrichten zu lesen. Das vom Systementwickler ausgewählte Plugin enthält jedoch auch Funktionen zum Senden von Nachrichten. Der LLM ist anfällig für einen indirekten Man-in-the-Middle-Angriff, bei dem eine bösartig gestaltete eingehende E-Mail den LLM dazu veranlasst, das E-Mail-Plugin anzuweisen, die Funktion 'Nachricht senden' aufzurufen, um Spam aus der Mailbox des Benutzers zu versenden. Dies könnte vermieden werden durch
 (a) Eliminierung überflüssiger Funktionalität durch Verwendung eines Plugins, das nur E-Mail-Lesefunktionen bietet,

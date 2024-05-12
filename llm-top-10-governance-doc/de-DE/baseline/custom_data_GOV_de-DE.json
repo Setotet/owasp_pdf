@@ -1,8 +1,8 @@
 {
     "doc_cover": true,
     "doc_title": [
-        "LLM AI Security &",
-        "Governance Checkliste"
+        "OWASP Top 10 für LLM Applikationen",
+        "Cybersicherheit & Governance Checkliste"
     ],
     "doc_title_pivot.pt_y": 324.0,
     "doc_subtitles": [
@@ -16,29 +16,11 @@
         "",
         "",
         "Version: 1.1",
-        "Veröffentlicht: 2. Mai 2024"
+        "Veröffentlicht: 8. Mai 2024"
     ],
     "doc_header": "",
     "doc_header_pivot.pt_x": 36.0,
     "doc_legal_notice": true,
-    "doc_legal_notice_words": [
-        "The information provided in this document does not, and is not intended to, constitute legal advice.",
-        "All information is for general informational purposes only.",
-        "",
-        "This document contains links to other third-party websites. Such links are only for convenience",
-        "and OWASP does not recommend or endorse the contents of the third-party sites.",
-        "",
-        "This project is licensed under the terms of the Creative Commons Attribution-ShareAlike 4.0",
-        "International License.  ( https://creativecommons.org/licenses/by-sa/4.0/ )",
-        "",
-        "Revision History",
-        "    2023-11-01  English  0.1  initial draft",
-        "    2023-12-06  English  0.5  public draft",
-        "    2024-02-15  English  0.9  pre-release draft",
-        "    2024-02-19  English  1.0  public release v 1.0",
-        "    2024-04-10  English  1.1  public release v 1.1",
-        "    2024-05-02  German   1.1"
-    ],
     "doc_legal_notice_words": [
         "Die in diesem Dokument bereitgestellten Informationen stellen keine Rechtsberatung",
         "dar und sind auch nicht als solche gedacht. Alle Informationen dienen nur allgemeinen",
@@ -52,12 +34,12 @@
         "4.0 International Lizenz lizenziert. ( https://creativecommons.org/licenses/by-sa/4.0/ )",
         "",
         "Revisionsverlauf",
-        "    2023-11-01  Englisch  0.1  initial draft",
-        "    2023-12-06  Englisch  0.5  public draft",
-        "    2024-02-15  Englisch  0.9  pre-release draft",
-        "    2024-02-19  Englisch  1.0  public release v 1.0",
-        "    2024-04-10  Englisch  1.1  public release v 1.1",
-        "    2024-05-02  Deutsch   1.1"
+        "    2023-11-01  Englisch  0.1  Erster Entwurf",
+        "    2023-12-06  Englisch  0.5  Öffentlicher Entwurf",
+        "    2024-02-15  Englisch  0.9  Entwurf vor der Veröffentlichung",
+        "    2024-02-19  Englisch  1.0  Öffentliche Veröffentlichung v 1.0",
+        "    2024-04-10  Englisch  1.1  Öffentliche Veröffentlichung v 1.1",
+        "    2024-05-08  Deutsch   1.1"
     ],
     
     "doc_toc": true,
