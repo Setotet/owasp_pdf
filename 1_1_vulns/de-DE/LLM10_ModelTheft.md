@@ -2,15 +2,15 @@
 
 ### Beschreibung
 
-Dieser Eintrag bezieht sich auf den unbefugten Zugriff und die Exfiltration von LLM-Modellen durch böswillige Akteure oder APTs (Advanced Persistent Threats). Dies geschieht, wenn proprietäre LLM-Modelle (als wertvolles geistiges Eigentum) kompromittiert, physisch gestohlen, kopiert oder Gewichte und Parameter extrahiert werden, um ein funktionsfähiges Äquivalent zu erstellen. Die Auswirkungen des Diebstahls von LLM-Modellen können wirtschaftliche Verluste und Imageschäden, die Erosion von Wettbewerbsvorteilen, die unbefugte Nutzung des Modells oder den unbefugten Zugriff auf sensible Informationen, die im Modell enthalten sind, umfassen.
+Dieser Eintrag bezieht sich auf den unbefugten Zugriff und die Exfiltration von LLM-Modellen durch böswillige Akteure oder APTs (Advanced Persistent Threats). Dies geschieht, wenn proprietäre LLM-Modelle (als wertvolles geistiges Eigentum) kompromittiert, physisch gestohlen, kopiert oder Modellgewichte und Parameter extrahiert werden, um ein funktionsfähiges Äquivalent zu erstellen. Die Auswirkungen des Diebstahls von LLM-Modellen können wirtschaftliche Verluste und Imageschäden, die Erosion von Wettbewerbsvorteilen, die unbefugte Nutzung des Modells oder den unbefugten Zugriff auf sensible Informationen, die im Modell enthalten sind, umfassen.
 
 Der Diebstahl von LLMs stellt ein erhebliches Sicherheitsproblem dar, da Sprachmodelle immer leistungsfähiger und weiter verbreitet werden. Organisationen und Forscher müssen robusten Sicherheitsmaßnahmen Priorität einräumen, um ihre LLM-Modelle zu schützen und die Vertraulichkeit und Integrität ihres geistigen Eigentums zu gewährleisten. Die Implementierung eines umfassenden Sicherheitsrahmens, der Zugriffskontrollen, Verschlüsselung und kontinuierliche Überwachung umfasst, ist entscheidend, um das Risiko des Diebstahls von LLM-Modellen zu verringern und die Interessen von Einzelpersonen und Organisationen zu schützen, die auf LLMs angewiesen sind.
 
 ### Gängige Beispiele für Schwachstellen
 
 1. Angreifenden nutzen eine Schwachstelle in der Infrastruktur einer Organisation aus, um sich durch Fehlkonfiguration der Netzwerk- oder Anwendungssicherheitseinstellungen unberechtigten Zugriff auf das LLM-Modell-Repository zu verschaffen.
-2. Ein Insider-Bedrohungsszenario, bei dem ein unzufriedener Mitarbeiter das Modell oder damit verbundene Artefakte nach außen dringen lässt.
-3. Angreifenden verwenden die Modell-API mit sorgfältig erstellten Eingaben und Prompt-Injection-Techniken, um eine ausreichende Anzahl von Ausgaben zu sammeln, um ein Schattenmodell zu erstellen.
+2. Ein Insider-Bedrohungsszenario, bei dem ein unzufriedener Mitarbeitender das Modell oder damit verbundene Artefakte nach außen dringen lässt.
+3. Angreifende verwenden die Modell-API mit sorgfältig erstellten Eingaben und Prompt Injection-Techniken, um eine ausreichende Anzahl von Ausgaben zu sammeln, um ein Schattenmodell zu erstellen.
 4. Böswillige Angreifenden können die Eingabefiltertechniken des LLM umgehen, um einen Seitenkanalangriff durchzuführen und schließlich Modellgewichte und Architekturinformationen an eine entfernte Ressource zu übertragen.
 5. Der Angriffsvektor für die Extraktion von Modellen beinhaltet die Abfrage des LLM mit einer großen Anzahl von Prompts zu einem bestimmten Thema. Die Ausgabe des LLM kann dann verwendet werden, um ein anderes Modell zu verfeinern. Bei diesem Angriff sind jedoch einige Dinge zu beachten:
    - Angreifenden müssen eine große Anzahl spezifischer Prompts erzeugen. Wenn die Prompts nicht spezifisch genug sind, ist die Ausgabe des LLM nutzlos.
@@ -22,18 +22,18 @@ Die Verwendung eines gestohlenen Modells als Schattenmodell kann dazu genutzt we
 
 ### Präventions- und Mitigationsstrategien
 
-1. starke Zugriffskontrollen (z. B. RBAC und das Prinzip der geringsten Rechte) und starke Authentifizierungsmechanismen implementieren, um den unbefugten Zugriff auf LLM-Modell-Repositories und Trainingsumgebungen zu beschränken.
-   1. Dies gilt insbesondere für die ersten drei häufigen Beispiele, die diese Schwachstelle aufgrund von Insider-Bedrohungen, Fehlkonfigurationen und/oder schwachen Sicherheitskontrollen der Infrastruktur, die LLM-Modelle, -Gewichte und -Architektur beherbergt, verursachen könnten, in die ein böswilliger Akteur von innen oder außen eindringen könnte.
-   2. die Nachverfolgbarkeit, die Verifizierung und die Schwachstellen im Lieferantenmanagement sind wichtige Schwerpunktthemen, um die Ausnutzung von Supply-Chain-Angriffen zu verhindern.
+1. Implementieren Sie strenge Zugriffskontrollen (z. B. RBAC und least privilege Prinzip) und starke Authentifizierungsmechanismen, um den unbefugten Zugriff auf Repositories mit LLM-Modellen und Lernumgebungen einzuschränken.
+   1. Dies gilt insbesondere für die ersten drei gängigen Beispiele, die diese Schwachstelle aufgrund von Insider-Bedrohungen, Fehlkonfigurationen und/oder schwachen Sicherheitskontrollen in Bezug auf die Infrastruktur, die LLM-Modelle, -Gewichte und -Architekturen beherbergt, verursachen können, in die böswillige Akteure von innen oder außen eindringen können.
+   2. Schwachstellen bei der Rückverfolgbarkeit, der Verifizierung und der Abhängigkeit von Lieferanten sind wichtige Schwerpunktthemen, um die Ausnutzung von Angriffen auf die Lieferkette zu verhindern.
 2. Beschränken Sie den Zugriff des LLM auf Netzwerkressourcen, interne Dienste und APIs.
-   1. Dies gilt insbesondere für alle gängigen Beispiele, da es Risiken und Bedrohungen durch Insider abdeckt, aber letztlich auch kontrolliert, worauf die LLM-Anwendung "zugreifen" darf, und somit einen Mechanismus oder eine Präventivmaßnahme zur Verhinderung von Seitenkanalangriffen darstellen kann.
-3. Verwenden Sie ein zentrales ML-Modellinventar oder -register für ML-Modelle, die in der Produktion verwendet werden. Ein zentrales Modellregister verhindert den unbefugten Zugriff auf ML-Modelle durch Zugriffskontrollen, Authentifizierung und Überwachungs-/Protokollierungsfähigkeiten, die gute Grundlagen für Governance sind. Ein zentrales Repository ist auch vorteilhaft, um Daten über die von den Modellen verwendeten Algorithmen für Zwecke der Compliance, Risikobewertung und Risikominderung zu sammeln.
-4. Überwachen und prüfen Sie regelmäßig Zugriffsprotokolle und Aktivitäten im Zusammenhang mit LLM-Modell-Repositories, um verdächtiges oder unbefugtes Verhalten umgehend zu erkennen und darauf zu reagieren.
-5. Automatisieren der MLOps-Bereitstellung mit Governance-, Nachverfolgungs- und Genehmigungsworkflows, um die Zugriffs- und Bereitstellungskontrollen innerhalb der Infrastruktur zu rationalisieren.
-6. Implementieren Sie Kontrollen und Minderungsstrategien, um das Risiko von Prompt-Injection-Techniken, die Seitenkanalangriffe verursachen, zu mindern und/oder zu reduzieren.
-7. ggf. Ratenbegrenzung von API-Aufrufen und/oder Filterung, um das Risiko der Datenexfiltration aus LLM-Anwendungen zu reduzieren, oder Implementierung von Techniken zur Erkennung (z. B. DLP) von Extraktionsaktivitäten aus anderen Überwachungssystemen.
-8. Implementierung von Robustheitstrainings, um Extraktionsanfragen zu erkennen und physische Sicherheitsmaßnahmen zu verstärken.
-9. Implementieren eines Wasserzeichen-Frameworks in den Einbettungs- und Erkennungsphasen des Lebenszyklus eines LLM.
+   1. Dies gilt insbesondere für alle gängigen Beispiele, da es Risiken und Bedrohungen von innen abdeckt, aber letztlich auch kontrolliert, worauf die LLM-Anwendung "zugreifen" kann und somit einen Mechanismus oder eine Präventivmaßnahme zur Verhinderung von Seitenkanalangriffen darstellen kann.
+3. Verwenden Sie ein zentrales ML-Modell-Inventar oder -Register für ML-Modelle, die in der Produktion verwendet werden. Eine zentralisierte Modellregistrierung verhindert den unbefugten Zugriff auf ML-Modelle durch Zugriffskontrollen, Authentifizierung und Überwachungs-/Protokollierungsfunktionen, die eine gute Grundlage für die Governance bilden. Ein zentrales Repository ist auch vorteilhaft, um Daten über die von den Modellen verwendeten Algorithmen für Zwecke der Compliance, Risikobewertung und Risikominderung zu sammeln.
+4. Überwachen und überprüfen Sie regelmäßig die Zugriffsprotokolle und Aktivitäten im Zusammenhang mit LLM-Modell-Repositories, um verdächtiges oder nicht autorisiertes Verhalten zu erkennen und sofort darauf zu reagieren.
+5. Automatisieren Sie die MLOps-Bereitstellung mit Governance-, Tracking- und Genehmigungs-Workflows, um die Zugriffs- und Bereitstellungskontrollen innerhalb der Infrastruktur zu stärken.
+6. Implementieren Sie Kontrollen und Abschwächungsstrategien, um das Risiko von "Instant Injection"-Techniken, die Seitenkanalangriffe verursachen, abzuschwächen oder zu reduzieren.
+7. Beschränken Sie gegebenenfalls die Anzahl der API-Aufrufe und/oder setzen Sie Filter ein, um das Risiko der Datenexfiltration aus LLM-Anwendungen zu verringern, oder implementieren Sie Techniken zur Erkennung von Extraktionsaktivitäten (z. B. DLP) aus anderen Überwachungssystemen.
+8. Implementieren Sie ein Robustheitstraining für Angreifende, um Extraktionsanfragen zu erkennen und die physischen Sicherheitsmaßnahmen zu verstärken.
+9. mplementieren Sie ein Wasserzeichen-Framework in den Embeddings- und Erkennungsphasen des Lebenszyklus eines LLM.
 
 ## Beispiele für Angriffsszenarien
 

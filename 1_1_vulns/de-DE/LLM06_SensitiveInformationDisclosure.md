@@ -2,32 +2,32 @@
 
 ### Beschreibung
 
-LLM-Anwendungen (Large Language Models) können das Potenzial haben, durch ihre Ausgabe sensible Informationen, proprietäre Algorithmen oder andere vertrauliche Details zu offenbaren. Dies kann zu unberechtigtem Zugriff auf sensible Daten, geistiges Eigentum, Verletzungen der Privatsphäre und anderen Sicherheitsverletzungen führen. Es ist wichtig, dass die Benutzerinnen und Benutzer von LLM-Anwendungen wissen, wie sie sicher mit LLMs interagieren können, und dass sie sich der Risiken bewusst sind, die mit der unbeabsichtigten Eingabe sensibler Daten verbunden sind, die dann von der LLM in der Ausgabe an anderer Stelle zurückgegeben werden können.
+LLM-Anwendungen können das Potenzial haben, durch ihre Ausgabe sensible Informationen, proprietäre Algorithmen oder andere vertrauliche Details zu offenbaren. Dies kann zu unberechtigtem Zugriff auf sensible Daten, geistiges Eigentum, Verletzungen der Privatsphäre und anderen Sicherheitsverletzungen führen. Es ist wichtig, dass die Benutzerinnen und Benutzer von LLM-Anwendungen wissen, wie sie sicher mit LLMs interagieren können, und dass sie sich der Risiken bewusst sind, die mit der unbeabsichtigten Eingabe sensibler Daten verbunden sind, die dann von der LLM in der Ausgabe an anderer Stelle zurückgegeben werden können.
 
-Um dieses Risiko zu mindern, sollten LLM-Anwendungen eine angemessene Datenbereinigung (PII-Scrubbing) durchführen, um zu verhindern, dass Benutzerdaten in die Trainingsdaten des Modells gelangen. Die Eigentümer von LLM-Anwendungen sollten auch angemessene Nutzungsbedingungen bereitstellen, um die Verbraucher darüber zu informieren, wie ihre Daten verarbeitet werden, und ihnen die Möglichkeit geben, die Einbeziehung ihrer Daten in das Trainingsmodell abzulehnen.
+Um dieses Risiko zu minimieren, sollten LLM-Anwendungen eine angemessene Datenbereinigung durchführen, um zu verhindern, dass Benutzerdaten in die Daten des Trainingsmodells gelangen. Die Eigentümer von LLM-Anwendungen sollten auch über angemessene Nutzungsbedingungen verfügen, um die Verbraucher darüber zu informieren, wie ihre Daten verarbeitet werden, und ihnen die Möglichkeit zu geben, die Aufnahme ihrer Daten in das Trainingsmodell abzulehnen.
 
-Die Interaktion zwischen Menschen und der LLM-Anwendung stellt eine Zwei-Wege-Vertrauensgrenze dar, bei der wir weder der Client->LLM-Eingabe noch der LLM->Client-Ausgabe grundsätzlich vertrauen können. Es ist wichtig anzumerken, dass diese Schwachstelle davon ausgeht, dass bestimmte Voraussetzungen, wie Bedrohungsmodellierungsübungen, Sicherung der Infrastruktur und angemessenes Sandboxing, nicht gegeben sind. Das Hinzufügen von Einschränkungen in der Systemabfrage bezüglich der Art der Daten, die das LLM zurückgeben soll, kann einen gewissen Schutz vor der Offenlegung sensibler Informationen bieten, aber die unvorhersehbare Natur von LLMs bedeutet, dass solche Einschränkungen möglicherweise nicht immer eingehalten werden und durch Prompt-Injection oder andere Vektoren umgangen werden können.
+Die Interaktion zwischen Verbraucher und LLM-Anwendung bildet eine zweiseitige Vertrauensgrenze, bei der wir weder den Eingaben des Clients->LLM noch den Ausgaben des LLM->Client vertrauen können. Es ist wichtig zu beachten, dass diese Schwachstelle davon ausgeht, dass bestimmte Voraussetzungen nicht gegeben sind, wie z.B. Übungen zur Bedrohungsmodellierung, eine sichere Infrastruktur und eine angemessene Sandbox. Das Hinzufügen von Einschränkungen in der System-Eingabeaufforderung bezüglich der Datentypen, die der LLM zurückgeben soll, kann einen gewissen Schutz vor der Offenlegung sensibler Informationen bieten. Die unvorhersehbare Natur von LLMs bedeutet jedoch, dass solche Einschränkungen nicht immer beachtet werden und durch Prompt-Injection oder andere Vektoren umgangen werden könnten.
 
 ### Gängige Beispiele für Schwachstellen
 
-1. Unvollständiges oder unangemessenes Filtern sensibler Informationen in den Antworten des LLM.
-2. Überanpassung oder Speicherung sensibler Daten während des Trainingsprozesses des LLM.
-3. Unbeabsichtigte Offenlegung vertraulicher Informationen aufgrund von Fehlinterpretationen durch den LLM, unzureichenden Datenbereinigungsmethoden oder Fehlern.
-
+1. Unvollständige oder unsachgemäße Filterung von sensiblen Informationen in den Antworten des LLM.
+2. Übermäßige Angleichung oder Einprägung sensibler Daten im Trainingsprozess des LLM.
+3. Unbeabsichtigte Offenlegung vertraulicher Informationen aufgrund von Fehlinterpretationen des LLM, fehlenden Datenbereinigungsmethoden oder Fehlern.
+4. 
 ### Präventions- und Mitigationsstrategien
 
-1. Integration geeigneter Datenbereinigungs- und Scrubbing-Techniken, um zu verhindern, dass Benutzerdaten in die Trainingsdaten des Modells gelangen.
-2. robuste Eingabevalidierungs- und -bereinigungsmethoden implementieren, um potenziell schädliche Eingaben zu identifizieren und herauszufiltern, damit das Modell nicht vergiftet wird.
+1. Integrieren Sie geeignete Datenbereinigungs- und Scrubbing-Techniken, um zu verhindern, dass Benutzerdaten in die Daten des Trainingsmodells gelangen.
+2. Implementierung robuster Eingabevalidierungs- und -bereinigungsmethoden, um potenziell schädliche Eingaben zu identifizieren und zu entfernen, damit das Modell nicht vergiftet wird.
 3. Wenn das Modell mit Daten angereichert und [feinabgestimmt](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/wiki/Definitions) wird: (z. B. Daten, die dem Modell vor oder während der Bereitstellung zugeführt werden)
-   1. Alles, was in den Feinabstimmungsdaten als sensibel eingestuft wird, kann einem Benutzer angezeigt werden. Daher sollte die Regel des geringsten Privilegs angewendet werden und das Modell nicht mit Informationen trainiert werden, auf die der Benutzer mit dem höchsten Privileg Zugriff hat und die einem Benutzer mit niedrigeren Privilegien angezeigt werden könnten.
+   1. Alles, was in den Feinabstimmungsdaten als sensibel eingestuft ist, könnte Personen offengelegt werden. Wenden Sie daher das least privilege Prinzip an und trainieren Sie das Modell nicht mit Informationen, auf die Personen mit den höchsten Rechten zugreifen können und die einer weniger privilegierten Personen angezeigt werden könnten.
    2. Der Zugriff auf externe Datenquellen (Orchestrierung von Daten zur Laufzeit) sollte eingeschränkt werden.
-   3. Strenge Zugriffskontrollmethoden für externe Datenquellen anwenden und einen rigorosen Ansatz zur Aufrechterhaltung einer sicheren Lieferkette verfolgen.
+   3. Strenge Zugriffskontrollmethoden für externe Datenquellen und ein rigoroser Ansatz zur Aufrechterhaltung einer sicheren Lieferkette.
 
 ## Beispiele für Angriffsszenarien
 
-1. Ein ahnungsloser, legitimer Benutzer A wird durch das LLM bestimmten Daten anderer Benutzer ausgesetzt, wenn er in nicht böswilliger Weise mit der LLM-Anwendung interagiert.
-2. Benutzer A zielt darauf ab, durch eine sorgfältig ausgeklügelte Abfolge von Eingabeaufforderungen die Eingabefilter und Sanierungsmaßnahmen des LLM zu umgehen, um sensible Informationen (PII) über andere Benutzer der Anwendung preiszugeben.
-3. Personenbezogene Daten (PII) werden aufgrund von Nachlässigkeit des Benutzers selbst oder der LLM-Anwendung über die Trainingsdaten an das Modell weitergegeben. Dieser Fall könnte das Risiko und die Wahrscheinlichkeit von Szenario 1 oder 2 oben erhöhen.
+1. Die ahnungslose legitime Benutzerin A erhält über den LLM Zugang zu bestimmten anderen Benutzerdaten, wenn sie in nicht böswilliger Absicht mit der LLM-Anwendung interagiert.
+2. Benutzer A zielt darauf ab, die Eingabefilter und die Bereinigungsfunktionen des LLM durch eine ausgeklügelte Abfolge von Eingabeaufforderungen zu umgehen und Personen dazu zu bringen, sensible Informationen (PII) über andere Personen der Anwendung preiszugeben.
+3. Personenbezogene Daten wie z.B. PII gelangen über Trainingsdaten in das Modell, entweder durch Unachtsamkeit die Person selbst oder durch die LLM-Anwendung. Dies könnte das Risiko und die Wahrscheinlichkeit von Szenario 1 oder 2 oben erhöhen.
 
 ### Referenzen
 
