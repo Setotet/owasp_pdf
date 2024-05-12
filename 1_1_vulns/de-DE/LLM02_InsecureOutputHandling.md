@@ -2,37 +2,37 @@
 
 ### Beschreibung
 
-Unsichere Ausgabeverarbeitung bezieht sich speziell auf die unzureichende Validierung, Bereinigung und Handhabung von Ausgaben, die von großen Sprachmodellen erzeugt werden, bevor sie an andere Komponenten und Systeme weitergeleitet werden. Da der von LLMs (Large Language Models) erzeugte Inhalt durch Prompteingaben gesteuert werden kann, ähnelt dieses Verhalten dem indirekten Benutzerzugriff auf zusätzliche Funktionen.
+Unsichere Ausgabeverarbeitung bezieht sich speziell auf die unzureichende Validierung, Bereinigung und Handhabung von Ausgaben, die von Large Language Models erzeugt werden, bevor sie an andere Komponenten und Systeme weitergeleitet werden. Da der von LLMs erzeugte Inhalt durch Prompt-Eingaben gesteuert werden kann, ähnelt dieses Verhalten dem indirekten Benutzerzugriff auf zusätzliche Funktionen.
 
-Unsichere Ausgabeverarbeitung unterscheidet sich von Überabhängigkeit insofern, als sie sich mit den Ausgaben befasst, die von LLMs generiert werden, bevor sie weitergeleitet werden. Im Gegensatz dazu konzentriert sich übermäßige Abhängigkeit auf allgemeinere Bedenken hinsichtlich der übermäßigen Abhängigkeit von der Genauigkeit und Angemessenheit der LLM-Ausgaben.
+Unsichere Ausgabeverarbeitung unterscheidet sich von _Übermäßiger Abhängigkeit_ insofern, als sie sich mit den Ausgaben befasst, die von LLMs generiert werden, bevor sie weitergeleitet werden. Im Gegensatz dazu konzentriert sich _Übermäßige Abhängigkeit_ auf allgemeinere Bedenken hinsichtlich der Angewiesenheit auf die Genauigkeit und Angemessenheit des LLM-Outputs.
 
 Die erfolgreiche Ausnutzung einer Schwachstelle in der unsicheren Ausgabeverarbeitung kann zu XSS (Cross-Site Scripting) und CSRF (Cross-Site Request Forgery) in Webbrowsern sowie zu SSRF (Server-Side Request Forgery), Rechteerweiterung (Privilege Escalation) oder Remote-Code-Ausführung in Backend-Systemen führen.
 
 Die folgenden Bedingungen können die Auswirkungen dieser Schwachstelle verstärken:
 
 * Die Anwendung gewährt dem LLM Privilegien, die über die für den Endbenutzer vorgesehenen Privilegien hinausgehen, was eine Eskalation der Privilegien oder die Ausführung von Remote-Code ermöglicht.
-* Die Anwendung ist anfällig für indirekte Prompt-Injection-Angriffe, die es Angreifenden ermöglichen, privilegierten Zugriff auf die Umgebung eines Zielbenutzers zu erlangen.
+* Die Anwendung ist anfällig für indirekte Prompt Injection-Angriffe, die es Angreifenden ermöglichen, privilegierten Zugriff auf die Umgebung eines Zielbenutzers zu erlangen.
 * Plugins von Drittanbietern validieren Eingaben nicht ausreichend.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
 1. Die Ausgabe des LLM wird direkt in eine Systemshell oder eine ähnliche Funktion wie exec oder eval eingegeben, was zu einer Remote-Code-Ausführung führt.
-2. JavaScript oder Markdown wird vom LLM generiert und an den Benutzer zurückgegeben. Der Code wird dann vom Browser interpretiert, was zu XSS führt.
+2. JavaScript oder Markdown wird vom LLM generiert und die aufrufende Person zurückgegeben. Der Code wird dann vom Browser interpretiert, was zu XSS führt.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigationsstrategien
 
-1. Behandle das Sprachmodell mit einem Zero-Trust-Ansatz und führe eine ordnungsgemäße Eingabevalidierung für die Antworten des Modells an die Backend-Funktionen durch.
-2. Befolge die Richtlinien des OWASP ASVS (Application Security Verification Standard), um eine effektive Eingabevalidierung und -sanierung zu gewährleisten.
-3. Encode die Modellausgabe zurück an den Benutzer, um unerwünschte Codeausführung durch JavaScript oder Markdown zu verhindern. OWASP ASVS bietet detaillierte Anweisungen zur Ausgabekodierung.
+1. Behandeln Sie das Sprachmodell mit einem Zero-Trust-Ansatz und wenden Sie eine geeignete Eingabevalidierung auf die Antworten an, die vom Modell an die Backend-Funktionen gesendet werden.
+2. Befolgen Sie die OWASP ASVS (Application Security Verification Standard) Richtlinien, um eine effektive Eingabevalidierung und -bereinigung zu gewährleisten.
+3. Encoden Sie die Modellausgabe zurück an den Benutzer, um unerwünschte Codeausführung durch JavaScript oder Markdown zu verhindern. Der OWASP ASVS bietet detaillierte Anweisungen zum Output Encoding.
 
-### Beispiele für Angriffsszenarien
+## Beispiele für Angriffsszenarien
 
 1. Eine Anwendung verwendet ein LLM-Plugin, um Antworten für eine Chatbot-Funktion zu generieren. Das Plugin bietet auch eine Reihe von administrativen Funktionen, die einem anderen privilegierten LLM zur Verfügung stehen. Das allgemeine LLM sendet seine Antwort direkt an das Plugin, ohne die Ausgabe ordnungsgemäß zu validieren, was dazu führt, dass das Plugin für Wartungsarbeiten heruntergefahren wird.
 2. Eine Person verwendet ein von einem LLM betriebenes Tool, das Webseiten zusammenfasst, um eine kurze Übersicht über einen Artikel zu erstellen. Die Website enthält eine Eingabeaufforderung, die das LLM anweist, sensible Inhalte entweder von der Website oder aus der Konversation des Benutzers zu erfassen. Anschließend kann der LLM die sensiblen Daten verschlüsseln und ohne Validierung oder Filterung der Ausgabe an einen von Angreifenden kontrollierten Server senden.
-3. Ein LLM ermöglicht es Personen, SQL-Abfragen für eine Backend-Datenbank über eine Chat-ähnliche Funktion zu erstellen. Eine Person fordert eine Abfrage an, um alle Datenbanktabellen zu löschen. Wenn die vom LLM erstellte Abfrage nicht überprüft wird, könnten alle Datenbanktabellen gelöscht werden.
+3. Ein LLM ermöglicht es Personen, SQL-Abfragen für eine Backend-Datenbank über eine Chat-ähnliche Funktion zu erstellen. Eine Person stellt eine Abfrage zum Löschen aller Datenbanktabellen. Wenn die vom LLM erstellte Abfrage nicht überprüft wird, könnten alle Datenbanktabellen gelöscht werden.
 4. Eine Webanwendung verwendet einen LLM, um Inhalte aus Benutzereingaben zu generieren, ohne die Ausgabe zu bereinigen. Angreifende könnten eine konstruierte Anfrage einreichen, die den LLM dazu veranlasst, eine unbereinigte JavaScript-Payload zurückzugeben, die zu XSS führt, wenn sie im Browser des Opfers ausgeführt wird. Unzureichende Validierung von Anfragen ermöglicht diesen Angriff.
 
-### Referenzlinks
+### Referenzen
 
 1. [Arbitrary Code Execution](https://security.snyk.io/vuln/SNYK-PYTHON-LANGCHAIN-5411357): **Snyk Security Blog**
 2. [ChatGPT Plugin Exploit Explained: From Prompt Injection to Accessing Private Data](https://embracethered.com/blog/posts/2023/chatgpt-cross-plugin-request-forgery-and-prompt-injection./): **Embrace The Red**

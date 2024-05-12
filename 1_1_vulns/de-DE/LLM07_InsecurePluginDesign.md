@@ -8,7 +8,7 @@ Der Schaden, der durch böswillige Eingaben verursacht wird, hängt oft von unzu
 
 Dieser Abschnitt konzentriert sich auf die Erstellung von LLM-Plugins und nicht auf Plugins von Drittanbietern, die durch LLM-Supply-Chain-Schwachstellen abgedeckt werden.
 
-### Häufige Beispiele für Verwundbarkeiten
+### Gängige Beispiele für Schwachstellen
 
 1. Ein Plugin akzeptiert alle Parameter in einem einzigen Textfeld anstatt in separaten Eingabeparametern.
 2. Ein Plugin akzeptiert Konfigurationsstrings anstelle von Parametern, die alle Konfigurationseinstellungen überschreiben können.
@@ -16,7 +16,7 @@ Dieser Abschnitt konzentriert sich auf die Erstellung von LLM-Plugins und nicht 
 4. Die Authentifizierung erfolgt ohne explizite Autorisierung für ein bestimmtes Plugin.
 5. Ein Plugin behandelt alle LLM-Inhalte so, als ob sie vollständig vom Benutzer erstellt wurden, und führt jede angeforderte Aktion ohne zusätzliche Autorisierung aus.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigationsstrategien
 
 1. Plugins sollten, wo immer möglich, streng parametrisierte Aufrufe erzwingen und Typ- und Bereichsprüfungen für Aufrufe enthalten. Wenn dies nicht möglich ist, sollte eine zweite Schicht von typisierten Aufrufen eingeführt werden, die die Anfragen analysiert und Validierung und Sanitisierung anwendet. Wenn Freiformeingaben aufgrund der Anwendungssemantik akzeptiert werden müssen, sollten diese sorgfältig geprüft werden, um sicherzustellen, dass keine potenziell schädlichen Methoden aufgerufen werden.
 2. Plugin-Entwickler sollten die Empfehlungen des OWASP im Application Security Verification Standard (ASVS) anwenden, um eine angemessene Validierung und Sanitisierung von Eingaben zu gewährleisten.
@@ -26,13 +26,13 @@ Dieser Abschnitt konzentriert sich auf die Erstellung von LLM-Plugins und nicht 
 6. Plugins sollten eine manuelle Benutzerautorisierung und Bestätigung für jede Aktion erfordern, die von sensiblen Plugins durchgeführt wird.
 7. Plugins sind oft REST APIs, daher sollten Entwickler die Empfehlungen in OWASP Top 10 API Security Risks - 2023 anwenden, um generische Schwachstellen zu minimieren.
 
-### Beispiel-Angriffsszenarien
+## Beispiele für Angriffsszenarien
 
 1. Ein Plugin akzeptiert eine Basis-URL und weist das LLM an, die URL mit einer Anfrage zu kombinieren, um Wettervorhersagen zu erhalten, die in die Bearbeitung der Benutzeranfrage einfließen. Ein böswilliger Benutzer kann eine Anfrage so gestalten, dass die URL auf eine von ihm kontrollierte Domäne zeigt, wodurch er seine eigenen Inhalte über seine Domäne in das LLM-System einspeisen kann.
 2. Ein Plugin akzeptiert eine Freiformeingabe in ein einzelnes Feld, das es nicht validiert. Angreifende liefern sorgfältig gestaltete Payloads, um aus Fehlermeldungen Informationen zu gewinnen. Anschließend werden bekannte Schwachstellen von Drittanbietern ausgenutzt, um Code auszuführen, Daten zu exfiltrieren oder Privilegien zu erweitern.
 3. Ein Plugin, das zum Abrufen von Einbettungen aus einem Vektorspeicher verwendet wird, akzeptiert Konfigurationsparameter als Verbindungszeichenfolge ohne jegliche Validierung. Dadurch können Angreifende mit anderen Vektorspeichern experimentieren und durch Änderung von Hostnamen oder -parametern auf diese zugreifen und Einbettungen exfiltrieren, auf die er keinen Zugriff haben sollte.
 4. Ein Plugin akzeptiert SQL WHERE-Klauseln als erweiterte Filter, die dann an die Filter-SQL angehängt werden. Dadurch können Angreifende einen SQL-Angriff inszenieren.
-5. Angreifende nutzen indirekte Prompt-Injektion aus, um ein unsicheres Codeverwaltungs-Plugin ohne Eingabevalidierung und schwache Zugriffskontrolle auszunutzen, um Repository-Eigentum zu übertragen und den Benutzer aus dem Repository auszuschließen.
+5. Angreifende nutzen indirekte Prompt Injection aus, um ein unsicheres Codeverwaltungs-Plugin ohne Eingabevalidierung und schwache Zugriffskontrolle auszunutzen, um Repository-Eigentum zu übertragen und den Benutzer aus dem Repository auszuschließen.
 
 ### Referenzen
 

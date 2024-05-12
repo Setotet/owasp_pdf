@@ -1,18 +1,18 @@
 ## Einleitung
 
-### Entstehung der Liste
+### Die Entstehung der Liste
 
 Das enorme Interesse an Large Language Models (LLMs) nach der Einführung massentauglicher, vortrainierten Chatbots Ende 2022 ist beachtlich. Unternehmen, die das Potenzial von LLMs nutzen wollen, integrieren sie rasch in ihre Geschäftsprozesse und kundenzugänglichen Angeboten. Die rasante Geschwindigkeit, mit der LLMs eingeführt werden, hat jedoch dazu geführt, dass die Etablierung umfassender Sicherheitsprotokolle in Verzug geraten ist, sodass viele Anwendungen mit hohen Risiken behaftet sind.
 
-Das Fehlen einer einheitlichen Ressource, die diese Sicherheitsbedenken in Bezug auf LLMs adressiert, war offensichtlich. Entwicklerinnen und Entwickler, die mit den spezifischen Risiken von LLMs nicht vertraut waren, mussten sich auf diverse Quellen verlassen und die Mission von OWASP schien perfekt geeignet, um einen sichereren Einsatz dieser Technologie voranzutreiben.
+Das Fehlen einer zentralen Ressource, die sich mit diesen Sicherheitsbedenken in Bezug auf LLMs befasst, war offensichtlich. Entwicklerinnen und Entwickler, die mit den spezifischen Risiken von LLMs nicht vertraut waren, standen nur wenige Ressourcen zur Verfügung, und die Mission von OWASP schien die perfekte Lösung zu sein, um die sichere Einführung dieser Technologie zu fördern.
 
-### Zielgruppe
+### Für wen diese Liste ist
 
-Unsere Hauptzielgruppe sind Entwickelnde, Data Scientists und Sicherheitsexpertinnen und -experten, die sich mit dem Design und der Entwicklung von Anwendungen und Plugins beschäftigen, die LLM-Technologien nutzen. Wir möchten praktische, umsetzbare und prägnante Sicherheitsempfehlungen bereitstellen, um diesen Fachleuten zu helfen, sich in dem komplexen und aufstrebenden Gebiet der Sicherheit von LLM-Anwendungen zurechtzufinden.
+Unsere Hauptzielgruppe sind Entwickelnde, Data Scientists und Sicherheitsexpertinnen und -experten, die Anwendungen und Plug-ins basierend auf LLM-Technologien entwerfen und erstellen. Unser Ziel ist es, praktische, umsetzbare und prägnante Sicherheitsleitfäden bereitzustellen, die diesen Fachleuten helfen, sich auf dem komplexen und sich ständig weiterentwickelnden Gebiet der Sicherheit von LLM-Anwendungen zurechtzufinden.
 
 ### Die Erstellung der Liste
 
-Das Erstellen der OWASP Top 10 für LLM-Anwendungen war ein wichtiges Unterfangen, das auf der kollektiven Expertise eines internationalen Teams von fast 500 Expertinnen und Experten mit über 125 aktiven Mitgestaltenden basiert. Unsere Mitwirkenden kommen aus den unterschiedlichsten Bereichen, darunter KI-Unternehmen, Sicherheitsfirmen, ISVs, Cloud-Hyperscaler, Hardware-Anbieter und die akademische Welt.
+Das Erstellen der OWASP Top 10 für LLM-Anwendungen war ein bedeutendes Unterfangen, das auf der kollektiven Expertise eines internationalen Teams von fast 500 Expertinnen und Experten mit mehr als 125 aktiven Mitgestaltenden basiert. Unsere Mitwirkenden kommen aus den unterschiedlichsten Bereichen, darunter KI-Unternehmen, Sicherheitsfirmen, ISVs, Cloud-Hyperscaler, Hardware-Anbieter und die akademische Welt.
 
 Wir haben einen Monat lang gebrainstormt, potenzielle Schwachstellen vorgeschlagen und dabei 43 verschiedene Bedrohungen formuliert. In mehreren Abstimmungsrunden haben wir diese Vorschläge zu einer prägnanten Liste der zehn kritischsten Schwachstellen verfeinert. Spezialisierte Untergruppen untersuchten jede Schwachstelle und unterzogen sie einer öffentlichen Überprüfung, um sicherzustellen, dass die endgültige Liste so umfassend und nützlich wie möglich war.
 
@@ -20,7 +20,7 @@ Wir haben einen Monat lang gebrainstormt, potenzielle Schwachstellen vorgeschlag
 
 Während unsere Liste die DNA mit Schwachstellentypen aus anderen OWASP Top 10-Listen teilt, wiederholen wir diese Schwachstellen nicht einfach. Stattdessen fokussieren wir uns auf die einzigartigen Auswirkungen dieser Schwachstellen bei der Verwendung von LLMs.
 
-Unser Ziel ist es, die Lücke zwischen allgemeinen Prinzipien der Anwendungssicherheit und den spezifischen Herausforderungen von LLMs zu schließen. Dies beinhaltet die Untersuchung, wie herkömmliche Schwachstellen in LLMs andere Risiken darstellen oder auf neue Weise ausgenutzt werden können und wie herkömmliche Abwehrmaßnahmen für LLM-basierte Anwendungen angepasst werden müssen.
+Unser Ziel ist es, die Lücke zwischen allgemeinen Prinzipien der Anwendungssicherheit und den spezifischen Herausforderungen von LLMs zu schließen. Dazu gehört die Untersuchung, wie herkömmliche Schwachstellen in LLMs andere Risiken darstellen oder auf neue Weise ausgenutzt werden können und wie herkömmliche Abwehrmaßnahmen für LLM-basierte Anwendungen angepasst werden müssen.
 
 ### Die Zukunft
 
@@ -56,32 +56,32 @@ Talesh Seeparsan
 
 ## OWASP Top 10 für Anwendungen von Large Language Models (LLMs)
 
-### LLM01: Prompt Injection (Prompt-Einschleusung)
+### LLM01: Prompt Injection
 Mittels raffinierter Eingaben kann ein Large Language Model manipuliert und unbeabsichtigte Aktionen ausgelöst werden. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
 
 ### LLM02: Unsichere Ausgabeverarbeitung
-Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ungeprüft akzeptiert wird, wodurch Backend-Systeme angreifbar werden. Ein Missbrauch kann zu schwerwiegenden Folgen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegienerweiterung oder Remote-Code-Ausführung führen.
+Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ungeprüft akzeptiert wird, wodurch Backend-Systeme angreifbar werden. Ein Missbrauch kann zu schwerwiegenden Folgen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegien-Erweiterung oder Remote-Code-Ausführung führen.
 
-### LLM03: Poisoning der Trainingsdaten
+### LLM03: Poisoning von Trainingsdaten
 Dies tritt auf, wenn LLM-Trainingsdaten manipuliert werden und dadurch Sicherheitslücken oder Bias entstehen, die Sicherheit, Performance oder ethisches Verhalten beeinträchtigen. Quellen umfassen Common Crawl, WebText, OpenWebText und Bücher.
 
 ### LLM04: Denial of Service des Modells
 Angreifende verursachen ressourcenintensive Operationen auf Large Language Models, was zu Beeinträchtigung oder hohen Kosten führt. Die Schwachstelle wird durch die ressourcenintensive Natur von LLMs und die Unvorhersehbarkeit von Benutzereingaben verstärkt.
 
 ### LLM05: Schwachstellen in der Lieferkette
-Der Lebenszyklus von LLM-Anwendungen kann durch verwundbare Komponenten oder Dienste beeinträchtigt werden, was zu Sicherheitsangriffen führen kann. Die Verwendung von Datensätzen von Drittanbietern, vortrainierten Modellen und Plugins kann zu weiteren Schwachstellen führen.
+Der Lebenszyklus von LLM-Anwendungen kann durch verwundbare Komponenten oder Dienste kompromittiert werden, was Angriffe auf die Sicherheit zur Folge haben kann. Die Verwendung von Datensätzen von Drittanbietern, vortrainierten Modellen und Plugins kann zu weiteren Schwachstellen führen.
 
 ### LLM06: Offenlegung sensibler Informationen
 LLMs können in ihren Antworten vertrauliche Daten preisgeben, was zu unbefugtem Datenzugriff, Datenschutzverletzungen und Sicherheitsverstößen führt. Datenbereinigung und strenge Benutzerrichtlinien sind unerlässlich, um dies zu verhindern.
 
 ### LLM07: Unsicheres Plugin-Design
-LLM-Plugins können unsichere Eingaben und unzureichende Zugriffskontrollen haben. Dieser Mangel an Anwendungskontrolle macht sie leichter ausnutzbar und kann zu Konsequenzen wie der Ausführung von Remote-Code führen.
+LLM-Plugins können unsichere Eingaben und unzureichende Zugriffskontrollen aufweisen. Dieser Mangel an Anwendungskontrolle erleichtert das Ausnutzen von LLM-Plugins und kann zu Folgen wie der Ausführung von Remote-Code führen.
 
 ### LLM08: Übermäßige Handlungsfreiheit
-LLM-basierte Systeme können Aktionen ausführen, die zu unbeabsichtigten Konsequenzen führen. Das Problem entsteht durch übermäßige Funktionalität, Berechtigungen oder Autonomie, die LLM-basierten Systemen gewährt werden.
+LLM-basierte Systeme können Aktionen ausführen, die unbeabsichtigte Folgen haben. Das Problem tritt auf, wenn LLM-basierten Systemen zu viele Funktionen, Berechtigungen oder Autonomie gewährt werden.
 
 ### LLM09: Übermäßige Abhängigkeit
-Systeme oder Personen, die sich ohne angemessene Kontrolle zu sehr auf LLMs verlassen, können durch falsche oder unangemessene Inhalte, die von LLMs generiert werden, mit Fehlinformationen, Misskommunikation, rechtlichen Problemen und Sicherheitslücken konfrontiert werden.
+Systeme oder Personen, die sich zu sehr und unkontrolliert auf LLMs verlassen, können durch falsche oder unangemessene Inhalte, die von LLMs erzeugt werden, mit Fehlinformationen, Fehlkommunikation, rechtlichen Problemen und Sicherheitslücken konfrontiert werden.
 
 ### LLM10: Modell-Diebstahl
-Dies umfasst den unbefugten Zugriff, das Kopieren oder die Exfiltration von proprietären LLM-Modellen. Die Folgen sind wirtschaftliche Verluste, Verlust von Wettbewerbsvorteilen und potenzieller Zugriff auf sensible Informationen.
+Dies schließt den unbefugten Zugriff, das Kopieren oder die Weitergabe von geschützten LLM-Modellen ein. Die Folgen sind wirtschaftliche Verluste, gefährdete Wettbewerbsvorteile und potenzieller Zugang zu sensiblen Informationen.

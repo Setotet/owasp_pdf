@@ -4,11 +4,11 @@
 
 Ein System, das auf einem LLM (Large Language Model) basiert, wird von seinem Entwickler oft mit einem gewissen Grad an Handlungsfreiheit ausgestattet - der Fähigkeit, mit anderen Systemen zu interagieren und Aktionen auf Anforderung auszuführen. Die Entscheidung, welche Funktionen aufgerufen werden sollen, kann auch an einen LLM-'Agenten' delegiert werden, um dynamisch auf der Grundlage der Eingabeaufforderung oder der LLM-Ausgabe bestimmt zu werden.
 
-Übermäßige Handlungsfreiheit ist die Schwachstelle, die es ermöglicht, schädliche Aktionen als Reaktion auf unerwartete/unklare Ausgaben eines LLM auszuführen (unabhängig davon, was den LLM fehlerhaft macht; sei es Halluzination/Konfabulation, direkte/indirekte Prompt-Injektion, bösartiges Plugin, schlecht konstruierte gutartige Prompts oder einfach ein schlecht funktionierendes Modell). Die Hauptursache für übermäßige Handlungsfreiheit ist typischerweise eine oder mehrere der folgenden: übermäßige Funktionalität, übermäßige Berechtigungen oder übermäßige Autonomie. Dies unterscheidet sich von unsicherer Ausgabeverarbeitung, die sich auf unzureichende Überprüfung der LLM-Ausgabe bezieht.
+Übermäßige Handlungsfreiheit ist die Schwachstelle, die es ermöglicht, schädliche Aktionen als Reaktion auf unerwartete/unklare Ausgaben eines LLM auszuführen (unabhängig davon, was den LLM fehlerhaft macht; sei es Halluzination/Konfabulation, direkte/indirekte Prompt Injection, bösartiges Plugin, schlecht konstruierte gutartige Prompts oder einfach ein schlecht funktionierendes Modell). Die Hauptursache für übermäßige Handlungsfreiheit ist typischerweise eine oder mehrere der folgenden: übermäßige Funktionalität, übermäßige Berechtigungen oder übermäßige Autonomie. Dies unterscheidet sich von unsicherer Ausgabeverarbeitung, die sich auf unzureichende Überprüfung der LLM-Ausgabe bezieht.
 
 Übermäßige Handlungsfreiheit kann zu einem breiten Spektrum von Auswirkungen im Spektrum von Vertraulichkeit, Integrität und Verfügbarkeit führen und hängt von den Systemen ab, mit denen eine LLM-basierte Anwendung interagieren kann.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
 1. Übermäßige Funktionalität: Ein LLM-Agent hat Zugriff auf Plugins, die Funktionen enthalten, die für den beabsichtigten Betrieb des Systems nicht erforderlich sind. Beispielsweise muss ein Entwickler einem LLM-Agenten die Fähigkeit geben, Dokumente aus einem Repository zu lesen, aber das Plugin eines Drittanbieters, das er verwendet, enthält auch die Fähigkeit, Dokumente zu ändern und zu löschen.
 2. Übermäßige Funktionalität: Ein Plugin wurde während einer Entwicklungsphase getestet und zugunsten einer besseren Alternative verworfen, aber das ursprüngliche Plugin bleibt für den LLM-Agenten zugänglich.
@@ -17,7 +17,7 @@ Ein System, das auf einem LLM (Large Language Model) basiert, wird von seinem En
 5. Exzessive Berechtigungen: Ein LLM-Plugin, das entwickelt wurde, um Operationen im Namen eines Benutzers durchzuführen, greift auf nachgelagerte Systeme mit einer generischen, hochprivilegierten Identität zu. Beispielsweise verbindet sich ein Plugin, das den aktuellen Dokumentenspeicher eines Benutzers lesen soll, mit dem Dokumentenspeicher mit einem privilegierten Konto, das Zugriff auf alle Dateien des Benutzers hat.
 6. Übermäßige Autonomie: Eine LLM-basierte Anwendung oder ein Plugin versäumt es, hochwirksame Aktionen unabhängig zu überprüfen und zu genehmigen. Beispielsweise führt ein Plugin, das das Löschen von Dokumenten eines Benutzers ermöglicht, Löschungen ohne jegliche Bestätigung durch den Benutzer durch.
 
-### Präventions- und Mitigierungsstrategien
+### Präventions- und Mitigationsstrategien
 
 Die folgenden Maßnahmen können dazu beitragen, übermäßige Handlungsfreiheit zu vermeiden:
 
@@ -34,7 +34,7 @@ Die folgenden Optionen verhindern zwar keine übermäßige Handlungsfreiheit, k�
 1. Protokollieren und Überwachen der Aktivitäten von LLM-Plugins/Tools und nachgelagerten Systemen, um zu erkennen, wo unerwünschte Aktionen stattfinden und entsprechend zu reagieren.
 2. Implementieren Sie Rate-Limiting, um die Anzahl unerwünschter Aktionen, die in einem bestimmten Zeitraum stattfinden können, zu reduzieren und die Möglichkeit zu erhöhen, unerwünschte Aktionen durch Überwachung zu entdecken, bevor erheblicher Schaden entsteht. entstehen kann.
 
-### Beispiele für Angriffsszenarien
+## Beispiele für Angriffsszenarien
 
 Eine LLM-basierte Personal Assistant App greift über ein Plugin auf das Postfach einer Person zu, um den Inhalt eingehender E-Mails zusammenzufassen. Um diese Funktionalität zu erreichen, muss das E-Mail-Plugin in der Lage sein, Nachrichten zu lesen. Das vom Systementwickler ausgewählte Plugin enthält jedoch auch Funktionen zum Senden von Nachrichten. Der LLM ist anfällig für einen indirekten Man-in-the-Middle-Angriff, bei dem eine bösartig gestaltete eingehende E-Mail den LLM dazu veranlasst, das E-Mail-Plugin anzuweisen, die Funktion 'Nachricht senden' aufzurufen, um Spam aus der Mailbox des Benutzers zu versenden. Dies könnte vermieden werden durch
 (a) Eliminierung überflüssiger Funktionalität durch Verwendung eines Plugins, das nur E-Mail-Lesefunktionen bietet,
@@ -42,7 +42,7 @@ Eine LLM-basierte Personal Assistant App greift über ein Plugin auf das Postfac
 (c) Eliminierung übermäßiger Autonomie, indem der Benutzer jede vom LLM-Plugin erzeugte E-Mail manuell überprüfen und auf 'Senden' klicken muss.
 Alternativ könnte der verursachte Schaden durch die Implementierung einer Ratenbegrenzung in der Mailversand-Schnittstelle reduziert werden.
 
-### Referenzlinks
+### Referenzen
 
 1. [Embrace the Red: Confused Deputy Problem](https://embracethered.com/blog/posts/2023/chatgpt-cross-plugin-request-forgery-and-prompt-injection./): **Embrace The Red**
 2. [NeMo-Guardrails: Interface guidelines](https://github.com/NVIDIA/NeMo-Guardrails/blob/main/docs/security/guidelines.md): **NVIDIA Github**
