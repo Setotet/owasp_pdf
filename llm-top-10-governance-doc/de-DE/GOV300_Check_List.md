@@ -16,7 +16,7 @@ Bedrohungsmodellierung wird dringend empfohlen, um Risiken zu identifizieren, Pr
 - Wie könnte GenAI für Angriffe auf die Kunden oder Klienten des Geschäfts durch Fälschung oder von GenAI generierte Inhalte verwendet werden?
 - Kann die Organisation schädliche oder bösartige Eingaben oder Anfragen an LLM-Lösungen erkennen und neutralisieren?
 - Kann die Organisation Schnittstellen zu bestehenden Systemen und Datenbanken mit sicheren Integrationen an allen Vertrauensgrenzen der LLMs schützen?
-- Verfügt die Organisation über Maßnahmen zur Minderung von Insider-Bedrohungen, um Missbrauch durch autorisierte Benutzer zu verhindern?
+- Verfügt die Organisation über Maßnahmen zur Mitigation von Insider-Bedrohungen, um Missbrauch durch autorisierte Benutzer zu verhindern?
 - Kann die Organisation unbefugten Zugriff auf proprietäre Modelle oder Daten verhindern, um geistiges Eigentum zu schützen?
 - Kann die Organisation die Erzeugung von schädlichen oder unangemessenen Inhalten mit automatischer Inhaltsfilterung verhindern?
 
@@ -144,11 +144,11 @@ Die genauen Merkmale, die in einer Modellkarte enthalten sind, können je nach K
 
 ### RAG: Optimierung von großen Sprachmodellen
 
-Fine-Tuning, die traditionelle Methode zur Optimierung eines vortrainierten Modells, beinhaltete das erneute Training eines vorhandenen Modells mit neuen, domänenspezifischen Daten, um es für eine Aufgabe oder Anwendung zu modifizieren. Fine-Tuning ist teuer, aber wesentlich zur Leistungsverbesserung.
+Fine-Tuning, die traditionelle Methode zur Optimierung eines vortrainierten Modells, beinhaltet das erneute Training eines vorhandenen Modells mit neuen, domänenspezifischen Daten, um es für eine Aufgabe oder Anwendung zu modifizieren. Fine-Tuning ist teuer, aber wesentlich zur Leistungsverbesserung.
 
 Retrieval-Augmented Generation (RAG) hat sich als eine effektivere Methode zur Optimierung und Erweiterung der Fähigkeiten von großen Sprachmodellen entwickelt, indem relevante Daten aus aktuellen verfügbaren Wissensquellen abgerufen werden. RAG kann für spezifische Domänen angepasst werden, um die Abfrage domänenspezifischer Informationen zu optimieren und den Generierungsprozess auf die Nuancen spezialisierter Bereiche zuzuschneiden. RAG wird als eine effizientere und transparentere Methode zur Optimierung von LLM-Applikationen angesehen, insbesondere für Probleme, bei denen gekennzeichnete Daten begrenzt oder teuer zu sammeln sind. Einer der Hauptvorteile von RAG ist die Unterstützung von kontinuierlichem Lernen, da neue Informationen jederzeit auf der Abrufebene aktualisiert werden können.
 
-Die Implementierung von RAG umfasst mehrere wichtige Schritte, beginnend mit dem Einsatz des Einbettungsmodells (Embedding Models), dem Indizieren der Wissensbibliothek bis hin zum Abrufen der relevantesten Dokumente für die Verarbeitung von Anfragen. Das effiziente Abrufen des relevanten Kontextes wird mit einer Vektordatenbanken durchgeführt, die zur Speicherung und Abfrage von Dokumenteinbettungen verwendet werden.
+Die Implementierung von RAG umfasst mehrere wichtige Schritte, beginnend mit dem Einsatz des Embedding-Models (Einbettungsmodells), dem Indizieren der Wissensbibliothek bis hin zum Abrufen der relevantesten Dokumente für die Verarbeitung von Anfragen. Das effiziente Abrufen des relevanten Kontextes wird mit einer Vektordatenbanken durchgeführt, die zur Speicherung und Abfrage von Dokumentenembeddings verwendet werden.
 
 #### RAG-Referenz
 - [Retrieval Augmented Generation (RAG) & LLM: Examples](https://vitalflux.com/retrieval-augmented-generation-rag-llm-examples/)

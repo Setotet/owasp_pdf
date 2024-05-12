@@ -45,11 +45,12 @@ Da Herausforderungen und Vorteile der künstlichen Intelligenz entstehen währen
 #####     erstellt vom Montreal Ethics Institute Beispiel
 
 ### Zielgruppe
-Die OWASP Top 10 LLM AI Security & Governance Checkliste ist für Führungskräfte aus der Exekutiven, Technik, Cybersicherheit, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Cybersicherheitsteams und Verteidiger gedacht. Sie richtet sich an Personen, die in der schnelllebigen KI-Welt einen Schritt voraus sein wollen, um nicht nur KI für den Unternehmenserfolg zu nutzen, sondern ihn auch vor Risiken überstürzter oder unsicherer KI-Implementierungen zu schützen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu ergreifen, Herausforderungen zu behandeln und Risiken zu mindern.
+Die OWASP Top 10 für LLM Applikationen Cybersicherheit & Governance Checkliste ist für Führungskräfte aus der Exekutiven, Technik, Cybersicherheit, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Cybersicherheitsteams und Verteidiger gedacht. Sie richtet sich an Personen, die in der schnelllebigen KI-Welt einen Schritt voraus sein wollen, um nicht nur KI für den Unternehmenserfolg zu nutzen, sondern ihn auch vor Risiken überstürzter oder unsicherer KI-Implementierungen zu schützen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu ergreifen, Herausforderungen zu behandeln und Risiken zu mindern.
 
 Diese Checkliste soll den Führungskräften aus Technologie und Business dabei helfen, schnell die Risiken und Vorteile der Nutzung von LLM zu verstehen und sich auf die Entwicklung einer Liste kritischer Bereiche und Aufgaben zu konzentrieren, um die Organisation bei der Entwicklung einer Large Language Model-Strategie zu verteidigen und zu schützen.
 
-Es ist die Hoffnung des OWASP Top 10 für LLM-Anwendungen-Teams, dass diese Liste Organisationen helfen wird, ihre bestehenden Verteidigungstechniken zu verbessern und Techniken zu entwickeln, um die neuen Bedrohungen anzugehen, die aus der Nutzung dieser aufregenden Technologie resultieren.
+Es ist die Hoffnung des OWASP Top 10 für LLM-Applikationen
+-Teams, dass diese Liste Organisationen helfen wird, ihre bestehenden Verteidigungstechniken zu verbessern und Techniken zu entwickeln, um die neuen Bedrohungen anzugehen, die aus der Nutzung dieser aufregenden Technologie resultieren.
 
 ### Warum eine Checkliste?
 
@@ -106,12 +107,12 @@ Obw ohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, 
 
 LLM-Fähigkeiten führen neue Varianten von Angriffen und Angriffsflächen ein. LLMs sind anfällig für komplexe Geschäftslogikfehler, wie z. B. Prompt-Injektion, unsicheres Plugin-Design und Remote-Code-Ausführung. Existierende Best Practices sind der beste Weg, um diese Probleme zu lösen. Ein internes Produktsicherheitsteam, das sichere Softwareüberprüfung, Architektur, Data-Governance und Drittanbieterbewertungen versteht, muss überprüfen, wie geeignet die existierenden Mechanismen sind, um Probleme zu finden, die durch LLM verschärf werden könnten, wie z. B. Stimmklonung, Personifizierung oder das Umgehen von Captchas.
 
-Angesichts der jüngsten Fortschritte im maschinellen Lernen, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning und in jüngerer Zeit LLMs (Large Language Models) und Generative AI wird empfohlen, Fachleute aus in diesen Bereichen bei Cybersicherheits- und Devops-Teams einzubeziehen. Ihre Expertise wird nicht nur bei der Einführung dieser Technologien, sondern auch bei der Entwicklung innovativer Analysen und Antworten auf neu entstehende Herausforderungen helfen.
+Angesichts der aktuellen Fortschritte im maschinellen Lernen, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning und in jüngster Zeit LLMs (Large Language Models) und Generative AI wird empfohlen, Fachleute aus in diesen Bereichen in Cybersicherheits- und Devops-Teams einzubeziehen. Ihre Expertise wird nicht nur bei der Einführung dieser Technologien, sondern auch bei der Entwicklung innovativer Analysen und Antworten auf neu entstehende Herausforderungen helfen.
 
 ### Risiko
 
-Der Verweis auf Risiko verwendet die Definition as ISO 31000: Risiko = "Effekt der Unsicherheit auf Ziele." Zu den in der Checkliste enthaltenen LLM-Risiken gehört eine Liste von LLM-Risiken, die gegnerische, sicherheitstechnische, rechtliche, regulatorische, rufschädigende, finanzielle und wettbewerbliche Risiken thematisiert.
+Der Verweis auf Risiko verwendet die Definition as ISO 31000: Risiko = "Effekt der Unsicherheit auf Ziele." Zu den in der Checkliste enthaltenen LLM-Risiken gehören  gegnerische, sicherheitstechnische, rechtliche, regulatorische, rufschädigende, finanzielle und wettbewerbliche Risiken.
 
-### Schwachstellen- und Minderungstaxonomie
+### Schwachstellen- und Mitigationstaxonomie
 
 Aktuelle Systeme zur Klassifizierung von Schwachstellen und zum Austausch von Bedrohungsinformationen, wie etwa OVAL, STIX, CVE und CWE, arbeiten noch an der  Fähigkeit, spezifische Schwachstellen und Bedrohungen in Bezug auf große Sprachmodelle (LLMs) und Prediction-Modelle zu überwachen und die Verteidiger zu alarmieren. Es wird erwartet, dass Organisationen sich auf diese etablierten und anerkannten Standards wie CVE für die Klassifizierung von Schwachstellen und STIX für den Austausch von Informationen über Cyber-Bedrohungen (CTI) stützen werden, wenn Schwachstellen oder Bedrohungen für KI/ML-Systeme und deren Lieferketten identifiziert werden.

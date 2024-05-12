@@ -1,6 +1,6 @@
 ## Team
 
-Danke an die Mitwirkenden der OWASP Top 10 für LLM-Applications-Cybersecurity-und-Governance Checkliste.
+Danke an die Mitwirkenden der OWASP Top 10 für LLM-Applikationen.
 
 ### Mitwirkende der Checkliste
 
@@ -26,3 +26,4 @@ Ads Dawson
 ### Übersetzung
 
 Johann-Peter Hartmann
+Philipp Schrettenbrunner

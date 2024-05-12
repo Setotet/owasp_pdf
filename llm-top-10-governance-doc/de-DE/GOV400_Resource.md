@@ -1,6 +1,6 @@
 ## Ressourcen
 
-[OWASP Top 10 für Large-Language-Model-Anwendungen](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
+[OWASP Top 10 für LLM-Applikationen](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
 
   >dodgerblue|white|left|12|16 LLM01: Prompt Injection (Prompt-Einschleusung)
   >azure|black|justified|10|12 Mit raffinierten Eingaben kann man ein Large Language Model manipulieren und unbeabsichtigte Aktionen verursachen. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben durch externen Quellen manipuliert werden.
@@ -32,11 +32,11 @@
   >dodgerblue|white|left|12|16 LLM10: Modell-Diebstahl
   >azure|black|justified|10|12 Dies umfasst unbefugten Zugriff, Kopieren oder Exfiltration von proprietären LLM-Modellen. Die Auswirkungen umfassen wirtschaftliche Verluste, beeinträchtigte Wettbewerbsvorteile und potenziellen Zugang zu sensiblen Informationen.
 
-##### Abbildung 4.1 OWASP Top 10 für Large-Language-Model-Anwendungen
+##### Abbildung 4.1 OOWASP Top 10 für LLM-Applikationen
 
-![OWASP Top10 für LLM Visuell](images/GOV1_Fig_4_2_de-DE.png)
-####$ Abbildung 4.2 OWASP Top 10 für Large-Language-Model-Anwendungen
-#####     visualisiert
+![OWASP Top 10 für LLM-Applikationen Visuell](images/GOV1_Fig_4_2_de-DE.png)
+####$ Abbildung 4.2 OWASP Top 10 für 
+##### LLM-Applikationen visualisiert
 
 
 ### OWASP-Ressourcen
