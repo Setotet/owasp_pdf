@@ -1,4 +1,4 @@
-## LLM04: Modell Denial of Service
+## LLM04: Denial of Service des Modells
 
 ### Beschreibung
 
