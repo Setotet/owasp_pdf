@@ -1,8 +1,8 @@
 ## Übersicht
 
-Jeder Internetnutzer und jedes Unternehmen muss sich auf die kommende Welle leistungsfähiger Anwendungen generativer künstlicher Intelligenz (GenAI) vorbereiten. GenAI verspricht enorme Innovationen, Effizienz und kommerzielle Vorteile in einer Vielzahl von Branchen. Doch wie jede leistungsstarke Technologie in einem frühen Entwicklungsstadium birgt sie ihre eigenen offensichtlichen wie unerwarteten Herausforderungen.
+Jeder Internetnutzende und jedes Unternehmen muss sich auf die kommende Welle leistungsfähiger Anwendungen generativer künstlicher Intelligenz (GenAI) vorbereiten. GenAI verspricht enorme Innovationen, Effizienz und kommerzielle Vorteile in einer Vielzahl von Branchen. Doch wie jede leistungsstarke Technologie in einem frühen Entwicklungsstadium birgt sie ihre eigenen offensichtlichen und unerwarteten Herausforderungen.
 
-Künstliche Intelligenz hat in den letzten 50 Jahren große Fortschritte gemacht und eine Vielzahl von Unternehmensprozessen unauffällig unterstützt, bis das öffentliche Erscheinen von ChatGPT die Entwicklung und Nutzung von Large Language Models (LLMs) sowohl bei Einzelpersonen als auch bei Unternehmen vorangetrieben hat. Anfangs waren diese Technologien auf akademische Studien oder die Ausführung spezieller, aber wichtiger Aktivitäten innerhalb von Unternehmen beschränkt und nur für wenige Auserwählte sichtbar. Die jüngsten Fortschritte in der Verfügbarkeit von Daten, Computerleistung, GenAI-Fähigkeiten und Tools wie Llama 2, ElevenLabs und Midjourney haben AI jedoch aus der Nische zu  allgemein weitverbreiteter Akzeptanz gebracht. Diese Verbesserungen haben nicht nur die GenAI-Technologien zugänglicher gemacht, sondern auch den kritischen Bedarf für Unternehmen erzeugt, solide Strategien für die Integration und Nutzung von AI in ihren Geschäftsprozessen zu entwickeln. Das stellt einen großen Schritt nach vorn in der Art und Weise dar, wie wir Technologie nutzen.
+Künstliche Intelligenz hat in den letzten 50 Jahren große Fortschritte gemacht und eine Vielzahl von Unternehmensprozessen unauffällig unterstützt, bis das öffentliche Erscheinen von ChatGPT die Entwicklung und Nutzung von Large Language Models (LLMs) sowohl bei Einzelpersonen als auch bei Unternehmen vorangetrieben hat. Anfangs waren diese Technologien auf akademische Studien oder die Ausführung bestimmter, aber wichtiger Aktivitäten innerhalb von Unternehmen beschränkt und nur für wenige Auserwählte sichtbar. Die jüngsten Fortschritte in der Verfügbarkeit von Daten, Computerleistung, GenAI-Fähigkeiten und die Veröffentlichung von Tools wie Llama 2, ElevenLabs und Midjourney haben AI jedoch von einer Nische zu einer allgemein weitverbreiteten Akzeptanz gebracht. Diese Verbesserungen haben nicht nur die GenAI-Technologien zugänglicher gemacht, sondern auch den kritischen Bedarf für Unternehmen erzeugt, solide Strategien für die Integration und Nutzung von AI in ihren Geschäftstätigkeiten zu entwickeln, was einen großen Schritt nach vorn in der Art und Weise darstellt, wie wir Technologie nutzen.
 
   - Künstliche Intelligenz ist ein breiter Begriff, der alle Bereiche der Informatik umfasst, in denen Maschinen Aufgaben auszuführen, die normalerweise menschliche Intelligenz erfordern würden. Maschinelles Lernen und generative AI sind zwei Unterkategorien von KI.
   - Maschinelles Lernen ist eine Unterkategorie von KI, die sich auf das Erstellen von Algorithmen konzentriert, die aus Daten lernen. Maschinelle Lernalgorithmen werden mit Datensätzen trainiert und können dann diese Daten verwenden, um Vorhersagen oder Entscheidungen für neue Daten zu treffen.
@@ -11,11 +11,11 @@ Künstliche Intelligenz hat in den letzten 50 Jahren große Fortschritte gemacht
 
 Organisationen betreten bei der Sicherung und Überwachung von GenAI-Lösungen Neuland. Der schnelle Fortschritt von GenAI eröffnet auch Türen für Gegner, ihre Angriffsstrategien zu verbessern und stellt damit eine doppelte Herausforderung aus Verteidigung und Bedrohungseskalation dar.
 
-Unternehmen verwenden künstliche Intelligenz in vielen Bereichen, einschließlich HR, Recruiting, E-Mail-Spam-Filterung, im SIEM für Verhaltensanalysen und in Managed Detection and Response-Anwendungen. Der Schwerpunkt dieses Dokuments liegt jedoch bei Large Language Model-Anwendungen und ihrer Funktion bei der Erstellung generierter Inhalte.
+Unternehmen verwenden künstliche Intelligenz in vielen Bereichen, einschließlich HR, Recruiting, E-Mail-Spam-Filterung, bei SIEM für Verhaltensanalysen und in Managed Detection and Response-Anwendungen. Der Schwerpunkt dieses Dokuments liegt jedoch auf Large Language Model-Anwendungen und ihrer Funktion bei der Erstellung generierter Inhalte.
 
 ### Verantwortungsvolle und vertrauenswürdige künstliche Intelligenz
 
-Da Herausforderungen und Vorteile der künstlichen Intelligenz entstehen während Vorschriften und Gesetze verabschiedet werden entwickeln sich die Prinzipien und Säulen der verantwortungsvollen und vertrauenswürdigen KI-Nutzung von idealistischen Zielen und Bedenken kommend zu etablierten Standards.
+Da Herausforderungen und Vorteile der künstlichen Intelligenz entstehen – und Vorschriften und Gesetze verabschiedet werden – entwickeln sich die Prinzipien und Säulen der verantwortungsvollen und vertrauenswürdigen KI-Nutzung von idealistischen Zielen und Bedenken kommend zu etablierten Standards.
 
 [Die OWASP AI Exchange Working Group](https://owasp-ai-exchange.web.app/) verfolgt diese Veränderungen und geht die breitgefächerten und herausfordernden Überlegungen für alle Aspekte der künstlichen Intelligenz an.
 
@@ -45,12 +45,11 @@ Da Herausforderungen und Vorteile der künstlichen Intelligenz entstehen währen
 #####     erstellt vom Montreal Ethics Institute Beispiel
 
 ### Zielgruppe
-Die OWASP Top 10 für LLM Applikationen Cybersicherheit & Governance Checkliste ist für Führungskräfte aus der Exekutiven, Technik, Cybersicherheit, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Cybersicherheitsteams und Verteidiger gedacht. Sie richtet sich an Personen, die in der schnelllebigen KI-Welt einen Schritt voraus sein wollen, um nicht nur KI für den Unternehmenserfolg zu nutzen, sondern ihn auch vor Risiken überstürzter oder unsicherer KI-Implementierungen zu schützen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu ergreifen, Herausforderungen zu behandeln und Risiken zu mindern.
+Die OWASP Top 10 LLM AI Security & Governance Checkliste ist für Führungskräfte aus Exekutive, Technik, Cybersicherheit, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Cybersicherheitsteams und Verteidiger gedacht. Sie richtet sich an Personen, die bestrebt sind, in der schnelllebigen KI-Welt einen Schritt voraus zu sein, mit dem Ziel, KI nicht nur für den Unternehmenserfolg zu nutzen, sondern auch gegen die Risiken überstürzter oder unsicherer KI-Implementierungen zu schützen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu ergreifen, Herausforderungen zu bekämpfen und Risiken zu mindern.
 
-Diese Checkliste soll den Führungskräften aus Technologie und Business dabei helfen, schnell die Risiken und Vorteile der Nutzung von LLM zu verstehen und sich auf die Entwicklung einer Liste kritischer Bereiche und Aufgaben zu konzentrieren, um die Organisation bei der Entwicklung einer Large Language Model-Strategie zu verteidigen und zu schützen.
+Diese Checkliste soll diesen Führungskräften aus Technologie und Business dabei helfen, schnell die Risiken und Vorteile der Nutzung von LLM zu verstehen und sich auf die Entwicklung einer umfassenden Liste kritischer Bereiche und Aufgaben zu konzentrieren, die benötigt werden, um die Organisation zu verteidigen und zu schützen, während sie eine Large Language Model-Strategie entwickeln.
 
-Es ist die Hoffnung des OWASP Top 10 für LLM-Applikationen
--Teams, dass diese Liste Organisationen helfen wird, ihre bestehenden Verteidigungstechniken zu verbessern und Techniken zu entwickeln, um die neuen Bedrohungen anzugehen, die aus der Nutzung dieser aufregenden Technologie resultieren.
+Es ist die Hoffnung des OWASP Top 10 für das LLM-Applikationen-Teams, dass diese Liste Organisationen hilft, ihre bestehenden Verteidigungstechniken zu verbessern und Techniken zu entwickeln, um die neuen Bedrohungen anzugehen, die aus der Nutzung dieser aufregenden Technologie resultieren.
 
 ### Warum eine Checkliste?
 
@@ -111,7 +110,7 @@ Angesichts der aktuellen Fortschritte im maschinellen Lernen, NLP (Natural Langu
 
 ### Risiko
 
-Der Verweis auf Risiko verwendet die Definition as ISO 31000: Risiko = "Effekt der Unsicherheit auf Ziele." Zu den in der Checkliste enthaltenen LLM-Risiken gehören  gegnerische, sicherheitstechnische, rechtliche, regulatorische, rufschädigende, finanzielle und wettbewerbliche Risiken.
+Der Verweis auf Risiko verwendet die Definition as ISO 31000: Risiko = "Effekt der Unsicherheit auf Ziele." Zu den in der Checkliste enthaltenen LLM-Risiken gehören gegnerische, sicherheitstechnische, rechtliche, regulatorische, rufschädigende, finanzielle und wettbewerbliche Risiken.
 
 ### Schwachstellen- und Mitigationstaxonomie
 

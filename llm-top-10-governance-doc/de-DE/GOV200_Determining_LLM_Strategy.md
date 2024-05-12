@@ -20,7 +20,7 @@ Die dringendste LLM-Bedrohung jenseits von Angreifern ist "Shadow AI": Mitarbeit
 
 >fidblue|white|left|14|18 Schritt 3: Schulung / Bildung
 
-    >fidlightblue|black|left|12|16 ▶ Aktualisieren Sie das Sicherheitsbewusstseinstraining, Entwickler-, rechtliche oder andere Schulungen, um die Nutzung oder Bedrohung durch LLMs oder GenAI einzubeziehen
+    >fidlightblue|black|left|12|16 ▶ Aktualisieren Sie das Security-Awareness-Training, Ihre Entwickler-, rechtliche oder andere Schulungen, um die Nutzung oder Bedrohung durch LLMs oder GenAI einzubeziehen
 
 >darkblue|white|left|14|18 Schritt 4: Führungskräfte einbeziehen
 
