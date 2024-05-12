@@ -6,7 +6,7 @@ Dieser Eintrag bezieht sich auf den unbefugten Zugriff und die Exfiltration von 
 
 Der Diebstahl von LLMs stellt ein erhebliches Sicherheitsproblem dar, da Sprachmodelle immer leistungsfähiger und verbreiteter werden. Organisationen und Forscher müssen robuste Sicherheitsmaßnahmen priorisieren, um ihre LLM-Modelle zu schützen und die Vertraulichkeit und Integrität ihres geistigen Eigentums zu gewährleisten. Die Implementierung eines umfassenden Sicherheitsrahmens, der Zugriffskontrollen, Verschlüsselung und kontinuierliche Überwachung umfasst, ist entscheidend, um die Risiken im Zusammenhang mit dem Diebstahl von LLM-Modellen zu mindern und die Interessen von Einzelpersonen und Organisationen, die sich auf LLM verlassen, zu schützen.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
 1. Ein Angreifer nutzt eine Schwachstelle in der Infrastruktur eines Unternehmens aus, um unbefugten Zugriff auf ihr LLM-Modell-Repository zu erhalten, durch Fehlkonfiguration in ihren Netzwerk- oder Anwendungssicherheitseinstellungen.
 2. Ein Insider-Bedrohungsszenario, bei dem ein unzufriedener Mitarbeiter das Modell oder damit verbundene Artefakte durchsickern lässt.
@@ -20,7 +20,7 @@ Der Diebstahl von LLMs stellt ein erhebliches Sicherheitsproblem dar, da Sprachm
 
 Die Verwendung eines gestohlenen Modells als Schattenmodell kann verwendet werden, um gegnerische Angriffe zu inszenieren, einschließlich unbefugtem Zugriff auf sensible Informationen, die im Modell enthalten sind, oder um unbemerkt mit gegnerischen Eingaben zu experimentieren, um weiter fortgeschrittene Prompt-Injektionen zu inszenieren.
 
-### Präventions- und Mitigierungsstrategien
+### Präventions- und Mitigationsstrategien
 
 1. Implementieren Sie starke Zugriffskontrollen (z.B. RBAC und das Prinzip der geringsten Rechte) und starke Authentifizierungsmechanismen, um unbefugten Zugriff auf LLM-Modell-Repositories und Trainingsumgebungen zu begrenzen.
    1. Dies gilt insbesondere für die ersten drei häufigen Beispiele, die diese Schwachstelle aufgrund von Insider-Bedrohungen, Fehlkonfigurationen und/oder schwachen Sicherheitskontrollen über die Infrastruktur, die LLM-Modelle, Gewichte und Architektur beherbergt, in der ein bösartiger Akteur aus dem Inneren oder von außen eindringen könnte, verursachen könnten.
@@ -35,7 +35,7 @@ Die Verwendung eines gestohlenen Modells als Schattenmodell kann verwendet werde
 8. Implementieren Sie Training zur gegnerischen Robustheit, um Extraktionsabfragen zu erkennen und physische Sicherheitsmaßnahmen zu straffen.
 9. Implementieren Sie ein Wasserzeichen-Framework in die Einbettungs- und Erkennungsphasen des Lebenszyklus eines LLMs.
 
-### Beispielangriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Ein Angreifer nutzt eine Schwachstelle in der Infrastruktur eines Unternehmens aus, um unbefugten Zugriff auf ihr LLM-Modell-Repository zu erhalten. Der Angreifer fährt fort, wertvolle LLM-Modelle zu exfiltrieren und verwendet sie, um einen konkurrierenden Sprachverarbeitungsdienst zu starten oder sensible Informationen zu extrahieren, was zu erheblichen finanziellen Schäden für das ursprüngliche Unternehmen führt.
 2. Ein unzufriedener Mitarbeiter lässt das Modell oder damit verbundene Artefakte durchsickern. Die öffentliche Exposition dieses Szenarios erhöht das Wissen für Angreifer für Graukasten-gegnerische Angriffe oder alternativ direkt den Diebstahl des verfügbaren Eigentums.
@@ -43,7 +43,7 @@ Die Verwendung eines gestohlenen Modells als Schattenmodell kann verwendet werde
 4. Ein Versagen der Sicherheitskontrolle ist innerhalb der Lieferkette vorhanden und führt zu Datenlecks von proprietären Modellinformationen.
 5. Ein bösartiger Angreifer umgeht Eingabefilterungstechniken und Präambeln des LLM, um einen Seitenkanalangriff durchzuführen und Modellinformationen zu einer ferngesteuerten Ressource unter ihrer Kontrolle abzurufen.
 
-### Referenz-Links
+### Referenzen
 
 1. [Meta’s powerful AI language model has leaked online](https://www.theverge.com/2023/3/8/23629362/meta-ai-language-model-llama-leak-online-misuse): **The Verge**
 2. [Runaway LLaMA | How Meta's LLaMA NLP model leaked](https://www.deeplearning.ai/the-batch/how-metas-llama-nlp-model-leaked/): **Deep Learning Blog**

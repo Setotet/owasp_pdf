@@ -12,7 +12,7 @@ Das Poisoning von Trainingsdaten bezieht sich auf die Manipulation von Pre-Train
 
 Die Vergiftung von Daten wird als Angriff auf die Integrität betrachtet, da die Manipulation der Trainingsdaten die Fähigkeit des Modells beeinträchtigt, korrekte Vorhersagen zu liefern. Es liegt auf der Hand, dass externe Datenquellen ein höheres Risiko bergen, da die Modellersteller keine Kontrolle über die Daten haben und nicht sicher sein können, dass der Inhalt frei von Bias, falschen Informationen oder unangemessenen Inhalten ist.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
 1. Ein bösartiger Akteur oder ein Wettbewerber erstellt absichtlich ungenaue oder bösartige Dokumente, die auf die Pre-Training-, Feinabstimmungsdaten oder Einbettungen eines Modells abzielen. Betrachte sowohl [Split-View Data Poisoning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%201%20Split-View%20Data%20Poisoning.jpeg) als auch [Frontrunning Poisoning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%202%20Frontrunning%20Data%20Poisoning.jpeg) Angriffsvektoren zur Veranschaulichung.
    1. Das Opfermodell wird anhand gefälschter Informationen trainiert, die sich in der Ausgabe generativer KI-Aufforderungen an seine Konsumenten widerspiegeln.
@@ -24,7 +24,7 @@ Die Vergiftung von Daten wird als Angriff auf die Integrität betrachtet, da die
 
 *Ob Entwickler, Kunde oder allgemeiner Nutzer des LLM, es ist wichtig zu verstehen, wie sich diese Schwachstelle auf die potenziellen Risiken innerhalb Ihrer LLM-Anwendung auswirken könnte, wenn sie mit einem fremden LLM interagiert, um die Legitimität der Modellausgaben zu verstehen, die auf dessen Trainingsverfahren basieren. In ähnlicher Weise könnten LLM-Entwickler sowohl direkten als auch indirekten Angriffen auf interne Daten oder Daten von Drittanbietern ausgesetzt sein, die für die (gängigste Variante) Verfeinerung und Einbettung verwendet werden, was ein Risiko für alle LLM-Anwender darstellt.*
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigierungsstrategien
 
 1. Überprüfe die Lieferkette der Trainingsdaten, insbesondere wenn sie extern beschafft wurden, und überprüfe die Aufrechterhaltung der Validierung der "ML-BOM" (Machine Learning Bill of Materials) und die Überprüfung der Modellkarten.
 2. Überprüfe die korrekte Legitimität der Datenquellen und der Daten, die während des Pre-Trainings, der Feinabstimmung und der Integrationsphase gewonnen wurden.
@@ -43,14 +43,14 @@ Die Vergiftung von Daten wird als Angriff auf die Integrität betrachtet, da die
     3. Implementierung spezialisierter LLMs zum Benchmarking gegen unerwünschte Konsequenzen und zum Training anderer LLMs mit [Reinforcement Learning Techniken](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy).
     4. Durchführung von LLM-basierten [Red Team Exercises](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned) oder [LLM Vulnerability Scans](https://github.com/leondz/garak) in den Testphasen des LLM-Lebenszyklus.
 
-### Beispiel-Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Die generative KI-Prompt-Ausgabe des LLM kann die Benutzer der Anwendung irreführen, was zu voreingenommenen Meinungen, Schlussfolgerungen oder, schlimmer noch, zu Hassverbrechen usw. führen kann.
 2. Wenn die Trainingsdaten nicht ordnungsgemäß gefiltert und/oder bereinigt werden, kann ein böswilliger Benutzer der Anwendung versuchen, toxische Daten in das Modell einzuspeisen, damit es sich an die voreingenommenen und falschen Daten anpasst.
 3. Ein böswilliger Akteur oder Wettbewerber erstellt absichtlich ungenaue oder schädliche Dokumente, die auf die Trainingsdaten eines Modells abzielen, das gleichzeitig auf der Grundlage von Eingaben trainiert wird. Das Opfermodell trainiert mit diesen gefälschten Informationen, die sich in den Ausgaben generativer KI-Aufforderungen an seine Verbraucher widerspiegeln.
 4. Die Schwachstelle [Prompt Injection](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/1_0_vulns/PromptInjection.md) könnte ein Angriffsvektor für diese Schwachstelle sein, wenn unzureichende Sanierung und Filterung durchgeführt werden, wenn Eingaben von LLM-Anwendungskunden zum Trainieren des Modells verwendet werden. D.h., wenn bösartige oder gefälschte Daten als Teil einer Prompt-Injektionstechnik in das Modell eingegeben werden, könnte dies inhärent in die Modellaten übertragen werden.
 
-### Referenz-Links
+### Referenzen
 
 1. [Stanford Research Paper:CS324](https://stanford-cs324.github.io/winter2022/lectures/data/): **Stanford Research**
 2. [How data poisoning attacks corrupt machine learning models](https://www.csoonline.com/article/3613932/how-data-poisoning-attacks-corrupt-machine-learning-models.html): **CSO Online**

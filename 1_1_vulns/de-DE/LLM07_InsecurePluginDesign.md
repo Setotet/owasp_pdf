@@ -8,7 +8,7 @@ Der Schaden durch bösartige Eingaben hängt oft von unzureichenden Zugriffskont
 
 Dieser Punkt konzentriert sich auf die Erstellung von LLM-Plugins anstatt auf Drittanbieter-Plugins, die von LLM-Supply-Chain-Vulnerabilities abgedeckt werden.
 
-### Häufige Beispiele für Verwundbarkeiten
+### Gängige Beispiele für Schwachstellen
 
 1. Ein Plugin akzeptiert alle Parameter in einem einzigen Textfeld anstatt in getrennten Eingabeparametern.
 2. Ein Plugin akzeptiert Konfigurationsstrings anstatt von Parametern, die gesamte Konfigurationseinstellungen überschreiben können.
@@ -16,7 +16,7 @@ Dieser Punkt konzentriert sich auf die Erstellung von LLM-Plugins anstatt auf Dr
 4. Die Authentifizierung erfolgt ohne explizite Autorisierung für ein bestimmtes Plugin.
 5. Ein Plugin behandelt alle LLM-Inhalte, als wären sie vollständig vom Benutzer erstellt, und führt jede angeforderte Aktion ohne zusätzliche Autorisierung aus.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigationsstrategien
 
 1. Plugins sollten streng parametrisierte Eingaben durchsetzen, wo immer möglich, und Typ- und Bereichsprüfungen für Eingaben einschließen. Wenn dies nicht möglich ist, sollte eine zweite Schicht von typisierten Aufrufen eingeführt werden, die Anfragen analysiert und Validierung und Sanitierung anwendet. Wenn Freiformeingaben aufgrund der Anwendungssemantik akzeptiert werden müssen, sollten sie sorgfältig inspiziert werden, um sicherzustellen, dass keine potenziell schädlichen Methoden aufgerufen werden.
 2. Plugin-Entwickler sollten OWASPs Empfehlungen im ASVS (Application Security Verification Standard) anwenden, um eine angemessene Eingabevalidierung und -sanitierung zu gewährleisten.
@@ -26,7 +26,7 @@ Dieser Punkt konzentriert sich auf die Erstellung von LLM-Plugins anstatt auf Dr
 6. Plugins sollen manuelle Benutzerautorisierung und Bestätigung von jeder Aktion, die von sensiblen Plugins durchgeführt wird, erfordern.
 7. Plugins sind oft REST-APIs, daher sollten Entwickler die Empfehlungen in OWASP Top 10 API Security Risks – 2023 anwenden, um generische Verwundbarkeiten zu minimieren.
 
-### Beispiel-Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Ein Plugin akzeptiert eine Basis-URL und weist das LLM an, die URL mit einer Abfrage zu kombinieren, um Wettervorhersagen zu erhalten, die in die Bearbeitung der Benutzeranfrage einbezogen werden. Ein bösartiger Benutzer kann eine Anfrage so gestalten, dass die URL auf eine Domain zeigt, die sie kontrollieren, was es ihnen ermöglicht, ihren eigenen Inhalt über ihre Domain in das LLM-System einzuspeisen.
 2. Ein Plugin akzeptiert eine Freiformeingabe in einem einzelnen Feld, das es nicht validiert. Ein Angreifer liefert sorgfältig gestaltete Payloads, um aus Fehlermeldungen Aufklärung zu betreiben. Anschließend werden bekannte Schwachstellen von Drittanbietern ausgenutzt, um Code auszuführen und Datenexfiltrierung oder Privilegienerweiterung durchzuführen.

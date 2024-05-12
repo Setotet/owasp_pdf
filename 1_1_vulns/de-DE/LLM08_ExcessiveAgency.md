@@ -8,7 +8,7 @@ Ein auf LLM (Language Model) basierendes System wird oft mit einem gewissen Maß
 
 Übermäßige Handlungsfreiheit kann zu einer breiten Palette von Auswirkungen über das Spektrum von Vertraulichkeit, Integrität und Verfügbarkeit führen und hängt davon ab, mit welchen Systemen eine LLM-basierte App interagieren kann.
 
-### Häufige Beispiele für Schwachstellen
+### Göngige Beispiele für Schwachstellen
 
 1. Übermäßige Funktionalität: Ein LLM-Agent hat Zugriff auf Plugins, die Funktionen beinhalten, die für den beabsichtigten Betrieb des Systems nicht benötigt werden. Zum Beispiel muss ein Entwickler einem LLM-Agenten die Fähigkeit gewähren, Dokumente aus einem Repository zu lesen, aber das Plugin eines Drittanbieters, das sie verwenden, beinhaltet auch die Fähigkeit, Dokumente zu modifizieren und zu löschen.
 2. Übermäßige Funktionalität: Ein Plugin wurde während einer Entwicklungsphase getestet und zugunsten einer besseren Alternative fallengelassen, aber das ursprüngliche Plugin bleibt dem LLM-Agenten zugänglich.
@@ -17,7 +17,7 @@ Ein auf LLM (Language Model) basierendes System wird oft mit einem gewissen Maß
 5. Übermäßige Berechtigungen: Ein LLM-Plugin, das entwickelt wurde, um Operationen im Namen eines Benutzers durchzuführen, greift auf nachgelagerte Systeme mit einer generischen hochprivilegierten Identität zu. Z.B. verbindet sich ein Plugin, um den aktuellen Dokumentenspeicher eines Benutzers zu lesen, mit dem Dokumentenrepository mit einem privilegierten Konto, das Zugriff auf alle Dateien der Benutzer hat.
 6. Übermäßige Autonomie: Eine LLM-basierte Anwendung oder ein Plugin versäumt es, hochwirksame Aktionen unabhängig zu überprüfen und zu genehmigen. Z.B. führt ein Plugin, das es ermöglicht, Dokumente eines Benutzers zu löschen, Löschungen ohne jegliche Bestätigung vom Benutzer durch.
 
-### Präventions- und Mitigierungsstrategien
+### Präventions- und Mitigationsstrategien
 
 Die folgenden Aktionen können übermäßige Handlungsfreiheit verhindern:
 
@@ -34,7 +34,7 @@ Die folgenden Optionen verhindern keine übermäßige Handlungsfreiheit, können
 1. Protokollieren und überwachen Sie die Aktivität von LLM-Plugins/Tools und nachgelagerten Systemen, um zu identifizieren, wo unerwünschte Aktionen stattfinden, und entsprechend reagieren.
 2. Implementieren Sie Ratenbegrenzung, um die Anzahl unerwünschter Aktionen, die innerhalb eines bestimmten Zeitraums stattfinden können, zu reduzieren und die Möglichkeit zu erhöhen, unerwünschte Aktionen durch Überwachung zu entdecken, bevor erheblicher Schaden entstehen kann.
 
-### Beispielangriffsszenarien
+### Beispiele für Angriffsszenarien
 
 Eine LLM-basierte persönliche Assistenten-App erhält Zugriff auf das Postfach einer Person über ein Plugin, um den Inhalt eingehender E-Mails zusammenzufassen. Um diese Funktionalität zu erreichen, benötigt das E-Mail-Plugin die Fähigkeit, Nachrichten zu lesen. Das Plugin, das der Systementwickler gewählt hat, enthält jedoch auch Funktionen zum Senden von Nachrichten. Das LLM ist anfällig für einen indirekten Aufforderungsinjektionsangriff, bei dem eine bösartig gestaltete eingehende E-Mail das LLM dazu verleitet, das E-Mail-Plugin zu befehlen, die Funktion 'Nachricht senden' aufzurufen, um Spam aus dem Postfach des Benutzers zu senden. Dies könnte vermieden werden durch:
 (a) Eliminierung übermäßiger Funktionalität durch Verwendung eines Plugins, das nur E-Mail-Lesefähigkeiten anbot,
@@ -42,7 +42,7 @@ Eine LLM-basierte persönliche Assistenten-App erhält Zugriff auf das Postfach 
 (c) Eliminierung übermäßiger Autonomie, indem der Benutzer jede vom LLM-Plugin entworfene Mail manuell überprüfen und auf 'Senden' klicken muss.
 Alternativ könnte der verursachte Schaden durch Implementierung einer Ratenbegrenzung an der Mail-Sende-Schnittstelle reduziert werden.
 
-### Referenzlinks
+### Referenzen
 
 1. [Embrace the Red: Confused Deputy Problem](https://embracethered.com/blog/posts/2023/chatgpt-cross-plugin-request-forgery-and-prompt-injection./): **Embrace The Red**
 2. [NeMo-Guardrails: Interface guidelines](https://github.com/NVIDIA/NeMo-Guardrails/blob/main/docs/security/guidelines.md): **NVIDIA Github**

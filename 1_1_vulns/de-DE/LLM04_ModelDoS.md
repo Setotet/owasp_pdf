@@ -4,7 +4,7 @@
 
 Angreifende interagieren mit einem LLM auf eine Weise, die eine außergewöhnlich große Menge an Ressourcen verbraucht, was zu einer Verschlechterung der Servicequalität für sie und andere Personen führt und potenziell hohe Ressourcenkosten verursacht. Darüber hinaus stellt die Möglichkeit, dass Angreifende in das Kontextfenster eines LLM eindringen oder es manipulieren, ein erhebliches Sicherheitsproblem dar. Dieses Problem wird immer kritischer aufgrund der zunehmenden Verwendung von LLMs in verschiedenen Anwendungen, ihrer intensiven Ressourcennutzung, der Unvorhersehbarkeit von Benutzereingaben und eines allgemeinen Mangels an Bewusstsein für diese Verwundbarkeit unter Entwicklern. In LLMs stellt das Kontextfenster die maximale Textlänge dar, die das Modell verwalten kann, einschließlich Eingabe und Ausgabe. Es ist ein entscheidendes Merkmal von LLMs, da es die Komplexität der Sprachmuster bestimmt, die das Modell verstehen kann, und die Länge des Textes, den es zu einem gegebenen Zeitpunkt verarbeiten kann. Die Größe des Kontextfensters wird durch die Architektur des Modells bestimmt und kann von Modell zu Modell variieren.
 
-### Häufige Beispiele für Verwundbarkeiten
+### Gängige Beispiele für Verwundbarkeiten
 
 1. das Senden von Anfragen, die durch das Erzeugen einer großen Anzahl von Tasks in einer Warteschlange, z. B. mit LangChain oder AutoGPT, zu einer sich wiederholenden Ressourcennutzung führen.
 2. ungewöhnlich ressourcenintensive Anfragen senden, die ungewöhnliche Schreibweisen oder Sequenzen verwenden.
@@ -13,7 +13,7 @@ Angreifende interagieren mit einem LLM auf eine Weise, die eine außergewöhnlic
 5. Rekursive Kontexterweiterung: Angreifende konstruieren Eingaben, die rekursive Kontexterweiterungen auslösen und das LLM zwingen, das Kontextfenster wiederholt zu erweitern und zu verarbeiten.
 6. Überflutung mit Eingaben variabler Länge: Angreifende überfluten das LLM mit einer großen Anzahl von Eingaben variabler Länge, wobei jede Eingabe sorgfältig so konstruiert ist, dass sie gerade die Grenze des Kontextfensters erreicht. Diese Technik zielt darauf ab, mögliche Ineffizienzen bei der Verarbeitung von Eingaben variabler Länge auszunutzen, das LLM zu überlasten und möglicherweise seine Reaktionsfähigkeit zu beeinträchtigen.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigationsstrategien
 
 1. Implementierung einer Eingabevalidierung und -sanierung, um sicherzustellen, dass die Benutzereingaben den definierten Grenzen entsprechen, und um schädliche Inhalte herauszufiltern.
 2. Begrenzung des Ressourcenverbrauchs pro Anfrage oder Schritt, um die Ausführung von Anfragen mit komplexen Teilen zu verlangsamen.
@@ -23,7 +23,7 @@ Angreifende interagieren mit einem LLM auf eine Weise, die eine außergewöhnlic
 6. Strikte Eingabelimits basierend auf dem Kontextfenster des LLM, um Überlastung und Ressourcenerschöpfung zu vermeiden.
 7. Sensibilisierung von Entwicklern für potenzielle DoS-Schwachstellen in LLMs und Bereitstellung von Richtlinien für die sichere Implementierung von LLMs.
 
-### Beispielszenarien für Angriffe
+### Beispiele für Angriffsszenarien
 
 1. Angreifende senden wiederholt mehrere komplexe und teure Anfragen an ein gehostetes Modell, was zu einer Verschlechterung des Dienstes für andere Benutzer und zu höheren Ressourcenkosten für den Host führt.
 2. Ein Stück Text auf einer Webseite wird gefunden, während ein LLM-gesteuertes Tool Informationen sammelt, um auf eine harmlose Anfrage zu antworten. Dies führt dazu, dass das Tool viele weitere Anfragen an die Webseite stellt, was zu einem hohen Ressourcenverbrauch führt.
@@ -33,7 +33,7 @@ Angreifende interagieren mit einem LLM auf eine Weise, die eine außergewöhnlic
 6. Angreifende überfluten das LLM mit einer großen Anzahl von Eingaben variabler Länge, die sorgfältig so gestaltet sind, dass sie sich der Grenze des Kontextfensters nähern oder diese erreichen. Durch die Überflutung des LLM mit Eingaben variabler Länge versuchen die Angreifenden, mögliche Ineffizienzen bei der Verarbeitung von Eingaben variabler Länge auszunutzen. Diese Flut von Eingaben belastet die Ressourcen des LLM übermäßig, was zu einer Verschlechterung der Leistung führen und die Fähigkeit des Systems, auf legitime Anfragen zu reagieren, beeinträchtigen kann.
 7. Während DoS-Angriffe in der Regel darauf abzielen, Systemressourcen zu überlasten, können sie auch andere Aspekte des Systemverhaltens ausnutzen, wie z.B. API-Beschränkungen. Bei einem kürzlich aufgetretenen Sicherheitsvorfall bei Sourcegraph beispielsweise nutzte der böswillige Akteur ein durchgesickertes Admin-Zugriffstoken, um API-Rate-Limiting zu ändern, was potenziell zu Dienstunterbrechungen führte, indem es anormale Anfragevolumina zuließ.
 
-### Referenzlinks
+### Referenzen
 
 1. [LangChain max_iterations](https://twitter.com/hwchase17/status/1608467493877579777): **hwchase17 auf Twitter**
 2. [Sponge Examples: Energy-Latency Attacks on Neural Networks](https://arxiv.org/abs/2006.03463): **Arxiv White Paper**

@@ -6,7 +6,7 @@ Die Lieferkette in LLMs kann anfällig sein und die Integrität von Trainingsdat
 
 Schließlich können LLM-Plugin-Erweiterungen ihre eigenen Schwachstellen mitbringen. Diese werden in [LLM07 - Unsicheres Plugin-Design](InsecurePluginDesign.md) beschrieben, das das Schreiben von LLM-Plugins abdeckt und nützliche Informationen zur Bewertung von Plugins von Drittanbietern liefert.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
 1. Traditionelle Schwachstellen in Paketen von Drittanbietern, einschließlich veralteter oder nicht mehr unterstützter Komponenten.
 2. Verwendung eines anfälligen, vortrainierten Modells für das Feintuning.
@@ -27,7 +27,7 @@ Schließlich können LLM-Plugin-Erweiterungen ihre eigenen Schwachstellen mitbri
 9. Implementieren Sie eine Patching-Richtlinie, um anfällige oder veraltete Komponenten abzuschwächen. Sicherstellen, dass die Anwendung von einer gepflegten Version der APIs und des zugrundeliegenden Modells abhängig ist.
 10. Sicherheits- und Zugangskontrollen der Lieferanten regelmäßig überprüfen und auditieren, um sicherzustellen, dass es keine Änderungen an ihrer Sicherheitslage oder ihren Geschäftsbedingungen gibt.
 
-### Beispiel-Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Angreifende verwenden eine verwundbare Python-Bibliothek, um ein System zu kompromittieren. Dies geschah beim ersten OpenAI-Datenleck.
 2. Angreifende bieten ein LLM-Plugin für die Flugsuche an, das gefälschte Links generiert, die Benutzer auf betrügerische Websites leiten.
@@ -37,7 +37,7 @@ Schließlich können LLM-Plugin-Erweiterungen ihre eigenen Schwachstellen mitbri
 6. Eine kompromittierte Person eines Lieferanten (Outsourcing-Entwickler, Hosting-Unternehmen usw.) exfiltriert Daten, Modell oder Code und stiehlt geistiges Eigentum.
 7. Ein LLM-Betreiber ändert seine AGB und Datenschutzbestimmungen dahingehend, dass eine ausdrückliche Ablehnung der Verwendung von Anwendungsdaten für das Modelltraining erforderlich ist, was zur Speicherung sensibler Daten führt.
 
-### Referenzlinks
+### Referenzen
 
 1. [ChatGPT-Datenleck bestätigt, da Sicherheitsfirma vor anfälliger Komponentenausnutzung warnt](https://www.securityweek.com/chatgpt-data-breach-confirmed-as-security-firm-warns-of-vulnerable-component-exploitation/): **Security Week**
 2. [Plugin-Überprüfungsprozess](https://platform.openai.com/docs/plugins/review) **OpenAI**

@@ -10,7 +10,7 @@ Durch LLMs generierter Quellcode kann unbemerkt Sicherheitslücken einführen. D
 * Kontinuierlichen Validierungsmechanismen
 * Haftungsausschlüssen bezüglich Risiken
 
-### Häufige Beispiele für Anfälligkeiten
+### Gängige Beispiele für Schwachstellen
 
 1. LLMs liefern inkorrekte Informationen als Antwort, die durch ihre Formulierung korrekt wirken. In einem System ohne saubere Gewaltenteilung erhält der Nutzer irreführende Informationen, die zu seinem Schaden führen.
 2. LLMs generieren unsicheren oder fehlerhaften Code, der zu Sicherheitslücken führt, wenn er ohne angemessene Aufsicht oder Überprüfung in eine Software integriert wird.
@@ -33,7 +33,7 @@ Durch LLMs generierter Quellcode kann unbemerkt Sicherheitslücken einführen. D
 3. Ein Softwareentwicklungsteam nutzt ein LLM-System, um das Programmieren zu beschleunigen. Die übermäßige Abhängigkeit von den Vorschlägen der KI führt aufgrund unsicherer Defaults oder Empfehlungen ohne sichere Programmierpraktiken zu Sicherheitslücken in der Anwendung.
 4. Eine Softwareentwicklungsfirma verwendet ein LLM, um Entwickler zu unterstützen. Das LLM schlägt eine nicht existierende Code-Bibliothek oder ein Paket vor, und ein Entwickler, der der KI vertraut, integriert unwissentlich ein bösartiges Paket in die Software der Firma. Dies unterstreicht die Bedeutung der Überprüfung von LLM-Vorschlägen, insbesondere wenn es um Drittanbietercode oder -bibliotheken geht.
 
-### Referenzlinks
+### Referenzen
 
 1. [Understanding LLM Hallucinations](https://towardsdatascience.com/llm-hallucinations-ec831dcd7786): **Towards Data Science**
 2. [How Should Companies Communicate the Risks of Large Language Models to Users?](https://techpolicy.press/how-should-companies-communicate-the-risks-of-large-language-models-to-users/): **Techpolicy**
