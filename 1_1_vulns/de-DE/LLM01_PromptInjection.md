@@ -1,8 +1,8 @@
-## LLM01: Prompt Injection
+## LLM01: Prompt Injection (Prompt-Einschleusung)
 
 ### Beschreibung
 
-Die Schwachstelle der Prompt Injection tritt auf, wenn ein Angreifer ein großes Sprachmodell (Large Language Model, LLM) durch speziell gestaltete Eingaben manipuliert, sodass das LLM unwissentlich die Absichten des Angreifers ausführt. Dies kann direkt durch "Jailbreaking" des System-Prompts oder indirekt durch manipulierte externe Eingaben erfolgen, was möglicherweise zu Datenexfiltration, Social Engineering und anderen Problemen führen kann.
+Die Schwachstelle Prompt Injection tritt auf, wenn ein Angreifer ein großes Sprachmodell (Large Language Model, LLM) durch speziell gestaltete Eingaben manipuliert, sodass das LLM unwissentlich die Absichten des Angreifers ausführt. Dies kann direkt durch "Jailbreaking" des System-Prompts oder indirekt durch manipulierte externe Eingaben erfolgen, was möglicherweise zu Datenexfiltration, Social Engineering und anderen Problemen führen kann.
 
 * **Direkte Prompt Injections**, auch bekannt als "Jailbreaking", treten auf, wenn ein bösartiger Benutzer den zugrundeliegenden *System*-Prompt überschreibt oder offenlegt. Dies kann Angreifern ermöglichen, Backend-Systeme zu nutzen, indem sie mit unsicheren Funktionen und Datenspeichern interagieren, die über das LLM zugänglich sind.
 * **Indirekte Prompt Injections** treten auf, wenn ein LLM Eingaben von externen Quellen akzeptiert, die von einem Angreifer kontrolliert werden können, wie Websites oder Dateien. Der Angreifer kann eine Prompt Injection in den externen Inhalt einbetten, um den Konversationskontext zu kapern. Dies würde dazu führen, dass die Stabilität der LLM-Ausgabe weniger stabil wird, wodurch der Angreifer entweder den Benutzer oder zusätzliche Systeme manipulieren kann, auf die das LLM Zugriff hat. Zusätzlich müssen indirekte Prompt Injections nicht für Menschen sichtbar/lesbar sein, solange der Text vom LLM verarbeitet wird.
