@@ -27,7 +27,7 @@ Schließlich können LLM-Plugin-Erweiterungen ihre eigenen Schwachstellen mitbri
 9. Implementieren Sie eine Patching-Richtlinie, um anfällige oder veraltete Komponenten abzuschwächen. Sicherstellen, dass die Anwendung von einer gepflegten Version der APIs und des zugrundeliegenden Modells abhängig ist.
 10. Sicherheits- und Zugangskontrollen der Lieferanten regelmäßig überprüfen und auditieren, um sicherzustellen, dass es keine Änderungen an ihrer Sicherheitslage oder ihren Geschäftsbedingungen gibt.
 
-### Beispiel-Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Angreifende verwenden eine verwundbare Python-Bibliothek, um ein System zu kompromittieren. Dies geschah beim ersten OpenAI-Datenleck.
 2. Angreifende bieten ein LLM-Plugin für die Flugsuche an, das gefälschte Links generiert, die Benutzer auf betrügerische Websites leiten.

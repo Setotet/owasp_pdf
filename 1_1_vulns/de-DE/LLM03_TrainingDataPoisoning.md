@@ -43,7 +43,7 @@ Die Vergiftung von Daten wird als Angriff auf die Integrität betrachtet, da die
     3. Implementierung spezialisierter LLMs zum Benchmarking gegen unerwünschte Konsequenzen und zum Training anderer LLMs mit [Reinforcement Learning Techniken](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy).
     4. Durchführung von LLM-basierten [Red Team Exercises](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned) oder [LLM Vulnerability Scans](https://github.com/leondz/garak) in den Testphasen des LLM-Lebenszyklus.
 
-### Beispiel-Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Die generative KI-Prompt-Ausgabe des LLM kann die Benutzer der Anwendung irreführen, was zu voreingenommenen Meinungen, Schlussfolgerungen oder, schlimmer noch, zu Hassverbrechen usw. führen kann.
 2. Wenn die Trainingsdaten nicht ordnungsgemäß gefiltert und/oder bereinigt werden, kann ein böswilliger Benutzer der Anwendung versuchen, toxische Daten in das Modell einzuspeisen, damit es sich an die voreingenommenen und falschen Daten anpasst.

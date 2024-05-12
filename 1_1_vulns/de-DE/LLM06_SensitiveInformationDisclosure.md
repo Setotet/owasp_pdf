@@ -18,7 +18,7 @@ Die Interaktion zwischen Menschen und der LLM-Anwendung stellt eine Zwei-Wege-Ve
 
 1. Integration geeigneter Datenbereinigungs- und Scrubbing-Techniken, um zu verhindern, dass Benutzerdaten in die Trainingsdaten des Modells gelangen.
 2. robuste Eingabevalidierungs- und -bereinigungsmethoden implementieren, um potenziell schädliche Eingaben zu identifizieren und herauszufiltern, damit das Modell nicht vergiftet wird.
-3. Wenn das Modell mit Daten angereichert und [feinabgestimmt](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/wiki/Definitions) wird: (z.B. Daten, die dem Modell vor oder während der Bereitstellung zugeführt werden)
+3. Wenn das Modell mit Daten angereichert und [feinabgestimmt](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/wiki/Definitions) wird: (z. B. Daten, die dem Modell vor oder während der Bereitstellung zugeführt werden)
    1. Alles, was in den Feinabstimmungsdaten als sensibel eingestuft wird, kann einem Benutzer angezeigt werden. Daher sollte die Regel des geringsten Privilegs angewendet werden und das Modell nicht mit Informationen trainiert werden, auf die der Benutzer mit dem höchsten Privileg Zugriff hat und die einem Benutzer mit niedrigeren Privilegien angezeigt werden könnten.
    2. Der Zugriff auf externe Datenquellen (Orchestrierung von Daten zur Laufzeit) sollte eingeschränkt werden.
    3. Strenge Zugriffskontrollmethoden für externe Datenquellen anwenden und einen rigorosen Ansatz zur Aufrechterhaltung einer sicheren Lieferkette verfolgen.
