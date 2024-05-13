@@ -25,7 +25,7 @@ Die folgenden Bedingungen können die Auswirkungen dieser Schwachstelle verstär
 2. Befolgen Sie die OWASP ASVS (Application Security Verification Standard) Richtlinien, um eine effektive Eingabevalidierung und -bereinigung zu gewährleisten.
 3. Encoden Sie die Modellausgabe zurück an den Benutzer, um unerwünschte Codeausführung durch JavaScript oder Markdown zu verhindern. Der OWASP ASVS bietet detaillierte Anweisungen zum Output Encoding.
 
-## Beispiele für Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Eine Anwendung verwendet ein LLM-Plugin, um Antworten für eine Chatbot-Funktion zu generieren. Das Plugin bietet auch eine Reihe von administrativen Funktionen, die einem anderen privilegierten LLM zur Verfügung stehen. Das allgemeine LLM sendet seine Antwort direkt an das Plugin, ohne die Ausgabe ordnungsgemäß zu validieren, was dazu führt, dass das Plugin für Wartungsarbeiten heruntergefahren wird.
 2. Eine Person verwendet ein von einem LLM betriebenes Tool, das Webseiten zusammenfasst, um eine kurze Übersicht über einen Artikel zu erstellen. Die Website enthält eine Eingabeaufforderung, die das LLM anweist, sensible Inhalte entweder von der Website oder aus der Konversation des Benutzers zu erfassen. Anschließend kann der LLM die sensiblen Daten verschlüsseln und ohne Validierung oder Filterung der Ausgabe an einen von Angreifenden kontrollierten Server senden.

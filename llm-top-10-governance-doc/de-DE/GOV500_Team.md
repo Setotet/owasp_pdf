@@ -26,4 +26,4 @@ Ads Dawson
 ### Übersetzung
 
 Johann-Peter Hartmann
-Philipp Schrettenbrunner
+Philippe Schrettenbrunner

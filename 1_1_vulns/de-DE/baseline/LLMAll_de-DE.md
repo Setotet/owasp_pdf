@@ -1,31 +1,39 @@
 ## Einleitung
 
-Das enorme Interesse an Large Language Models (LLMs) nach der Einführung von massenmarktfähigen vortrainierten Chatbots Ende 2022 ist bemerkenswert. Unternehmen, die das Potenzial von LLMs nutzen wollen, integrieren sie rasch in ihre Betriebsabläufe und kundenorientierten Angebote. Doch die rasante Geschwindigkeit, mit der LLMs angenommen werden, hat die Etablierung umfassender Sicherheitsprotokolle überholt, was viele Anwendungen hohen Risiken aussetzt.
+### Die Entstehung der Liste
 
-Das Fehlen einer einheitlichen Ressource, die diese Sicherheitsbedenken bei LLMs anspricht, war offensichtlich. Entwickler, die mit den spezifischen Risiken von LLMs nicht vertraut sind, waren auf verstreute Quellen angewiesen und die Mission von OWASP schien perfekt geeignet, um einen sichereren Einsatz dieser Technologie voranzutreiben.
+Das enorme Interesse an Large Language Models (LLMs) nach der Einführung massentauglicher, vortrainierten Chatbots Ende 2022 ist beachtlich. Unternehmen, die das Potenzial von LLMs nutzen wollen, integrieren sie rasch in ihre Geschäftsprozesse und kundenzugänglichen Angeboten. Die rasante Geschwindigkeit, mit der LLMs eingeführt werden, hat jedoch dazu geführt, dass die Etablierung umfassender Sicherheitsprotokolle in Verzug geraten ist, sodass viele Anwendungen mit hohen Risiken behaftet sind.
 
-### Für wen ist es gedacht?
-Unsere Hauptzielgruppe sind Entwickler, Data Scientists und Sicherheitsexperten, die mit der Gestaltung und Entwicklung von Anwendungen und Plugins beschäftigt sind, die LLM-Technologien nutzen. Wir möchten praktische, umsetzbare und prägnante Sicherheitshinweise bieten, um diesen Fachleuten zu helfen, sich in dem komplexen im Entstehen befindenden Bereich der LLM-Anwendungssicherheit zurechtzufinden.
+Das Fehlen einer zentralen Ressource, die sich mit diesen Sicherheitsbedenken in Bezug auf LLMs befasst, war unübersehbar. Entwicklerinnen und Entwickler, die mit den spezifischen Risiken von LLMs nicht vertraut waren, standen nur wenige Ressourcen zur Verfügung, und die Mission von OWASP schien die perfekte Lösung zu sein, um die sichere Einführung dieser Technologie zu fördern.
+
+### Für wen diese Liste ist
+
+Unsere Hauptzielgruppe sind Entwickelnde, Data Scientists sowie Sicherheitsexpertinnen und -experten, die Anwendungen und Plug-ins basierend auf LLM-Technologien entwerfen und erstellen. Unser Ziel ist es, praktische, umsetzbare und prägnante Sicherheitsleitfäden bereitzustellen, die diesen Fachleuten helfen, sich auf dem komplexen und sich ständig weiterentwickelnden Gebiet der Sicherheit von LLM-Anwendungen zurechtzufinden.
 
 ### Die Erstellung der Liste
-Das Erstellen der OWASP Top 10 für LLM-Anwendungen war ein wichtiges Unterfangen, das auf der kollektiven Expertise eines internationalen Teams von fast 500 Experten mit über 125 aktiven Mitwirkenden basiert. Unsere Mitwirkenden kommen aus unterschiedlichen Bereichen, darunter KI-Unternehmen, Sicherheitsunternehmen, ISVs, Cloud-Hyperscaler, Hardwareanbieter und die akademische Welt.
 
-Wir haben einen Monat lang gebrainstormt, potenzielle Schwachstellen vorgeschlagen dabei 43 verschiedene Bedrohungen formulierten. Durch mehrere Abstimmungsrunden verfeinerten wir diese Vorschläge zu einer prägnanten Liste der zehn kritischsten Schwachstellen. Spezialisierte Untergruppen prüften jede Schwachstelle und unterzogen sie einer öffentlichen Überprüfung, um die umfassendste und nützlichste endgültige Liste zu gewährleisten.
+Das Erstellen der OWASP Top 10 für LLM-Anwendungen war ein bedeutendes Unterfangen, das auf der kollektiven Expertise eines internationalen Teams von fast 500 Expertinnen und Experten mit mehr als 125 aktiven Mitgestaltenden basiert. Unsere Mitwirkenden kommen aus den unterschiedlichsten Bereichen, darunter KI-Unternehmen, Sicherheitsfirmen, ISVs, Cloud-Hyperscaler, Hardware-Anbieter und die akademische Welt.
 
-### Im Verhältnis zu anderen OWASP Top 10 Listen
-Während unsere Liste die DNA mit Schwachstellentypen aus anderen OWASP Top 10-Listen teilt, wiederholen wir diese Schwachstellen nicht einfach. Stattdessen fokussieren wir uns in die einzigartigen Auswirkungen dieser Schwachstellen beim Einsatz von LLMs.
+Wir haben einen Monat lang gebrainstormt, potenzielle Schwachstellen vorgeschlagen und dabei 43 verschiedene Bedrohungen formuliert. In mehreren Abstimmungsrunden haben wir diese Vorschläge zu einer prägnanten Liste der zehn kritischsten Schwachstellen verfeinert. Spezialisierte Untergruppen untersuchten jede Schwachstelle und unterzogen sie einer öffentlichen Überprüfung, um sicherzustellen, dass die endgültige Liste so umfassend und nützlich wie möglich war.
 
-Unser Ziel ist es, die Kluft zwischen allgemeinen Anwendungssicherheitsprinzipien und den spezifischen Herausforderungen, die LLMs darstellen, zu überbrücken. Dies umfasst die Untersuchung, wie herkömmliche Schwachstellen unterschiedliche Risiken darstellen oder auf neue Weise innerhalb von LLMs ausgenutzt werden könnten, sowie wie traditionelle Abwehrmaßnahmen für LLM-basierte Anwendungen angepasst werden müssen.
+### Das Verhältnis zu anderen OWASP Top 10 Listen
+
+Während unsere Liste die DNA mit Schwachstellentypen aus anderen OWASP Top 10 Listen teilt, wiederholen wir diese Schwachstellen nicht einfach. Stattdessen fokussieren wir uns auf die einzigartigen Auswirkungen dieser Schwachstellen bei der Verwendung von LLMs.
+
+Unser Ziel ist es, die Lücke zwischen allgemeinen Prinzipien der Anwendungssicherheit und den spezifischen Herausforderungen von LLMs zu schließen. Dazu gehört die Untersuchung, wie herkömmliche Schwachstellen in LLMs andere Risiken darstellen oder auf neue Weise ausgenutzt werden können und wie herkömmliche Abwehrmaßnahmen für LLM-basierte Anwendungen angepasst werden müssen.
 
 ### Die Zukunft
-Die Version 1.1 der Liste wird nicht die letzte sein. Wir planen, sie regelmäßig zu aktualisieren, um mit dem Stand der Branche Schritt zu halten. Wir werden mit der breiteren Community kooperieren, um den Stand der Technik voranzutreiben und mehr Bildungsmaterial für eine Vielzahl von Anwendungen zu erstellen. Wir streben auch die Zusammenarbeit mit Normungsorganisationen und Regierungen zu Themen der KI-Sicherheit an. Wir laden Sie ein, unserer Gruppe beizutreten und einen Beitrag zu leisten.
+
+Version 1.1 der Liste wird nicht die letzte sein. Wir planen, sie regelmäßig zu aktualisieren, um mit den Entwicklungen in der Branche Schritt zu halten. Wir werden mit der erweiterten Community zusammenarbeiten, um den Stand der Technik voranzutreiben und mehr Schulungsmaterial für eine Vielzahl von Anwendungen zu erstellen. Ebenso streben wir auch die Zusammenarbeit mit Standardisierungsorganisationen und Regierungen in Fragen der KI-Sicherheit an. Sie sind herzlich eingeladen, sich unserer Gruppe anzuschließen und einen Beitrag zu leisten.
 
 ### Steve Wilson
+
 Projektleiter, OWASP Top 10 für LLM-Anwendungen
 https://www.linkedin.com/in/wilsonsd  
 Twitter/X: @virtualsteve
 
 ### Ads Dawson
+
 v1.1 Release Lead & Vulnerability Entries Lead, OWASP Top 10 für LLM-Anwendungen
 https://www.linkedin.com/in/adamdawson0 
 GitHub: @GangGreenTemperTatum
@@ -37,83 +45,86 @@ GitHub: @GangGreenTemperTatum
 Johann-Peter Hartmann
 https://www.linkedin.com/in/johann-peter-hartmann-92b70a/  
 
+Philippe Schrettenbrunner
+https://www.linkedin.com/in/philippe-schrettenbrunner/
+
 Bei der Erstellung dieser Übersetzung haben wir uns bewusst dafür entschieden, nur menschliche Übersetzer einzusetzen, in Anerkennung der außerordentlich technischen und kritischen Natur der OWASP Top Ten für LLMs. Die oben aufgeführten Übersetzer verfügen nicht nur über ein tiefes Verständnis des Originalinhalts, sondern auch über die sprachliche Kompetenz, um diese Übersetzung sinnvoll zu gestalten.
 
 Talesh Seeparsan
 Übersetzungsleiter, OWASP Top 10 für LLM-Anwendungen
 https://www.linkedin.com/in/talesh/  
 
-## ﻿OWASP Top 10 für Anwendungen von Large Language Models (LLMs)
+## OWASP Top 10 für LLM-Applikationen
 
 ### LLM01: Prompt Injection (Prompt-Einschleusung)
-Mit raffinierten Eingabenkann man ein Large Language Model manipulieren und unbeabsichtigte Aktionen verursachen. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
+Mittels raffinierter Eingaben kann ein Large Language Model manipuliert und unbeabsichtigte Aktionen ausgelöst werden. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
 
 ### LLM02: Unsichere Ausgabeverarbeitung
-Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ohne Überprüfung akzeptiert wird, und damit Backend-Systeme angreifbar macht. Missbrauch kann zu schwerwiegenden Konsequenzen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegienerweiterung oder Remote-Code-Ausführung führen.
+Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ungeprüft akzeptiert wird, wodurch Backend-Systeme angreifbar werden. Ein Missbrauch kann zu schwerwiegenden Folgen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegienerweiterung oder Remote-Code-Ausführung führen.
 
-### LLM03: Poisoning der Trainingsdaten
-Dies tritt auf, wenn LLM-Trainingsdaten manipuliert werden, wodurch Sicherheitslücken oder Bias entstehen, die die Sicherheit, Wirksamkeit oder ethisches Verhalten beeinträchtigen. Quellen umfassen Common Crawl, WebText, OpenWebText und Bücher.
+### LLM03: Poisoning von Trainingsdaten
+Dies tritt auf, wenn LLM-Trainingsdaten manipuliert werden und dadurch Sicherheitslücken oder Bias entstehen, die Sicherheit, Performance oder ethisches Verhalten beeinträchtigen. Quellen umfassen Common Crawl, WebText, OpenWebText und Bücher.
 
 ### LLM04: Denial of Service des Modells
-Angreifer verursachen ressourcenintensive Operationen auf Large Language Models, was zu Servicedegradierung oder hohen Kosten führt. Die Schwachstelle wird durch die ressourcenintensive Natur der LLMs und die Unvorhersehbarkeit der Benutzereingaben vergrößert.
+Angreifende verursachen ressourcenintensive Operationen auf Large Language Models, was zu Beeinträchtigung oder hohen Kosten führt. Die Schwachstelle wird durch die ressourcenintensive Natur von LLMs und die Unvorhersehbarkeit von Benutzereingaben verstärkt.
 
-### LLM05: Schwachstellen in der Supply Chain
-Der Lifecycle von LLM-Anwendungen kann durch anfällige Komponenten oder Dienste beeinträchtigt werden, was zu Sicherheitsangriffen führt. Die Verwendung von Drittanbieterdatensätzen, vortrainierten Modellen und Plugins kann Schwachstellen hinzufügen.
+### LLM05: Schwachstellen in der Lieferkette
+Der Lebenszyklus von LLM-Anwendungen kann durch verwundbare Komponenten oder Dienste kompromittiert werden, was Angriffe auf die Sicherheit zur Folge haben kann. Die Verwendung von Datensätzen von Drittanbietern, vortrainierten Modellen und Plugins kann zu weiteren Schwachstellen führen.
 
 ### LLM06: Offenlegung sensibler Informationen
-LLMs können in ihren Antworten vertrauliche Daten preisgeben, was zu unbefugtem Datenzugriff, Datenschutzverletzungen und Sicherheitsbrüchen führt. Es ist entscheidend, Datenbereinigung und strenge Benutzerrichtlinien zu implementieren, um dies zu reduzieren.
+LLMs können in ihren Antworten vertrauliche Daten preisgeben, was zu unbefugtem Datenzugriff, Datenschutzverletzungen und Sicherheitsverstößen führt. Datenbereinigung und strenge Benutzerrichtlinien sind unerlässlich, um dies zu verhindern.
 
 ### LLM07: Unsicheres Plugin-Design
-LLM-Plugins können unsichere Eingaben und unzureichende Zugriffskontrollen haben. Dieser Mangel an Anwendungskontrolle macht sie leichter ausnutzbar und kann zu Konsequenzen wie der Ausführung von Remote-Code führen.
+LLM-Plugins können unsichere Eingaben und unzureichende Zugriffskontrollen aufweisen. Dieser Mangel an Anwendungskontrolle erleichtert das Ausnutzen von LLM-Plugins und kann zu Folgen wie der Ausführung von Remote-Code führen.
 
 ### LLM08: Übermäßige Handlungsfreiheit
-LLM-basierte Systeme können Handlungen durchführen, die zu unbeabsichtigten Konsequenzen führen. Das Problem entsteht durch übermäßige Funktionalität, Berechtigungen oder Autonomie, die den LLM-basierten Systemen gewährt wird.
+LLM-basierte Systeme können Aktionen ausführen, die unbeabsichtigte Folgen haben. Das Problem tritt auf, wenn LLM-basierten Systemen zu viele Funktionen, Berechtigungen oder Autonomie gewährt werden.
 
 ### LLM09: Übermäßige Abhängigkeit
-Systeme oder Personen, die sich übermäßig auf LLMs verlassen, ohne angemessene Kontrolle, können Fehlinformationen, Misskommunikation, rechtliche Probleme und Sicherheitslücken aufgrund von falschen oder unangemessenen von den LLMs generierten Inhalten gegenüberstehen.
+Systeme oder Personen, die sich zu sehr und unkontrolliert auf LLMs verlassen, können durch falsche oder unangemessene Inhalte, die von LLMs erzeugt werden, mit Fehlinformationen, Fehlkommunikation, rechtlichen Problemen und Sicherheitslücken konfrontiert werden.
 
 ### LLM10: Modell-Diebstahl
-Dies umfasst unbefugten Zugriff, Kopieren oder Exfiltration von proprietären LLM-Modellen. Die Auswirkungen umfassen wirtschaftliche Verluste, beeinträchtigte Wettbewerbsvorteile und potenziellen Zugang zu sensiblen Informationen.
-## LLM01: Prompt Injection
+Dies schließt den unbefugten Zugriff, das Kopieren oder die Weitergabe von geschützten LLM-Modellen ein. Die Folgen sind wirtschaftliche Verluste, gefährdete Wettbewerbsvorteile und potenzieller Zugang zu sensiblen Informationen.
+## LLM01: Prompt Injection (Prompt-Einschleusung)
 
 ### Beschreibung
 
-Die Schwachstelle der Prompt Injection tritt auf, wenn ein Angreifer ein großes Sprachmodell (Large Language Model, LLM) durch speziell gestaltete Eingaben manipuliert, sodass das LLM unwissentlich die Absichten des Angreifers ausführt. Dies kann direkt durch "Jailbreaking" des System-Prompts oder indirekt durch manipulierte externe Eingaben erfolgen, was möglicherweise zu Datenexfiltration, Social Engineering und anderen Problemen führen kann.
+Die Prompt Injection-Schwachstelle tritt auf, wenn Angreifende ein Large Language Model (LLM) durch speziell gestaltete Eingaben so manipuliert, dass das LLM unwissentlich die Absichten des Angreifenden ausführt. Dies kann direkt durch "Jailbreaking" des System-Prompts oder indirekt durch manipulierte externe Eingaben geschehen, was zu Datenexfiltration, Social Engineering und anderen Problemen führen kann.
 
-Direkte Prompt Injections, auch bekannt als "Jailbreaking", treten auf, wenn ein bösartiger Benutzer den zugrundeliegenden System-Prompt überschreibt oder offenlegt. Dies kann Angreifern ermöglichen, Backend-Systeme zu nutzen, indem sie mit unsicheren Funktionen und Datenspeichern interagieren, die über das LLM zugänglich sind.
-Indirekte Prompt Injections treten auf, wenn ein LLM Eingaben von externen Quellen akzeptiert, die von einem Angreifer kontrolliert werden können, wie Websites oder Dateien. Der Angreifer kann eine Prompt Injection in den externen Inhalt einbetten, um den Konversationskontext zu kapern. Dies würde dazu führen, dass die Stabilität der LLM-Ausgabe weniger stabil wird, wodurch der Angreifer entweder den Benutzer oder zusätzliche Systeme manipulieren kann, auf die das LLM Zugriff hat. Zusätzlich müssen indirekte Prompt Injections nicht für Menschen sichtbar/lesbar sein, solange der Text vom LLM verarbeitet wird.
+Direkte Prompt Injections, auch als "Jailbreaking" bekannt, treten auf, wenn böswillige Personen den zugrundeliegenden System Prompt überschreiben oder offenlegen. Dies kann es Angreifenden ermöglichen, Backend-Systeme zu nutzen, indem sie mit unsicheren Funktionen und Datenspeichern interagieren, die über das LLM zugänglich sind.
+Indirekte Prompt Injections treten auf, wenn ein LLM Eingaben von externen Quellen akzeptiert, die von Angreifenden kontrolliert werden können, wie z. B. Websites oder Dateien. Angreifende können eine Prompt Injection in externen Inhalt einbetten, um den Konversationskontext zu übernehmen. Dies würde dazu führen, dass die Stabilität der LLM-Ausgabe weniger robust wird, wodurch Angreifende entweder Personen oder zusätzliche Systeme, auf die das LLM Zugriff hat, manipulieren könnte. Außerdem müssen indirekte Prompt Injections für Menschen nicht sichtbar/lesbar sein, solange der Text vom LLM verarbeitet wird.
 
-Die Ergebnisse eines erfolgreichen Prompt Injection-Angriffs können stark variieren - von der Anforderung sensibler Informationen bis hin zur Beeinflussung kritischer Entscheidungsprozesse unter dem Deckmantel normaler Operationen.
+Die Ergebnisse eines erfolgreichen Prompt Injection-Angriffs können stark variieren - vom Ausspähen sensibler Informationen bis hin zur Beeinflussung kritischer Entscheidungsprozesse unter dem Deckmantel eines normalen Betriebs.
 
-Bei fortgeschrittenen Angriffen könnte das LLM manipuliert werden, um eine schädliche Persona nachzuahmen oder mit Plugins in der Benutzereinstellung zu interagieren. Dies könnte zum Leck von sensiblen Daten, zur unbefugten Plugin-Nutzung oder zu Social Engineering führen. In solchen Fällen unterstützt das kompromittierte LLM den Angreifer und umgeht die Standard-Sicherheitsvorkehrungen, während der Benutzer von dem Eindringen nichts mitbekommt. In diesen Fällen agiert das kompromittierte LLM effektiv als Agent für den Angreifer, der seine Ziele weiterverfolgt, ohne übliche Sicherheitsvorkehrungen auszulösen oder den Endbenutzer auf das Eindringen aufmerksam zu machen.
+Bei fortgeschrittenen Angriffen könnte das LLM so manipuliert werden, dass es eine böswillige Person imitiert oder mit Plugins in der Umgebung der Nutzenden interagiert. Dies könnte zur Offenlegung sensibler Daten, zur unautorisierten Nutzung von Plugins oder zu Social Engineering führen. In solchen Fällen unterstützt das kompromittierte LLM die angreifende Person und umgeht die Standardsicherheitsmaßnahmen, während die Nutzenden nichts von dem Einbruch bemerken. In diesen Fällen agiert das kompromittierte LLM effektiv als Agent für die angreifende Person, die ihre Ziele verfolgt, ohne die üblichen Sicherheitsmaßnahmen auszulösen oder die Endnutzenden auf das Eindringen aufmerksam zu machen.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
-Ein bösartiger Benutzer erstellt eine direkte Prompt Injection für das LLM, die es anweist, die System-Prompts des App-Erstellers zu ignorieren und stattdessen einen Prompt auszuführen, der private, gefährliche oder anderweitig unerwünschte Informationen zurückgibt.
-Ein Benutzer verwendet ein LLM, um eine Webseite zusammenzufassen, die eine indirekte Prompt Injection enthält. Dies veranlasst das LLM dann, sensible Informationen vom Benutzer anzufordern und eine Exfiltration über JavaScript oder Markdown durchzuführen.
-Ein bösartiger Benutzer lädt einen Lebenslauf hoch, der eine indirekte Prompt Injection enthält. Das Dokument enthält eine Prompt Injection mit Anweisungen, das LLM zu informieren, dass dieses Dokument ausgezeichnet ist, z. B. ein ausgezeichneter Kandidat für eine Stellenbeschreibung. Ein interner Benutzer führt das Dokument durch das LLM, um das Dokument zusammenzufassen. Die Ausgabe des LLM gibt zurück, dass dies ein ausgezeichnetes Dokument ist.
-Ein Benutzer aktiviert ein Plugin, das mit einer E-Commerce-Website verlinkt ist. Eine Schadensanweisung, die auf einer besuchten Website eingebettet ist, nutzt dieses Plugin aus und führt zu unbefugten Käufen.
-Eine Schadensanweisung und Inhalt, die auf einer besuchten Website eingebettet sind, nutzen andere Plugins aus, um Benutzer zu betrügen.
+Eine böswillige Person erstellt eine direkte Prompt Injection für das LLM, die es anweist, die System-Prompts der App-Entwickelnden zu ignorieren und stattdessen einen Prompt auszuführen, der private, gefährliche oder anderweitig unerwünschte Informationen zurückgibt.
+Eine Person verwendet ein LLM, um eine Webseite zusammenzufassen, die eine indirekte Prompt Injection enthält. Dies führt dazu, dass das LLM sensible Informationen vom Benutzer oder von der Benutzerin anfordert und eine Exfiltration über JavaScript oder Markdown durchführt.
+Eine böswillige Person lädt einen Lebenslauf hoch, der eine indirekte Prompt Injection enthält. Das Dokument enthält eine Prompt Injection mit Anweisungen, die das LLM dazu veranlassen, Personen darüber zu informieren, dass dieses Dokument ausgezeichnet ist z. B. bei der Bewerbung auf eine Stellenausschreibung. Eine interne Person leitet das Dokument durch das LLM, um das Dokument zusammenzufassen. Das LLM meldet zurück, dass es sich um ein exzellentes Dokument handelt.
+Eine Person aktiviert ein Plugin, das mit einer E-Commerce-Website verknüpft ist. Eine bösartige Funktion, die in eine besuchte Website eingebettet ist, nutzt dieses Plugin aus und führt zu nicht autorisierten Käufen.
+Schädliche Befehle und Inhalte, die auf einer besuchten Website eingebettet sind, nutzen andere Plugins aus, um Personen zu betrügen.
 
 ### Präventions- und Mitigationsstrategien
 
-Prompt Injection-Schwachstellen sind möglich aufgrund der Natur von LLMs, die Anweisungen und externe Daten nicht voneinander trennen. Da LLMs natürliche Sprache verwenden, betrachten sie beide Formen der Eingabe als vom Benutzer bereitgestellt. Folglich gibt es keine narrensichere Prävention innerhalb des LLM, aber die folgenden Maßnahmen können die Auswirkungen von Prompt Injections mindern:
+Prompt Injection-Schwachstellen sind möglich, da LLMs von Natur aus nicht zwischen Befehlen und externen Daten unterscheiden können. Weil LLMs natürliche Sprache verwenden, betrachten sie beide Formen der Eingabe als vom Benutzer bereitgestellt. Daher gibt es keine unfehlbare Prävention innerhalb von LLMs, aber die folgenden Maßnahmen können die Auswirkungen von Prompt Injections reduzieren:
 
-Durchsetzen der Zugriffskontrolle auf LLM-Zugriff auf Backend-Systeme. Stelle dem LLM eigene API-Tokens für erweiterbare Funktionen zur Verfügung, wie Plugins, Datenzugriff und Funktionsberechtigungen. Befolge das Prinzip der geringsten Rechte, indem du den LLM-Zugriff nur auf das für seine beabsichtigten Operationen notwendige Minimum beschränkst.
-Hinzufügen eines Menschen in der Schleife für erweiterte Funktionen. Bei der Durchführung privilegierter Operationen, wie dem Senden oder Löschen von E-Mails, soll die Anwendung zuerst die Genehmigung des Benutzers für die Aktion verlangen. Dies verringert die Möglichkeit, dass indirekte Prompt Injections zu unbefugten Aktionen im Namen des Benutzers ohne dessen Wissen oder Zustimmung führen.
-Trennen von externem Inhalt von Benutzer-Prompts. Trenne und kennzeichne, wo unzuverlässiger Inhalt verwendet wird, um deren Einfluss auf Benutzer-Prompts zu begrenzen. Verwende beispielsweise ChatML für OpenAI-API-Aufrufe, um dem LLM die Quelle der Prompt-Eingabe anzuzeigen.
-Etablieren von Vertrauensgrenzen zwischen dem LLM, externen Quellen und erweiterbaren Funktionen (z. B. Plugins oder nachgelagerten Funktionen). Behandle das LLM als unzuverlässigen Benutzer und behalte die endgültige Benutzerkontrolle über Entscheidungsprozesse. Ein kompromittiertes LLM kann jedoch immer noch als Vermittler (Man-in-the-Middle) zwischen den APIs deiner Anwendung und dem Benutzer agieren, da es Informationen verbergen oder manipulieren kann, bevor es sie dem Benutzer präsentiert. Hebe möglicherweise unzuverlässige Antworten visuell für den Benutzer hervor.
-Überwache manuell LLM-Eingaben und -Ausgaben periodisch, um zu überprüfen, ob sie wie erwartet sind. Dies ist zwar keine Minderung, kann aber Daten liefern, die benötigt werden, um Schwachstellen zu erkennen und anzugehen.
+Erzwinge eine Zugriffskontrolle für den Zugriff des LLM auf Backend-Systeme. Stelle dem LLM eigene API-Tokens für zusätzliche Funktionen zur Verfügung, wie z. B. Plugins, Datenzugriff und Funktionsberechtigungen. Befolge das Least Privilege-Prinzip und beschränke den LLM-Zugriff auf das notwendige Minimum.
+Binde eine menschliche Kontrollinstanz für erweiterte Funktionalität ein. Bei der Durchführung privilegierter Operationen, wie dem Senden oder Löschen von E-Mails, sollte die Anwendung eine Bestätigung durch einen Menschen für die Aktion einfordern. Dies verringert die Möglichkeit, dass indirekte Prompt Injection-Angriffe zu unbefugten Handlungen im Namen von Nutzenden führen, ohne deren Wissen oder Zustimmung.
+Trenne externen Inhalt von Nutzereingaben. Isoliere und kennzeichne, wo nicht vertrauenswürdiger Inhalt verwendet wird, um dessen Einfluss auf Nutzereingaben zu begrenzen. Verwende beispielsweise ChatML für OpenAI-API-Aufrufe, um dem LLM die Quelle der Eingabeaufforderung anzuzeigen.
+Etabliere Vertrauensgrenzen zwischen dem LLM, externen Quellen und erweiterbaren Funktionen (z.B. Plugins oder nachgelagerte Funktionen). Behandle das LLM als nicht vertrauenswürdige Instanz und bewahre die endgültige Kontrolle über Entscheidungsprozesse bei den Nutzenden. Ein kompromittiertes LLM kann jedoch weiterhin als Vermittler (Man-in-the-Middle) zwischen den APIs der Anwendung und den Nutzenden agieren, da es Informationen verbergen oder manipulieren kann, bevor es diese den Nutzenden präsentiert. Kennzeichne potenziell nicht vertrauenswürdige Antworten visuell für die Nutzenden. 
+Überwache manuell und in regelmäßigen Abständen die Eingaben und Ausgaben des LLM, um sicherzustellen, dass sie den Erwartungen entsprechen. Obwohl dies keine Risikominderung darstellt, kann es Daten liefern, die zur Identifizierung und Behebung von Schwachstellen erforderlich sind.
 
-### Beispiel für Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
-Ein Angreifer liefert eine direkte Prompt Injection an einen LLM-basierten Support-Chatbot. Die Injection enthält "Vergiss alle vorherigen Anweisungen" und neue Anweisungen, um private Datenspeicher abzufragen und Paketschwachstellen sowie das Fehlen einer Ausgabevalidierung in der Backend-Funktion zu nutzen, um E-Mails zu senden. Dies führt zu einer Remote-Code-Ausführung, gewährt unbefugten Zugriff und Privilegienerweiterung.
-Ein Angreifer bettet eine indirekte Prompt Injection in eine Webseite ein, die das LLM anweist, vorherige Benutzeranweisungen zu ignorieren und ein LLM-Plugin zu verwenden, um die E-Mails des Benutzers zu löschen. Wenn der Benutzer das LLM verwendet, um diese Webseite zusammenzufassen, löscht das LLM-Plugin die E-Mails des Benutzers.
-Ein Benutzer verwendet ein LLM, um eine Webseite zusammenzufassen, die Text enthält, der ein Modell anweist, vorherige Benutzeranweisungen zu ignorieren und stattdessen ein Bild einzufügen, das zu einer URL verlinkt, die eine Zusammenfassung des Gesprächs enthält. Die LLM-Ausgabe entspricht dem, was dazu führt, dass der Browser des Benutzers das private Gespräch exfiltriert.
-Ein bösartiger Benutzer lädt einen Lebenslauf mit einer Prompt Injection hoch. Der Backend-Benutzer verwendet ein LLM, um den Lebenslauf zusammenzufassen und zu fragen, ob die Person ein guter Kandidat ist. Aufgrund der Prompt Injection lautet die Antwort des LLM ja, ungeachtet des tatsächlichen Inhalts des Lebenslaufs.
-Ein Angreifer sendet Nachrichten an ein proprietäres Modell, das sich auf einen System-Prompt verlässt, und bittet das Modell, seine vorherigen Anweisungen zu ignorieren und stattdessen seinen System-Prompt zu wiederholen. Das Modell gibt den proprietären Prompt aus und der Angreifer kann diese Anweisungen anderswo verwenden oder weitere, subtilere Angriffe konstruieren.
+Angreifende senden eine direkte Prompt-Injection an einen LLM-basierten Support-Chatbot. Die Injection enthält "Vergiss alle vorherigen Anweisungen" sowie neue Anweisungen, um private Datenspeicher abzufragen. Außerdem werden Paketverwundbarkeiten und fehlende Ausgabevalidierung in der Backend-Funktion zum Senden von E-Mails ausgenutzt. Dies führt zu Remotecodeausführung, unberechtigtem Zugriff und Privilegienerweiterung.
+Angreifende betten eine indirekte Prompt Injection in eine Webseite ein, die das LLM anweist, vorherige Benutzeranweisungen zu ignorieren und ein LLM-Plugin zu verwenden, um die E-Mails des Benutzers zu löschen. Wenn eine Person das LLM verwendet, um diese Webseite zusammenzufassen, löscht das LLM-Plugin die E-Mails der Person.
+Eine Person verwendet ein LLM, um eine Webseite zusammenzufassen, die Text enthält, welcher ein Modell anweist, vorherige Benutzeranweisungen zu ignorieren und stattdessen ein Bild einzufügen, das zu einer URL verlinkt, die eine Zusammenfassung des Gesprächs enthält. Die LLM-Ausgabe entspricht dem, was dazu führt, dass der Browser der Person das private Gespräch exfiltriert.
+Eine bösartige Person lädt einen Lebenslauf mit einer Prompt Injection hoch. Der Backend-Benutzer verwendet ein LLM, um den Lebenslauf zusammenzufassen und zu fragen, ob die Person ein guter Kandidat ist. Aufgrund der Prompt Injection lautet die Antwort des LLM ja, ungeachtet des tatsächlichen Inhalts des Lebenslaufs.
+Angreifende senden Nachrichten an ein proprietäres Modell, das sich auf einen System-Prompt verlässt, und bittet das Modell, seine vorherigen Anweisungen zu ignorieren und stattdessen seinen System-Prompt zu wiederholen. Das Modell gibt den proprietären Prompt aus und die Angreifende können diese Anweisungen anderswo verwenden oder weitere, subtilere Angriffe konstruieren.
 
-### Referenzlinks
+### Referenzen
 
 Prompt injection attacks against GPT-3 Simon Willison
 ChatGPT Plugin Vulnerabilities - Chat with Code: Embrace The Red
@@ -133,36 +144,37 @@ Declassifying the Responsible Disclosure of the Prompt Injection Attack Vulnerab
 
 ### Beschreibung
 
-Unsichere Ausgabeverarbeitung bezieht sich speziell auf unzureichende Validierung, Sanitierung und Handhabung der von großen Sprachmodellen erzeugten Ausgaben, bevor sie an andere Komponenten und Systeme weitergegeben werden. Da der von LLMs (Large Language Models) generierte Inhalt durch Prompteingaben gesteuert werden kann, ähnelt dieses Verhalten dem indirekten Zugriff der Benutzer auf zusätzliche Funktionen.
+Unsichere Ausgabeverarbeitung bezieht sich speziell auf die unzureichende Validierung, Bereinigung und Handhabung von Ausgaben, die von Large Language Models erzeugt werden, bevor sie an andere Komponenten und Systeme weitergeleitet werden. Da der von LLMs erzeugte Inhalt durch Prompt-Eingaben gesteuert werden kann, ähnelt dieses Verhalten dem indirekten Benutzerzugriff auf zusätzliche Funktionen.
 
-Unsichere Ausgabeverarbeitung unterscheidet sich von Überabhängigkeit dadurch, dass es sich mit den von LLMs generierten Ausgaben befasst, bevor diese weitergeleitet werden. Überabhängigkeit konzentriert sich hingegen auf breitere Bedenken hinsichtlich der Überabhängigkeit von der Genauigkeit und Angemessenheit der LLM-Ausgaben.
+Unsichere Ausgabeverarbeitung unterscheidet sich von _Übermäßiger Abhängigkeit_ insofern, als sie sich mit den Ausgaben befasst, die von LLMs generiert werden, bevor sie weitergeleitet werden. Im Gegensatz dazu konzentriert sich _Übermäßige Abhängigkeit_ auf allgemeinere Bedenken hinsichtlich der Angewiesenheit auf die Genauigkeit und Angemessenheit des LLM-Outputs.
 
-Eine erfolgreiche Ausnutzung einer Schwachstelle in der unsicheren Ausgabeverarbeitung kann XSS (Cross-Site Scripting) und CSRF (Cross-Site Request Forgery) in Webbrowsern sowie SSRF (Server-Side Request Forgery), Rechteerweiterung (privilege escalation) oder Remote-Code-Ausführung in Backend-Systemen zur Folge haben.
+Die erfolgreiche Ausnutzung einer Schwachstelle in der unsicheren Ausgabeverarbeitung kann zu XSS (Cross-Site Scripting) und CSRF (Cross-Site Request Forgery) in Webbrowsern sowie zu SSRF (Server-Side Request Forgery), Rechteerweiterung (Privilege Escalation) oder Remote-Code-Ausführung in Backend-Systemen führen.
 
-Die folgenden Bedingungen können die Auswirkungen dieser Schwachstelle erhöhen:
-Die Anwendung gewährt dem LLM Privilegien, die über das für Endbenutzer Vorgesehene hinausgehen, was eine Eskalation von Privilegien oder Remote-Code-Ausführung ermöglicht.
-Die Anwendung ist anfällig für indirekte Prompt-Injektionsangriffe, die es einem Angreifer ermöglichen könnten, privilegierten Zugang zur Umgebung eines Zielbenutzers zu erlangen.
+Die folgenden Bedingungen können die Auswirkungen dieser Schwachstelle verstärken:
+
+Die Anwendung gewährt dem LLM Privilegien, die über die für den Endbenutzer vorgesehenen Privilegien hinausgehen, was eine Eskalation der Privilegien oder die Ausführung von Remote-Code ermöglicht.
+Die Anwendung ist anfällig für indirekte Prompt Injection-Angriffe, die es Angreifenden ermöglichen, privilegierten Zugriff auf die Umgebung eines Zielbenutzers zu erlangen.
 Plugins von Drittanbietern validieren Eingaben nicht ausreichend.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
 Die Ausgabe des LLM wird direkt in eine Systemshell oder eine ähnliche Funktion wie exec oder eval eingegeben, was zu einer Remote-Code-Ausführung führt.
-JavaScript oder Markdown wird vom LLM generiert und an einen Benutzer zurückgegeben. Der Code wird dann vom Browser interpretiert, was zu XSS führt.
+JavaScript oder Markdown wird vom LLM generiert und die aufrufende Person zurückgegeben. Der Code wird dann vom Browser interpretiert, was zu XSS führt.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigationsstrategien
 
-Behandeln Sie das Modell wie jeden anderen Benutzer, indem Sie einen Zero-Trust-Ansatz anwenden, und wenden Sie eine ordnungsgemäße Eingabevalidierung auf Antworten an, die vom Modell zu Backend-Funktionen kommen.
-Befolgen Sie die Richtlinien des OWASP ASVS (Application Security Verification Standard), um eine effektive Eingabevalidierung und Sanitierung zu gewährleisten.
-Kodieren Sie Modellausgaben zurück an die Benutzer, um unerwünschte Codeausführung durch JavaScript oder Markdown zu verhindern. OWASP ASVS bietet detaillierte Anleitungen zur Ausgabekodierung.
+Behandeln Sie das Sprachmodell mit einem Zero-Trust-Ansatz und wenden Sie eine geeignete Eingabevalidierung auf die Antworten an, die vom Modell an die Backend-Funktionen gesendet werden.
+Befolgen Sie die OWASP ASVS (Application Security Verification Standard) Richtlinien, um eine effektive Eingabevalidierung und -bereinigung zu gewährleisten.
+Encoden Sie die Modellausgabe zurück an den Benutzer, um unerwünschte Codeausführung durch JavaScript oder Markdown zu verhindern. Der OWASP ASVS bietet detaillierte Anweisungen zum Output Encoding.
 
-### Beispielangriffsszenarien
+### Beispiele für Angriffsszenarien
 
-Eine Anwendung nutzt ein LLM-Plugin, um Antworten für eine Chatbot-Funktion zu generieren. Das Plugin bietet auch eine Reihe von administrativen Funktionen, die einem anderen privilegierten LLM zugänglich sind. Das allgemeine LLM gibt seine Antwort direkt, ohne ordnungsgemäße Ausgabevalidierung, an das Plugin weiter, was dazu führt, dass das Plugin für Wartungsarbeiten heruntergefahren wird.
-Ein Benutzer verwendet ein von einem LLM betriebenes Website-Zusammenfassungstool, um eine prägnante Zusammenfassung eines Artikels zu generieren. Die Website enthält eine Prompt-Injektion, die das LLM anweist, sensible Inhalte entweder von der Website oder aus der Konversation des Benutzers zu erfassen. Von dort aus kann das LLM die sensiblen Daten kodieren und ohne jegliche Ausgabevalidierung oder Filterung an einen vom Angreifer kontrollierten Server senden.
-Ein LLM ermöglicht Benutzern, SQL-Abfragen für eine Backend-Datenbank über eine chatähnliche Funktion zu erstellen. Ein Benutzer fordert eine Abfrage an, um alle Datenbanktabellen zu löschen. Wenn die vom LLM erstellte Abfrage nicht geprüft wird, könnten alle Datenbanktabellen gelöscht werden.
-Eine Webanwendung verwendet ein LLM, um Inhalte aus Benutzertextaufforderungen ohne Ausgabesanitierung zu generieren. Ein Angreifer könnte eine konstruierte Aufforderung einreichen, die das LLM dazu bringt, eine unbereinigte JavaScript-Payload zurückzugeben, was zu XSS führt, wenn sie im Browser eines Opfers ausgeführt wird. Unzureichende Validierung von Aufforderungen ermöglichte diesen Angriff.
+Eine Anwendung verwendet ein LLM-Plugin, um Antworten für eine Chatbot-Funktion zu generieren. Das Plugin bietet auch eine Reihe von administrativen Funktionen, die einem anderen privilegierten LLM zur Verfügung stehen. Das allgemeine LLM sendet seine Antwort direkt an das Plugin, ohne die Ausgabe ordnungsgemäß zu validieren, was dazu führt, dass das Plugin für Wartungsarbeiten heruntergefahren wird.
+Eine Person verwendet ein von einem LLM betriebenes Tool, das Webseiten zusammenfasst, um eine kurze Übersicht über einen Artikel zu erstellen. Die Website enthält eine Eingabeaufforderung, die das LLM anweist, sensible Inhalte entweder von der Website oder aus der Konversation des Benutzers zu erfassen. Anschließend kann der LLM die sensiblen Daten verschlüsseln und ohne Validierung oder Filterung der Ausgabe an einen von Angreifenden kontrollierten Server senden.
+Ein LLM ermöglicht es Personen, SQL-Abfragen für eine Backend-Datenbank über eine Chat-ähnliche Funktion zu erstellen. Eine Person stellt eine Abfrage zum Löschen aller Datenbanktabellen. Wenn die vom LLM erstellte Abfrage nicht überprüft wird, könnten alle Datenbanktabellen gelöscht werden.
+Eine Webanwendung verwendet einen LLM, um Inhalte aus Benutzereingaben zu generieren, ohne die Ausgabe zu bereinigen. Angreifende könnten eine konstruierte Anfrage einreichen, die den LLM dazu veranlasst, eine unbereinigte JavaScript-Payload zurückzugeben, die zu XSS führt, wenn sie im Browser des Opfers ausgeführt wird. Unzureichende Validierung von Anfragen ermöglicht diesen Angriff.
 
-### Referenzlinks
+### Referenzen
 
 Arbitrary Code Execution: Snyk Security Blog
 ChatGPT Plugin Exploit Explained: From Prompt Injection to Accessing Private Data: Embrace The Red
@@ -174,55 +186,55 @@ OWASP ASVS - 5 Validation, Sanitization and Encoding: OWASP AASVS
 
 ### Beschreibung
 
-Der Ausgangspunkt jedes maschinellen Lernansatzes sind Trainingsdaten, einfach ausgedrückt "Rohdaten". Um hochgradig wirksam zu sein (z.B. sprachliches und Weltwissen zu besitzen), sollte dieser Text eine breite Palette von Domänen, Genres und Sprachen umfassen. Ein großes Sprachmodell (Large Language Model, LLM) verwendet tiefe neuronale Netzwerke, um Ausgaben zu generieren, die auf Mustern basieren, die aus den Trainingsdaten gelernt wurden.
+Ausgangspunkt jedes Ansatzes zum maschinellen Lernen sind Trainingsdaten, einfach gesagt "Rohdaten". Um eine hohe Effizienz zu erreichen (z. B. linguistisches Wissen und Wissen über die Welt), müssen diese Daten eine große Bandbreite an Domänen, Genres und Sprachen abdecken. Ein Large Language Model (LLM) verwendet tiefe neuronale Netze, um Ausgaben zu erzeugen, die auf Mustern basieren, die aus den Trainingsdaten gelernt wurden.
 
-Das Poisoning von Trainingsdaten bezieht sich auf die Manipulation von Pre-Training-Daten oder Daten, die innerhalb der Fine-Tuning- oder Embeddingprozesse verwendet werden, um Schwachstellen (die alle einzigartige und manchmal gemeinsame Angriffsvektoren haben), Hintertüren oder Biase einzuführen, die die Sicherheit, Effektivität oder ethisches Verhalten des Modells beeinträchtigen könnten. Vergiftete Informationen können den Nutzern präsentiert werden oder andere Risiken wie Leistungsverschlechterung, Ausnutzung von nachgelagerter Software und Reputationsschäden erzeugen. Selbst wenn Nutzer der problematischer KI-Ausgabe misstrauen, bleiben die Risiken bestehen, einschließlich beeinträchtigter Modellfähigkeiten und potenziellem Schaden für das Markenimage.
+Das Poisoning von Trainingsdaten bezieht sich auf die Manipulation von Daten vor dem Training oder von Daten, die in den Fine-Tuning- oder Embedding-Prozess involviert sind, um Schwachstellen (die alle einzigartige und manchmal gemeinsame Angriffsvektoren haben), Hintertüren oder Verzerrungen einzuführen, die die Sicherheit, die Effektivität oder das ethische Verhalten des Modells beeinträchtigen könnten. Vergiftete Informationen können an Personen weitergegeben werden oder andere Risiken wie Leistungseinbußen, die Ausnutzung nachgelagerter Software und Rufschädigung mit sich bringen. Selbst wenn Personen der problematischen KI-Ausgabe misstrauen, bleiben die Risiken bestehen, einschließlich der Beeinträchtigung der Leistung des Modells und der potenziellen Imageschäden.
 
-Pre-Training-Daten beziehen sich auf den Prozess des Trainierens eines Modells basierend auf einer Aufgabe oder einem Datensatz.
-Fine-Tuning beinhaltet die Anpassung eines bereits trainierten Modells an ein engeres Thema oder ein spezifischeres Ziel, indem es mit einem kuratierten Datensatz trainiert wird. Dieser Datensatz umfasst typischerweise Beispiele für Eingaben und die entsprechenden gewünschten Ausgaben.
-Der Einbettungsprozess ist der Prozess der Umwandlung von kategorischen Daten (oft Text) in eine numerische Darstellung, die verwendet werden kann, um ein Sprachmodell zu trainieren. Der Einbettungsprozess beinhaltet die Darstellung von Wörtern oder Phrasen aus den Textdaten als Vektoren in einem kontinuierlichen Vektorraum. Die Vektoren werden typischerweise generiert, indem die Textdaten in ein neuronales Netzwerk eingespeist werden, das auf einem großen Textkorpus trainiert wurde.
+Pre-Training-Daten beziehen sich auf den Prozess des Trainierens eines Modells auf der Grundlage einer Aufgabe oder eines Datensatzes.
+Die Feinabstimmung umfasst die Anpassung eines bereits trainierten Modells an ein enger gefasstes Thema oder ein spezifischeres Ziel, indem es mit einem kuratierten Datensatz trainiert wird. Dieser Datensatz enthält typischerweise Beispiele für Eingaben und die entsprechenden gewünschten Ausgaben.
+Embedding ist der Prozess der Umwandlung von kategorialen Daten (oft Text) in eine digitale Repräsentation, die für das Training eines Sprachmodells verwendet werden kann. Beim Embedding werden Wörter oder Phrasen aus den Textdaten als Vektoren in einem kontinuierlichen Vektorraum dargestellt. Die Vektoren werden typischerweise durch Eingabe der Textdaten in ein neuronales Netz erzeugt, das auf einem großen Textkorpus trainiert wurde.
 
-Die Vergiftung von Daten wird als Integritätsangriff betrachtet, da die Manipulation der Trainingsdaten die Fähigkeit des Modells beeinflusst, korrekte Vorhersagen auszugeben. Natürlich bergen externe Datenquellen ein höheres Risiko, da die Modellersteller keine Kontrolle über die Daten haben oder ein hohes Vertrauensniveau, dass der Inhalt keine Voreingenommenheit, gefälschte Informationen oder unangemessenen Inhalt enthält.
+Die Vergiftung von Daten wird als Angriff auf die Integrität betrachtet, da die Manipulation der Trainingsdaten die Fähigkeit des Modells beeinträchtigt, korrekte Vorhersagen zu liefern. Es liegt auf der Hand, dass externe Datenquellen ein höheres Risiko bergen, da die Modellersteller keine Kontrolle über die Daten haben und nicht sicher sein können, dass der Inhalt frei von Bias, falschen Informationen oder unangemessenen Inhalten ist.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
-Ein bösartiger Akteur oder eine konkurrierende Marke erstellt absichtlich ungenaue oder bösartige Dokumente, die auf die Pre-Training-, Feinabstimmungsdaten oder Einbettungen eines Modells abzielen. Betrachte sowohl Split-View Data Poisoning als auch Frontrunning Poisoning Angriffsvektoren zur Veranschaulichung.
-Das Opfermodell trainiert unter Verwendung gefälschter Informationen, die in den Ausgaben generativer KI-Aufforderungen an seine Konsumenten reflektiert werden.
-Ein bösartiger Akteur kann direkt gefälschte, voreingenommene oder schädliche Inhalte in die Trainingsprozesse eines Modells einspeisen, die in nachfolgenden Ausgaben zurückgegeben werden.
-Ein ahnungsloser Nutzer injiziert indirekt sensible oder proprietäre Daten in die Trainingsprozesse eines Modells, die in nachfolgenden Ausgaben zurückgegeben werden.
-Ein Modell wird mit Daten trainiert, deren Quelle, Ursprung oder Inhalt in keinem der Trainingsbeispiele verifiziert wurde, was zu fehlerhaften Ergebnissen führen kann, wenn die Daten verfälscht oder inkorrekt sind.
-Unbeschränkter Infrastrukturzugang oder unzureichende Sandbox-Umgebungen können dazu führen, dass ein Modell unsichere Trainingsdaten aufnimmt, was zu voreingenommenen oder schädlichen Ausgaben führt. Dieses Beispiel ist auch in jedem der Trainingsbeispiele vorhanden.
-In diesem Szenario kann die Eingabe eines Nutzers in das Modell in der Ausgabe an einen anderen Nutzer reflektiert werden (was zu einem Datenleck führt), oder der Nutzer eines LLM kann Ausgaben vom Modell erhalten, die je nach Art der aufgenommenen Daten im Vergleich zum Anwendungsfall des Modells ungenau, irrelevant oder schädlich sein können (in der Regel mit einer Modellkarte reflektiert).
+Bösartige Akteure oder Wettbewerber erstellen absichtlich ungenaue oder bösartige Dokumente, die auf die Pre-Training-, Find-Tuning oder Embedding eines Modells abzielen. Betrachten Sie sowohl Split-View Data Poisoning als auch Frontrunning Poisoning Angriffsvektoren zur Veranschaulichung.
+Das Opfermodell wird anhand von gefälschten Informationen trainiert, die sich in den Ausgaben der generativen KI-Prompts an die Kundschaft widerspiegeln.
+Böswillige Akteure können direkt gefälschte, voreingenommene oder schädliche Inhalte in die Trainingsprozesse eines Modells einspeisen, die in späteren Ausgaben zurückgegeben werden.
+Eine ahnungslose Person injiziert indirekt sensible oder proprietäre Daten in die Trainingsprozesse eines Modells, die in nachfolgenden Ausgaben zurückgegeben werden.
+Ein Modell wird mit Daten trainiert, deren Quelle, Herkunft oder Inhalt in keinem der Trainingsbeispiele verifiziert wurde, was zu falschen Ergebnissen führen kann, wenn die Daten verfälscht oder fehlerhaft sind. 
+Uneingeschränkter Zugang zur Infrastruktur oder unzureichende Sandbox-Umgebungen können dazu führen, dass ein Modell unsichere Trainingsdaten verwendet, was zu verzerrten oder schädlichen Ergebnissen führt. Dieses Beispiel kann in allen Trainings-Stadien vorkommen.
+In diesem Szenario kann die Eingabe einer Person in das Modell in der Ausgabe einer anderen Person widergespiegelt werden (was zu einem Datenleck führt), oder Nutzende eines LLM können Ausgaben aus dem Modell erhalten, die, abhängig von der Art der erfassten Daten, ungenau, irrelevant oder schädlich für den Anwendungsfall des Modells sein können (in der Regel durch eine Modellkarte widergespiegelt).
 
-Ob Entwickler, Kunde oder allgemeiner Konsument des LLM, es ist wichtig zu verstehen, welche Auswirkungen diese Schwachstelle auf mögliche Risiken innerhalb Ihrer LLM-Anwendung haben könnte, wenn sie mit einem nicht-eigenen LLM interagiert, um die Legitimität von Modellausgaben basierend auf dessen Trainingsverfahren zu verstehen. Ebenso könnten Entwickler des LLM sowohl direkten als auch indirekten Angriffen auf interne oder Drittanbieterdaten, die für die Feinabstimmung und Einbettung (am häufigsten) verwendet werden, ausgesetzt sein, was ein Risiko für alle seine Konsumenten darstellt
+Ob Entwicklerinnen und Entwickler, die Kundschaft oder allgemeine Nutzende des LLM, es ist wichtig zu verstehen, wie sich diese Schwachstelle auf die potenziellen Risiken innerhalb Ihrer LLM-Anwendung auswirken könnte, wenn sie mit einem fremden LLM interagiert, um die Legitimität der Modellausgaben zu verstehen, die auf dessen Trainingsverfahren basieren. In ähnlicher Weise könnten LLM-Entwickelnde sowohl direkten als auch indirekten Angriffen auf interne Daten oder Daten von Drittanbietern ausgesetzt sein, die für die (gängigste Variante) Fine-Tuning und Embeddings verwendet werden, was ein Risiko für alle LLM-Anwender darstellt.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigationsstrategien
 
-Überprüfen Sie die Lieferkette der Trainingsdaten, insbesondere wenn sie extern bezogen werden, sowie die Aufrechterhaltung von Bestätigungen über die "ML-BOM" (Machine Learning Bill of Materials)-Methodik sowie die Überprüfung von Modellkarten.
-Überprüfen Sie die korrekte Legitimität der gezielten Datenquellen und der während der Pre-Training-, Feinabstimmungs- und Einbettungsphasen erhaltenen Daten.
-Überprüfen Sie Ihren Anwendungsfall für das LLM und die Anwendung, in die es integriert wird. Erstellen Sie verschiedene Modelle über separate Trainingsdaten oder Feinabstimmungen für unterschiedliche Anwendungsfälle, um einen genaueren und granulareren generativen KI-Ausgang gemäß dessen definiertem Anwendungsfall zu erstellen.
-Stellen Sie ausreichende Sandbox-Umgebungen durch Netzwerksteuerungen sicher, um zu verhindern, dass das Modell unbeabsichtigte Datenquellen abgreift, was den maschinellen Lernausgang beeinträchtigen könnte.
-Verwenden Sie strenge Überprüfungs- oder Eingabefilter für spezifische Trainingsdaten oder Kategorien von Datenquellen, um die Menge an gefälschten Daten zu kontrollieren. Datensanierung, mit Techniken wie statistischer Ausreißererkennung und Anomalieerkennungsmethoden, um feindliche Daten aus dem Feinabstimmungsprozess zu erkennen und zu entfernen.
-Stellen Sie detaillierte Kontrollfragen bezüglich der Quelle und des Eigentums von Datensätzen, um sicherzustellen, dass das Modell nicht vergiftet wurde, und übernehmen Sie diese Kultur in den "MLSecOps"-Zyklus. Beziehen Sie sich auf verfügbare Ressourcen wie The Foundation Model Transparency Index oder Open LLM Leaderboard zum Beispiel.
-Verwenden Sie DVC (Data Version Control, um Teile eines Datensatzes, die manipuliert, gelöscht oder hinzugefügt wurden und zu Vergiftung geführt haben, genau zu identifizieren und zu verfolgen.
-Verwenden Sie Vector Database, um benutzergenerierte Informationen hinzuzufügen, um vor Vergiftung anderer Nutzer zu schützen und sogar im laufenden Betrieb zu korrigieren, ohne ein neues Modell neu trainieren zu müssen.
-Adversarielle Robustheitstechniken wie föderiertes Lernen und Einschränkungen, um den Effekt von Ausreißern oder adversarielles Training zu minimieren, um gegen die schlimmsten Störungen der Trainingsdaten widerstandsfähig zu sein.
-Ein "MLSecOps"-Ansatz könnte darin bestehen, adversarielle Robustheit in den Trainingslebenszyklus mit der Autovergiftungstechnik einzubeziehen.
-Ein Beispielrepository dafür wäre Autopoison Testing, einschließlich Angriffe wie Inhaltsinjektionsangriffe ("Versuch, einen Markennamen in Modellantworten zu fördern") und Verweigerungsangriffe ("das Modell immer dazu bringen, sich zu weigern zu antworten"), die mit diesem Ansatz erreicht werden können.
-Testen und Erkennen, indem der Verlust während der Trainingsphase gemessen und trainierte Modelle analysiert werden, um Anzeichen eines Vergiftungsangriffs zu erkennen, indem das Modellverhalten bei spezifischen Testeingaben analysiert wird.
-Überwachung und Alarmierung bei einer Anzahl von verzerrten Antworten, die einen Schwellenwert überschreiten.
-Verwendung einer menschlichen Schleife zur Überprüfung von Antworten und Auditing.
-Implementierung spezialisierter LLMs, um gegen unerwünschte Konsequenzen zu benchmarken und andere LLMs mit Reinforcement Learning Techniken zu trainieren.
-Durchführung von LLM-basierten Red Team Übungen oder LLM Schwachstellenscans in die Testphasen des LLM-Lebenszyklus.
+Überprüfen Sie die Lieferkette der Trainingsdaten, insbesondere wenn diese extern bezogen werden, und führen Sie Bescheinigungen über die „ML-BOM“-Methode (Machine Learning Bill of Materials) sowie die Überprüfung der Modellkarten durch.
+Überprüfen Sie die korrekte Eignung der angestrebten Datenquellen und der darin enthaltenen Daten, die sowohl in der Vorbereitungsphase als auch in der Fine-Tuning- und Integrationsphase gewonnen wurden.
+Überprüfen Sie Ihren Use Case für das LLM und die Anwendung, in die es integriert werden soll. Entwickeln Sie verschiedene Modelle mit separaten Trainingsdaten oder Fine-Tuning für verschiedene Anwendungsfälle, um eine granularere und genauere generative KI-Ausgabe für den jeweiligen Anwendungsfall zu erzeugen. 
+Stellen Sie sicher, dass ein ausreichendes Sandboxing durch Netzwerkkontrollen vorhanden ist, um zu verhindern, dass das Modell unbeabsichtigte Datenquellen nutzt, die die Ergebnisse des maschinellen Lernens beeinträchtigen könnten.
+Verwenden Sie strenge Kontrollen oder Eingabefilter für bestimmte Trainingsdaten oder Kategorien von Datenquellen, um die Menge an gefälschten Daten zu kontrollieren. Datenbereinigung durch Techniken wie statistische Ausreißererkennung und Methoden zur Erkennung von Anomalien, um unerwünschte Daten zu erkennen und zu entfernen, damit sie nicht in den Feinabstimmungsprozess einfließen.
+Entwickeln Sie Kontrollfragen bezüglich der Quelle und des Eigentums von Datensätzen, um sicherzustellen, dass das Modell nicht verunreinigt wurde, und integrieren Sie diese Kultur in den MLSecOps-Zyklus. Beziehen Sie sich auf verfügbare Ressourcen wie z. B. The Foundation Model Transparency Index oder Open LLM Leaderboard.
+Verwenden Sie DVC (Data Version Control), um Teile eines Datensatzes, die manipuliert, gelöscht oder hinzugefügt wurden und zu Poisoning geführt haben, genau zu identifizieren und zu verfolgen.
+Verwenden Sie eine Vektordatenbank zum Hinzufügen von benutzergenerierten Informationen zum Schutz vor Vergiftung durch andere Personen und sogar zur Korrektur während des Betriebs, ohne dass ein neues Modell trainiert werden muss.
+Adversarial Robustness-Techniken wie föderiertes Lernen und Constraints zur Minimierung der Auswirkungen von Ausreißern oder adversariales Training zur Bewältigung von Worst-Case-Störungen der Trainingsdaten.
+Ein "MLSecOps"-Ansatz könnte darin bestehen, die adversariale Robustheit mit Hilfe der Autopoison-Technik in den Trainingslebenszyklus zu integrieren.
+Ein Beispielrepository hierfür wäre Autopoison Testing, einschließlich Angriffen wie Content Injection ("Versuch, einen Markennamen in den Modellantworten zu fördern") und Denial of Service ("das Modell immer dazu bringen, die Antwort zu verweigern"), die mit diesem Ansatz erreicht werden können.
+Testen und Erkennen durch Messung der Verluste während der Trainingsphase und Analyse der trainierten Modelle, um Anzeichen eines Vergiftungsangriffs zu erkennen, indem das Verhalten des Modells bei bestimmten Testeingaben analysiert wird.
+Überwachung und Alarmierung, wenn die Anzahl der verzerrten Antworten einen Schwellenwert überschreitet.
+Einbeziehung einer menschlichen Kontrolle zur Überprüfung der Antworten und der Auditierung.
+Implementierung spezialisierter LLMs zum Benchmarking gegen unerwünschte Konsequenzen und zum Training anderer LLMs mit Reinforcement Learning Techniken.
+Durchführung von LLM-basierten Red Team Exercises oder LLM Vulnerability Scans in den Testphasen des LLM-Lebenszyklus.
 
-### Beispiel-Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
-Die generative KI-Prompt-Ausgabe des LLM kann die Nutzer der Anwendung irreführen, was zu biasbehafteten Meinungen, Folgerungen oder noch schlimmer, Hassverbrechen usw. führen kann.
-Wenn die Trainingsdaten nicht korrekt gefiltert und|oder bereinigt werden, kann ein bösartiger Nutzer der Anwendung versuchen, toxische Daten in das Modell einzuspeisen, damit es sich an die voreingenommenen und falschen Daten anpasst.
-Ein bösartiger Akteur oder Konkurrent erstellt absichtlich ungenaue oder bösartige Dokumente, die auf die Trainingsdaten eines Modells abzielen, das gleichzeitig basierend auf Eingaben trainiert wird. Das Opfermodell trainiert unter Verwendung dieser gefälschten Informationen, die in den Ausgaben generativer KI-Aufforderungen an seine Konsumenten reflektiert werden.
+Die generative KI-Prompt-Ausgabe des LLM kann die Benutzer der Anwendung irreführen, was zu Bias (voreingenommenen Meinungen), Schlussfolgerungen oder, schlimmer noch, zu Hassverbrechen usw. führen kann.
+Wenn die Trainingsdaten nicht ordnungsgemäß gefiltert und/oder bereinigt werden, kann ein böswilliger Benutzer der Anwendung versuchen, toxische Daten in das Modell einzuspeisen, damit es sich an die voreingenommenen und falschen Daten anpasst.
+Ein böswilliger Akteur oder Wettbewerber erstellt absichtlich ungenaue oder schädliche Dokumente, die auf die Trainingsdaten eines Modells abzielen, das gleichzeitig auf der Grundlage von Eingaben trainiert wird. Das Opfermodell trainiert mit diesen gefälschten Informationen, die sich in den Ausgaben generativer KI-Aufforderungen an seine Verbraucher widerspiegeln.
 Die Schwachstelle Prompt Injection könnte ein Angriffsvektor für diese Schwachstelle sein, wenn unzureichende Sanierung und Filterung durchgeführt werden, wenn Eingaben von LLM-Anwendungskunden zum Trainieren des Modells verwendet werden. D.h., wenn bösartige oder gefälschte Daten als Teil einer Prompt-Injektionstechnik in das Modell eingegeben werden, könnte dies inhärent in die Modellaten übertragen werden.
 
-### Referenz-Links
+### Referenzen
 
 Stanford Research Paper:CS324: Stanford Research
 How data poisoning attacks corrupt machine learning models: CSO Online
@@ -235,42 +247,42 @@ FedMLSecurity:arXiv:2306.04959: Arxiv White Paper
 The poisoning of ChatGPT: Software Crisis Blog
 Poisoning Web-Scale Training Datasets - Nicholas Carlini | Stanford MLSys #75: YouTube Video
 OWASP CycloneDX v1.5: OWASP CycloneDX
-## LLM04: Modell Denial of Service
+## LLM04: Denial of Service des Modells
 
 ### Beschreibung
 
-Ein Angreifer interagiert mit einem LLM auf eine Weise, die eine außergewöhnlich hohe Menge an Ressourcen verbraucht, was zu einer Verringerung der Dienstqualität für ihn und andere Benutzer führt, sowie potenziell hohe Ressourcenkosten verursacht. Darüber hinaus ist die Möglichkeit, dass ein Angreifer in das Kontextfenster eines LLM eingreift oder es manipuliert, ein aufkommendes großes Sicherheitsbedenken. Dieses Problem wird aufgrund der zunehmenden Verwendung von LLMs in verschiedenen Anwendungen, ihrer intensiven Ressourcennutzung, der Unvorhersehbarkeit der Benutzereingaben und eines allgemeinen Mangels an Bewusstsein unter Entwicklern bezüglich dieser Verwundbarkeit immer kritischer. In LLMs repräsentiert das Kontextfenster die maximale Länge des Textes, den das Modell verwalten kann, einschließlich Eingabe und Ausgabe. Es ist eine entscheidende Eigenschaft von LLMs, da es die Komplexität der Sprachmuster, die das Modell verstehen kann, und die Größe des Textes, den es zu einem gegebenen Zeitpunkt verarbeiten kann, diktiert. Die Größe des Kontextfensters wird durch die Architektur des Modells definiert und kann zwischen Modellen variieren.
+Angreifende interagieren mit einem LLM auf eine Weise, die eine außergewöhnlich große Menge an Ressourcen verbraucht, was zu einer Verschlechterung der Servicequalität für sie und andere Personen führt und potenziell hohe Ressourcenkosten verursacht. Darüber hinaus stellt die Möglichkeit, dass Angreifende in das Kontextfenster eines LLM eindringen oder es manipulieren, ein erhebliches Sicherheitsproblem dar. Dieses Problem wird immer kritischer aufgrund der zunehmenden Verwendung von LLMs in verschiedenen Anwendungen, ihrer intensiven Ressourcennutzung, der Unvorhersehbarkeit von Benutzereingaben und eines allgemeinen Mangels an Bewusstsein für diese Verwundbarkeit unter Entwicklern. In LLMs stellt das Kontextfenster die maximale Textlänge dar, die das Modell verwalten kann, einschließlich Eingabe und Ausgabe. Es ist ein entscheidendes Merkmal von LLMs, da es die Komplexität der Sprachmuster bestimmt, die das Modell verstehen kann, und die Länge des Textes, den es zu einem gegebenen Zeitpunkt verarbeiten kann. Die Größe des Kontextfensters wird durch die Architektur des Modells bestimmt und kann von Modell zu Modell variieren.
 
-### Häufige Beispiele für Verwundbarkeiten
+### Gängige Beispiele für Schwachstellen
 
-Anfragen stellen, die zu wiederkehrender Ressourcennutzung durch die Generierung von Aufgaben in hoher Anzahl in einer Warteschlange führen, z.B. mit LangChain oder AutoGPT.
-Ungewöhnlich ressourcenintensive Anfragen senden, die ungewöhnliche Rechtschreibung oder Sequenzen verwenden.
-Kontinuierlicher Eingabeüberlauf: Ein Angreifer sendet einen Strom von Eingaben an das LLM, der sein Kontextfenster übersteigt, wodurch das Modell übermäßige Rechenressourcen verbraucht.
-Wiederholte lange Eingaben: Der Angreifer sendet wiederholt lange Eingaben an das LLM, die jeweils das Kontextfenster überschreiten.
-Rekursive Kontexterweiterung: Der Angreifer konstruiert Eingaben, die rekursive Kontexterweiterungen auslösen und zwingen das LLM dazu, das Kontextfenster wiederholt zu erweitern und zu verarbeiten.
-Flut mit Eingaben variabler Länge: Der Angreifer überflutet das LLM mit einer großen Menge an Eingaben variabler Länge, wobei jede Eingabe sorgfältig so gestaltet ist, dass sie gerade das Limit des Kontextfensters erreicht. Diese Technik zielt darauf ab, etwaige Ineffizienzen bei der Verarbeitung von Eingaben variabler Länge auszunutzen, das LLM zu belasten und potenziell dessen Reaktionsfähigkeit zu beeinträchtigen.
+Abfragen, die zu einer wiederkehrenden Ressourcennutzung führen, indem Tasks in großer Zahl in einer Warteschlange erzeugt werden, z. B. mit LangChain oder AutoGPT.
+Senden von ungewöhnlich ressourcenintensiven Anfragen, die ungewöhnliche Zeichenkombinationen oder Schreibweisen verwenden.
+Kontinuierlicher Eingabe-Overflow: Angreifende senden einen Eingabestrom an das LLM, der dessen Kontextfenster überschreitet, wodurch das Modell übermäßig viele Rechenressourcen verbraucht.
+Wiederholte lange Eingaben: Angreifende senden wiederholt lange Eingaben an den LLM, die jeweils über das Kontextfenster überschreiten.
+Rekursive Kontexterweiterung: Angreifende konstruieren Eingaben, die rekursive Kontexterweiterungen auslösen und das LLM zwingen, das Kontextfenster wiederholt zu erweitern und zu verarbeiten.
+Überflutung mit Eingaben variabler Länge: Angreifende überfluten das LLM mit einer großen Anzahl von Eingaben variabler Länge, wobei jede Eingabe sorgfältig so konstruiert ist, dass sie gerade die Grenze des Kontextfensters erreicht. Diese Technik zielt darauf ab, mögliche Ineffizienzen bei der Verarbeitung von Eingaben variabler Länge auszunutzen, das LLM zu überlasten und möglicherweise seine Reaktionsfähigkeit zu beeinträchtigen.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigationsstrategien
 
-Implementierung von Eingabevalidierung und -sanierung, um sicherzustellen, dass Benutzereingaben definierten Grenzen entsprechen und jeglichen bösartigen Inhalt herausfiltern.
-Begrenzung der Ressourcennutzung pro Anfrage oder Schritt, sodass Anfragen, die komplexe Teile beinhalten, langsamer ausgeführt werden.
-Durchsetzung von API-Ratenlimits, um die Anzahl der Anfragen, die ein einzelner Benutzer oder eine IP-Adresse innerhalb eines bestimmten Zeitrahmens stellen kann, zu beschränken.
-Limitierung der Anzahl von Aktionen in der Warteschlange und der Gesamtzahl von Aktionen in einem System, das auf LLM-Antworten reagiert.
-Kontinuierliche Überwachung der Ressourcennutzung des LLM, um abnormale Spitzen oder Muster zu identifizieren, die auf einen DoS-Angriff hinweisen könnten.
-Strikte Eingabelimits basierend auf dem Kontextfenster des LLM setzen, um Überlastung und Ressourcenerschöpfung zu verhindern.
-Bewusstsein unter Entwicklern über potenzielle DoS-Verwundbarkeiten in LLMs fördern und Leitlinien für sichere LLM-Implementierung bereitstellen.
+Validierung und Bereinigung von Eingaben, um sicherzustellen, dass Benutzereingaben die festgelegten Grenzen einhalten und schädliche Inhalte herausgefiltert werden.
+Begrenzen Sie die Ressourcennutzung pro Anfrage oder Vorgang, um die Ausführung von Anfragen mit komplexen Teilen zu verlangsamen.
+Setzen Sie API-Rate Limits durch, um die Anzahl der Anfragen zu begrenzen, die ein einzelne Personen oder eine IP-Adresse in einem bestimmten Zeitraum stellen kann.
+Begrenzen Sie die Anzahl der Aktionen in der Warteschlange und die Gesamtanzahl der Aktionen in einem System, das auf LLM-Antworten reagiert.
+Kontinuierliche Überwachung der LLM-Ressourcenauslastung, um abnormale Spitzen oder Muster zu erkennen, die auf einen DoS-Angriff hindeuten könnten.
+Setzen Sie strikte Eingabebegrenzungen basierend auf dem Kontextfenster des LLM, um eine Überlastung und Erschöpfung der Ressourcen zu vermeiden.
+Entwickler für potenzielle DoS-Schwachstellen in LLMs zu sensibilisieren und Richtlinien für eine sichere LLM-Implementierung bereitzustellen.
 
-### Beispielszenarien für Angriffe
+### Beispiele für Angriffsszenarien
 
-Ein Angreifer sendet wiederholt mehrere schwierige und kostspielige Anfragen an ein gehostetes Modell, was zu schlechterem Service für andere Benutzer und erhöhten Ressourcenrechnungen für den Host führt.
-Ein Stück Text auf einer Webseite wird gefunden, während ein LLM-gesteuertes Tool Informationen sammelt, um auf eine harmlose Anfrage zu antworten. Dies führt dazu, dass das Tool viele weitere Webseitenanfragen stellt, was zu einem großen Ressourcenverbrauch führt.
-Ein Angreifer bombardiert das LLM kontinuierlich mit Eingaben, die sein Kontextfenster überschreiten. Der Angreifer kann automatisierte Skripte oder Tools verwenden, um eine hohe Menge an Eingaben zu senden, die die Verarbeitungskapazitäten des LLM überwältigen. Als Ergebnis verbraucht das LLM übermäßige Rechenressourcen, was zu einer signifikanten Verlangsamung oder vollständigen Unreaktivität des Systems führt.
-Ein Angreifer sendet eine Reihe von sequenziellen Eingaben an das LLM, wobei jede Eingabe so gestaltet ist, dass sie knapp unter dem Limit des Kontextfensters liegt. Indem diese Eingaben wiederholt eingereicht werden, zielt der Angreifer darauf ab, die verfügbare Kapazität des Kontextfensters zu erschöpfen. Da das LLM Mühe hat, jede Eingabe innerhalb seines Kontextfensters zu verarbeiten, werden die Systemressourcen belastet, was potenziell zu einer verminderten Leistung oder einem vollständigen Dienstausfall führt.
-Ein Angreifer nutzt die rekursiven Mechanismen des LLM, um wiederholt eine Kontexterweiterung auszulösen. Indem Eingaben konstruiert werden, die das rekursive Verhalten des LLM ausnutzen, zwingt der Angreifer das Modell dazu, das Kontextfenster wiederholt zu erweitern und zu verarbeiten, wodurch erhebliche Rechenressourcen verbraucht werden. Dieser Angriff belastet das System und kann zu einem DoS-Zustand führen, der das LLM unreaktiv macht oder es zum Absturz bringt.
-Ein Angreifer überflutet das LLM mit einer großen Menge an Eingaben variabler Länge, die sorgfältig so gestaltet sind, dass sie das Limit des Kontextfensters annähern oder erreichen. Indem das LLM mit Eingaben verschiedener Längen überwältigt wird, zielt der Angreifer darauf ab, etwaige Ineffizienzen bei der Verarbeitung von Eingaben variabler Länge auszunutzen. Diese Flut an Eingaben legt eine übermäßige Last auf die Ressourcen des LLM, was potenziell zu einer Leistungsdegradation führt und die Fähigkeit des Systems behindert, auf legitime Anfragen zu reagieren.
-Während DoS-Angriffe üblicherweise darauf abzielen, Systemressourcen zu überwältigen, können sie auch andere Aspekte des Systemverhaltens ausnutzen, wie z.B. API-Limitierungen. Beispielsweise hat in einem kürzlichen Sicherheitsvorfall bei Sourcegraph der bösartige Akteur ein durchgesickertes Admin-Zugangstoken verwendet, um API-Ratenlimits zu ändern, wodurch potenziell Dienstunterbrechungen durch die Ermöglichung abnormaler Anfragevolumen verursacht wurden.
+Angreifende senden wiederholt mehrere komplexe und teure Anfragen an ein gehostetes Modell, was zu einer Verschlechterung des Dienstes für andere Personen und zu höheren Ressourcenkosten für den Betreiber führt.
+Ein Stück Text auf einer Webseite wird gefunden, während ein LLM-gesteuertes Tool Informationen sammelt, um auf eine harmlose Anfrage zu antworten. Dies führt dazu, dass das Tool viele weitere Anfragen an die Webseite stellt, was zu einem hohen Ressourcenverbrauch führt.
+Angreifende bombardieren das LLM kontinuierlich mit Eingaben, die das Kontextfenster des LLM überschreiten. Die Angreifenden können automatisierte Skripte oder Tools verwenden, um eine große Menge an Eingaben zu senden, die die Verarbeitungskapazität des LLM übersteigen. Infolgedessen verbraucht der LLM übermäßig viele Rechenressourcen, was zu einer erheblichen Verlangsamung oder zum völligen Ausfall des Systems führt.
+Angreifende senden eine Reihe von sequentiellen Eingaben an das LLM, wobei jede Eingabe so gestaltet ist, dass sie knapp unterhalb der Grenze des Kontextfensters liegt. Durch das wiederholte Senden dieser Eingaben versuchen die Angreifenden, die verfügbare Kapazität des Kontextfensters auszuschöpfen. Da das LLM Mühe hat, jede Eingabe innerhalb seines Kontextfensters zu verarbeiten, werden die Systemressourcen belastet, was potenziell zu einer verminderten Leistung oder einem vollständigen Ausfall des Dienstes führt.
+Angreifende nutzen die rekursiven Mechanismen des LLM, um wiederholt eine Kontexterweiterung auszulösen. Indem Eingaben konstruiert werden, die das rekursive Verhalten des LLM ausnutzen, zwingen die Angreifenden das Modell dazu, das Kontextfenster wiederholt zu erweitern und zu verarbeiten, wodurch erhebliche Rechenressourcen verbraucht werden. Dieser Angriff belastet das System und kann zu einem DoS-Zustand führen, der das LLM handlungsunfähig macht oder zum Absturz bringt.
+Angreifende überfluten das LLM mit einer großen Anzahl von Eingaben variabler Länge, die sorgfältig so gestaltet sind, dass sie sich der Grenze des Kontextfensters nähern oder diese erreichen. Durch die Überflutung des LLM mit Eingaben variabler Länge versuchen die Angreifenden, mögliche Ineffizienzen bei der Verarbeitung von Eingaben variabler Länge auszunutzen. Diese Flut von Eingaben belastet die Ressourcen des LLM übermäßig, was zu einer Verschlechterung der Leistung führen und die Fähigkeit des Systems, auf legitime Anfragen zu reagieren, beeinträchtigen kann.
+Während DoS-Angriffe in der Regel darauf abzielen, Systemressourcen zu überlasten, können sie auch andere Aspekte des Systemverhaltens ausnutzen, wie z. B. API-Beschränkungen. Bei einem kürzlich aufgetretenen Sicherheitsvorfall bei Sourcegraph beispielsweise nutzten böswillige Akteure ein durchgesickertes Admin-Zugriffstoken, um API-Rate-Limiting zu ändern, was potenziell zu Dienstunterbrechungen führte, indem es anormale Anfragevolumina zuließ.
 
-### Referenzlinks
+### Referenzen
 
 LangChain max_iterations: hwchase17 auf Twitter
 Sponge Examples: Energy-Latency Attacks on Neural Networks: Arxiv White Paper
@@ -281,42 +293,43 @@ Sourcegraph Security Incident on API Limits Manipulation and DoS Attack : Source
 
 ### Beschreibung
 
-Die Lieferkette in LLMs kann anfällig sein und die Integrität von Trainingsdaten, ML-Modellen und Einsatzplattformen beeinträchtigen. Diese Schwachstellen können zu voreingenommenen Ergebnissen, Sicherheitsverletzungen oder sogar zu kompletten Systemausfällen führen. Traditionell konzentrieren sich Schwachstellen auf Softwarekomponenten, aber maschinelles Lernen erweitert dies mit vortrainierten Modellen und Trainingsdaten, die von Drittanbietern bereitgestellt werden und anfällig für Manipulations- und Poisoning-Angriffe sind.
+Die LLM-Lieferkette kann Schwachstellen aufweisen, die die Integrität von Trainingsdaten, ML-Modellen und Anwendungsplattformen beeinträchtigen. Diese Schwachstellen können zu verzerrten Ergebnissen, Sicherheitsverletzungen oder sogar zu kompletten Systemausfällen führen. Traditionell konzentrieren sich Schwachstellen auf Softwarekomponenten, doch beim maschinellen Lernen kommt hinzu, dass vortrainierte Modelle und Trainingsdaten, die von Dritten bereitgestellt werden, anfällig für Manipulationen und Schadangriffe sind.
 
-Schließlich können LLM-Plugin-Erweiterungen ihre eigenen Schwachstellen mitbringen. Diese werden in LLM07 - Unsicheres Plugin-Design beschrieben, das das Schreiben von LLM-Plugins abdeckt und hilfreiche Informationen zur Bewertung von Plugins Dritter bereitstellt.
+Schließlich können LLM-Plugin-Erweiterungen ihre eigenen Schwachstellen mitbringen. Diese werden in LLM07 - Unsicheres Plugin-Design beschrieben, das das Schreiben von LLM-Plugins abdeckt und nützliche Informationen zur Bewertung von Plugins von Drittanbietern liefert.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
-Traditionelle Schwachstellen in Paketen Dritter, einschließlich veralteter oder nicht mehr unterstützter Komponenten.
-Verwendung eines anfälligen vortrainierten Modells zum Feintuning.
-Verwendung von vergifteten crowd-sourced Daten zum Training.
-Verwendung veralteter oder nicht mehr unterstützter Modelle, die nicht mehr gewartet werden, führt zu Sicherheitsproblemen.
-Unklare AGBs und Datenschutzrichtlinien der Modellbetreiber führen dazu, dass sensible Daten der Anwendung für das Modelltraining verwendet werden und anschließend sensible Informationen preisgegeben werden. Dies kann auch für Risiken gelten, die sich aus der Verwendung von urheberrechtlich geschütztem Material durch den Modellanbieter ergeben.
+Traditionelle Schwachstellen in Paketen von Drittanbietern, einschließlich veralteter oder nicht mehr unterstützter Komponenten.
+Verwendung eines anfälligen, vortrainierten Modells für das Fine-Tuning.
+Verwendung vergifteter Crowd-Sourced-Daten für das Training.
+Verwendung veralteter oder nicht mehr unterstützter Modelle, die nicht mehr gewartet werden und zu Sicherheitsproblemen führen.
+Unklare AGB und Datenschutzrichtlinien der Modellbetreiber führen dazu, dass sensible Daten der Anwendung für das Modelltraining verwendet werden und anschließend sensible Informationen preisgegeben werden. Dies kann auch für Risiken gelten, die sich aus der Verwendung von urheberrechtlich geschütztem Material durch den Modellanbieter ergeben.
 
-### Strategien zur Prävention und Mitigation
+### Präventions- und Mitigationsstrategien
 
-Datenquellen und Lieferanten sorgfältig prüfen, einschließlich AGBs und deren Datenschutzrichtlinien, nur vertrauenswürdige Lieferanten verwenden. Sicherstellen, dass angemessene und unabhängig geprüfte Sicherheit vorhanden ist und dass die Richtlinien des Modellbetreibers mit Ihren Datenschutzrichtlinien übereinstimmen, d.h. Ihre Daten werden nicht für das Training ihrer Modelle verwendet; ebenso Zusicherungen und rechtliche Milderungen gegen die Verwendung urheberrechtlich geschützter Materialien von Modellbetreuern suchen.
-Nur seriöse Plugins verwenden und sicherstellen, dass sie für Ihre Anwendungsanforderungen getestet wurden. LLM-Unsicheres Plugin-Design bietet Informationen zu den LLM-Aspekten des unsicheren Plugin-Designs, gegen die Sie testen sollten, um Risiken durch die Verwendung von Plugins Dritter zu mindern.
-Verstehen und anwenden der Mitigierungssmaßnahmen, die in den OWASP Top Ten's A06:2021 – Anfällige und veraltete Komponenten gefunden wurden. Dies umfasst das Scannen, Verwalten und Patchen von Komponenten. Für Entwicklungsumgebungen mit Zugang zu sensiblen Daten sollten diese Kontrollen auch in diesen Umgebungen angewendet werden.
-Ein aktuelles Inventar von Komponenten mit einer Software-Bill-of-Materials (SBOM) pflegen, um sicherzustellen, dass Sie ein aktuelles, präzises und signiertes Inventar haben, das Manipulationen an bereitgestellten Paketen verhindert. SBOMs können verwendet werden, um schnell neue, Zero-Day-Schwachstellen zu erkennen und zu melden.
-Zum Zeitpunkt des Schreibens decken SBOMs keine Modelle, ihre Artefakte und Datensätze ab. Wenn Ihre LLM-Anwendung ihr eigenes Modell verwendet, sollten Sie MLOps-Best Practices und Plattformen verwenden, die sichere Modellrepositories mit Daten-, Modell- und Experiment-Tracking bieten.
-Sie sollten auch Modell- und Code-Signierung verwenden, wenn Sie externe Modelle und Lieferanten verwenden.
-Anomalieerkennung und Tests auf adversarielle Robustheit bei bereitgestellten Modellen und Daten können helfen, Manipulationen und Vergiftungen zu erkennen, wie in Trainingsdaten-Vergiftung besprochen; idealerweise sollte dies Teil von MLOps-Pipelines sein; jedoch sind dies aufkommende Techniken und können möglicherweise einfacher als Teil von Red-Teaming-Übungen implementiert werden.
-Ausreichendes Monitoring implementieren, um das Scannen von Komponenten und Umgebungsschwachstellen, die Verwendung nicht autorisierter Plugins und veralteter Komponenten, einschließlich des Modells und seiner Artefakte, abzudecken.
-Eine Patching-Richtlinie implementieren, um anfällige oder veraltete Komponenten zu mildern. Sicherstellen, dass die Anwendung auf eine gepflegte Version von APIs und dem zugrunde liegenden Modell angewiesen ist.
-Sicherheit und Zugangskontrollen der Lieferanten regelmäßig überprüfen und auditieren, um sicherzustellen, dass es keine Änderungen in ihrer Sicherheitslage oder AGBs gibt.
+Prüfen Sie Datenquellen und -anbieter sorgfältig, einschließlich der Allgemeinen Geschäftsbedingungen und Datenschutzrichtlinien; verwenden Sie nur vertrauenswürdige Anbieter. Stellen Sie sicher, dass ein angemessenes und unabhängig verifiziertes Sicherheitsniveau vorhanden ist und dass die Richtlinien des Modellanbieters mit Ihren Datenschutzrichtlinien übereinstimmen, d. h. dass Ihre Daten nicht für das Training ihrer Modelle verwendet werden.
+Verwenden Sie nur seriöse Plugins und stellen Sie sicher, dass diese für Ihre Anwendungsanforderungen getestet wurden. _LLM07 Unsicheres Plugin-Design_ bietet Informationen über die LLM-Aspekte eines unsicheren Plugin-Designs, gegen die Sie testen sollten, um die Risiken bei der Verwendung von Plugins Dritter zu minimieren.
+Verständnis und Anwendung der in den OWASP Top 10 [A06:2021 - Vulnerable and Outdated Components] (https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/) identifizierten Abhilfemaßnahmen. Dies beinhaltet das Scannen, Verwalten und Patchen von Komponenten. Für Entwicklungsumgebungen mit Zugriff auf sensible Daten sollten diese Kontrollen auch in diesen Umgebungen angewendet werden.
+Führen Sie ein aktuelles Inventar der Komponenten mit einem Software Bill of Materials (SBOM), um sicherzustellen, dass Sie über ein aktuelles, genaues und signiertes Inventar verfügen, das Manipulationen an bereitgestellten Paketen verhindert. SBOMs können verwendet werden, um neue Zero-Day-Schwachstellen schnell zu identifizieren und zu melden.
+Zum Zeitpunkt der Erstellung dieses Dokuments decken die SBOMs keine Modelle, deren Artefakte und Datensätze ab. Wenn Ihre LLM-Anwendung ein proprietäres Modell verwendet, sollten Sie bewährte MLOps-Praktiken und -Plattformen verwenden, die sichere Modell-Repositories mit Daten-, Modell- und Experimentverfolgung bieten.
+Sie sollten auch Modell- und Codesignaturen verwenden, wenn Sie externe Modelle und Anbieter verwenden. 
+Die Erkennung von Anomalien und Robustheitstests gegen die bereitgestellten Modelle und Daten können helfen, Manipulationen und Vergiftungen aufzudecken, wie in [Poisoning von Trainingsdaten
+](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/1_0_vulns/Training_Data_Poisoning.md) erörtert. Idealerweise sollte dies Teil der MLOps-Pipelines sein, obwohl es sich hierbei um neue Techniken handelt, die möglicherweise leichter im Rahmen von Red Teaming-Übungen implementiert werden können.
+Implementieren Sie eine ausreichende Überwachung, um das Scannen von Komponenten und Umgebungen auf Schwachstellen, die Verwendung nicht autorisierter Plugins und veraltete Komponenten, einschließlich des Modells und seiner Artefakte, abzudecken.
+Implementieren Sie eine Patch-Richtlinie, um anfällige oder veraltete Komponenten zu entschärfen. Sicherstellen, dass die Anwendung eine gepflegte Version der APIs und des zugrundeliegenden Modells verwendet.
+Überprüfen Sie regelmäßig die Sicherheit und den Zugang des Anbieters und stellen Sie sicher, dass es keine Änderungen an der Sicherheitslage oder den Nutzungsbedingungen gibt.
 
-### Beispiel-Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
-Ein Angreifer nutzt eine anfällige Python-Bibliothek, um ein System zu kompromittieren. Dies geschah beim ersten Datenleck von OpenAI.
-Ein Angreifer bietet ein LLM-Plugin zur Flugsuche an, das gefälschte Links generiert, die Benutzer zu Scams dirigieren.
-Ein Angreifer nutzt das PyPi-Paketregister aus, um Modellentwickler dazu zu bringen, ein kompromittiertes Paket herunterzuladen und Daten zu exfiltrieren oder Privilegien in einer Modellentwicklungsumgebung zu eskalieren. Dies war ein tatsächlicher Angriff.
-Ein Angreifer vergiftet ein öffentlich verfügbares vortrainiertes Modell, das auf Wirtschaftsanalyse und Sozialforschung spezialisiert ist, um eine Hintertür zu schaffen, die Falschinformationen und Fake News generiert. Sie stellen es auf einem Modellmarktplatz (z.B. Hugging Face) zur Verfügung, damit Opfer es verwenden.
-Ein Angreifer vergiftet öffentlich verfügbare Datensätze, um beim Feintuning von Modellen eine Hintertür zu schaffen. Die Hintertür bevorzugt subtil bestimmte Unternehmen in verschiedenen Märkten.
-Ein kompromittierter Mitarbeiter eines Lieferanten (Outsourcing-Entwickler, Hosting-Unternehmen usw.) exfiltriert Daten, Modell oder Code und stiehlt geistiges Eigentum.
-Ein LLM-Betreiber ändert seine AGBs und Datenschutzrichtlinie, um ein explizites Opt-out aus der Verwendung von Anwendungsdaten für das Modelltraining zu verlangen, was zur Speicherung sensibler Daten führt.
+Angreifende verwenden eine verwundbare Python-Bibliothek, um ein System zu kompromittieren. Dies geschah beim ersten OpenAI-Datenleck.
+Angreifende bieten ein LLM-Plugin für die Flugsuche an, das gefälschte Links generiert, die Benutzer auf betrügerische Websites leiten.
+Angreifende nutzen das PyPi-Paketregister aus, um Modellentwickler dazu zu bringen, ein kompromittiertes Paket herunterzuladen und Daten zu exfiltrieren oder Privilegien in einer Modellentwicklungsumgebung zu eskalieren. Dies war ein echter Angriff.
+Angreifende vergiften ein öffentlich verfügbares vortrainiertes Modell, das auf Wirtschaftsanalyse und Sozialforschung spezialisiert ist, um eine Hintertür zu schaffen, die Falschinformationen und Fake News generiert. Er stellt das Modell auf einem Marktplatz für Modelle (z. B. Hugging Face) zur Verfügung, damit die Opfer es verwenden.
+Angreifende vergiften öffentlich verfügbare Datensätze, um eine Hintertür beim Fine-Tuning von Modellen zu schaffen. Die Hintertür begünstigt auf subtile Weise bestimmte Unternehmen in verschiedenen Märkten. 
+Eine kompromittierte Person eines Lieferanten (Outsourcing-Entwickler, Hosting-Unternehmen usw.) exfiltriert Daten, Modell oder Code und stiehlt geistiges Eigentum.
+Ein LLM-Betreiber ändert seine AGB und Datenschutzbestimmungen dahingehend, dass eine ausdrückliche Ablehnung der Verwendung von Anwendungsdaten für das Modelltraining erforderlich ist, was zur Speicherung sensibler Daten führt.
 
-### Referenzlinks
+### Referenzen
 
 ChatGPT-Datenleck bestätigt, da Sicherheitsfirma vor anfälliger Komponentenausnutzung warnt: Security Week
 Plugin-Überprüfungsprozess OpenAI
@@ -332,34 +345,34 @@ VirusTotal Poisoning: MITRE ATLAS
 
 ### Beschreibung
 
-LLM-Anwendungen (Large Language Models) können das Potenzial haben, sensible Informationen, proprietäre Algorithmen oder andere vertrauliche Details durch ihre Ausgabe zu offenbaren. Dies kann zu unbefugtem Zugriff auf sensible Daten, geistiges Eigentum, Verletzungen der Privatsphäre und anderen Sicherheitsverstößen führen. Es ist wichtig für Nutzer von LLM-Anwendungen, sich darüber im Klaren zu sein, wie sie sicher mit LLMs interagieren und die Risiken erkennen können, die mit der unbeabsichtigten Eingabe sensibler Daten verbunden sind, die anschließend von der LLM in der Ausgabe anderswo zurückgegeben werden könnten.
+LLM-Anwendungen haben das Potenzial, durch ihre Ausgabe sensible Informationen, proprietäre Algorithmen oder andere vertrauliche Details zu offenbaren. Dies kann zu unberechtigtem Zugriff auf sensible Daten, geistiges Eigentum, Verletzungen der Privatsphäre und anderen Sicherheitsverletzungen führen. Es ist wichtig, dass die Benutzerinnen und Benutzer von LLM-Anwendungen wissen, wie sie sicher mit LLMs interagieren können, und dass sie sich der Risiken bewusst sind, die mit der unbeabsichtigten Eingabe sensibler Daten verbunden sind, die dann von der LLM in der Ausgabe an anderer Stelle zurückgegeben werden können.
 
-Um dieses Risiko zu mindern, sollten LLM-Anwendungen eine angemessene Datenbereinigung (PII-Scrubbing) durchführen, um zu verhindern, dass Benutzerdaten in die Trainingsdaten des Modells gelangen. Eigentümer von LLM-Anwendungen sollten auch angemessene Nutzungsbedingungen zur Verfügung stellen, um Verbraucher darüber zu informieren, wie ihre Daten verarbeitet werden, und die Möglichkeit bieten, sich dagegen zu entscheiden, dass ihre Daten in das Trainingsmodell aufgenommen werden.
+Um dieses Risiko zu minimieren, sollten LLM-Anwendungen eine angemessene Datenbereinigung durchführen, um zu verhindern, dass Benutzerdaten in die Daten des Trainingsmodells gelangen. Die Eigentümer von LLM-Anwendungen sollten auch über angemessene Nutzungsbedingungen verfügen, um die Verbraucher darüber zu informieren, wie ihre Daten verarbeitet werden, und ihnen die Möglichkeit zu geben, die Aufnahme ihrer Daten in das Trainingsmodell abzulehnen.
 
-Die Interaktion zwischen Verbraucher und LLM-Anwendung bildet eine Zwei-Wege-Vertrauensgrenze, bei der wir das Client->LLM-Eingabe oder das LLM->Client-Ausgabe nicht grundsätzlich vertrauen können. Es ist wichtig zu beachten, dass diese Schwachstelle davon ausgeht, dass bestimmte Voraussetzungen außerhalb des Geltungsbereichs liegen, wie Bedrohungsmodellierungsübungen, Sicherung der Infrastruktur und angemessene Sandboxing. Das Hinzufügen von Einschränkungen innerhalb des Systemprompts bezüglich der Arten von Daten, die das LLM zurückgeben sollte, kann eine gewisse Milderung gegen die Offenlegung sensibler Informationen bieten, aber die unvorhersehbare Natur der LLMs bedeutet, dass solche Einschränkungen möglicherweise nicht immer eingehalten werden und durch Prompt-Injektion oder andere Vektoren umgangen werden könnten.
+Die Interaktion zwischen Verbraucher und LLM-Anwendung bildet eine zweiseitige Vertrauensgrenze, bei der wir weder den Eingaben des Clients->LLM noch den Ausgaben des LLM->Client vertrauen können. Es ist wichtig zu beachten, dass diese Schwachstelle davon ausgeht, dass bestimmte Voraussetzungen nicht gegeben sind, wie z.B. Übungen zur Bedrohungsmodellierung, eine sichere Infrastruktur und eine angemessene Sandbox. Das Hinzufügen von Einschränkungen in der System-Eingabeaufforderung bezüglich der Datentypen, die der LLM zurückgeben soll, kann einen gewissen Schutz vor der Offenlegung sensibler Informationen bieten. Die unvorhersehbare Natur von LLMs bedeutet jedoch, dass solche Einschränkungen nicht immer beachtet werden und durch Prompt-Injection oder andere Vektoren umgangen werden könnten.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
-Unvollständige oder unsachgemäße Filterung sensibler Informationen in den Antworten des LLMs.
-Overfitting oder Memorierung sensibler Daten im Trainingsprozess des LLMs.
-Unbeabsichtigte Offenlegung vertraulicher Informationen aufgrund von Fehlinterpretationen des LLMs, mangelnden Datenbereinigungsmethoden oder Fehlern.
+Unvollständige oder unsachgemäße Filterung von sensiblen Informationen in den Antworten des LLM.
+Übermäßige Angleichung oder Einprägung sensibler Daten im Trainingsprozess des LLM.
+Unbeabsichtigte Offenlegung vertraulicher Informationen aufgrund von Fehlinterpretationen des LLM, fehlenden Datenbereinigungsmethoden oder Fehlern.
+4. 
+### Präventions- und Mitigationsstrategien
 
-### Strategien zur Prävention und Milderung
+Integrieren Sie geeignete Datenbereinigungs- und Scrubbing-Techniken, um zu verhindern, dass Benutzerdaten in die Daten des Trainingsmodells gelangen.
+Implementierung robuster Eingabevalidierungs- und -bereinigungsmethoden, um potenziell schädliche Eingaben zu identifizieren und zu entfernen, damit das Modell nicht vergiftet wird.
+Wenn das Modell mit Daten angereichert und Fine-Tuning wird: (z. B. Daten, die dem Modell vor oder während der Bereitstellung zugeführt werden)
+Alles, was in den Fine-Tuning-Daten als sensibel eingestuft ist, könnte Personen offengelegt werden. Wenden Sie daher das Least-Privilege-Prinzip an und trainieren Sie das Modell nicht mit Informationen, auf die Personen mit den höchsten Rechten zugreifen können und die einer weniger privilegierten Personen angezeigt werden könnten.
+Der Zugriff auf externe Datenquellen (Orchestrierung von Daten zur Laufzeit) sollte eingeschränkt werden.
+Strenge Zugriffskontrollmethoden für externe Datenquellen und ein rigoroser Ansatz zur Aufrechterhaltung einer sicheren Lieferkette.
 
-Integriere angemessene Datenbereinigungs- und Scrubbing-Techniken, um zu verhindern, dass Benutzerdaten in die Trainingsdaten des Modells gelangen.
-Implementiere robuste Eingabevalidierungs- und Sanitisierungsmethoden, um potenziell bösartige Eingaben zu identifizieren und herauszufiltern, um zu verhindern, dass das Modell vergiftet wird.
-Wenn das Modell mit Daten angereichert und feinabgestimmt wird: (z.B. Daten, die dem Modell vor oder während der Bereitstellung zugeführt werden)
-Alles, was in den Feinabstimmungsdaten als sensibel erachtet wird, hat das Potenzial, einem Benutzer offenbart zu werden. Wende daher die Regel des geringsten Privilegs an und trainiere das Modell nicht mit Informationen, auf die der am höchsten privilegierte Benutzer zugreifen kann und die einem Benutzer mit niedrigeren Privilegien angezeigt werden können.
-Der Zugang zu externen Datenquellen (Orchestrierung von Daten zur Laufzeit) sollte begrenzt werden.
-Wende strenge Zugangskontrollmethoden für externe Datenquellen an und verfolge einen rigorosen Ansatz zur Aufrechterhaltung einer sicheren Lieferkette.
+### Beispiele für Angriffsszenarien
 
-### Beispielszenarien für Angriffe
+Die ahnungslose legitime Benutzerin A erhält über den LLM Zugang zu bestimmten anderen Benutzerdaten, wenn sie in nicht böswilliger Absicht mit der LLM-Anwendung interagiert.
+Benutzer A zielt darauf ab, die Eingabefilter und die Bereinigungsfunktionen des LLM durch eine ausgeklügelte Abfolge von Eingabeaufforderungen zu umgehen und Personen dazu zu bringen, personenbezogene Informationen (PII) über andere Personen der Anwendung preiszugeben.
+Personenbezogene Daten wie z.B. PII gelangen über Trainingsdaten in das Modell, entweder durch Unachtsamkeit die Person selbst oder durch die LLM-Anwendung. Dies könnte das Risiko und die Wahrscheinlichkeit von Szenario 1 oder 2 oben erhöhen.
 
-Ein ahnungsloser legitimer Benutzer A wird bestimmten anderen Benutzerdaten über das LLM ausgesetzt, wenn er auf nicht bösartige Weise mit der LLM-Anwendung interagiert.
-Benutzer A zielt auf eine sorgfältig erstellte Reihe von Prompts, um Eingabefilter und Sanitisierungsmaßnahmen des LLMs zu umgehen, damit es sensible Informationen (PII) über andere Benutzer der Anwendung preisgibt.
-Persönliche Daten wie PII werden aufgrund von Fahrlässigkeit des Benutzers selbst oder der LLM-Anwendung in das Modell über das Trainingsdaten geleakt. Dieser Fall könnte das Risiko und die Wahrscheinlichkeit von Szenario 1 oder 2 oben erhöhen.
-
-### Referenzlinks
+### Referenzen
 
 AI data leak crisis: New tool prevents company secrets from being fed to ChatGPT: Fox Business
 Lessons learned from ChatGPT’s Samsung leak: Cybernews
@@ -371,37 +384,37 @@ Ensuring the Security of Large Language Models: Experts Exchange
 
 ### Beschreibung
 
-LLM-Plugins sind Erweiterungen, die bei Bedarf automatisch vom Modell während der Benutzerinteraktionen aufgerufen werden. Die Modellintegrationsplattform steuert sie, und die Anwendung hat möglicherweise keine Kontrolle über die Ausführung, insbesondere wenn das Modell von einer anderen Partei gehostet wird. Darüber hinaus implementieren Plugins wahrscheinlich Freitexteingaben vom Modell ohne Validierung oder Typüberprüfung, um mit Begrenzungen der Kontextgröße umzugehen. Dies ermöglicht einem potenziellen Angreifer, eine bösartige Anfrage an das Plugin zu konstruieren, die zu einer breiten Palette unerwünschter Verhaltensweisen führen kann, bis hin zur Ausführung von Remote-Code.
+LLM-Plugins sind Erweiterungen, die bei Bedarf automatisch vom Modell während der Benutzerinteraktionen aufgerufen werden. Sie werden von der Modellintegrationsplattform gesteuert und die Anwendung hat möglicherweise keine Kontrolle über ihre Ausführung, insbesondere wenn das Modell von einer anderen Partei gehostet wird. Darüber hinaus implementieren Plugins wahrscheinlich Freitexteingaben aus dem Modell ohne Validierung oder Typüberprüfung, um mit Beschränkungen der Kontextgröße umzugehen. Dadurch können potenzielle Angreifende eine böswillige Anfrage an das Plugin konstruieren, die zu einem breiten Spektrum an unerwünschtem Verhalten bis hin zur Ausführung von Remote-Code führen kann.
 
-Der Schaden durch bösartige Eingaben hängt oft von unzureichenden Zugriffskontrollen und dem Versäumnis ab, die Autorisierung über Plugins hinweg zu verfolgen. Unzureichende Zugriffskontrolle ermöglicht es einem Plugin, anderen Plugins blind zu vertrauen und anzunehmen, dass die Eingaben vom Endbenutzer bereitgestellt wurden. Solch eine unzureichende Zugriffskontrolle kann ermöglichen, dass bösartige Eingaben schädliche Konsequenzen haben, von der Datenausfiltrierung, Ausführung von Remote-Code und Eskalation von Privilegien.
+Der Schaden, der durch böswillige Eingaben verursacht wird, hängt oft von unzureichenden Zugriffskontrollen und dem Versäumnis ab, die Autorisierung über Plugins hinweg zu verfolgen. Unzureichende Zugriffskontrollen ermöglichen es einem Plugin, anderen Plugins blind zu vertrauen und davon auszugehen, dass die Eingaben vom Endbenutzer stammen. Solche unzureichenden Zugriffskontrollen können dazu führen, dass böswillige Eingaben schädliche Folgen haben, von der Datenausfiltrierung über die Ausführung von Remote-Code bis hin zur Privilegieneskalation.
 
-Dieser Punkt konzentriert sich auf die Erstellung von LLM-Plugins anstatt auf Drittanbieter-Plugins, die von LLM-Supply-Chain-Vulnerabilities abgedeckt werden.
+Dieser Abschnitt konzentriert sich auf die Erstellung von LLM-Plugins und nicht auf Plugins von Drittanbietern, die durch LLM-Supply-Chain-Schwachstellen abgedeckt werden.
 
-### Häufige Beispiele für Verwundbarkeiten
+### Gängige Beispiele für Schwachstellen
 
-Ein Plugin akzeptiert alle Parameter in einem einzigen Textfeld anstatt in getrennten Eingabeparametern.
-Ein Plugin akzeptiert Konfigurationsstrings anstatt von Parametern, die gesamte Konfigurationseinstellungen überschreiben können.
-Ein Plugin akzeptiert rohe SQL- oder Programmieranweisungen anstatt von Parametern.
+Ein Plugin akzeptiert alle Parameter in einem einzigen Textfeld anstatt in separaten Eingabeparametern.
+Ein Plugin akzeptiert Konfigurationsstrings anstelle von Parametern, die alle Konfigurationseinstellungen überschreiben können.
+Ein Plugin akzeptiert rohe SQL- oder Programmieranweisungen anstelle von Parametern.
 Die Authentifizierung erfolgt ohne explizite Autorisierung für ein bestimmtes Plugin.
-Ein Plugin behandelt alle LLM-Inhalte, als wären sie vollständig vom Benutzer erstellt, und führt jede angeforderte Aktion ohne zusätzliche Autorisierung aus.
+Ein Plugin behandelt alle LLM-Inhalte so, als ob sie vollständig vom Benutzer erstellt wurden, und führt jede angeforderte Aktion ohne zusätzliche Autorisierung aus.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigationsstrategien
 
-Plugins sollten streng parametrisierte Eingaben durchsetzen, wo immer möglich, und Typ- und Bereichsprüfungen für Eingaben einschließen. Wenn dies nicht möglich ist, sollte eine zweite Schicht von typisierten Aufrufen eingeführt werden, die Anfragen analysiert und Validierung und Sanitierung anwendet. Wenn Freiformeingaben aufgrund der Anwendungssemantik akzeptiert werden müssen, sollten sie sorgfältig inspiziert werden, um sicherzustellen, dass keine potenziell schädlichen Methoden aufgerufen werden.
-Plugin-Entwickler sollten OWASPs Empfehlungen im ASVS (Application Security Verification Standard) anwenden, um eine angemessene Eingabevalidierung und -sanitierung zu gewährleisten.
-Plugins sollten gründlich inspiziert und getestet werden, um eine angemessene Validierung sicherzustellen. Verwenden Sie Static Application Security Testing (SAST)-Scans und dynamische und interaktive Anwendungstests (DAST, IAST) in Entwicklungs-Pipelines.
-Plugins sollten so konzipiert sein, dass sie die Auswirkungen einer Ausnutzung unsicherer Eingabeparameter minimieren, den OWASP ASVS Access Control Guidelines folgend. Dies umfasst Zugriffskontrolle mit minimalen Rechten, indem so wenig Funktionalität wie möglich freigelegt wird, während sie immer noch ihre gewünschte Funktion erfüllt.
-Plugins sollten geeignete eigene Authentifizierungsidentitäten, wie OAuth2, verwenden, um eine effektive Autorisierung und Zugriffskontrolle anzuwenden. Zusätzlich sollten API-Schlüssel verwendet werden, um den Kontext für benutzerdefinierte Autorisierungsentscheidungen zu bieten, die den Plugin-Pfad anstelle des standardmäßigen interaktiven Benutzers widerspiegeln.
-Plugins sollen manuelle Benutzerautorisierung und Bestätigung von jeder Aktion, die von sensiblen Plugins durchgeführt wird, erfordern.
-Plugins sind oft REST-APIs, daher sollten Entwickler die Empfehlungen in OWASP Top 10 API Security Risks – 2023 anwenden, um generische Verwundbarkeiten zu minimieren.
+Plugins sollten, wo immer möglich, streng parametrisierte Eingaben erzwingen und Typ- und Bereichsprüfungen für Eingaben vorsehen. Wenn dies nicht möglich ist, sollte eine zweite Schicht von typisierten Aufrufen eingeführt werden, die die Anfragen parst und eine Validierung und Bereinigung durchführt. Wenn Freiform-Eingaben aufgrund der Anwendungssemantik akzeptiert werden müssen, sollten diese sorgfältig geprüft werden, um sicherzustellen, dass keine potenziell schädlichen Methoden aufgerufen werden.
+Plugin-Entwickler sollten die Empfehlungen aus dem OWASP ASVS (Application Security Verification Standard) anwenden, um eine angemessene Validierung und Bereinigung von Eingaben sicherzustellen.
+Plugins sollten gründlich geprüft und getestet werden, um eine angemessene Validierung zu gewährleisten. Verwenden Sie statische Anwendungssicherheitstests (SAST) und dynamische und interaktive Anwendungstests (DAST, IAST) in den Entwicklungspipelines.
+Plugins sollten so entworfen werden, dass die Auswirkungen der Ausnutzung unsicherer Eingabeparameter gemäß den OWASP ASVS Access Control Guidelines minimiert werden. Dies beinhaltet eine Zugriffskontrolle mit den geringsten Rechten, die so wenig Funktionalität wie möglich preisgibt, aber dennoch die gewünschte Funktion erfüllt.
+Plugins sollten geeignete Authentifizierungsidentitäten wie OAuth2 verwenden, um eine effektive Autorisierung und Zugriffskontrolle anzuwenden. Darüber hinaus sollten API-Schlüssel verwendet werden, um Kontext für benutzerdefinierte Autorisierungsentscheidungen bereitzustellen, die die Plugin-Route und nicht den interaktiven Standardbenutzer widerspiegeln.
+Manuelle Benutzerautorisierung und Bestätigung für alle Aktionen, die von sensiblen Plugins durchgeführt werden, erforderlich machen.
+Plugins sind in der Regel REST APIs. Daher sollten Entwickler die Empfehlungen in OWASP Top 10 API Security Risks - 2023 befolgen, um allgemeine Schwachstellen zu minimieren.
 
-### Beispiel-Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
-Ein Plugin akzeptiert eine Basis-URL und weist das LLM an, die URL mit einer Abfrage zu kombinieren, um Wettervorhersagen zu erhalten, die in die Bearbeitung der Benutzeranfrage einbezogen werden. Ein bösartiger Benutzer kann eine Anfrage so gestalten, dass die URL auf eine Domain zeigt, die sie kontrollieren, was es ihnen ermöglicht, ihren eigenen Inhalt über ihre Domain in das LLM-System einzuspeisen.
-Ein Plugin akzeptiert eine Freiformeingabe in einem einzelnen Feld, das es nicht validiert. Ein Angreifer liefert sorgfältig gestaltete Payloads, um aus Fehlermeldungen Aufklärung zu betreiben. Anschließend werden bekannte Schwachstellen von Drittanbietern ausgenutzt, um Code auszuführen und Datenexfiltrierung oder Privilegienerweiterung durchzuführen.
-Ein Plugin, das zum Abrufen von Einbettungen aus einem Vektorspeicher verwendet wird, akzeptiert Konfigurationsparameter als Verbindungsstring ohne jegliche Validierung. Dies ermöglicht es einem Angreifer, zu experimentieren und auf andere Vektorspeicher zuzugreifen, indem Namen oder Hostparameter geändert werden, und Einbettungen zu exfiltrieren, zu denen sie keinen Zugang haben sollten.
-Ein Plugin akzeptiert SQL WHERE-Klauseln als erweiterte Filter, die dann an das Filter-SQL angehängt werden. Dies ermöglicht es einem Angreifer, einen SQL-Angriff zu inszenieren.
-Ein Angreifer nutzt die indirekte Prompt-Injektion, um ein unsicheres Codeverwaltungs-Plugin ohne Eingabevalidierung und schwache Zugriffskontrolle auszunutzen, um das Repository-Eigentum zu übertragen und den Benutzer von ihren Repositories auszuschließen.
+Ein Plugin akzeptiert eine Basis-URL und weist das LLM an, die URL mit einer Anfrage zu kombinieren, um Wettervorhersagen zu erhalten, die in die Bearbeitung der Benutzeranfrage einfließen. Böswillige Personen können eine Anfrage so gestalten, dass die URL auf eine von ihm kontrollierte Domäne verweist, wodurch sie ihre eigenen Inhalte über diese in das LLM-System einspeisen können.
+Ein Plugin akzeptiert eine freie Eingabe in ein einzelnes Feld, die nicht validiert wird. Angreifende liefern sorgfältig gestaltete Payloads, um Fehlermeldungen auszuspähen. Anschließend nutzen sie bekannte Sicherheitslücken von Drittanbietern aus, um Code auszuführen, Daten zu exfiltrieren oder Rechte zu erweitern.
+Ein Plugin, das zum Abrufen von Embeddings aus einem Vektorspeicher verwendet wird, akzeptiert Konfigurationsparameter als Verbindungsstring ohne jegliche Validierung. Dadurch können Angreifende experimentieren und auf andere Vektorspeicher zugreifen, indem sie Namen oder Hostparameter ändern und Embeddings exfiltriert, auf die sie keinen Zugriff haben sollten.
+Ein Plugin akzeptiert SQL WHERE-Klauseln als erweiterte Filter, die dann an die SQL-Bedingungen angehängt werden. Dadurch können Angreifende einen SQL-Angriff durchführen.
+Angreifende nutzen eine indirekte Prompt-Injection aus, um ein unsicheres Codeverwaltungs-Plugin ohne Eingabevalidierung und mit schwacher Zugriffskontrolle auszunutzen, um den Besitz von Repositories zu übertragen und Personen von ihren Repositories auszuschließen.
 
 ### Referenzen
 
@@ -419,88 +432,88 @@ OWASP Top 10 API Security Risks – 2023: OWASP
 
 ### Beschreibung
 
-Ein auf LLM (Language Model) basierendes System wird oft mit einem gewissen Maß an Handlungsfreiheit durch seinen Entwickler ausgestattet - der Fähigkeit, mit anderen Systemen zu interagieren und auf eine Aufforderung hin Handlungen zu unternehmen. Die Entscheidung darüber, welche Funktionen aufgerufen werden sollen, kann auch an einen LLM 'Agenten' delegiert werden, um dynamisch basierend auf der Eingabeaufforderung oder dem LLM-Ausgang zu bestimmen.
+Ein System, das auf einem LLM basiert, wird von Entwickelnde oft mit einem gewissen Grad an Handlungsfreiheit ausgestattet - der Fähigkeit, mit anderen Systemen zu interagieren und Aktionen auf Anforderung auszuführen. Die Entscheidung, welche Funktionen aufgerufen werden sollen, kann auch an einen LLM-'Agenten' delegiert werden, um dynamisch auf der Grundlage der Eingabeaufforderung oder der LLM-Ausgabe bestimmt zu werden.
 
-Übermäßige Handlungsfreiheit ist die Schwachstelle, die es ermöglicht, schädliche Aktionen in Reaktion auf unerwartete/unklare Ausgaben von einem LLM durchzuführen (unabhängig davon, was den LLM fehlerhaft macht; sei es Halluzination/Konfabulation, direkte/indirekte Aufforderungsinjektion, bösartiges Plugin, schlecht konstruierte gutartige Aufforderungen oder einfach ein schlecht funktionierendes Modell). Die Hauptursache für übermäßige Handlungsfreiheit ist typischerweise eine oder mehrere der folgenden: übermäßige Funktionalität, übermäßige Berechtigungen oder übermäßige Autonomie. Dies unterscheidet sich von unsicherer Ausgabeverarbeitung, die sich mit unzureichender Prüfung von LLM-Ausgaben beschäftigt.
+Übermäßige Handlungsfreiheit ist die Schwachstelle, die es ermöglicht, schädliche Aktionen als Reaktion auf unerwartete/unklare Ausgaben eines LLM auszuführen (unabhängig davon, was den LLM fehlerhaft macht; sei es Halluzination/Konfabulation, direkte/indirekte Prompt Injection, bösartiges Plugin, schlecht konstruierte gutartige Prompts oder einfach ein schlecht funktionierendes Modell). Die Hauptursache für übermäßige Handlungsfreiheit ist typischerweise eine oder mehrere der folgenden: übermäßige Funktionalität, übermäßige Berechtigungen oder übermäßige Autonomie. Dies unterscheidet sich von Unsichere Ausgabeverarbeitung, die sich auf unzureichende Überprüfung der LLM-Ausgabe bezieht.
 
-Übermäßige Handlungsfreiheit kann zu einer breiten Palette von Auswirkungen über das Spektrum von Vertraulichkeit, Integrität und Verfügbarkeit führen und hängt davon ab, mit welchen Systemen eine LLM-basierte App interagieren kann.
+Übermäßige Handlungsfreiheit kann zu einem breiten Spektrum von Auswirkungen auf Vertraulichkeit, Integrität und Verfügbarkeit führen und hängt von den Systemen ab, mit denen eine LLM-basierte Anwendung interagieren kann.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
-Übermäßige Funktionalität: Ein LLM-Agent hat Zugriff auf Plugins, die Funktionen beinhalten, die für den beabsichtigten Betrieb des Systems nicht benötigt werden. Zum Beispiel muss ein Entwickler einem LLM-Agenten die Fähigkeit gewähren, Dokumente aus einem Repository zu lesen, aber das Plugin eines Drittanbieters, das sie verwenden, beinhaltet auch die Fähigkeit, Dokumente zu modifizieren und zu löschen.
-Übermäßige Funktionalität: Ein Plugin wurde während einer Entwicklungsphase getestet und zugunsten einer besseren Alternative fallengelassen, aber das ursprüngliche Plugin bleibt dem LLM-Agenten zugänglich.
-Übermäßige Funktionalität: Ein LLM-Plugin mit offenem Funktionsumfang filtert die Eingabeanweisungen für Befehle außerhalb dessen, was für den beabsichtigten Betrieb der Anwendung notwendig ist, nicht ordnungsgemäß. Z.B. ein Plugin zum Ausführen eines bestimmten Shell-Befehls verhindert nicht ordnungsgemäß, dass andere Shell-Befehle ausgeführt werden.
-Übermäßige Berechtigungen: Ein LLM-Plugin hat Berechtigungen für andere Systeme, die für den beabsichtigten Betrieb der Anwendung nicht benötigt werden. Z.B. verbindet sich ein Plugin, das zum Lesen von Daten gedacht ist, mit einem Datenbankserver unter Verwendung einer Identität, die nicht nur SELECT-Berechtigungen hat, sondern auch UPDATE, INSERT und DELETE-Berechtigungen.
-Übermäßige Berechtigungen: Ein LLM-Plugin, das entwickelt wurde, um Operationen im Namen eines Benutzers durchzuführen, greift auf nachgelagerte Systeme mit einer generischen hochprivilegierten Identität zu. Z.B. verbindet sich ein Plugin, um den aktuellen Dokumentenspeicher eines Benutzers zu lesen, mit dem Dokumentenrepository mit einem privilegierten Konto, das Zugriff auf alle Dateien der Benutzer hat.
-Übermäßige Autonomie: Eine LLM-basierte Anwendung oder ein Plugin versäumt es, hochwirksame Aktionen unabhängig zu überprüfen und zu genehmigen. Z.B. führt ein Plugin, das es ermöglicht, Dokumente eines Benutzers zu löschen, Löschungen ohne jegliche Bestätigung vom Benutzer durch.
+Übermäßige Funktionalität: Ein LLM-Agent hat Zugriff auf Plugins, die Funktionen enthalten, die für den beabsichtigten Betrieb des Systems nicht erforderlich sind. Beispielsweise müssen Entwickelnde einem LLM-Agenten die Fähigkeit geben, Dokumente aus einem Repository zu lesen, aber das Plugin eines Drittanbieters, das er verwendet, enthält auch die Fähigkeit, Dokumente zu ändern und zu löschen.
+Übermäßige Funktionalität: Ein Plugin wurde während einer Entwicklungsphase getestet und zugunsten einer besseren Alternative verworfen, aber das ursprüngliche Plugin bleibt für den LLM-Agenten zugänglich.
+Übermäßige Funktionalität: Ein LLM-Plugin mit offenem Funktionsumfang filtert nicht korrekt die Eingabeanweisungen für Befehle, die nicht für den beabsichtigten Betrieb der Anwendung notwendig sind. Beispielsweise verhindert ein Plugin zur Ausführung eines bestimmten Shell-Befehls nicht ordnungsgemäß die Ausführung anderer Shell-Befehle.
+übermäßige Berechtigungen: Ein LLM-Plugin hat Berechtigungen für andere Systeme, die für den beabsichtigten Betrieb der Anwendung nicht erforderlich sind. Beispielsweise verbindet sich ein Plugin zum Lesen von Daten mit einem Datenbankserver unter Verwendung einer Identität, die nicht nur SELECT-Berechtigungen hat, sondern auch UPDATE-, INSERT- und DELETE-Berechtigungen.
+Exzessive Berechtigungen: Ein LLM-Plugin, das entwickelt wurde, um Operationen im Namen einer Person durchzuführen, greift auf nachgelagerte Systeme mit einer generischen, hochprivilegierten Identität zu. Beispielsweise verbindet sich ein Plugin, das den aktuellen Dokumentenspeicher einer Person lesen soll, mit dem Dokumentenspeicher mit einem privilegierten Konto, das Zugriff auf alle Dateien der Person hat.
+Übermäßige Autonomie: Eine LLM-basierte Anwendung oder ein Plugin versäumt es, hochwirksame Aktionen unabhängig zu überprüfen und zu genehmigen. Beispielsweise führt ein Plugin, das das Löschen von Dokumenten einer Person ermöglicht, Löschungen ohne jegliche Bestätigung durch diese durch.
 
-### Präventions- und Mitigierungsstrategien
+### Präventions- und Mitigationsstrategien
 
-Die folgenden Aktionen können übermäßige Handlungsfreiheit verhindern:
+Die folgenden Maßnahmen können dazu beitragen, übermäßige Handlungsfreiheit zu vermeiden:
 
-Beschränken Sie die Plugins/Tools, die LLM-Agenten aufrufen dürfen, auf nur die minimal notwendigen Funktionen. Wenn ein auf LLM basierendes System beispielsweise nicht die Fähigkeit benötigt, den Inhalt einer URL abzurufen, sollte ein solches Plugin dem LLM-Agenten nicht angeboten werden.
-Beschränken Sie die Funktionen, die in LLM-Plugins/Tools implementiert sind, auf das minimal Notwendige. Ein Plugin, das auf das Postfach eines Benutzers zugreift, um E-Mails zusammenzufassen, benötigt möglicherweise nur die Fähigkeit, E-Mails zu lesen, daher sollte das Plugin keine andere Funktionalität wie das Löschen oder Senden von Nachrichten enthalten.
-Vermeiden Sie nach Möglichkeit offene Funktionen (z.B. Ausführen eines Shell-Befehls, Abrufen einer URL usw.) und verwenden Sie Plugins/Tools mit granularerer Funktionalität. Wenn eine LLM-basierte App beispielsweise einige Ausgaben in eine Datei schreiben muss. Wenn dies mit einem Plugin zum Ausführen einer Shell-Funktion implementiert würde, wäre der Spielraum für unerwünschte Aktionen sehr groß (jeder andere Shell-Befehl könnte ausgeführt werden). Eine sicherere Alternative wäre, ein Dateischreib-Plugin zu erstellen, das nur diese spezifische Funktionalität unterstützen könnte.
-Beschränken Sie die Berechtigungen, die LLM-Plugins/Tools anderen Systemen gewährt werden, auf das minimal Notwendige, um den Umfang unerwünschter Aktionen zu begrenzen. Ein LLM-Agent, der eine Produkt-Datenbank verwendet, um einem Kunden Kaufempfehlungen zu geben, benötigt beispielsweise möglicherweise nur Lesezugriff auf eine 'Produkte'-Tabelle; er sollte keinen Zugriff auf andere Tabellen haben, noch die Fähigkeit, Datensätze einzufügen, zu aktualisieren oder zu löschen. Dies sollte durch die Anwendung geeigneter Datenbankberechtigungen für die Identität durchgesetzt werden, die das LLM-Plugin verwendet, um sich mit der Datenbank zu verbinden.
-Verfolgen Sie die Benutzerautorisierung und den Sicherheitsumfang, um sicherzustellen, dass im Namen eines Benutzers durchgeführte Aktionen auf nachgelagerten Systemen im Kontext dieses spezifischen Benutzers und mit den minimal notwendigen Privilegien ausgeführt werden. Ein LLM-Plugin, das das Code-Repo eines Benutzers liest, sollte beispielsweise erfordern, dass sich der Benutzer über OAuth authentifiziert und mit dem minimal erforderlichen Umfang.
-Nutzen Sie die Steuerung durch den Menschen, um eine menschliche Genehmigung für alle Aktionen zu erfordern, bevor sie durchgeführt werden. Dies kann in einem nachgelagerten System (außerhalb des Geltungsbereichs der LLM-Anwendung) oder innerhalb des LLM-Plugins/Tools selbst implementiert werden. Ein LLM-basiertes App, das soziale Medieninhalte im Namen eines Benutzers erstellt und postet, sollte beispielsweise eine Benutzergenehmigungsroutine innerhalb des Plugins/Tools/API enthalten, das die 'Post'-Operation implementiert.
-Implementieren Sie Autorisierung in nachgelagerten Systemen, anstatt sich auf ein LLM zu verlassen, um zu entscheiden, ob eine Aktion erlaubt ist oder nicht. Bei der Implementierung von Tools/Plugins den Grundsatz der vollständigen Vermittlung durchsetzen, so dass alle Anfragen, die über die Plugins/Tools an nachgelagerte Systeme gestellt werden, gegen Sicherheitsrichtlinien validiert werden.
+Beschränken Sie die Plugins/Tools, die von LLM-Agenten aufgerufen werden können, auf die notwendige Minimalfunktionalität. Wenn beispielsweise ein LLM-basiertes System nicht die Fähigkeit benötigt, den Inhalt einer URL abzurufen, sollte ein solches Plugin dem LLM-Agenten nicht angeboten werden.
+Beschränken Sie die in LLM-Plugins/Tools implementierten Funktionen auf das notwendige Minimum. Ein Plugin, das auf die Mailbox einer Person zugreift, um E-Mails zusammenzufassen, benötigt möglicherweise nur die Fähigkeit, E-Mails zu lesen, und sollte daher keine weiteren Funktionen wie das Löschen oder Versenden von Nachrichten enthalten.
+Vermeiden Sie nach Möglichkeit Funktionen mit offenem Ende (z.B. einen Shell-Befehl ausführen, eine URL abrufen usw.) und verwenden Sie Plugins/Tools mit granulareren Funktionen. Beispielsweise muss eine LLM-basierte Anwendung einige Ausgaben in eine Datei schreiben. Wenn dies mit einem Plugin implementiert wird, das eine Shell-Funktion ausführt, ist der Spielraum für unerwünschte Aktionen sehr groß (jeder andere Shell-Befehl könnte ausgeführt werden). Eine sicherere Alternative wäre es, ein Plugin zum Schreiben von Dateien zu entwickeln, das nur diese spezielle Funktion unterstützt.
+Beschränken Sie die Berechtigungen, die LLM-Plugins/Tools anderen Systemen gewähren, auf ein Minimum, um den Umfang unerwünschter Aktionen einzuschränken. Beispielsweise benötigt ein LLM-Agent, der eine Produktdatenbank verwendet, um einem Kunden Kaufempfehlungen zu geben, möglicherweise nur Lesezugriff auf eine 'Produkte'-Tabelle; er sollte keinen Zugriff auf andere Tabellen oder die Möglichkeit haben, Datensätze einzufügen, zu aktualisieren oder zu löschen. Dies sollte durch entsprechende Datenbankberechtigungen für die Identität durchgesetzt werden, die das LLM-Plugin verwendet, um sich mit der Datenbank zu verbinden. 
+Verfolgen Sie die Benutzerautorisierung und den Sicherheitsumfang, um sicherzustellen, dass im Namen einer Person durchgeführte Aktionen auf nachgelagerten Systemen im Kontext dieser spezifischen Person und mit den minimal notwendigen Privilegien ausgeführt werden. Beispielsweise sollte ein LLM-Plugin, das das Code-Repository einer Person liest, erfordern, dass sich diese über OAuth und mit dem minimal erforderlichen Umfang authentifiziert.
+Setzen Sie auf menschliche Kontrolle, um für alle Aktionen eine menschliche Genehmigung zu verlangen, bevor sie ausgeführt werden. Dies kann in einem nachgelagerten System (außerhalb der LLM-Anwendung) oder innerhalb des LLM-Plugins/Tools selbst implementiert werden. Beispielsweise sollte eine LLM-basierte Anwendung, die Social-Media-Inhalte im Namen einer Person erstellt und veröffentlicht, eine Benutzergenehmigungsroutine innerhalb des Plugins/Tools/API enthalten, das die 'Post'-Operation implementiert. 
+Implementieren Sie Autorisierung in nachgelagerten Systemen, anstatt sich auf ein LLM zu verlassen, um zu entscheiden, ob eine Aktion erlaubt ist oder nicht. Bei der Implementierung von Tools/Plugins das Prinzip der vollständigen Mediation anwenden, sodass alle Anfragen, die über Plugins/Tools an nachgelagerte Systeme gestellt werden, gegen die Sicherheitsrichtlinien validiert werden.
 
-Die folgenden Optionen verhindern keine übermäßige Handlungsfreiheit, können jedoch das Ausmaß des Schadens begrenzen:
+Die folgenden Optionen verhindern zwar keine übermäßige Handlungsfreiheit, können aber das Ausmaß des Schadens begrenzen:
 
-Protokollieren und überwachen Sie die Aktivität von LLM-Plugins/Tools und nachgelagerten Systemen, um zu identifizieren, wo unerwünschte Aktionen stattfinden, und entsprechend reagieren.
-Implementieren Sie Ratenbegrenzung, um die Anzahl unerwünschter Aktionen, die innerhalb eines bestimmten Zeitraums stattfinden können, zu reduzieren und die Möglichkeit zu erhöhen, unerwünschte Aktionen durch Überwachung zu entdecken, bevor erheblicher Schaden entstehen kann.
+Protokollieren und Überwachen der Aktivitäten von LLM-Plugins/Tools und nachgelagerten Systemen, um zu erkennen, wo unerwünschte Aktionen stattfinden und entsprechend zu reagieren.
+Implementieren Sie Rate-Limiting, um die Anzahl unerwünschter Aktionen, die in einem bestimmten Zeitraum stattfinden können, zu reduzieren und die Möglichkeit zu erhöhen, unerwünschte Aktionen durch Überwachung zu entdecken, bevor erheblicher Schaden entsteht. entstehen kann.
 
-### Beispielangriffsszenarien
+### Beispiele für Angriffsszenarien
 
-Eine LLM-basierte persönliche Assistenten-App erhält Zugriff auf das Postfach einer Person über ein Plugin, um den Inhalt eingehender E-Mails zusammenzufassen. Um diese Funktionalität zu erreichen, benötigt das E-Mail-Plugin die Fähigkeit, Nachrichten zu lesen. Das Plugin, das der Systementwickler gewählt hat, enthält jedoch auch Funktionen zum Senden von Nachrichten. Das LLM ist anfällig für einen indirekten Aufforderungsinjektionsangriff, bei dem eine bösartig gestaltete eingehende E-Mail das LLM dazu verleitet, das E-Mail-Plugin zu befehlen, die Funktion 'Nachricht senden' aufzurufen, um Spam aus dem Postfach des Benutzers zu senden. Dies könnte vermieden werden durch:
-(a) Eliminierung übermäßiger Funktionalität durch Verwendung eines Plugins, das nur E-Mail-Lesefähigkeiten anbot,
-(b) Eliminierung übermäßiger Berechtigungen durch Authentifizierung beim E-Mail-Dienst des Benutzers über eine OAuth-Sitzung mit einem schreibgeschützten Umfang und/oder
-(c) Eliminierung übermäßiger Autonomie, indem der Benutzer jede vom LLM-Plugin entworfene Mail manuell überprüfen und auf 'Senden' klicken muss.
-Alternativ könnte der verursachte Schaden durch Implementierung einer Ratenbegrenzung an der Mail-Sende-Schnittstelle reduziert werden.
+Eine LLM-basierte Personal Assistant App greift über ein Plugin auf das Postfach einer Person zu, um den Inhalt eingehender E-Mails zusammenzufassen. Um diese Funktionalität zu erreichen, muss das E-Mail-Plugin in der Lage sein, Nachrichten zu lesen. Das vom Systementwickler ausgewählte Plugin enthält jedoch auch Funktionen zum Senden von Nachrichten. Der LLM ist anfällig für einen indirekten Man-in-the-Middle-Angriff, bei dem eine bösartig gestaltete eingehende E-Mail den LLM dazu veranlasst, das E-Mail-Plugin anzuweisen, die Funktion 'Nachricht senden' aufzurufen, um Spam aus der Mailbox des Benutzers zu versenden. Dies könnte vermieden werden durch
+(a) Eliminierung überflüssiger Funktionalität durch Verwendung eines Plugins, das nur E-Mail-Lesefunktionen bietet,
+(b) Eliminierung von übermäßigen Berechtigungen durch Authentifizierung am E-Mail-Dienst des Benutzers über eine OAuth-Sitzung mit schreibgeschütztem Umfang, und/oder
+(c) Eliminierung übermäßiger Autonomie, indem der Benutzer jede vom LLM-Plugin erzeugte E-Mail manuell überprüfen und auf 'Senden' klicken muss.
+Alternativ könnte der verursachte Schaden durch die Implementierung einer Ratenbegrenzung in der Mailversand-Schnittstelle reduziert werden.
 
-### Referenzlinks
+### Referenzen
 
 Embrace the Red: Confused Deputy Problem: Embrace The Red
 NeMo-Guardrails: Interface guidelines: NVIDIA Github
 LangChain: Human-approval for tools: Langchain Documentation
 Simon Willison: Dual LLM Pattern: Simon Willison
-## LLM09: Übermäßiges Vertrauen
+## LLM09: Übermäßige Abhängigkeit
 
 ### Beschreibung
 
-Übermäßiges Vertrauen kann auftreten, wenn ein LLM fehlerhafte Informationen produziert und diese auf als Authorität  bereitstellt. Während LLMs kreative und informative Inhalte erzeugen können, können sie auch Inhalte generieren, die faktisch falsch, unangemessen oder unsicher sind. Dies wird als Halluzination oder Konfabulation bezeichnet. Wenn Menschen oder Systeme diesen Informationen ohne Aufsicht oder Bestätigung vertrauen, kann dies zu einem Sicherheitsbruch, Fehlinformationen, Misskommunikation, rechtlichen Problemen und Rufschädigung führen.
+Übermäßige Abhängigkeit kann entstehen, wenn ein LLM fehlerhafte Informationen produziert und diese als authentisch darstellt. Während LLMs kreative und informative Inhalte produzieren können, können sie auch Inhalte produzieren, die faktisch falsch, unangemessen oder unsicher sind. Dies wird als Halluzination oder Konfabulation bezeichnet. Wenn Menschen oder Systeme diesen Informationen ohne Überprüfung oder Bestätigung vertrauen, kann dies zu Sicherheitsverletzungen, Fehlinformationen, falscher Kommunikation, rechtlichen Problemen und Rufschädigung führen.
 
-Von LLM generierter Quellcode kann unbemerkte Sicherheitsanfälligkeiten einführen. Dies stellt ein erhebliches Risiko für die betriebliche Sicherheit und Sicherheit von Anwendungen dar. Diese Risiken zeigen die Bedeutung von strengen Überprüfungsprozessen, mit:
+Von LLM erzeugter Quellcode kann unbemerkt Sicherheitslücken einführen. Dies stellt ein erhebliches Risiko für die Betriebs- und Anwendungssicherheit dar. Diese Risiken unterstreichen die Bedeutung strenger Verifikationsprozesse:
 
-Aufsicht
-Kontinuierlichen Validierungsmechanismen
-Haftungsausschlüssen bezüglich Risiken
+Überprüfung
+kontinuierliche Validierungsmechanismen
+Haftungsausschlüsse für Risiken
 
-### Häufige Beispiele für Anfälligkeiten
+### Gängige Beispiele für Schwachstellen
 
-LLM liefert ungenaue Informationen als Antwort, während es so formuliert ist, als ob es sehr autoritär wäre. Das Gesamtsystem ist ohne angemessene Kontrollen und Gleichgewichte zur Handhabung dessen konzipiert, und die Informationen führen den Benutzer irreführend zu einem Schaden.
-LLM schlägt unsicheren oder fehlerhaften Code vor, was zu Anfälligkeiten führt, wenn er ohne angemessene Aufsicht oder Überprüfung in ein Softwaresystem integriert wird.
+LLM antwortet mit ungenauen Informationen auf eine Art und Weise, die es höchst vertrauenswürdige wirken lässt. Das Gesamtsystem ist ohne angemessene Kontrollen und Überprüfungen konzipiert, und die Informationen führen Personen in einer Weise in die Irre, die zu Schäden führen kann.
+LLM weist auf unsicheren oder fehlerhaften Code hin, der zu Schwachstellen führt, wenn er ohne angemessene Kontrolle oder Überprüfung in ein Softwaresystem integriert wird.
 
-### Präventions- und Minderungsstrategien
+### Präventions- und Mitigationsstrategien
 
-Überwachen und überprüfen Sie regelmäßig die Ausgaben des LLM. Verwenden Sie Selbstkonsistenz- oder Abstimmungstechniken, um inkonsistenten Text herauszufiltern. Das Vergleichen mehrerer Modellantworten auf eine einzelne Aufforderung kann eine bessere Beurteilung der Qualität und Konsistenz der Ausgabe ermöglichen.
-Überprüfen Sie die Ausgaben des LLM mit vertrauenswürdigen externen Quellen. Diese zusätzliche Validierungsebene kann dabei helfen sicherzustellen, dass die vom Modell bereitgestellten Informationen genau und zuverlässig sind.
-Verbessern Sie das Modell durch Feinabstimmung oder Einbettungen, um die Qualität der Ausgabe zu verbessern. Allgemeine vortrainierte Modelle produzieren im Vergleich zu abgestimmten Modellen in einem bestimmten Bereich wahrscheinlicher ungenaue Informationen. Techniken wie Prompt-Engineering, parameter-effizientes Tuning (PET), vollständiges Modelltuning und Chain-of-Thought-Prompting können für diesen Zweck eingesetzt werden.
-Implementieren Sie automatische Validierungsmechanismen, die die generierte Ausgabe gegen bekannte Fakten oder Daten überprüfen können. Dies kann eine zusätzliche Sicherheitsebene bieten und die mit Halluzinationen verbundenen Risiken mindern.
-Zerlegen Sie komplexe Aufgaben in handhabbare Unteraufgaben und weisen Sie sie verschiedenen Agenten zu. Dies hilft nicht nur bei der Bewältigung der Komplexität, sondern reduziert auch die Chancen auf Halluzinationen, da jeder Agent für eine kleinere Aufgabe verantwortlich gemacht werden kann.
-Kommunizieren Sie klar die Risiken und Einschränkungen, die mit der Verwendung von LLMs verbunden sind. Dies beinhaltet das Potenzial für Informationsungenauigkeiten und andere Risiken. Eine effektive Risikokommunikation kann die Benutzer auf potenzielle Probleme vorbereiten und ihnen helfen, informierte Entscheidungen zu treffen.
+Überwachen und überprüfen Sie regelmäßig die Ergebnisse der LLM. Verwenden Sie Selbstkonsistenz- oder Voting-Techniken, um inkonsistenten Text herauszufiltern. Der Vergleich mehrerer Modellantworten auf eine Anfrage kann helfen, die Qualität und Konsistenz der Ausgabe zu beurteilen.
+Überprüfen Sie die LLM-Ausgabe mit vertrauenswürdigen externen Quellen. Diese zusätzliche Ebene der Validierung kann dazu beitragen, dass die vom Modell gelieferten Informationen genau und zuverlässig sind.
+Verbessern Sie das Modell durch Fine-Tuning oder Embeddings, um die Ausgabequalität zu verbessern. Allgemeine, vortrainierte Modelle liefern mit größerer Wahrscheinlichkeit ungenaue Informationen als Modelle, die in einem bestimmten Bereich angepasst wurden. Techniken wie Prompt Engineering, parameter efficient tuning (PET), vollständiges Modelltuning und Chain of Thought Prompting können zu diesem Zweck eingesetzt werden.
+Implementieren Sie automatische Validierungsmechanismen, die die generierte Ausgabe mit bekannten Fakten oder Daten vergleichen können. Dies kann eine zusätzliche Sicherheitsebene bieten und das Risiko von Halluzinationen verringern.
+Zerlegen Sie komplexe Aufgaben in handhabbare Unteraufgaben und weisen Sie sie verschiedenen Agenten zu. Dies hilft nicht nur bei der Bewältigung der Komplexität, sondern verringert auch die Wahrscheinlichkeit von Halluzinationen, da jeder Agent für eine kleinere Aufgabe verantwortlich gemacht werden kann.
+Kommunizieren Sie klar die Risiken und Einschränkungen, die mit der Verwendung von LLMs verbunden sind. Dies schließt das Potenzial für Informationsungenauigkeiten und andere Risiken ein. Eine effektive Risikokommunikation kann die Nutzenden auf mögliche Probleme vorbereiten und ihnen helfen, informierte Entscheidungen zu treffen. 
 Entwickeln Sie APIs und Benutzeroberflächen, die eine verantwortungsvolle und sichere Nutzung von LLMs fördern. Dies kann Maßnahmen wie Inhaltsfilter, Benutzerwarnungen vor potenziellen Ungenauigkeiten und eine klare Kennzeichnung von KI-generierten Inhalten umfassen.
-Bei der Verwendung von LLMs in Entwicklungsumgebungen, etablieren Sie sichere Programmierpraktiken und Richtlinien, um die Integration möglicher Anfälligkeiten zu verhindern.
+Bei der Verwendung von LLMs in Entwicklungsumgebungen sichere Programmierpraktiken und -richtlinien einzuführen, um die Integration potenzieller Schwachstellen zu verhindern.
 
-### Beispielangriffsszenarien
+### Beispiele für Angriffsszenarien
 
-Eine Nachrichtenorganisation verwendet intensiv ein LLM, um Nachrichtenartikel zu generieren. Ein böswilliger Akteur nutzt diese übermäßige Abhängigkeit aus, indem er dem LLM irreführende Informationen füttert und so die Verbreitung von Fehlinformationen verursacht.
-Die KI plagiiert unabsichtlich Inhalte, was zu Urheberrechtsproblemen und einem verringerten Vertrauen in die Organisation führt.
-Ein Softwareentwicklungsteam nutzt ein LLM-System, um den Codierungsprozess zu beschleunigen. Die übermäßige Abhängigkeit von den Vorschlägen der KI führt aufgrund unsicherer Standardeinstellungen oder Empfehlungen, die nicht mit sicheren Programmierpraktiken übereinstimmen, zu Sicherheitsanfälligkeiten in der Anwendung.
-Eine Softwareentwicklungsfirma verwendet ein LLM, um Entwickler zu unterstützen. Das LLM schlägt eine nicht existierende Code-Bibliothek oder ein Paket vor, und ein Entwickler, der der KI vertraut, integriert unwissentlich ein bösartiges Paket in die Software der Firma. Dies unterstreicht die Bedeutung der Überprüfung von LLM-Vorschlägen, insbesondere wenn es um Drittanbietercode oder -bibliotheken geht.
+Eine Nachrichtenorganisation nutzt ein LLM intensiv, um Nachrichtenartikel zu generieren. Ein böswilliger Akteur nutzt diese übermäßige Abhängigkeit aus, indem er das LLM mit irreführenden Informationen füttert und so die Verbreitung von Fehlinformationen verursacht.
+Die KI plagiiert unbeabsichtigt Inhalte, was zu Urheberrechtsproblemen und einem Vertrauensverlust in die Organisation führt.
+Ein Softwareentwicklungsteam verwendet ein LLM-System, um den Entwicklungsprozess zu beschleunigen. Die übermäßige Abhängigkeit von den Vorschlägen der KI führt zu Sicherheitslücken in der Anwendung aufgrund unsicherer Standardeinstellungen oder Empfehlungen, die nicht sicheren Programmierpraktiken entsprechen.
+Eine Softwareentwicklungsfirma verwendet ein LLM, um Entwickelnde zu unterstützen. Das LLM schlägt eine nicht existierende Codebibliothek oder ein nicht existierendes Paket vor, und eine Person, die der KI vertraut, integriert unwissentlich ein schädliches Paket in die Software des Unternehmens. Dies unterstreicht die Bedeutung der Überprüfung von LLM-Vorschlägen, insbesondere wenn es sich um Code oder Bibliotheken von Drittanbietern handelt.
 
-### Referenzlinks
+### Referenzen
 
 Understanding LLM Hallucinations: Towards Data Science
 How Should Companies Communicate the Risks of Large Language Models to Users?: Techpolicy
@@ -512,48 +525,47 @@ Practical Steps to Reduce Hallucination: Victor Debia
 
 ### Beschreibung
 
-Dieser Eintrag bezieht sich auf den unbefugten Zugriff und die Exfiltration von LLM-Modellen durch bösartige Akteure oder APTs (Advanced Persistent Threats). Dies tritt auf, wenn die proprietären LLM-Modelle (als wertvolles geistiges Eigentum) kompromittiert, physisch gestohlen, kopiert oder Gewichte und Parameter extrahiert werden, um ein funktionsfähiges Äquivalent zu erstellen. Die Auswirkungen des Diebstahls von LLM-Modellen können wirtschaftliche Verluste und Schäden am Markenimage, Erosion des Wettbewerbsvorteils, unbefugte Nutzung des Modells oder unbefugten Zugriff auf sensible Informationen, die im Modell enthalten sind, umfassen.
+Dieser Eintrag bezieht sich auf den unbefugten Zugriff und die Exfiltration von LLM-Modellen durch böswillige Akteure oder APTs (Advanced Persistent Threats). Dies geschieht, wenn proprietäre LLM-Modelle (als wertvolles geistiges Eigentum) kompromittiert, physisch gestohlen, kopiert oder Modellgewichte und Parameter extrahiert werden, um ein funktionsfähiges Äquivalent zu erstellen. Die Auswirkungen des Diebstahls von LLM-Modellen können wirtschaftliche Verluste und Imageschäden, die Erosion von Wettbewerbsvorteilen, die unbefugte Nutzung des Modells oder den unbefugten Zugriff auf sensible Informationen, die im Modell enthalten sind, umfassen.
 
-Der Diebstahl von LLMs stellt ein erhebliches Sicherheitsproblem dar, da Sprachmodelle immer leistungsfähiger und verbreiteter werden. Organisationen und Forscher müssen robuste Sicherheitsmaßnahmen priorisieren, um ihre LLM-Modelle zu schützen und die Vertraulichkeit und Integrität ihres geistigen Eigentums zu gewährleisten. Die Implementierung eines umfassenden Sicherheitsrahmens, der Zugriffskontrollen, Verschlüsselung und kontinuierliche Überwachung umfasst, ist entscheidend, um die Risiken im Zusammenhang mit dem Diebstahl von LLM-Modellen zu mindern und die Interessen von Einzelpersonen und Organisationen, die sich auf LLM verlassen, zu schützen.
+Der Diebstahl von LLMs stellt ein erhebliches Sicherheitsproblem dar, da Sprachmodelle immer leistungsfähiger und allgegenwärtiger werden. Organisationen und Forschende müssen robuste Sicherheitsmaßnahmen ergreifen, um ihre LLM-Modelle zu schützen und die Vertraulichkeit und Integrität ihres geistigen Eigentums zu gewährleisten. Der Einsatz eines umfassenden Sicherheitsrahmens, der Zugriffskontrollen, Verschlüsselung und kontinuierliche Überwachung umfasst, ist entscheidend, um die mit dem Diebstahl von LLM-Modellen verbundenen Risiken zu mindern und die Interessen sowohl von Einzelpersonen als auch von Organisationen zu schützen, die sich auf LLM verlassen.
 
-### Häufige Beispiele für Schwachstellen
+### Gängige Beispiele für Schwachstellen
 
-Ein Angreifer nutzt eine Schwachstelle in der Infrastruktur eines Unternehmens aus, um unbefugten Zugriff auf ihr LLM-Modell-Repository zu erhalten, durch Fehlkonfiguration in ihren Netzwerk- oder Anwendungssicherheitseinstellungen.
-Ein Insider-Bedrohungsszenario, bei dem ein unzufriedener Mitarbeiter das Modell oder damit verbundene Artefakte durchsickern lässt.
-Ein Angreifer verwendet die Modell-API mit sorgfältig erstellten Eingaben und Prompt-Injektionstechniken, um eine ausreichende Anzahl von Ausgaben zu sammeln, um ein Schattenmodell zu erstellen.
-Ein bösartiger Angreifer kann Eingabefilterungstechniken des LLM umgehen, um einen Seitenkanalangriff durchzuführen und letztendlich Modellgewichte und Architekturinformationen zu einer ferngesteuerten Ressource zu übertragen.
-Der Angriffsvektor für die Modell-Extraktion beinhaltet das Abfragen des LLM mit einer großen Anzahl von Prompts zu einem bestimmten Thema. Die Ausgaben aus dem LLM können dann verwendet werden, um ein anderes Modell zu verfeinern. Es gibt jedoch einige Dinge zu beachten bei diesem Angriff:
-Der Angreifer muss eine große Anzahl von gezielten Prompts generieren. Wenn die Prompts nicht spezifisch genug sind, werden die Ausgaben aus dem LLM nutzlos sein.
-Die Ausgaben aus LLMs können manchmal halluzinierte Antworten enthalten, was bedeutet, dass der Angreifer möglicherweise nicht das gesamte Modell extrahieren kann, da einige der Ausgaben unsinnig sein können.
-Es ist nicht möglich, ein LLM zu 100% durch Modell-Extraktion zu replizieren. Der Angreifer wird jedoch in der Lage sein, ein teilweises Modell zu replizieren.
-Der Angriffsvektor für _funktionale Modellreplikation_ beinhaltet die Verwendung des Zielmodells über Prompts, um synthetische Trainingsdaten zu generieren (ein Ansatz, der als "Selbstinstruktion" bezeichnet wird), um es dann zu verwenden und ein anderes grundlegendes Modell zu verfeinern und ein funktionales Äquivalent zu produzieren. Dies umgeht die Einschränkungen der traditionellen abfragebasierten Extraktion, die in Beispiel 5 verwendet wurde, und wurde erfolgreich in der Forschung über die Verwendung eines LLM zum Trainieren eines anderen LLM eingesetzt. Obwohl im Kontext dieser Forschung die Modellreplikation kein Angriff ist. Der Ansatz könnte von einem Angreifer verwendet werden, um ein proprietäres Modell mit einer öffentlichen API zu replizieren.
+Angreifende nutzen eine Schwachstelle in der Infrastruktur einer Organisation aus, um sich durch Fehlkonfiguration der Netzwerk- oder Anwendungssicherheitseinstellungen unberechtigten Zugriff auf das LLM-Modell-Repository zu verschaffen.
+Ein Insider-Bedrohungsszenario, bei dem ein unzufriedener Mitarbeitender das Modell oder damit verbundene Artefakte nach außen dringen lässt.
+Angreifende verwenden die Modell-API mit sorgfältig erstellten Eingaben und Prompt Injection-Techniken, um eine ausreichende Anzahl von Ausgaben zu sammeln, um ein Schattenmodell zu erstellen.
+Böswillige Angreifenden können die Eingabefiltertechniken des LLM umgehen, um einen Seitenkanalangriff durchzuführen und schließlich Modellgewichte und Architekturinformationen an eine entfernte Ressource zu übertragen.
+Der Angriffsvektor für die Extraktion von Modellen beinhaltet die Abfrage des LLM mit einer großen Anzahl von Prompts zu einem bestimmten Thema. Die Ausgabe des LLM kann dann verwendet werden, um ein anderes Modell zu verfeinern. Bei diesem Angriff sind jedoch einige Dinge zu beachten:
+Angreifende müssen eine große Anzahl spezifischer Prompts erzeugen. Wenn die Prompts nicht spezifisch genug sind, ist die Ausgabe des LLM nutzlos.
+Die Ausgaben von LLMs können manchmal halluzinierte Antworten enthalten, was bedeutet, dass Angreifende möglicherweise nicht in der Lage sind, das gesamte Modell zu extrahieren, da einige der Ausgaben sinnlos sein können.
+Es ist nicht möglich, ein LLM zu 100 % durch Modellextraktion zu replizieren. Angreifende werden jedoch in der Lage sein, ein Teilmodell zu replizieren.
+Der Angriffsvektor für die _funktionale Modellreplikation_ besteht darin, das Zielmodell über Prompts zu verwenden, um synthetische Trainingsdaten zu erzeugen (ein Ansatz, der als "Selbstinstruktion" bezeichnet wird), und diese dann zu verwenden, um ein anderes Basismodell zu verfeinern und ein funktionales Äquivalent zu erzeugen. Dieser Ansatz umgeht die Beschränkungen der traditionellen abfragebasierten Extraktion, die in Beispiel 5 verwendet wurde, und wurde erfolgreich in der Forschung über die Verwendung eines LLM zum Trainieren eines anderen LLM eingesetzt. Im Kontext dieser Forschung stellt die Modellreplikation keinen Angriff dar. Der Ansatz könnte von Angreifenden verwendet werden, um ein proprietäres Modell mit einer öffentlichen API zu replizieren.
 
-Die Verwendung eines gestohlenen Modells als Schattenmodell kann verwendet werden, um gegnerische Angriffe zu inszenieren, einschließlich unbefugtem Zugriff auf sensible Informationen, die im Modell enthalten sind, oder um unbemerkt mit gegnerischen Eingaben zu experimentieren, um weiter fortgeschrittene Prompt-Injektionen zu inszenieren.
+Die Verwendung eines gestohlenen Modells als Schattenmodell kann dazu genutzt werden, Angriffe des Gegners zu inszenieren, einschließlich des unbefugten Zugriffs auf sensible Informationen, die im Modell enthalten sind, oder um unbemerkt mit Eingaben des Gegners zu experimentieren, um fortgeschrittenere Prompt-Injektionen zu inszenieren.
 
-### Präventions- und Mitigierungsstrategien
+### Präventions- und Mitigationsstrategien
 
-Implementieren Sie starke Zugriffskontrollen (z.B. RBAC und das Prinzip der geringsten Rechte) und starke Authentifizierungsmechanismen, um unbefugten Zugriff auf LLM-Modell-Repositories und Trainingsumgebungen zu begrenzen.
-Dies gilt insbesondere für die ersten drei häufigen Beispiele, die diese Schwachstelle aufgrund von Insider-Bedrohungen, Fehlkonfigurationen und/oder schwachen Sicherheitskontrollen über die Infrastruktur, die LLM-Modelle, Gewichte und Architektur beherbergt, in der ein bösartiger Akteur aus dem Inneren oder von außen eindringen könnte, verursachen könnten.
-Lieferantenmanagement-Tracking, Überprüfung und Abhängigkeitsschwachstellen sind wichtige Schwerpunktthemen, um Ausnutzungen von Supply-Chain-Angriffen zu verhindern.
+Implementieren Sie strenge Zugriffskontrollen (z. B. RBAC und least privilege Prinzip) und starke Authentifizierungsmechanismen, um den unbefugten Zugriff auf Repositories mit LLM-Modellen und Lernumgebungen einzuschränken.
+Dies gilt insbesondere für die ersten drei gängigen Beispiele, die diese Schwachstelle aufgrund von Insider-Bedrohungen, Fehlkonfigurationen und/oder schwachen Sicherheitskontrollen in Bezug auf die Infrastruktur, die LLM-Modelle, -Gewichte und -Architekturen beherbergt, verursachen können, in die böswillige Akteure von innen oder außen eindringen können.
+Schwachstellen bei der Rückverfolgbarkeit, der Verifizierung und der Abhängigkeit von Lieferanten sind wichtige Schwerpunktthemen, um die Ausnutzung von Angriffen auf die Lieferkette zu verhindern.
 Beschränken Sie den Zugriff des LLM auf Netzwerkressourcen, interne Dienste und APIs.
-Dies gilt insbesondere für alle häufigen Beispiele, da es das Insider-Risiko und -Bedrohungen abdeckt, aber letztendlich auch kontrolliert, worauf die LLM-Anwendung "_Zugriff hat_", und somit ein Mechanismus oder Präventionsschritt sein könnte, um Seitenkanalangriffe zu verhindern.
-Verwenden Sie ein zentrales ML-Modellinventar oder -Register für ML-Modelle, die in der Produktion verwendet werden. Ein zentrales Modellregister verhindert unbefugten Zugriff auf ML-Modelle über Zugriffskontrollen, Authentifizierung und Überwachungs-/Protokollierungsfähigkeit, die gute Grundlagen für Governance sind. Ein zentrales Repository ist auch vorteilhaft für die Sammlung von Daten über Algorithmen, die von den Modellen für Zwecke der Compliance, Risikobewertungen und Risikominderung verwendet werden.
-Überwachen und prüfen Sie regelmäßig Zugriffsprotokolle und Aktivitäten im Zusammenhang mit LLM-Modell-Repositories, um verdächtiges oder unbefugtes Verhalten umgehend zu erkennen und darauf zu reagieren.
-Automatisieren Sie MLOps-Bereitstellung mit Governance und Nachverfolgungs- und Genehmigungsworkflows, um Zugriffs- und Bereitstellungskontrollen innerhalb der Infrastruktur zu straffen.
-Implementieren Sie Kontrollen und Minderungsstrategien, um das Risiko von Prompt-Injektionstechniken, die Seitenkanalangriffe verursachen, zu mindern und/oder zu reduzieren.
-Rate Limiting von API-Aufrufen, wo anwendbar, und/oder Filter, um das Risiko der Datenexfiltration aus den LLM-Anwendungen zu reduzieren, oder implementieren Sie Techniken zur Erkennung (z.B. DLP) von Extraktionsaktivitäten aus anderen Überwachungssystemen.
-Implementieren Sie Training zur gegnerischen Robustheit, um Extraktionsabfragen zu erkennen und physische Sicherheitsmaßnahmen zu straffen.
-Implementieren Sie ein Wasserzeichen-Framework in die Einbettungs- und Erkennungsphasen des Lebenszyklus eines LLMs.
+Dies gilt insbesondere für alle gängigen Beispiele, da es Risiken und Bedrohungen von innen abdeckt, aber letztlich auch kontrolliert, worauf die LLM-Anwendung "zugreifen" kann und somit einen Mechanismus oder eine Präventivmaßnahme zur Verhinderung von Seitenkanalangriffen darstellen kann.
+Verwenden Sie ein zentrales ML-Modell-Inventar oder -Register für ML-Modelle, die in der Produktion verwendet werden. Eine zentralisierte Modellregistrierung verhindert den unbefugten Zugriff auf ML-Modelle durch Zugriffskontrollen, Authentifizierung und Überwachungs-/Protokollierungsfunktionen, die eine gute Grundlage für die Governance bilden. Ein zentrales Repository ist auch vorteilhaft, um Daten über die von den Modellen verwendeten Algorithmen für Zwecke der Compliance, Risikobewertung und Risikominderung zu sammeln.
+Überwachen und überprüfen Sie regelmäßig die Zugriffsprotokolle und Aktivitäten im Zusammenhang mit LLM-Modell-Repositories, um verdächtiges oder nicht autorisiertes Verhalten zu erkennen und sofort darauf zu reagieren.
+Automatisieren Sie die MLOps-Bereitstellung mit Governance-, Tracking- und Genehmigungs-Workflows, um die Zugriffs- und Bereitstellungskontrollen innerhalb der Infrastruktur zu stärken.
+Implementieren Sie Kontrollen und Abschwächungsstrategien, um das Risiko von "Instant Injection"-Techniken, die Seitenkanalangriffe verursachen, abzuschwächen oder zu reduzieren.
+Beschränken Sie gegebenenfalls die Anzahl der API-Aufrufe und/oder setzen Sie Filter ein, um das Risiko der Datenexfiltration aus LLM-Anwendungen zu verringern, oder implementieren Sie Techniken zur Erkennung von Extraktionsaktivitäten (z. B. DLP) aus anderen Überwachungssystemen.
+Implementieren Sie ein Robustheitstraining für Angreifende, um Extraktionsanfragen zu erkennen und die physischen Sicherheitsmaßnahmen zu verstärken.
+mplementieren Sie ein Wasserzeichen-Framework in den Embeddings- und Erkennungsphasen des Lebenszyklus eines LLM.
 
-### Beispielangriffsszenarien
+### Beispiele für Angriffsszenarien
 
-Ein Angreifer nutzt eine Schwachstelle in der Infrastruktur eines Unternehmens aus, um unbefugten Zugriff auf ihr LLM-Modell-Repository zu erhalten. Der Angreifer fährt fort, wertvolle LLM-Modelle zu exfiltrieren und verwendet sie, um einen konkurrierenden Sprachverarbeitungsdienst zu starten oder sensible Informationen zu extrahieren, was zu erheblichen finanziellen Schäden für das ursprüngliche Unternehmen führt.
-Ein unzufriedener Mitarbeiter lässt das Modell oder damit verbundene Artefakte durchsickern. Die öffentliche Exposition dieses Szenarios erhöht das Wissen für Angreifer für Graukasten-gegnerische Angriffe oder alternativ direkt den Diebstahl des verfügbaren Eigentums.
-Ein Angreifer fragt die API mit sorgfältig ausgewählten Eingaben ab und sammelt eine ausreichende Anzahl von Ausgaben, um ein Schattenmodell zu erstellen.
-Ein Versagen der Sicherheitskontrolle ist innerhalb der Lieferkette vorhanden und führt zu Datenlecks von proprietären Modellinformationen.
-Ein bösartiger Angreifer umgeht Eingabefilterungstechniken und Präambeln des LLM, um einen Seitenkanalangriff durchzuführen und Modellinformationen zu einer ferngesteuerten Ressource unter ihrer Kontrolle abzurufen.
+Angreifende nutzen eine Schwachstelle in der Infrastruktur eines Unternehmens aus, um sich unberechtigten Zugriff auf dessen LLM-Modell-Repository zu verschaffen. Der Angreifer exfiltriert wertvolle LLM-Modelle und verwendet sie, um einen konkurrierenden Sprachverarbeitungsdienst zu starten oder sensible Informationen zu extrahieren, wodurch dem ursprünglichen Unternehmen erheblicher finanzieller Schaden entsteht.
+Ein unzufriedener Mitarbeiter lässt das Modell oder damit verbundene Artefakte nach außen dringen. Das öffentliche Bekanntwerden dieses Szenarios erhöht das Wissen für Angreifende, die Gray-Box-Angriffe oder alternativ den direkten Diebstahl des verfügbaren Eigentums planen. 3. Ein Angreifer fragt die API mit sorgfältig ausgewählten Eingaben ab und sammelt eine ausreichende Anzahl von Ausgaben, um ein Schattenmodell zu erstellen.
+Ein Versagen der Sicherheitskontrolle in der Lieferkette führt zum Abfluss von proprietären Modellinformationen.
+Böswillige Angreifende umgeht die Eingabefilterung und die Präambel des LLM, um einen Seitenkanalangriff durchzuführen und Modellinformationen über eine ferngesteuerte Ressource unter seiner Kontrolle zu erlangen.
 
-### Referenz-Links
+### Referenzen
 
 Meta’s powerful AI language model has leaked online: The Verge
 Runaway LLaMA | How Meta's LLaMA NLP model leaked: Deep Learning Blog

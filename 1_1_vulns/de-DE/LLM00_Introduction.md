@@ -4,11 +4,11 @@
 
 Das enorme Interesse an Large Language Models (LLMs) nach der Einführung massentauglicher, vortrainierten Chatbots Ende 2022 ist beachtlich. Unternehmen, die das Potenzial von LLMs nutzen wollen, integrieren sie rasch in ihre Geschäftsprozesse und kundenzugänglichen Angeboten. Die rasante Geschwindigkeit, mit der LLMs eingeführt werden, hat jedoch dazu geführt, dass die Etablierung umfassender Sicherheitsprotokolle in Verzug geraten ist, sodass viele Anwendungen mit hohen Risiken behaftet sind.
 
-Das Fehlen einer zentralen Ressource, die sich mit diesen Sicherheitsbedenken in Bezug auf LLMs befasst, war offensichtlich. Entwicklerinnen und Entwickler, die mit den spezifischen Risiken von LLMs nicht vertraut waren, standen nur wenige Ressourcen zur Verfügung, und die Mission von OWASP schien die perfekte Lösung zu sein, um die sichere Einführung dieser Technologie zu fördern.
+Das Fehlen einer zentralen Ressource, die sich mit diesen Sicherheitsbedenken in Bezug auf LLMs befasst, war unübersehbar. Entwicklerinnen und Entwickler, die mit den spezifischen Risiken von LLMs nicht vertraut waren, standen nur wenige Ressourcen zur Verfügung, und die Mission von OWASP schien die perfekte Lösung zu sein, um die sichere Einführung dieser Technologie zu fördern.
 
 ### Für wen diese Liste ist
 
-Unsere Hauptzielgruppe sind Entwickelnde, Data Scientists und Sicherheitsexpertinnen und -experten, die Anwendungen und Plug-ins basierend auf LLM-Technologien entwerfen und erstellen. Unser Ziel ist es, praktische, umsetzbare und prägnante Sicherheitsleitfäden bereitzustellen, die diesen Fachleuten helfen, sich auf dem komplexen und sich ständig weiterentwickelnden Gebiet der Sicherheit von LLM-Anwendungen zurechtzufinden.
+Unsere Hauptzielgruppe sind Entwickelnde, Data Scientists sowie Sicherheitsexpertinnen und -experten, die Anwendungen und Plug-ins basierend auf LLM-Technologien entwerfen und erstellen. Unser Ziel ist es, praktische, umsetzbare und prägnante Sicherheitsleitfäden bereitzustellen, die diesen Fachleuten helfen, sich auf dem komplexen und sich ständig weiterentwickelnden Gebiet der Sicherheit von LLM-Anwendungen zurechtzufinden.
 
 ### Die Erstellung der Liste
 
@@ -18,7 +18,7 @@ Wir haben einen Monat lang gebrainstormt, potenzielle Schwachstellen vorgeschlag
 
 ### Das Verhältnis zu anderen OWASP Top 10 Listen
 
-Während unsere Liste die DNA mit Schwachstellentypen aus anderen OWASP Top 10-Listen teilt, wiederholen wir diese Schwachstellen nicht einfach. Stattdessen fokussieren wir uns auf die einzigartigen Auswirkungen dieser Schwachstellen bei der Verwendung von LLMs.
+Während unsere Liste die DNA mit Schwachstellentypen aus anderen OWASP Top 10 Listen teilt, wiederholen wir diese Schwachstellen nicht einfach. Stattdessen fokussieren wir uns auf die einzigartigen Auswirkungen dieser Schwachstellen bei der Verwendung von LLMs.
 
 Unser Ziel ist es, die Lücke zwischen allgemeinen Prinzipien der Anwendungssicherheit und den spezifischen Herausforderungen von LLMs zu schließen. Dazu gehört die Untersuchung, wie herkömmliche Schwachstellen in LLMs andere Risiken darstellen oder auf neue Weise ausgenutzt werden können und wie herkömmliche Abwehrmaßnahmen für LLM-basierte Anwendungen angepasst werden müssen.
 
@@ -54,9 +54,9 @@ Talesh Seeparsan
 Übersetzungsleiter, OWASP Top 10 für LLM-Anwendungen
 [https://www.linkedin.com/in/talesh/](https://www.linkedin.com/in/talesh/)  
 
-## OWASP Top 10 für Anwendungen von Large Language Models (LLMs)
+## OWASP Top 10 für LLM-Applikationen
 
-### LLM01: Prompt Injection
+### LLM01: Prompt Injection (Prompt-Einschleusung)
 Mittels raffinierter Eingaben kann ein Large Language Model manipuliert und unbeabsichtigte Aktionen ausgelöst werden. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
 
 ### LLM02: Unsichere Ausgabeverarbeitung

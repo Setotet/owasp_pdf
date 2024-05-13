@@ -23,7 +23,7 @@ Angreifende interagieren mit einem LLM auf eine Weise, die eine außergewöhnlic
 6. Setzen Sie strikte Eingabebegrenzungen basierend auf dem Kontextfenster des LLM, um eine Überlastung und Erschöpfung der Ressourcen zu vermeiden.
 7. Entwickler für potenzielle DoS-Schwachstellen in LLMs zu sensibilisieren und Richtlinien für eine sichere LLM-Implementierung bereitzustellen.
 
-## Beispiele für Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Angreifende senden wiederholt mehrere komplexe und teure Anfragen an ein gehostetes Modell, was zu einer Verschlechterung des Dienstes für andere Personen und zu höheren Ressourcenkosten für den Betreiber führt.
 2. Ein Stück Text auf einer Webseite wird gefunden, während ein LLM-gesteuertes Tool Informationen sammelt, um auf eine harmlose Anfrage zu antworten. Dies führt dazu, dass das Tool viele weitere Anfragen an die Webseite stellt, was zu einem hohen Ressourcenverbrauch führt.

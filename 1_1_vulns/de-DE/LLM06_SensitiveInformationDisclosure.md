@@ -23,7 +23,7 @@ Die Interaktion zwischen Verbraucher und LLM-Anwendung bildet eine zweiseitige V
    2. Der Zugriff auf externe Datenquellen (Orchestrierung von Daten zur Laufzeit) sollte eingeschränkt werden.
    3. Strenge Zugriffskontrollmethoden für externe Datenquellen und ein rigoroser Ansatz zur Aufrechterhaltung einer sicheren Lieferkette.
 
-## Beispiele für Angriffsszenarien
+### Beispiele für Angriffsszenarien
 
 1. Die ahnungslose legitime Benutzerin A erhält über den LLM Zugang zu bestimmten anderen Benutzerdaten, wenn sie in nicht böswilliger Absicht mit der LLM-Anwendung interagiert.
 2. Benutzer A zielt darauf ab, die Eingabefilter und die Bereinigungsfunktionen des LLM durch eine ausgeklügelte Abfolge von Eingabeaufforderungen zu umgehen und Personen dazu zu bringen, personenbezogene Informationen (PII) über andere Personen der Anwendung preiszugeben.
