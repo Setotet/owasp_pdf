@@ -51,7 +51,7 @@ L'avvelenamento dei dati è considerato un attacco all'integrità perché la man
 3. Un utente malevolo o un concorrente crea deliberatamente documenti inaccurati o malevoli indirizzati ai dati di addestramento di un modello, che è in fase di addestramento al tempo stesso in base a questi input. Il modello vittima impara utilizzando informazioni falsificate che si riflettono negli output che il modello di IA generativa fornisce ai suoi fruitori.
 4. L'iniezione di prompt (LLM01) potrebbe essere un vettore di attacco per questa vulnerabilità se non viene eseguita una sanitizzazione e un filtraggio adeguati quando gli input degli utenti sono usati per addestrare il modello. Ad esempio, se dati malevoli o falsificati vengono inseriti nel modello da un utente attraverso una tecnica di iniezione di prompt, questi potrebbero essere intrinsecamente rappresentati nei dati su cui il modello si basa.
 
-### Riferimenti e link (inglese)
+### Riferimenti e link (Inglese)
 
 1. [Stanford Research Paper:CS324](https://stanford-cs324.github.io/winter2022/lectures/data/): **Stanford Research**
 2. [How data poisoning attacks corrupt machine learning models](https://www.csoonline.com/article/3613932/how-data-poisoning-attacks-corrupt-machine-learning-models.html): **CSO Online**
