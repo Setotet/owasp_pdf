@@ -17,7 +17,7 @@ L'interazione tra l'utente e l'applicazione LLM instaura un contesto di fiducia 
 ### Strategie di Prevenzione e Mitigazione
 1. Integrare adeguate tecniche di sanificazione e pulizia dei dati per impedire che i dati degli utenti entrino nei set di dati di addestramento del modello.
 2. Implementare metodi robusti di validazione e sanificazione degli input per identificare ed escludere potenziali input malevoli per prevenire l'avvelenamento (poisoning) del modello.
-3. Quando si arricchisce il modello con dati e se si effettua il [fine-tuning](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/wiki/Definitions) di un modello (ad esempio, dati inseriti nel modello prima o durante il rilascio):
+3. Quando si arricchisce il modello con dati e se si effettua il "fine-tuning" (rif.7) di un modello (ad esempio, dati inseriti nel modello prima o durante il rilascio):
 	1. Qualunque informazione sensibile nei dati di fine-tuning ha il potenziale di essere rivelato ad un utente. Pertanto, si raccomanda di applicare la buona pratica di minimizzazione dei privilegi di accesso, e di non addestrare il modello su informazioni a cui un utente con privilegi elevati può accedere poichè potrebbero inavvertitamente essere mostrate a un utente con privilegi inferiori.
 	2. L'accesso a fonti di dati esterne (orchestrazione dei dati in tempo reale) dovrebbe essere limitato.
 	3. Applicare metodi stringenti di controllo degli accessi alle fonti di dati esterne e un approccio rigoroso nella gestione di una catena di approvvigionamento sicura.
@@ -36,3 +36,4 @@ L'interazione tra l'utente e l'applicazione LLM instaura un contesto di fiducia 
 4. [A threat modeling example](https://aivillage.org/large%20language%20models/threat-modeling-llm/): **AI Village**
 5. [OWASP AI Security and Privacy Guide](https://owasp.org/www-project-ai-security-and-privacy-guide/): **OWASP AI Security & Privacy Guide**
 6. [Ensuring the Security of Large Language Models](https://www.experts-exchange.com/articles/38220/Ensuring-the-Security-of-Large-Language-Models-Strategies-and-Best-Practices.html): **Experts Exchange**
+7. [fine-tuning](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/wiki/Definitions)

@@ -57,7 +57,9 @@ GitHub: @GangGreenTemperTatum
 - **Matteo Dora**  
 [https://www.linkedin.com/in/mattbit/](https://www.linkedin.com/in/mattbit/)  
 - **Riccardo Sirigu**  
-[https://www.linkedin.com/in/riccardosirigu/](https://www.linkedin.com/in/riccardosirigu/) 
+[https://www.linkedin.com/in/riccardosirigu/](https://www.linkedin.com/in/riccardosirigu/)
+- **Valerio Alessandroni**  
+[https://www.linkedin.com/in/valerio-alessandroni/](https://www.linkedin.com/in/valerio-alessandroni/) 
 
 Nella realizzazione di questa traduzione, abbiamo scelto consapevolmente di impiegare solo traduttori umani, riconoscendo la natura eccezionalmente tecnica e critica dell’OWASP Top Ten per gli LLM. I traduttori elencati sopra non solo possiedono una profonda comprensione del contenuto originale, ma anche la fluidità per rendere questa traduzione un successo.
 
