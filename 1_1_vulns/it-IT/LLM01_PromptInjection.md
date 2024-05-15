@@ -2,13 +2,13 @@
 
 ### Descrizione
 
-La vulnerabilità di tipo iniezione di prompt (inglese: prompt injection) si verifica quando un attaccante manipola un modello linguistico di grandi dimensioni (LLM) attraverso input fatti ad hoc, facendo in modo che il LLM risponda inconsapevolmente alle intenzioni dell’attaccante. Questo può essere fatto direttamente attraverso il “jailbreaking” (effrazione) del prompt di sistema, oppure indirettamente, manipolando gli input esterni, portando potenzialmente all’esfiltrazione di dati, all’ingegneria sociale e altre problematiche.
+La vulnerabilità di tipo iniezione di prompt (inglese: prompt injection) si verifica quando un attaccante manipola un modello linguistico di grandi dimensioni (LLM) attraverso input fatti ad hoc, facendo in modo che il LLM risponda inconsapevolmente alle intenzioni dell’attaccante. Questo può essere fatto direttamente attraverso il "jailbreaking" (effrazione) del prompt di sistema, oppure indirettamente, manipolando gli input esterni, portando potenzialmente all’esfiltrazione di dati, all’ingegneria sociale e altre problematiche.
 
 * **L'iniezione di prompt diretta**, conosciuta anche come "jailbreaking", si verifica quando un utente malintenzionato sovrascrive o rivela il prompt di sistema sottostante. Ciò può consentire agli attaccanti di sfruttare i sistemi backend interagendo con funzioni insicure e basi di dati accessibili tramite il LLM.
 
 * **L'iniezione di prompt indiretta** si verifica quando un LLM accetta input da fonti esterne che possono essere controllate da un attaccante, come siti web o file. L'attaccante può incorporare un'iniezione di prompt nel contenuto esterno, dirottando il contesto della conversazione. Ciò causerebbe una minore stabilità dell'output del LLM, consentendo all'attaccante di manipolare l'utente o i sistemi aggiuntivi a cui il LLM può accedere. Inoltre, le iniezioni di prompt indirette non hanno bisogno di essere visibili o leggibili da un umano, purché il testo venga analizzato dal LLM.
 
-I risultati di un attacco di iniezione di prompt di successo possono variare notevolmente — dalla richiesta di informazioni sensibili all'influenza su processi decisionali critici sotto mentite spoglie di normale funzionamento.
+I risultati di un attacco di iniezione di prompt di successo possono variare notevolmente - dalla richiesta di informazioni sensibili all'influenza su processi decisionali critici sotto mentite spoglie di normale funzionamento.
 
 In attacchi avanzati, il LLM può essere manipolato per impersonare un personaggio malevolo o interagire con plugin nell'ambiente dell'utente. Ciò può portare alla divulgazione di dati sensibili, all'uso non autorizzato di plugin o all'ingegneria sociale. In tali casi, il LLM compromesso aiuta l'attaccante, aggirando i meccanismi di protezione standard e mantenendo l'utente all'oscuro dell'intrusione. In questi casi, il LLM compromesso agisce in sostanza come un agente per l'attaccante, perseguendo i suoi obiettivi senza innescare i normali meccanismi di protezione o senza segnalare l'intrusione all'utente finale.
 
