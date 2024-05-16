@@ -49,6 +49,6 @@ Infine, le estensioni dei plugin LLM possono introdurre ulteriori vulnerabilità
 8. [Transferability in Machine Learning: from Phenomena to Black-Box Attacks using Adversarial Samples](https://arxiv.org/pdf/1605.07277.pdf): **Arxiv White Paper**
 9. [BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain](https://arxiv.org/abs/1708.06733): **Arxiv White Paper**
 10. [VirusTotal Poisoning](https://atlas.mitre.org/studies/AML.CS0002): **MITRE ATLAS**
-11. [LLM07 - Insecure Plugin Design](InsecurePluginDesign.md)
+11. [LLM07 - Insecure Plugin Design](https://github.com/Setotet/secgov/blob/main/1_1_vulns/en-ZZ/InsecurePluginDesign.md)
 12. [A06:2021 – Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
 13. [Training Data Poisoning](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/1_0_vulns/Training_Data_Poisoning.md)
