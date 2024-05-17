@@ -2,13 +2,13 @@
 
 ### Die Entstehung der Liste
 
-Das enorme Interesse an Large Language Models (LLMs) nach der Einführung massentauglicher, vortrainierten Chatbots Ende 2022 ist beachtlich. Unternehmen, die das Potenzial von LLMs nutzen wollen, integrieren sie rasch in ihre Geschäftsprozesse und kundenzugänglichen Angeboten. Die rasante Geschwindigkeit, mit der LLMs eingeführt werden, hat jedoch dazu geführt, dass die Etablierung umfassender Sicherheitsprotokolle in Verzug geraten ist, sodass viele Anwendungen mit hohen Risiken behaftet sind.
+Seit der Einführung von massentauglichen, vortrainierten Chatbots Ende 2022 ist das Interesse an Large Language Models (LLMs) enorm. Unternehmen, die das Potenzial von LLMs nutzen wollen, integrieren sie rasch in ihre Geschäftsprozesse und kundenzugänglichen Angebote. Die rasante Geschwindigkeit, mit der LLMs eingeführt werden, hat jedoch dazu geführt, dass die Etablierung umfassender Sicherheitsprotokolle in Verzug geraten ist, sodass viele Anwendungen mit hohen Risiken behaftet sind.
 
-Das Fehlen einer zentralen Ressource, die sich mit diesen Sicherheitsbedenken in Bezug auf LLMs befasst, war unübersehbar. Entwicklerinnen und Entwickler, die mit den spezifischen Risiken von LLMs nicht vertraut waren, standen nur wenige Ressourcen zur Verfügung, und die Mission von OWASP schien die perfekte Lösung zu sein, um die sichere Einführung dieser Technologie zu fördern.
+Das Fehlen einer zentralen Ressource, die sich mit diesen Sicherheitsbedenken in Bezug auf LLMs befasst, war unübersehbar. Entwicklerinnen und Entwickler, die mit den spezifischen Risiken von LLMs nicht vertraut waren, standen nur wenige Ressourcen zur Verfügung, und die Mission von OWASP schien die perfekte Lösung zu sein, um eine sichere Einführung dieser Technologie zu fördern.
 
 ### Für wen diese Liste ist
 
-Unsere Hauptzielgruppe sind Entwickelnde, Data Scientists sowie Sicherheitsexpertinnen und -experten, die Anwendungen und Plug-ins basierend auf LLM-Technologien entwerfen und erstellen. Unser Ziel ist es, praktische, umsetzbare und prägnante Sicherheitsleitfäden bereitzustellen, die diesen Fachleuten helfen, sich auf dem komplexen und sich ständig weiterentwickelnden Gebiet der Sicherheit von LLM-Anwendungen zurechtzufinden.
+Unsere Hauptzielgruppe sind Entwickelnde, Data Scientists sowie Sicherheitsexpertinnen und -experten, die Anwendungen und Plugins basierend auf LLM-Technologien entwerfen und erstellen. Unser Ziel ist es, praktische, umsetzbare und prägnante Sicherheitsleitlinien bereitzustellen, die diesen Fachleuten helfen, sich auf dem komplexen und sich ständig weiterentwickelnden Gebiet der Sicherheit von LLM-Anwendungen zurechtzufinden.
 
 ### Die Erstellung der Liste
 
@@ -18,7 +18,7 @@ Wir haben einen Monat lang gebrainstormt, potenzielle Schwachstellen vorgeschlag
 
 ### Das Verhältnis zu anderen OWASP Top 10 Listen
 
-Während unsere Liste die DNA mit Schwachstellentypen aus anderen OWASP Top 10 Listen teilt, wiederholen wir diese Schwachstellen nicht einfach. Stattdessen fokussieren wir uns auf die einzigartigen Auswirkungen dieser Schwachstellen bei der Verwendung von LLMs.
+Obwohl unsere Liste Gemeinsamkeiten mit den Schwachstellentypen anderer OWASP Top 10 Listen aufweist, wiederholen wir diese Schwachstellen nicht einfach. Stattdessen fokussieren wir uns auf die einzigartigen Auswirkungen dieser Schwachstellen bei der Verwendung von LLMs.
 
 Unser Ziel ist es, die Lücke zwischen allgemeinen Prinzipien der Anwendungssicherheit und den spezifischen Herausforderungen von LLMs zu schließen. Dazu gehört die Untersuchung, wie herkömmliche Schwachstellen in LLMs andere Risiken darstellen oder auf neue Weise ausgenutzt werden können und wie herkömmliche Abwehrmaßnahmen für LLM-basierte Anwendungen angepasst werden müssen.
 
@@ -26,13 +26,13 @@ Unser Ziel ist es, die Lücke zwischen allgemeinen Prinzipien der Anwendungssich
 
 Version 1.1 der Liste wird nicht die letzte sein. Wir planen, sie regelmäßig zu aktualisieren, um mit den Entwicklungen in der Branche Schritt zu halten. Wir werden mit der erweiterten Community zusammenarbeiten, um den Stand der Technik voranzutreiben und mehr Schulungsmaterial für eine Vielzahl von Anwendungen zu erstellen. Ebenso streben wir auch die Zusammenarbeit mit Standardisierungsorganisationen und Regierungen in Fragen der KI-Sicherheit an. Sie sind herzlich eingeladen, sich unserer Gruppe anzuschließen und einen Beitrag zu leisten.
 
-### Steve Wilson
+#### Steve Wilson
 
 Projektleiter, OWASP Top 10 für LLM-Anwendungen
 [https://www.linkedin.com/in/wilsonsd](https://www.linkedin.com/in/wilsonsd/)  
 Twitter/X: @virtualsteve
 
-### Ads Dawson
+#### Ads Dawson
 
 v1.1 Release Lead & Vulnerability Entries Lead, OWASP Top 10 für LLM-Anwendungen
 [https://www.linkedin.com/in/adamdawson0](https://www.linkedin.com/in/adamdawson0/) 
@@ -40,7 +40,7 @@ GitHub: @GangGreenTemperTatum
 
 ## Über diese Übersetzung
 
-**Übersetzer**
+### Übersetzer
 
 Johann-Peter Hartmann
 [https://www.linkedin.com/in/johann-peter-hartmann-92b70a/](https://www.linkedin.com/in/johann-peter-hartmann-92b70a/)  
@@ -48,7 +48,7 @@ Johann-Peter Hartmann
 Philippe Schrettenbrunner
 [https://www.linkedin.com/in/philippe-schrettenbrunner/](https://www.linkedin.com/in/philippe-schrettenbrunner/)
 
-Bei der Erstellung dieser Übersetzung haben wir uns bewusst dafür entschieden, nur menschliche Übersetzer einzusetzen, in Anerkennung der außerordentlich technischen und kritischen Natur der OWASP Top Ten für LLMs. Die oben aufgeführten Übersetzer verfügen nicht nur über ein tiefes Verständnis des Originalinhalts, sondern auch über die sprachliche Kompetenz, um diese Übersetzung sinnvoll zu gestalten.
+Bei der Erstellung dieser Übersetzung haben wir uns bewusst dafür entschieden, nur menschliche Übersetzer einzusetzen, in Anerkennung der außerordentlich technischen und kritischen Natur der OWASP Top 10 für LLMs. Die oben aufgeführten Übersetzer verfügen nicht nur über ein tiefes Verständnis des Originalinhalts, sondern auch über die sprachliche Kompetenz, um diese Übersetzung sinnvoll zu gestalten.
 
 Talesh Seeparsan
 Übersetzungsleiter, OWASP Top 10 für LLM-Anwendungen
@@ -56,8 +56,8 @@ Talesh Seeparsan
 
 ## OWASP Top 10 für LLM-Applikationen
 
-### LLM01: Prompt Injection (Prompt-Einschleusung)
-Mittels raffinierter Eingaben kann ein Large Language Model manipuliert und unbeabsichtigte Aktionen ausgelöst werden. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben von externen Quellen manipuliert werden.
+### LLM01: Prompt Injection
+Mittels raffinierter Eingaben kann ein Large Language Model manipuliert werden und unbeabsichtigte Aktionen auslösen. Direkte Injections überschreiben System-Prompts, während indirekte Injektionen Eingaben über externe Quellen manipulieren.
 
 ### LLM02: Unsichere Ausgabeverarbeitung
 Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ungeprüft akzeptiert wird, wodurch Backend-Systeme angreifbar werden. Ein Missbrauch kann zu schwerwiegenden Folgen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegienerweiterung oder Remote-Code-Ausführung führen.
@@ -78,7 +78,7 @@ LLMs können in ihren Antworten vertrauliche Daten preisgeben, was zu unbefugtem
 LLM-Plugins können unsichere Eingaben und unzureichende Zugriffskontrollen aufweisen. Dieser Mangel an Anwendungskontrolle erleichtert das Ausnutzen von LLM-Plugins und kann zu Folgen wie der Ausführung von Remote-Code führen.
 
 ### LLM08: Übermäßige Handlungsfreiheit
-LLM-basierte Systeme können Aktionen ausführen, die unbeabsichtigte Folgen haben. Das Problem tritt auf, wenn LLM-basierten Systemen zu viele Funktionen, Berechtigungen oder Autonomie gewährt werden.
+LLM-basierte Systeme können Aktionen ausführen, die unbeabsichtigte Folgen haben. Das Problem entsteht, wenn diesen Systemen zu viele Funktionalitäten, zu viele Berechtigungen oder zu viel Autonomie eingeräumt werden.
 
 ### LLM09: Übermäßige Abhängigkeit
 Systeme oder Personen, die sich zu sehr und unkontrolliert auf LLMs verlassen, können durch falsche oder unangemessene Inhalte, die von LLMs erzeugt werden, mit Fehlinformationen, Fehlkommunikation, rechtlichen Problemen und Sicherheitslücken konfrontiert werden.

@@ -13,7 +13,7 @@ Die Interaktion zwischen Verbraucher und LLM-Anwendung bildet eine zweiseitige V
 1. Unvollständige oder unsachgemäße Filterung von sensiblen Informationen in den Antworten des LLM.
 2. Übermäßige Angleichung oder Einprägung sensibler Daten im Trainingsprozess des LLM.
 3. Unbeabsichtigte Offenlegung vertraulicher Informationen aufgrund von Fehlinterpretationen des LLM, fehlenden Datenbereinigungsmethoden oder Fehlern.
-4. 
+
 ### Präventions- und Mitigationsstrategien
 
 1. Integrieren Sie geeignete Datenbereinigungs- und Scrubbing-Techniken, um zu verhindern, dass Benutzerdaten in die Daten des Trainingsmodells gelangen.

@@ -18,7 +18,7 @@ Schließlich können LLM-Plugin-Erweiterungen ihre eigenen Schwachstellen mitbri
 
 1. Prüfen Sie Datenquellen und -anbieter sorgfältig, einschließlich der Allgemeinen Geschäftsbedingungen und Datenschutzrichtlinien; verwenden Sie nur vertrauenswürdige Anbieter. Stellen Sie sicher, dass ein angemessenes und unabhängig verifiziertes Sicherheitsniveau vorhanden ist und dass die Richtlinien des Modellanbieters mit Ihren Datenschutzrichtlinien übereinstimmen, d. h. dass Ihre Daten nicht für das Training ihrer Modelle verwendet werden.
 2. Verwenden Sie nur seriöse Plugins und stellen Sie sicher, dass diese für Ihre Anwendungsanforderungen getestet wurden. _LLM07 Unsicheres Plugin-Design_ bietet Informationen über die LLM-Aspekte eines unsicheren Plugin-Designs, gegen die Sie testen sollten, um die Risiken bei der Verwendung von Plugins Dritter zu minimieren.
-3. Verständnis und Anwendung der in den OWASP Top 10 [A06:2021 - Vulnerable and Outdated Components] (https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/) identifizierten Abhilfemaßnahmen. Dies beinhaltet das Scannen, Verwalten und Patchen von Komponenten. Für Entwicklungsumgebungen mit Zugriff auf sensible Daten sollten diese Kontrollen auch in diesen Umgebungen angewendet werden.
+3. Verständnis und Anwendung der in den OWASP Top 10 [A06:2021 - Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/) identifizierten Abhilfemaßnahmen. Dies beinhaltet das Scannen, Verwalten und Patchen von Komponenten. Für Entwicklungsumgebungen mit Zugriff auf sensible Daten sollten diese Kontrollen auch in diesen Umgebungen angewendet werden.
 4. Führen Sie ein aktuelles Inventar der Komponenten mit einem Software Bill of Materials (SBOM), um sicherzustellen, dass Sie über ein aktuelles, genaues und signiertes Inventar verfügen, das Manipulationen an bereitgestellten Paketen verhindert. SBOMs können verwendet werden, um neue Zero-Day-Schwachstellen schnell zu identifizieren und zu melden.
 5. Zum Zeitpunkt der Erstellung dieses Dokuments decken die SBOMs keine Modelle, deren Artefakte und Datensätze ab. Wenn Ihre LLM-Anwendung ein proprietäres Modell verwendet, sollten Sie bewährte MLOps-Praktiken und -Plattformen verwenden, die sichere Modell-Repositories mit Daten-, Modell- und Experimentverfolgung bieten.
 6. Sie sollten auch Modell- und Codesignaturen verwenden, wenn Sie externe Modelle und Anbieter verwenden. 
@@ -40,13 +40,16 @@ Schließlich können LLM-Plugin-Erweiterungen ihre eigenen Schwachstellen mitbri
 
 ### Referenzen
 
-1. [ChatGPT-Datenleck bestätigt, da Sicherheitsfirma vor anfälliger Komponentenausnutzung warnt](https://www.securityweek.com/chatgpt-data-breach-confirmed-as-security-firm-warns-of-vulnerable-component-exploitation/): **Security Week**
-2. [Plugin-Überprüfungsprozess](https://platform.openai.com/docs/plugins/review) **OpenAI**
-3. [Kompromittierte PyTorch-nightly-Abhängigkeitskette](https://pytorch.org/blog/compromised-nightly-dependency/): **Pytorch**
-4. [PoisonGPT: Wie wir ein lobotomisiertes LLM auf Hugging Face versteckt haben, um Fake News zu verbreiten](https://blog.mithrilsecurity.io/poisongpt-how-we-hid-a-lobotomized-llm-on-hugging-face-to-spread-fake-news/): **Mithril Security**
-5. [Army erwägt die Möglichkeit von 'AI BOMs](https://defensescoop.com/2023/05/25/army-looking-at-the-possibility-of-ai-boms-bill-of-materials/): **Defense Scoop**
-6. [Fehlermodi im Maschinellen Lernen](https://learn.microsoft.com/en-us/security/engineering/failure-modes-in-machine-learning): **Microsoft**
-7. [ML-Lieferkettenkompromiss](https://atlas.mitre.org/techniques/AML.T0010/): **MITRE ATLAS**
-8. [Transferierbarkeit im Maschinellen Lernen: von Phänomenen zu Black-Box-Angriffen mit adversariellen Beispielen](https://arxiv.org/pdf/1605.07277.pdf): **Arxiv White Paper**
-9. [BadNets: Identifizierung von Schwachstellen in der Lieferkette des Maschinellen Lernmodells](https://arxiv.org/abs/1708.06733): **Arxiv White Paper**
+1. [ChatGPT Data Breach Confirmed as Security Firm Warns of Vulnerable Component Exploitation](https://www.securityweek.com/chatgpt-data-breach-confirmed-as-security-firm-warns-of-vulnerable-component-exploitation/): **Security Week**
+2. [Plugin review process](https://platform.openai.com/docs/plugins/review): **OpenAI**
+3. [Compromised PyTorch-nightly dependency chain](https://pytorch.org/blog/compromised-nightly-dependency/): **Pytorch**
+4. [PoisonGPT: How we hid a lobotomized LLM on Hugging Face to spread fake news](https://blog.mithrilsecurity.io/poisongpt-how-we-hid-a-lobotomized-llm-on-hugging-face-to-spread-fake-news/): **Mithril Security**
+5. [Army looking at the possibility of 'AI BOMs](https://defensescoop.com/2023/05/25/army-looking-at-the-possibility-of-ai-boms-bill-of-materials/): **Defense Scoop**
+6. [Failure Modes in Machine Learning](https://learn.microsoft.com/en-us/security/engineering/failure-modes-in-machine-learning): **Microsoft**
+7. [ML Supply Chain Compromise](https://atlas.mitre.org/techniques/AML.T0010/): **MITRE ATLAS**
+8. [Transferability in Machine Learning: from Phenomena to Black-Box Attacks using Adversarial Samples](https://arxiv.org/pdf/1605.07277.pdf): **Arxiv White Paper**
+9. [BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain](https://arxiv.org/abs/1708.06733): **Arxiv White Paper**
 10. [VirusTotal Poisoning](https://atlas.mitre.org/studies/AML.CS0002): **MITRE ATLAS**
+11. [LLM07 - Insecure Plugin Design](InsecurePluginDesign.md)
+12. [A06:2021 – Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
+13. [Training Data Poisoning](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/1_0_vulns/Training_Data_Poisoning.md)
