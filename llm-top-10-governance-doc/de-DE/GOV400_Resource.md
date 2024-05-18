@@ -32,7 +32,7 @@
   >dodgerblue|white|left|12|16 LLM10: Modell-Diebstahl
   >azure|black|justified|10|12 Dies umfasst unbefugten Zugriff, Kopieren oder Exfiltration von proprietären LLM-Modellen. Die Auswirkungen umfassen wirtschaftliche Verluste, beeinträchtigte Wettbewerbsvorteile und potenziellen Zugang zu sensiblen Informationen.
 
-##### Abbildung 4.1 OOWASP Top 10 für LLM-Applikationen
+##### Abbildung 4.1 OWASP Top 10 für LLM-Applikationen
 
 ![OWASP Top 10 für LLM-Applikationen Visuell](images/GOV1_Fig_4_2_de-DE.png)
 ####$ Abbildung 4.2 OWASP Top 10 für 
@@ -56,8 +56,8 @@ Wie sie integriert werden, ist verfügbar unter den [OWASP-Integrationsstandards
   [OWASP Machine Learning Security Top 10](https://mltop10.info/)
 #### Beschreibung
   Das OWASP-Projekt zum weltweiten Austausch über AI-Sicherheit, Förderung der Standardisierung und Zusammenarbeit.
-  Der OWASP AI Exchange ist die Eingangskanal für den OWASP AI Security and Privacy Guide
-  Die OWASP Machine Learning Security Top 10 thematisiert Sicherheitsprobleme von Systemen maschinellen Lernens.
+  Der OWASP AI Exchange ist der Eingangskanal für den OWASP AI Security and Privacy Guide
+  Die OWASP Machine Learning Security Top 10 Liste thematisiert Sicherheitsprobleme von Systemen maschinellen Lernens.
 #### Warum es empfohlen wird & wo es verwendet wird
   Dieses Projekt umfasst die ML Top 10 und ist ein lebendiges Arbeitsdokument, das klare und handlungsorientierte Einblicke in das Entwerfen, Erstellen, Testen und Beschaffen von sicheren und datenschutzorientierten AI-Systemen bietet. Es ist die beste OWASP-Ressource für globale regulatorische und Datenschutzinformationen zu KI.
 
@@ -79,7 +79,7 @@ Wie sie integriert werden, ist verfügbar unter den [OWASP-Integrationsstandards
   [OWASP CycloneDX](https://owasp.org/www-project-cyclonedx/)
 #### Beschreibung
   OWASP CycloneDX ist ein vollständiger Bill-of-Materials (BOM) Standard, der erweiterte Lieferkettenfähigkeiten für die Reduzierung von Cyberrisiken bietet.
-#### Warum es empfohlen wird & Wo es verwendet wird
+#### Warum es empfohlen wird & wo es verwendet wird
   Moderne Software wird unter Verwendung von Drittanbieter- und Open-Source-Komponenten zusammengestellt. Sie werden auf komplexe und einzigartige Weise zusammengefügt und mit Originalcode integriert, um die gewünschte Funktionalität zu erreichen. Ein SBOM bietet ein genaues Inventar aller Komponenten, das Organisationen ermöglicht, Risiken zu identifizieren, größere Transparenz zu ermöglichen und schnelle Auswirkungsanalysen durchzuführen.
   [EO 14028](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1) stellte Mindestanforderungen für SBOM für föderale Systeme bereit.
 

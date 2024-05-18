@@ -2,7 +2,7 @@
 
 Die rasche Verbreitung von Anwendungen auf Basis großer Sprachmodelle (LLM) hat die Aufmerksamkeit an und Untersuchung von allen KI/ML-Systemen, die in Geschäftsprozessen verwendet werden, verstärkt. Dies umfasst sowohl Generative KI als auch lang etablierte prädikative-KI/ML-Systeme. Diese erhöhte Fokussierung legt potenzielle Risiken offen, wie etwa Angreifer, die Systeme ins Visier nehmen und zuvor übersehen wurden, und Governance- oder rechtliche Herausforderungen, die möglicherweise in Bezug auf rechtliche, Datenschutz-, Haftungs- oder Garantiefragen bislang ignoriert wurden. Für jede Organisation, die KI/ML-Systeme in ihren Abläufen einsetzt, ist es entscheidend, umfassende Richtlinien, Governance, Sicherheitsvorgehen, Datenschutzmaßnahmen und Verantwortungsstandards zu bewerten und zu etablieren, um sicherzustellen, dass diese Technologien bezüglich Sicherheit und Ethik zu den Geschäftsprozessen passen.
 
-Angreifer oder Gegner stellen die unmittelbarste und schädlichste Bedrohung für Unternehmen, Personen und Regierungsbehörden dar. Ihre Ziele, die von finanziellem Gewinn bis hin zu Spionage reichen, treiben sie dazu, kritische Informationen zu stehlen, den Betrieb zu stören und das Vertrauen zu schädigen. Dazu erwerben sie durch KI und maschinelles Lernen die Möglichkeit, mit Geschwindigkeit und Raffinesse den Verteidigern voraus zu sein.
+Angreifer oder Gegner stellen die unmittelbarste und schädlichste Bedrohung für Unternehmen, Personen und Regierungsbehörden dar. Ihre Ziele reichen von finanziellem Gewinn bis hin zu Spionage und führen dazu, dass sie kritische Informationen stehlen, den Betrieb stören und das Vertrauen schädigen. Dazu erwerben sie durch KI und maschinelles Lernen die Möglichkeit, mit Geschwindigkeit und Raffinesse den Verteidigern voraus zu sein.
 
 Die dringendste LLM-Bedrohung jenseits von Angreifern ist "Shadow AI": Mitarbeiter, die nicht genehmigte Online-KI-Tools, unsichere Browser-Plugins und Drittanbieteranwendungen verwenden, die LLM-Funktionen durch Updates oder Upgrades einführen und damit standardisierte Softwaregenehmigungsprozesse umgehen.
 
@@ -39,7 +39,7 @@ Die dringendste LLM-Bedrohung jenseits von Angreifern ist "Shadow AI": Mitarbeit
 
 ### Bereitstellungsstrategie
 
-Die Bandbreite reicht hier von der Nutzung öffentlicher Endverbraucheranwendungen bis zum Training proprietärer Modelle auf eigenen Daten. Faktoren wie Sensibilität der Anwendungsfälle, die benötigten Fähigkeiten und verfügbare Ressourcen helfen dabei, das passende Gleichgewicht zwischen Komfort und Kontrolle zu bestimmen. Das Verständnis der fünf Modelltypen bietet dabei einen Rahmen für die Bewertung der Optionen.
+Das Spektrum reicht hier von der Nutzung öffentlicher Endverbraucheranwendungen bis zum Training proprietärer Modelle auf eigenen Daten. Faktoren wie Sensibilität der Anwendungsfälle, die benötigten Fähigkeiten und verfügbare Ressourcen helfen dabei, das passende Gleichgewicht zwischen Komfort und Kontrolle zu bestimmen. Das Verständnis der fünf Modelltypen bietet dabei einen Rahmen für die Bewertung der Optionen.
 
 >||center|16|16 Bereitstellungstypen
 

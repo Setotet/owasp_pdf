@@ -2,15 +2,15 @@
 
 ### Risiko durch Gegner
 
-Das Risiko durch Gegner inkludiert sowohl Konkurrenten als auch Angreifer.
+Das Bedrohungsrisiko umfasst Konkurrenten und Angreifer.
 
 - Untersuchen Sie, wie Konkurrenten in künstliche Intelligenz investieren. Trotz der Risiken bei der Einführung von KI gibt es auch geschäftliche Vorteile, die Ihre zukünftige Marktpositionen beeinflussen können.
-- Untersuchen Sie die Auswirkungen auf aktueller Kontrollmechanismen, wie etwa Passwortzurücksetzungen über Spracherkennung, die möglicherweise nicht mehr die angemessene Abwehr gegen neue von GenAI verstärkte Angriffe bieten.
+- Untersuchen Sie die Auswirkungen auf aktuelle Kontrollmechanismen, wie etwa Passwortzurücksetzungen über Spracherkennung, die möglicherweise nicht mehr die angemessene Abwehr gegen neue von GenAI verstärkte Angriffe bieten.
 - Aktualisieren Sie den Incident-Response-Plan und die Playbooks für durch GenAI verstärkte Angriffe und spezifische Vorfälle in Bezug auf KI/ML.
 
 ### Bedrohungsmodellierung
 
-Bedrohungsmodellierung wird dringend empfohlen, um Risiken zu identifizieren, Prozesse und Sicherungsmassnahmen zu untersuchen. Bedrohungsmodellierung ist eine Reihe systematischer, wiederholbarer Vorgehensweisen, die es ermöglichen, angemessene Sicherheitsentscheidungen für Anwendungen, Software und Systeme zu treffen. Bedrohungsmodellierung für durch GenAI beschleunigte Angriffe vor dem Einsatz von LLMs ist der kosteneffektivste Weg, um Risiken zu identifizieren und zu mindern, Daten und Privatsphäre zu schützen und eine sichere, konforme Integration in die Geschäftsabläufe zu gewährleisten.
+Bedrohungsmodellierung wird dringend empfohlen, um Risiken zu identifizieren sowie Prozesse und Sicherheitsmaßnahmen zu untersuchen. Bedrohungsmodellierung ist eine Reihe systematischer, wiederholbarer Vorgehensweisen, die es ermöglichen, angemessene Sicherheitsentscheidungen für Anwendungen, Software und Systeme zu treffen. Bedrohungsmodellierung für durch GenAI beschleunigte Angriffe vor dem Einsatz von LLMs ist der kosteneffektivste Weg, um Risiken zu identifizieren und zu mindern, Daten und Privatsphäre zu schützen und eine sichere, konforme Integration in die Geschäftsprozesse zu gewährleisten.
 
 - Wie werden Gegner Angriffe gegen die Organisation, Mitarbeiter, Führungskräfte oder Nutzer verstärken? Organisationen sollten "hyper-personalisierte" Angriffe in großem Maßstab mit generativer KI erwarten. LLM-unterstützte Spear-Phishing-Angriffe sind jetzt exponentiell effektiver, gezielter und besser ausgerüstet.
 - Wie könnte GenAI für Angriffe auf die Kunden oder Klienten des Geschäfts durch Fälschung oder von GenAI generierte Inhalte verwendet werden?
@@ -25,7 +25,7 @@ Bedrohungsmodellierung wird dringend empfohlen, um Risiken zu identifizieren, Pr
 Das KI-Asset-Inventar sollte sowohl für intern entwickelte als auch für externe oder Drittanbieterlösungen genutzt werden.
 
 - Katalogisieren Sie bestehende KI-Dienste, Tools und deren Eigentümer. Weisen Sie eine Kennzeichnung im Asset-Management für spezifische Inventare zu.
-- Schließen Sie KI-Komponenten in die Software Bill of Material (SBOM) ein, eine umfassende Liste aller Softwarekomponenten, Abhängigkeiten und Metadaten, die mit Anwendungen verbunden sind.
+- Nehmen Sie KI-Komponenten in die Software Bill of Material (SBOM) auf, eine umfassende Liste aller Softwarekomponenten, Abhängigkeiten und Metadaten, die mit Anwendungen verbunden sind.
 - Katalogisieren Sie KI-Datenquellen und die Sensibilität der Daten (geschützt, vertraulich, öffentlich)
 - Stellen Sie fest, ob Pen-Tests oder Red-Teaming für eingesetzten KI-Lösungen erforderlich sind, um das aktuelle Angriffsrisiko zu ermitteln.
 - Erstellen Sie einen Onboarding-Prozess für KI-Lösungen.
@@ -33,8 +33,8 @@ Das KI-Asset-Inventar sollte sowohl für intern entwickelte als auch für extern
 
 ### KI-Sicherheits- und Datenschutzschulung
 
-- Sprechen Sie sich aktiv mit Mitarbeitern, um Bedenken bezüglich geplanter LLM-Initiativen zu verstehen und anzugehen.
-- Etablieren Sie eine Kultur offener und transparenter Kommunikation über den Einsatz von prädikativer, generativer KI innerhalb der Organisationsprozesse, Systeme, dem Mitarbeitermanagement und -unterstützung sowie den Kundenengagements. Klären sie wie deren Einsatz geregelt, verwaltet und deren Risiken angegangen werden.
+- Setzen Sie sich aktiv mit den Mitarbeitern auseinander, um die Bedenken bezüglich der geplanten LLM-Initiativen zu verstehen und anzusprechen.
+- Etablieren Sie eine Kultur der offenen und transparenten Kommunikation über den Einsatz von prädiktiver oder generativer KI in Prozessen, Systemen, Mitarbeiterführung und -unterstützung sowie Kundenkontakten im Unternehmen und darüber, wie der Einsatz geregelt, gemanagt und mit Risiken umgegangen wird.
 - Schulen Sie alle Benutzer in Ethik, Verantwortung und rechtlichen Fragen wie Garantie, Lizenz und Urheberrecht.
 - Aktualisieren Sie das Security-Awareness-Training, um GenAI-bezogene Bedrohungen wie Stimmklonung und Bildklonung und die Erwartung erhöhter Spear-Phishing-Angriffe einzuschließen.
 - Jede eingeführte GenAI-Lösung sollte Schulungen sowohl für DevOps als auch für Cybersicherheit für die Bereitstellungspipeline umfassen, um sowohl KI-Sicherheit als auch -Sicherheitszusagen zu gewährleisten.
@@ -43,7 +43,7 @@ Das KI-Asset-Inventar sollte sowohl für intern entwickelte als auch für extern
 
 Solide Business-Cases sind wesentlich, um den Geschäftswert jeder vorgeschlagenen KI-Lösung zu bestimmen, deren Risiko und Nutzen abzuwägen sowie die Rendite von Investitionen zu bewerten und zu testen. Es gibt eine enorme Anzahl potenzieller Anwendungsfälle:
 
-- Verbesserung der Nutzungserlebnisses
+- Verbesserung des Nutzungserlebnisses
 - Verbesserte betriebliche Effizienz
 - Besseres Wissensmanagement
 - Verbesserte Innovation
@@ -56,16 +56,16 @@ Corporate Governance wird bei LLMs notwendig, um Organisationen Transparenz und 
 
 - Etablieren Sie ein KI-RACI-Diagramm der Organisation (wer ist verantwortlich, wer rechenschaftspflichtig, wer sollte konsultiert und wer informiert werden)
 - Dokumentieren und ordnen Sie KI-Risiko, Risikobewertungen und Governance-Verantwortung innerhalb der Organisation zu.
-- Etablieren Sie Datenmanagementrichtlinien bezüglich Datenklassifizierung und Nutzungseinschränkungen, einschließlich ihrer technischer Durchsetzung. Modelle sollten nur Daten nutzen, die für das Mindestzugriffsniveau eines Benutzers des Systems klassifiziert sind. Aktualisieren Sie zum Beispiel die Datenschutzrichtlinie, damit keine geschützten oder vertraulichen Daten in nicht geschäftlich verwaltete Tools eingegeben werden.
+- Etablieren Sie Datenmanagementrichtlinien bezüglich Datenklassifizierung und Nutzungseinschränkungen, einschließlich ihrer technischen Durchsetzung. Modelle sollten nur Daten nutzen, die für das Mindestzugriffsniveau eines Benutzers des Systems klassifiziert sind. Aktualisieren Sie zum Beispiel die Datenschutzrichtlinie, damit keine geschützten oder vertraulichen Daten in nicht geschäftlich verwaltete Tools eingegeben werden.
 - Erstellen Sie eine KI-Richtlinie, die durch etablierte Richtlinien unterstützt wird (z. B. Standard guter Führung, Datenschutz, Softwarenutzung)
 - Veröffentlichen Sie eine Matrix akzeptierbarer Nutzung für die verschiedenen generativen KI-Tools für Ihre Mitarbeiter.
 - Dokumentieren Sie die Quellen und das Management aller Daten, die die Organisation aus generativen LLM-Modellen verwendet.
 
 ### Rechtlich
 
-Viele der rechtlichen Implikationen von KI sind undefiniert und potenziell sehr kostspielig. Eine Partnerschaft von IT-, Sicherheits- und Legal ist entscheidend, um Lücken zu identifizieren und ungeklärte Entscheidungen anzugehen.
+Viele der rechtlichen Auswirkungen von KI sind undefiniert und potenziell sehr kostspielig. Eine Partnerschaft zwischen der IT-, der Sicherheits- und der Rechtsabteilung ist von entscheidender Bedeutung, um Lücken zu identifizieren und unklare Entscheidungen zu vermeiden.
 
-- Stellen Sie sicher, dass Produktgarantien im Produktentwicklungsfluß klar zugewiesen sind, um Produktgarantien für KI zu etablieren.
+- Vergewissern Sie sich, dass Produktgarantien im Produktentwicklungsprozess klar definiert sind, um die Verantwortlichkeiten für Produktgarantien mit KI festzulegen.
 - Überprüfen und aktualisieren Sie bestehende Geschäftsbedingungen für jegliche GenAI-Überlegungen.
 - Überprüfen Sie KI-Endbenutzer-Lizenzvereinbarungen. Endbenutzer-Lizenzvereinbarungen für GenAI-Plattformen unterscheiden sich sehr darin, wie sie Benutzeraufforderungen, Ausgaberechte und -eigentum, Datenschutz, Compliance, Haftung, Privatsphäre und Einschränkungen bezüglich der Nutzung von Ausgaben handhaben.
 - Passen Sie den Endbenutzer-Lizenzvertrag der Organisation für Kunden an, um zu verhindern, dass die Organisation Haftungen im Zusammenhang mit Plagiaten, Bias-Verbreitung oder Verletzung des geistigen Eigentums durch KI-generierte Inhalte übernimmt.
@@ -82,7 +82,7 @@ Viele der rechtlichen Implikationen von KI sind undefiniert und potenziell sehr 
 
 ### Regulierung
 
-Der KI-Akt der EU wird voraussichtlich das erste umfassende KI-Gesetz sein, aber frühestens 2025 gelten. Die Datenschutz-Grundverordnung (DSGVO) der EU adressiert KI nicht spezifisch, beinhaltet jedoch Regeln für die Datenerhebung, Datensicherheit, Fairness und Transparenz, Genauigkeit und Zuverlässigkeit sowie Rechenschaftspflicht, die den Einsatz von GenAI beeinflussen können. In den Vereinigten Staaten ist die KI-Regulierung in breitere Verbraucherdatenschutzgesetze eingebettet. Zehn US-Bundesstaaten haben Gesetze verabschiedet oder haben Gesetze, die bis Ende 2023 in Kraft treten werden.
+Der EU AI Act wird voraussichtlich das erste umfassende KI-Gesetz sein, aber frühestens 2025 gelten. Die Datenschutz-Grundverordnung (DSGVO) der EU adressiert KI nicht spezifisch, beinhaltet jedoch Regeln für die Datenerhebung, Datensicherheit, Fairness und Transparenz, Genauigkeit und Zuverlässigkeit sowie Rechenschaftspflicht, die den Einsatz von GenAI beeinflussen können. In den Vereinigten Staaten ist die KI-Regulierung in breitere Verbraucherdatenschutzgesetze eingebettet. Zehn US-Bundesstaaten haben Gesetze verabschiedet oder haben Gesetze, die bis Ende 2023 in Kraft treten werden.
 
 Kanada hat bisher nur einen freiwilligen Verhaltenskodex zur verantwortungsvollen Entwicklung und Verwaltung fortgeschrittener generativer KI-Systeme veröffentlicht, jedoch wird der Artificial Intelligence and Data Act (AIDA) strengere Anforderungen haben.
 
@@ -90,7 +90,7 @@ Bundesorganisationen wie die US Equal Employment Opportunity Commission (EEOC), 
 
 - Recherchieren Sie länderspezifische, staatliche oder andere offizielle KI-Compliance-Anforderungen.
 - Ermitteln Sie Compliance-Anforderungen für die Einschränkung der elektronischen Überwachung von Mitarbeitern und beschäftigungsbezogenen automatisierten Entscheidungssystemen (Vermont, Kalifornien, Maryland, New York, New Jersey)
-- Ermitteln Sie Compliance-Anforderungen für die Zustimmung zur Gesichtserkennung und AI-biasierter Videoanalyse.
+- Ermitteln Sie Compliance-Anforderungen für die Zustimmung zur Gesichtserkennung und AI-basierter Videoanalyse.
 - Überprüfen Sie KI-Tools, die für die Einstellung oder Verwaltung von Mitarbeitern verwendet oder in Betracht gezogen werden.
 - Bestätigen Sie die Einhaltung der anwendbaren KI-Gesetze und Best Practices durch den Anbieter.
 - Ermitteln und dokumentieren Sie alle Produkte, die KI während des Einstellungsprozesses verwenden. Fragen Sie, wie das Modell trainiert wurde, wie es überwacht wird und verfolgen Sie alle Korrekturen, um Diskriminierung und Bias zu vermeiden.
@@ -109,7 +109,7 @@ Bundesorganisationen wie die US Equal Employment Opportunity Commission (EEOC), 
 - Überwachung und Reaktion: dokumentieren Sie Workflows, Überwachung und Reaktionen, um Automatisierung, Protokollierung und Auditing nachvollziehen zu können. Stellen Sie sicher, dass Prüfprotokolle gesichert sind.
 - Integrieren Sie Anwendungstests, Quellcodeüberprüfungen, Schwachstellenbewertungen und Red-Teaming in den Produktionsfreigabeprozess.
 - Überprüfen Sie auf bestehende Schwachstellen im LLM-Modell oder in der Lieferkette.
-- Untersuchen Sie die Auswirkungen von Bedrohungen und Angriffen auf LLM-Lösungen, wie Prompt-Injektion, die Freigabe sensibler Informationen oder Prozessmanipulation.
+- Untersuchen Sie die Auswirkungen von Bedrohungen und Angriffen auf LLM-Lösungen, wie Prompt Injection, die Preisgabe sensibler Informationen oder Prozessmanipulation.
 - Untersuchen Sie die Auswirkungen von Angriffen und Bedrohungen auf LLM-Modelle, einschließlich Model-Poisoning, unsachgemäßem Datenhandling, Angriffen auf die Lieferkette und Modell-Diebstahl.
 - Sicherheit der Lieferkette: fordern Sie Drittprüfungen, Penetrationstests und Codeüberprüfungen für Drittanbieter an. (sowohl initial als auch fortlaufend)
 - Infrastruktursicherheit: fragen Sie, wie oft ein Anbieter Resilienztests durchführt? Was sind die SLAs in Bezug auf Verfügbarkeit, Skalierbarkeit und Performance?
@@ -125,18 +125,18 @@ Das NIST AI Framework empfiehlt einen kontinuierlichen TEVV-Prozess während des
 
 ### Modellkarten und Risikokarten
 
-Modell- und Risikokarten sind grundlegende Elemente, um die Transparenz, Rechenschaftspflicht und ethische Bereitstellung von großen Sprachmodellen (LLMs) zu ermöglichen. Modellkarten helfen Benutzern, KI-Systeme zu verstehen und zu vertrauen, indem sie eine standardisierte Dokumentationen über deren Design, Fähigkeiten und Einschränkungen bereitstellen, was zu fundierter und sicherer Anwendung führt. Risikokarten ergänzen dies, indem sie offen potenzielle negative Konsequenzen ansprechen, wie Vorurteile, Datenschutzprobleme und Sicherheitsanfälligkeiten, was einen proaktiven Ansatz zur Schadensprävention fördert. Diese Dokumente sind für Entwickler, Benutzer, Regulierungsbehörden und Ethiker gleichermaßen wichtig, da sie eine kooperative Atmosphäre schaffen, in der die sozialen Auswirkungen von KI sorgfältig behandelt und gehandhabt werden. Diese Karten, die von den Organisationen selbst entwickelt und gepflegt werden, die die Modelle erstellt haben, spielen eine wichtige Rolle bei der Sicherstellung der Erfüllung ethischer Standards und gesetzlicher Anforderungen, und erlauben verantwortungsbewusste Forschung und Bereitstellung im KI-Ökosystem.
+Modell- und Risikokarten sind grundlegende Elemente, um die Transparenz, Rechenschaftspflicht und ethische Bereitstellung von großen Sprachmodellen (LLMs) zu ermöglichen. Modellkarten helfen Benutzern, KI-Systeme zu verstehen und zu vertrauen, indem sie eine standardisierte Dokumentation über deren Design, Fähigkeiten und Einschränkungen bereitstellen, was zu fundierter und sicherer Anwendung führt. Risikokarten ergänzen dies, indem sie offen potenzielle negative Konsequenzen ansprechen, wie Vorurteile, Datenschutzprobleme und Sicherheitsanfälligkeiten, was einen proaktiven Ansatz zur Schadensprävention fördert. Diese Dokumente sind für Entwickler, Benutzer, Regulierungsbehörden und Ethiker gleichermaßen wichtig, da sie eine kooperative Atmosphäre schaffen, in der die sozialen Auswirkungen von KI sorgfältig behandelt und gehandhabt werden. Diese Karten, die von den Organisationen selbst entwickelt und gepflegt werden, die die Modelle erstellt haben, spielen eine wichtige Rolle bei der Sicherstellung der Erfüllung ethischer Standards und gesetzlicher Anforderungen, und erlauben verantwortungsbewusste Forschung und Bereitstellung im KI-Ökosystem.
 
 Modellkarten enthalten wichtige Attribute, die mit dem ML-Modell verbunden sind:
 
   - Modellangaben: Grundlegende Informationen über das Modell, z. B. Name, Version und Typ (Neuronales Netzwerk, Entscheidungsbaum usw.) und der vorgesehene Anwendungsfall.
   - Modellarchitektur: Enthält eine Beschreibung der Struktur des Modells, wie die Anzahl und Art der Schichten, Aktivierungsfunktionen und andere wichtige architektonische Entscheidungen.
   - Trainingsdaten und Methode: Informationen über die Daten, die zum Trainieren des Modells verwendet wurden, wie die Größe des Datensatzes, die Datenquellen und etwaige Vorverarbeitungs- oder Datenanreicherungstechniken. Sie enthält auch Details zur Trainingsmethodik, wie den verwendeten Optimierer, die Verlustfunktion und etwaige eingestellte Hyperparameter.
-  - Leistungsmetriken: Informationen über die Leistung des Modells anhand verschiedener Metriken, wie Genauigkeit, Präzision, Rückruf und F1-Score. Es kann auch Informationen darüber enthalten, wie das Modell bei verschiedenen Datensubsets abschneidet.
+  - Leistungsmetriken: Informationen über die Leistung des Modells anhand verschiedener Metriken, wie Genauigkeit, Präzision, Erinnerungsrate und F1-Score. Es kann auch Informationen darüber enthalten, wie das Modell bei verschiedenen Datensubsets abschneidet.
   - Potenzielle Vorurteile (Bias) und Einschränkungen: Listen potenzieller Vorurteile oder Einschränkungen des Modells, wie unausgeglichene Trainingsdaten, Überanpassung oder Vorurteile in den Vorhersagen des Modells. Sie kann auch Informationen über die Einschränkungen des Modells enthalten, wie seine Fähigkeit, sich auf neue Daten zu generalisieren oder seine Eignung für bestimmte Anwendungsfälle.
   - Überlegungen zu verantwortungsvoller KI: Alle ethischen oder verantwortungsvollen KI-Überlegungen im Zusammenhang mit dem Modell, wie Datenschutzbedenken, Fairness und Transparenz oder mögliche gesellschaftliche Auswirkungen der Nutzung des Modells. Es kann auch Empfehlungen für weitere Tests, Validierungen oder Überwachungen des Modells enthalten.
 
-Die genauen Merkmale, die in einer Modellkarte enthalten sind, können je nach Kontext und beabsichtigter Verwendung des Modells variieren, aber das Ziel ist es, Offenheit und Rechenschaftsfähigkeit in der Entwicklung und Bereitstellung von maschinellen Lernmodellen zu bieten.
+Die genauen Merkmale, die in einer Modellkarte enthalten sind, können je nach Kontext und beabsichtigter Verwendung des Modells variieren, aber das Ziel ist es, Offenheit und Verantwortlichkeit in der Entwicklung und Bereitstellung von maschinellen Lernmodellen zu bieten.
 
 - Prüfen Sie die Modellkarte des Modells
 - Prüfen Sie die Risikokarte, falls verfügbar
@@ -148,7 +148,7 @@ Fine-Tuning, die traditionelle Methode zur Optimierung eines vortrainierten Mode
 
 Retrieval-Augmented Generation (RAG) hat sich als eine effektivere Methode zur Optimierung und Erweiterung der Fähigkeiten von großen Sprachmodellen entwickelt, indem relevante Daten aus aktuellen verfügbaren Wissensquellen abgerufen werden. RAG kann für spezifische Domänen angepasst werden, um die Abfrage domänenspezifischer Informationen zu optimieren und den Generierungsprozess auf die Nuancen spezialisierter Bereiche zuzuschneiden. RAG wird als eine effizientere und transparentere Methode zur Optimierung von LLM-Applikationen angesehen, insbesondere für Probleme, bei denen gekennzeichnete Daten begrenzt oder teuer zu sammeln sind. Einer der Hauptvorteile von RAG ist die Unterstützung von kontinuierlichem Lernen, da neue Informationen jederzeit auf der Abrufebene aktualisiert werden können.
 
-Die Implementierung von RAG umfasst mehrere wichtige Schritte, beginnend mit dem Einsatz des Embedding-Models, dem Indizieren der Wissensbibliothek bis hin zum Abrufen der relevantesten Dokumente für die Verarbeitung von Anfragen. Das effiziente Abrufen des relevanten Kontextes wird mit einer Vektordatenbanke durchgeführt, die zur Speicherung und Abfrage von Dokumentenembeddings verwendet werden.
+Die Implementierung von RAG umfasst mehrere wichtige Schritte, beginnend mit dem Einsatz des Embedding-Models, dem Indizieren der Wissensbibliothek bis hin zum Abrufen der relevantesten Dokumente für die Verarbeitung von Anfragen. Das effiziente Abrufen des relevanten Kontextes wird mit einer Vektordatenbank durchgeführt, die zur Speicherung und Abfrage von Dokumenten-Embeddings verwendet werden.
 
 #### RAG-Referenz
 - [Retrieval Augmented Generation (RAG) & LLM: Examples](https://vitalflux.com/retrieval-augmented-generation-rag-llm-examples/)
