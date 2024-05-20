@@ -1,6 +1,6 @@
-### LLM04: Denial of Service del Modello
+## LLM04: Denial of Service del Modello
 
-## Descrizione
+### Descrizione
 
 Un attaccante può interagire con un LLM (Large Language Model) in modo tale da causare un consumo eccezionalmente alto di risorse, risultando in un deterioramento della qualità del servizio sia per sé stesso che per altri utenti, e potenzialmente causando un aumento dei costi per le risorse computazionali. Un altro aspetto critico per la sicurezza è la possibilità che un attaccante interferisca o manipoli la "finestra di contesto" di un LLM. Questa problematica sta diventando sempre più rilevante a causa dell'uso crescente degli LLM in diverse applicazioni, del loro intenso utilizzo di risorse, dell'imprevedibilità degli input degli utenti e di una generale mancanza di consapevolezza tra gli sviluppatori riguardo a questa vulnerabilità.
 Negli LLM, la finestra di contesto rappresenta la lunghezza massima di testo che il modello può gestire, includendo sia l'input che l'output. Questa caratteristica è fondamentale per gli LLM, poiché determina la complessità dei costrutti linguistici che il modello può comprendere e la quantità di testo che può elaborare in un dato momento. La dimensione della finestra di contesto è definita dall'architettura del modello e può variare a seconda del modello specifico utilizzato.
