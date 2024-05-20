@@ -1,4 +1,4 @@
-### LLM07: Progettazione Insicura dei Plugin
+## LLM07: Progettazione Insicura dei Plugin
 
 ### Descrizione
 
