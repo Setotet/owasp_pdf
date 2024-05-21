@@ -26,14 +26,14 @@ Il codice Sorgente generato da LLM, può introdurre silenziosamente delle vulner
 7. Costruire API ed interfacce utente che incoraggino un utilizzo responsabile degli LLM. Questo include misure come filtri di contenuti, avvisi di potenziale inesattezza e chiara indicazione dei materiali generati dall'AI.
 8. Quando si utilizzano LLM in ambienti di sviluppo, è necessario stabilire criteri di codifica sicura e linee guida che prevengano l'introduzione di potenziali vulnerabilità. 
 
-### Esempi di Scenari D'Attacco
+### Esempi di scenari di attacco
 
 1. Una testata giornalistica si affida eccessivamente ad un LLM per generare i propri articoli e notizie. Un malintenzionato può sfruttare questa eccessiva dipendenza, iniettando nel LLM informazioni fuorvianti, che favoriscono la diffusione di notizie false o mirate.
 2. L'intelligenza artificiale plagia involontariamente contenuti, causando problemi di proprietà intellettuale che minano la credibilità dell'organizzazione coinvolta.
 3. Un team di sviluppo software utilizza un LLM per accelerare la scrittura di codice. Un'eccessiva dipendenza dai suggerimenti dell'AI introduce vulnerabilità nelle applicazioni generate a causa di parametri di default insicuro o raccomandazioni che non rispettano le pratiche di sviluppo sicuro.
 4. Un'azienda che si occupa di sviluppo software utilizza un LLM per fornire assistenza agli sviluppatori. Il modello suggerisce una libreria o un pacchetto inesistenti e uno sviluppatore, affidandosi all'AI, integra senza saperlo un pacchetto malevolo nel software venduto dall'azienda. Questo esempio sottolinea l'importanza dei controlli incrociati sui suggerimenti del modello, specialmente in relazione a codice o librerie di terze parti.
 
-### Link e Riferimenti (Inglese)
+### Riferimenti e link (Inglese)
 
 1. [Understanding LLM Hallucinations](https://towardsdatascience.com/llm-hallucinations-ec831dcd7786): **Towards Data Science**
 2. [How Should Companies Communicate the Risks of Large Language Models to Users?](https://techpolicy.press/how-should-companies-communicate-the-risks-of-large-language-models-to-users/): **Techpolicy**
