@@ -36,7 +36,7 @@ Negli LLM, la finestra di contesto rappresenta la lunghezza massima di testo che
 6. Un attaccante inonda il LLM con un grande volume di input di lunghezza variabile, costruiti specificamente per avvicinarsi o raggiungere il limite della finestra di contesto. Sopraffacendo il LLM con input di lunghezze variabili, l'attaccante mira a sfruttare qualsiasi inefficienza nell'elaborazione di questo tipo di input. Questo sovraccarico pesa eccessivamente sulle risorse del LLM, provocando un degrado delle prestazioni e ostacolando la capacità del sistema di rispondere a richieste legittime.
 7. Mentre gli attacchi di tipo Denial of Service (DoS) puntano generalmente a sovraccaricare le risorse di un sistema, possono anche mirare ad altri aspetti del suo funzionamento, come sfruttare le vulnerabilità nelle limitazioni dell'API. Per esempio, in un recente episodio di sicurezza che ha coinvolto Sourcegraph, un attore malevolo ha acquisito un token di accesso amministrativo e lo ha usato per modificare i limiti di frequenza delle chiamate API. Questa azione avrebbe potuto causare interruzioni del servizio, abilitando volumi insolitamente alti di richieste.
 
-### Referenze e Link (Inglese)
+### Riferimenti e link (Inglese)
 
 1. [LangChain max_iterations](https://twitter.com/hwchase17/status/1608467493877579777): **hwchase17 on Twitter**
 2. [Sponge Examples: Energy-Latency Attacks on Neural Networks](https://arxiv.org/abs/2006.03463): **Arxiv White Paper**
