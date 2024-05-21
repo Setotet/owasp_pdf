@@ -32,7 +32,7 @@ Le condizioni seguenti possono aumentare l'impatto di questa vulnerabilità:
 3. Un LLM permette agli utenti di creare query SQL per un database nel backend attraverso una chat. Un utente richiede una query per eliminare tutte le tabelle del database. Se la query creata dal LLM non viene filtrata in nessun modo, allora tutte le tabelle del database verranno eliminate.
 4. Un'applicazione web usa un LLM per generare contenuto a partire da prompt di testo inseriti dall'utente, senza sanificare l'output. Un attaccante potrebbe inviare un prompt creato ad arte che causa l'invio di un payload JavaScript non sanificato, portando a un XSS quando questo viene interpretato dal browser della vittima. La mancata validazione dei prompt rende possibile questo attacco.
 
-### Riferimenti e link (Inglese)
+### Link e riferimenti (Inglese)
 
 1. [Arbitrary Code Execution](https://security.snyk.io/vuln/SNYK-PYTHON-LANGCHAIN-5411357): **Snyk Security Blog**
 2. [ChatGPT Plugin Exploit Explained: From Prompt Injection to Accessing Private Data](https://embracethered.com/blog/posts/2023/chatgpt-cross-plugin-request-forgery-and-prompt-injection./): **Embrace The Red**
