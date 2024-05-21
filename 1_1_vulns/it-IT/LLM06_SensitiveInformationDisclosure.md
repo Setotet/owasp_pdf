@@ -8,13 +8,13 @@ Per mitigare questo rischio, le applicazioni LLM dovrebbero implementare un'adeg
 
 L'interazione tra l'utente e l'applicazione LLM instaura un contesto di fiducia reciproca, nel quale non possiamo fidarci intrinsecamente né dell'input utente->LLM né dell'output LLM->utente. È importante notare che questa vulnerabilità presuppone che certi prerequisiti siano assicurati al di fuori del presente ambito di analisi, fra questi gli esercizi di modellazione delle minacce (threat modeling), la protezione delle infrastrutture ed una segregazione adeguata degli ambienti di esecuzione. Aggiungere restrizioni all'interno del prompt del sistema riguardo ai tipi di dati che il LLM dovrebbe restituire può fornire una mitigazione parziale contro la divulgazione di informazioni sensibili, tuttavia, data l'imprevedibilità degli LLM è possibile che tali restrizioni potrebbero non essere sempre efficaci e potrebbero essere aggirate tramite iniezione di prompt o altri metodi.
 
-### Esempi Comuni di Vulnerabilità
+### Esempi comuni di vulnerabilità
 
 1. Filtraggio incompleto o inefficace delle informazioni sensibili presenti nelle risposte del LLM.
 2. Sovradattamento o memorizzazione di dati sensibili nel processo di addestramento del LLM.
 3. Divulgazione involontaria di informazioni confidenziali a causa di errata interpretazione da parte del LLM, mancanza di metodi di pulizia dei dati o errori.
 
-### Strategie di Prevenzione e Mitigazione
+### Strategie di prevenzione e mitigazione
 
 1. Integrare adeguate tecniche di sanificazione e pulizia dei dati per impedire che i dati degli utenti entrino nei set di dati di addestramento del modello.
 2. Implementare metodi robusti di validazione e sanificazione degli input per identificare ed escludere potenziali input malevoli per prevenire l'avvelenamento (poisoning) del modello.
@@ -23,13 +23,13 @@ L'interazione tra l'utente e l'applicazione LLM instaura un contesto di fiducia 
 	2. L'accesso a fonti di dati esterne (orchestrazione dei dati in tempo reale) dovrebbe essere limitato.
 	3. Applicare metodi stringenti di controllo degli accessi alle fonti di dati esterne e un approccio rigoroso nella gestione di una catena di approvvigionamento sicura.
 
-### Esempi di Scenari di Attacco
+### Esempi di scenari di attacco
 
 1. L'utente legittimo e ignaro A viene esposto a dati di altri utenti tramite il LLM quando interagisce con l'applicazione LLM in modo non malevolo.
 2. L'utente A indirizza un insieme ben congegnato di prompt per bypassare i filtri di input e la sanificazione del LLM per far sì che divulghi informazioni sensibili (PII) su altri utenti dell'applicazione.
 3. Dati personali (PII) vengono introdotti nel modello durante il processo di addestramento a causa di negligenza da parte dell'utente stesso o dell'applicazione LLM. Questo scenario potrebbe aumentare il rischio e la probabilità degli scenari 1 o 2 sopra descritti.
 
-### Riferimenti e Link (Inglese)
+### Riferimenti e link (Inglese)
 
 1. [AI data leak crisis: New tool prevents company secrets from being fed to ChatGPT](https://www.foxbusiness.com/politics/ai-data-leak-crisis-prevent-company-secrets-chatgpt): **Fox Business**
 2. [Lessons learned from ChatGPT’s Samsung leak](https://cybernews.com/security/chatgpt-samsung-leak-explained-lessons/): **Cybernews**
