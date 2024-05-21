@@ -15,7 +15,7 @@ Negli LLM, la finestra di contesto rappresenta la lunghezza massima di testo che
 6. Inondazione di input di lunghezza variabile: l'attaccante inonda il LLM con una grande quantità di input di lunghezze diverse, ognuno progettato per sfiorare il limite massimo della finestra di contesto. Questa tattica mira a sfruttare le inefficienze nella gestione degli input di dimensioni variabili, mettendo a dura prova il LLM e potenzialmente causandone il blocco.
 
 
-### Strategie di Prevenzione e Mitigazione
+### Strategie di prevenzione e mitigazione
 
 1. Implementare un controllo dell'input per assicurare che gli input degli utenti rispettino limiti predefiniti e siano privi di contenuti malevoli.
 2. Impostare limiti alle risorse utilizzabili per ogni richiesta o passaggio, rallentando così l'esecuzione delle richieste più complesse.
@@ -26,7 +26,7 @@ Negli LLM, la finestra di contesto rappresenta la lunghezza massima di testo che
 7. Aumentare la consapevolezza tra gli sviluppatori sulle potenziali vulnerabilità ai DoS negli LLM e fornire indicazioni per un'implementazione sicura degli stessi.
 
 
-### Esempi di Scenari di Attacco
+### Esempi di scenari di attacco
 
 1. Un attaccante invia ripetutamente molteplici richieste complesse e onerose a un modello in hosting, portando a un deterioramento del servizio per gli altri utenti e ad un aumento dei costi relative ai consumi delle risorse, nel servizio di hosting.
 2. Durante l'elaborazione di un testo su una pagina web da parte di uno strumento basato su LLM che risponde a una query benigna, lo strumento si imbatte in un testo specifico e inizia a richiedere un numero eccessivo di pagine web, comportando un alto consumo di risorse.
