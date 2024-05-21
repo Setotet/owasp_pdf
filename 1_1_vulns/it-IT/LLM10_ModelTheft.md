@@ -20,7 +20,7 @@ La crescente diffusione e potenza degli LLM, rende il furto di LLM una vulnerabi
 
 L'impiego di un modello rubato, come un modello ombra (shadow model), può essere finalizzato ad orchestrare attacchi informatici, incluso l'accesso non autorizzato a informazioni sensibili contenute nel modello stesso, o per condurre esperimenti su di esso in modo non rilevabile, con input avversi, per predisporre ulteriori iniezioni di prompt (prompt injections) più mirate.
 
-### Strategie di Prevenzione e Mitigazione
+### Strategie di prevenzione e mitigazione
 
 1. Implementare controlli di accesso robusti (ad esempio, RBAC e minimizzazopne dei privilegi) accanto a meccanismi di autenticazione forti per limitare l'accesso non autorizzato ai repository di modelli LLM e agli ambienti di addestramento (pre-training e training).
    1. Questo è particolarmente importante per i primi tre esempi esaminati, chin caso di minacce interne (insider threat), configurazione errata e/o controlli di sicurezza deboli, relativi all'infrastruttura che ospita modelli, pesi e architettura del LLM, in cui un attore malintenzionato potrebbe guadagnare l'accesso dall'interno, o dall'esterno.
