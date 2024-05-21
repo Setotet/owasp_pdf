@@ -6,7 +6,7 @@ Questa voce si riferisce all'accesso non autorizzato e all'esfiltrazione di mode
 
 La crescente diffusione e potenza degli LLM, rende il furto di LLM una vulnerabilità dall'impatto significativo. Organizzazioni e ricercatori devono dare priorità a misure di sicurezza adeguate volte a proteggere i loro modelli LLM, garantendo la riservatezza e l'integrità della loro proprietà intellettuale. Per mitigare i rischi associati al furto del modello LLM e salvaguardare gli interessi di chi gli utilizza, è cruciale adottare un sistema di sicurezza integrato (es. sistema di gestione della sicurezza delle informazioni o altre pratiche equivalenti) che includa controlli di accesso, crittografia e monitoraggio continuo.
 
-### Esempi Comuni di Vulnerabilità
+### Esempi comuni di vulnerabilità
 
 1. Un attaccante sfrutta una vulnerabilità nell'infrastruttura di un'azienda per accedere senza autorizzazione al loro archivio (repository) di modelli LLM a causa di configurazioni errate nella sicurezza della rete o delle applicazioni.
 2. Uno scenario di minaccia interna in cui un dipendente insoddisfatto divulga modelli o artefatti correlati ai modelli.
@@ -35,7 +35,7 @@ L'impiego di un modello rubato, come un modello ombra (shadow model), può esser
 8. Implementare tecniche di addestramento avversariale mirato alla resilienza per aiutare il modello a rilevare query di estrazione e rafforzare inoltre le misure di sicurezza fisica.
 9. Implementare un framework di marcatura modale e/o temporale (watermarking) nelle fasi di integrazione (input) e monitoraggio (output, trasformazione), del ciclo di vita di un LLM.
 
-### Esempi di Scenario di Attacco
+### Esempi di scenari di attacco
 
 1. Un attaccante abusa una vulnerabilità nell'infrastruttura di un'azienda per accedere senza autorizzazione al loro repository di modelli LLM. L'attaccante procede quindi all'esfiltrazione di modelli LLM di valore e li utilizza per lanciare un servizio concorrente di elaborazione del linguaggio o estrarre forzatamente informazioni sensibili, causando gravi danni finanziari all'azienda proprietaria del modello.
 2. Un dipendente insoddisfatto divulga modelli o artefatti correlati. L'esposizione pubblica che questo scenario rappresenta aumenta la conoscenza a disposizione di possibili attaccanti, consentendo attacchi avversariali di tipo "gray box" (conoscenza parziale) o, in alternativa, contentendo il furto diretto della proprietà intellettuale esposta.
@@ -43,7 +43,7 @@ L'impiego di un modello rubato, come un modello ombra (shadow model), può esser
 4. Lacune nei controlli di sicurezza della catena di fornitura (supply chain) causano perdite di dati relativi a informazioni proprietarie del o sul modello.
 5. Un attaccante elude le tecniche di filtraggio degli input e le istruzioni iniziali del LLM, per eseguire un attacco indiretto/laterale e recuperare informazioni sul modello caricandole su una risorsa remota sotto il suo controllo.
 
-### Link e Riferimenti (Inglese)
+### Riferimenti e link (Inglese)
 
 1. [Meta’s powerful AI language model has leaked online](https://www.theverge.com/2023/3/8/23629362/meta-ai-language-model-llama-leak-online-misuse): **The Verge**
 2. [Runaway LLaMA | How Meta's LLaMA NLP model leaked](https://www.deeplearning.ai/the-batch/how-metas-llama-nlp-model-leaked/): **Deep Learning Blog**
