@@ -14,7 +14,6 @@ Negli LLM, la finestra di contesto rappresenta la lunghezza massima di testo che
 5. Espansione ricorsiva del contesto: l'attaccante formula un input che provoca un'espansione ricorsiva del contesto, obbligando il LLM a ingrandire e processare più volte la finestra di contesto.
 6. Inondazione di input di lunghezza variabile: l'attaccante inonda il LLM con una grande quantità di input di lunghezze diverse, ognuno progettato per sfiorare il limite massimo della finestra di contesto. Questa tattica mira a sfruttare le inefficienze nella gestione degli input di dimensioni variabili, mettendo a dura prova il LLM e potenzialmente causandone il blocco.
 
-
 ### Strategie di prevenzione e mitigazione
 
 1. Implementare un controllo dell'input per assicurare che gli input degli utenti rispettino limiti predefiniti e siano privi di contenuti malevoli.
@@ -24,7 +23,6 @@ Negli LLM, la finestra di contesto rappresenta la lunghezza massima di testo che
 5. Monitorare continuamente l'utilizzo delle risorse del LLM per identificare picchi o schemi anomali che potrebbero indicare un attacco DoS.
 6. Impostare limiti rigorosi sugli input in base alla finestra di contesto del LLM, per prevenire eccessivi sovraccarichi e l'esaurimento delle risorse.
 7. Aumentare la consapevolezza tra gli sviluppatori sulle potenziali vulnerabilità ai DoS negli LLM e fornire indicazioni per un'implementazione sicura degli stessi.
-
 
 ### Esempi di scenari di attacco
 
