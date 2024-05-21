@@ -15,7 +15,7 @@ Il codice Sorgente generato da LLM, può introdurre silenziosamente delle vulner
 1. Un LLM fornisce informazioni inesatte come risposta, presentate in maniera molto autorevole. L'intero sistema è progettato senza adeguati controlli e bilanciamento per gestire queste situazioni e le informazioni generate possono traviare l'utente in maniera da generare potenziali danni.
 2. Un LLM propone codice insicuro o difettoso, introducendo vulnerabilità quando incorporato in un sistema software senza controlli preventivi o verifiche puntuali su di esso.
 
-### Strategie di Mitigazione e Prevenzione
+### Strategie di prevenzione e mitigazione
 
 1. Monitoraggio costante e revisione degli output del LLM. Utilizzo di tecniche rivolte all'auto-consistenza o metodi di voto per filtrare testi incoerenti. Analizzare e confrontare le varie risposte fornite dal modello a un unico prompt può aiutare a valutare meglio la qualità e la coerenza degli output.
 2. Controlli incrociati sul modello rispetto a fonti esterne certificate. Questo livello supplementare di validazione può aiutare ad assicurare che le informazioni prodotte dal modello siano accurate e affidabili.
