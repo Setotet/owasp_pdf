@@ -6,7 +6,7 @@ La catena di approvvigionamento nei modelli di linguaggio di grandi dimensioni (
 
 Infine, le estensioni dei plugin LLM possono introdurre ulteriori vulnerabilità. Queste sono descritte in LLM07 - Progettazione Insicura dei Plugin (OWASP Top 10 per le applicazioni LLM versione 1.1, 2023, p. 5), che tratta dello sviluppo di plugin LLM e fornisce informazioni utili per valutare i plugin di terze parti.
 
-### Esempi Comuni di Vulnerabilità
+### Esempi comuni di vulnerabilità
 
 1. Vulnerabilità derivanti dai pacchetti di terze parti, che includono componenti obsoleti o deprecati.
 2. Utilizzo di un modello pre-addestrato vulnerabile per il fine-tuning.
@@ -14,7 +14,7 @@ Infine, le estensioni dei plugin LLM possono introdurre ulteriori vulnerabilità
 4. L'utilizzo di modelli obsoleti o deprecati che non sono più mantenuti che portano a problemi di sicurezza.
 5. Termini e Condizioni di Servizio (T&C) e politiche sulla privacy dei dati non trasparenti da parte degli operatori dei modelli possono portare all'utilizzo di dati sensibili di un'applicazione per l'addestramento del modello, e alla loro successiva esposizione. Questo può anche implicare problemi legali legati all'uso di materiale protetto da proprietà intellettuale, da parte del fornitore del modello.
 
-### Strategie di Prevenzione e Mitigazione
+### Strategie di prevenzione e mitigazione
 
 1. Valutare attentamente le fonti dei dati e i fornitori, inclusi i T&C e le loro politiche sulla privacy, scegliendo solo fornitori affidabili. Assicurarsi della presenza di una solida pratica di sicurezza certificata da terze parti e che le politiche degli operatori dei modelli siano allineate con le proprie politiche di protezione dei dati, ad esempio che i dati non vengano utilizzati per l'addestramento dei modelli senza consenso; non meno importante, predisporre le necessarie garanzie legali e mitigazioni contro l'eventuale uso di materiale protetto da copyright da parte dei manutentori dei modelli.
 2. Selezionare solo plugin di comprovata affidabilità e conformità ai requisiti specifici dell'applicazione. Il paragrafo LLM07 - Progettazione Insicura dei Plugin (rif.11) fornisce informazioni per comprendere le criticità nel design dei plugin e come testare quelli di terze parti per ridurre i rischi.
@@ -27,7 +27,7 @@ Infine, le estensioni dei plugin LLM possono introdurre ulteriori vulnerabilità
 9. Implementare una politica di aggiornamento (patching) per mitigare l'insorgenza di componenti vulnerabili o obsoleti. Assicurarsi che l'applicazione si basi su una versione costantemente manutenuta delle API e del modello sottostante.
 10. Rivedere e controllare regolarmente la sicurezza ed i criteri di accesso dei fornitori, assicurandosi che non ci siano cambiamenti nella loro postura di sicurezza o nelle loro condizioni di servizio o T&C.
 
-### Esempi di Scenari di Attacco
+### Esempi di scenari di attacco
 
 1. Un attaccante sfrutta una libreria Python vulnerabile per compromettere un sistema. Questo è effettivamente accaduto nel primo data breach di Open AI.
 2. Un attaccante fornisce un plugin LLM per la ricerca di voli, generando link falsi che portano a truffare gli utenti.
