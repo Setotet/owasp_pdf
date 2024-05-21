@@ -4,7 +4,6 @@ L’ondata di interesse frenetico per i modelli di linguaggio a grandi dimension
 
 La necessità di una risorsa unificata che affrontasse questi problemi di sicurezza degli LLM era evidente. Gli sviluppatori, non essendo familiari con i rischi associati agli LLM, si sono trovati con risorse frammentate, e la missione di OWASP sembrava prestarsi perfettamente ad aiutare a guidare un’adozione sicura di questa tecnologia.
 
-
 ### A chi si rivolge questo documento?
 
 Il nostro pubblico principale sono gli sviluppatori, i data scientist e gli esperti di sicurezza incaricati di pianificare e costruire applicazioni e plugin basati su tecnologie LLM. Il nostro obiettivo è fornire una guida pratica e concisa per aiutare questi professionisti a muoversi nel terreno complesso e in continua evoluzione della sicurezza degli LLM.
@@ -13,11 +12,9 @@ Il nostro pubblico principale sono gli sviluppatori, i data scientist e gli espe
 
 La creazione dell’OWASP Top 10 per le applicazioni LLM ha richiesto un impegno significativo, realizzata grazie all'esperienza collettiva di un gruppo internazionale di quasi 500 esperti, con più di 125 contributori attivi. I nostri collaboratori provengono da contesti diversi, che includono aziende nel campo dell’intelligenza artificiale, aziende del settore della sicurezza, fornitori indipendenti di software, piattaforme cloud e hyperscale, e il mondo della ricerca accademica.
 
-
 Nel corso di un mese, abbiamo discusso e proposto potenziali vulnerabilità e i membri del gruppo hanno considerato fino a 43 minacce distinte. Attraverso molteplici round di selezione, abbiamo ridotto queste proposte fino ad arrivare a una lista concisa delle 10 vulnerabilità più critiche.
 
 Ognuna di queste vulnerabilità, congiuntamente agli esempi, ai suggerimenti relativi alla prevenzione, agli scenari di attacco e ai riferimenti, è stata ulteriormente esaminata e rifinita da sotto-gruppi specializzati e sottoposta a una revisione pubblica, per assicurare che la lista finale fosse il più possibile completa e concretamente applicabile.
-
 
 ### Relazione con le altre liste OWASP Top 10
 
@@ -40,15 +37,12 @@ Responsabile del progetto OWASP Top 10 per le applicazioni LLM
 [https://www.linkedin.com/in/wilsonsd](https://www.linkedin.com/in/wilsonsd/)    
 Twitter/X: @virtualsteve
 
-
 ### Ads Dawson
 Responsabile della release 1.1 e responsabile voci di vulerabilità per il progetto OWASP Top 10 per le applicazioni LLM
 [https://www.linkedin.com/in/adamdawson0](https://www.linkedin.com/in/adamdawson0/) 
 GitHub: @GangGreenTemperTatum
 
-
-
-## Riguardo alla traduzione
+### Riguardo alla traduzione
 
 **Traduttori**
 
@@ -66,8 +60,6 @@ Nella realizzazione di questa traduzione, abbiamo scelto consapevolmente di impi
 Talesh Seeparsan
 Responsabile traduzioni, OWASP Top 10 per le applicazioni LLM
 [https://www.linkedin.com/in/talesh/](https://www.linkedin.com/in/talesh/)  
-
-
 
 ## ﻿OWASP Top 10 per le applicazioni LLM
 
