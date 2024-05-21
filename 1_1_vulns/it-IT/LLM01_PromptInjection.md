@@ -38,7 +38,7 @@ Le iniezioni di prompt sono possibili a causa della natura degli LLM, che non se
 4. Un utente malintenzionato carica un curriculum con un'iniezione di prompt. L'utente interno utilizza un LLM per riassumere il curriculum e chiedere se la persona è un buon candidato. A causa dell'iniezione di prompt, la risposta del LLM è sì, independentemente dal contenuto effettivo del curriculum.
 5. Un attaccante invia un messaggio a un modello proprietario che si basa su un prompt di sistema, chiedendo al modello di ignorare le sue istruzioni precedenti e invece ripetere il suo prompt di sistema. Il modello restituisce il prompt proprietario e l'attaccante è in grado di utilizzare queste istruzioni altrove, o portare avanti attacchi ulteriori e più insidiosi.
 
-### Link e riferimenti (Inglese)
+### Riferimenti e link (Inglese)
 
 1. [Prompt injection attacks against GPT-3](https://simonwillison.net/2022/Sep/12/prompt-injection/): **Simon Willison**
 2. [ChatGPT Plugin Vulnerabilities - Chat with Code](https://embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/): **Embrace The Red**
