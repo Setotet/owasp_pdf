@@ -1,4 +1,5 @@
 ## LLM08: Eccessiva Autonomia
+
 ### Descrizione
 
 Un sistema basato su LLM è spesso dotato di una certa autonomia dallo sviluppatore - la capacità di interfacciarsi con altri sistemi e prendere iniziative in risposta a un prompt. La decisione su quali funzioni invocare può anche essere delegata a un 'agente' per determinarla dinamicamente in base al prompt di input o all'output del LLM.
