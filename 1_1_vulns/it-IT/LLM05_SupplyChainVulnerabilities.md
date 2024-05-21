@@ -37,7 +37,7 @@ Infine, le estensioni dei plugin LLM possono introdurre ulteriori vulnerabilità
 6. Un dipendente vittima di compromissione presso un fornitore (sviluppatore in outsourcing, azienda di hosting, ecc.) esfiltra dati, modelli o codice, di fatto trafugando proprietà intellettuale.
 7. Un operatore LLM cambia le sue condizioni d'uso (T&C) e la Politica sulla Privacy (DPA) richiedendo un opt-out esplicito relativamente all'uso dei dati dell'applicazione per l'addestramento del modello, portando alla raccolta di dati sensibili.
 
-### Riferimenti e Link (Inglese)
+### Riferimenti e link (Inglese)
 
 1. [ChatGPT Data Breach Confirmed as Security Firm Warns of Vulnerable Component Exploitation](https://www.securityweek.com/chatgpt-data-breach-confirmed-as-security-firm-warns-of-vulnerable-component-exploitation/): **Security Week**
 2. [Plugin review process](https://platform.openai.com/docs/plugins/review): **OpenAI**
