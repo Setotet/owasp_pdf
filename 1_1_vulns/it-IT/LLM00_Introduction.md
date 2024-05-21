@@ -37,6 +37,7 @@ Responsabile del progetto OWASP Top 10 per le applicazioni LLM
 [https://www.linkedin.com/in/wilsonsd](https://www.linkedin.com/in/wilsonsd/)    
 Twitter/X: @virtualsteve
 
+
 ### Ads Dawson
 Responsabile della release 1.1 e responsabile voci di vulerabilità per il progetto OWASP Top 10 per le applicazioni LLM
 [https://www.linkedin.com/in/adamdawson0](https://www.linkedin.com/in/adamdawson0/) 
