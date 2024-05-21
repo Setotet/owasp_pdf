@@ -30,7 +30,7 @@ Le iniezioni di prompt sono possibili a causa della natura degli LLM, che non se
 4. Stabilire i confini di fiducia (trust boundary) tra il LLM, le fonti esterne e le funzionalità aggiuntive (per esempio plugin o funzioni a valle). Tuttavia, un LLM compromesso può comunque agire da intermediario (man-in-the-middle) tra le API dell'applicazione e l'utente, nascondendo o manipolando le informazioni prima di presentarle a quest'ultimo. Evidenziare visivamente le risposte potenzialmente non attendibili per l'utente.
 5. Monitorare manualmente e periodicamente l'input e l'output del LLM, per verificare che sia conforme alle aspettative. Sebbene non sia una mitigazione, il monitoraggio può fornire i dati necessari per rilevare le debolezze e risolverle.
 
-### Esempi di Scenario di Attacco
+### Esempi di scenario di attacco
 
 1. Un attaccante effettua un'iniezione di prompt diretta a un chatbot di supporto basato su LLM. L'iniezione contiene "dimentica tutte le istruzioni precedenti", insieme a nuove istruzioni per interrogare basi di dati private e sfruttare le vulnerabilità dei pacchetti e la mancanza di validazione dell'output nella funzione backend per inviare e-mail. Ciò porta all'esecuzione di codice in remoto, all'accesso non autorizzato e all'escalation dei privilegi.
 2. Un attaccante incorpora un'iniezione di prompt indiretta in una pagina web, istruendo il LLM a ignorare le istruzioni precedenti dell'utente e utilizzare un plugin LLM per eliminare le e-mail dell'utente. Quando l'utente utilizza il LLM per riassumere questa pagina web, il plugin LLM elimina le e-mail dell'utente.
