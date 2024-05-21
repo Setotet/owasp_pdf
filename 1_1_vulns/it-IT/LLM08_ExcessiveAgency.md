@@ -34,10 +34,10 @@ Le seguenti opzioni non prevengono l'Eccessiva Autonomia, ma possono limitare il
 
 ### Esempi di scenari di attacco
 
-Un'app assistente personale basata su LLM ottiene l'accesso alla casella di posta elettronica di un utente tramite un plugin per riassumere il contenuto delle email in arrivo. Per ottenere questa funzionalità, il plugin di posta elettronica necessita la capacità di leggere i messaggi, tuttavia il plugin scelto dallo sviluppatore del sistema include anche funzioni per l'invio di email. Il LLM è vulnerabile a un attacco di iniezione indiretta di prompt, in cui un'email malevola induce il LLM a comandare il plugin di posta elettronica per utilizzare la funzione 'invia messaggio' e inviare spam dalla casella di posta dell'utente. Questo scenario potrebbe essere evitato:<br><br>
-(a) eliminando la funzionalità eccessiva utilizzando un plugin che si limita esclusivamente alla lettura della posta, <br>
-(b) eliminando i permessi eccessivi autenticandosi al servizio email dell'utente tramite una sessione OAuth con privilegi di sola lettura, e/o <br>
-(c) eliminando l'autonomia eccessiva chiedendo all'utente di approvare manualmente ogni invio di email redatto dal plugin LLM.
+Un'app assistente personale basata su LLM ottiene l'accesso alla casella di posta elettronica di un utente tramite un plugin per riassumere il contenuto delle email in arrivo. Per ottenere questa funzionalità, il plugin di posta elettronica necessita la capacità di leggere i messaggi, tuttavia il plugin scelto dallo sviluppatore del sistema include anche funzioni per l'invio di email. Il LLM è vulnerabile a un attacco di iniezione indiretta di prompt, in cui un'email malevola induce il LLM a comandare il plugin di posta elettronica per utilizzare la funzione 'invia messaggio' e inviare spam dalla casella di posta dell'utente. Questo scenario potrebbe essere evitato:
+a) eliminando la funzionalità eccessiva utilizzando un plugin che si limita esclusivamente alla lettura della posta,
+b) eliminando i permessi eccessivi autenticandosi al servizio email dell'utente tramite una sessione OAuth con privilegi di sola lettura, e/o
+c) eliminando l'autonomia eccessiva chiedendo all'utente di approvare manualmente ogni invio di email redatto dal plugin LLM.
 In aggiunta, il danno causato potrebbe essere mitigato implementando un limite alla frequenza di invio sull'interfaccia che spedisce la posta elettronica.
 
 ### Riferimenti e link (Inglese)
