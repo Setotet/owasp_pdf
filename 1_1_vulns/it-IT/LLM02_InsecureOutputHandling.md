@@ -1,6 +1,5 @@
 ## LLM02: Gestione non sicura dell'output
 
-
 ### Descrizione
 
 La gestione non sicura dell'output si riferisce nello specifico a una validazione, sanificazione e gestione insufficiente degli output generati da grandi modelli di linguaggio prima che vengano passati a valle ad altri componenti e sistemi. Poiché il contenuto generato da un LLM può essere controllato dal prompt in input, questo comportamento è comparabile a fornire agli utenti un accesso indiretto a funzionalità aggiuntive.
