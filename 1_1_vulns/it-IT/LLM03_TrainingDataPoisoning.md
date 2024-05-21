@@ -44,7 +44,7 @@ L'avvelenamento dei dati è considerato un attacco all'integrità perché la man
    4. Eseguire esercitazioni di tipo red team (rif.19) basate su LLM o scansioni di vulnerabilità (rif.20) nelle fasi di test del ciclo di vita del LLM.
 
 
-### Esempi di scenari d'attacco
+### Esempi di scenario di attacco
 
 1. L'output di un'IA generativa può indurre in errore gli utenti dell'applicazione, portando a opinioni tendenziose o, peggio ancora, reati d'odio, ecc. con scopi tendenziosi.
 2. Se i dati di apprendimento non vengono correttamente filtrati e/o sanificati, un utente malevolo potrebbe tentare di influenzare il modello iniettando dati tossici per farlo adattare ai dati falsificati e tendenziosi.
