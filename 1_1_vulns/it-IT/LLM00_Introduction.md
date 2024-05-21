@@ -32,13 +32,13 @@ Il nostro obiettivo è di colmare la distanza tra i principi generali di sicurez
 La versione 1.1 di questa lista non sarà l’ultima. Ci aspettiamo di aggiornare questa lista periodicamente, per stare al passo con l’evoluzione del settore. Lavoreremo con la comunità per far evolvere la tecnologia e creare altro materiale di studio per una serie di casi d’uso. Miriamo inoltre a collaborare con gli organismi di standardizzazione e i governi a riguardo della sicurezza dell’intelligenza artificiale. Ti invitiamo a unirti al nostro gruppo e contribuire.
 
 
-### Steve Wilson
+#### Steve Wilson
 Responsabile del progetto OWASP Top 10 per le applicazioni LLM
 [https://www.linkedin.com/in/wilsonsd](https://www.linkedin.com/in/wilsonsd/)    
 Twitter/X: @virtualsteve
 
 
-### Ads Dawson
+#### Ads Dawson
 Responsabile della release 1.1 e responsabile voci di vulerabilità per il progetto OWASP Top 10 per le applicazioni LLM
 [https://www.linkedin.com/in/adamdawson0](https://www.linkedin.com/in/adamdawson0/) 
 GitHub: @GangGreenTemperTatum
