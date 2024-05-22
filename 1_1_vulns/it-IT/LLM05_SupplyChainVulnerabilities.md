@@ -4,7 +4,7 @@
 
 La catena di approvvigionamento nei modelli di linguaggio di grandi dimensioni (LLM) può essere soggetta a vulnerabilità, influenzando l'integrità dei dati di addestramento, dei modelli di machine learning (ML) e delle piattaforme di distribuzione. Queste vulnerabilità possono causare risultati distorti, violazioni della sicurezza o persino fallimenti completi del sistema. Tradizionalmente, le vulnerabilità si concentrano sui componenti software, ma il Machine Learning le estende anche ai modelli pre-addestrati e ai dati di addestramento forniti da terze parti, suscettibili ad attacchi di manomissione e avvelenamento.
 
-Infine, le estensioni dei plugin LLM possono introdurre ulteriori vulnerabilità. Queste sono descritte in LLM07 - Progettazione Insicura dei Plugin (pp 25-27), che tratta dello sviluppo di plugin LLM e fornisce informazioni utili per valutare i plugin di terze parti.
+Infine, le estensioni dei plugin LLM possono introdurre ulteriori vulnerabilità. Queste sono descritte in LLM07 - Progettazione Insicura dei Plugin (pp. 25-27), che tratta dello sviluppo di plugin LLM e fornisce informazioni utili per valutare i plugin di terze parti.
 
 ### Esempi comuni di vulnerabilità
 
