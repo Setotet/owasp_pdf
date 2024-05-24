@@ -1,4 +1,4 @@
-## LLM03: Avvelenamento dei dati di apprendimento
+## LLM03: Avvelenamento dei Dati di Apprendimento
 
 ### Descrizione
 
