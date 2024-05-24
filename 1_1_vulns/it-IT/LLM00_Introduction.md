@@ -1,8 +1,8 @@
 ## Introduzione
 
-L’ondata di interesse frenetico per i modelli di linguaggio a grandi dimensioni (LLM, dall’inglese Large Language Models), in seguito all’introduzione sul mercato di massa dei chatbot pre-addestrati a fine 2022, è stata notevole. Le aziende, impazienti di sfruttare il potenziale degli LLM, stanno rapidamente integrandoli nei loro sistemi e nelle offerte destinate ai clienti. Eppure, l’incredibile velocità alla quale gli LLM stanno venendo adottati ha superato il tempo necessario a stabilire dei protocolli di sicurezza esaustivi, lasciando molte applicazioni vulnerabili a problemi di rischio elevato.
+L'introduzione sul mercato di massa dei chatbot pre-addestrati a fine 2022 ha innescato un'ondata di frenetico interesse per i modelli di linguaggio a grandi dimensioni (LLM). Le aziende, desiderose di sfruttare il potenziale degli LLM, li stanno integrando rapidamente nei loro sistemi e nelle offerte destinate ai clienti. Tuttavia, la velocità con cui gli LLM vengono adottati ha superato il tempo necessario per stabilire protocolli di sicurezza esaustivi, lasciando molte applicazioni vulnerabili a seri problemi di sicurezza.
 
-La necessità di una risorsa unificata che affrontasse questi problemi di sicurezza degli LLM era evidente. Gli sviluppatori, non essendo familiari con i rischi associati agli LLM, si sono trovati con risorse frammentate, e la missione di OWASP sembrava prestarsi perfettamente ad aiutare a guidare un’adozione sicura di questa tecnologia.
+Era evidente la necessità di una risorsa unificata per affrontare questi problemi di sicurezza degli LLM. Gli sviluppatori, non sempre avvezzi ai rischi associati agli LLM, si trovavano di fronte a risorse frammentate. La missione di OWASP sembrava quindi perfetta per guidare un'adozione sicura di questa tecnologia.
 
 ### A chi si rivolge questo documento?
 
