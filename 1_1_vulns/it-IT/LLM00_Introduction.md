@@ -65,13 +65,13 @@ Responsabile traduzioni, OWASP Top 10 per le applicazioni LLM
 
 ## ﻿OWASP Top 10 per le applicazioni LLM
 
-### LLM01: Iniezione di prompt
+### LLM01: Iniezione di Prompt
 Input artificiosi possono manipolare un modello linguistico di grandi dimensioni, causando azioni non volute. Le iniezioni dirette sovrascrivono i prompt di sistema, mentre quelle indirette manipolano gli input provenienti da fonti esterne.
 
-### LLM02: Gestione non sicura dell'output
+### LLM02: Gestione Non Sicura dell'Output
 Questa vulnerabilità accade quando l'output del LLM è accettato senza previa verifica, esponendo i sistemi backend. L'abuso può portare a conseguenze gravi come XSS, CSRF, SSRF, escalation dei privilegi o esecuzione di codice remoto.
 
-### LLM03: Avvelenamento dei dati di apprendimento
+### LLM03: Avvelenamento dei Dati di Apprendimento
 Questo si verifica quando i dati di apprendimento del LLM vengono manomessi, introducendo vulnerabilità o bias che ne compromettono la sicurezza, l'efficacia o il comportamento etico. Le fonti di dati includono Common Crawl, WebText, OpenWebText e libri.
 
 ### LLM04: Denial of Service del Modello
