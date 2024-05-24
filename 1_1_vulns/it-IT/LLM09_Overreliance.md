@@ -1,8 +1,8 @@
-## LLM09: Eccessivo affidamento
+## LLM09: Eccessivo Affidamento
 
 ### Descrizione
 
-L'eccessivo affidamento si manifesta quando un LLM produce risultati erronei, presentati con una falsa aura di autorità.
+L'Eccessivo Affidamento si manifesta quando un LLM produce risultati erronei, presentati con una falsa aura di autorità.
 Mentre gli LLM usualmente producono materiale creativo ed informativo, questi possono anche generare contenuti fattualmente scorretti, inappropriati o pericolosi. Questo fenomeno è noto sotto il nome di allucinazione o confabulazione. Quando persone o sistemi si affidano incondizionatamente a queste informazioni, si possono generare violazioni della sicurezza, disinformazione, comunicazione errata, problemi legali, e danni reputazionali.
 
 Il codice Sorgente generato da LLM, può introdurre silenziosamente delle vulnerabilità di sicurezza. Ciò espone a rischi significativi per l'integrità operativa, e la sicurezza delle applicazioni. Questi rischi sottolineano l'importanza di continui processi di verifica, attraverso:
