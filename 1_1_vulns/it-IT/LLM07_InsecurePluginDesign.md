@@ -1,4 +1,4 @@
-### LLM07: Progettazione Insicura dei Plugin
+## LLM07: Progettazione Insicura dei Plugin
 
 ### Descrizione
 
@@ -8,7 +8,7 @@ Il danno causato da input malevoli dipende spesso dai controlli di accesso insuf
 
 Questa sezione si concentra sulla creazione di plugin specifici per LLM piuttosto che sui plugin di terze parti, coperti dalle Vulnerabilità della Catena di Approvvigionamento del LLM (Supply-Chain-Vulnerabilities).
 
-### Esempi Comuni di Vulnerabilità
+### Esempi comuni di vulnerabilità
 
 1. Un plugin accetta tutti i parametri in un unico campo di testo anziché in parametri di input distinti.
 2. Un plugin accetta stringhe di configurazione invece di parametri, che possono sovrascrivere intere impostazioni di configurazione.
@@ -16,7 +16,7 @@ Questa sezione si concentra sulla creazione di plugin specifici per LLM piuttost
 4. L'autenticazione è eseguita senza un'autorizzazione esplicita per un particolare plugin.
 5. Un plugin tratta tutti i contenuti LLM come se fossero creati interamente dall'utente eseguendo qualsiasi azione richiesta senza chiedere ulteriori autorizzazioni.
 
-### Strategie di Prevenzione e Mitigazione
+### Strategie di prevenzione e mitigazione
 
 1. I Plugin dovrebbero accettare input che siano limitati e parametrizzati ove possibile e includere controlli sul tipo e la struttura dell'input. Dove non sia consentito, è opportuno inserire un secondo livello di chiamate fortemente tipizzate (controllo rigoroso sui tipi di parametro), analizzando le richieste e applicando validazione e sanificazione. Per gli input liberi, eventualmente necessari per alcune funzionalità dell'applicazione, è cruciale un'attenta revisione per prevenire l'invocazione di metodi dannosi.
 2. Gli sviluppatori di plugin dovrebbero applicare le linee guida OWASP per gli standard di verifica della sicurezza applicativa (ASVS - Application Security Verification Standard) per assicurare adeguate validazione e sanitizzazione dell'input.
@@ -26,7 +26,7 @@ Questa sezione si concentra sulla creazione di plugin specifici per LLM piuttost
 6. Richiedere un intervento umano per l'autorizzazione e la conferma di ogni azione intrapresa da plugin particolarmente critici.
 7. I Plugin sono tipicamente delle REST APIs, per cui si raccomanda agli sviluppatori l'applicazione delle raccomandazioni di cui alla lista OWASP Top 10 API Security Risks - 2023 per ridurre la presenza di vulnerabilità comuni.
 
-### Esempi di Scenari di Attacco
+### Esempi di scenari di attacco
 
 1. Un plugin accetta un URL base e istruisce il LLM nel combinare l'URL con una query per ottenere previsioni meteorologiche che sono incluse nell'elaborazione della richiesta dell'utente. Un utente malintenzionato può creare una richiesta in modo tale che l'URL punti verso un dominio sotto il suo controllo, permettendogli di iniettare il proprio contenuto nel modello LLM tramite il proprio dominio.
 2. Un plugin accetta un input in forma libera in un unico campo che non viene validato. Un attaccante fornisce payload creati ad-hoc per ottenere informazioni utili a partire dai messaggi di errore. Poi sfrutta vulnerabilità conosciute nelle dipendenze di terze parti per eseguire del codice arbitrario ed effettuando un'esfiltrazione di dati o aumentando i propri di privilegi.
@@ -34,7 +34,7 @@ Questa sezione si concentra sulla creazione di plugin specifici per LLM piuttost
 4. Un plugin accetta direttamente clausole SQL "WHERE" come parte di filtri avanzati, che vengono poi aggiunti alla query SQL. Ciò permette all'attaccante di eseguire un attacco di iniezione SQL.
 5. Un attaccante utilizza l'iniezione indiretta di prompt per attaccare un plugin di gestione del codice insicuro, privo di validazione dell'input e con controlli di accesso deboli, per trasferire la proprietà del repository (archivio) e bloccare l'utente dai propri.
 
-### Riferimenti e Link (Inglese)
+### Riferimenti e link (Inglese)
 
 1. [OpenAI ChatGPT Plugins](https://platform.openai.com/docs/plugins/introduction): **ChatGPT Developer’s Guide**
 2. [OpenAI ChatGPT Plugins - Plugin Flow](https://platform.openai.com/docs/plugins/introduction/plugin-flow): **OpenAI Documentation**

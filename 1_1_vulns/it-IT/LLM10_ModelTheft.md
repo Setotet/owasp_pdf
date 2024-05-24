@@ -6,7 +6,7 @@ Questa voce si riferisce all'accesso non autorizzato e all'esfiltrazione di mode
 
 La crescente diffusione e potenza degli LLM, rende il furto di LLM una vulnerabilità dall'impatto significativo. Organizzazioni e ricercatori devono dare priorità a misure di sicurezza adeguate volte a proteggere i loro modelli LLM, garantendo la riservatezza e l'integrità della loro proprietà intellettuale. Per mitigare i rischi associati al furto del modello LLM e salvaguardare gli interessi di chi gli utilizza, è cruciale adottare un sistema di sicurezza integrato (es. sistema di gestione della sicurezza delle informazioni o altre pratiche equivalenti) che includa controlli di accesso, crittografia e monitoraggio continuo.
 
-### Esempi Comuni di Vulnerabilità
+### Esempi comuni di vulnerabilità
 
 1. Un attaccante sfrutta una vulnerabilità nell'infrastruttura di un'azienda per accedere senza autorizzazione al loro archivio (repository) di modelli LLM a causa di configurazioni errate nella sicurezza della rete o delle applicazioni.
 2. Uno scenario di minaccia interna in cui un dipendente insoddisfatto divulga modelli o artefatti correlati ai modelli.
@@ -20,13 +20,13 @@ La crescente diffusione e potenza degli LLM, rende il furto di LLM una vulnerabi
 
 L'impiego di un modello rubato, come un modello ombra (shadow model), può essere finalizzato ad orchestrare attacchi informatici, incluso l'accesso non autorizzato a informazioni sensibili contenute nel modello stesso, o per condurre esperimenti su di esso in modo non rilevabile, con input avversi, per predisporre ulteriori iniezioni di prompt (prompt injections) più mirate.
 
-### Strategie di Prevenzione e Mitigazione
+### Strategie di prevenzione e mitigazione
 
 1. Implementare controlli di accesso robusti (ad esempio, RBAC e minimizzazopne dei privilegi) accanto a meccanismi di autenticazione forti per limitare l'accesso non autorizzato ai repository di modelli LLM e agli ambienti di addestramento (pre-training e training).
    1. Questo è particolarmente importante per i primi tre esempi esaminati, chin caso di minacce interne (insider threat), configurazione errata e/o controlli di sicurezza deboli, relativi all'infrastruttura che ospita modelli, pesi e architettura del LLM, in cui un attore malintenzionato potrebbe guadagnare l'accesso dall'interno, o dall'esterno.
    2. La gestione dei fornitori, il tracciamento, la verifica e le vulnerabilità delle dipendenze rappresentano argomenti di interesse fondamentali per prevenire lo sfruttamento degli attacchi alla catena di approvvigionamento.
 2. Limitare l'accesso del LLM alle risorse di rete, ai servizi interni e alle API.
-   1. Questa pratica è efficace per tutti gli esempi di attacchi citati, proteggendo dai rischi e dalle minacce interne (insider threats), e limitando allo stesso tempo ciò a cui l'applicazione LLM "_ha accesso_", rappresentando dunque un meccanismo per prevenire o interrompere attacchi laterali (side-channel attacks).
+   1. Questa pratica è efficace per tutti gli esempi di attacchi citati, proteggendo dai rischi e dalle minacce interne (insider threats), e limitando allo stesso tempo ciò a cui l'applicazione LLM "*ha accesso*", rappresentando dunque un meccanismo per prevenire o interrompere attacchi laterali (side-channel attacks).
 3. Utilizzare un Inventario o Registro centralizzato per i modelli di Machine Learning utilizzati in produzione. Avere un registro di modelli centralizzato aiuta a prevenire accessi non autorizzati ai modelli di ML attraverso controlli di accesso, autenticazione e grazie alla capacità di monitoraggio/registrazione, elementi fondamentali per la governance di questi processi. Avere un repository centralizzato offre anche il vantaggio di facilitare la raccolta di informazioni relative agli algoritmi utilizzati dai modelli per scopi di conformità, valutazione dei rischi e loro mitigazione.
 4. Monitorare e verificare regolarmente i registri (log) di accesso e le attività relative agli archivi dei modelli LLM, per rilevare e rispondere tempestivamente a qualsiasi comportamento sospetto o non autorizzato.
 5. Automatizzare l'implementazione delle cosiddette MLOps (Gestione Operativa dei Modelli di Machine Learning) attraverso flussi di lavoro dedicati alla governance, il tracciamento e l'approvazione, per rafforzare i controlli di accesso e rilascio all'interno dell'infrastruttura.
@@ -35,7 +35,7 @@ L'impiego di un modello rubato, come un modello ombra (shadow model), può esser
 8. Implementare tecniche di addestramento avversariale mirato alla resilienza per aiutare il modello a rilevare query di estrazione e rafforzare inoltre le misure di sicurezza fisica.
 9. Implementare un framework di marcatura modale e/o temporale (watermarking) nelle fasi di integrazione (input) e monitoraggio (output, trasformazione), del ciclo di vita di un LLM.
 
-### Esempi di Scenario di Attacco
+### Esempi di scenari di attacco
 
 1. Un attaccante abusa una vulnerabilità nell'infrastruttura di un'azienda per accedere senza autorizzazione al loro repository di modelli LLM. L'attaccante procede quindi all'esfiltrazione di modelli LLM di valore e li utilizza per lanciare un servizio concorrente di elaborazione del linguaggio o estrarre forzatamente informazioni sensibili, causando gravi danni finanziari all'azienda proprietaria del modello.
 2. Un dipendente insoddisfatto divulga modelli o artefatti correlati. L'esposizione pubblica che questo scenario rappresenta aumenta la conoscenza a disposizione di possibili attaccanti, consentendo attacchi avversariali di tipo "gray box" (conoscenza parziale) o, in alternativa, contentendo il furto diretto della proprietà intellettuale esposta.
@@ -43,7 +43,7 @@ L'impiego di un modello rubato, come un modello ombra (shadow model), può esser
 4. Lacune nei controlli di sicurezza della catena di fornitura (supply chain) causano perdite di dati relativi a informazioni proprietarie del o sul modello.
 5. Un attaccante elude le tecniche di filtraggio degli input e le istruzioni iniziali del LLM, per eseguire un attacco indiretto/laterale e recuperare informazioni sul modello caricandole su una risorsa remota sotto il suo controllo.
 
-### Link e Riferimenti (Inglese)
+### Riferimenti e link (Inglese)
 
 1. [Meta’s powerful AI language model has leaked online](https://www.theverge.com/2023/3/8/23629362/meta-ai-language-model-llama-leak-online-misuse): **The Verge**
 2. [Runaway LLaMA | How Meta's LLaMA NLP model leaked](https://www.deeplearning.ai/the-batch/how-metas-llama-nlp-model-leaked/): **Deep Learning Blog**

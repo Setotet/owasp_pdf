@@ -1,4 +1,4 @@
-## LLM03: Avvelenamento dei dati di apprendimento
+## LLM03: Avvelenamento dei Dati di Apprendimento
 
 ### Descrizione
 
@@ -14,7 +14,7 @@ L'avvelenamento dei dati è considerato un attacco all'integrità perché la man
 
 ### Esempi comuni di vulnerabilità
 
-1. Un attaccante o un'azienda concorrente crea intenzionalmente dei documenti inaccurati o malevoli, che sono indirizzati al pre-addestramento, fine-tuning o al processo di embedding del modello. Considerate entrambi i vettori di attacco di [Split-View Data Poisoning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%201%20Split-View%20Data%20Poisoning.jpeg) (avvelenamento da vista separata) e [Frontrunning Poisoning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%202%20Frontrunning%20Data%20Poisoning.jpeg) (avvelenamento per anticipazione) come esempi.
+1. Un attaccante o un'azienda concorrente crea intenzionalmente dei documenti inaccurati o malevoli, che sono indirizzati al pre-addestramento, fine-tuning o al processo di embedding del modello. Considerate entrambi i vettori di attacco di "avvelenamento da vista separata" (rif.12) e "avvelenamento per anticipazione" (rif.13) come esempi.
    1. Il modello vittima viene addestrato utilizzando informazioni false che si riflettono negli output che il modello di IA generativa fornisce ai suoi fruitori.
 2. Un attaccante è in grado di iniettare direttamente dei contenuti falsi, tendenziosi o pericolosi nei processi di addestramento di un modello, facendo così in modo che questi contenuti vengano poi restituiti dai suoi ouput.
 3. Un utente ignaro inietta indirettamente dati sensibili o proprietari nei processi di addestramento di un modello, che vengono poi restituiti negli output successivi.
@@ -31,20 +31,19 @@ L'avvelenamento dei dati è considerato un attacco all'integrità perché la man
 3. Verificare il caso d'uso del LLM e l'applicazione in cui verrà integrato. Sviluppare modelli specifici, utilizzando set di dati di addestramento distinti o tecniche di fine-tuning per ciascun caso d'uso, per affinare l'output dell'intelligenza artificiale generativa, rendendolo più dettagliato e preciso secondo il caso d'uso definito.
 4. Assicurare un adeguato sandboxing attraverso controlli di rete rigorosi, per prevenire che il modello acceda a dati da fonti non autorizzate, evitando così il rischio di compromettere l'integrità dell'output del processo di apprendimento automatico.
 5. Adottare un controllo rigoroso o filtri sull'input per dati di addestramento specifici o per determinate categorie di fonti di dati, per mantenere sotto controllo il volume di dati non genuini. Sanificare i dati con tecniche come la rilevazione statistica degli outlier o il rilevamento delle anomalie, per identificare e rimuovere i dati "ostili" che potrebbero essere inseriti nel processo di fine-tuning.
-6. Elaborare domande di controllo riguardanti la fonte e la proprietà dei set di dati per garantire che il modello non sia stato avvelenato, e adottare questa cultura nel ciclo di vita "MLSecOps". Fare riferimento a risorse disponibili come ad esempio [The Foundation Model Transparency Index](https://crfm.stanford.edu/fmti/) o [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
-7. Usare DVC ([Data Version Control](https://dvc.org/doc/user-guide/analytics)) per identificare e monitorare in modo rigoroso quella parte del set di dati che potrebbe essere stata manipolata, eliminata o aggiunta, portando all'avvelenamento dei dati.
+6. Elaborare domande di controllo riguardanti la fonte e la proprietà dei set di dati per garantire che il modello non sia stato avvelenato, e adottare questa cultura nel ciclo di vita "MLSecOps". Fare riferimento a risorse disponibili come ad esempio "The Foundation Model Transparency Index" (rif.14) o "Open LLM Leaderboard" (rif.15).
+7. Usare "Data Version Control" (rif.16) per identificare e monitorare in modo rigoroso quella parte del set di dati che potrebbe essere stata manipolata, eliminata o aggiunta, portando all'avvelenamento dei dati.
 8. Utilizzare database vettoriali per integrare informazioni fornite dall'utente, consentendo di tutelare gli utenti dall'avvelenamento dei dati e persino di apportare correzioni in ambiente di produzione senza la necessità di riaddestrare un nuovo modello.
 9. Tecniche di robustezza avversaria come l'apprendimento federato (federated learning) e l'applicazione di vincoli per minimizzare gli effetti di outlier o dell'addestramendo avversariale per aumentare la resistenza alle peggiori perturbazioni che possono presentarsi nei dati di addestramento.
    1. Un approccio "MLSecOps" potrebbe essere quello di includere una fase di rafforzamento avversariale nel ciclo di vita dell'addestramento utilizzando ad esempio la tecnica del "auto-avvelenamento".
-   2. Un esempio di questo approccio è [Autopoison](https://github.com/azshue/AutoPoison), che include test per attacchi come l'iniezione diretta di contenuto ("tentativo di promuovere un marchio nelle risposte del modello") e l'attacco di rifiuto ("fare in modo che il modello rifiuti sempre di rispondere").
+   2. Un esempio di questo approccio è "Autopoison" (rif.17), che include test per attacchi come l'iniezione diretta di contenuto ("tentativo di promuovere un marchio nelle risposte del modello") e l'attacco di rifiuto ("fare in modo che il modello rifiuti sempre di rispondere").
 10. Testare e rilevare, misurando la perdita durante la fase di addestramento e analizzando i modelli addestrati per rilevare gli indizi di un attacco di avvelenamento, controllando il comportamento del modello su input di test specifici.
    1. Monitorare e segnalare il numero di risposte distorte che superano una certa soglia.
    2. Usare una validazione umana per fare un audit delle risposte.
-   3. Implementare LLM dedicati per mettere alla prova i modelli rispetto a conseguenze indesiderate e addestrare altri LLM usando [tecniche di apprendimento con rinforzo](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy).
-   4. Eseguire esercitazioni di tipo [red team](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned) basate su LLM o [scansioni di vulnerabilità](https://github.com/leondz/garak) nelle fasi di test del ciclo di vita del LLM.
+   3. Implementare LLM dedicati per mettere alla prova i modelli rispetto a conseguenze indesiderate e addestrare altri LLM usando tecniche di apprendimento con rinforzo (rif.18).
+   4. Eseguire esercitazioni di tipo red team (rif.19) basate su LLM o scansioni di vulnerabilità (rif.20) nelle fasi di test del ciclo di vita del LLM.
 
-
-### Esempi di scenari d'attacco
+### Esempi di scenario di attacco
 
 1. L'output di un'IA generativa può indurre in errore gli utenti dell'applicazione, portando a opinioni tendenziose o, peggio ancora, reati d'odio, ecc. con scopi tendenziosi.
 2. Se i dati di apprendimento non vengono correttamente filtrati e/o sanificati, un utente malevolo potrebbe tentare di influenzare il modello iniettando dati tossici per farlo adattare ai dati falsificati e tendenziosi.
@@ -64,3 +63,12 @@ L'avvelenamento dei dati è considerato un attacco all'integrità perché la man
 9. [The poisoning of ChatGPT](https://softwarecrisis.dev/letters/the-poisoning-of-chatgpt/): **Software Crisis Blog**
 10. [Poisoning Web-Scale Training Datasets - Nicholas Carlini | Stanford MLSys #75](https://www.youtube.com/watch?v=h9jf1ikcGyk): **YouTube Video**
 11. [OWASP CycloneDX v1.5](https://cyclonedx.org/capabilities/mlbom/): **OWASP CycloneDX**
+12. [Split-View Data Poisoning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%201%20Split-View%20Data%20Poisoning.jpeg)
+13. [Frontrunning Poisoning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%202%20Frontrunning%20Data%20Poisoning.jpeg)
+14. [The Foundation Model Transparency Index](https://crfm.stanford.edu/fmti/)
+15. [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
+16. [Data Version Control](https://dvc.org/doc/user-guide/analytics)
+17. [Autopoison](https://github.com/azshue/AutoPoison)
+18. [tecniche di apprendimento con rinforzo](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy)
+19. [red team](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned)
+20. [scansioni di vulnerabilità](https://github.com/leondz/garak)
