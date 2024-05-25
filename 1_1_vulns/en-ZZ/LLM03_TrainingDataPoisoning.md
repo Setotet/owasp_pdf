@@ -15,14 +15,13 @@ Data poisoning is considered an integrity attack because tampering with the trai
 ### Common Examples of Vulnerability
 
 1. A malicious actor, or a competitor brand intentionally creates inaccurate or malicious documents which are targeted at a model’s pre-training, fine-tuning data or embeddings. Consider both Split-View Data Poisoning (ref.12) and Frontrunning Poisoning (ref.13) attack vectors for illustrations.
-   1. The victim model trains using falsified information which is reflected in outputs of generative AI prompts to it's consumers.
+  - The victim model trains using falsified information which is reflected in outputs of generative AI prompts to it's consumers.
 2. A malicious actor is able to perform direct injection of falsified, biased or harmful content into the training processes of a model which is returned in subsequent outputs.
 3. An unsuspecting user is indirectly injecting sensitive or proprietary data into the training processes of a model which is returned in subsequent outputs.
 4. A model is trained using data which has not been verified by its source, origin or content in any of the training stage examples which can lead to erroneous results if the data is tainted or incorrect.
 5. Unrestricted infrastructure access or inadequate sandboxing may allow a model to ingest unsafe training data resulting in biased or harmful outputs. This example is also present in any of the training stage examples.
-   1. In this scenario, a users input to the model may be reflected in the output to another user (leading to a breach), or the user of an LLM may receive outputs from the model which are inaccurate, irrelevant or harmful depending on the type of data ingested compared to the model use-case (usually reflected with a model card).
-
-*Whether a developer, client or general consumer of the LLM, it is important to understand the implications of how this vulnerability could reflect risks within your LLM application when interacting with a non-proprietary LLM to understand the legitimacy of model outputs based on it's training procedures. Similarly, developers of the LLM may be at risk to both direct and indirect attacks on internal or third-party data used for fine-tuning and embedding (most common) which as a result creates a risk for all it's consumers*
+  - In this scenario, a users input to the model may be reflected in the output to another user (leading to a breach), or the user of an LLM may receive outputs from the model which are inaccurate, irrelevant or harmful depending on the type of data ingested compared to the model use-case (usually reflected with a model card).
+6. Whether a developer, client or general consumer of the LLM, it is important to understand the implications of how this vulnerability could reflect risks within your LLM application when interacting with a non-proprietary LLM to understand the legitimacy of model outputs based on it's training procedures. Similarly, developers of the LLM may be at risk to both direct and indirect attacks on internal or third-party data used for fine-tuning and embedding (most common) which as a result creates a risk for all it's consumers
 
 ### Prevention and Mitigation Strategies
 
@@ -35,13 +34,13 @@ Data poisoning is considered an integrity attack because tampering with the trai
 7. Use DVC (Data Version Control (ref.16) to tightly identify and track part of a dataset which may have been manipulated, deleted or added that has lead to poisoning.
 8. Use Vector Database to add user-supplied information in aid to protect from poisoning other users and even fix in production without having to re-train a new model.
 9. Adversarial robustness techniques such as federated learning and constraints to minimize the effect of outliers or adversarial training to be vigorous against worst-case perturbations of the training data.
-   1. An "MLSecOps" approach could be to include adversarial robustness to the training lifecycle with the auto poisoning technique.
-   2. An example repository of this would be Autopoison (ref.17) testing, including both attacks such as Content Injection Attacks (“(attempting to promote a brand name in model responses”) and Refusal Attacks (“always making the model refuse to respond”) that can be accomplished with this approach.
+  - An "MLSecOps" approach could be to include adversarial robustness to the training lifecycle with the auto poisoning technique.
+  - An example repository of this would be Autopoison (ref.17) testing, including both attacks such as Content Injection Attacks (“attempting to promote a brand name in model responses”) and Refusal Attacks (“always making the model refuse to respond”) that can be accomplished with this approach.
 10. Testing and Detection, by measuring the loss during the training stage and analyzing trained models to detect signs of a poisoning attack by analyzing model behavior on specific test inputs.
-   1. Monitoring and alerting on number of skewed responses exceeding a threshold.
-   2. Use of a human loop to review responses and auditing.
-   3. Implement dedicated LLMs to benchmark against undesired consequences and train other LLMs using reinforcement learning techniques (ref.18).
-   4. Perform LLM-based red team exercises (ref.19) or LLM vulnerability scanning (ref.20) into the testing phases of the LLM's lifecycle.
+11. Monitoring and alerting on number of skewed responses exceeding a threshold.
+12. Use of a human loop to review responses and auditing.
+13. Implement dedicated LLMs to benchmark against undesired consequences and train other LLMs using reinforcement learning techniques (ref.18).
+14. Perform LLM-based red team exercises (ref.19) or LLM vulnerability scanning (ref.20) into the testing phases of the LLM's lifecycle.
 
 ### Example Attack Scenarios
 

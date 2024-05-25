@@ -19,9 +19,9 @@ The consumer-LLM application interaction forms a two-way trust boundary, where w
 1. Integrate adequate data sanitization and scrubbing techniques to prevent user data from entering the training model data.
 2. Implement robust input validation and sanitization methods to identify and filter out potential malicious inputs to prevent the model from being poisoned.
 3. When enriching the model with data and if fine-tuning (ref.7) a model: (I.E, data fed into the model before or during deployment)
-   1. Anything that is deemed sensitive in the fine-tuning data has the potential to be revealed to a user. Therefore, apply the rule of least privilege and do not train the model on information that the highest-privileged user can access which may be displayed to a lower-privileged user.
-   2. Access to external data sources (orchestration of data at runtime) should be limited.
-   3. Apply strict access control methods to external data sources and a rigorous approach to maintaining a secure supply chain.
+  - Anything that is deemed sensitive in the fine-tuning data has the potential to be revealed to a user. Therefore, apply the rule of least privilege and do not train the model on information that the highest-privileged user can access which may be displayed to a lower-privileged user.
+  - Access to external data sources (orchestration of data at runtime) should be limited.
+  - Apply strict access control methods to external data sources and a rigorous approach to maintaining a secure supply chain.
 
 ### Example Attack Scenarios
 
