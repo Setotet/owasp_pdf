@@ -42,7 +42,7 @@ Die Vergiftung von Daten wird als Angriff auf die Integrität betrachtet, da die
     2. Setzen Sie auf menschliche Kontrollen zur Überprüfung der Antworten und der Auditierung.
     3. Setzen Sie spezielle LLMs ein, um unerwünschte Konsequenzen zu messen und andere LLMs mit Hilfe von [Reinforcement Learning Techniken](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy).
     4. Führen Sie LLM-basierte [Red Team Exercises](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned) oder [LLM Vulnerability Scans](https://github.com/leondz/garak) in den Testphasen des Lebenszyklus des LLM durch.
-    5. 
+
 ### Beispiele für Angriffsszenarien
 
 1. Die generative KI-Prompt-Ausgabe des LLM kann die Benutzer der Anwendung irreführen, was zu Bias (voreingenommenen Meinungen), Schlussfolgerungen oder, schlimmer noch, zu Hassverbrechen usw. führen kann.

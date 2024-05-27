@@ -85,3 +85,14 @@ Systeme oder Personen, die sich zu sehr und unkontrolliert auf LLMs verlassen, k
 
 ### LLM10: Modell-Diebstahl
 Dies schließt den unbefugten Zugriff, das Kopieren oder die Weitergabe von geschützten LLM-Modellen ein. Die Folgen sind wirtschaftliche Verluste, gefährdete Wettbewerbsvorteile und potenzieller Zugang zu sensiblen Informationen.
+
+
+## Datenfluss einer LLM-Anwendung
+
+Das folgende Diagramm zeigt die High-Level-Architektur einer hypothetischen LLM Anwendung. Im Diagramm hervorgehobenen sind die Risikobereiche, die veranschaulichen, wie sich die Punkte der OWASP Top 10 für LLM-Anwendungen mit dem Datenfluss der Anwendung überschneiden.
+
+Dieses Diagramm kann als visueller Leitfaden verwendet werden, um zu verstehen, wie sich die Sicherheitsrisiken großer Sprachmodelle auf das gesamte Anwendungsökosystem auswirken.
+
+![Abb_1](../images/fig_5_2.jpg)
+
+##### Abbildung 1: OWASP Top 10 für LLM-Anwendungen visualisiert

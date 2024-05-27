@@ -11,7 +11,7 @@
         "",
         "VERSION 1.1",
         "",
-        "Veröffentlicht am: 13. Mai 2024"
+        "Veröffentlicht am: 27. Mai 2024"
     ],
     "doc_header": "OWASP Top 10 für LLM-Applikationen v1.1",
     "doc_header_pivot.pt_x": 100.8,
@@ -53,7 +53,7 @@
     "blockquote_font.size": 10,
     "blockquote_font.line_pitch": 14.0,
     "blockquote_font.line_alignment": "left",
-    "unordered_list_marker": "square",
+    "unordered_list_marker": "circle",
     "md_file_range": [
         0,
         999999

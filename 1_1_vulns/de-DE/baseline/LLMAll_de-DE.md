@@ -86,6 +86,16 @@ Systeme oder Personen, die sich zu sehr und unkontrolliert auf LLMs verlassen, k
 ### LLM10: Modell-Diebstahl
 Dies schließt den unbefugten Zugriff, das Kopieren oder die Weitergabe von geschützten LLM-Modellen ein. Die Folgen sind wirtschaftliche Verluste, gefährdete Wettbewerbsvorteile und potenzieller Zugang zu sensiblen Informationen.
 
+
+## Datenfluss einer LLM-Anwendung
+
+Das folgende Diagramm zeigt die High-Level-Architektur einer hypothetischen LLM Anwendung. Im Diagramm hervorgehobenen sind die Risikobereiche, die veranschaulichen, wie sich die Punkte der OWASP Top 10 für LLM-Anwendungen mit dem Datenfluss der Anwendung überschneiden.
+
+Dieses Diagramm kann als visueller Leitfaden verwendet werden, um zu verstehen, wie sich die Sicherheitsrisiken großer Sprachmodelle auf das gesamte Anwendungsökosystem auswirken.
+
+![Abb_1](../images/fig_5_2.jpg)
+
+##### Abbildung 1: OWASP Top 10 für LLM-Anwendungen visualisiert
 ## LLM01: Prompt Injection
 
 ### Beschreibung
@@ -127,7 +137,7 @@ Angreifende senden Nachrichten an ein proprietäres Modell, das sich auf einen S
 
 ### Referenzen
 
-Prompt injection attacks against GPT-3 Simon Willison
+Prompt injection attacks against GPT-3: Simon Willison
 ChatGPT Plugin Vulnerabilities - Chat with Code: Embrace The Red
 ChatGPT Cross Plugin Request Forgery and Prompt Injection: Embrace The Red
 Not what you’ve signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection:  Arxiv preprint
@@ -227,7 +237,7 @@ Testen und Erkennen durch Messung der Verluste während der Trainingsphase und A
 Setzen Sie auf menschliche Kontrollen zur Überprüfung der Antworten und der Auditierung.
 Setzen Sie spezielle LLMs ein, um unerwünschte Konsequenzen zu messen und andere LLMs mit Hilfe von Reinforcement Learning Techniken.
 Führen Sie LLM-basierte Red Team Exercises oder LLM Vulnerability Scans in den Testphasen des Lebenszyklus des LLM durch.
-5. 
+
 ### Beispiele für Angriffsszenarien
 
 Die generative KI-Prompt-Ausgabe des LLM kann die Benutzer der Anwendung irreführen, was zu Bias (voreingenommenen Meinungen), Schlussfolgerungen oder, schlimmer noch, zu Hassverbrechen usw. führen kann.
