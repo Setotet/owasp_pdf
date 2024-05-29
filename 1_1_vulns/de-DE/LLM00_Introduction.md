@@ -93,6 +93,6 @@ Das folgende Diagramm zeigt die High-Level-Architektur einer hypothetischen LLM 
 
 Dieses Diagramm kann als visueller Leitfaden verwendet werden, um zu verstehen, wie sich die Sicherheitsrisiken großer Sprachmodelle auf das gesamte Anwendungsökosystem auswirken.
 
-![Abb_1](../images/fig_5_2.jpg)
+![Abb_1](images/fig_5_2.jpg)
 
 ##### Abbildung 1: OWASP Top 10 für LLM-Anwendungen visualisiert
