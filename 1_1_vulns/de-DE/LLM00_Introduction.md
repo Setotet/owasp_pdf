@@ -12,7 +12,7 @@ Unsere Hauptzielgruppe sind Entwickelnde, Data Scientists sowie Sicherheitsexper
 
 ### Die Erstellung der Liste
 
-Das Erstellen der OWASP Top 10 für LLM-Anwendungen war ein bedeutendes Unterfangen, das auf der kollektiven Expertise eines internationalen Teams von fast 500 Expertinnen und Experten mit mehr als 125 aktiven Mitgestaltenden basiert. Unsere Mitwirkenden kommen aus den unterschiedlichsten Bereichen, darunter KI-Unternehmen, Sicherheitsfirmen, ISVs, Cloud-Hyperscaler, Hardware-Anbieter und die akademische Welt.
+Das Erstellen der OWASP Top 10 für LLM-Applikationen war ein bedeutendes Unterfangen, das auf der kollektiven Expertise eines internationalen Teams von fast 500 Expertinnen und Experten mit mehr als 125 aktiven Mitgestaltenden basiert. Unsere Mitwirkenden kommen aus den unterschiedlichsten Bereichen, darunter KI-Unternehmen, Sicherheitsfirmen, ISVs, Cloud-Hyperscaler, Hardware-Anbieter und die akademische Welt.
 
 Wir haben einen Monat lang gebrainstormt, potenzielle Schwachstellen vorgeschlagen und dabei 43 verschiedene Bedrohungen formuliert. In mehreren Abstimmungsrunden haben wir diese Vorschläge zu einer prägnanten Liste der zehn kritischsten Schwachstellen verfeinert. Spezialisierte Untergruppen untersuchten jede Schwachstelle und unterzogen sie einer öffentlichen Überprüfung, um sicherzustellen, dass die endgültige Liste so umfassend und nützlich wie möglich war.
 
@@ -28,13 +28,13 @@ Version 1.1 der Liste wird nicht die letzte sein. Wir planen, sie regelmäßig z
 
 #### Steve Wilson
 
-Projektleiter, OWASP Top 10 für LLM-Anwendungen
+Projektleiter, OWASP Top 10 für LLM-Applikationen
 [https://www.linkedin.com/in/wilsonsd](https://www.linkedin.com/in/wilsonsd/)  
 Twitter/X: @virtualsteve
 
 #### Ads Dawson
 
-v1.1 Release Lead & Vulnerability Entries Lead, OWASP Top 10 für LLM-Anwendungen
+v1.1 Release Lead & Vulnerability Entries Lead, OWASP Top 10 für LLM-Applikationen
 [https://www.linkedin.com/in/adamdawson0](https://www.linkedin.com/in/adamdawson0/) 
 GitHub: @GangGreenTemperTatum
 
@@ -48,16 +48,16 @@ Johann-Peter Hartmann
 Philippe Schrettenbrunner
 [https://www.linkedin.com/in/philippe-schrettenbrunner/](https://www.linkedin.com/in/philippe-schrettenbrunner/)
 
-Bei der Erstellung dieser Übersetzung haben wir uns bewusst dafür entschieden, nur menschliche Übersetzer einzusetzen, in Anerkennung der außerordentlich technischen und kritischen Natur der OWASP Top 10 für LLMs. Die oben aufgeführten Übersetzer verfügen nicht nur über ein tiefes Verständnis des Originalinhalts, sondern auch über die sprachliche Kompetenz, um diese Übersetzung sinnvoll zu gestalten.
+Bei der Erstellung dieser Übersetzung haben wir uns bewusst dafür entschieden, nur menschliche Übersetzer einzusetzen, in Anerkennung der außerordentlich technischen und kritischen Natur der OWASP Top 10 für LLM-Applikationen. Die oben aufgeführten Übersetzer verfügen nicht nur über ein tiefes Verständnis des Originalinhalts, sondern auch über die sprachliche Kompetenz, um diese Übersetzung sinnvoll zu gestalten.
 
 Talesh Seeparsan
-Übersetzungsleiter, OWASP Top 10 für LLM-Anwendungen
+Übersetzungsleiter, OWASP Top 10 für LLM-Applikationen
 [https://www.linkedin.com/in/talesh/](https://www.linkedin.com/in/talesh/)  
 
 ## OWASP Top 10 für LLM-Applikationen
 
 ### LLM01: Prompt Injection
-Mittels raffinierter Eingaben kann ein Large Language Model manipuliert werden und unbeabsichtigte Aktionen auslösen. Direkte Injections überschreiben System-Prompts, während indirekte Injektionen Eingaben über externe Quellen manipulieren.
+Mittels raffinierter Eingaben kann ein Large Language Model manipuliert werden und unbeabsichtigte Aktionen auslösen. Direkte Injections überschreiben System-Prompts, während indirekte Injection Eingaben über externe Quellen manipulieren.
 
 ### LLM02: Unsichere Ausgabeverarbeitung
 Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ungeprüft akzeptiert wird, wodurch Backend-Systeme angreifbar werden. Ein Missbrauch kann zu schwerwiegenden Folgen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegienerweiterung oder Remote-Code-Ausführung führen.
@@ -89,10 +89,10 @@ Dies schließt den unbefugten Zugriff, das Kopieren oder die Weitergabe von gesc
 
 ## Datenfluss einer LLM-Anwendung
 
-Das folgende Diagramm zeigt die High-Level-Architektur einer hypothetischen LLM Anwendung. Im Diagramm hervorgehobenen sind die Risikobereiche, die veranschaulichen, wie sich die Punkte der OWASP Top 10 für LLM-Anwendungen mit dem Datenfluss der Anwendung überschneiden.
+Das folgende Diagramm zeigt die High-Level-Architektur einer hypothetischen LLM Anwendung. Im Diagramm hervorgehoben sind die Risikobereiche, die veranschaulichen, wie sich die Punkte der OWASP Top 10 für LLM-Anwendungen mit dem Datenfluss der Anwendung überschneiden.
 
 Dieses Diagramm kann als visueller Leitfaden verwendet werden, um zu verstehen, wie sich die Sicherheitsrisiken großer Sprachmodelle auf das gesamte Anwendungsökosystem auswirken.
 
 ![Abb_1](images/fig_5_2.jpg)
 
-##### Abbildung 1: OWASP Top 10 für LLM-Anwendungen visualisiert
+##### Abbildung 1: OWASP Top 10 für LLM-Applikationen visualisiert
