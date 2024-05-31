@@ -325,7 +325,7 @@ owasp_pdf is designed to cleanly separate PDF building and contents localization
     - [git basics](https://git-scm.com/docs)
   - At least one member must have ML, LLM, GenAI skill.
   - Team lead to be selected
-  - Register the team formation to owasp_pdf central repository
+  - Register the team formation to owasp_pdf central repository ([here](https://github.com/Setotet/secgov/blob/main/Localization_Team_Registration.md))
 - Suggested [scrum](https://www.scrum.org/resources/what-scrum-module) workflow:
   - Two weeks/sprint starting Monday and ending Friday of the week following, e.g., May 20th - 31st, 2024.
   - Github issues could be used to define/track/review sprint goal
