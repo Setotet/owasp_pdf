@@ -33,7 +33,6 @@ Un atacante interactúa con un LLM de una manera que consume una cantidad excepc
 6. Un atacante inunda al LLM con un gran volumen de entradas de longitud variable, cuidadosamente elaboradas para acercarse o alcanzar el límite de la ventana de contexto. Al abrumar al LLM con entradas de longitudes variables, el atacante busca explotar cualquier ineficiencia en el procesamiento de entradas de longitud variable. Esta inundación de entradas pone una carga excesiva en los recursos del LLM, lo que potencialmente causa una degradación del rendimiento e impide la capacidad del sistema para responder a solicitudes legítimas.
 7. Aunque los ataques de DoS comúnmente buscan abrumar los recursos del sistema, también pueden explotar otros aspectos del comportamiento del sistema, como las limitaciones de la API. Por ejemplo, en un reciente incidente de seguridad de Sourcegraph, el actor malicioso empleó un token de acceso de administrador filtrado para alterar los límites de tasa de la API, lo que potencialmente causó interrupciones del servicio al permitir niveles anormales de volúmenes de solicitudes.
 
-
 ### Enlaces de Referencia
 
 1. [LangChain max_iterations](https://twitter.com/hwchase17/status/1608467493877579777): **hwchase17 on Twitter**

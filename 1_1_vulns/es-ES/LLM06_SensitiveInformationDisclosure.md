@@ -19,10 +19,9 @@ La interacción entre el consumidor y la aplicación LLM forma un límite de con
 1. Integrar técnicas adecuadas de sanitización y limpieza de datos para evitar que los datos del usuario entren en los datos del modelo de entrenamiento.
 2. Implementar métodos robustos de validación y sanitización de entradas para identificar y filtrar posibles entradas maliciosas y prevenir la contaminación del modelo.
 3. Al enriquecer el modelo con datos y si se realiza un [fine-tunning](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/wiki/Definitions) del modelo: (es decir, datos alimentados al modelo antes o durante la implementación)
-   1. Cualquier cosa que se considere sensible en los datos de ajuste fino tiene el potencial de ser revelada a un usuario. Por lo tanto, aplicar la regla de mínimo privilegio y no entrenar el modelo con información a la que el usuario de mayor privilegio pueda acceder y que pueda ser mostrada a un usuario de menor privilegio.
-   2. El acceso a fuentes de datos externas (orquestación de datos en tiempo de ejecución) debe ser limitado.
-   3. Aplicar métodos estrictos de control de acceso a fuentes de datos externas y un enfoque riguroso para mantener una cadena de suministro (supply chain) segura.
-
+  - Cualquier cosa que se considere sensible en los datos de ajuste fino tiene el potencial de ser revelada a un usuario. Por lo tanto, aplicar la regla de mínimo privilegio y no entrenar el modelo con información a la que el usuario de mayor privilegio pueda acceder y que pueda ser mostrada a un usuario de menor privilegio.
+  - El acceso a fuentes de datos externas (orquestación de datos en tiempo de ejecución) debe ser limitado.
+  - Aplicar métodos estrictos de control de acceso a fuentes de datos externas y un enfoque riguroso para mantener una cadena de suministro (supply chain) segura.
 
 ### Ejemplos de Escenarios de Ataque
 

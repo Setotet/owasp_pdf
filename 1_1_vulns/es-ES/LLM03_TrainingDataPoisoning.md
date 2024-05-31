@@ -15,15 +15,13 @@ El envenenamiento de los datos se considera un ataque a la integridad porque la 
 ### Ejemplos Comunes de Vulnerabilidad
 
 1. Un actor malicioso o una marca competidora crea intencionalmente documentos inexactos o maliciosos dirigidos a los datos de pre-entrenamiento, fine-tuning o incrustaciones de un modelo. Considere ambos vectores de ataque [Envenenamiento de los Datos de Vista Dividida](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%201%20Split-View%20Data%20Poisoning.jpeg) y [Envenenamiento de los Datos Frontrunning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%202%20Frontrunning%20Data%20Poisoning.jpeg) para ilustraciones.
-   1. El modelo víctima se entrena usando información falsificada, lo que se refleja en las salidas de los prompts de IA generativa a sus consumidores.
+  - El modelo víctima se entrena usando información falsificada, lo que se refleja en las salidas de los prompts de IA generativa a sus consumidores.
 2. Un actor malicioso logra inyectar directamente contenido falsificado, sesgado o dañino en los procesos de entrenamiento de un modelo, que se devuelve en salidas posteriores.
 3. Un usuario desprevenido está inyectando indirectamente datos sensibles o propietarios en los procesos de entrenamiento de un modelo, que se devuelve en salidas posteriores.
 4. Un modelo se entrena utilizando datos que no han sido verificados por su fuente, origen o contenido en ninguno de los ejemplos de etapa de entrenamiento, lo que puede llevar a resultados erróneos si los datos están contaminados o son incorrectos.
 5. El acceso no restringido a la infraestructura o el sandboxing inadecuado puede permitir que un modelo ingiera datos de entrenamiento inseguros, lo que resulta en salidas sesgadas o dañinas. Este ejemplo también está presente en cualquiera de los ejemplos de etapa de entrenamiento.
-   1. En este escenario, la entrada de un usuario al modelo puede reflejarse en la salida a otro usuario (lo que lleva a una violación), o el usuario de un LLM puede recibir salidas del modelo que son inexactas, irrelevantes o dañinas dependiendo del tipo de los datos ingeridos en comparación con el caso de uso del modelo (generalmente reflejado con una tarjeta de modelo).
-
-*Tanto si es un desarrollador, cliente o consumidor general del LLM, es importante entender las implicaciones de cómo esta vulnerabilidad podría reflejar riesgos dentro de su aplicación LLM al interactuar con un LLM no propietario para entender la legitimidad de las salidas del modelo basadas en sus procedimientos de entrenamiento. De manera similar, los desarrolladores del LLM pueden estar en riesgo tanto de ataques directos como indirectos sobre datos internos o de terceros utilizados para el fine-tuning y la incrustación (lo más común), lo que como resultado crea un riesgo para todos sus consumidores*
-
+  - En este escenario, la entrada de un usuario al modelo puede reflejarse en la salida a otro usuario (lo que lleva a una violación), o el usuario de un LLM puede recibir salidas del modelo que son inexactas, irrelevantes o dañinas dependiendo del tipo de los datos ingeridos en comparación con el caso de uso del modelo (generalmente reflejado con una tarjeta de modelo).
+6. Tanto si es un desarrollador, cliente o consumidor general del LLM, es importante entender las implicaciones de cómo esta vulnerabilidad podría reflejar riesgos dentro de su aplicación LLM al interactuar con un LLM no propietario para entender la legitimidad de las salidas del modelo basadas en sus procedimientos de entrenamiento. De manera similar, los desarrolladores del LLM pueden estar en riesgo tanto de ataques directos como indirectos sobre datos internos o de terceros utilizados para el fine-tuning y la incrustación (lo más común), lo que como resultado crea un riesgo para todos sus consumidores
 
 ### Estrategias de Prevención y Mitigación
 
@@ -36,13 +34,13 @@ El envenenamiento de los datos se considera un ataque a la integridad porque la 
 7. Utilizar DVC ([Control de Versiones de los Datos](https://dvc.org/doc/user-guide/analytics)) para identificar y rastrear con precisión la parte de un conjunto de los datos que puede haber sido manipulada, eliminada o añadida y que ha llevado al envenenamiento.
 8. Utilizar Base de los Datos Vectorial para añadir información suministrada por el usuario en ayuda para proteger de envenenar a otros usuarios e incluso arreglar en producción sin tener que entrenar un nuevo modelo.
 9. Técnicas de robustez adversaria como el aprendizaje federado y restricciones para minimizar el efecto de valores atípicos o entrenamiento adversario para ser vigoroso contra las peores perturbaciones de los datos de entrenamiento.
-   1. Un enfoque de "MLSecOps" podría ser incluir la robustez adversaria en el ciclo de vida de entrenamiento con la técnica de auto envenenamiento.
-   2. Un repositorio de ejemplo de esto sería [AutoPoison](https://github.com/azshue/AutoPoison) para pruebas, incluyendo ataques como Inyecciones de Contenido (“intentando promover una marca en las respuestas del modelo”) y Ataques de Rechazo (“haciendo que el modelo siempre se niegue a responder”) que se pueden lograr con este enfoque.
+  - Un enfoque de "MLSecOps" podría ser incluir la robustez adversaria en el ciclo de vida de entrenamiento con la técnica de auto envenenamiento.
+  - Un repositorio de ejemplo de esto sería [AutoPoison](https://github.com/azshue/AutoPoison) para pruebas, incluyendo ataques como Inyecciones de Contenido (“intentando promover una marca en las respuestas del modelo”) y Ataques de Rechazo (“haciendo que el modelo siempre se niegue a responder”) que se pueden lograr con este enfoque.
 10. Pruebas y Detección, midiendo la pérdida durante la etapa de entrenamiento y analizando modelos entrenados para detectar señales de un ataque de envenenamiento al analizar el comportamiento del modelo en entradas de prueba específicas.
-   1. Monitoreo y alertas sobre el número de respuestas sesgadas que superan un umbral.
-   2. Uso de un bucle humano para revisar respuestas y auditorías.
-   3. Implementar LLMs dedicados para comparar contra consecuencias no deseadas y entrenar otros LLMs utilizando [técnicas de aprendizaje por refuerzo](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy).
-   4. Realizar [ejercicios de Red Team LLM](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned) o [escaneos de vulnerabilidad LLM](https://github.com/leondz/garak) en las fases de prueba del ciclo de vida del LLM.
+11. Monitoreo y alertas sobre el número de respuestas sesgadas que superan un umbral.
+12. Uso de un bucle humano para revisar respuestas y auditorías.
+13. Implementar LLMs dedicados para comparar contra consecuencias no deseadas y entrenar otros LLMs utilizando [técnicas de aprendizaje por refuerzo](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy).
+14. Realizar [ejercicios de Red Team LLM](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned) o [escaneos de vulnerabilidad LLM](https://github.com/leondz/garak) en las fases de prueba del ciclo de vida del LLM.
 
 ### Ejemplos de Escenarios de Ataque
 
