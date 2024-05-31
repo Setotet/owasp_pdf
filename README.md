@@ -1,4 +1,4 @@
-## OWASP PDF Cookbook (v3.9.0)
+## OWASP PDF Cookbook (v3.9.2)
 
 ### 1. Quick Start on Mac
 
@@ -218,6 +218,12 @@ or this (if in-line reference is required):
     [Frontrunning Poisoning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%202%20Frontrunning%20Data%20Poisoning.jpeg)
 ```
 
+For [in-text citation](https://careered.libanswers.com/AIUCitationExamples/faq/263255), use p. or pp. as follows:
+```
+If you are using an in-text citation for information coming from a single page, use p. Example: (Donaldson, 2018, p. 3). If you are citing information from two or more pages you use pp. instead. (Donaldson, 2018, pp. 3-4). If there are no breaks between the pages, such as referencing information from pages 3 through 5, then use a hyphen between them (Donaldson, 2018, pp. 3-5). If the pages are not right adjacent to each other, then use commas to separate them (Donaldson, 2018, pp. 3, 6, 9-10).
+```
+
+
 #### 8.11 Text Color
 
 Colors are used in two places in owasp_pdf system: *link text* and *block6*, light-blue and light-orange respectively.  The colors are not customizable.
@@ -288,7 +294,44 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 
 The version number with build id is placed at the lower left corner of every page.
 
-### 11. Language Codes
+### 11. OWASP PDF Release Process
+
+The process of publishing PDF using the owasp_pdf tool (OWASP PDF Release Process) consists of two phases.
+
+In the phase 1,
+1. Localize markdown/image files and freeze them, then
+2. Push a pull request to the owasp_pdf central repository (where this README file is stored) with the frozen markdown/image files.
+
+  > Currently, there are two projects registered: "OWASP Top 10 for LLM Applications v1.1" (project code: LLM) and "LLM AI Security & Governance Checklist v1.1" (project code: GOV).
+
+In the phase 2,
+1. The owner of the project reviews the pull request,
+2. If approved, the owner removes the W.I.P. watermark and creates the official PDF,
+3. "git add -f" and push the PDF to the owasp_pdf central repository along with the frozen markdown/image files, then finally,
+4. Publish the PDF on genai.owasp.org/resources site.
+
+
+### 12. Localization Process Best Practices
+
+owasp_pdf is designed to cleanly separate PDF building and contents localization and support fully autonomous localization. The following are the best practices we learned from the owasp_pdf beta program.
+
+- Join "owasp pdf users" community channel.  Information about the owasp_pdf tool updates, usage tips and ideas, questions&answers are shared.
+- Form a localization team for your target project_language.  2 to 5 members; 3 would be best for quick move and credibility of the output.
+- Create a github repository for your target project_language.  Simply clone or fork the owasp_pdf central repository and run the collab localization there.
+- Suggested scrum team formation:
+  - At least one member must have Mac to build W.I.P PDF anytime.
+  - Every member needs to know:
+    - [markdown basics](https://www.markdownguide.org/getting-started/#how-does-it-work)
+    - [git basics](https://git-scm.com/docs)
+  - At least one member must have ML, LLM, GenAI skill.
+  - Team lead to be selected
+  - Register the team formation to owasp_pdf central repository
+- Suggested [scrum](https://www.scrum.org/resources/what-scrum-module) workflow:
+  - Two weeks/sprint starting Monday and ending Friday of the week following, e.g., May 20th - 31st, 2024.
+  - Github issues could be used to define/track/review sprint goal
+  - Draft pull request can be pushed to the owasp_pdf central repository anytime for status sharing or go directly to final pull request for approval/publish.  owasp_pdf supports full autonomy in any way you'd like.
+
+### 13. Language Codes
 ```
   ar-SA  :  Arabic
   be-BY  :  Belarusian
@@ -327,7 +370,7 @@ The version number with build id is placed at the lower left corner of every pag
   zh-TW  :  Chinese (Traditional)
 ```
 
-### 12. Color Palette
+### 14. Color Palette
 
     >aliceblue|black|center|14|16 aliceblue
     >antiquewhite|black|center|14|16 antiquewhite
@@ -480,7 +523,7 @@ The version number with build id is placed at the lower left corner of every pag
     >yellow|black|center|14|16 yellow
     >yellowgreen|white|center|14|16 yellowgreen
 
-### 13. Appendices
+### 15. Appendices
 
 ```
 APPENDIX 1.   ./owasp_pdf -h  (--help)
