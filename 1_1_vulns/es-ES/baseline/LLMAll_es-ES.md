@@ -37,7 +37,11 @@ v1.1 Release Lead & Vulnerability Entries Lead, OWASP Top 10 for LLM Application
 https://www.linkedin.com/in/adamdawson0 
 GitHub: @GangGreenTemperTatum
 
-## OWASP Top 10 for Large Language Model Applications
+### Spanish translation
+
+#### your_name_here
+
+## Lista Top 10 de OWASP para Grandes Modelos de Lenguaje
 
 ### LLM01: Inyección de Prompt
 Las entradas astutas pueden manipular un Modelo de Lenguaje de Gran Escala, causando acciones no intencionadas. Las inyecciones directas sobrescriben los prompts del sistema, mientras que las indirectas manipulan entradas de fuentes externas.
@@ -68,6 +72,16 @@ Sistemas o personas que dependen excesivamente de los LLM sin supervisión puede
 
 ### LLM10: Robo de Modelo
 Esto implica el acceso no autorizado, copia o exfiltración de modelos LLM propietarios. El impacto incluye pérdidas económicas, ventaja competitiva comprometida y acceso potencial a información sensible.
+
+## LLM Application Data Flow
+
+The diagram below presents a high level architecture for a hypothetical large language model application. Overlaid in the diagram are highlighted areas of risk illustrating how the OWASP Top 10 for LLM Applications entries intersect with the application flow.
+
+This diagram can be used as a visual guide, assisting in understanding how large language model security risks impact the overall application ecosystem.
+
+![Fig_1](images/fig_5_2.png)
+
+##### Figure 1: OWASP Top 10 for Large Language Model Applications Visualized
 ## LLM01: Inyección de Prompt
 
 ### Descripción
@@ -187,9 +201,7 @@ Un usuario desprevenido está inyectando indirectamente datos sensibles o propie
 Un modelo se entrena utilizando datos que no han sido verificados por su fuente, origen o contenido en ninguno de los ejemplos de etapa de entrenamiento, lo que puede llevar a resultados erróneos si los datos están contaminados o son incorrectos.
 El acceso no restringido a la infraestructura o el sandboxing inadecuado puede permitir que un modelo ingiera datos de entrenamiento inseguros, lo que resulta en salidas sesgadas o dañinas. Este ejemplo también está presente en cualquiera de los ejemplos de etapa de entrenamiento.
 En este escenario, la entrada de un usuario al modelo puede reflejarse en la salida a otro usuario (lo que lleva a una violación), o el usuario de un LLM puede recibir salidas del modelo que son inexactas, irrelevantes o dañinas dependiendo del tipo de los datos ingeridos en comparación con el caso de uso del modelo (generalmente reflejado con una tarjeta de modelo).
-
 Tanto si es un desarrollador, cliente o consumidor general del LLM, es importante entender las implicaciones de cómo esta vulnerabilidad podría reflejar riesgos dentro de su aplicación LLM al interactuar con un LLM no propietario para entender la legitimidad de las salidas del modelo basadas en sus procedimientos de entrenamiento. De manera similar, los desarrolladores del LLM pueden estar en riesgo tanto de ataques directos como indirectos sobre datos internos o de terceros utilizados para el fine-tuning y la incrustación (lo más común), lo que como resultado crea un riesgo para todos sus consumidores
-
 
 ### Estrategias de Prevención y Mitigación
 
@@ -264,7 +276,6 @@ Un atacante envía una serie de entradas secuenciales al LLM, con cada entrada d
 Un atacante aprovecha los mecanismos recursivos del LLM para desencadenar repetidamente la expansión del contexto. Al elaborar entradas que explotan el comportamiento recursivo del LLM, el atacante obliga al modelo a expandir y procesar repetidamente la ventana de contexto, consumiendo recursos computacionales significativos. Este ataque tensiona el sistema y puede llevar a una condición de DoS, haciendo que el LLM no responda o causando su caída.
 Un atacante inunda al LLM con un gran volumen de entradas de longitud variable, cuidadosamente elaboradas para acercarse o alcanzar el límite de la ventana de contexto. Al abrumar al LLM con entradas de longitudes variables, el atacante busca explotar cualquier ineficiencia en el procesamiento de entradas de longitud variable. Esta inundación de entradas pone una carga excesiva en los recursos del LLM, lo que potencialmente causa una degradación del rendimiento e impide la capacidad del sistema para responder a solicitudes legítimas.
 Aunque los ataques de DoS comúnmente buscan abrumar los recursos del sistema, también pueden explotar otros aspectos del comportamiento del sistema, como las limitaciones de la API. Por ejemplo, en un reciente incidente de seguridad de Sourcegraph, el actor malicioso empleó un token de acceso de administrador filtrado para alterar los límites de tasa de la API, lo que potencialmente causó interrupciones del servicio al permitir niveles anormales de volúmenes de solicitudes.
-
 
 ### Enlaces de Referencia
 
@@ -348,7 +359,6 @@ Al enriquecer el modelo con datos y si se realiza un fine-tunning del modelo: (e
 Cualquier cosa que se considere sensible en los datos de ajuste fino tiene el potencial de ser revelada a un usuario. Por lo tanto, aplicar la regla de mínimo privilegio y no entrenar el modelo con información a la que el usuario de mayor privilegio pueda acceder y que pueda ser mostrada a un usuario de menor privilegio.
 El acceso a fuentes de datos externas (orquestación de datos en tiempo de ejecución) debe ser limitado.
 Aplicar métodos estrictos de control de acceso a fuentes de datos externas y un enfoque riguroso para mantener una cadena de suministro (supply chain) segura.
-
 
 ### Ejemplos de Escenarios de Ataque
 
@@ -522,7 +532,7 @@ El vector de ataque para la extracción del modelo implica consultar el LLM con 
 El atacante debe generar un gran número de prompts dirigidos. Si los prompts no son lo suficientemente específicos, las salidas del LLM serán inútiles.
 Las salidas de los LLM a veces pueden contener respuestas alucinadas, lo que significa que el atacante no podrá extraer el modelo completo ya que algunas de las salidas pueden ser sin sentido.
 No es posible replicar un LLM al 100% a través de la extracción del modelo. Sin embargo, el atacante podrá replicar un modelo parcial.
-El vector de ataque para la _replicación funcional del modelo_ implica usar el modelo objetivo a través de prompts para generar datos de entrenamiento sintéticos (un enfoque llamado "autoinstrucción") para luego usarlo y ajustar otro modelo fundacional para producir un equivalente funcional. Esto elude las limitaciones de la extracción basada en consultas tradicionales utilizada en el Ejemplo 5 y se ha utilizado con éxito en investigaciones de uso de un LLM para entrenar otro LLM. Aunque en el contexto de esta investigación, la replicación del modelo no es un ataque. El enfoque podría ser utilizado por un atacante para replicar un modelo propietario con una API pública.
+El vector de ataque para la "replicación funcional del modelo" implica usar el modelo objetivo a través de prompts para generar datos de entrenamiento sintéticos (un enfoque llamado "autoinstrucción") para luego usarlo y ajustar otro modelo fundacional para producir un equivalente funcional. Esto elude las limitaciones de la extracción basada en consultas tradicionales utilizada en el Ejemplo 5 y se ha utilizado con éxito en investigaciones de uso de un LLM para entrenar otro LLM. Aunque en el contexto de esta investigación, la replicación del modelo no es un ataque. El enfoque podría ser utilizado por un atacante para replicar un modelo propietario con una API pública.
 
 El uso de un modelo robado, como un "shadow model", puede usarse para montar ataques adversarios incluyendo acceso no autorizado a información sensible contenida en el modelo o experimentar sin ser detectados con entradas adversarias para seguir montando inyecciones de prompts avanzadas.
 

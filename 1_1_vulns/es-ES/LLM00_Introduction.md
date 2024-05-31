@@ -37,7 +37,11 @@ v1.1 Release Lead & Vulnerability Entries Lead, OWASP Top 10 for LLM Application
 [https://www.linkedin.com/in/adamdawson0](https://www.linkedin.com/in/adamdawson0/) 
 GitHub: @GangGreenTemperTatum
 
-## OWASP Top 10 for Large Language Model Applications
+### Spanish translation
+
+#### your_name_here
+
+## Lista Top 10 de OWASP para Grandes Modelos de Lenguaje
 
 ### LLM01: Inyección de Prompt
 Las entradas astutas pueden manipular un Modelo de Lenguaje de Gran Escala, causando acciones no intencionadas. Las inyecciones directas sobrescriben los prompts del sistema, mientras que las indirectas manipulan entradas de fuentes externas.
@@ -68,3 +72,13 @@ Sistemas o personas que dependen excesivamente de los LLM sin supervisión puede
 
 ### LLM10: Robo de Modelo
 Esto implica el acceso no autorizado, copia o exfiltración de modelos LLM propietarios. El impacto incluye pérdidas económicas, ventaja competitiva comprometida y acceso potencial a información sensible.
+
+## LLM Application Data Flow
+
+The diagram below presents a high level architecture for a hypothetical large language model application. Overlaid in the diagram are highlighted areas of risk illustrating how the OWASP Top 10 for LLM Applications entries intersect with the application flow.
+
+This diagram can be used as a visual guide, assisting in understanding how large language model security risks impact the overall application ecosystem.
+
+![Fig_1](images/fig_5_2.png)
+
+##### Figure 1: OWASP Top 10 for Large Language Model Applications Visualized
