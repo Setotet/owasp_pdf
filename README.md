@@ -1,4 +1,10 @@
-## OWASP PDF Cookbook (v3.9.2)
+## TENZING: OWASP PDF Authoring System
+![Mount Everest](images/336504727-8df841b8-8235-4fe7-b3c1-38a6797a651a.png)
+>white|black|left|6|8 By Mount_Everest_as_seen_from_Drukair2.jpg: shrimpo1967derivative work: Papa Lima Whiskey 2 (talk) - This file was derived from: Mount Everest as seen
+  >white|black|left|6|8 from Drukair2.jpg:, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=18262217
+>white|black|left|6|8 By Jamling Tenzing Norgay - http://www.tenzing-norgay-trekking.de, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=11252058
+
+Edmund Hillary and Tenzing Norgay are the first two people known to certainly reach the summit of Mount Everest on 29 May 1953.
 
 ### 1. Quick Start on Mac
 
@@ -18,7 +24,21 @@ $ ./owasp_pdf -l GOV_en-US
   Processing time: 42 seconds
 ```
 
-### 2. Project Code and Language Code
+### 2. Minimalism for Simultaneous International Releases
+
+Purpose of OWASP PDF system is to drive LLM Top 10 to the main stream of AI:
+- Structural simplicity is a key to scalable publication and localization
+- Consistent typographical quality across publications & localized PDFs demonstrates business integrity
+
+What does minimalist design of OWASP PDF mean in the OWASP Top 10 documentation process?  It means the following:
+
+- As described above:
+  + `owasp_pdf` contains everything you need to build PDFs from markdown files
+  + User facing feature set is minimal aiming at consistent look&feel across publications and localization, but
+  + New features can be added up to the point where the underlying open source packages (reportlab, fpdf2) support, which is pretty fancy PDF generation
+- Document-level PDF structure is pre-defined: cover page --> toc --> legal notice/disclaimer, then your markdown files.  toc and legal notice/disclaimer can be turned on/off in `custom_data json` file
+
+### 3. Project Code and Language Code
 
 **Project code** is a random three-capital-letter word such as `GOV` or `LLM` assigned to every project in OWASP PDF project registration process (see 3. below).  Project is typically associated with github repository.  For example, `GOV` is associated with *llm-top-10-governance-doc* repository.  As of this owasp_pdf version, registered project code and corresponding github repository are as follows:
 
@@ -39,7 +59,7 @@ ISO References
 1. [ISO 639-2 language code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)
 2. [ISO 3166 region code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)
 
-### 3. Project and Language Registration
+### 4. Project and Language Registration
 
 ***Registered project*** means the following:
 - Project code is assigned
@@ -51,11 +71,47 @@ ISO References
 ***Registered language*** means the following:
 - Localization is ready to start.  First invocation of `./owasp_pdf -l <lang code>` command generates a pristine PDF, which is exactly the same as en-ZZ PDF except for the page size, e.g. A4 for `en-GB` and Letter for `en-US`.
 
-### 4. Localize MarkDown Files
+### 5. OWASP PDF Release Process
+
+The process of publishing PDF using the owasp_pdf tool (OWASP PDF Release Process) consists of two phases.
+
+In the phase 1,
+1. Localize markdown/image files and finalize them, then
+2. Send a pull request to the owasp_pdf central repository (where this README file is stored) with the final markdown/image files.
+
+  > Currently, there are two projects registered: "OWASP Top 10 for LLM Applications v1.1" (project code: LLM) and "LLM AI Security & Governance Checklist v1.1" (project code: GOV).
+
+In the phase 2,
+1. The owner of the project reviews the pull request,
+2. If approved, the owner removes the W.I.P. watermark and creates the official PDF,
+3. "git add -f" and push the PDF to the owasp_pdf central repository along with the final markdown/image files, then,
+4. Publish the PDF on [genai.owasp.org/resources](https://genai.owasp.org/resources/) site.
+
+### 6. Localization Process Best Practices
+
+owasp_pdf is designed to cleanly separate PDF building and contents localization and support fully autonomous localization. The following are the best practices we learned from the owasp_pdf beta program.
+
+- Join "#owasp-pdf-users" community channel.  Information about the owasp_pdf tool updates, usage tips and ideas, questions&answers are shared.
+- Form a localization team for your target project_language.  2 to 5 members; 3 would be best for quick decision making and credibility of the output.
+- Create a github repository for your target project_language.  Simply clone or fork the owasp_pdf central repository and run the collab localization there.
+- Suggested scrum team formation:
+  - At least one member must have Mac to build W.I.P PDF anytime.
+  - Every member needs to know:
+    - [markdown basics](https://www.markdownguide.org/getting-started/#how-does-it-work)
+    - [git basics](https://git-scm.com/docs)
+  - At least one member must have ML, LLM, GenAI skill.
+  - Team lead to be selected
+  - Register the team formation to owasp_pdf central repository ([here](https://github.com/Setotet/secgov/blob/main/Localization_Team_Registration.md))
+- Suggested [scrum](https://www.scrum.org/resources/what-scrum-module) workflow:
+  - Two weeks/sprint starting Monday and ending Friday of the week following, e.g., May 20th - 31st, 2024.
+  - Github issues could be used to define/track/review sprint goal
+  - Draft pull request can be pushed to the owasp_pdf central repository anytime for status sharing or go directly to final pull request for approval/publish.  owasp_pdf supports full autonomy in any way you'd like.
+
+### 7. Localize MarkDown Files
 
 The pristine PDF is created from the markdown files pre-populated in `en-ZZ` language.  After the first execution of `./owasp_pdf -l <lang code>` command, no markdown files exist on your `<lang-code>` directory.  Copy one or more of the markdown files from `en-ZZ` to your `<lang-code>` directory.  After some edits, run `./owasp_pdf -l <lang code>` -- your localized markdown file(s) will be added to the PDF.  Missing markdown files are picked up from `en-ZZ`.
 
-### 5. Customize PDF
+### 8. Customize PDF
 
 In the first `./owasp_pdf -l <lang code>` run, `custom_data_<proj code>_<lang code>.json` file is created under `/baseline` directory.  The JSON file defines all the customizable parameters such as document title, font size of various parts of PDF.  See `APPENDIX. custom pdf json` section.
 
@@ -64,35 +120,12 @@ In the first `./owasp_pdf -l <lang code>` run, `custom_data_<proj code>_<lang co
 - Set `md_file_range` to remove specific markdown files from PDF creation process.
 - Use different values of `md_file_range` to switch multiple markdown file sets.  Any numbers between 0 and 999,999 (inclusive) can be set to `md_file_range`.
 
-### 6. Technology Stack of PDF Creation
-
-owasp_pdf is built on open source packages in Python.  Implementation module of owasp_pdf of each technology layer is as follows:
-
-  parameter definition   :  custom_data_*.json (JSON)
-  interpretation  :  owasp_pdf (Python)
-  pdf generation  :  reportlab, fpdf2 (Python)
-  system language  :  Python
-
-### 7. Minimalism for Simultaneous International Releases
-
-Purpose of OWASP PDF system is to drive LLM Top 10 to the main stream of AI:
-- Structural simplicity is a key to scalable publication and localization
-- Consistent typographical quality across publications & localized PDFs demonstrates business integrity
-
-What does minimalist design of OWASP PDF mean in the OWASP Top 10 documentation process?  It means the following:
-
-- As described above:
-  + `owasp_pdf` contains everything you need to build PDFs from markdown files
-  + User facing feature set is minimal aiming at consistent look&feel across publications and localization, but
-  + New features can be added up to the point where the underlying open source packages (reportlab, fpdf2) support, which is pretty fancy PDF generation
-- Document-level PDF structure is pre-defined: cover page --> toc --> legal notice/disclaimer, then your markdown files.  toc and legal notice/disclaimer can be turned on/off in `custom_data json` file
-
-### 8. Typographical Considerations
+### 9. Typographical Considerations
 
 owasp_pdf typographical design rules are based on and quoted from:
     [UTTERICK’S PRACTICAL TYPOGRAPHY © 2010–24 Matthew Butterick](https://practicaltypography.com/)
 
-#### 8.1  Bold or Italics
+#### 9.1  Bold or Italics
 
 In-line text emphasis is not supported.
 
@@ -103,7 +136,7 @@ In-line text emphasis is not supported.
   > Rule #2: use bold and italic as little as possible. They are tools for emphasis. But if everything is emphasized, then nothing is emphasized. Also, because bold and italic styles are designed to contrast with regular roman text, they’re somewhat harder to read. Like all caps, bold and italic are fine for short bits of text, but not for long stretches.: Use bold and italic as little as possible.
   >
 
-#### 8.2  Tables
+#### 9.2  Tables
 
 Tables are not supported.
 
@@ -116,7 +149,7 @@ Tables are not supported.
   > Cell borders are the lines around each cell in the table. Cell borders are helpful as guides when you’re loading information into the table. They’re less useful once the table is full. The text in the cells will create an implied grid. Cell borders can make the grid cluttered and difficult to read, especially in tables with many small cells.
   >
 
-#### 8.3  Widow and Orphan Control
+#### 9.3  Widow and Orphan Control
 
 Widow and Orphan Control is not supported.
 
@@ -127,7 +160,7 @@ Widow and Orphan Control is not supported.
   > Widow and orphan control prevents both. Orphans are moved to the next page with the rest of the paragraph. To cure widows, lines are moved from the bottom of one page to the top of the next. It’s a little more complicated than it sounds, because curing a widow cannot create a new orphan, nor vice versa.
   >
 
-#### 8.4  First Line Indent
+#### 9.4  First Line Indent
 
 First-line indents are not used.  Space is used between paragraphs.
 
@@ -136,7 +169,7 @@ First-line indents are not used.  Space is used between paragraphs.
   > First-line indents and space between paragraphs have the same relationship as belts and suspenders. You only need one to get the job done. Using both is a mistake.
   >
 
-#### 8.5  Paragraph Tab and Ordered/Unordered Lists
+#### 9.5  Paragraph Tab and Ordered/Unordered Lists
 
 Two space characters can be used at the beginning of a line to add one tab. Four spaces add two tabs; Six spaces add three and so on.  Regular tabs are *left tab stops*.
 
@@ -158,7 +191,7 @@ NOTE: owasp_pdf does not support *automated lists* because the minimalist design
   > Tabs are used in bulleted and numbered lists to separate the bullet or number from the text. Tabs are also used in automatically generated tables of contents and tables of authorities to put the page numbers at the right edge of the table.
   >
 
-#### 8.6  Justified Text
+#### 9.6  Justified Text
 
 Default for body text and reference text is 'justified.'  It's customizable usually 'left' if not 'justified.'  Justified text is not supported for heavy ligature languages such as Hindi (hi-IN) and Bi-Di (ar-SA, he-IL).
 
@@ -169,7 +202,7 @@ Default for body text and reference text is 'justified.'  It's customizable usua
   > If you’re using justified text, you must also turn on hyphenation to prevent gruesomely large spaces between words.
   >
 
-#### 8.7  Font Style for Body Text
+#### 9.7  Font Style for Body Text
 
 Serif is used for body text if the TrueType font is available.  If not, Sans-Serif is used.  Size and line pitch of body text is customizable.
 
@@ -184,7 +217,7 @@ Serif is used for body text if the TrueType font is available.  If not, Sans-Ser
   > On the web, body text can be in a sans serif or serif font. Sans serifs were once preferred for screen text because they rendered better on the lower-resolution screens of the past. (That’s why most graphical user interfaces are built around sans serif fonts). But on today’s screens, serif fonts look equally good.
   >
 
-#### 8.8  Line Spacing/Pitch
+#### 9.8  Line Spacing/Pitch
 
 Default line pitch for body text is 1.6 x font size for CJK fonts and 1.4 x  otherwise.  Line pitch is customizable.
 
@@ -193,11 +226,11 @@ Default line pitch for body text is 1.6 x font size for CJK fonts and 1.4 x  oth
   > For most text, the optimal line spacing is between 120% and 145% of the point size. Most word processors, as well as CSS, let you define line spacing as a multiple. Or you can do the math—multiply your point size by the percentage. (The text in this paragraph has line spacing of 110%. It’s too tight.)
   >
 
-#### 8.9  Line Length
+#### 9.9  Line Length
 
 Page margin is 1.0 inch each side.  Line length is 'page width' minus two inches.  Not customizable.  
 
-#### 8.10 In-line Reference
+#### 9.10 In-line Reference
 
 Two or more reference links in one MarkDown text line are not supported. In-line reference links should be avoided.  Recommended to re-write this:
   > Consider both [Split-View Data Poisoning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%201%20Split-View%20Data%20Poisoning.jpeg) and [Frontrunning Poisoning](https://github.com/GangGreenTemperTatum/speaking/blob/main/dc604/hacker-summer-camp-23/Ads%20_%20Poisoning%20Web%20Training%20Datasets%20_%20Flow%20Diagram%20-%20Exploit%202%20Frontrunning%20Data%20Poisoning.jpeg) attack vectors for illustrations.
@@ -223,8 +256,7 @@ For [in-text citation](https://careered.libanswers.com/AIUCitationExamples/faq/2
 If you are using an in-text citation for information coming from a single page, use p. Example: (Donaldson, 2018, p. 3). If you are citing information from two or more pages you use pp. instead. (Donaldson, 2018, pp. 3-4). If there are no breaks between the pages, such as referencing information from pages 3 through 5, then use a hyphen between them (Donaldson, 2018, pp. 3-5). If the pages are not right adjacent to each other, then use commas to separate them (Donaldson, 2018, pp. 3, 6, 9-10).
 ```
 
-
-#### 8.11 Text Color
+#### 9.11 Text Color
 
 Colors are used in two places in owasp_pdf system: *link text* and *block6*, light-blue and light-orange respectively.  The colors are not customizable.
 
@@ -243,7 +275,7 @@ Colors are used in two places in owasp_pdf system: *link text* and *block6*, lig
   > At a typical body-text point size, color isn’t effective as a form of emphasis. Small letterforms don’t cover much surface area on the page, so colored text isn’t noticed unless it’s loud.
   >
 
-#### 8.12 Color Blockquotes
+#### 9.12 Color Blockquotes
 
 owasp_pdf has an extension feature called "color blockquotes."  To create a color blockquote, start a line with greater than >.  Color blockquotes are immediately followed by four optional parameters separated by a vertical bar |, then a space character.  Color blockquotes can not be nested, but two space characters can be used to add one level of indentation (see *8.4 First Line Indent*).  For color names, see *12. Color Palette*.
 
@@ -269,7 +301,16 @@ Example:
 >mistyrose|black|right|20|24 Threats to AI Models
 >mistyrose|black|justified|20|24 Threats from AI Models and AI Legal & regulatory Threats
 
-### 9. Batch Processing
+### 10. Technology Stack of PDF Creation
+
+owasp_pdf is built on open source packages in Python.  Implementation module of owasp_pdf of each technology layer is as follows:
+
+  parameter definition   :  custom_data_*.json (JSON)
+  interpretation  :  owasp_pdf (Python)
+  pdf generation  :  reportlab, fpdf2 (Python)
+  system language  :  Python
+
+### 11. Batch Processing
 
 You can build all registered languages of one project with one command:
 
@@ -283,7 +324,7 @@ Suppose you have three projects, LLM, GOV, and OLM.  You can build all the langu
 $ ./owasp_pdf -a LLM & ./owasp_pdf -a GOV & ./owasp_pdf -a OLM
 ```
 
-### 10. Semantic Versioning
+### 12. Semantic Versioning
 
 owasp_pdf version number such as v3.7.2 follows [the semantic versioning](https://semver.org/) rule.
 Given a version number MAJOR.MINOR.PATCH, increment the:
@@ -293,43 +334,6 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 - PATCH version when we make backward compatible bug fixes, i.e. no changes to custom pdf json syntax and semantics.
 
 The version number with build id is placed at the lower left corner of every page.
-
-### 11. OWASP PDF Release Process
-
-The process of publishing PDF using the owasp_pdf tool (OWASP PDF Release Process) consists of two phases.
-
-In the phase 1,
-1. Localize markdown/image files and freeze them, then
-2. Push a pull request to the owasp_pdf central repository (where this README file is stored) with the frozen markdown/image files.
-
-  > Currently, there are two projects registered: "OWASP Top 10 for LLM Applications v1.1" (project code: LLM) and "LLM AI Security & Governance Checklist v1.1" (project code: GOV).
-
-In the phase 2,
-1. The owner of the project reviews the pull request,
-2. If approved, the owner removes the W.I.P. watermark and creates the official PDF,
-3. "git add -f" and push the PDF to the owasp_pdf central repository along with the frozen markdown/image files, then finally,
-4. Publish the PDF on genai.owasp.org/resources site.
-
-
-### 12. Localization Process Best Practices
-
-owasp_pdf is designed to cleanly separate PDF building and contents localization and support fully autonomous localization. The following are the best practices we learned from the owasp_pdf beta program.
-
-- Join "owasp pdf users" community channel.  Information about the owasp_pdf tool updates, usage tips and ideas, questions&answers are shared.
-- Form a localization team for your target project_language.  2 to 5 members; 3 would be best for quick move and credibility of the output.
-- Create a github repository for your target project_language.  Simply clone or fork the owasp_pdf central repository and run the collab localization there.
-- Suggested scrum team formation:
-  - At least one member must have Mac to build W.I.P PDF anytime.
-  - Every member needs to know:
-    - [markdown basics](https://www.markdownguide.org/getting-started/#how-does-it-work)
-    - [git basics](https://git-scm.com/docs)
-  - At least one member must have ML, LLM, GenAI skill.
-  - Team lead to be selected
-  - Register the team formation to owasp_pdf central repository ([here](https://github.com/Setotet/secgov/blob/main/Localization_Team_Registration.md))
-- Suggested [scrum](https://www.scrum.org/resources/what-scrum-module) workflow:
-  - Two weeks/sprint starting Monday and ending Friday of the week following, e.g., May 20th - 31st, 2024.
-  - Github issues could be used to define/track/review sprint goal
-  - Draft pull request can be pushed to the owasp_pdf central repository anytime for status sharing or go directly to final pull request for approval/publish.  owasp_pdf supports full autonomy in any way you'd like.
 
 ### 13. Language Codes
 ```
