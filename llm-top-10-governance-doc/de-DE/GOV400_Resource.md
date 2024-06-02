@@ -15,13 +15,13 @@
   >azure|black|justified|10|12 Angreifer verursachen ressourcenintensive Operationen auf Large Language Models, was zu Servicedegradierung oder hohen Kosten führt. Die Schwachstelle wird durch die ressourcenintensive Natur der LLMs und die Unvorhersehbarkeit der Benutzereingaben vergrößert.
 
   >dodgerblue|white|left|12|16 LLM05: Schwachstellen in der Supply Chain (Lieferkette)
-  >azure|black|justified|10|12 Der Lifecycle von LLM-Anwendungen kann durch anfällige Komponenten oder Dienste beeinträchtigt werden, was zu Sicherheitsangriffen führt. Die Verwendung von Drittanbieterdatensätzen, vortrainierten Modellen und Plugins kann Schwachstellen hinzufügen.
+  >azure|black|justified|10|12 Der Lifecycle von LLM-Anwendungen kann durch anfällige Komponenten oder Dienste beeinträchtigt werden, was zu Sicherheitsangriffen führt. Die Verwendung von Drittanbieterdatensätzen, vortrainierten Modellen und Plug-ins kann Schwachstellen hinzufügen.
 
   >dodgerblue|white|left|12|16 LLM06: Offenlegung sensibler Informationen
   >azure|black|justified|10|12 LLMs können in ihren Antworten vertrauliche Daten preisgeben, was zu unbefugtem Datenzugriff, Datenschutzverletzungen und Sicherheitsbrüchen führt. Es ist entscheidend, Datenbereinigung und strenge Benutzerrichtlinien zu implementieren, um dies zu verhindern.
 
-  >dodgerblue|white|left|12|16 LLM07: Unsicheres Plugin-Design
-  >azure|black|justified|10|12 LLM-Plugins können unsichere Eingaben und unzureichende Zugriffskontrollen haben. Dieser Mangel an Anwendungskontrolle macht sie leichter ausnutzbar und kann zu Konsequenzen wie der Ausführung von Remote-Code führen.
+  >dodgerblue|white|left|12|16 LLM07: Unsicheres Plug-in-Design
+  >azure|black|justified|10|12 LLM-Plug-ins können unsichere Eingaben und unzureichende Zugriffskontrollen haben. Dieser Mangel an Anwendungskontrolle macht sie leichter ausnutzbar und kann zu Konsequenzen wie der Ausführung von Remote-Code führen.
 
   >dodgerblue|white|left|12|16 LLM08: Übermäßige Handlungsfreiheit
   >azure|black|justified|10|12 LLM-basierte Systeme können Handlungen durchführen, die zu unbeabsichtigten Konsequenzen führen. Das Problem entsteht durch übermäßige Funktionalität, Berechtigungen oder Autonomie, die den LLM-basierten Systemen gewährt wird.
@@ -58,28 +58,28 @@ Wie sie integriert werden, ist verfügbar unter den [OWASP-Integrationsstandards
   Das OWASP-Projekt zum weltweiten Austausch über AI-Sicherheit, Förderung der Standardisierung und Zusammenarbeit.
   Der OWASP AI Exchange ist der Eingangskanal für den OWASP AI Security and Privacy Guide
   Die OWASP Machine Learning Security Top 10 Liste thematisiert Sicherheitsprobleme von Systemen maschinellen Lernens.
-#### Warum es empfohlen wird & wo es verwendet wird
+#### Warum es empfohlen & wo es verwendet wird
   Dieses Projekt umfasst die ML Top 10 und ist ein lebendiges Arbeitsdokument, das klare und handlungsorientierte Einblicke in das Entwerfen, Erstellen, Testen und Beschaffen von sicheren und datenschutzorientierten AI-Systemen bietet. Es ist die beste OWASP-Ressource für globale regulatorische und Datenschutzinformationen zu KI.
 
 #### OWASP-Ressource
    [Open Common Requirement Enumeration : OpenCRE](https://www.opencre.org/)
 #### Beschreibung
   Die OpenCRE ist die interaktive Content-Linking-Plattform zur Zusammenführung von Sicherheitsstandards und -richtlinien in einer Übersicht.
-#### Warum sie empfohlen wird & wo sie verwendet wird
+#### Warum sie empfohlen & wo sie verwendet wird
   Nutzen Sie diese Seite, um nach Standards anhand von Standardnamen oder nach Kontrolltyp zu suchen.
 
 #### OWASP-Ressource
   [OWASP Threat Modeling](https://owasp.org/www-community/Threat_Modeling)
 #### Beschreibung
   Ein strukturierter, formaler Prozess für die Bedrohungsmodellierung einer Anwendung
-#### Warum es empfohlen wird & wo es verwendet wird
+#### Warum es empfohlen & wo es verwendet wird
   Erfahren Sie alles über Bedrohungsmodellierung (Threat Modeling), das eine strukturierte Darstellung aller Informationen ist, die die Sicherheit einer Anwendung beeinflussen.
 
 #### OWASP-Ressource
   [OWASP CycloneDX](https://owasp.org/www-project-cyclonedx/)
 #### Beschreibung
   OWASP CycloneDX ist ein vollständiger Bill-of-Materials (BOM) Standard, der erweiterte Lieferkettenfähigkeiten für die Reduzierung von Cyberrisiken bietet.
-#### Warum es empfohlen wird & wo es verwendet wird
+#### Warum es empfohlen & wo es verwendet wird
   Moderne Software wird unter Verwendung von Drittanbieter- und Open-Source-Komponenten zusammengestellt. Sie werden auf komplexe und einzigartige Weise zusammengefügt und mit Originalcode integriert, um die gewünschte Funktionalität zu erreichen. Ein SBOM bietet ein genaues Inventar aller Komponenten, das Organisationen ermöglicht, Risiken zu identifizieren, größere Transparenz zu ermöglichen und schnelle Auswirkungsanalysen durchzuführen.
   [EO 14028](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1) stellte Mindestanforderungen für SBOM für föderale Systeme bereit.
 
@@ -87,42 +87,42 @@ Wie sie integriert werden, ist verfügbar unter den [OWASP-Integrationsstandards
   [OWASP Software Component Verification Standard (SCVS)](https://scvs.owasp.org/)
 #### Beschreibung
   Eine gemeinschaftlich getriebene Initiative, um ein Rahmenwerk für die Identifizierung von Aktivitäten, Kontrollen und Best Practices zur Identifizierung und Reduzierung von Risiken in einer Software-Lieferkette zu etablieren.
-#### Warum es empfohlen wird & wo es verwendet wird
+#### Warum es empfohlen & wo es verwendet wird
   Nutzen Sie SCVS, um einen gemeinsamen Satz von Aktivitäten, Kontrollen und Best Practices zu entwickeln, die das Risiko in einer Software-Lieferkette reduzieren können und eine Basislinie und einen Weg zur Reife der Wachsamkeit der Software-Lieferkette identifizieren.
 
 #### OWASP-Ressource
   [OWASP API Security Project](https://owasp.org/www-project-api-security/)
 #### Beschreibung
   Das API-Sicherheits-Projekt konzentriert sich auf Strategien und Lösungen, um die einzigartigen Schwachstellen und Sicherheitsrisiken von Application Programming Interfaces (APIs) zu verstehen und zu mildern.
-#### Warum es empfohlen wird & wo es verwendet wird
+#### Warum es empfohlen & wo es verwendet wird
   APIs sind ein grundlegendes Element der Verbindung von Anwendungen, und das Reduzieren von Fehlkonfigurationen oder Schwachstellen ist obligatorisch, um Benutzer und Organisationen zu schützen. Verwenden Sie es für Sicherheitstests und Red Teaming der Build- und Produktionsumgebungen.
 
 #### OWASP-Ressource
   [OWASP Top 10 CI/CD Sicherheitsrisiken](https://owasp.org/www-project-top-10-ci-cd-security-risks/)
 #### Beschreibung
   Es hilft Verteidigern, Fokusbereiche für die Sicherung ihres CI/CD-Ökosystems zu identifizieren.
-#### Warum sie empfohlen wird & wo sie verwendet wird
+#### Warum sie empfohlen & wo sie verwendet wird
   CI/CD-Umgebungen, -Prozesse und -Systeme sind das Ökosystem moderner Softwareorganisationen. Sie liefern Code vom Entwicklungsrechner eines Ingenieurs bis in die Produktion. Sie haben ihre eigene spezielle Angriffsfläche und sind ein häufiges Angriffsziel. Verwenden Sie sie für Sicherheitstests und Red Teaming der Build- und Produktionsumgebungen.
 
 #### OWASP-Ressource
   [OWASP Application Security Verification Standard ASVS](https://owasp.org/www-project-application-security-verification-standard/)
 #### Beschreibung
   Der Application-Security-Verification-Standard(ASVS) Projekt bietet eine Grundlage für das Testen von technischen Sicherheitskontrollen von Webanwendungen und bietet Entwicklern auch eine Liste von Anforderungen für die sichere Entwicklung.
-#### Warum es empfohlen wird & wo es verwendet wird
+#### Warum es empfohlen & wo es verwendet wird
   Es ist ein Kochbuch für Webanwendungssicherheitsanforderungen, Sicherheitstests und Metriken. Verwenden Sie es, um Sicherheits-User-Stories und Sicherheits-Use-Case-Release-Tests zu etablieren.
 
 #### OWASP-Ressource
   [OWASP Threat and Safeguard Matrix (TaSM)](https://owasp.org/www-project-threat-and-safeguard-matrix/)
 #### Beschreibung
   Eine aktionsorientierte Sichtweise zum Schutz und Ermöglichen der Geschäftsabläufe.
-#### Warum sie empfohlen wird & wo sie verwendet wird
+#### Warum sie empfohlen & wo sie verwendet wird
   Diese Matrix ermöglicht es einem Unternehmen, seine Hauptbedrohungen mit den NIST Cyber Security Framework-Funktionen (Identifizieren, Schützen, Erkennen, Reagieren & Wiederherstellen) zu überlagern, um einen robusten Sicherheitsplan zu erstellen. Verwenden Sie es als Dashboard, um die Sicherheit im gesamten Unternehmen zu verfolgen und zu berichten.
 
 #### OWASP-Ressource
    [Defect Dojo](https://www.defectdojo.com/)
 #### Beschreibung
   Ein Open-Source-Schwachstellenmanagement-Tool, das den Testprozess durch Vorlagen, Berichtsgenerierung, Metriken und Baseline-Selbstbedienungswerkzeuge vereinfacht.
-#### Warum es empfohlen wird & wo es verwendet wird
+#### Warum es empfohlen & wo es verwendet wird
   Verwenden Sie das Defect Dojo, um die benötigte Zeit für das Protokollieren von Schwachstellen durch Vorlagen für Schwachstellen, Import für gängige Schwachstellenscanner und automatische Berichtsgenerierung und Metriken zu reduzieren.
 
 
@@ -140,28 +140,28 @@ MITRE ATLAS, das für "Adversarial Threat Landscape for Artificial Intelligence 
   [MITRE ATT&CK](https://attack.mitre.org/)
 #### Beschreibung
   Wissensbasis zu Gegnertaktiken und -techniken basierend auf Beobachtungen aus der realen Welt
-#### Warum sie empfohlen wird & wo sie verwendet wird
+#### Warum sie empfohlen & wo sie verwendet wird
   Die ATT&CK-Wissensbasis wird als Grundlage für die Entwicklung spezifischer Bedrohungsmodelle und Methodologien verwendet. Kartieren Sie bestehende Kontrollen innerhalb der Organisation auf Gegnertaktiken und -techniken, um Lücken oder Bereiche zum Testen zu identifizieren.
 
 #### MITRE-Ressource
   [MITRE ATT&CK Workbench](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/attck-workbench/)
 #### Beschreibung
   Erstellen oder erweitern Sie ATT&CK-Daten in einer lokalen Wissensdatenbank
-#### Warum sie empfohlen wird & wo sie verwendet wird
+#### Warum sie empfohlen & wo sie verwendet wird
   Verwalten und hosten Sie eine angepasste Kopie der ATT&CK-Wissensdatenbank. Diese lokale Kopie der ATT&CK-Wissensbasis kann mit neuen oder aktualisierten Techniken, Taktiken, Milderungsgruppen und Software erweitert werden, die spezifisch für Ihre Organisation sind.
 
 #### MITRE-Ressource
    [MITRE ATLAS](https://atlas.mitre.org/)
 #### Beschreibung
   MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems) ist eine Wissensdatenbank zu Gegnertaktiken, -techniken und Fallstudien für maschinelle Lernsysteme (ML) basierend auf Beobachtungen aus der realen Welt, Demonstrationen von ML-Red-Teams und Sicherheitsgruppen sowie dem Stand des Möglichen aus der akademischen Forschung
-#### Warum sie empfohlen wird & wo sie verwendet wird
+#### Warum sie empfohlen & wo sie verwendet wird
   Verwenden Sie es, um bekannte ML-Schwachstellen zu kartieren und Checks und Kontrollen auf vorgeschlagene Projekte oder bestehende Systeme abzubilden.
 
 #### MITRE-Ressource
   [MITRE ATT&CK Powered Suit](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/attack-powered-suit/)
 #### Beschreibung
   Die ATT&CK Powered Suit ist eine Browsererweiterung, die die MITRE ATT&CK-Wissensbasis in Reichweite bringt.
-#### Warum sie empfohlen wird & wo sie verwendet wird
+#### Warum sie empfohlen & wo sie verwendet wird
   Fügen Sie sie Ihrem Browser hinzu, um schnell nach Taktiken, Techniken und mehr zu suchen, ohne Ihren Workflow zu unterbrechen.
 
 #### MITRE-Ressource
@@ -175,29 +175,29 @@ MITRE ATLAS, das für "Adversarial Threat Landscape for Artificial Intelligence 
    [Attack Flow v2.1.0](https://center-for-threat-informed-defense.github.io/attack-flow/)
 #### Beschreibung
   Attack Flow ist eine Sprache zur Beschreibung, wie Cyber-Gegner verschiedene offensive Techniken kombinieren und sequenzieren, um ihre Ziele zu erreichen.
-#### Warum siees empfohlen wird & wo sie verwendet wird
+#### Warum sie empfohlen  & wo sie verwendet wird
   Attack Flow hilft zu visualisieren, wie ein Angreifer eine Technik verwendet, damit Verteidiger und Führungskräfte verstehen, wie Gegner operieren, und ihre defensive Position verbessern.
 
 #### MITRE-Ressource
   [MITRE Caldera](https://caldera.mitre.org/)
 #### Beschreibung
   Eine Cybersecurity-Plattform (Framework), die entwickelt wurde, um die Emulation von Gegnern leicht zu automatisieren, manuellen Red Teams zu helfen und die Reaktion auf Vorfälle zu automatisieren.
-#### Warum es empfohlen wird & Wo es verwendet wird
-  Für Caldera sind Plugins verfügbar, die die Kernfähigkeiten des Frameworks erweitern und zusätzliche Funktionalitäten bieten, einschließlich Agenten, Berichterstattung, Sammlungen von TTPs und anderen.
-  [Hier ist die Plugin-Bibliothek.](https://caldera.readthedocs.io/en/latest/Plugin-library.html)
+#### Warum es empfohlen & wo es verwendet wird
+  Für Caldera sind Plug-ins verfügbar, die die Kernfähigkeiten des Frameworks erweitern und zusätzliche Funktionalitäten bieten, einschließlich Agenten, Berichterstattung, Sammlungen von TTPs und anderen.
+  [Hier ist die Plug-in-Bibliothek.](https://caldera.readthedocs.io/en/latest/Plugin-library.html)
 
 #### MITRE-Ressource
   [CALDERA-Plugin: Arsenal](https://www.mitre.org/news-insights/news-release/microsoft-and-mitre-create-tool-help-security-teams-prepare-attacks)
 #### Beschreibung
-  Ein Plugin, das für die Gegneremulation von KI-fähigen Systemen entwickelt wurde.
-#### Warum es empfohlen wird & Wo es verwendet wird
-  Dieses Plugin bietet in MITRE ATLAS definierte TTPs, um mit CALDERA zu interagieren.
+  Ein Plug-in, das für die Gegneremulation von KI-fähigen Systemen entwickelt wurde.
+#### Warum es empfohlen & wo es verwendet wird
+  Dieses Plug-in bietet in MITRE ATLAS definierte TTPs, um mit CALDERA zu interagieren.
 
 #### MITRE-Ressource
   [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)
 #### Beschreibung
   Eine Bibliothek von Tests, die dem MITRE ATT&CK-Framework zugeordnet sind.
-#### Warum sie empfohlen wird & wo sie verwendet wird
+#### Warum sie empfohlen & wo sie verwendet wird
   Verwenden Sie es, um Kontrollen in einer Umgebung zu validieren und zu testen. Sicherheitsteams können Atomic Red Team verwenden, um Kontrollen zu testen.
   Sie können atomare Tests direkt von der Kommandozeile aus ausführen; es ist keine Installation erforderlich.
 

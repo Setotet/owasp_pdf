@@ -4,7 +4,7 @@ Die rasche Verbreitung von Anwendungen auf Basis großer Sprachmodelle (LLM) hat
 
 Angreifer oder Gegner stellen die unmittelbarste und schädlichste Bedrohung für Unternehmen, Personen und Regierungsbehörden dar. Ihre Ziele reichen von finanziellem Gewinn bis hin zu Spionage und führen dazu, dass sie kritische Informationen stehlen, den Betrieb stören und das Vertrauen schädigen. Dazu erwerben sie durch KI und maschinelles Lernen die Möglichkeit, mit Geschwindigkeit und Raffinesse den Verteidigern voraus zu sein.
 
-Die dringendste LLM-Bedrohung jenseits von Angreifern ist "Shadow AI": Mitarbeiter, die nicht genehmigte Online-KI-Tools, unsichere Browser-Plugins und Drittanbieteranwendungen verwenden, die LLM-Funktionen durch Updates oder Upgrades einführen und damit standardisierte Softwaregenehmigungsprozesse umgehen.
+Die dringendste LLM-Bedrohung jenseits von Angreifern ist "Shadow AI": Mitarbeiter, die nicht genehmigte Online-KI-Tools, unsichere Browser-Plug-ins und Drittanbieteranwendungen verwenden, die LLM-Funktionen durch Updates oder Upgrades einführen und damit standardisierte Softwaregenehmigungsprozesse umgehen.
 
 >||center|16|16 Bereitstellung
 
