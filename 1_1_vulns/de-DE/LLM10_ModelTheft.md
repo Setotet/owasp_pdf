@@ -8,8 +8,8 @@ Der Diebstahl von LLMs stellt ein erhebliches Sicherheitsproblem dar, da Sprachm
 
 ### Gängige Beispiele für Schwachstellen
 
-1. Angreifende nutzen eine Schwachstelle in der Infrastruktur einer Organisation aus, um sich durch Fehlkonfiguration der Netzwerk- oder Anwendungssicherheitseinstellungen unberechtigten Zugriff auf das LLM-Modell-Repository zu verschaffen.
-2. Ein Insider-Bedrohungsszenario, bei dem unzufriedene Mitarbeitende das Modell oder damit verbundene Artefakte nach außen dringen lassen.
+1. Angreifende nutzen eine Schwachstelle in der Infrastruktur einer Organisation aus, um sich durch Fehlkonfiguration der Netzwerk- oder Anwendungssicherheitseinstellungen unberechtigten Zugriff auf das LLM-Model-Repository zu verschaffen.
+2. Ein Insider-Bedrohungsszenario, bei dem unzufriedene Mitarbeitende das Modell oder damit verbundene Artefakte nach Außen dringen lassen.
 3. Angreifende verwenden die Modell-API mit sorgfältig erstellten Eingaben und Prompt Injection-Techniken, um eine ausreichende Anzahl von Ausgaben zu sammeln, um ein Schattenmodell zu erstellen.
 4. Böswillige Angreifenden sind in der Lage, die Eingabefiltertechniken des LLM zu umgehen, um einen Seitenkanal-Angriff durchzuführen und schließlich Modellgewichte und Architekturinformationen an eine ferngesteuerte Ressource zu übermitteln.
 5. Der Angriffsvektor für die Extraktion von Modellen beinhaltet die Abfrage des LLM mit einer großen Anzahl von Prompts zu einem bestimmten Thema. Die Ausgabe des LLM kann dann verwendet werden, um ein anderes Modell zu verfeinern. Bei diesem Angriff sind jedoch einige Dinge zu beachten:
@@ -22,13 +22,13 @@ Die Verwendung eines gestohlenen Modells als Schattenmodell kann dazu genutzt we
 
 ### Präventions- und Mitigationsstrategien
 
-1. Implementieren Sie strenge Zugriffskontrollen (z. B. RBAC und das least privilege Prinzip) und starke Authentifizierungsmechanismen, um den unbefugten Zugriff auf Repositories mit LLM-Modellen und Lernumgebungen einzuschränken.
+1. Implementieren Sie strenge Zugriffskontrollen (z. B. RBAC und das Least-Privilege-Prinzip) und starke Authentifizierungsmechanismen, um den unbefugten Zugriff auf Repositorys mit LLM-Modellen und Lernumgebungen einzuschränken.
   - Dies gilt insbesondere für die ersten drei gängigen Beispiele, die diese Schwachstelle aufgrund von Insider-Bedrohungen, Fehlkonfigurationen und/oder schwachen Sicherheitskontrollen in Bezug auf die Infrastruktur, die LLM-Modelle, -Gewichte und -Architekturen beherbergt, verursachen können, in die böswillige Akteure von innen oder außen eindringen können.
   - Schwachstellen bei der Rückverfolgbarkeit, der Verifizierung und der Abhängigkeit von Lieferanten sind wichtige Schwerpunktthemen, um die Ausnutzung von Angriffen auf die Lieferkette zu verhindern.
 2. Beschränken Sie den Zugriff des LLM auf Netzwerkressourcen, interne Dienste und APIs.
-  - Dies gilt insbesondere für alle gängigen Beispiele, da es Risiken und Bedrohungen von innen abdeckt, aber letztlich auch kontrolliert, worauf die LLM-Anwendung "zugreifen" kann und somit einen Mechanismus oder eine Präventivmaßnahme zur Verhinderung von Seitenkanalangriffen darstellen kann.
+  - Dies gilt speziell für alle gängigen Beispiele, da es Risiken und Bedrohungen von innen abdeckt, aber letztlich auch kontrolliert, worauf die LLM-Anwendung "zugreifen" kann und somit einen Mechanismus oder eine Präventivmaßnahme zur Verhinderung von Seitenkanal-Angriffen darstellen kann.
 3. Verwenden Sie ein zentrales ML-Modell-Inventar oder -Register für ML-Modelle, die in der Produktion verwendet werden. Eine zentralisierte Modellregistrierung verhindert den unbefugten Zugriff auf ML-Modelle durch Zugriffskontrollen, Authentifizierung und Überwachungs-/Protokollierungsfunktionen, die eine gute Grundlage für die Governance bilden. Ein zentrales Repository ist auch vorteilhaft, um Daten über die von den Modellen verwendeten Algorithmen für Zwecke der Compliance, Risikobewertung und Risikominderung zu sammeln.
-4. Überwachen und überprüfen Sie regelmäßig die Zugriffsprotokolle und Aktivitäten im Zusammenhang mit LLM-Modell-Repositories, um verdächtiges oder nicht autorisiertes Verhalten zu erkennen und sofort darauf zu reagieren.
+4. Überwachen und überprüfen Sie regelmäßig die Zugriffsprotokolle und Aktivitäten im Zusammenhang mit LLM-Model-Repositorys, um verdächtiges oder nicht autorisiertes Verhalten zu erkennen und sofort darauf zu reagieren.
 5. Automatisieren Sie die MLOps-Bereitstellung mit Governance-, Tracking- und Genehmigungs-Workflows, um die Zugriffs- und Bereitstellungskontrollen innerhalb der Infrastruktur zu stärken.
 6. Implementieren Sie Kontrollen und Abschwächungsstrategien, um das Risiko von Prompt Injection-Techniken, die Side-Channel-Angriffe verursachen, abzuschwächen oder zu verringern.
 7. Beschränken Sie gegebenenfalls die Anzahl der API-Aufrufe und/oder setzen Sie Filter ein, um das Risiko der Datenexfiltration aus LLM-Anwendungen zu verringern, oder implementieren Sie Techniken zur Erkennung von Extraktionsaktivitäten (z. B. DLP) aus anderen Überwachungssystemen.
@@ -41,7 +41,7 @@ Die Verwendung eines gestohlenen Modells als Schattenmodell kann dazu genutzt we
 2. Unzufriedene Mitarbeitende lassen das Modell oder damit verbundene Artefakte nach außen dringen. Das öffentliche Bekanntwerden dieses Szenarios erhöht das Wissen für Angreifende, die Gray-Box-Angriffe oder alternativ den direkten Diebstahl des verfügbaren Eigentums planen. 
 3. Angreifende fragen die API mit sorgfältig ausgewählten Eingaben ab und sammelt eine ausreichende Anzahl von Ausgaben, um ein Schattenmodell zu erstellen.
 4. Ein Versagen der Sicherheitskontrolle in der Lieferkette führt zum Abfluss von proprietären Modellinformationen.
-5. Böswillige Angreifende umgeht die Eingabefilterung und die Präambel des LLM, um einen Seitenkanalangriff durchzuführen und Modellinformationen über eine ferngesteuerte Ressource unter seiner Kontrolle zu erlangen.
+5. Böswillige Angreifende umgeht die Eingabefilterung und die Präambel des LLM, um einen Seitenkanal-Angriff durchzuführen und Modellinformationen über eine ferngesteuerte Ressource unter seiner Kontrolle zu erlangen.
 
 ### Referenzen
 

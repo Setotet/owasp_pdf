@@ -14,7 +14,7 @@ Die Vergiftung von Daten wird als Angriff auf die Integrität betrachtet, da die
 
 ### Gängige Beispiele für Schwachstellen
 
-1. Bösartige Akteure oder Wettbewerber erstellen absichtlich ungenaue oder bösartige Dokumente, die auf das Pre-Training-, Fine-Tuning oder Embedding eines Modells abzielen. Betrachten Sie sowohl Split-View Data Poisoning (Ref.12) als auch Frontrunning Poisoning (Ref.13) Angriffsvektoren zur Veranschaulichung.
+1. Bösartige Akteure oder Wettbewerber erstellen absichtlich ungenaue oder bösartige Dokumente, die auf das Pre-Training-, Fine-Tuning oder Embedding eines Modells abzielen. Betrachten Sie sowohl Split-View Data Poisoning (Ref.12) als auch Frontranking Poisoning (Ref.13) Angriffsvektoren zur Veranschaulichung.
   - Das Opfermodell wird anhand von gefälschten Informationen trainiert, die sich in den Ausgaben der generativen KI-Prompts an die Endkunden widerspiegeln.
 2. Böswillige Akteure können direkt gefälschte, voreingenommene oder schädliche Inhalte in die Trainingsprozesse eines Modells einspeisen, die in späteren Ausgaben zurückgegeben werden.
 3. Eine ahnungslose Person injiziert indirekt sensible oder proprietäre Daten in die Trainingsprozesse eines Modells, die in nachfolgenden Ausgaben zurückgegeben werden.
@@ -34,8 +34,8 @@ Die Vergiftung von Daten wird als Angriff auf die Integrität betrachtet, da die
 7. Verwenden Sie DVC (Data Version Control (Ref.16)), um Teile eines Datensatzes, die manipuliert, gelöscht oder hinzugefügt wurden und zu Poisoning geführt haben, genau zu identifizieren und zu verfolgen.
 8. Verwenden Sie eine Vektordatenbank, um von Benutzern bereitgestellte Informationen zu speichern, um andere Personen vor Manipulationen zu schützen und um sogar während der Produktion Fehler zu beheben, ohne ein neues Modell trainieren zu müssen.
 9. Verwenden Sie Techniken zur Abwehr von Angriffen, wie z. B. föderiertes Lernen und Einschränkungen, um den Einfluss von Ausreißern zu minimieren, oder adverses Training, um robust gegenüber den schlimmsten Störungen der Trainingsdaten zu sein.
-  - Ein "MLSecOps"-Ansatz könnte darin bestehen, die adversariale Robustheit mit Hilfe der Autopoison-Technik in den Trainingslebenszyklus zu integrieren.
-  - Ein Beispiel Repository hierfür ist das Autopoison (Ref.17), das sowohl Angriffe wie Content Injection Attacks ("(der Versuch, einen Markennamen in den Antworten des Modells zu bewerben") als auch Refusal Attacks ("das Modell immer dazu bringen, die Antwort zu verweigern") umfasst, die mit diesem Ansatz durchgeführt werden können.
+  - Ein "MLSecOps"-Ansatz könnte darin bestehen, die adversariale Robustheit mithilfe der Autopoison-Technik in den Trainingslebenszyklus zu integrieren.
+  - Ein Beispiel Repository hierfür ist das Autopoison (Ref.17), das sowohl Angriffe wie Content Injection Attacks (der Versuch, einen Markennamen in den Antworten des Modells zu bewerben) als auch Refusal Attacks ("das Modell immer dazu bringen, die Antwort zu verweigern") umfasst, die mit diesem Ansatz durchgeführt werden können.
 10. Testen und Erkennen durch Messen der Verluste während der Trainingsphase sowie Analyse der trainierten Modelle, um Anzeichen eines Poisoning-Angriffs zu erkennen, indem das Modellverhalten bei bestimmten Testeingaben analysiert wird.
 11. Überwachung und Alarmierung, wenn die Anzahl der verzerrten Antworten einen Schwellenwert überschreitet.
 12. Menschliche Kontrolle bei der Überprüfung von Antworten und Audits.

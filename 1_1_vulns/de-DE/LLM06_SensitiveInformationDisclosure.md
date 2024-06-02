@@ -19,7 +19,7 @@ Die Interaktion zwischen Verbraucher und LLM-Anwendung bildet eine zweiseitige V
 1. Integrieren Sie geeignete Datenbereinigungs- und Scrubbing-Techniken, um zu verhindern, dass Benutzerdaten in die Daten des Trainingsmodells gelangen.
 2. Implementierung robuster Eingabevalidierungs- und -bereinigungsmethoden, um potenziell schädliche Eingaben zu identifizieren und zu entfernen, damit das Modell nicht vergiftet wird.
 3. Wenn das Modell mit Daten angereichert und Fine-Tuning (Ref.7) betrieben wird: (z. B. Daten, die dem Modell vor oder während der Bereitstellung zugeführt werden)
-  - Alles, was in den Fine-Tuning-Daten als sensibel eingestuft ist, könnte Personen offengelegt werden. Wenden Sie daher das Least-Privilege-Prinzip an und trainieren Sie das Modell nicht mit Informationen, auf die Personen mit den höchsten Rechten zugreifen können und die einer weniger privilegierten Personen angezeigt werden könnten.
+  - Alles, was in den Fine-Tuning-Daten als sensibel eingestuft ist, könnte Personen offengelegt werden. Wenden Sie daher das Least-Privilege-Prinzip an und trainieren Sie das Modell nicht mit Informationen, auf die Personen mit den höchsten Rechten zugreifen können und die dann einer weniger privilegierten Person angezeigt werden könnten.
   - Der Zugriff auf externe Datenquellen (Orchestrierung von Daten zur Laufzeit) sollte eingeschränkt werden.
   - Strenge Zugriffskontrollmethoden für externe Datenquellen und ein rigoroser Ansatz zur Aufrechterhaltung einer sicheren Lieferkette.
 
@@ -27,7 +27,7 @@ Die Interaktion zwischen Verbraucher und LLM-Anwendung bildet eine zweiseitige V
 
 1. Die ahnungslose, legitime Benutzerin A erhält über das LLM Zugang zu anderen Benutzerdaten, wenn sie in nicht böswilliger Absicht mit der LLM-Anwendung interagiert.
 2. Benutzer A zielt darauf ab, die Eingabefilter und die Bereinigungsfunktionen des LLM durch eine ausgeklügelte Abfolge von Eingabeaufforderungen zu umgehen und Personen dazu zu bringen, personenbezogene Informationen (PII) über andere Personen der Anwendung preiszugeben.
-3. Personenbezogene Daten wie z.B. PII gelangen über Trainingsdaten in das Modell, entweder durch Unachtsamkeit die Person selbst oder durch die LLM-Anwendung. Dies könnte das Risiko und die Wahrscheinlichkeit von Szenario 1 oder 2 oben erhöhen.
+3. Personenbezogene Daten wie z.B. PII gelangen über Trainingsdaten in das Modell, entweder durch Unachtsamkeit der Person selbst oder durch die LLM-Anwendung. Dies könnte das Risiko und die Wahrscheinlichkeit von Szenario 1 oder 2 oben erhöhen.
 
 ### Referenzen
 
