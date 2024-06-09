@@ -1,6 +1,6 @@
 ## Team
 
-Danke an die Mitwirkenden der OWASP Top 10 für LLM-Applikationen.
+Danke an die Mitwirkenden der OWASP Top 10 für LLM Applikationen Cybersicherheit & Governance Checkliste.
 
 ### Mitwirkende der Checkliste
 
