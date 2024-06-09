@@ -1,8 +1,8 @@
 ## TENZING: OWASP PDF Authoring System
-![Mount Everest](images/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg)
-#### By Mount_Everest_as_seen_from_Drukair2.jpg: shrimpo1967derivative work: Papa Lima Whiskey 2 (talk) - This file was derived from: Mount Everest as seen
-#### from Drukair2.jpg:, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=18262217
-#### By Jamling Tenzing Norgay - http://www.tenzing-norgay-trekking.de, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=11252058
+![Mount Everest](images/336504727-8df841b8-8235-4fe7-b3c1-38a6797a651a.png)
+>white|black|left|6|8 By Mount_Everest_as_seen_from_Drukair2.jpg: shrimpo1967derivative work: Papa Lima Whiskey 2 (talk) - This file was derived from: Mount Everest as seen
+  >white|black|left|6|8 from Drukair2.jpg:, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=18262217
+>white|black|left|6|8 By Jamling Tenzing Norgay - http://www.tenzing-norgay-trekking.de, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=11252058
 
 Edmund Hillary and Tenzing Norgay are the first two people known to certainly reach the summit of Mount Everest on 29 May 1953.
 
@@ -76,23 +76,23 @@ ISO References
 The process of publishing PDF using the owasp_pdf tool (OWASP PDF Release Process) consists of two phases.
 
 In the phase 1,
-1. Localize markdown/image files and freeze them, then
-2. Push a pull request to the owasp_pdf central repository (where this README file is stored) with the frozen markdown/image files.
+1. Localize markdown/image files and finalize them, then
+2. Send a pull request to the owasp_pdf central repository (where this README file is stored) with the final markdown/image files.
 
   > Currently, there are two projects registered: "OWASP Top 10 for LLM Applications v1.1" (project code: LLM) and "LLM AI Security & Governance Checklist v1.1" (project code: GOV).
 
 In the phase 2,
 1. The owner of the project reviews the pull request,
 2. If approved, the owner removes the W.I.P. watermark and creates the official PDF,
-3. "git add -f" and push the PDF to the owasp_pdf central repository along with the frozen markdown/image files, then finally,
-4. Publish the PDF on genai.owasp.org/resources site.
+3. "git add -f" and push the PDF to the owasp_pdf central repository along with the final markdown/image files, then,
+4. Publish the PDF on [genai.owasp.org/resources](https://genai.owasp.org/resources/) site.
 
 ### 6. Localization Process Best Practices
 
 owasp_pdf is designed to cleanly separate PDF building and contents localization and support fully autonomous localization. The following are the best practices we learned from the owasp_pdf beta program.
 
-- Join "owasp pdf users" community channel.  Information about the owasp_pdf tool updates, usage tips and ideas, questions&answers are shared.
-- Form a localization team for your target project_language.  2 to 5 members; 3 would be best for quick move and credibility of the output.
+- Join "#owasp-pdf-users" community channel.  Information about the owasp_pdf tool updates, usage tips and ideas, questions&answers are shared.
+- Form a localization team for your target project_language.  2 to 5 members; 3 would be best for quick decision making and credibility of the output.
 - Create a github repository for your target project_language.  Simply clone or fork the owasp_pdf central repository and run the collab localization there.
 - Suggested scrum team formation:
   - At least one member must have Mac to build W.I.P PDF anytime.
