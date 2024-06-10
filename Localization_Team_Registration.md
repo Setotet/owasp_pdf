@@ -1,24 +1,21 @@
 ## OWASP PDF LOCALIZATION TEAM REGISTRATION
 
-- To request for a new localization, add a leader row with Loc Repo URL and Start Date followed by member row(s) to be sorted on Language.
+- To request for a new localization, add a row with Start Date, Loc Repo URL and a list of members' Slack IDs with the leader's ID first, separated by ; and sorted on Language.
 - Loc Repo URL is optional (recommended for status sharing)
 
 
 ### GOV: LLM AI Security & Governance Checklist v1.1
 
-|Project|Language|Members|Loc Repo URL|Start Date|Release Date  |
-|-------|--------|-------|------------|----------|--------------|
-|GOV    |de-DE   |       |     -      |    -     |              |
-|GOV    |ja-JP   |       |     -      |    -     |2024-04-10    |
+|Project|Language|Members(slack)|Loc Repo URL|Start Date|Release Date  |
+|-------|--------|--------------|------------|----------|--------------|
+|GOV    |de-DE   |**@johann-peter.hartmann**; @Philippe Schrettenbrunner|-|-||
+|GOV    |ja-JP   |**@setotet**; @riotaro|-|-|2024-04-10|
 
 
 ### LLM: OWASP Top 10 for LLM Applications v1.1
 
-|Project|Language|Members|Loc Repo URL|Start Date|Release Date  |
-|-------|--------|-------|------------|----------|--------------|
-|LLM    |de-DE   |       |     -      |    -     |              |
-|LLM    |es-ES   |@Lead  |            |          |              |
-|       |        |@Member 1  |        |          |              |
-|       |        |@Member 2  |        |          |              |
-|LLM    |it-IT   |       |     -      |    -     |2024-05-29    |
-|LLM    |ja-JP   |       |     -      |    -     |2024-04-25    |
+|Project|Language|Members(slack)|Loc Repo URL|Start Date|Release Date  |
+|-------|--------|--------------|------------|----------|--------------|
+|LLM    |de-DE   |**@Philippe Schrettenbrunner**; @johann-peter.hartmann|-|-||
+|LLM    |it-IT   |**@Fabrizio Cilli**; @Matteo; @Riccardo Sirigu; @Valerio |-|-|2024-05-29|
+|LLM    |ja-JP   |**@riotaro**; @Yusuke Karasawa; @Kuramochi（LAC）; @felicsjp; @natsu ooke|-|-|2024-04-25|
