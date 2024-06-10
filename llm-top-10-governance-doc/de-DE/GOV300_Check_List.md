@@ -29,7 +29,7 @@ Das KI-Asset-Inventar sollte sowohl für intern entwickelte als auch für extern
 - Katalogisieren Sie KI-Datenquellen und die Sensibilität der Daten (geschützt, vertraulich, öffentlich)
 - Stellen Sie fest, ob Pen-Tests oder Red-Teaming für eingesetzten KI-Lösungen erforderlich sind, um das aktuelle Angriffsrisiko zu ermitteln.
 - Erstellen Sie einen Onboarding-Prozess für KI-Lösungen.
-- Stellen Sie sicher, dass qualifiziertes IT-Admin-Personal entweder intern oder extern verfügbar ist, gemäß den Anforderungen aus der .
+- Stellen Sie sicher, dass qualifiziertes IT-Admin-Personal entweder intern oder extern verfügbar ist, gemäß den Anforderungen aus der SBOM.
 
 ### KI-Sicherheits- und Datenschutzschulung
 
