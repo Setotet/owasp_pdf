@@ -2,7 +2,7 @@
 
 Jeder Internetnutzende und jedes Unternehmen muss sich auf die kommende Welle leistungsfähiger Anwendungen generativer künstlicher Intelligenz (GenAI) vorbereiten. GenAI verspricht enorme Innovationen, Effizienz und kommerzielle Vorteile in einer Vielzahl von Branchen. Doch wie jede leistungsstarke Technologie in einem frühen Entwicklungsstadium birgt sie ihre eigenen offensichtlichen und unerwarteten Herausforderungen.
 
-Künstliche Intelligenz hat in den letzten 50 Jahren große Fortschritte gemacht und eine Vielzahl von Unternehmensprozessen unauffällig unterstützt, bis das öffentliche Erscheinen von ChatGPT die Entwicklung und Nutzung von Large Language Models (LLMs) sowohl bei Einzelpersonen als auch bei Unternehmen vorangetrieben hat. Anfangs waren diese Technologien auf akademische Studien oder die Ausführung bestimmter, aber wichtiger Aktivitäten innerhalb von Unternehmen beschränkt und nur für wenige Auserwählte sichtbar. Die jüngsten Fortschritte in der Verfügbarkeit von Daten, Rechenleistung, GenAI-Fähigkeiten und die Veröffentlichung von Tools wie Llama 2, ElevenLabs und Midjourney haben künstliche Intelligenz (KI) jedoch von einer Nische zu einer allgemein weitverbreiteten Akzeptanz gebracht. Diese Verbesserungen haben nicht nur die GenAI-Technologien zugänglicher gemacht, sondern auch den kritischen Bedarf für Unternehmen erzeugt, solide Strategien für die Integration und Nutzung von KI in ihren Geschäftsabläufen zu entwickeln, was einen großen Schritt nach vorn in der Art und Weise darstellt, wie wir Technologie nutzen.
+Künstliche Intelligenz hat in den letzten 50 Jahren große Fortschritte gemacht und eine Vielzahl von Unternehmensprozessen unauffällig unterstützt, bis das Veröffentlichen von ChatGPT die Entwicklung und Nutzung von Large Language Models (LLMs) sowohl bei Einzelpersonen als auch bei Unternehmen vorangetrieben hat. Anfangs waren diese Technologien auf akademische Studien oder die Ausführung bestimmter, aber wichtiger Aktivitäten innerhalb von Unternehmen beschränkt und nur für wenige Auserwählte sichtbar. Die jüngsten Fortschritte in der Verfügbarkeit von Daten, Rechenleistung, GenAI-Fähigkeiten und die Veröffentlichung von Tools wie Llama 2, ElevenLabs und Midjourney haben künstliche Intelligenz (KI) jedoch von einer Nische zu einer allgemein weitverbreiteten Akzeptanz gebracht. Diese Verbesserungen haben nicht nur die GenAI-Technologien zugänglicher gemacht, sondern auch den kritischen Bedarf für Unternehmen erzeugt, solide Strategien für die Integration und Nutzung von KI in ihren Geschäftsabläufen zu entwickeln, was einen großen Schritt nach vorn in der Art und Weise darstellt, wie wir Technologie nutzen.
 
 Künstliche Intelligenz ist ein breiter Begriff, der alle Bereiche der Informatik umfasst, in denen Maschinen Aufgaben ausführen, die normalerweise menschliche Intelligenz erfordern würden. Maschinelles Lernen und Generative AI sind zwei Unterkategorien von KI.
 Maschinelles Lernen ist eine Unterkategorie von KI, die sich auf das Erstellen von Algorithmen konzentriert, die aus Daten lernen. Maschinelle Lernalgorithmen werden mit Datensätzen trainiert und können dann diese Daten verwenden, um Vorhersagen oder Entscheidungen für neue Daten zu treffen.
@@ -11,7 +11,8 @@ Ein Large Language Model (LLM) ist eine Art von KI-Modell, das menschenähnlich 
 
 Organisationen betreten bei der Sicherung und Überwachung von GenAI-Lösungen Neuland. Der schnelle Fortschritt von GenAI öffnet auch Türen für Gegner, ihre Angriffsstrategien zu verbessern und stellt damit eine doppelte Herausforderung aus Verteidigung und Bedrohungseskalation dar.
 
-Unternehmen verwenden künstliche Intelligenz in vielen Bereichen, einschließlich HR, Recruiting, E-Mail-Spam-Filterung, bei SIEM für Verhaltensanalysen und in Managed Detection and Response-Anwendungen. Der Schwerpunkt dieses Dokuments liegt jedoch auf Large-Language -Model-Anwendungen und ihrer Funktion bei der Erstellung generierter Inhalte.
+Unternehmen verwenden künstliche Intelligenz in vielen Bereichen, einschließlich HR, Recruiting, E-Mail-Spam-Filterung, bei SIEM, für Verhaltensanalysen und in Managed Detection and Response-Anwendungen. Der Schwerpunkt dieses Dokuments liegt jedoch auf Large-Language-Model-Anwendungen und ihrer Funktion bei der Erstellung generierter Inhalte.
+
 
 ### Verantwortungsvolle und vertrauenswürdige künstliche Intelligenz
 
@@ -45,7 +46,7 @@ Zweckmäßig
 ##### basierend auf dem Montreal Ethics Institute Beispiel
 
 ### Zielgruppe
-Die OWASP Top 10 LLM AI Security & Governance Checkliste richtet sich an Führungskräfte aus den Bereichen Unternehmensführung, Technik, Cybersecurity, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Security-Teams sowie Verteidiger. Es richtet sich an Personen, die in der schnelllebigen Welt der KI an vorderster Front stehen und nicht nur versuchen, KI für den Geschäftserfolg zu nutzen, sondern sich auch vor den Risiken einer übereilten oder unsicheren KI-Implementierung schützen wollen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu nutzen, Herausforderungen zu bewältigen und Risiken zu mindern.
+Die OWASP Top 10 LLM AI Security & Governance Checkliste richtet sich an Führungskräfte aus den Bereichen Unternehmensführung, Technik, Cybersecurity, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Security-Teams sowie Sicherheitsverantwortliche. Sie richtet sich an Personen, die in der schnelllebigen Welt der KI an vorderster Front stehen und nicht nur versuchen, KI für den Geschäftserfolg zu nutzen, sondern sich auch vor den Risiken einer übereilten oder unsicheren KI-Implementierung schützen wollen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu nutzen, Herausforderungen zu bewältigen und Risiken zu mindern.
 
 Diese Checkliste soll diesen Führungskräften aus Technologie und Business dabei helfen, schnell die Risiken und Vorteile der Nutzung von LLM zu verstehen und sich auf die Entwicklung einer umfassenden Liste kritischer Bereiche und Aufgaben zu konzentrieren, die benötigt werden, um die Organisation zu verteidigen und zu schützen, während sie eine Large-Language-Model-Strategie entwickeln.
 
@@ -95,7 +96,7 @@ Mitarbeiter in Organisationen profitieren von Schulungen, um künstliche Intelli
 Richtlinien für faire Nutzung und gesunde Interaktion sind Schlüsselaspekte, die ein Eckpfeiler für den Erfolg zukünftiger KI-Cybersicherheitsbewusstseinskampagnen sein werden, wenn man sie von Anfang an integriert. Sie vermitteln den Nutzenden die grundlegenden Regeln der Interaktion und die Fähigkeit, gutes von schlechtem oder unethischem Verhalten zu unterscheiden.
 
 ### Integration von LLM-Sicherheit und -Governance mit bestehenden,
-### Etablierte Praktiken und Kontrollen
+### etablierte Praktiken und Kontrollen
 
 Obwohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, Datenschutz und der Erfüllung rechtlicher und regulatorischer Anforderungen hinzufügen, sind die lang existierenden bewährten Praktiken immer noch der beste Weg, um Probleme zu identifizieren, Schwachstellen zu finden, diese zu beheben und potenzielle Sicherheitsprobleme zu reduzieren.
 
@@ -106,7 +107,7 @@ Obwohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, D
 
 LLM-Fähigkeiten führen neue Varianten von Angriffen und Angriffsflächen ein. LLMs sind anfällig für komplexe Geschäftslogikfehler, wie z. B. Prompt-Injection, unsicheres Plugin-Design und Remote-Code-Ausführung. Existierende Best Practices sind der beste Weg, um diese Probleme zu lösen. Ein internes Produktsicherheitsteam, das sichere Softwareüberprüfung, Architektur, Data-Governance und Drittanbieterbewertungen versteht, muss überprüfen, wie geeignet die existierenden Mechanismen sind, um Probleme zu finden, die durch LLM verschärft werden könnten, wie z. B. Stimmklonung, Personifizierung oder das Umgehen von Captchas.
 
-Angesichts der aktuellen Fortschritte im maschinellen Lernen, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning und in jüngster Zeit LLMs (Large Language Models) und Generative KI wird empfohlen, Fachleute aus in diesen Bereichen in Cybersecurity- und Devops-Teams einzubeziehen. Ihre Expertise wird nicht nur bei der Einführung dieser Technologien, sondern auch bei der Entwicklung innovativer Analysen und Antworten auf neu entstehende Herausforderungen helfen.
+Angesichts der aktuellen Fortschritte im maschinellen Lernen, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning und in jüngster Zeit LLMs (Large Language Models) und Generative AI wird empfohlen, Fachleute aus in diesen Bereichen in Cybersecurity- und Devops-Teams einzubeziehen. Ihre Expertise wird nicht nur bei der Einführung dieser Technologien, sondern auch bei der Entwicklung innovativer Analysen und Antworten auf neu entstehende Herausforderungen helfen.
 
 ### Risiko
 
@@ -117,9 +118,9 @@ Bei der Erwähnung von Risiken wird die Definition der ISO 31000 verwendet: Risi
 Aktuelle Systeme zur Klassifizierung von Schwachstellen und zum Austausch von Bedrohungsinformationen, wie etwa OVAL, STIX, CVE und CWE, arbeiten noch an der Fähigkeit, spezifische Schwachstellen und Bedrohungen in Bezug auf große Sprachmodelle (LLMs) und Prediction-Modelle zu überwachen und die Verteidiger zu alarmieren. Es wird erwartet, dass Organisationen sich auf diese etablierten und anerkannten Standards wie CVE für die Klassifizierung von Schwachstellen und STIX für den Austausch von Informationen über Cyber-Bedrohungen (CTI) stützen werden, wenn Schwachstellen oder Bedrohungen für KI/ML-Systeme und deren Lieferketten identifiziert werden.
 ## Festlegen der LLM-Strategie
 
-Die rasche Verbreitung von Anwendungen auf Basis großer Sprachmodelle (LLM) hat die Aufmerksamkeit an und Untersuchung von allen KI/ML-Systemen, die in Geschäftsprozessen verwendet werden, verstärkt. Dies umfasst sowohl Generative KI als auch lang etablierte prädikative-KI/ML-Systeme. Diese erhöhte Fokussierung legt potenzielle Risiken offen, wie etwa Angreifer, die Systeme ins Visier nehmen und zuvor übersehen wurden, und Governance- oder rechtliche Herausforderungen, die möglicherweise in Bezug auf rechtliche, Datenschutz-, Haftungs- oder Garantiefragen bislang ignoriert wurden. Für jede Organisation, die KI/ML-Systeme in ihren Abläufen einsetzt, ist es entscheidend, umfassende Richtlinien, Governance, Sicherheitsvorgehen, Datenschutzmaßnahmen und Verantwortungsstandards zu bewerten und zu etablieren, um sicherzustellen, dass diese Technologien bezüglich Sicherheit und Ethik zu den Geschäftsprozessen passen.
+Die rasche Verbreitung von Anwendungen auf Basis großer Sprachmodelle (LLM) hat die Aufmerksamkeit an und Untersuchung von allen KI/ML-Systemen, die in Geschäftsprozessen verwendet werden, verstärkt. Dies umfasst sowohl Generative AI als auch lang etablierte prädikative-KI/ML-Systeme. Diese erhöhte Fokussierung legt potenzielle Risiken offen, wie etwa Angreifer, die Systeme ins Visier nehmen und zuvor übersehen wurden, und Governance- oder rechtliche Herausforderungen, die möglicherweise in Bezug auf rechtliche, Datenschutz-, Haftungs- oder Garantiefragen bislang ignoriert wurden. Für jede Organisation, die KI/ML-Systeme in ihren Abläufen einsetzt, ist es entscheidend, umfassende Richtlinien, Governance, Sicherheitsvorgehen, Datenschutzmaßnahmen und Verantwortungsstandards zu bewerten und zu etablieren, um sicherzustellen, dass diese Technologien bezüglich Sicherheit und Ethik zu den Geschäftsprozessen passen.
 
-Angreifer oder Gegner stellen die unmittelbarste und schädlichste Bedrohung für Unternehmen, Personen und Regierungsbehörden dar. Ihre Ziele reichen von finanziellem Gewinn bis hin zu Spionage und führen dazu, dass sie kritische Informationen stehlen, den Betrieb stören und das Vertrauen schädigen. Dazu erwerben sie durch KI und maschinelles Lernen die Möglichkeit, mit Geschwindigkeit und Raffinesse den Verteidigern voraus zu sein.
+Angreifende oder Gegner stellen die unmittelbarste und schädlichste Bedrohung für Unternehmen, Personen und Regierungsbehörden dar. Ihre Ziele reichen von finanziellem Gewinn bis hin zu Spionage und führen dazu, dass sie kritische Informationen stehlen, den Betrieb stören und das Vertrauen schädigen. Dazu erwerben sie durch KI und maschinelles Lernen die Möglichkeit, mit Geschwindigkeit und Raffinesse den Verteidigern voraus zu sein.
 
 Die dringendste LLM-Bedrohung jenseits von Angreifern ist "Shadow AI": Mitarbeiter, die nicht genehmigte Online-KI-Tools, unsichere Browser-Plug-ins und Drittanbieteranwendungen verwenden, die LLM-Funktionen durch Updates oder Upgrades einführen und damit standardisierte Softwaregenehmigungsprozesse umgehen.
 
@@ -127,8 +128,8 @@ Bereitstellung
 
 Schritt 1: Resilienz-Strategie zuerst
 
-▶ Identifikation unmittelbarer Bedrohungen durch Bedrohungsmodellierung von Missbrauchsfällen
-▶ Überprüfen Sie interne oder externe Ausnutzungsmöglichkeiten in den Bedrohungsmodellszenarien und verifizieren Sie Sicherheitsmaßnahmen
+▶ Identifizieren Sie unmittelbare Bedrohungen durch Bedrohungsmodellierung von Missbrauchsfällen
+▶ Überprüfen Sie interne oder externe Mißbrauchsmöglichkeiten in den Bedrohungsmodellszenarien und verifizieren Sie Sicherheitsmaßnahmen
 ▶ Scannen und überwachen Sie Ihr Environment auf Vorkommen von Schadsoftware
 
 Schritt 2: Bestehende Richtlinien aktualisieren
@@ -230,7 +231,7 @@ Kann die Organisation die Erzeugung von schädlichen oder unangemessenen Inhalte
 Das KI-Asset-Inventar sollte sowohl für intern entwickelte als auch für externe oder Drittanbieterlösungen genutzt werden.
 
 Katalogisieren Sie bestehende KI-Dienste, Tools und deren Eigentümer. Weisen Sie eine Kennzeichnung im Asset-Management für spezifische Inventare zu.
-Nehmen Sie KI-Komponenten in die Software Bill of Material (SBOM) auf, eine umfassende Liste aller Softwarekomponenten, Abhängigkeiten und Metadaten, die mit Anwendungen verbunden sind.
+Nehmen Sie KI-Komponenten in die Software Bill of Materials (SBOM) auf, eine umfassende Liste aller Softwarekomponenten, Abhängigkeiten und Metadaten, die mit Anwendungen verbunden sind.
 Katalogisieren Sie KI-Datenquellen und die Sensibilität der Daten (geschützt, vertraulich, öffentlich)
 Stellen Sie fest, ob Pen-Tests oder Red-Teaming für eingesetzten KI-Lösungen erforderlich sind, um das aktuelle Angriffsrisiko zu ermitteln.
 Erstellen Sie einen Onboarding-Prozess für KI-Lösungen.
@@ -295,7 +296,7 @@ Bundesorganisationen wie die US Equal Employment Opportunity Commission (EEOC), 
 
 Recherchieren Sie länderspezifische, staatliche oder andere offizielle KI-Compliance-Anforderungen.
 Ermitteln Sie Compliance-Anforderungen für die Einschränkung der elektronischen Überwachung von Mitarbeitern und beschäftigungsbezogenen automatisierten Entscheidungssystemen (Vermont, Kalifornien, Maryland, New York, New Jersey)
-Ermitteln Sie Compliance-Anforderungen für die Zustimmung zur Gesichtserkennung und AI-basierter Videoanalyse.
+Ermitteln Sie Compliance-Anforderungen für die Zustimmung zur Gesichtserkennung und KI-basierter Videoanalyse.
 Überprüfen Sie KI-Tools, die für die Einstellung oder Verwaltung von Mitarbeitern verwendet oder in Betracht gezogen werden.
 Bestätigen Sie die Einhaltung der anwendbaren KI-Gesetze und Best Practices durch den Anbieter.
 Ermitteln und dokumentieren Sie alle Produkte, die KI während des Einstellungsprozesses verwenden. Fragen Sie, wie das Modell trainiert wurde, wie es überwacht wird und verfolgen Sie alle Korrekturen, um Diskriminierung und Bias zu vermeiden.
@@ -308,7 +309,7 @@ Ermitteln Sie, wie der Anbieter oder das Tool Daten speichert und löscht und di
 
 Erstellen Sie ein Bedrohungsmodell für LLM-Komponenten und Architekturvertrauensgrenzen.
 Datensicherheit: überprüfen Sie, wie Daten basierend auf Sensibilität klassifiziert und geschützt werden, einschließlich persönlicher und proprietärer Geschäftsdaten. (Wie werden Benutzerberechtigungen verwaltet und welche Schutzmaßnahmen sind vorhanden?)
-Zugangskontrolle: implementieren Sie Zugangskontrollen mit minimalen Rechten und setzen Sie Verteidigungsmaßnahmen in der Tiefe um.
+Zugangskontrolle: implementieren Sie Zugangskontrollen mit minimalen Rechten und setzen Sie Defense in Depth um.
 Sicherheit der Trainingspipeline: sichern Sie strenge Kontrolle für Trainingsdaten-Governance, Pipelines, Modelle und Algorithmen.
 Sicherheit von Eingaben und Ausgaben: prüfen Sie Methoden zur Eingabevalidierung sowie wie Ausgaben gefiltert, bereinigt und genehmigt werden.
 Überwachung und Reaktion: dokumentieren Sie Workflows, Überwachung und Reaktionen, um Automatisierung, Protokollierung und Auditing nachvollziehen zu können. Stellen Sie sicher, dass Prüfprotokolle gesichert sind.
@@ -317,7 +318,7 @@ Integrieren Sie Anwendungstests, Quellcodeüberprüfungen, Schwachstellenbewertu
 Untersuchen Sie die Auswirkungen von Bedrohungen und Angriffen auf LLM-Lösungen, wie Prompt Injection, die Preisgabe sensibler Informationen oder Prozessmanipulation.
 Untersuchen Sie die Auswirkungen von Angriffen und Bedrohungen auf LLM-Modelle, einschließlich Model-Poisoning, unsachgemäßem Datenhandling, Angriffen auf die Lieferkette und Modelldiebstahl.
 Sicherheit der Lieferkette: fordern Sie Drittprüfungen, Penetrationstests und Codeüberprüfungen für Drittanbieter an. (sowohl initial als auch fortlaufend)
-Infrastruktursicherheit: fragen Sie, wie oft ein Anbieter Resilienztests durchführt? Was sind die SLAs in Bezug auf Verfügbarkeit, Skalierbarkeit und Performance?
+Infrastruktursicherheit: fragen Sie, wie oft ein Anbieter Resilienztests durchführt. Was sind die SLAs in Bezug auf Verfügbarkeit, Skalierbarkeit und Performance?
 Aktualisieren Sie die Einsatzpläne für Incident Response und beziehen Sie Zwischenfälle mit großen Sprachmodellen (LLMs) in die Tabletop-Übungen ein.
 Identifizieren Sie oder erweitern Sie Metriken, um generative Cybersicherheits-KI mit anderen Ansätzen zu vergleichen, um erwartete Produktivitätssteigerungen zu messen.
 
@@ -368,19 +369,19 @@ Integrieren Sie Red Team-Tests als Standardpraxis für KI-Modelle und Anwendunge
 
 OWASP Top 10 für LLM-Applikationen
 
-LLM01: Prompt Injection (Prompt-Einschleusung)
+LLM01: Prompt Injection
 Mit raffinierten Eingaben kann man ein Large Language Model manipulieren und unbeabsichtigte Aktionen verursachen. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben durch externen Quellen manipuliert werden.
 
 LLM02: Unsichere Ausgabeverarbeitung
 Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ohne Überprüfung akzeptiert wird, und damit Backend-Systeme angreifbar macht. Missbrauch kann zu schwerwiegenden Konsequenzen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegienerweiterung oder Remote-Code-Ausführung führen.
 
-LLM03: Poisoning der Trainingsdaten
+LLM03: Poisoning von Trainingsdaten
 Dies tritt auf, wenn LLM-Trainingsdaten manipuliert werden und dadurch  Sicherheitslücken oder Bias entstehen, die die Sicherheit, Wirksamkeit oder ethisches Verhalten beeinträchtigen. Typische Quellen enthalten Common Crawl, WebText, OpenWebText und Bücher.
 
 LLM04: Denial of Service des Modells
 Angreifer verursachen ressourcenintensive Operationen auf Large Language Models, was zu Servicedegradierung oder hohen Kosten führt. Die Schwachstelle wird durch die ressourcenintensive Natur der LLMs und die Unvorhersehbarkeit der Benutzereingaben vergrößert.
 
-LLM05: Schwachstellen in der Supply Chain (Lieferkette)
+LLM05: Schwachstellen in der Lieferkette
 Der Lifecycle von LLM-Anwendungen kann durch anfällige Komponenten oder Dienste beeinträchtigt werden, was zu Sicherheitsangriffen führt. Die Verwendung von Drittanbieterdatensätzen, vortrainierten Modellen und Plug-ins kann Schwachstellen hinzufügen.
 
 LLM06: Offenlegung sensibler Informationen
@@ -475,7 +476,7 @@ OWASP Application Security Verification Standard ASVS
 #### Beschreibung
 Der Application-Security-Verification-Standard(ASVS) Projekt bietet eine Grundlage für das Testen von technischen Sicherheitskontrollen von Webanwendungen und bietet Entwicklern auch eine Liste von Anforderungen für die sichere Entwicklung.
 #### Warum es empfohlen & wo es verwendet wird
-Es ist ein Kochbuch für Webanwendungssicherheitsanforderungen, Sicherheitstests und Metriken. Verwenden Sie es, um Sicherheits-User-Stories und Sicherheits-Use-Case-Release-Tests zu etablieren.
+Es ist eine Sammlung an Empfehlungen für Webanwendungssicherheitsanforderungen, Sicherheitstests und Metriken. Verwenden Sie es, um Sicherheits-User-Stories und Sicherheits-Use-Case-Release-Tests zu etablieren.
 
 #### OWASP-Ressource
 OWASP Threat and Safeguard Matrix (TaSM)
@@ -571,7 +572,7 @@ Sie können atomare Tests direkt von der Kommandozeile aus ausführen; es ist ke
 [MITRE CTI-Blueprints](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our
 ## Team
 
-Danke an die Mitwirkenden der OWASP Top 10 für LLM-Applikationen.
+Danke an die Mitwirkenden der OWASP Top 10 für LLM Applikationen Cybersicherheit & Governance Checkliste.
 
 ### Mitwirkende der Checkliste
 
