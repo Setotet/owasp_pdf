@@ -51,7 +51,7 @@
     "blockquote_font.size": 10,
     "blockquote_font.line_pitch": 14.0,
     "blockquote_font.line_alignment": "left",
-    "unordered_list_marker": "square",
+    "unordered_list_marker": "circle",
     "md_file_range": [
         0,
         999999
