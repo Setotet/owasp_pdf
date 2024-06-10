@@ -25,11 +25,11 @@ Bedrohungsmodellierung wird dringend empfohlen, um Risiken zu identifizieren sow
 Das KI-Asset-Inventar sollte sowohl für intern entwickelte als auch für externe oder Drittanbieterlösungen genutzt werden.
 
 - Katalogisieren Sie bestehende KI-Dienste, Tools und deren Eigentümer. Weisen Sie eine Kennzeichnung im Asset-Management für spezifische Inventare zu.
-- Nehmen Sie KI-Komponenten in die Software Bill of Material (SBOM) auf, eine umfassende Liste aller Softwarekomponenten, Abhängigkeiten und Metadaten, die mit Anwendungen verbunden sind.
+- Nehmen Sie KI-Komponenten in die Software Bill of Materials (SBOM) auf, eine umfassende Liste aller Softwarekomponenten, Abhängigkeiten und Metadaten, die mit Anwendungen verbunden sind.
 - Katalogisieren Sie KI-Datenquellen und die Sensibilität der Daten (geschützt, vertraulich, öffentlich)
 - Stellen Sie fest, ob Pen-Tests oder Red-Teaming für eingesetzten KI-Lösungen erforderlich sind, um das aktuelle Angriffsrisiko zu ermitteln.
 - Erstellen Sie einen Onboarding-Prozess für KI-Lösungen.
-- Stellen Sie sicher, dass qualifiziertes IT-Admin-Personal entweder intern oder extern verfügbar ist, gemäß den Anforderungen aus der SBOM.
+- Stellen Sie sicher, dass qualifiziertes IT-Admin-Personal entweder intern oder extern verfügbar ist, gemäß den Anforderungen aus der .
 
 ### KI-Sicherheits- und Datenschutzschulung
 
