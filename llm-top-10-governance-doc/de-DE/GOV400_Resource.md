@@ -2,19 +2,19 @@
 
 [OWASP Top 10 für LLM-Applikationen](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
 
-  >dodgerblue|white|left|12|16 LLM01: Prompt Injection (Prompt-Einschleusung)
+  >dodgerblue|white|left|12|16 LLM01: Prompt Injection
   >azure|black|justified|10|12 Mit raffinierten Eingaben kann man ein Large Language Model manipulieren und unbeabsichtigte Aktionen verursachen. Direkte Injections überschreiben System-Prompts, während indirekte Eingaben durch externen Quellen manipuliert werden.
 
   >dodgerblue|white|left|12|16 LLM02: Unsichere Ausgabeverarbeitung
   >azure|black|justified|10|12 Diese Schwachstelle tritt auf, wenn eine Ausgabe von einem LLM ohne Überprüfung akzeptiert wird, und damit Backend-Systeme angreifbar macht. Missbrauch kann zu schwerwiegenden Konsequenzen wie XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), SSRF (Server Side Request Forgery), Privilegienerweiterung oder Remote-Code-Ausführung führen.
 
-  >dodgerblue|white|left|12|16 LLM03: Poisoning der Trainingsdaten
+  >dodgerblue|white|left|12|16 LLM03: Poisoning von Trainingsdaten
   >azure|black|justified|10|12 Dies tritt auf, wenn LLM-Trainingsdaten manipuliert werden und dadurch  Sicherheitslücken oder Bias entstehen, die die Sicherheit, Wirksamkeit oder ethisches Verhalten beeinträchtigen. Typische Quellen enthalten Common Crawl, WebText, OpenWebText und Bücher.
 
   >dodgerblue|white|left|12|16 LLM04: Denial of Service des Modells
   >azure|black|justified|10|12 Angreifer verursachen ressourcenintensive Operationen auf Large Language Models, was zu Servicedegradierung oder hohen Kosten führt. Die Schwachstelle wird durch die ressourcenintensive Natur der LLMs und die Unvorhersehbarkeit der Benutzereingaben vergrößert.
 
-  >dodgerblue|white|left|12|16 LLM05: Schwachstellen in der Supply Chain (Lieferkette)
+  >dodgerblue|white|left|12|16 LLM05: Schwachstellen in der Lieferkette
   >azure|black|justified|10|12 Der Lifecycle von LLM-Anwendungen kann durch anfällige Komponenten oder Dienste beeinträchtigt werden, was zu Sicherheitsangriffen führt. Die Verwendung von Drittanbieterdatensätzen, vortrainierten Modellen und Plug-ins kann Schwachstellen hinzufügen.
 
   >dodgerblue|white|left|12|16 LLM06: Offenlegung sensibler Informationen
@@ -109,7 +109,7 @@ Wie sie integriert werden, ist verfügbar unter den [OWASP-Integrationsstandards
 #### Beschreibung
   Der Application-Security-Verification-Standard(ASVS) Projekt bietet eine Grundlage für das Testen von technischen Sicherheitskontrollen von Webanwendungen und bietet Entwicklern auch eine Liste von Anforderungen für die sichere Entwicklung.
 #### Warum es empfohlen & wo es verwendet wird
-  Es ist ein Kochbuch für Webanwendungssicherheitsanforderungen, Sicherheitstests und Metriken. Verwenden Sie es, um Sicherheits-User-Stories und Sicherheits-Use-Case-Release-Tests zu etablieren.
+  Es ist eine Sammlung an Empfehlungen für Webanwendungssicherheitsanforderungen, Sicherheitstests und Metriken. Verwenden Sie es, um Sicherheits-User-Stories und Sicherheits-Use-Case-Release-Tests zu etablieren.
 
 #### OWASP-Ressource
   [OWASP Threat and Safeguard Matrix (TaSM)](https://owasp.org/www-project-threat-and-safeguard-matrix/)

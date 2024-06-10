@@ -11,7 +11,8 @@ Künstliche Intelligenz hat in den letzten 50 Jahren große Fortschritte gemacht
 
 Organisationen betreten bei der Sicherung und Überwachung von GenAI-Lösungen Neuland. Der schnelle Fortschritt von GenAI öffnet auch Türen für Gegner, ihre Angriffsstrategien zu verbessern und stellt damit eine doppelte Herausforderung aus Verteidigung und Bedrohungseskalation dar.
 
-Unternehmen verwenden künstliche Intelligenz in vielen Bereichen, einschließlich HR, Recruiting, E-Mail-Spam-Filterung, bei SIEM für Verhaltensanalysen und in Managed Detection and Response-Anwendungen. Der Schwerpunkt dieses Dokuments liegt jedoch auf Large-Language -Model-Anwendungen und ihrer Funktion bei der Erstellung generierter Inhalte.
+Unternehmen verwenden künstliche Intelligenz in vielen Bereichen, einschließlich HR, Recruiting, E-Mail-Spam-Filterung, bei SIEM, für Verhaltensanalysen und in Managed Detection and Response-Anwendungen. Der Schwerpunkt dieses Dokuments liegt jedoch auf Large-Language-Model-Anwendungen und ihrer Funktion bei der Erstellung generierter Inhalte.
+
 
 ### Verantwortungsvolle und vertrauenswürdige künstliche Intelligenz
 
@@ -45,7 +46,7 @@ In dem Maße, in dem sich die Herausforderungen und Vorteile der künstlichen In
 ##### basierend auf dem Montreal Ethics Institute Beispiel
 
 ### Zielgruppe
-Die OWASP Top 10 LLM AI Security & Governance Checkliste richtet sich an Führungskräfte aus den Bereichen Unternehmensführung, Technik, Cybersecurity, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Security-Teams sowie Verteidiger. Es richtet sich an Personen, die in der schnelllebigen Welt der KI an vorderster Front stehen und nicht nur versuchen, KI für den Geschäftserfolg zu nutzen, sondern sich auch vor den Risiken einer übereilten oder unsicheren KI-Implementierung schützen wollen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu nutzen, Herausforderungen zu bewältigen und Risiken zu mindern.
+Die OWASP Top 10 LLM AI Security & Governance Checkliste richtet sich an Führungskräfte aus den Bereichen Unternehmensführung, Technik, Cybersecurity, Datenschutz, Compliance und Recht, DevSecOps, MLSecOps und Security-Teams sowie Sicherheitsverantwortliche. Sie richtet sich an Personen, die in der schnelllebigen Welt der KI an vorderster Front stehen und nicht nur versuchen, KI für den Geschäftserfolg zu nutzen, sondern sich auch vor den Risiken einer übereilten oder unsicheren KI-Implementierung schützen wollen. Diese Führungskräfte und Teams müssen Taktiken entwickeln, um Chancen zu nutzen, Herausforderungen zu bewältigen und Risiken zu mindern.
 
 Diese Checkliste soll diesen Führungskräften aus Technologie und Business dabei helfen, schnell die Risiken und Vorteile der Nutzung von LLM zu verstehen und sich auf die Entwicklung einer umfassenden Liste kritischer Bereiche und Aufgaben zu konzentrieren, die benötigt werden, um die Organisation zu verteidigen und zu schützen, während sie eine Large-Language-Model-Strategie entwickeln.
 
@@ -95,7 +96,7 @@ Mitarbeiter in Organisationen profitieren von Schulungen, um künstliche Intelli
 Richtlinien für faire Nutzung und gesunde Interaktion sind Schlüsselaspekte, die ein Eckpfeiler für den Erfolg zukünftiger KI-Cybersicherheitsbewusstseinskampagnen sein werden, wenn man sie von Anfang an integriert. Sie vermitteln den Nutzenden die grundlegenden Regeln der Interaktion und die Fähigkeit, gutes von schlechtem oder unethischem Verhalten zu unterscheiden.
 
 ### Integration von LLM-Sicherheit und -Governance mit bestehenden,
-### Etablierte Praktiken und Kontrollen
+### etablierte Praktiken und Kontrollen
 
 Obwohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, Datenschutz und der Erfüllung rechtlicher und regulatorischer Anforderungen hinzufügen, sind die lang existierenden bewährten Praktiken immer noch der beste Weg, um Probleme zu identifizieren, Schwachstellen zu finden, diese zu beheben und potenzielle Sicherheitsprobleme zu reduzieren.
 
@@ -106,7 +107,7 @@ Obwohl KI und generative KI eine neue Dimension zu Cybersicherheit, Resilienz, D
 
 LLM-Fähigkeiten führen neue Varianten von Angriffen und Angriffsflächen ein. LLMs sind anfällig für komplexe Geschäftslogikfehler, wie z. B. Prompt-Injection, unsicheres Plugin-Design und Remote-Code-Ausführung. Existierende Best Practices sind der beste Weg, um diese Probleme zu lösen. Ein internes Produktsicherheitsteam, das sichere Softwareüberprüfung, Architektur, Data-Governance und Drittanbieterbewertungen versteht, muss überprüfen, wie geeignet die existierenden Mechanismen sind, um Probleme zu finden, die durch LLM verschärft werden könnten, wie z. B. Stimmklonung, Personifizierung oder das Umgehen von Captchas.
 
-Angesichts der aktuellen Fortschritte im maschinellen Lernen, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning und in jüngster Zeit LLMs (Large Language Models) und Generative KI wird empfohlen, Fachleute aus in diesen Bereichen in Cybersecurity- und Devops-Teams einzubeziehen. Ihre Expertise wird nicht nur bei der Einführung dieser Technologien, sondern auch bei der Entwicklung innovativer Analysen und Antworten auf neu entstehende Herausforderungen helfen.
+Angesichts der aktuellen Fortschritte im maschinellen Lernen, NLP (Natural Language Processing), NLU (Natural Language Understanding), Deep Learning und in jüngster Zeit LLMs (Large Language Models) und Generative AI wird empfohlen, Fachleute aus in diesen Bereichen in Cybersecurity- und Devops-Teams einzubeziehen. Ihre Expertise wird nicht nur bei der Einführung dieser Technologien, sondern auch bei der Entwicklung innovativer Analysen und Antworten auf neu entstehende Herausforderungen helfen.
 
 ### Risiko
 

@@ -90,7 +90,7 @@ Bundesorganisationen wie die US Equal Employment Opportunity Commission (EEOC), 
 
 - Recherchieren Sie länderspezifische, staatliche oder andere offizielle KI-Compliance-Anforderungen.
 - Ermitteln Sie Compliance-Anforderungen für die Einschränkung der elektronischen Überwachung von Mitarbeitern und beschäftigungsbezogenen automatisierten Entscheidungssystemen (Vermont, Kalifornien, Maryland, New York, New Jersey)
-- Ermitteln Sie Compliance-Anforderungen für die Zustimmung zur Gesichtserkennung und AI-basierter Videoanalyse.
+- Ermitteln Sie Compliance-Anforderungen für die Zustimmung zur Gesichtserkennung und KI-basierter Videoanalyse.
 - Überprüfen Sie KI-Tools, die für die Einstellung oder Verwaltung von Mitarbeitern verwendet oder in Betracht gezogen werden.
 - Bestätigen Sie die Einhaltung der anwendbaren KI-Gesetze und Best Practices durch den Anbieter.
 - Ermitteln und dokumentieren Sie alle Produkte, die KI während des Einstellungsprozesses verwenden. Fragen Sie, wie das Modell trainiert wurde, wie es überwacht wird und verfolgen Sie alle Korrekturen, um Diskriminierung und Bias zu vermeiden.
@@ -103,7 +103,7 @@ Bundesorganisationen wie die US Equal Employment Opportunity Commission (EEOC), 
 
 - Erstellen Sie ein Bedrohungsmodell für LLM-Komponenten und Architekturvertrauensgrenzen.
 - Datensicherheit: überprüfen Sie, wie Daten basierend auf Sensibilität klassifiziert und geschützt werden, einschließlich persönlicher und proprietärer Geschäftsdaten. (Wie werden Benutzerberechtigungen verwaltet und welche Schutzmaßnahmen sind vorhanden?)
-- Zugangskontrolle: implementieren Sie Zugangskontrollen mit minimalen Rechten und setzen Sie Verteidigungsmaßnahmen in der Tiefe um.
+- Zugangskontrolle: implementieren Sie Zugangskontrollen mit minimalen Rechten und setzen Sie Defense in Depth um.
 - Sicherheit der Trainingspipeline: sichern Sie strenge Kontrolle für Trainingsdaten-Governance, Pipelines, Modelle und Algorithmen.
 - Sicherheit von Eingaben und Ausgaben: prüfen Sie Methoden zur Eingabevalidierung sowie wie Ausgaben gefiltert, bereinigt und genehmigt werden.
 - Überwachung und Reaktion: dokumentieren Sie Workflows, Überwachung und Reaktionen, um Automatisierung, Protokollierung und Auditing nachvollziehen zu können. Stellen Sie sicher, dass Prüfprotokolle gesichert sind.
@@ -112,7 +112,7 @@ Bundesorganisationen wie die US Equal Employment Opportunity Commission (EEOC), 
 - Untersuchen Sie die Auswirkungen von Bedrohungen und Angriffen auf LLM-Lösungen, wie Prompt Injection, die Preisgabe sensibler Informationen oder Prozessmanipulation.
 - Untersuchen Sie die Auswirkungen von Angriffen und Bedrohungen auf LLM-Modelle, einschließlich Model-Poisoning, unsachgemäßem Datenhandling, Angriffen auf die Lieferkette und Modelldiebstahl.
 - Sicherheit der Lieferkette: fordern Sie Drittprüfungen, Penetrationstests und Codeüberprüfungen für Drittanbieter an. (sowohl initial als auch fortlaufend)
-- Infrastruktursicherheit: fragen Sie, wie oft ein Anbieter Resilienztests durchführt? Was sind die SLAs in Bezug auf Verfügbarkeit, Skalierbarkeit und Performance?
+- Infrastruktursicherheit: fragen Sie, wie oft ein Anbieter Resilienztests durchführt. Was sind die SLAs in Bezug auf Verfügbarkeit, Skalierbarkeit und Performance?
 - Aktualisieren Sie die Einsatzpläne für Incident Response und beziehen Sie Zwischenfälle mit großen Sprachmodellen (LLMs) in die Tabletop-Übungen ein.
 - Identifizieren Sie oder erweitern Sie Metriken, um generative Cybersicherheits-KI mit anderen Ansätzen zu vergleichen, um erwartete Produktivitätssteigerungen zu messen.
 
