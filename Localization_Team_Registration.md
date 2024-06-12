@@ -5,6 +5,7 @@
 
 
 ### GOV: LLM AI Security & Governance Checklist v1.1
+Project Owner: @Sandy Dunn
 
 |Project|Language|Members(slack)|Loc Repo URL|Start Date|Release Date  |
 |-------|--------|--------------|------------|----------|--------------|
@@ -13,6 +14,7 @@
 
 
 ### LLM: OWASP Top 10 for LLM Applications v1.1
+Project Owner: @Ads
 
 |Project|Language|Members(slack)|Loc Repo URL|Start Date|Release Date  |
 |-------|--------|--------------|------------|----------|--------------|
