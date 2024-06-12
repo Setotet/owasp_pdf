@@ -78,6 +78,8 @@ The process of publishing PDF using the owasp_pdf tool (OWASP PDF Release Proces
 In the phase 1,
 1. Localize markdown/image files and finalize them, then
 2. Send a pull request to the owasp_pdf central repository (where this README file is stored) with the final markdown/image files.
+  Best Practice: [Draft pull request](https://github.blog/2019-02-14-introducing-draft-pull-requests/) is a prudent step to give a heads-up to the project owner.
+  Best Practice: [Squash](https://medium.com/@slamflipstrom/a-beginners-guide-to-squashing-commits-with-git-rebase-8185cf6e62ec) to one commit to avoid cluttering the central repository.
 
   > Currently, there are two projects registered: "OWASP Top 10 for LLM Applications v1.1" (project code: LLM) and "LLM AI Security & Governance Checklist v1.1" (project code: GOV).
 
