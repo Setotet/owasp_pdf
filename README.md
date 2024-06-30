@@ -8,17 +8,29 @@ Edmund Hillary and Tenzing Norgay are the first two people known to certainly re
 
 ### 1. Quick Start on Mac
 
-Three steps to create a clone PDF of Version 1.1 of LLM AI Security & Governance Checklist from nothing:
-1. Create a folder on your Mac desktop, `Cookbook`
-2. Download `owasp_pdf` executable from this repository to `Cookbook` folder.
-  (Note: [in case Mac complains that it's not downloaded from App Store](https://support.apple.com/guide/mac-help/if-an-app-is-not-from-the-mac-app-store-mh40620/11.0/mac/11.0))
-3. Run `owasp_pdf` with project `GOV` and language `en-US`
-  (Note: period before /owasp_pdf)
+Follow the steps below to create a clone PDF of Version 1.1 of LLM AI Security & Governance Checklist from nothing:
 
+1. Create a folder on your Mac desktop, `Cookbook`
+2. Download `dist.zip` file and store it on `Cookbook` folder
+3. Double Click `dist.zip` to decompress it to `Cookbook/dist` directory
+4. Open terminal window, `cd` to `Cookbook/dist` directory and run `shasum -a 256 owasp_pdf` to calculate the sha256 hash code of `owasp_pdf` executable.
+```
+$ cd ~/Cookbook/dist
+$ shasum -a 256 owasp_pdf
+802fb1781a95ae8ff3b34f21c13c31733510bd6431f2d3e9ab29744f4b97a179  owasp_pdf
+```
+5. Make sure the sha256 hash code matches.
+> OWASP PDF v3.9.4 20240628-152720
+> 802fb1781a95ae8ff3b34f21c13c31733510bd6431f2d3e9ab29744f4b97a179
+6. Move `owasp_pdf` executable from `Cookbook/dist` to `Cookbook` folder.
+  (Note: [in case Mac complains that it's not downloaded from App Store](https://support.apple.com/guide/mac-help/if-an-app-is-not-from-the-mac-app-store-mh40620/11.0/mac/11.0))
+7. Run `owasp_pdf` with project `GOV` and language `en-US`
+  (Note: period before /owasp_pdf)
 ```
 $ cd ~/Cookbook
+$ mv dist/owasp_pdf .
 $ ./owasp_pdf -l GOV_en-US
-  *** Processing GOV_en-US
+*** Processing GOV_en-US
   509 lines written to <your>/Desktop/Cookbook/llm-top-10-governance-doc/en-US/baseline/GOVAll_en-US.md
   29 page PDF created on <your>/Desktop/Cookbook/llm-top-10-governance-doc/en-US/baseline/GOVAll_en-US.pdf
   Processing time: 42 seconds
@@ -341,6 +353,7 @@ The version number with build id is placed at the lower left corner of every pag
 ```
   ar-SA  :  Arabic
   be-BY  :  Belarusian
+  bn-IN  :  Bengali
   cs-CZ  :  Czech
   da-DK  :  Danish
   de-DE  :  German
@@ -354,7 +367,7 @@ The version number with build id is placed at the lower left corner of every pag
   fr-CA  :  French (Canada)
   fr-FR  :  French (Standard)
   he-IL  :  Hebrew
-  hi-IN  :  Hindi
+  hi-IN  :  Hindi, Devanagari
   hu-HU  :  Hungarian
   it-IT  :  Italian
   ja-JP  :  Japanese
