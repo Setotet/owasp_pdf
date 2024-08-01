@@ -17,11 +17,11 @@ Follow the steps below to create a clone PDF of Version 1.1 of LLM AI Security &
 ```
 $ cd ~/Cookbook/dist
 $ shasum -a 256 owasp_pdf
-802fb1781a95ae8ff3b34f21c13c31733510bd6431f2d3e9ab29744f4b97a179  owasp_pdf
+289b296dbcbd2cbc5dccbf954558d6b4145d73dbdea548d8d20cf618852cf748  owasp_pdf
 ```
 5. Make sure the sha256 hash code matches.
-> OWASP PDF v3.9.4 20240628-152720
-> 802fb1781a95ae8ff3b34f21c13c31733510bd6431f2d3e9ab29744f4b97a179
+> OWASP PDF v3.10.1 20240731-230532
+> 289b296dbcbd2cbc5dccbf954558d6b4145d73dbdea548d8d20cf618852cf748
 6. Move `owasp_pdf` executable from `Cookbook/dist` to `Cookbook` folder.
   (Note: [in case Mac complains that it's not downloaded from App Store](https://support.apple.com/guide/mac-help/if-an-app-is-not-from-the-mac-app-store-mh40620/11.0/mac/11.0))
 7. Run `owasp_pdf` with project `GOV` and language `en-US`
@@ -100,6 +100,21 @@ In the phase 2,
 2. If approved, the owner removes the W.I.P. watermark and creates the official PDF,
 3. "git add -f" and push the PDF to the owasp_pdf central repository along with the final markdown/image files, then,
 4. Publish the PDF on [genai.owasp.org/resources](https://genai.owasp.org/resources/) site.
+
+#### 5.1 Removing W.I.P. Watermark
+
+A secret key is assigned to each project and given to the project owner.  Only with the secret key, the W.I.P. watermark can be removed and the output PDF is made official.  Once the watermark is removed, the contents are locked; any changes will require patch version up.
+
+#### 5.2 Sponsor Pages (Gold, Silver, Corporate)
+
+The Biz Dev team maintains three lists of sponsors; gold, silver and corporate. The team creates PDFs from the lists and provides the project owner the PDFs. In the W.I.P. removal run, the sponsor page PDFs are appended.
+
+Technical spec of the sponsor page is the following:
+- one PDF for each of gold, silver, and corporate in two paper sizes, A4 and US Letter, total 6 PDF files.
+- One inch margin on the four sides of each page plus 48 pt blank space at the top of the page for title such as "Gold Sponsors".  Note that the three titles are defined in custom json as doc_sponsor_titles.
+- The sponsor PDF can contain two or more pages.
+- Three PDFs (gold, silver, corporate) are added in that order.
+
 
 ### 6. Localization Process Best Practices
 
@@ -315,7 +330,7 @@ Example:
 >mistyrose|black|right|20|24 Threats to AI Models
 >mistyrose|black|justified|20|24 Threats from AI Models and AI Legal & regulatory Threats
 
-### 10. Technology Stack of PDF Creation
+### 11. Technology Stack of PDF Creation
 
 owasp_pdf is built on open source packages in Python.  Implementation module of owasp_pdf of each technology layer is as follows:
 
@@ -324,7 +339,7 @@ owasp_pdf is built on open source packages in Python.  Implementation module of 
   pdf generation  :  reportlab, fpdf2 (Python)
   system language  :  Python
 
-### 11. Batch Processing
+### 12. Batch Processing
 
 You can build all registered languages of one project with one command:
 
@@ -338,7 +353,7 @@ Suppose you have three projects, LLM, GOV, and OLM.  You can build all the langu
 $ ./owasp_pdf -a LLM & ./owasp_pdf -a GOV & ./owasp_pdf -a OLM
 ```
 
-### 12. Semantic Versioning
+### 13. Semantic Versioning
 
 owasp_pdf version number such as v3.7.2 follows [the semantic versioning](https://semver.org/) rule.
 Given a version number MAJOR.MINOR.PATCH, increment the:
@@ -349,7 +364,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 
 The version number with build id is placed at the lower left corner of every page.
 
-### 13. Language Codes
+### 14. Language Codes
 ```
   ar-SA  :  Arabic
   be-BY  :  Belarusian
@@ -389,7 +404,7 @@ The version number with build id is placed at the lower left corner of every pag
   zh-TW  :  Chinese (Traditional)
 ```
 
-### 14. Color Palette
+### 15. Color Palette
 
     >aliceblue|black|center|14|16 aliceblue
     >antiquewhite|black|center|14|16 antiquewhite
@@ -542,7 +557,7 @@ The version number with build id is placed at the lower left corner of every pag
     >yellow|black|center|14|16 yellow
     >yellowgreen|white|center|14|16 yellowgreen
 
-### 15. Appendices
+### 16. Appendices
 
 ```
 APPENDIX 1.   ./owasp_pdf -h  (--help)
@@ -603,6 +618,11 @@ APPENDIX 2.   custom_data_GOV_en-US.json
     "doc_toc_contents_title": "Contents",
     "doc_toc_figures_title": "Figures",
     "doc_watermark": true,
+    "doc_sponsor_titles": [
+        "Gold Sponsors",
+        "Silver Sponsors",
+        "Corporate Sponsors"
+    ],
     "doc_title_font.size": 40,
     "doc_title_font.line_pitch": 48.0,
     "doc_subtitle_font.size": 20,
