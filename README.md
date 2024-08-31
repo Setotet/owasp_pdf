@@ -17,11 +17,11 @@ Follow the steps below to create a clone PDF of Version 1.1 of LLM AI Security &
 ```
 $ cd ~/Cookbook/dist
 $ shasum -a 256 owasp_pdf
-289b296dbcbd2cbc5dccbf954558d6b4145d73dbdea548d8d20cf618852cf748  owasp_pdf
+15dc77dfeef61f3d93aa186b16e0a63ae710c150c4519f764f96b66bc2e16cf7  owasp_pdf
 ```
 5. Make sure the sha256 hash code matches.
-> OWASP PDF v3.10.1 20240731-230532
-> 289b296dbcbd2cbc5dccbf954558d6b4145d73dbdea548d8d20cf618852cf748
+> OWASP PDF v3.10.1 20240830-201959
+> 15dc77dfeef61f3d93aa186b16e0a63ae710c150c4519f764f96b66bc2e16cf7
 6. Move `owasp_pdf` executable from `Cookbook/dist` to `Cookbook` folder.
   (Note: [in case Mac complains that it's not downloaded from App Store](https://support.apple.com/guide/mac-help/if-an-app-is-not-from-the-mac-app-store-mh40620/11.0/mac/11.0))
 7. Run `owasp_pdf` with project `GOV` and language `en-US`
