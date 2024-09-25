@@ -17,11 +17,11 @@ Follow the steps below to create a clone PDF of Version 1.1 of LLM AI Security &
 ```
 $ cd ~/Cookbook/dist
 $ shasum -a 256 owasp_pdf
-15dc77dfeef61f3d93aa186b16e0a63ae710c150c4519f764f96b66bc2e16cf7  owasp_pdf
+457153db78f1a61b6a25938179238b23aac88d88e250ac8c3aca899ea9dc3f7b  owasp_pdf
 ```
 5. Make sure the sha256 hash code matches.
-> OWASP PDF v3.10.1 20240830-201959
-> 15dc77dfeef61f3d93aa186b16e0a63ae710c150c4519f764f96b66bc2e16cf7
+> OWASP PDF v4.0.0 20240928-214942
+> 457153db78f1a61b6a25938179238b23aac88d88e250ac8c3aca899ea9dc3f7b
 6. Move `owasp_pdf` executable from `Cookbook/dist` to `Cookbook` folder.
   (Note: [in case Mac complains that it's not downloaded from App Store](https://support.apple.com/guide/mac-help/if-an-app-is-not-from-the-mac-app-store-mh40620/11.0/mac/11.0))
 7. Run `owasp_pdf` with project `GOV` and language `en-US`
@@ -54,7 +54,6 @@ What does minimalist design of OWASP PDF mean in the OWASP Top 10 documentation 
 
 **Project code** is a random three-capital-letter word such as `GOV` or `LLM` assigned to every project in OWASP PDF project registration process (see 3. below).  Project is typically associated with github repository.  For example, `GOV` is associated with *llm-top-10-governance-doc* repository.  As of this owasp_pdf version, registered project code and corresponding github repository are as follows:
 
-  OLM  :  olm
   LLM  :  1_1_vulns
   GOV  :  llm-top-10-governance-doc
 
@@ -347,10 +346,10 @@ You can build all registered languages of one project with one command:
 $ ./owasp_pdf -a <proj code>
 ```
 
-Suppose you have three projects, LLM, GOV, and OLM.  You can build all the languages of all the projects in three processes with one command line.  macOS Activity Monitor will show three processes of *owasp_pdf*:
+Suppose you have three projects, LLM and GOV.  You can build all the languages of all the projects in three processes with one command line.  macOS Activity Monitor will show three processes of *owasp_pdf*:
 
 ```
-$ ./owasp_pdf -a LLM & ./owasp_pdf -a GOV & ./owasp_pdf -a OLM
+$ ./owasp_pdf -a LLM & ./owasp_pdf -a GOV
 ```
 
 ### 13. Semantic Versioning
@@ -562,18 +561,20 @@ The version number with build id is placed at the lower left corner of every pag
 ```
 APPENDIX 1.   ./owasp_pdf -h  (--help)
 ================================
-
-usage: owasp_pdf [-h] [-v] [-r] [-s] [-l] [-a]
+usage: owasp_pdf [-h] [-v] [-r] [-s]
+                 [-l {LLM_ar-SA,LLM_bn-IN,LLM_de-DE,...}]
+                 [-a {LLM,GOV}]
 
 optional arguments:
- -h, --help            show this help message and exit
- -v, --version         show owasp_pdf package version
- -r, --reg, --registered show registered languages for each project
- -s, --silent          disable all print statements
- -l {LLM_ar-SA,LLM_en-US,LLM_en-ZZ,LLM_es-ES,LLM_fr-FR,LLM_hi-IN,LLM_it-IT,LLM_ja-JP,LLM_pt-BR,LLM_zh-CN,GOV_ar-SA,GOV_be-BY,GOV_cs-CZ,GOV_da-DK,GOV_de-DE,GOV_en-GB,GOV_en-US,GOV_en-ZZ,GOV_es-ES,GOV_es-MX,GOV_et-EE,GOV_fi-FI,GOV_fr-CA,GOV_fr-FR,GOV_he-IL,GOV_hi-IN,GOV_hu-HU,GOV_it-IT,GOV_ja-JP,GOV_ko-KR,GOV_lt-LT,GOV_lv-LV,GOV_ms-MY,GOV_nl-NL,GOV_no-NO,GOV_pl-PL,GOV_pt-BR,GOV_pt-PT,GOV_ru-RU,GOV_sv-SE,GOV_th-TH,GOV_tr-TR,GOV_vi-VN,GOV_zh-CN,GOV_zh-TW,OLM_en-US,OLM_en-ZZ,OLM_ja-JP,LLM_ar-SA,LLM_en-US,LLM_en-ZZ,LLM_es-ES,LLM_fr-FR,LLM_hi-IN,LLM_it-IT,LLM_ja-JP,LLM_pt-BR,LLM_zh-CN,GOV_ar-SA,GOV_be-BY,GOV_cs-CZ,GOV_da-DK,GOV_de-DE,GOV_en-GB,GOV_en-US,GOV_en-ZZ,GOV_es-ES,GOV_es-MX,GOV_et-EE,GOV_fi-FI,GOV_fr-CA,GOV_fr-FR,GOV_he-IL,GOV_hi-IN,GOV_hu-HU,GOV_it-IT,GOV_ja-JP,GOV_ko-KR,GOV_lt-LT,GOV_lv-LV,GOV_ms-MY,GOV_nl-NL,GOV_no-NO,GOV_pl-PL,GOV_pt-BR,GOV_pt-PT,GOV_ru-RU,GOV_sv-SE,GOV_th-TH,GOV_tr-TR,GOV_vi-VN,GOV_zh-CN,GOV_zh-TW,OLM_en-US,OLM_en-ZZ,OLM_ja-JP}, --lang {LLM_ar-SA,LLM_en-US,LLM_en-ZZ,LLM_es-ES,LLM_fr-FR,LLM_hi-IN,LLM_it-IT,LLM_ja-JP,LLM_pt-BR,LLM_zh-CN,GOV_ar-SA,GOV_be-BY,GOV_cs-CZ,GOV_da-DK,GOV_de-DE,GOV_en-GB,GOV_en-US,GOV_en-ZZ,GOV_es-ES,GOV_es-MX,GOV_et-EE,GOV_fi-FI,GOV_fr-CA,GOV_fr-FR,GOV_he-IL,GOV_hi-IN,GOV_hu-HU,GOV_it-IT,GOV_ja-JP,GOV_ko-KR,GOV_lt-LT,GOV_lv-LV,GOV_ms-MY,GOV_nl-NL,GOV_no-NO,GOV_pl-PL,GOV_pt-BR,GOV_pt-PT,GOV_ru-RU,GOV_sv-SE,GOV_th-TH,GOV_tr-TR,GOV_vi-VN,GOV_zh-CN,GOV_zh-TW,OLM_en-US,OLM_en-ZZ,OLM_ja-JP,LLM_ar-SA,LLM_en-US,LLM_en-ZZ,LLM_es-ES,LLM_fr-FR,LLM_hi-IN,LLM_it-IT,LLM_ja-JP,LLM_pt-BR,LLM_zh-CN,GOV_ar-SA,GOV_be-BY,GOV_cs-CZ,GOV_da-DK,GOV_de-DE,GOV_en-GB,GOV_en-US,GOV_en-ZZ,GOV_es-ES,GOV_es-MX,GOV_et-EE,GOV_fi-FI,GOV_fr-CA,GOV_fr-FR,GOV_he-IL,GOV_hi-IN,GOV_hu-HU,GOV_it-IT,GOV_ja-JP,GOV_ko-KR,GOV_lt-LT,GOV_lv-LV,GOV_ms-MY,GOV_nl-NL,GOV_no-NO,GOV_pl-PL,GOV_pt-BR,GOV_pt-PT,GOV_ru-RU,GOV_sv-SE,GOV_th-TH,GOV_tr-TR,GOV_vi-VN,GOV_zh-CN,GOV_zh-TW,OLM_en-US,OLM_en-ZZ,OLM_ja-JP}
-   set project/language to build PDF for, e.g., GOV_en-ZZ, LLM_ja-JP
- -a {LLM,GOV,OLM}, --all {LLM,GOV,OLM}
-   process all registered languages for the project at once
+  -h, --help            show this help message and exit
+  -v, --version         show owasp_pdf package version
+  -r, --reg, --registered
+                        show registered languages for each project
+  -s, --silent          disable all print statements
+  -l {LLM_ar-SA,LLM_bn-IN,LLM_de-DE,...}
+                        set project/language to build PDF for, e.g., GOV_en-ZZ, LLM_ja-JP
+  -a {LLM,GOV}, --all {LLM,GOV}
+                        process all registered languages for the project at once
 ```
 
 
@@ -587,8 +588,9 @@ APPENDIX 2.   custom_data_GOV_en-US.json
         "LLM AI Security &",
         "Governance Checklist"
     ],
-    "doc_title_pivot.pt_y": 324.0,
+    "doc_title_pivot.pt_y": 324,
     "doc_subtitles": [
+        "",
         "",
         "",
         "From the OWASP Top 10",
@@ -597,56 +599,54 @@ APPENDIX 2.   custom_data_GOV_en-US.json
         "",
         "",
         "",
-        "Version: 1.1",
-        "Published: March 31, 2024"
+        "Version: 2.0",
+        "Published: October 1, 2024"
     ],
     "doc_header": "",
-    "doc_header_pivot.pt_x": 36.0,
+    "doc_header_pivot.pt_x": 100.0,
+    "doc_header_pivot.pt_y": 16.0,
+    "header_font.color": "white",
     "doc_legal_notice": true,
     "doc_legal_notice_words": [
-        "The information provided in this document does not, and is not intended to, constitute legal advice.",
-        "All information is for general informational purposes only.",
+        "legal notice 1",
         "",
-        "This document contains links to other third-party websites. Such links are only for convenience",
-        "and OWASP does not recommend or endorse the contents of the third-party sites.",
-        "",
-        "This project is licensed under the terms of the Creative Commons Attribution-ShareAlike 4.0",
-        "International License.  ( https://creativecommons.org/licenses/by-sa/4.0/ )"
+        "legal notice 2"
     ],
     "doc_toc": true,
     "doc_authors_toc": false,
     "doc_toc_contents_title": "Contents",
     "doc_toc_figures_title": "Figures",
     "doc_watermark": true,
-    "doc_sponsor_titles": [
-        "Gold Sponsors",
-        "Silver Sponsors",
-        "Corporate Sponsors"
-    ],
+    "doc_appendix_titles": [],
     "doc_title_font.size": 40,
-    "doc_title_font.line_pitch": 48.0,
+    "doc_title_font.line_pitch": 48,
     "doc_subtitle_font.size": 20,
-    "doc_subtitle_font.line_pitch": 24.0,
-    "chapter_pivot.pt_y": 28.1,
-    "chapter_font.size": 24,
-    "section_font.size": 13,
+    "doc_subtitle_font.line_pitch": 24,
+    "doc_appendix_title_font.size": 13.0,
+    "doc_appendix_title_font.line_pitch": 18.2,
+    "doc_appendix_title_font.color": "black",
+    "doc_appendix_title_font.line_alignment": "left",
+    "chapter_pivot.pt_y": 42.5,
+    "chapter_font.size": 20.0,
+    "chapter_font.color": "white",
+    "section_font.size": 13.0,
     "section_font.line_pitch": 18.2,
-    "block_font.size": 11,
+    "block_font.size": 11.0,
     "block_font.line_pitch": 15.4,
-    "block6_font.size": 11,
+    "block6_font.size": 11.0,
     "block6_font.line_pitch": 15.4,
-    "caption_font.size": 11,
+    "caption_font.size": 11.0,
     "caption_font.line_pitch": 15.4,
-    "body_font.size": 11,
+    "body_font.size": 11.0,
     "body_font.line_pitch": 15.4,
     "body_font.line_alignment": "justified",
-    "reference_font.size": 13,
-    "reference_font.line_pitch": 18.2,
+    "reference_font.size": 10.0,
+    "reference_font.line_pitch": 14.0,
     "reference_font.line_alignment": "justified",
-    "blockquote_font.size": 10,
+    "blockquote_font.size": 10.0,
     "blockquote_font.line_pitch": 14.0,
     "blockquote_font.line_alignment": "justified",
-    "unordered_list_marker": "square",
+    "unordered_list_marker": "circle",
     "md_file_range": [
         0,
         999999
